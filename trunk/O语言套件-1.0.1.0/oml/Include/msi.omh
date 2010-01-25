@@ -1,0 +1,403 @@
+引用段
+{
+函数 DllGetVersion(整数32)=>整数32;
+函数 Migrate10CachedPackagesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 Migrate10CachedPackagesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiAdvertiseProductA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiAdvertiseProductExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiAdvertiseProductExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiAdvertiseProductW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiAdvertiseScriptA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiAdvertiseScriptW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiApplyMultiplePatchesA(整数32,整数32,整数32)=>整数32;
+函数 MsiApplyMultiplePatchesW(整数32,整数32,整数32)=>整数32;
+函数 MsiApplyPatchA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiApplyPatchW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiCloseAllHandles()=>整数32;
+函数 MsiCloseHandle(整数32)=>整数32;
+函数 MsiCollectUserInfoA(整数32)=>整数32;
+函数 MsiCollectUserInfoW(整数32)=>整数32;
+函数 MsiConfigureFeatureA(整数32,整数32,整数32)=>整数32;
+函数 MsiConfigureFeatureFromDescriptorA(整数32,整数32)=>整数32;
+函数 MsiConfigureFeatureFromDescriptorW(整数32,整数32)=>整数32;
+函数 MsiConfigureFeatureW(整数32,整数32,整数32)=>整数32;
+函数 MsiConfigureProductA(整数32,整数32,整数32)=>整数32;
+函数 MsiConfigureProductExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiConfigureProductExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiConfigureProductW(整数32,整数32,整数32)=>整数32;
+函数 MsiCreateAndVerifyInstallerDirectory(整数32)=>整数32;
+函数 MsiCreateRecord(整数32)=>整数32;
+函数 MsiCreateTransformSummaryInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiCreateTransformSummaryInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseApplyTransformA(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseApplyTransformW(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseCommit(整数32)=>整数32;
+函数 MsiDatabaseExportA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseExportW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseGenerateTransformA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseGenerateTransformW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseGetPrimaryKeysA(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseGetPrimaryKeysW(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseImportA(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseImportW(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseIsTablePersistentA(整数32,整数32)=>整数32;
+函数 MsiDatabaseIsTablePersistentW(整数32,整数32)=>整数32;
+函数 MsiDatabaseMergeA(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseMergeW(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseOpenViewA(整数32,整数32,整数32)=>整数32;
+函数 MsiDatabaseOpenViewW(整数32,整数32,整数32)=>整数32;
+函数 MsiDecomposeDescriptorA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDecomposeDescriptorW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDeleteUserDataA(整数32,整数32,整数32)=>整数32;
+函数 MsiDeleteUserDataW(整数32,整数32,整数32)=>整数32;
+函数 MsiDetermineApplicablePatchesA(整数32,整数32,整数32)=>整数32;
+函数 MsiDetermineApplicablePatchesW(整数32,整数32,整数32)=>整数32;
+函数 MsiDeterminePatchSequenceA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDeterminePatchSequenceW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiDoActionA(整数32,整数32)=>整数32;
+函数 MsiDoActionW(整数32,整数32)=>整数32;
+函数 MsiEnableLogA(整数32,整数32,整数32)=>整数32;
+函数 MsiEnableLogW(整数32,整数32,整数32)=>整数32;
+函数 MsiEnableUIPreview(整数32,整数32)=>整数32;
+函数 MsiEnumClientsA(整数32,整数32,整数32)=>整数32;
+函数 MsiEnumClientsW(整数32,整数32,整数32)=>整数32;
+函数 MsiEnumComponentCostsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumComponentCostsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumComponentQualifiersA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumComponentQualifiersW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumComponentsA(整数32,整数32)=>整数32;
+函数 MsiEnumComponentsW(整数32,整数32)=>整数32;
+函数 MsiEnumFeaturesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumFeaturesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumPatchesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumPatchesExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumPatchesExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumPatchesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumProductsA(整数32,整数32)=>整数32;
+函数 MsiEnumProductsExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumProductsExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumProductsW(整数32,整数32)=>整数32;
+函数 MsiEnumRelatedProductsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEnumRelatedProductsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiEvaluateConditionA(整数32,整数32)=>整数32;
+函数 MsiEvaluateConditionW(整数32,整数32)=>整数32;
+函数 MsiExtractPatchXMLDataA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiExtractPatchXMLDataW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiFormatRecordA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiFormatRecordW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetActiveDatabase(整数32)=>整数32;
+函数 MsiGetComponentPathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetComponentPathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetComponentStateA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetComponentStateW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetDatabaseState(整数32)=>整数32;
+函数 MsiGetFeatureCostA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureCostW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureStateA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureStateW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureUsageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureUsageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureValidStatesA(整数32,整数32,整数32)=>整数32;
+函数 MsiGetFeatureValidStatesW(整数32,整数32,整数32)=>整数32;
+函数 MsiGetFileHashA(整数32,整数32,整数32)=>整数32;
+函数 MsiGetFileHashW(整数32,整数32,整数32)=>整数32;
+函数 MsiGetFileSignatureInformationA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFileSignatureInformationW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFileVersionA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetFileVersionW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetLanguage(整数32)=>整数32;
+函数 MsiGetLastErrorRecord()=>整数32;
+函数 MsiGetMode(整数32,整数32)=>整数32;
+函数 MsiGetPatchInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetPatchInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetPatchInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetPatchInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductCodeA(整数32,整数32)=>整数32;
+函数 MsiGetProductCodeFromPackageCodeA(整数32,整数32)=>整数32;
+函数 MsiGetProductCodeFromPackageCodeW(整数32,整数32)=>整数32;
+函数 MsiGetProductCodeW(整数32,整数32)=>整数32;
+函数 MsiGetProductInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductInfoExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductInfoExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductInfoFromScriptA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductInfoFromScriptW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductPropertyA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetProductPropertyW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetPropertyA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetPropertyW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetShortcutTargetA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetShortcutTargetW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetSourcePathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetSourcePathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetSummaryInformationA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetSummaryInformationW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetTargetPathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetTargetPathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetUserInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiGetUserInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiInstallMissingComponentA(整数32,整数32,整数32)=>整数32;
+函数 MsiInstallMissingComponentW(整数32,整数32,整数32)=>整数32;
+函数 MsiInstallMissingFileA(整数32,整数32)=>整数32;
+函数 MsiInstallMissingFileW(整数32,整数32)=>整数32;
+函数 MsiInstallProductA(整数32,整数32)=>整数32;
+函数 MsiInstallProductW(整数32,整数32)=>整数32;
+函数 C调用 MsiInvalidateFeatureCache(整数32, ..)=>整数32;
+函数 MsiIsProductElevatedA(整数32,整数32)=>整数32;
+函数 MsiIsProductElevatedW(整数32,整数32)=>整数32;
+函数 MsiLoadStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiLoadStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiLocateComponentA(整数32,整数32,整数32)=>整数32;
+函数 MsiLocateComponentW(整数32,整数32,整数32)=>整数32;
+函数 MsiMessageBoxA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiMessageBoxExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiMessageBoxExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiMessageBoxW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiNotifySidChangeA(整数32,整数32)=>整数32;
+函数 MsiNotifySidChangeW(整数32,整数32)=>整数32;
+函数 MsiOpenDatabaseA(整数32,整数32,整数32)=>整数32;
+函数 MsiOpenDatabaseW(整数32,整数32,整数32)=>整数32;
+函数 MsiOpenPackageA(整数32,整数32)=>整数32;
+函数 MsiOpenPackageExA(整数32,整数32,整数32)=>整数32;
+函数 MsiOpenPackageExW(整数32,整数32,整数32)=>整数32;
+函数 MsiOpenPackageW(整数32,整数32)=>整数32;
+函数 MsiOpenProductA(整数32,整数32)=>整数32;
+函数 MsiOpenProductW(整数32,整数32)=>整数32;
+函数 MsiPreviewBillboardA(整数32,整数32,整数32)=>整数32;
+函数 MsiPreviewBillboardW(整数32,整数32,整数32)=>整数32;
+函数 MsiPreviewDialogA(整数32,整数32)=>整数32;
+函数 MsiPreviewDialogW(整数32,整数32)=>整数32;
+函数 MsiProcessAdvertiseScriptA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProcessAdvertiseScriptW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProcessMessage(整数32,整数32,整数32)=>整数32;
+函数 MsiProvideAssemblyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideAssemblyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideComponentA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideComponentFromDescriptorA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideComponentFromDescriptorW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideComponentW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideQualifiedComponentA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideQualifiedComponentExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideQualifiedComponentExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiProvideQualifiedComponentW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiQueryComponentStateA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiQueryComponentStateW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiQueryFeatureStateA(整数32,整数32)=>整数32;
+函数 MsiQueryFeatureStateExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiQueryFeatureStateExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiQueryFeatureStateFromDescriptorA(整数32)=>整数32;
+函数 MsiQueryFeatureStateFromDescriptorW(整数32)=>整数32;
+函数 MsiQueryFeatureStateW(整数32,整数32)=>整数32;
+函数 MsiQueryProductStateA(整数32)=>整数32;
+函数 MsiQueryProductStateW(整数32)=>整数32;
+函数 MsiRecordClearData(整数32)=>整数32;
+函数 MsiRecordDataSize(整数32,整数32)=>整数32;
+函数 MsiRecordGetFieldCount(整数32)=>整数32;
+函数 MsiRecordGetInteger(整数32,整数32)=>整数32;
+函数 MsiRecordGetStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiRecordGetStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiRecordIsNull(整数32,整数32)=>整数32;
+函数 MsiRecordReadStream(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiRecordSetInteger(整数32,整数32,整数32)=>整数32;
+函数 MsiRecordSetStreamA(整数32,整数32,整数32)=>整数32;
+函数 MsiRecordSetStreamW(整数32,整数32,整数32)=>整数32;
+函数 MsiRecordSetStringA(整数32,整数32,整数32)=>整数32;
+函数 MsiRecordSetStringW(整数32,整数32,整数32)=>整数32;
+函数 MsiReinstallFeatureA(整数32,整数32,整数32)=>整数32;
+函数 MsiReinstallFeatureFromDescriptorA(整数32,整数32)=>整数32;
+函数 MsiReinstallFeatureFromDescriptorW(整数32,整数32)=>整数32;
+函数 MsiReinstallFeatureW(整数32,整数32,整数32)=>整数32;
+函数 MsiReinstallProductA(整数32,整数32)=>整数32;
+函数 MsiReinstallProductW(整数32,整数32)=>整数32;
+函数 MsiRemovePatchesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiRemovePatchesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSequenceA(整数32,整数32,整数32)=>整数32;
+函数 MsiSequenceW(整数32,整数32,整数32)=>整数32;
+函数 MsiSetComponentStateA(整数32,整数32,整数32)=>整数32;
+函数 MsiSetComponentStateW(整数32,整数32,整数32)=>整数32;
+函数 MsiSetExternalUIA(整数32,整数32,整数32)=>整数32;
+函数 MsiSetExternalUIRecord(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSetExternalUIW(整数32,整数32,整数32)=>整数32;
+函数 MsiSetFeatureAttributesA(整数32,整数32,整数32)=>整数32;
+函数 MsiSetFeatureAttributesW(整数32,整数32,整数32)=>整数32;
+函数 MsiSetFeatureStateA(整数32,整数32,整数32)=>整数32;
+函数 MsiSetFeatureStateW(整数32,整数32,整数32)=>整数32;
+函数 MsiSetInstallLevel(整数32,整数32)=>整数32;
+函数 MsiSetInternalUI(整数32,整数32)=>整数32;
+函数 MsiSetMode(整数32,整数32,整数32)=>整数32;
+函数 MsiSetPropertyA(整数32,整数32,整数32)=>整数32;
+函数 MsiSetPropertyW(整数32,整数32,整数32)=>整数32;
+函数 MsiSetTargetPathA(整数32,整数32,整数32)=>整数32;
+函数 MsiSetTargetPathW(整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListAddMediaDiskA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListAddMediaDiskW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListAddSourceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListAddSourceExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListAddSourceExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListAddSourceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearAllA(整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearAllExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearAllExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearAllW(整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearMediaDiskA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearMediaDiskW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearSourceA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListClearSourceW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListEnumMediaDisksA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListEnumMediaDisksW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListEnumSourcesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListEnumSourcesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListForceResolutionA(整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListForceResolutionExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListForceResolutionExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListForceResolutionW(整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListGetInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListGetInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListSetInfoA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSourceListSetInfoW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSummaryInfoGetPropertyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSummaryInfoGetPropertyCount(整数32,整数32)=>整数32;
+函数 MsiSummaryInfoGetPropertyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSummaryInfoPersist(整数32)=>整数32;
+函数 MsiSummaryInfoSetPropertyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiSummaryInfoSetPropertyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiUseFeatureA(整数32,整数32)=>整数32;
+函数 MsiUseFeatureExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiUseFeatureExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MsiUseFeatureW(整数32,整数32)=>整数32;
+函数 MsiVerifyDiskSpace(整数32)=>整数32;
+函数 MsiVerifyPackageA(整数32)=>整数32;
+函数 MsiVerifyPackageW(整数32)=>整数32;
+函数 MsiViewClose(整数32)=>整数32;
+函数 MsiViewExecute(整数32,整数32)=>整数32;
+函数 MsiViewFetch(整数32,整数32)=>整数32;
+函数 MsiViewGetColumnInfo(整数32,整数32,整数32)=>整数32;
+函数 MsiViewGetErrorA(整数32,整数32,整数32)=>整数32;
+函数 MsiViewGetErrorW(整数32,整数32,整数32)=>整数32;
+函数 MsiViewModify(整数32,整数32,整数32)=>整数32;
+
+宏定义 Migrate10CachedPackages  Migrate10CachedPackagesA
+宏定义 MsiAdvertiseProduct  MsiAdvertiseProductA
+宏定义 MsiAdvertiseProductEx  MsiAdvertiseProductExA
+宏定义 MsiAdvertiseScript  MsiAdvertiseScriptA
+宏定义 MsiApplyMultiplePatches  MsiApplyMultiplePatchesA
+宏定义 MsiApplyPatch  MsiApplyPatchA
+宏定义 MsiCollectUserInfo  MsiCollectUserInfoA
+宏定义 MsiConfigureFeature  MsiConfigureFeatureA
+宏定义 MsiConfigureFeatureFromDescriptor  MsiConfigureFeatureFromDescriptorA
+宏定义 MsiConfigureProduct  MsiConfigureProductA
+宏定义 MsiConfigureProductEx  MsiConfigureProductExA
+宏定义 MsiCreateTransformSummaryInfo  MsiCreateTransformSummaryInfoA
+宏定义 MsiDatabaseApplyTransform  MsiDatabaseApplyTransformA
+宏定义 MsiDatabaseExport  MsiDatabaseExportA
+宏定义 MsiDatabaseGenerateTransform  MsiDatabaseGenerateTransformA
+宏定义 MsiDatabaseGetPrimaryKeys  MsiDatabaseGetPrimaryKeysA
+宏定义 MsiDatabaseImport  MsiDatabaseImportA
+宏定义 MsiDatabaseIsTablePersistent  MsiDatabaseIsTablePersistentA
+宏定义 MsiDatabaseMerge  MsiDatabaseMergeA
+宏定义 MsiDatabaseOpenView  MsiDatabaseOpenViewA
+宏定义 MsiDecomposeDescriptor  MsiDecomposeDescriptorA
+宏定义 MsiDeleteUserData  MsiDeleteUserDataA
+宏定义 MsiDetermineApplicablePatches  MsiDetermineApplicablePatchesA
+宏定义 MsiDeterminePatchSequence  MsiDeterminePatchSequenceA
+宏定义 MsiDoAction  MsiDoActionA
+宏定义 MsiEnableLog  MsiEnableLogA
+宏定义 MsiEnumClients  MsiEnumClientsA
+宏定义 MsiEnumComponentCosts  MsiEnumComponentCostsA
+宏定义 MsiEnumComponentQualifiers  MsiEnumComponentQualifiersA
+宏定义 MsiEnumComponents  MsiEnumComponentsA
+宏定义 MsiEnumFeatures  MsiEnumFeaturesA
+宏定义 MsiEnumPatches  MsiEnumPatchesA
+宏定义 MsiEnumPatchesEx  MsiEnumPatchesExA
+宏定义 MsiEnumProducts  MsiEnumProductsA
+宏定义 MsiEnumProductsEx  MsiEnumProductsExA
+宏定义 MsiEnumRelatedProducts  MsiEnumRelatedProductsA
+宏定义 MsiEvaluateCondition  MsiEvaluateConditionA
+宏定义 MsiExtractPatchXMLData  MsiExtractPatchXMLDataA
+宏定义 MsiFormatRecord  MsiFormatRecordA
+宏定义 MsiGetComponentPath  MsiGetComponentPathA
+宏定义 MsiGetComponentState  MsiGetComponentStateA
+宏定义 MsiGetFeatureCost  MsiGetFeatureCostA
+宏定义 MsiGetFeatureInfo  MsiGetFeatureInfoA
+宏定义 MsiGetFeatureState  MsiGetFeatureStateA
+宏定义 MsiGetFeatureUsage  MsiGetFeatureUsageA
+宏定义 MsiGetFeatureValidStates  MsiGetFeatureValidStatesA
+宏定义 MsiGetFileHash  MsiGetFileHashA
+宏定义 MsiGetFileSignatureInformation  MsiGetFileSignatureInformationA
+宏定义 MsiGetFileVersion  MsiGetFileVersionA
+宏定义 MsiGetPatchInfo  MsiGetPatchInfoA
+宏定义 MsiGetPatchInfoEx  MsiGetPatchInfoExA
+宏定义 MsiGetProductCode  MsiGetProductCodeA
+宏定义 MsiGetProductCodeFromPackageCode  MsiGetProductCodeFromPackageCodeA
+宏定义 MsiGetProductInfo  MsiGetProductInfoA
+宏定义 MsiGetProductInfoEx  MsiGetProductInfoExA
+宏定义 MsiGetProductInfoFromScript  MsiGetProductInfoFromScriptA
+宏定义 MsiGetProductProperty  MsiGetProductPropertyA
+宏定义 MsiGetProperty  MsiGetPropertyA
+宏定义 MsiGetShortcutTarget  MsiGetShortcutTargetA
+宏定义 MsiGetSourcePath  MsiGetSourcePathA
+宏定义 MsiGetSummaryInformation  MsiGetSummaryInformationA
+宏定义 MsiGetTargetPath  MsiGetTargetPathA
+宏定义 MsiGetUserInfo  MsiGetUserInfoA
+宏定义 MsiInstallMissingComponent  MsiInstallMissingComponentA
+宏定义 MsiInstallMissingFile  MsiInstallMissingFileA
+宏定义 MsiInstallProduct  MsiInstallProductA
+宏定义 MsiIsProductElevated  MsiIsProductElevatedA
+宏定义 MsiLoadString  MsiLoadStringA
+宏定义 MsiLocateComponent  MsiLocateComponentA
+宏定义 MsiMessageBox  MsiMessageBoxA
+宏定义 MsiMessageBoxEx  MsiMessageBoxExA
+宏定义 MsiNotifySidChange  MsiNotifySidChangeA
+宏定义 MsiOpenDatabase  MsiOpenDatabaseA
+宏定义 MsiOpenPackage  MsiOpenPackageA
+宏定义 MsiOpenPackageEx  MsiOpenPackageExA
+宏定义 MsiOpenProduct  MsiOpenProductA
+宏定义 MsiPreviewBillboard  MsiPreviewBillboardA
+宏定义 MsiPreviewDialog  MsiPreviewDialogA
+宏定义 MsiProcessAdvertiseScript  MsiProcessAdvertiseScriptA
+宏定义 MsiProvideAssembly  MsiProvideAssemblyA
+宏定义 MsiProvideComponent  MsiProvideComponentA
+宏定义 MsiProvideComponentFromDescriptor  MsiProvideComponentFromDescriptorA
+宏定义 MsiProvideQualifiedComponent  MsiProvideQualifiedComponentA
+宏定义 MsiProvideQualifiedComponentEx  MsiProvideQualifiedComponentExA
+宏定义 MsiQueryComponentState  MsiQueryComponentStateA
+宏定义 MsiQueryFeatureState  MsiQueryFeatureStateA
+宏定义 MsiQueryFeatureStateEx  MsiQueryFeatureStateExA
+宏定义 MsiQueryFeatureStateFromDescriptor  MsiQueryFeatureStateFromDescriptorA
+宏定义 MsiQueryProductState  MsiQueryProductStateA
+宏定义 MsiRecordGetString  MsiRecordGetStringA
+宏定义 MsiRecordSetStream  MsiRecordSetStreamA
+宏定义 MsiRecordSetString  MsiRecordSetStringA
+宏定义 MsiReinstallFeature  MsiReinstallFeatureA
+宏定义 MsiReinstallFeatureFromDescriptor  MsiReinstallFeatureFromDescriptorA
+宏定义 MsiReinstallProduct  MsiReinstallProductA
+宏定义 MsiRemovePatches  MsiRemovePatchesA
+宏定义 MsiSequence  MsiSequenceA
+宏定义 MsiSetComponentState  MsiSetComponentStateA
+宏定义 MsiSetExternalUI  MsiSetExternalUIA
+宏定义 MsiSetFeatureAttributes  MsiSetFeatureAttributesA
+宏定义 MsiSetFeatureState  MsiSetFeatureStateA
+宏定义 MsiSetProperty  MsiSetPropertyA
+宏定义 MsiSetTargetPath  MsiSetTargetPathA
+宏定义 MsiSourceListAddMediaDisk  MsiSourceListAddMediaDiskA
+宏定义 MsiSourceListAddSource  MsiSourceListAddSourceA
+宏定义 MsiSourceListAddSourceEx  MsiSourceListAddSourceExA
+宏定义 MsiSourceListClearAll  MsiSourceListClearAllA
+宏定义 MsiSourceListClearAllEx  MsiSourceListClearAllExA
+宏定义 MsiSourceListClearMediaDisk  MsiSourceListClearMediaDiskA
+宏定义 MsiSourceListClearSource  MsiSourceListClearSourceA
+宏定义 MsiSourceListEnumMediaDisks  MsiSourceListEnumMediaDisksA
+宏定义 MsiSourceListEnumSources  MsiSourceListEnumSourcesA
+宏定义 MsiSourceListForceResolution  MsiSourceListForceResolutionA
+宏定义 MsiSourceListForceResolutionEx  MsiSourceListForceResolutionExA
+宏定义 MsiSourceListGetInfo  MsiSourceListGetInfoA
+宏定义 MsiSourceListSetInfo  MsiSourceListSetInfoA
+宏定义 MsiSummaryInfoGetProperty  MsiSummaryInfoGetPropertyA
+宏定义 MsiSummaryInfoSetProperty  MsiSummaryInfoSetPropertyA
+宏定义 MsiUseFeature  MsiUseFeatureA
+宏定义 MsiUseFeatureEx  MsiUseFeatureExA
+宏定义 MsiVerifyPackage  MsiVerifyPackageA
+宏定义 MsiViewGetError  MsiViewGetErrorA
+}

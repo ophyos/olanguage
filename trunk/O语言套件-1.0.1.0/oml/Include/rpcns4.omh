@@ -1,0 +1,89 @@
+引用段
+{
+函数 I_GetDefaultEntrySyntax()=>整数32;
+函数 I_RpcNsGetBuffer(整数32)=>整数32;
+函数 I_RpcNsNegotiateTransferSyntax(整数32)=>整数32;
+函数 I_RpcNsRaiseException(整数32,整数32)=>整数32;
+函数 I_RpcNsSendReceive(整数32,整数32)=>整数32;
+函数 I_RpcReBindBuffer(整数32)=>整数32;
+函数 RpcIfIdVectorFree(整数32)=>整数32;
+函数 RpcNsBindingExportA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingExportPnPA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingExportPnPW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingExportW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingImportBeginA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingImportBeginW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingImportDone(整数32)=>整数32;
+函数 RpcNsBindingImportNext(整数32,整数32)=>整数32;
+函数 RpcNsBindingLookupBeginA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingLookupBeginW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingLookupDone(整数32)=>整数32;
+函数 RpcNsBindingLookupNext(整数32,整数32)=>整数32;
+函数 RpcNsBindingSelect(整数32,整数32)=>整数32;
+函数 RpcNsBindingUnexportA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingUnexportPnPA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingUnexportPnPW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsBindingUnexportW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsEntryExpandNameA(整数32,整数32,整数32)=>整数32;
+函数 RpcNsEntryExpandNameW(整数32,整数32,整数32)=>整数32;
+函数 RpcNsEntryObjectInqBeginA(整数32,整数32,整数32)=>整数32;
+函数 RpcNsEntryObjectInqBeginW(整数32,整数32,整数32)=>整数32;
+函数 RpcNsEntryObjectInqDone(整数32)=>整数32;
+函数 RpcNsEntryObjectInqNext(整数32,整数32)=>整数32;
+函数 RpcNsGroupDeleteA(整数32,整数32)=>整数32;
+函数 RpcNsGroupDeleteW(整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrAddA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrAddW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrInqBeginA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrInqBeginW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrInqDone(整数32)=>整数32;
+函数 RpcNsGroupMbrInqNextA(整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrInqNextW(整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrRemoveA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsGroupMbrRemoveW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsMgmtBindingUnexportA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsMgmtBindingUnexportW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsMgmtEntryCreateA(整数32,整数32)=>整数32;
+函数 RpcNsMgmtEntryCreateW(整数32,整数32)=>整数32;
+函数 RpcNsMgmtEntryDeleteA(整数32,整数32)=>整数32;
+函数 RpcNsMgmtEntryDeleteW(整数32,整数32)=>整数32;
+函数 RpcNsMgmtEntryInqIfIdsA(整数32,整数32,整数32)=>整数32;
+函数 RpcNsMgmtEntryInqIfIdsW(整数32,整数32,整数32)=>整数32;
+函数 RpcNsMgmtHandleSetExpAge(整数32,整数32)=>整数32;
+函数 RpcNsMgmtInqExpAge(整数32)=>整数32;
+函数 RpcNsMgmtSetExpAge(整数32)=>整数32;
+函数 RpcNsProfileDeleteA(整数32,整数32)=>整数32;
+函数 RpcNsProfileDeleteW(整数32,整数32)=>整数32;
+函数 RpcNsProfileEltAddA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltAddW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltInqBeginA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltInqBeginW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltInqDone(整数32)=>整数32;
+函数 RpcNsProfileEltInqNextA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltInqNextW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltRemoveA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RpcNsProfileEltRemoveW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 RpcNsBindingExport  RpcNsBindingExportA
+宏定义 RpcNsBindingExportPnP  RpcNsBindingExportPnPA
+宏定义 RpcNsBindingImportBegin  RpcNsBindingImportBeginA
+宏定义 RpcNsBindingLookupBegin  RpcNsBindingLookupBeginA
+宏定义 RpcNsBindingUnexport  RpcNsBindingUnexportA
+宏定义 RpcNsBindingUnexportPnP  RpcNsBindingUnexportPnPA
+宏定义 RpcNsEntryExpandName  RpcNsEntryExpandNameA
+宏定义 RpcNsEntryObjectInqBegin  RpcNsEntryObjectInqBeginA
+宏定义 RpcNsGroupDelete  RpcNsGroupDeleteA
+宏定义 RpcNsGroupMbrAdd  RpcNsGroupMbrAddA
+宏定义 RpcNsGroupMbrInqBegin  RpcNsGroupMbrInqBeginA
+宏定义 RpcNsGroupMbrInqNext  RpcNsGroupMbrInqNextA
+宏定义 RpcNsGroupMbrRemove  RpcNsGroupMbrRemoveA
+宏定义 RpcNsMgmtBindingUnexport  RpcNsMgmtBindingUnexportA
+宏定义 RpcNsMgmtEntryCreate  RpcNsMgmtEntryCreateA
+宏定义 RpcNsMgmtEntryDelete  RpcNsMgmtEntryDeleteA
+宏定义 RpcNsMgmtEntryInqIfIds  RpcNsMgmtEntryInqIfIdsA
+宏定义 RpcNsProfileDelete  RpcNsProfileDeleteA
+宏定义 RpcNsProfileEltAdd  RpcNsProfileEltAddA
+宏定义 RpcNsProfileEltInqBegin  RpcNsProfileEltInqBeginA
+宏定义 RpcNsProfileEltInqNext  RpcNsProfileEltInqNextA
+宏定义 RpcNsProfileEltRemove  RpcNsProfileEltRemoveA
+}

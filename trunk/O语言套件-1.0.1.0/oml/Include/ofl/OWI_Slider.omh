@@ -1,0 +1,48 @@
+
+引用段
+{
+
+函数 Slider_SetLineSize(地址 pSlider,整数32 line);
+函数 Slider_GetLineSize(地址 pSlider)=>整数32;
+函数 Slider_SetPageSize(地址 pSlider,整数32 page);
+函数 Slider_GetPageSize(地址 pSlider)=>整数32;
+函数 Slider_SetPosition(地址 pSlider,整数32 pos);
+函数 Slider_GetPosition(地址 pSlider)=>整数32;
+函数 Slider_SetRangeMin(地址 pSlider,整数32 min);
+函数 Slider_GetRangeMin(地址 pSlider)=>整数32;
+函数 Slider_SetRangeMax(地址 pSlider,整数32 max);
+函数 Slider_GetRangeMax(地址 pSlider)=>整数32;
+函数 Slider_SetSelectStart(地址 pSlider,整数32 start);
+函数 Slider_GetSelectStart(地址 pSlider)=>整数32;
+函数 Slider_SetSelectEnd(地址 pSlider,整数32 end);
+函数 Slider_GetSelectEnd(地址 pSlider)=>整数32;
+函数 Slider_SetSliderSize(地址 pSlider,整数32 size);
+函数 Slider_GetSliderSize(地址 pSlider)=>整数32;
+函数 Slider_GetTickCount(地址 pSlider)=>整数32;
+函数 Slider_SetTickFrequency(地址 pSlider,整数32 freq);
+函数 Slider_SetToolTip(地址 pSlider,HWND tip);
+函数 Slider_SetToolTipSide(地址 pSlider,整数32 edge);
+函数 Slider_GetSliderRect(地址 pSlider,地址 rc);
+函数 Slider_GetChannelRect(地址 pSlider,地址 rc);
+函数 Slider_GetToolTip(地址 pSlider)=>HWND;
+
+//设置Trackbar的逻辑位置的有效范围(控件创建之后通常应当调用此函数来设置自己的有效范围)
+函数 Slider_SetRange(地址 pSlider,整数32 min,整数32 max);
+//选择Trackbar范围内的某一段，使之高亮显示(Trackbar的mCanSelect风格必须为true)
+函数 Slider_SetSelect(地址 pSlider,整数32 min,整数32 max);
+//清除以前设置的高亮选择段
+函数 Slider_ClearSelect(地址 pSlider);
+//在指定的逻辑位置显示一个Tick(系统自动创第一个和最后一个Tick，此函数只可创建中间位置的Tick)
+函数 Slider_SetTick(地址 pSlider,整数32 logicPos);
+//返回某个Tick的逻辑位置(逻辑位置必须在SetRange()所设定的范围)									 
+函数 Slider_GetTick(地址 pSlider,整数32 tick)=>整数32;
+//清除首尾之间的所有Tick(并不清除控件自动创建的第一个和最后一个Tick)
+函数 Slider_ClearAllTick(地址 pSlider);
+
+函数 Slider_DestroyControl(地址 pSlider);
+函数 Slider_GetClass(地址 pSlider)=>地址;
+函数 Slider_SetCaption(地址 pSlider,地址 string);
+函数 Slider_GetCaption(地址 pSlider)=>地址; 
+函数 Slider_RedrawControl(地址 pSlider,整数32 redraw);
+
+} 

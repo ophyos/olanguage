@@ -1,0 +1,428 @@
+
+//引用外部函数
+引用段
+{
+函数 AbortDoc(整数32)=>整数32;
+函数 AbortPath(整数32)=>逻辑;
+函数 AddFontMemResourceEx(整数32,整数32,整数32,整数32)=>句柄;
+函数 AddFontResourceA(整数32)=>整数32;
+函数 AddFontResourceExA(整数32,整数32,整数32)=>整数32;
+函数 AddFontResourceExW(整数32,整数32,整数32)=>整数32;
+函数 AddFontResourceW(整数32)=>整数32;
+函数 AngleArc(整数32,整数32,整数32,整数32,整数32,整数32)=>逻辑;
+函数 AnimatePalette(整数32,整数32,整数32,整数32)=>逻辑;
+函数 Arc(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>逻辑;
+函数 ArcTo(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>逻辑;
+函数 BeginPath(整数32)=>逻辑;
+函数 BitBlt(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>逻辑;
+函数 CancelDC(整数32)=>逻辑;
+函数 CheckColorsInGamut(整数32,整数32,整数32,整数32)=>逻辑;
+函数 ChoosePixelFormat(整数32,整数32)=>整数32;
+函数 Chord(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>逻辑;
+函数 CloseEnhMetaFile(整数32)=>整数32;
+函数 CloseFigure(整数32)=>逻辑;
+函数 CloseMetaFile(整数32)=>整数32;
+函数 ColorCorrectPalette(整数32,整数32,整数32,整数32)=>逻辑;
+函数 ColorMatchToTarget(整数32,整数32,整数32)=>逻辑;
+函数 CombineRgn(整数32,整数32,整数32,整数32)=>整数32;
+函数 CombineTransform(整数32,整数32,整数32)=>逻辑;
+函数 CopyEnhMetaFileA(整数32,整数32)=>整数32;
+函数 CopyEnhMetaFileW(整数32,整数32)=>整数32;
+函数 CopyMetaFileA(整数32,整数32)=>整数32;
+函数 CopyMetaFileW(整数32,整数32)=>整数32;
+函数 CreateBitmap(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateBitmapIndirect(整数32)=>整数32;
+函数 CreateBrushIndirect(整数32)=>整数32;
+函数 CreateColorSpaceA(整数32)=>整数32;
+函数 CreateColorSpaceW(整数32)=>整数32;
+函数 CreateCompatibleBitmap(整数32,整数32,整数32)=>整数32;
+函数 创建兼容设备环境:CreateCompatibleDC(整数32)=>整数32;
+函数 创建设备环境:CreateDCA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDCW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDIBPatternBrush(整数32,整数32)=>整数32;
+函数 CreateDIBPatternBrushPt(整数32,整数32)=>整数32;
+函数 CreateDIBSection(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDIBitmap(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDiscardableBitmap(整数32,整数32,整数32)=>整数32;
+函数 CreateEllipticRgn(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateEllipticRgnIndirect(整数32)=>整数32;
+函数 CreateEnhMetaFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateEnhMetaFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFontA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFontIndirectA(整数32)=>整数32;
+函数 CreateFontIndirectExA(整数32)=>整数32;
+函数 CreateFontIndirectExW(整数32)=>整数32;
+函数 CreateFontIndirectW(整数32)=>整数32;
+函数 CreateFontW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateHalftonePalette(整数32)=>整数32;
+函数 CreateHatchBrush(整数32,整数32)=>整数32;
+函数 CreateICA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateICW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateMetaFileA(整数32)=>整数32;
+函数 CreateMetaFileW(整数32)=>整数32;
+函数 CreatePalette(整数32)=>整数32;
+函数 CreatePatternBrush(整数32)=>整数32;
+函数 CreatePen(整数32,整数32,整数32)=>整数32;
+函数 CreatePenIndirect(整数32)=>整数32;
+函数 CreatePolyPolygonRgn(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePolygonRgn(整数32,整数32,整数32)=>整数32;
+函数 CreateRectRgn(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateRectRgnIndirect(整数32)=>整数32;
+函数 CreateRoundRectRgn(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateScalableFontResourceA(整数32,整数32,整数32,整数32)=>逻辑;
+函数 CreateScalableFontResourceW(整数32,整数32,整数32,整数32)=>逻辑;
+函数 创建实体笔刷:CreateSolidBrush(整数32)=>整数32;
+函数 DPtoLP(整数32,整数32,整数32)=>逻辑;
+函数 DeleteColorSpace(整数32)=>逻辑;
+函数 删除设备环境:DeleteDC(整数32)=>逻辑;
+函数 DeleteEnhMetaFile(整数32)=>逻辑;
+函数 DeleteMetaFile(整数32)=>整数32;
+函数 删除对象:DeleteObject(整数32)=>整数32;
+函数 DescribePixelFormat(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeviceCapabilitiesExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DeviceCapabilitiesExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawEscape(整数32,整数32,整数32,整数32)=>整数32;
+函数 Ellipse(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnableEUDC(整数32)=>整数32;
+函数 EndDoc(整数32)=>整数32;
+函数 EndFormPage(整数32)=>整数32;
+函数 EndPage(整数32)=>整数32;
+函数 EndPath(整数32)=>整数32;
+函数 EnumEnhMetaFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFontFamiliesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFontFamiliesExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFontFamiliesExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFontFamiliesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFontsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFontsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumICMProfilesA(整数32,整数32,整数32)=>整数32;
+函数 EnumICMProfilesW(整数32,整数32,整数32)=>整数32;
+函数 EnumMetaFile(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumObjects(整数32,整数32,整数32,整数32)=>整数32;
+函数 EqualRgn(整数32,整数32)=>整数32;
+函数 Escape(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EudcLoadLinkW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EudcUnloadLinkW(整数32,整数32)=>整数32;
+函数 ExcludeClipRect(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtCreatePen(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtCreateRegion(整数32,整数32,整数32)=>整数32;
+函数 ExtEscape(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 高级完全填充:ExtFloodFill(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtSelectClipRgn(整数32,整数32,整数32)=>整数32;
+函数 ExtTextOutA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtTextOutW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FillPath(整数32)=>整数32;
+函数 FillRgn(整数32,整数32,整数32)=>整数32;
+函数 FixBrushOrgEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 FlattenPath(整数32)=>整数32;
+函数 FloodFill(整数32,整数32,整数32,整数32)=>整数32;
+函数 FrameRgn(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiArtificialDecrementDriver(整数32,整数32)=>整数32;
+函数 GdiComment(整数32,整数32,整数32)=>整数32;
+函数 GdiDeleteSpoolFileHandle(整数32)=>整数32;
+函数 GdiEndDocEMF(整数32)=>整数32;
+函数 GdiEndPageEMF(整数32,整数32)=>整数32;
+函数 GdiFlush()=>整数32;
+函数 GdiGetBatchLimit()=>整数32;
+函数 GdiGetDC(整数32)=>整数32;
+函数 GdiGetDevmodeForPage(整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiGetPageCount(整数32)=>整数32;
+函数 GdiGetPageHandle(整数32,整数32,整数32)=>整数32;
+函数 GdiGetSpoolFileHandle(整数32,整数32,整数32)=>整数32;
+函数 GdiPlayDCScript(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiPlayEMF(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiPlayJournal(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiPlayPageEMF(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiPlayPrivatePageEMF(整数32,整数32,整数32)=>整数32;
+函数 GdiPlayScript(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GdiResetDCEMF(整数32,整数32)=>整数32;
+函数 GdiSetBatchLimit(整数32)=>整数32;
+函数 GdiStartDocEMF(整数32,整数32)=>整数32;
+函数 GdiStartPageEMF(整数32)=>整数32;
+函数 GetArcDirection(整数32)=>整数32;
+函数 GetAspectRatioFilterEx(整数32,整数32)=>整数32;
+函数 GetBitmapBits(整数32,整数32,整数32)=>整数32;
+函数 GetBitmapDimensionEx(整数32,整数32)=>整数32;
+函数 GetBkColor(整数32)=>整数32;
+函数 GetBkMode(整数32)=>整数32;
+函数 GetBoundsRect(整数32,整数32,整数32)=>整数32;
+函数 GetBrushOrgEx(整数32,整数32)=>整数32;
+函数 GetCharABCWidthsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharABCWidthsFloatA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharABCWidthsFloatW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharABCWidthsI(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharABCWidthsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidth32A(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidth32W(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidthA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidthFloatA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidthFloatW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidthI(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharWidthW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharacterPlacementA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCharacterPlacementW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetClipBox(整数32,整数32)=>整数32;
+函数 GetClipRgn(整数32,整数32)=>整数32;
+函数 GetColorAdjustment(整数32,整数32)=>整数32;
+函数 GetColorSpace(整数32)=>整数32;
+函数 GetCurrentObject(整数32,整数32)=>整数32;
+函数 GetCurrentPositionEx(整数32,整数32)=>整数32;
+函数 GetDCBrushColor(整数32)=>整数32;
+函数 GetDCOrgEx(整数32,整数32)=>整数32;
+函数 GetDCPenColor(整数32)=>整数32;
+函数 GetDIBColorTable(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDIBits(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDeviceCaps(整数32,整数32)=>整数32;
+函数 GetDeviceGammaRamp(整数32,整数32)=>整数32;
+函数 GetEnhMetaFileA(整数32)=>整数32;
+函数 GetEnhMetaFileBits(整数32,整数32,整数32)=>整数32;
+函数 GetEnhMetaFileDescriptionA(整数32,整数32,整数32)=>整数32;
+函数 GetEnhMetaFileDescriptionW(整数32,整数32,整数32)=>整数32;
+函数 GetEnhMetaFileHeader(整数32,整数32,整数32)=>整数32;
+函数 GetEnhMetaFilePaletteEntries(整数32,整数32,整数32)=>整数32;
+函数 GetEnhMetaFilePixelFormat(整数32,整数32,整数32)=>整数32;
+函数 GetEnhMetaFileW(整数32)=>整数32;
+函数 GetFontAssocStatus(整数32)=>整数32;
+函数 GetFontData(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFontLanguageInfo(整数32)=>整数32;
+函数 GetFontResourceInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFontUnicodeRanges(整数32,整数32)=>整数32;
+函数 GetGlyphIndicesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGlyphIndicesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGlyphOutlineA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGlyphOutlineW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGraphicsMode(整数32)=>整数32;
+函数 GetICMProfileA(整数32,整数32,整数32)=>整数32;
+函数 GetICMProfileW(整数32,整数32,整数32)=>整数32;
+函数 GetKerningPairsA(整数32,整数32,整数32)=>整数32;
+函数 GetKerningPairsW(整数32,整数32,整数32)=>整数32;
+函数 GetLayout(整数32)=>整数32;
+函数 GetLogColorSpaceA(整数32,整数32,整数32)=>整数32;
+函数 GetLogColorSpaceW(整数32,整数32,整数32)=>整数32;
+函数 GetMapMode(整数32)=>整数32;
+函数 GetMetaFileA(整数32)=>整数32;
+函数 GetMetaFileBitsEx(整数32,整数32,整数32)=>整数32;
+函数 GetMetaFileW(整数32)=>整数32;
+函数 GetMetaRgn(整数32,整数32)=>整数32;
+函数 GetMiterLimit(整数32,整数32)=>整数32;
+函数 GetNearestColor(整数32,整数32)=>整数32;
+函数 GetNearestPaletteIndex(整数32,整数32)=>整数32;
+函数 GetObjectA(整数32,整数32,整数32)=>整数32;
+函数 GetObjectType(整数32)=>整数32;
+函数 GetObjectW(整数32,整数32,整数32)=>整数32;
+函数 GetOutlineTextMetricsA(整数32,整数32,整数32)=>整数32;
+函数 GetOutlineTextMetricsW(整数32,整数32,整数32)=>整数32;
+函数 GetPaletteEntries(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPath(整数32,整数32,整数32,整数32)=>整数32;
+函数 获取象素:GetPixel(整数32,整数32,整数32)=>整数32;
+函数 GetPixelFormat(整数32)=>整数32;
+函数 GetPolyFillMode(整数32)=>整数32;
+函数 GetROP2(整数32)=>整数32;
+函数 GetRandomRgn(整数32,整数32,整数32)=>整数32;
+函数 GetRasterizerCaps(整数32,整数32)=>整数32;
+函数 GetRegionData(整数32,整数32,整数32)=>整数32;
+函数 GetRelAbs(整数32,整数32)=>整数32;
+函数 GetRgnBox(整数32,整数32)=>整数32;
+函数 获取固有对象:GetStockObject(整数32)=>整数32;
+函数 GetStretchBltMode(整数32)=>整数32;
+函数 GetSystemPaletteEntries(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSystemPaletteUse(整数32)=>整数32;
+函数 GetTextAlign(整数32)=>整数32;
+函数 GetTextCharacterExtra(整数32)=>整数32;
+函数 GetTextCharset(整数32)=>整数32;
+函数 GetTextCharsetInfo(整数32,整数32,整数32)=>整数32;
+函数 GetTextColor(整数32)=>整数32;
+函数 GetTextExtentExPointA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentExPointI(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentExPointW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentPoint32A(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentPoint32W(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentPointA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentPointI(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextExtentPointW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTextFaceA(整数32,整数32,整数32)=>整数32;
+函数 GetTextFaceW(整数32,整数32,整数32)=>整数32;
+函数 GetTextMetricsA(整数32,整数32)=>整数32;
+函数 GetTextMetricsW(整数32,整数32)=>整数32;
+函数 GetViewportExtEx(整数32,整数32)=>整数32;
+函数 GetViewportOrgEx(整数32,整数32)=>整数32;
+函数 GetWinMetaFileBits(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetWindowExtEx(整数32,整数32)=>整数32;
+函数 GetWindowOrgEx(整数32,整数32)=>整数32;
+函数 GetWorldTransform(整数32,整数32)=>整数32;
+函数 IntersectClipRect(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InvertRgn(整数32,整数32)=>整数32;
+函数 LPtoDP(整数32,整数32,整数32)=>整数32;
+函数 LineDDA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LineTo(整数32,整数32,整数32)=>整数32;
+函数 MaskBlt(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ModifyWorldTransform(整数32,整数32,整数32)=>整数32;
+函数 MoveToEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 OffsetClipRgn(整数32,整数32,整数32)=>整数32;
+函数 OffsetRgn(整数32,整数32,整数32)=>整数32;
+函数 OffsetViewportOrgEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 OffsetWindowOrgEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 PaintRgn(整数32,整数32)=>整数32;
+函数 PatBlt(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PathToRegion(整数32)=>整数32;
+函数 Pie(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PlayEnhMetaFile(整数32,整数32,整数32)=>整数32;
+函数 PlayEnhMetaFileRecord(整数32,整数32,整数32,整数32)=>整数32;
+函数 PlayMetaFile(整数32,整数32)=>整数32;
+函数 PlayMetaFileRecord(整数32,整数32,整数32,整数32)=>整数32;
+函数 PlgBlt(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PolyBezier(整数32,整数32,整数32)=>整数32;
+函数 PolyBezierTo(整数32,整数32,整数32)=>整数32;
+函数 PolyDraw(整数32,整数32,整数32,整数32)=>整数32;
+函数 PolyPolygon(整数32,整数32,整数32,整数32)=>整数32;
+函数 PolyPolyline(整数32,整数32,整数32,整数32)=>整数32;
+函数 PolyTextOutA(整数32,整数32,整数32)=>整数32;
+函数 PolyTextOutW(整数32,整数32,整数32)=>整数32;
+函数 Polygon(整数32,整数32,整数32)=>整数32;
+函数 Polyline(整数32,整数32,整数32)=>整数32;
+函数 PolylineTo(整数32,整数32,整数32)=>整数32;
+函数 PtInRegion(整数32,整数32,整数32)=>整数32;
+函数 PtVisible(整数32,整数32,整数32)=>整数32;
+函数 RealizePalette(整数32)=>整数32;
+函数 RectInRegion(整数32,整数32)=>整数32;
+函数 RectVisible(整数32,整数32)=>整数32;
+函数 Rectangle(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RemoveFontMemResourceEx(整数32)=>整数32;
+函数 RemoveFontResourceA(整数32)=>整数32;
+函数 RemoveFontResourceExA(整数32,整数32,整数32)=>整数32;
+函数 RemoveFontResourceExW(整数32,整数32,整数32)=>整数32;
+函数 RemoveFontResourceW(整数32)=>整数32;
+函数 ResetDCA(整数32,整数32)=>整数32;
+函数 ResetDCW(整数32,整数32)=>整数32;
+函数 ResizePalette(整数32,整数32)=>整数32;
+函数 RestoreDC(整数32,整数32)=>整数32;
+函数 RoundRect(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaveDC(整数32)=>整数32;
+函数 ScaleViewportExtEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScaleWindowExtEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SelectBrushLocal(整数32,整数32)=>整数32;
+函数 SelectClipPath(整数32,整数32)=>整数32;
+函数 SelectClipRgn(整数32,整数32)=>整数32;
+函数 SelectFontLocal(整数32,整数32)=>整数32;
+函数 选择对象:SelectObject(整数32,整数32)=>整数32;
+函数 SelectPalette(整数32,整数32,整数32)=>整数32;
+函数 SetAbortProc(整数32,整数32)=>整数32;
+函数 SetArcDirection(整数32,整数32)=>整数32;
+函数 SetBitmapBits(整数32,整数32,整数32)=>整数32;
+函数 SetBitmapDimensionEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetBkColor(整数32,整数32)=>整数32;
+函数 SetBkMode(整数32,整数32)=>整数32;
+函数 SetBoundsRect(整数32,整数32,整数32)=>整数32;
+函数 SetBrushOrgEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetColorAdjustment(整数32,整数32)=>整数32;
+函数 SetColorSpace(整数32,整数32)=>整数32;
+函数 SetDCBrushColor(整数32,整数32)=>整数32;
+函数 SetDCPenColor(整数32,整数32)=>整数32;
+函数 SetDIBColorTable(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetDIBits(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetDIBitsToDevice(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetDeviceGammaRamp(整数32,整数32)=>整数32;
+函数 SetEnhMetaFileBits(整数32,整数32)=>整数32;
+函数 SetFontEnumeration(整数32)=>整数32;
+函数 SetGraphicsMode(整数32,整数32)=>整数32;
+函数 SetICMMode(整数32,整数32)=>整数32;
+函数 SetICMProfileA(整数32,整数32)=>整数32;
+函数 SetICMProfileW(整数32,整数32)=>整数32;
+函数 SetLayout(整数32,整数32)=>整数32;
+函数 SetMagicColors(整数32,整数32,整数32)=>整数32;
+函数 SetMapMode(整数32,整数32)=>整数32;
+函数 SetMapperFlags(整数32,整数32)=>整数32;
+函数 SetMetaFileBitsEx(整数32,整数32)=>整数32;
+函数 SetMetaRgn(整数32)=>整数32;
+函数 SetMiterLimit(整数32,整数32,整数32)=>整数32;
+函数 SetPaletteEntries(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPixel(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPixelFormat(整数32,整数32,整数32)=>整数32;
+函数 SetPixelV(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPolyFillMode(整数32,整数32)=>整数32;
+函数 SetROP2(整数32,整数32)=>整数32;
+函数 SetRectRgn(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetRelAbs(整数32,整数32)=>整数32;
+函数 SetStretchBltMode(整数32,整数32)=>整数32;
+函数 SetSystemPaletteUse(整数32,整数32)=>整数32;
+函数 SetTextAlign(整数32,整数32)=>整数32;
+函数 SetTextCharacterExtra(整数32,整数32)=>整数32;
+函数 SetTextColor(整数32,整数32)=>整数32;
+函数 SetTextJustification(整数32,整数32,整数32)=>整数32;
+函数 SetViewportExtEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetViewportOrgEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWinMetaFileBits(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWindowExtEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWindowOrgEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWorldTransform(整数32,整数32)=>整数32;
+函数 StartDocA(整数32,整数32)=>整数32;
+函数 StartDocW(整数32,整数32)=>整数32;
+函数 StartFormPage(整数32)=>整数32;
+函数 StartPage(整数32)=>整数32;
+函数 StretchBlt(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StretchDIBits(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StrokeAndFillPath(整数32)=>整数32;
+函数 StrokePath(整数32)=>整数32;
+函数 SwapBuffers(整数32)=>整数32;
+函数 TextOutA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TextOutW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TranslateCharsetInfo(整数32,整数32,整数32)=>整数32;
+函数 UnrealizeObject(整数32)=>整数32;
+函数 UpdateColors(整数32)=>整数32;
+函数 UpdateICMRegKeyA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UpdateICMRegKeyW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WidenPath(整数32)=>整数32;
+函数 gdiPlaySpoolStream(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+
+宏定义 AddFontResource  AddFontResourceA
+宏定义 AddFontResourceEx  AddFontResourceExA
+宏定义 CopyEnhMetaFile  CopyEnhMetaFileA
+宏定义 CopyMetaFile  CopyMetaFileA
+宏定义 CreateColorSpace  CreateColorSpaceA
+宏定义 CreateDC  CreateDCA
+宏定义 CreateEnhMetaFile  CreateEnhMetaFileA
+宏定义 CreateFont  CreateFontA
+宏定义 CreateFontIndirect  CreateFontIndirectA
+宏定义 CreateFontIndirectEx  CreateFontIndirectExA
+宏定义 CreateIC  CreateICA
+宏定义 CreateMetaFile  CreateMetaFileA
+宏定义 CreateScalableFontResource  CreateScalableFontResourceA
+宏定义 DeviceCapabilitiesEx  DeviceCapabilitiesExA
+宏定义 EnumFontFamilies  EnumFontFamiliesA
+宏定义 EnumFontFamiliesEx  EnumFontFamiliesExA
+宏定义 EnumFonts  EnumFontsA
+宏定义 EnumICMProfiles  EnumICMProfilesA
+宏定义 ExtTextOut  ExtTextOutA
+宏定义 GetCharABCWidths  GetCharABCWidthsA
+宏定义 GetCharABCWidthsFloat  GetCharABCWidthsFloatA
+宏定义 GetCharWidth32  GetCharWidth32A
+宏定义 GetCharWidth  GetCharWidthA
+宏定义 GetCharWidthFloat  GetCharWidthFloatA
+宏定义 GetCharacterPlacement  GetCharacterPlacementA
+宏定义 GetEnhMetaFile  GetEnhMetaFileA
+宏定义 GetEnhMetaFileDescription  GetEnhMetaFileDescriptionA
+宏定义 GetGlyphIndices  GetGlyphIndicesA
+宏定义 GetGlyphOutline  GetGlyphOutlineA
+宏定义 GetICMProfile  GetICMProfileA
+宏定义 GetKerningPairs  GetKerningPairsA
+宏定义 GetLogColorSpace  GetLogColorSpaceA
+宏定义 GetMetaFile  GetMetaFileA
+宏定义 GetObject  GetObjectA
+宏定义 GetOutlineTextMetrics  GetOutlineTextMetricsA
+宏定义 GetTextExtentExPoint  GetTextExtentExPointA
+宏定义 GetTextExtentPoint32  GetTextExtentPoint32A
+宏定义 GetTextExtentPoint  GetTextExtentPointA
+宏定义 GetTextFace  GetTextFaceA
+宏定义 GetTextMetrics  GetTextMetricsA
+宏定义 LineDD  LineDDA
+宏定义 PolyTextOut  PolyTextOutA
+宏定义 RemoveFontResource  RemoveFontResourceA
+宏定义 RemoveFontResourceEx  RemoveFontResourceExA
+宏定义 ResetDC  ResetDCA
+宏定义 SetICMProfile  SetICMProfileA
+宏定义 StartDoc  StartDocA
+宏定义 TextOut  TextOutA
+宏定义 UpdateICMRegKey  UpdateICMRegKeyA
+
+}

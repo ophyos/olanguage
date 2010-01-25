@@ -1,0 +1,15 @@
+引用段
+{
+函数 BrowseForGPO(整数32)=>整数32;
+函数 CreateGPOLink(整数32,整数32,整数32)=>整数32;
+函数 CreateRSOPQuery(整数32,整数32)=>整数32;
+函数 DeleteAllGPOLinks(整数32)=>整数32;
+函数 DeleteGPOLink(整数32,整数32)=>整数32;
+函数 ExportRSoPData(整数32,整数32)=>整数32;
+函数 FreeRSOPQuery(整数32)=>整数32;
+函数 FreeRSOPQueryResults(整数32,整数32)=>整数32;
+函数 ImportRSoPData(整数32,整数32)=>整数32;
+函数 RunRSOPQuery(整数32,整数32,整数32)=>整数32;
+函数 SetSysvolSecurityFromDSSecurity(整数32,整数32,整数32)=>整数32;
+
+}

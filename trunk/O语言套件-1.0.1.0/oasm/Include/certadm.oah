@@ -1,0 +1,24 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCertSrvBackupClose(Ë«×Ö)
+¡ÒCertSrvBackupEnd(Ë«×Ö)
+¡ÒCertSrvBackupFree(Ë«×Ö)
+¡ÒCertSrvBackupGetBackupLogsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvBackupGetDatabaseNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvBackupGetDynamicFileListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvBackupOpenFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvBackupPrepareW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvBackupRead(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvBackupTruncateLogs(Ë«×Ö)
+¡ÒCertSrvIsServerOnlineW(Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvRestoreEnd(Ë«×Ö)
+¡ÒCertSrvRestoreGetDatabaseLocationsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvRestorePrepareW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvRestoreRegisterComplete(Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvRestoreRegisterThroughFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvRestoreRegisterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCertSrvServerControlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

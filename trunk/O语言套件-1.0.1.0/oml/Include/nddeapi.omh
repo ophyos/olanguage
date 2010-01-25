@@ -1,0 +1,43 @@
+引用段
+{
+函数 NDdeGetErrorStringA(整数32,整数32,整数32)=>整数32;
+函数 NDdeGetErrorStringW(整数32,整数32,整数32)=>整数32;
+函数 NDdeGetShareSecurityA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeGetShareSecurityW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeGetTrustedShareA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeGetTrustedShareW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeIsValidAppTopicListA(整数32)=>整数32;
+函数 NDdeIsValidAppTopicListW(整数32)=>整数32;
+函数 NDdeIsValidShareNameA(整数32)=>整数32;
+函数 NDdeIsValidShareNameW(整数32)=>整数32;
+函数 NDdeSetShareSecurityA(整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeSetShareSecurityW(整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeSetTrustedShareA(整数32,整数32,整数32)=>整数32;
+函数 NDdeSetTrustedShareW(整数32,整数32,整数32)=>整数32;
+函数 NDdeShareAddA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareAddW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareDelA(整数32,整数32,整数32)=>整数32;
+函数 NDdeShareDelW(整数32,整数32,整数32)=>整数32;
+函数 NDdeShareEnumA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareEnumW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareGetInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareGetInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareSetInfoA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeShareSetInfoW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeTrustedShareEnumA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NDdeTrustedShareEnumW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 NDdeGetErrorString  NDdeGetErrorStringA
+宏定义 NDdeGetShareSecurity  NDdeGetShareSecurityA
+宏定义 NDdeGetTrustedShare  NDdeGetTrustedShareA
+宏定义 NDdeIsValidAppTopicList  NDdeIsValidAppTopicListA
+宏定义 NDdeIsValidShareName  NDdeIsValidShareNameA
+宏定义 NDdeSetShareSecurity  NDdeSetShareSecurityA
+宏定义 NDdeSetTrustedShare  NDdeSetTrustedShareA
+宏定义 NDdeShareAdd  NDdeShareAddA
+宏定义 NDdeShareDel  NDdeShareDelA
+宏定义 NDdeShareEnum  NDdeShareEnumA
+宏定义 NDdeShareGetInfo  NDdeShareGetInfoA
+宏定义 NDdeShareSetInfo  NDdeShareSetInfoA
+宏定义 NDdeTrustedShareEnum  NDdeTrustedShareEnumA
+}

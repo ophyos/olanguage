@@ -1,0 +1,38 @@
+//O中间语言代码文件
+
+.包含文<*.\视窗32.omh>
+.包含文<*.\winmm.omh>
+.引用库<*.\winmm.lib>
+  
+
+函数 播放MP3:PlayMp3(句柄 窗口句柄,地址 MP3文件路径)=>(逻辑,句柄)
+{
+    MCI_OPEN_PARMS stMCIOpen;    
+    MCI_PLAY_PARMS stMCIPlay;
+
+   整数 命令状态;
+   句柄 设备句柄;
+   
+   stMCIOpen.lpstrDeviceType = 取地址 "MPEGVideo";   
+   stMCIOpen.lpstrElementName = MP3文件路径;
+   mciSendCommand(0,MCI_OPEN,MCI_OPEN_TYPE | MCI_OPEN_ELEMENT,取地址 stMCIOpen);
+   设备句柄 = stMCIOpen.wDeviceID;
+   stMCIPlay.dwCallback = 窗口句柄;   
+   命令状态 = mciSendCommand(设备句柄,MCI_PLAY,MCI_NOTIFY,取地址 stMCIPlay);
+   如果(命令状态 == 0)
+   {
+       返回(真,设备句柄);
+   }   
+   
+   返回(假,设备句柄);
+}
+
+函数 停止播放MP3:StopPlayMp3(句柄 窗口句柄,句柄 设备句柄)
+{
+     MCI_GENERIC_PARMS stMCIStop;
+        
+     stMCIStop.dwCallback = 窗口句柄;        
+     mciSendCommand(设备句柄,MCI_STOP,MCI_NOTIFY,取地址 stMCIStop);
+     mciSendCommand(设备句柄,MCI_CLOSE,MCI_NOTIFY,取地址 stMCIStop);
+}
+

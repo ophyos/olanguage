@@ -1,0 +1,151 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAVIBuildFilterA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIBuildFilter  AVIBuildFilterA
+
+¡ÒAVIBuildFilterW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIClearClipboard()
+¡ÒAVIFileAddRef(Ë«×Ö)
+¡ÒAVIFileCreateStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIFileCreateStream  AVIFileCreateStreamA
+
+¡ÒAVIFileCreateStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileEndRecord(Ë«×Ö)
+¡ÒAVIFileExit()
+¡ÒAVIFileGetStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIFileInfo  AVIFileInfoA
+
+¡ÒAVIFileInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileInit()
+¡ÒAVIFileOpenA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIFileOpen  AVIFileOpenA
+
+¡ÒAVIFileOpenW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileReadData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileRelease(Ë«×Ö)
+¡ÒAVIFileWriteData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIGetFromClipboard(Ë«×Ö)
+¡ÒAVIMakeCompressedStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIMakeFileFromStreams(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIMakeStreamFromClipboard(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIPutFileOnClipboard(Ë«×Ö)
+¡Ò:C AVISaveA(Ë«×Ö, ..)
+¡ßAVISave  AVISaveA
+
+¡ÒAVISaveOptions(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVISaveOptionsFree(Ë«×Ö,Ë«×Ö)
+¡ÒAVISaveVA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVISaveV  AVISaveVA
+
+¡ÒAVISaveVW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C AVISaveW(Ë«×Ö, ..)
+¡ÒAVIStreamAddRef(Ë«×Ö)
+¡ÒAVIStreamBeginStreaming(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamEndStreaming(Ë«×Ö)
+¡ÒAVIStreamFindSample(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamGetFrame(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamGetFrameClose(Ë«×Ö)
+¡ÒAVIStreamGetFrameOpen(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIStreamInfo  AVIStreamInfoA
+
+¡ÒAVIStreamInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamLength(Ë«×Ö)
+¡ÒAVIStreamOpenFromFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIStreamOpenFromFile  AVIStreamOpenFromFileA
+
+¡ÒAVIStreamOpenFromFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamRead(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamReadData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamReadFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamRelease(Ë«×Ö)
+¡ÒAVIStreamSampleToTime(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamSetFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamStart(Ë«×Ö)
+¡ÒAVIStreamTimeToSample(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamWrite(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamWriteData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAppCleanup(Ë«×Ö)
+¡ÒCreateEditableStream(Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibBegin(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibChangePalette(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibClose(Ë«×Ö)
+¡ÒDrawDibDraw(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibEnd(Ë«×Ö)
+¡ÒDrawDibGetBuffer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibGetPalette(Ë«×Ö)
+¡ÒDrawDibOpen()
+¡ÒDrawDibProfileDisplay(Ë«×Ö)
+¡ÒDrawDibRealize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibSetPalette(Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibStart(Ë«×Ö,Ë«×Ö)
+¡ÒDrawDibStop(Ë«×Ö)
+¡ÒDrawDibTime(Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamClone(Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamCopy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamCut(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamPaste(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamSetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEditStreamSetInfo  EditStreamSetInfoA
+
+¡ÒEditStreamSetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamSetNameA(Ë«×Ö,Ë«×Ö)
+¡ßEditStreamSetName  EditStreamSetNameA
+
+¡ÒEditStreamSetNameW(Ë«×Ö,Ë«×Ö)
+¡ÒGetOpenFileNamePreviewA(Ë«×Ö)
+¡ßGetOpenFileNamePreview  GetOpenFileNamePreviewA
+
+¡ÒGetOpenFileNamePreviewW(Ë«×Ö)
+¡ÒGetSaveFileNamePreviewA(Ë«×Ö)
+¡ßGetSaveFileNamePreview  GetSaveFileNamePreviewA
+
+¡ÒGetSaveFileNamePreviewW(Ë«×Ö)
+¡ÒICClose(Ë«×Ö)
+¡Ò:C ICCompress(Ë«×Ö, ..)
+¡ÒICCompressorChoose(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICCompressorFree(Ë«×Ö)
+¡Ò:C ICDecompress(Ë«×Ö, ..)
+¡Ò:C ICDraw(Ë«×Ö, ..)
+¡Ò:C ICDrawBegin(Ë«×Ö, ..)
+¡ÒICGetDisplayFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICGetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICImageCompress(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICImageDecompress(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICInstall(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICLocate(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICMThunk32(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICOpenFunction(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICRemove(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICSendMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICSeqCompressFrame(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒICSeqCompressFrameEnd(Ë«×Ö)
+¡ÒICSeqCompressFrameStart(Ë«×Ö,Ë«×Ö)
+¡Ò:C IID_IAVIEditStream(Ë«×Ö, ..)
+¡Ò:C IID_IAVIFile(Ë«×Ö, ..)
+¡Ò:C IID_IAVIStream(Ë«×Ö, ..)
+¡Ò:C IID_IGetFrame(Ë«×Ö, ..)
+¡Ò:C MCIWndCreateA(Ë«×Ö, ..)
+¡ßMCIWndCreate  MCIWndCreateA
+
+¡Ò:C MCIWndCreateW(Ë«×Ö, ..)
+¡Ò:C MCIWndRegisterClass(Ë«×Ö, ..)
+¡ÒStretchDIB(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVideoForWindowsVersion()
+¡ÒcapCreateCaptureWindowA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßcapCreateCaptureWindow  capCreateCaptureWindowA
+
+¡ÒcapCreateCaptureWindowW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒcapGetDriverDescriptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßcapGetDriverDescription  capGetDriverDescriptionA
+
+¡ÒcapGetDriverDescriptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒvideoThunk32(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

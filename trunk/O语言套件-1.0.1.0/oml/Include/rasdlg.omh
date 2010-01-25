@@ -1,0 +1,48 @@
+引用段
+{
+函数 DwTerminalDlg(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetRasDialOutProtocols()=>整数32;
+函数 RasAutodialDisableDlgA(整数32)=>整数32;
+函数 RasAutodialDisableDlgW(整数32)=>整数32;
+函数 RasAutodialQueryDlgA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasAutodialQueryDlgW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasDialDlgA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasDialDlgW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasEntryDlgA(整数32,整数32,整数32)=>整数32;
+函数 RasEntryDlgW(整数32,整数32,整数32)=>整数32;
+函数 RasMonitorDlgA(整数32,整数32)=>整数32;
+函数 RasMonitorDlgW(整数32,整数32)=>整数32;
+函数 RasPhonebookDlgA(整数32,整数32,整数32)=>整数32;
+函数 RasPhonebookDlgW(整数32,整数32,整数32)=>整数32;
+函数 RasSrvAddPropPages(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSrvAddWizPages(整数32,整数32,整数32)=>整数32;
+函数 RasSrvAllowConnectionsConfig(整数32)=>整数32;
+函数 RasSrvCleanupService()=>整数32;
+函数 RasSrvEnumConnections(整数32,整数32,整数32)=>整数32;
+函数 RasSrvHangupConnection(整数32)=>整数32;
+函数 RasSrvInitializeService()=>整数32;
+函数 RasSrvIsConnectionConnected(整数32,整数32)=>整数32;
+函数 RasSrvIsICConfigured(整数32)=>整数32;
+函数 RasSrvIsServiceRunning(整数32)=>整数32;
+函数 RasSrvQueryShowIcon(整数32)=>整数32;
+函数 RasUserEnableManualDial(整数32,整数32,整数32)=>整数32;
+函数 RasUserGetManualDial(整数32,整数32,整数32)=>整数32;
+函数 RasUserPrefsDlg(整数32)=>整数32;
+函数 RasWizCreateNewEntry(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasWizGetNCCFlags(整数32,整数32,整数32)=>整数32;
+函数 RasWizGetSuggestedEntryName(整数32,整数32,整数32)=>整数32;
+函数 RasWizGetUserInputConnectionName(整数32,整数32)=>整数32;
+函数 RasWizIsEntryRenamable(整数32,整数32,整数32)=>整数32;
+函数 RasWizQueryMaxPageCount(整数32)=>整数32;
+函数 RasWizSetEntryName(整数32,整数32,整数32)=>整数32;
+函数 RouterEntryDlgA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterEntryDlgW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 RasAutodialDisableDlg  RasAutodialDisableDlgA
+宏定义 RasAutodialQueryDlg  RasAutodialQueryDlgA
+宏定义 RasDialDlg  RasDialDlgA
+宏定义 RasEntryDlg  RasEntryDlgA
+宏定义 RasMonitorDlg  RasMonitorDlgA
+宏定义 RasPhonebookDlg  RasPhonebookDlgA
+宏定义 RouterEntryDlg  RouterEntryDlgA
+}

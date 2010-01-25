@@ -1,0 +1,9 @@
+
+.包含文<*oml32.omh>
+.包含文<*视窗.omh>
+.包含文<*user32.omh>
+.包含文<*kernel32.omh>
+.包含文<*gdi32.omh>
+.引用库<*user32.lib>
+.引用库<*kernel32.lib>
+.引用库<*gdi32.lib>

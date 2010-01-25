@@ -1,0 +1,351 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒGetTapi16CallbackMsg(Ë«×Ö,Ë«×Ö)
+¡ÒLAddrParamsInited(Ë«×Ö)
+¡ÒLOpenDialAsst(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLocWizardDlgProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCAddProvider(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCConfigProvider(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetAvailableProviders(Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetDeviceFlags(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetLineInfo(Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetLineStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetPhoneInfo(Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetPhoneStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetProviderList(Ë«×Ö,Ë«×Ö)
+¡ÒMMCGetServerConfig(Ë«×Ö,Ë«×Ö)
+¡ÒMMCInitialize(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCRemoveProvider(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMMCSetLineInfo(Ë«×Ö,Ë«×Ö)
+¡ÒMMCSetPhoneInfo(Ë«×Ö,Ë«×Ö)
+¡ÒMMCSetServerConfig(Ë«×Ö,Ë«×Ö)
+¡ÒMMCShutdown(Ë«×Ö)
+¡ÒNonAsyncEventThread()
+¡ÒTAPIWndProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTUISPIDLLCallback(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒinternalConfig(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒinternalCreateDefLocation(Ë«×Ö)
+¡ÒinternalNewLocationW(Ë«×Ö)
+¡ÒinternalPerformance(Ë«×Ö)
+¡ÒinternalRemoveLocation(Ë«×Ö)
+¡ÒinternalRenameLocationW(Ë«×Ö,Ë«×Ö)
+¡ÒlineAccept(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineAddProviderA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineAddProvider  lineAddProviderA
+
+¡ÒlineAddProviderW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineAddToConference(Ë«×Ö,Ë«×Ö)
+¡ÒlineAgentSpecific(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineAnswer(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineBlindTransferA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineBlindTransfer  lineBlindTransferA
+
+¡ÒlineBlindTransferW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineClose(Ë«×Ö)
+¡ÒlineCompleteCall(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineCompleteTransfer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineConfigDialogA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineConfigDialog  lineConfigDialogA
+
+¡ÒlineConfigDialogEditA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineConfigDialogEdit  lineConfigDialogEditA
+
+¡ÒlineConfigDialogEditW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineConfigDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineConfigProvider(Ë«×Ö,Ë«×Ö)
+¡ÒlineCreateAgentA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineCreateAgent  lineCreateAgentA
+
+¡ÒlineCreateAgentSessionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineCreateAgentSession  lineCreateAgentSessionA
+
+¡ÒlineCreateAgentSessionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineCreateAgentW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineDeallocateCall(Ë«×Ö)
+¡ÒlineDevSpecific(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineDevSpecificFeature(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineDialA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineDial  lineDialA
+
+¡ÒlineDialW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineDrop(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineForwardA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineForward  lineForwardA
+
+¡ÒlineForwardW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGatherDigitsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGatherDigits  lineGatherDigitsA
+
+¡ÒlineGatherDigitsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGenerateDigitsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGenerateDigits  lineGenerateDigitsA
+
+¡ÒlineGenerateDigitsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGenerateTone(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAddressCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAddressCaps  lineGetAddressCapsA
+
+¡ÒlineGetAddressCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAddressIDA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAddressID  lineGetAddressIDA
+
+¡ÒlineGetAddressIDW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAddressStatusA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAddressStatus  lineGetAddressStatusA
+
+¡ÒlineGetAddressStatusW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentActivityListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAgentActivityList  lineGetAgentActivityListA
+
+¡ÒlineGetAgentActivityListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAgentCaps  lineGetAgentCapsA
+
+¡ÒlineGetAgentCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentGroupListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAgentGroupList  lineGetAgentGroupListA
+
+¡ÒlineGetAgentGroupListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentSessionInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentSessionList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAgentStatusA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAgentStatus  lineGetAgentStatusA
+
+¡ÒlineGetAgentStatusW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetAppPriorityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetAppPriority  lineGetAppPriorityA
+
+¡ÒlineGetAppPriorityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetCallInfoA(Ë«×Ö,Ë«×Ö)
+¡ßlineGetCallInfo  lineGetCallInfoA
+
+¡ÒlineGetCallInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒlineGetCallStatus(Ë«×Ö,Ë«×Ö)
+¡ÒlineGetConfRelatedCalls(Ë«×Ö,Ë«×Ö)
+¡ÒlineGetCountryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetCountry  lineGetCountryA
+
+¡ÒlineGetCountryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetDevCaps  lineGetDevCapsA
+
+¡ÒlineGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetDevConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetDevConfig  lineGetDevConfigA
+
+¡ÒlineGetDevConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetGroupListA(Ë«×Ö,Ë«×Ö)
+¡ßlineGetGroupList  lineGetGroupListA
+
+¡ÒlineGetGroupListW(Ë«×Ö,Ë«×Ö)
+¡ÒlineGetIDA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetID  lineGetIDA
+
+¡ÒlineGetIDW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetIconA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetIcon  lineGetIconA
+
+¡ÒlineGetIconW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetLineDevStatusA(Ë«×Ö,Ë«×Ö)
+¡ßlineGetLineDevStatus  lineGetLineDevStatusA
+
+¡ÒlineGetLineDevStatusW(Ë«×Ö,Ë«×Ö)
+¡ÒlineGetMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetNewCalls(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetNumRings(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetProviderListA(Ë«×Ö,Ë«×Ö)
+¡ßlineGetProviderList  lineGetProviderListA
+
+¡ÒlineGetProviderListW(Ë«×Ö,Ë«×Ö)
+¡ÒlineGetProxyStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetQueueInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetQueueListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetQueueList  lineGetQueueListA
+
+¡ÒlineGetQueueListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetRequestA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetRequest  lineGetRequestA
+
+¡ÒlineGetRequestW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetStatusMessages(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineGetTranslateCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineGetTranslateCaps  lineGetTranslateCapsA
+
+¡ÒlineGetTranslateCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineHandoffA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineHandoff  lineHandoffA
+
+¡ÒlineHandoffW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineHold(Ë«×Ö)
+¡ÒlineInitialize(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineInitializeExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineInitializeEx  lineInitializeExA
+
+¡ÒlineInitializeExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineMakeCallA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineMakeCall  lineMakeCallA
+
+¡ÒlineMakeCallW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineMonitorDigits(Ë«×Ö,Ë«×Ö)
+¡ÒlineMonitorMedia(Ë«×Ö,Ë«×Ö)
+¡ÒlineMonitorTones(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineNegotiateAPIVersion(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineNegotiateExtVersion(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineOpenA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineOpen  lineOpenA
+
+¡ÒlineOpenW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineParkA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlinePark  lineParkA
+
+¡ÒlineParkW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlinePickupA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlinePickup  linePickupA
+
+¡ÒlinePickupW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlinePrepareAddToConferenceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlinePrepareAddToConference  linePrepareAddToConferenceA
+
+¡ÒlinePrepareAddToConferenceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineProxyMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineProxyResponse(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineRedirectA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineRedirect  lineRedirectA
+
+¡ÒlineRedirectW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineRegisterRequestRecipient(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineReleaseUserUserInfo(Ë«×Ö)
+¡ÒlineRemoveFromConference(Ë«×Ö)
+¡ÒlineRemoveProvider(Ë«×Ö,Ë«×Ö)
+¡ÒlineSecureCall(Ë«×Ö)
+¡ÒlineSendUserUserInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAgentActivity(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAgentGroup(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAgentMeasurementPeriod(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAgentSessionState(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAgentState(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAgentStateEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAppPriorityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineSetAppPriority  lineSetAppPriorityA
+
+¡ÒlineSetAppPriorityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetAppSpecific(Ë«×Ö,Ë«×Ö)
+¡ÒlineSetCallData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetCallParams(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetCallPrivilege(Ë«×Ö,Ë«×Ö)
+¡ÒlineSetCallQualityOfService(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetCallTreatment(Ë«×Ö,Ë«×Ö)
+¡ÒlineSetCurrentLocation(Ë«×Ö,Ë«×Ö)
+¡ÒlineSetDevConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineSetDevConfig  lineSetDevConfigA
+
+¡ÒlineSetDevConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetLineDevStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetMediaControl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetMediaMode(Ë«×Ö,Ë«×Ö)
+¡ÒlineSetNumRings(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetQueueMeasurementPeriod(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetStatusMessages(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetTerminal(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetTollListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineSetTollList  lineSetTollListA
+
+¡ÒlineSetTollListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetupConferenceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineSetupConference  lineSetupConferenceA
+
+¡ÒlineSetupConferenceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineSetupTransferA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineSetupTransfer  lineSetupTransferA
+
+¡ÒlineSetupTransferW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineShutdown(Ë«×Ö)
+¡ÒlineSwapHold(Ë«×Ö,Ë«×Ö)
+¡ÒlineTranslateAddressA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineTranslateAddress  lineTranslateAddressA
+
+¡ÒlineTranslateAddressW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineTranslateDialogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineTranslateDialog  lineTranslateDialogA
+
+¡ÒlineTranslateDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒlineUncompleteCall(Ë«×Ö,Ë«×Ö)
+¡ÒlineUnhold(Ë«×Ö)
+¡ÒlineUnparkA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlineUnpark  lineUnparkA
+
+¡ÒlineUnparkW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneClose(Ë«×Ö)
+¡ÒphoneConfigDialogA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneConfigDialog  phoneConfigDialogA
+
+¡ÒphoneConfigDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneDevSpecific(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetButtonInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneGetButtonInfo  phoneGetButtonInfoA
+
+¡ÒphoneGetButtonInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneGetDevCaps  phoneGetDevCapsA
+
+¡ÒphoneGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetDisplay(Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetGain(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetHookSwitch(Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetIDA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneGetID  phoneGetIDA
+
+¡ÒphoneGetIDW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetIconA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneGetIcon  phoneGetIconA
+
+¡ÒphoneGetIconW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetLamp(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetRing(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetStatusA(Ë«×Ö,Ë«×Ö)
+¡ßphoneGetStatus  phoneGetStatusA
+
+¡ÒphoneGetStatusMessages(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetStatusW(Ë«×Ö,Ë«×Ö)
+¡ÒphoneGetVolume(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneInitialize(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneInitializeExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneInitializeEx  phoneInitializeExA
+
+¡ÒphoneInitializeExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneNegotiateAPIVersion(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneNegotiateExtVersion(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetButtonInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßphoneSetButtonInfo  phoneSetButtonInfoA
+
+¡ÒphoneSetButtonInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetDisplay(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetGain(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetHookSwitch(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetLamp(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetRing(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetStatusMessages(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneSetVolume(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒphoneShutdown(Ë«×Ö)
+¡ÒtapiGetLocationInfoA(Ë«×Ö,Ë«×Ö)
+¡ßtapiGetLocationInfo  tapiGetLocationInfoA
+
+¡ÒtapiGetLocationInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒtapiRequestDrop(Ë«×Ö,Ë«×Ö)
+¡ÒtapiRequestMakeCallA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßtapiRequestMakeCall  tapiRequestMakeCallA
+
+¡ÒtapiRequestMakeCallW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒtapiRequestMediaCallA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßtapiRequestMediaCall  tapiRequestMediaCallA
+
+¡ÒtapiRequestMediaCallW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

@@ -1,0 +1,25 @@
+引用段
+{
+函数 CMCheckColors(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCheckColorsInGamut(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCheckRGBs(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CMConvertColorNameToIndex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMConvertIndexToColorName(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCreateDeviceLinkProfile(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCreateMultiProfileTransform(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCreateProfile(整数32,整数32)=>整数32;
+函数 CMCreateProfileW(整数32,整数32)=>整数32;
+函数 CMCreateTransform(整数32,整数32,整数32)=>整数32;
+函数 CMCreateTransformExt(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCreateTransformExtW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMCreateTransformW(整数32,整数32,整数32)=>整数32;
+函数 CMDeleteTransform(整数32)=>整数32;
+函数 CMGetInfo(整数32)=>整数32;
+函数 CMGetNamedProfileInfo(整数32,整数32)=>整数32;
+函数 CMIsProfileValid(整数32,整数32)=>整数32;
+函数 CMTranslateColors(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CMTranslateRGB(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMTranslateRGBs(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CMTranslateRGBsExt(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+}

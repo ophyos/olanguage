@@ -1,0 +1,282 @@
+引用段
+{
+函数 CDefFolderMenu_Create2(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CDefFolderMenu_Create(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CallCPLEntry16(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckEscapesA(整数32,整数32)=>整数32;
+函数 CheckEscapesW(整数32,整数32)=>整数32;
+函数 CommandLineToArgvW(整数32,整数32)=>整数32;
+函数 DAD_AutoScroll(整数32,整数32,整数32)=>整数32;
+函数 DAD_DragEnterEx2(整数32,整数32,整数32,整数32)=>整数32;
+函数 DAD_DragEnterEx(整数32,整数32,整数32)=>整数32;
+函数 DAD_DragLeave()=>整数32;
+函数 DAD_DragMove(整数32,整数32)=>整数32;
+函数 DAD_SetDragImage(整数32,整数32)=>整数32;
+函数 DAD_ShowDragImage(整数32)=>整数32;
+函数 DoEnvironmentSubstA(整数32,整数32)=>整数32;
+函数 DoEnvironmentSubstW(整数32,整数32)=>整数32;
+函数 DragAcceptFiles(整数32,整数32)=>整数32;
+函数 DragFinish(整数32)=>整数32;
+函数 DragQueryFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DragQueryFileAorW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DragQueryFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DragQueryPoint(整数32,整数32)=>整数32;
+函数 DriveType(整数32)=>整数32;
+函数 DuplicateIcon(整数32,整数32)=>整数32;
+函数 ExtractAssociatedIconA(整数32,整数32,整数32)=>整数32;
+函数 ExtractAssociatedIconExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractAssociatedIconExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractAssociatedIconW(整数32,整数32,整数32)=>整数32;
+函数 ExtractIconA(整数32,整数32,整数32)=>整数32;
+函数 ExtractIconExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractIconExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractIconResInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractIconResInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractIconW(整数32,整数32,整数32)=>整数32;
+函数 ExtractVersionResource16W(整数32,整数32)=>整数32;
+函数 FindExeDlgProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindExecutableA(整数32,整数32,整数32)=>整数32;
+函数 FindExecutableW(整数32,整数32,整数32)=>整数32;
+函数 FreeIconList(整数32,整数32)=>整数32;
+函数 GetFileNameFromBrowse(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ILAppendID(整数32,整数32,整数32)=>整数32;
+函数 ILClone(整数32)=>整数32;
+函数 ILCloneFirst(整数32)=>整数32;
+函数 ILCombine(整数32,整数32)=>整数32;
+函数 ILCreateFromPathA(整数32)=>整数32;
+函数 ILCreateFromPathW(整数32)=>整数32;
+函数 ILFindChild(整数32,整数32)=>整数32;
+函数 ILFindLastID(整数32)=>整数32;
+函数 ILFree(整数32)=>整数32;
+函数 ILGetNext(整数32)=>整数32;
+函数 ILGetSize(整数32)=>整数32;
+函数 ILIsEqual(整数32,整数32)=>整数32;
+函数 ILIsParent(整数32,整数32,整数32)=>整数32;
+函数 ILLoadFromStream(整数32,整数32)=>整数32;
+函数 ILRemoveLastID(整数32)=>整数32;
+函数 ILSaveToStream(整数32,整数32)=>整数32;
+函数 InternalExtractIconListA(整数32,整数32,整数32)=>整数32;
+函数 InternalExtractIconListW(整数32,整数32,整数32)=>整数32;
+函数 IsLFNDriveA(整数32)=>整数32;
+函数 IsLFNDriveW(整数32)=>整数32;
+函数 IsNetDrive(整数32)=>整数32;
+函数 IsUserAnAdmin()=>整数32;
+函数 OpenRegStream(整数32,整数32,整数32,整数32)=>整数32;
+函数 PathCleanupSpec(整数32,整数32)=>整数32;
+函数 PathGetShortPath(整数32)=>整数32;
+函数 PathIsExe(整数32)=>整数32;
+函数 PathIsSlowA(整数32,整数32)=>整数32;
+函数 PathIsSlowW(整数32,整数32)=>整数32;
+函数 PathMakeUniqueName(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PathProcessCommand(整数32,整数32,整数32,整数32)=>整数32;
+函数 PathQualify(整数32)=>整数32;
+函数 PathResolve(整数32,整数32,整数32)=>整数32;
+函数 PathYetAnotherMakeUniqueName(整数32,整数32,整数32,整数32)=>整数32;
+函数 PickIconDlg(整数32,整数32,整数32,整数32)=>整数32;
+函数 PifMgr_CloseProperties(整数32,整数32)=>整数32;
+函数 PifMgr_GetProperties(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PifMgr_OpenProperties(整数32,整数32,整数32,整数32)=>整数32;
+函数 PifMgr_SetProperties(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadCabinetState(整数32,整数32)=>整数32;
+函数 RealDriveType(整数32,整数32)=>整数32;
+函数 RealShellExecuteA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RealShellExecuteExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RealShellExecuteExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RealShellExecuteW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegenerateUserEnvironment(整数32,整数32)=>整数32;
+函数 RestartDialog(整数32,整数32,整数32)=>整数32;
+函数 RestartDialogEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHAddFromPropSheetExtArray(整数32,整数32,整数32)=>整数32;
+函数 SHAddToRecentDocs(整数32,整数32)=>整数32;
+函数 SHAlloc(整数32)=>整数32;
+函数 SHAppBarMessage(整数32,整数32)=>整数32;
+函数 SHBindToParent(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHBrowseForFolderA(整数32)=>整数32;
+函数 SHBrowseForFolderW(整数32)=>整数32;
+函数 SHCLSIDFromString(整数32,整数32)=>整数32;
+函数 SHChangeNotification_Lock(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHChangeNotification_Unlock(整数32)=>整数32;
+函数 SHChangeNotify(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHChangeNotifyDeregister(整数32)=>整数32;
+函数 SHChangeNotifyRegister(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCloneSpecialIDList(整数32,整数32,整数32)=>整数32;
+函数 SHCoCreateInstance(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateDirectory(整数32,整数32)=>整数32;
+函数 SHCreateDirectoryExA(整数32,整数32,整数32)=>整数32;
+函数 SHCreateDirectoryExW(整数32,整数32,整数32)=>整数32;
+函数 SHCreateFileExtractIconW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateProcessAsUserW(整数32)=>整数32;
+函数 SHCreatePropSheetExtArray(整数32,整数32,整数32)=>整数32;
+函数 SHCreateQueryCancelAutoPlayMoniker(整数32)=>整数32;
+函数 SHCreateShellFolderView(整数32,整数32)=>整数32;
+函数 SHCreateShellFolderViewEx(整数32,整数32)=>整数32;
+函数 SHCreateShellItem(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateStdEnumFmtEtc(整数32,整数32,整数32)=>整数32;
+函数 SHDefExtractIconA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHDefExtractIconW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHDestroyPropSheetExtArray(整数32)=>整数32;
+函数 SHDoDragDrop(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHEmptyRecycleBinA(整数32,整数32,整数32)=>整数32;
+函数 SHEmptyRecycleBinW(整数32,整数32,整数32)=>整数32;
+函数 SHEnumerateUnreadMailAccountsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHExtractIconsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHFileOperationA(整数32)=>整数32;
+函数 SHFileOperationW(整数32)=>整数32;
+函数 SHFindFiles(整数32,整数32)=>整数32;
+函数 SHFind_InitMenuPopup(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHFlushClipboard()=>整数32;
+函数 SHFlushSFCache()=>整数32;
+函数 SHFormatDrive(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHFree(整数32)=>整数32;
+函数 SHFreeNameMappings(整数32)=>整数32;
+函数 SHGetAttributesFromDataObject(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetDataFromIDListA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetDataFromIDListW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetDesktopFolder(整数32)=>整数32;
+函数 SHGetDiskFreeSpaceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetDiskFreeSpaceExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetDiskFreeSpaceExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFileInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFileInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFolderLocation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFolderPathA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFolderPathAndSubDirA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFolderPathAndSubDirW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetFolderPathW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetIconOverlayIndexA(整数32,整数32)=>整数32;
+函数 SHGetIconOverlayIndexW(整数32,整数32)=>整数32;
+函数 SHGetImageList(整数32,整数32,整数32)=>整数32;
+函数 SHGetInstanceExplorer(整数32)=>整数32;
+函数 SHGetMalloc(整数32)=>整数32;
+函数 SHGetNewLinkInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetNewLinkInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetPathFromIDListA(整数32,整数32)=>整数32;
+函数 SHGetPathFromIDListW(整数32,整数32)=>整数32;
+函数 SHGetRealIDL(整数32,整数32,整数32)=>整数32;
+函数 SHGetSetFolderCustomSettingsW(整数32,整数32,整数32)=>整数32;
+函数 SHGetSetSettings(整数32,整数32,整数32)=>整数32;
+函数 SHGetSettings(整数32,整数32)=>整数32;
+函数 SHGetShellStyleHInstance()=>整数32;
+函数 SHGetSpecialFolderLocation(整数32,整数32,整数32)=>整数32;
+函数 SHGetSpecialFolderPathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetSpecialFolderPathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetUnreadMailCountW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHHandleUpdateImage(整数32)=>整数32;
+函数 SHILCreateFromPath(整数32,整数32,整数32)=>整数32;
+函数 SHInvokePrinterCommandA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHInvokePrinterCommandW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHIsFileAvailableOffline(整数32,整数32)=>整数32;
+函数 SHLimitInputEdit(整数32,整数32)=>整数32;
+函数 SHLoadInProc(整数32)=>整数32;
+函数 SHLoadNonloadedIconOverlayIdentifiers()=>整数32;
+函数 SHLoadOLE(整数32)=>整数32;
+函数 SHMapIDListToImageListIndexAsync(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHMapPIDLToSystemImageListIndex(整数32,整数32,整数32)=>整数32;
+函数 SHMultiFileProperties(整数32,整数32)=>整数32;
+函数 SHObjectProperties(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHOpenFolderAndSelectItems(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHOpenPropSheetW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHParseDisplayName(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHPathPrepareForWriteA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHPathPrepareForWriteW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHPropStgCreate(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHPropStgReadMultiple(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHPropStgWriteMultiple(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHQueryRecycleBinA(整数32,整数32)=>整数32;
+函数 SHQueryRecycleBinW(整数32,整数32)=>整数32;
+函数 SHReplaceFromPropSheetExtArray(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRestricted(整数32)=>整数32;
+函数 SHRunControlPanel(整数32,整数32)=>整数32;
+函数 SHSetInstanceExplorer(整数32)=>整数32;
+函数 SHSetLocalizedName(整数32,整数32,整数32)=>整数32;
+函数 SHSetUnreadMailCountW(整数32,整数32,整数32)=>整数32;
+函数 SHShellFolderView_Message(整数32,整数32,整数32)=>整数32;
+函数 SHSimpleIDListFromPath(整数32)=>整数32;
+函数 SHStartNetConnectionDialogW(整数32,整数32,整数32)=>整数32;
+函数 SHTestTokenMembership(整数32,整数32)=>整数32;
+函数 SHUpdateImageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHUpdateImageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHUpdateRecycleBinIcon()=>整数32;
+函数 SHValidateUNC(整数32,整数32,整数32)=>整数32;
+函数 SheChangeDirA(整数32)=>整数32;
+函数 SheChangeDirExA(整数32)=>整数32;
+函数 SheChangeDirExW(整数32)=>整数32;
+函数 SheChangeDirW(整数32)=>整数32;
+函数 SheConvertPathW(整数32,整数32,整数32)=>整数32;
+函数 SheFullPathA(整数32,整数32,整数32)=>整数32;
+函数 SheFullPathW(整数32,整数32,整数32)=>整数32;
+函数 SheGetCurDrive()=>整数32;
+函数 SheGetDirA(整数32,整数32)=>整数32;
+函数 SheGetDirExW(整数32,整数32,整数32)=>整数32;
+函数 SheGetDirW(整数32,整数32)=>整数32;
+函数 SheGetPathOffsetW(整数32)=>整数32;
+函数 SheRemoveQuotesA(整数32)=>整数32;
+函数 SheRemoveQuotesW(整数32)=>整数32;
+函数 SheSetCurDrive(整数32)=>整数32;
+函数 SheShortenPathA(整数32,整数32)=>整数32;
+函数 SheShortenPathW(整数32,整数32)=>整数32;
+函数 ShellAboutA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ShellAboutW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ShellExecuteA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ShellExecuteExA(整数32)=>整数32;
+函数 ShellExecuteExW(整数32)=>整数32;
+函数 ShellExecuteW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ShellHookProc(整数32,整数32,整数32)=>整数32;
+函数 C调用 ShellMessageBoxA(整数32, ..)=>整数32;
+函数 C调用 ShellMessageBoxW(整数32, ..)=>整数32;
+函数 Shell_GetCachedImageIndex(整数32,整数32,整数32)=>整数32;
+函数 Shell_GetImageLists(整数32,整数32)=>整数32;
+函数 Shell_MergeMenus(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 Shell_NotifyIconA(整数32,整数32)=>整数32;
+函数 Shell_NotifyIconW(整数32,整数32)=>整数32;
+函数 SignalFileOpen(整数32)=>整数32;
+函数 WOWShellExecute(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 Win32DeleteFile(整数32)=>整数32;
+函数 WriteCabinetState(整数32)=>整数32;
+
+宏定义 CheckEscapes  CheckEscapesA
+宏定义 DoEnvironmentSubst  DoEnvironmentSubstA
+宏定义 DragQueryFile  DragQueryFileA
+宏定义 ExtractAssociatedIcon  ExtractAssociatedIconA
+宏定义 ExtractAssociatedIconEx  ExtractAssociatedIconExA
+宏定义 ExtractIcon  ExtractIconA
+宏定义 ExtractIconEx  ExtractIconExA
+宏定义 ExtractIconResInfo  ExtractIconResInfoA
+宏定义 FindExecutable  FindExecutableA
+宏定义 ILCreateFromPath  ILCreateFromPathA
+宏定义 InternalExtractIconList  InternalExtractIconListA
+宏定义 IsLFNDrive  IsLFNDriveA
+宏定义 PathIsSlow  PathIsSlowA
+宏定义 RealShellExecute  RealShellExecuteA
+宏定义 RealShellExecuteEx  RealShellExecuteExA
+宏定义 SHBrowseForFolder  SHBrowseForFolderA
+宏定义 SHCreateDirectoryEx  SHCreateDirectoryExA
+宏定义 SHDefExtractIcon  SHDefExtractIconA
+宏定义 SHEmptyRecycleBin  SHEmptyRecycleBinA
+宏定义 SHFileOperation  SHFileOperationA
+宏定义 SHGetDataFromIDList  SHGetDataFromIDListA
+宏定义 SHGetDiskFreeSpace  SHGetDiskFreeSpaceA
+宏定义 SHGetDiskFreeSpaceEx  SHGetDiskFreeSpaceExA
+宏定义 SHGetFileInfo  SHGetFileInfoA
+宏定义 SHGetFolderPath  SHGetFolderPathA
+宏定义 SHGetFolderPathAndSubDir  SHGetFolderPathAndSubDirA
+宏定义 SHGetIconOverlayIndex  SHGetIconOverlayIndexA
+宏定义 SHGetNewLinkInfo  SHGetNewLinkInfoA
+宏定义 SHGetPathFromIDList  SHGetPathFromIDListA
+宏定义 SHGetSpecialFolderPath  SHGetSpecialFolderPathA
+宏定义 SHInvokePrinterCommand  SHInvokePrinterCommandA
+宏定义 SHPathPrepareForWrite  SHPathPrepareForWriteA
+宏定义 SHQueryRecycleBin  SHQueryRecycleBinA
+宏定义 SHUpdateImage  SHUpdateImageA
+宏定义 SheChangeDir  SheChangeDirA
+宏定义 SheChangeDirEx  SheChangeDirExA
+宏定义 SheFullPath  SheFullPathA
+宏定义 SheGetDir  SheGetDirA
+宏定义 SheRemoveQuotes  SheRemoveQuotesA
+宏定义 SheShortenPath  SheShortenPathA
+宏定义 ShellAbout  ShellAboutA
+宏定义 ShellExecute  ShellExecuteA
+宏定义 ShellExecuteEx  ShellExecuteExA
+宏定义 ShellMessageBox  ShellMessageBoxA
+宏定义 Shell_NotifyIcon  Shell_NotifyIconA
+}

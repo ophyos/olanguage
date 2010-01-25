@@ -1,0 +1,24 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒSRSetRestorePointA(Ë«×Ö,Ë«×Ö)
+¡ßSRSetRestorePoint  SRSetRestorePointA
+
+¡ÒSRSetRestorePointW(Ë«×Ö,Ë«×Ö)
+¡ÒSfcClose(Ë«×Ö)
+¡ÒSfcConnectToServer(Ë«×Ö)
+¡ÒSfcFileException(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSfcGetNextProtectedFile(Ë«×Ö,Ë«×Ö)
+¡ÒSfcInitProt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSfcInitiateScan(Ë«×Ö,Ë«×Ö)
+¡ÒSfcInstallProtectedFiles(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSfcIsFileProtected(Ë«×Ö,Ë«×Ö)
+¡ÒSfcTerminateWatcherThread()
+¡ÒSfcWLEventLogoff(Ë«×Ö)
+¡ÒSfcWLEventLogon(Ë«×Ö)
+¡ÒSfpDeleteCatalog(Ë«×Ö,Ë«×Ö)
+¡ÒSfpInstallCatalog(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSfpVerifyFile(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

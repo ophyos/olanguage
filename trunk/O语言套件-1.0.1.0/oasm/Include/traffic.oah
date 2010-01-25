@@ -1,0 +1,34 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒTcAddFilter(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcAddFlow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcCloseInterface(Ë«×Ö)
+¡ÒTcDeleteFilter(Ë«×Ö)
+¡ÒTcDeleteFlow(Ë«×Ö)
+¡ÒTcDeregisterClient(Ë«×Ö)
+¡ÒTcEnumerateFlows(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcEnumerateInterfaces(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcGetFlowNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTcGetFlowName  TcGetFlowNameA
+
+¡ÒTcGetFlowNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcModifyFlow(Ë«×Ö,Ë«×Ö)
+¡ÒTcOpenInterfaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTcOpenInterface  TcOpenInterfaceA
+
+¡ÒTcOpenInterfaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcQueryFlowA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTcQueryFlow  TcQueryFlowA
+
+¡ÒTcQueryFlowW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcQueryInterface(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcRegisterClient(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcSetFlowA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTcSetFlow  TcSetFlowA
+
+¡ÒTcSetFlowW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTcSetInterface(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

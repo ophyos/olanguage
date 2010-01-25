@@ -1,0 +1,94 @@
+引用段
+{
+函数 AcceptSecurityContext(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AcquireCredentialsHandleA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AcquireCredentialsHandleW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddCredentialsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddCredentialsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddSecurityPackageA(整数32,整数32)=>整数32;
+函数 AddSecurityPackageW(整数32,整数32)=>整数32;
+函数 ApplyControlToken(整数32,整数32)=>整数32;
+函数 CompleteAuthToken(整数32,整数32)=>整数32;
+函数 DecryptMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteSecurityContext(整数32)=>整数32;
+函数 DeleteSecurityPackageA(整数32)=>整数32;
+函数 DeleteSecurityPackageW(整数32)=>整数32;
+函数 EncryptMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumerateSecurityPackagesA(整数32,整数32)=>整数32;
+函数 EnumerateSecurityPackagesW(整数32,整数32)=>整数32;
+函数 ExportSecurityContext(整数32,整数32,整数32,整数32)=>整数32;
+函数 FreeContextBuffer(整数32)=>整数32;
+函数 FreeCredentialsHandle(整数32)=>整数32;
+函数 GetComputerObjectNameA(整数32,整数32,整数32)=>整数32;
+函数 GetComputerObjectNameW(整数32,整数32,整数32)=>整数32;
+函数 GetUserNameExA(整数32,整数32,整数32)=>整数32;
+函数 GetUserNameExW(整数32,整数32,整数32)=>整数32;
+函数 ImpersonateSecurityContext(整数32)=>整数32;
+函数 ImportSecurityContextA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImportSecurityContextW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InitSecurityInterfaceA()=>整数32;
+函数 InitSecurityInterfaceW()=>整数32;
+函数 InitializeSecurityContextA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InitializeSecurityContextW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaCallAuthenticationPackage(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaConnectUntrusted(整数32)=>整数32;
+函数 LsaDeregisterLogonProcess(整数32)=>整数32;
+函数 LsaEnumerateLogonSessions(整数32,整数32)=>整数32;
+函数 LsaFreeReturnBuffer(整数32)=>整数32;
+函数 LsaGetLogonSessionData(整数32,整数32)=>整数32;
+函数 LsaLogonUser(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaLookupAuthenticationPackage(整数32,整数32,整数32)=>整数32;
+函数 LsaRegisterLogonProcess(整数32,整数32,整数32)=>整数32;
+函数 LsaRegisterPolicyChangeNotification(整数32,整数32)=>整数32;
+函数 LsaUnregisterPolicyChangeNotification(整数32,整数32)=>整数32;
+函数 MakeSignature(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryContextAttributesA(整数32,整数32,整数32)=>整数32;
+函数 QueryContextAttributesW(整数32,整数32,整数32)=>整数32;
+函数 QueryCredentialsAttributesA(整数32,整数32,整数32)=>整数32;
+函数 QueryCredentialsAttributesW(整数32,整数32,整数32)=>整数32;
+函数 QuerySecurityContextToken(整数32,整数32)=>整数32;
+函数 QuerySecurityPackageInfoA(整数32,整数32)=>整数32;
+函数 QuerySecurityPackageInfoW(整数32,整数32)=>整数32;
+函数 RevertSecurityContext(整数32)=>整数32;
+函数 SaslAcceptSecurityContext(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaslEnumerateProfilesA(整数32,整数32)=>整数32;
+函数 SaslEnumerateProfilesW(整数32,整数32)=>整数32;
+函数 SaslGetContextOption(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaslGetProfilePackageA(整数32,整数32)=>整数32;
+函数 SaslGetProfilePackageW(整数32,整数32)=>整数32;
+函数 SaslIdentifyPackageA(整数32,整数32)=>整数32;
+函数 SaslIdentifyPackageW(整数32,整数32)=>整数32;
+函数 SaslInitializeSecurityContextA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaslInitializeSecurityContextW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaslSetContextOption(整数32,整数32,整数32,整数32)=>整数32;
+函数 SealMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetContextAttributesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetContextAttributesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetCredentialsAttributesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetCredentialsAttributesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 TranslateNameA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TranslateNameW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UnsealMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 VerifySignature(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 AcquireCredentialsHandle  AcquireCredentialsHandleA
+宏定义 AddCredentials  AddCredentialsA
+宏定义 AddSecurityPackage  AddSecurityPackageA
+宏定义 DeleteSecurityPackage  DeleteSecurityPackageA
+宏定义 EnumerateSecurityPackages  EnumerateSecurityPackagesA
+宏定义 GetComputerObjectName  GetComputerObjectNameA
+宏定义 GetUserNameEx  GetUserNameExA
+宏定义 ImportSecurityContext  ImportSecurityContextA
+宏定义 InitSecurityInterface  InitSecurityInterfaceA
+宏定义 InitializeSecurityContext  InitializeSecurityContextA
+宏定义 QueryContextAttributes  QueryContextAttributesA
+宏定义 QueryCredentialsAttributes  QueryCredentialsAttributesA
+宏定义 QuerySecurityPackageInfo  QuerySecurityPackageInfoA
+宏定义 SaslEnumerateProfiles  SaslEnumerateProfilesA
+宏定义 SaslGetProfilePackage  SaslGetProfilePackageA
+宏定义 SaslIdentifyPackage  SaslIdentifyPackageA
+宏定义 SaslInitializeSecurityContext  SaslInitializeSecurityContextA
+宏定义 SetContextAttributes  SetContextAttributesA
+宏定义 SetCredentialsAttributes  SetCredentialsAttributesA
+宏定义 TranslateName  TranslateNameA
+}

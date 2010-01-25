@@ -1,0 +1,83 @@
+引用段
+{
+函数 FaxAbort(整数32,整数32)=>整数32;
+函数 FaxAccessCheck(整数32,整数32)=>整数32;
+函数 FaxClose(整数32)=>整数32;
+函数 FaxCompleteJobParamsA(整数32,整数32)=>整数32;
+函数 FaxCompleteJobParamsW(整数32,整数32)=>整数32;
+函数 FaxConnectFaxServerA(整数32,整数32)=>整数32;
+函数 FaxConnectFaxServerW(整数32,整数32)=>整数32;
+函数 FaxEnableRoutingMethodA(整数32,整数32,整数32)=>整数32;
+函数 FaxEnableRoutingMethodW(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumGlobalRoutingInfoA(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumGlobalRoutingInfoW(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumJobsA(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumJobsW(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumPortsA(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumPortsW(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumRoutingMethodsA(整数32,整数32,整数32)=>整数32;
+函数 FaxEnumRoutingMethodsW(整数32,整数32,整数32)=>整数32;
+函数 FaxFreeBuffer(整数32)=>整数32;
+函数 FaxGetConfigurationA(整数32,整数32)=>整数32;
+函数 FaxGetConfigurationW(整数32,整数32)=>整数32;
+函数 FaxGetDeviceStatusA(整数32,整数32)=>整数32;
+函数 FaxGetDeviceStatusW(整数32,整数32)=>整数32;
+函数 FaxGetJobA(整数32,整数32,整数32)=>整数32;
+函数 FaxGetJobW(整数32,整数32,整数32)=>整数32;
+函数 FaxGetLoggingCategoriesA(整数32,整数32,整数32)=>整数32;
+函数 FaxGetLoggingCategoriesW(整数32,整数32,整数32)=>整数32;
+函数 FaxGetPageData(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxGetPortA(整数32,整数32)=>整数32;
+函数 FaxGetPortW(整数32,整数32)=>整数32;
+函数 FaxGetRoutingInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxGetRoutingInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxInitializeEventQueue(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxOpenPort(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxPrintCoverPageA(整数32,整数32)=>整数32;
+函数 FaxPrintCoverPageW(整数32,整数32)=>整数32;
+函数 FaxRegisterRoutingExtensionW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxRegisterServiceProviderW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSendDocumentA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSendDocumentForBroadcastA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSendDocumentForBroadcastW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSendDocumentW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSetConfigurationA(整数32,整数32)=>整数32;
+函数 FaxSetConfigurationW(整数32,整数32)=>整数32;
+函数 FaxSetGlobalRoutingInfoA(整数32,整数32)=>整数32;
+函数 FaxSetGlobalRoutingInfoW(整数32,整数32)=>整数32;
+函数 FaxSetJobA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSetJobW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSetLoggingCategoriesA(整数32,整数32,整数32)=>整数32;
+函数 FaxSetLoggingCategoriesW(整数32,整数32,整数32)=>整数32;
+函数 FaxSetPortA(整数32,整数32)=>整数32;
+函数 FaxSetPortW(整数32,整数32)=>整数32;
+函数 FaxSetRoutingInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxSetRoutingInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxStartPrintJobA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxStartPrintJobW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FaxUnregisterServiceProviderW(整数32)=>整数32;
+
+宏定义 FaxCompleteJobParams  FaxCompleteJobParamsA
+宏定义 FaxConnectFaxServer  FaxConnectFaxServerA
+宏定义 FaxEnableRoutingMethod  FaxEnableRoutingMethodA
+宏定义 FaxEnumGlobalRoutingInfo  FaxEnumGlobalRoutingInfoA
+宏定义 FaxEnumJobs  FaxEnumJobsA
+宏定义 FaxEnumPorts  FaxEnumPortsA
+宏定义 FaxEnumRoutingMethods  FaxEnumRoutingMethodsA
+宏定义 FaxGetConfiguration  FaxGetConfigurationA
+宏定义 FaxGetDeviceStatus  FaxGetDeviceStatusA
+宏定义 FaxGetJob  FaxGetJobA
+宏定义 FaxGetLoggingCategories  FaxGetLoggingCategoriesA
+宏定义 FaxGetPort  FaxGetPortA
+宏定义 FaxGetRoutingInfo  FaxGetRoutingInfoA
+宏定义 FaxPrintCoverPage  FaxPrintCoverPageA
+宏定义 FaxSendDocument  FaxSendDocumentA
+宏定义 FaxSendDocumentForBroadcast  FaxSendDocumentForBroadcastA
+宏定义 FaxSetConfiguration  FaxSetConfigurationA
+宏定义 FaxSetGlobalRoutingInfo  FaxSetGlobalRoutingInfoA
+宏定义 FaxSetJob  FaxSetJobA
+宏定义 FaxSetLoggingCategories  FaxSetLoggingCategoriesA
+宏定义 FaxSetPort  FaxSetPortA
+宏定义 FaxSetRoutingInfo  FaxSetRoutingInfoA
+宏定义 FaxStartPrintJob  FaxStartPrintJobA
+}

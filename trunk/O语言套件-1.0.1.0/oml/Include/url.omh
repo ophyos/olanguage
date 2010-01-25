@@ -1,0 +1,16 @@
+引用段
+{
+函数 AddMIMEFileTypesPS(整数32,整数32)=>整数32;
+函数 InetIsOffline(整数32)=>整数32;
+函数 MIMEAssociationDialogA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MIMEAssociationDialogW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetInetOffline(整数32)=>整数32;
+函数 TranslateURLA(整数32,整数32,整数32)=>整数32;
+函数 TranslateURLW(整数32,整数32,整数32)=>整数32;
+函数 URLAssociationDialogA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLAssociationDialogW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 MIMEAssociationDialog  MIMEAssociationDialogA
+宏定义 TranslateURL  TranslateURLA
+宏定义 URLAssociationDialog  URLAssociationDialogA
+}

@@ -1,0 +1,154 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒStringCatExWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCatExWorker  StringCatExWorkerA
+
+¡ÒStringCatExWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCatNExWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCatNExWorker  StringCatNExWorkerA
+
+¡ÒStringCatNExWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCatNWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCatNWorker  StringCatNWorkerA
+
+¡ÒStringCatNWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCatWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCatWorker  StringCatWorkerA
+
+¡ÒStringCatWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCatA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCat  StringCbCatA
+
+¡ÒStringCbCatExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCatEx  StringCbCatExA
+
+¡ÒStringCbCatExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCatNA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCatN  StringCbCatNA
+
+¡ÒStringCbCatNExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCatNEx  StringCbCatNExA
+
+¡ÒStringCbCatNExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCatNW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCatW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCopyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCopy  StringCbCopyA
+
+¡ÒStringCbCopyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCopyEx  StringCbCopyExA
+
+¡ÒStringCbCopyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCopyNA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCopyN  StringCbCopyNA
+
+¡ÒStringCbCopyNExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbCopyNEx  StringCbCopyNExA
+
+¡ÒStringCbCopyNExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCopyNW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbCopyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbLengthA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbLength  StringCbLengthA
+
+¡ÒStringCbLengthW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C StringCbPrintfA(Ë«×Ö, ..)
+¡ßStringCbPrintf  StringCbPrintfA
+
+¡Ò:C StringCbPrintfExA(Ë«×Ö, ..)
+¡ßStringCbPrintfEx  StringCbPrintfExA
+
+¡Ò:C StringCbPrintfExW(Ë«×Ö, ..)
+¡Ò:C StringCbPrintfW(Ë«×Ö, ..)
+¡ÒStringCbVPrintfA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbVPrintf  StringCbVPrintfA
+
+¡ÒStringCbVPrintfExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCbVPrintfEx  StringCbVPrintfExA
+
+¡ÒStringCbVPrintfExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCbVPrintfW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCatA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCat  StringCchCatA
+
+¡ÒStringCchCatExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCatEx  StringCchCatExA
+
+¡ÒStringCchCatExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCatNA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCatN  StringCchCatNA
+
+¡ÒStringCchCatNExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCatNEx  StringCchCatNExA
+
+¡ÒStringCchCatNExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCatNW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCatW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCopyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCopy  StringCchCopyA
+
+¡ÒStringCchCopyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCopyEx  StringCchCopyExA
+
+¡ÒStringCchCopyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCopyNA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCopyN  StringCchCopyNA
+
+¡ÒStringCchCopyNExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchCopyNEx  StringCchCopyNExA
+
+¡ÒStringCchCopyNExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCopyNW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchCopyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchLengthA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchLength  StringCchLengthA
+
+¡ÒStringCchLengthW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C StringCchPrintfA(Ë«×Ö, ..)
+¡ßStringCchPrintf  StringCchPrintfA
+
+¡Ò:C StringCchPrintfExA(Ë«×Ö, ..)
+¡ßStringCchPrintfEx  StringCchPrintfExA
+
+¡Ò:C StringCchPrintfExW(Ë«×Ö, ..)
+¡Ò:C StringCchPrintfW(Ë«×Ö, ..)
+¡ÒStringCchVPrintfA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchVPrintf  StringCchVPrintfA
+
+¡ÒStringCchVPrintfExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCchVPrintfEx  StringCchVPrintfExA
+
+¡ÒStringCchVPrintfExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCchVPrintfW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCopyExWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCopyExWorker  StringCopyExWorkerA
+
+¡ÒStringCopyExWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCopyNExWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCopyNExWorker  StringCopyNExWorkerA
+
+¡ÒStringCopyNExWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCopyNWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCopyNWorker  StringCopyNWorkerA
+
+¡ÒStringCopyNWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringCopyWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringCopyWorker  StringCopyWorkerA
+
+¡ÒStringCopyWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringLengthWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringLengthWorker  StringLengthWorkerA
+
+¡ÒStringLengthWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringVPrintfExWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringVPrintfExWorker  StringVPrintfExWorkerA
+
+¡ÒStringVPrintfExWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringVPrintfWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringVPrintfWorker  StringVPrintfWorkerA
+
+¡ÒStringVPrintfWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

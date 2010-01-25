@@ -1,0 +1,42 @@
+引用段
+{
+函数 DsBackupClose(整数32)=>整数32;
+函数 DsBackupEnd(整数32)=>整数32;
+函数 DsBackupFree(整数32)=>整数32;
+函数 DsBackupGetBackupLogsA(整数32,整数32,整数32)=>整数32;
+函数 DsBackupGetBackupLogsW(整数32,整数32,整数32)=>整数32;
+函数 DsBackupGetDatabaseNamesA(整数32,整数32,整数32)=>整数32;
+函数 DsBackupGetDatabaseNamesW(整数32,整数32,整数32)=>整数32;
+函数 DsBackupOpenFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBackupOpenFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBackupPrepareA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBackupPrepareW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBackupRead(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBackupTruncateLogs(整数32)=>整数32;
+函数 DsIsNTDSOnlineA(整数32,整数32)=>整数32;
+函数 DsIsNTDSOnlineW(整数32,整数32)=>整数32;
+函数 DsRestoreCheckExpiryToken(整数32,整数32)=>整数32;
+函数 DsRestoreEnd(整数32)=>整数32;
+函数 DsRestoreGetDatabaseLocationsA(整数32,整数32,整数32)=>整数32;
+函数 DsRestoreGetDatabaseLocationsW(整数32,整数32,整数32)=>整数32;
+函数 DsRestorePrepareA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsRestorePrepareW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsRestoreRegisterA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsRestoreRegisterComplete(整数32,整数32)=>整数32;
+函数 DsRestoreRegisterW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsSetAuthIdentityA(整数32,整数32,整数32)=>整数32;
+函数 DsSetAuthIdentityW(整数32,整数32,整数32)=>整数32;
+函数 DsSetCurrentBackupLogA(整数32,整数32)=>整数32;
+函数 DsSetCurrentBackupLogW(整数32,整数32)=>整数32;
+
+宏定义 DsBackupGetBackupLogs  DsBackupGetBackupLogsA
+宏定义 DsBackupGetDatabaseNames  DsBackupGetDatabaseNamesA
+宏定义 DsBackupOpenFile  DsBackupOpenFileA
+宏定义 DsBackupPrepare  DsBackupPrepareA
+宏定义 DsIsNTDSOnline  DsIsNTDSOnlineA
+宏定义 DsRestoreGetDatabaseLocations  DsRestoreGetDatabaseLocationsA
+宏定义 DsRestorePrepare  DsRestorePrepareA
+宏定义 DsRestoreRegister  DsRestoreRegisterA
+宏定义 DsSetAuthIdentity  DsSetAuthIdentityA
+宏定义 DsSetCurrentBackupLog  DsSetCurrentBackupLogA
+}

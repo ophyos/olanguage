@@ -1,0 +1,7 @@
+引用段
+{
+函数 UiCreatePatchPackageA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UiCreatePatchPackageW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 UiCreatePatchPackage  UiCreatePatchPackageA
+}

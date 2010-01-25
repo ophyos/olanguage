@@ -1,0 +1,10 @@
+引用段
+{
+函数 CryptGetObjectUrl(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptInstallCancelRetrieval(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptRetrieveObjectByUrlA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptRetrieveObjectByUrlW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUninstallCancelRetrieval(整数32,整数32)=>整数32;
+
+宏定义 CryptRetrieveObjectByUrl  CryptRetrieveObjectByUrlA
+}

@@ -1,0 +1,83 @@
+引用段
+{
+函数 SCardAccessStartedEvent()=>整数32;
+函数 SCardAddReaderToGroupA(整数32,整数32,整数32)=>整数32;
+函数 SCardAddReaderToGroupW(整数32,整数32,整数32)=>整数32;
+函数 SCardBeginTransaction(整数32)=>整数32;
+函数 SCardCancel(整数32)=>整数32;
+函数 SCardConnectA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardConnectW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardControl(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardDisconnect(整数32,整数32)=>整数32;
+函数 SCardEndTransaction(整数32,整数32)=>整数32;
+函数 SCardEstablishContext(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardForgetCardTypeA(整数32,整数32)=>整数32;
+函数 SCardForgetCardTypeW(整数32,整数32)=>整数32;
+函数 SCardForgetReaderA(整数32,整数32)=>整数32;
+函数 SCardForgetReaderGroupA(整数32,整数32)=>整数32;
+函数 SCardForgetReaderGroupW(整数32,整数32)=>整数32;
+函数 SCardForgetReaderW(整数32,整数32)=>整数32;
+函数 SCardFreeMemory(整数32,整数32)=>整数32;
+函数 SCardGetAttrib(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardGetCardTypeProviderNameA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardGetCardTypeProviderNameW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardGetProviderIdA(整数32,整数32,整数32)=>整数32;
+函数 SCardGetProviderIdW(整数32,整数32,整数32)=>整数32;
+函数 SCardGetStatusChangeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardGetStatusChangeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardIntroduceCardTypeA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardIntroduceCardTypeW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardIntroduceReaderA(整数32,整数32,整数32)=>整数32;
+函数 SCardIntroduceReaderGroupA(整数32,整数32)=>整数32;
+函数 SCardIntroduceReaderGroupW(整数32,整数32)=>整数32;
+函数 SCardIntroduceReaderW(整数32,整数32,整数32)=>整数32;
+函数 SCardIsValidContext(整数32)=>整数32;
+函数 SCardListCardsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardListCardsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardListInterfacesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardListInterfacesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardListReaderGroupsA(整数32,整数32,整数32)=>整数32;
+函数 SCardListReaderGroupsW(整数32,整数32,整数32)=>整数32;
+函数 SCardListReadersA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardListReadersW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardLocateCardsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardLocateCardsByATRA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardLocateCardsByATRW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardLocateCardsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardReconnect(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardReleaseContext(整数32)=>整数32;
+函数 SCardReleaseStartedEvent()=>整数32;
+函数 SCardRemoveReaderFromGroupA(整数32,整数32,整数32)=>整数32;
+函数 SCardRemoveReaderFromGroupW(整数32,整数32,整数32)=>整数32;
+函数 SCardSetAttrib(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardSetCardTypeProviderNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardSetCardTypeProviderNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardState(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardStatusA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardStatusW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SCardTransmit(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 g_rgSCardRawPci(整数32, ..)=>整数32;
+函数 C调用 g_rgSCardT0Pci(整数32, ..)=>整数32;
+函数 C调用 g_rgSCardT1Pci(整数32, ..)=>整数32;
+
+宏定义 SCardAddReaderToGroup  SCardAddReaderToGroupA
+宏定义 SCardConnect  SCardConnectA
+宏定义 SCardForgetCardType  SCardForgetCardTypeA
+宏定义 SCardForgetReader  SCardForgetReaderA
+宏定义 SCardForgetReaderGroup  SCardForgetReaderGroupA
+宏定义 SCardGetCardTypeProviderName  SCardGetCardTypeProviderNameA
+宏定义 SCardGetProviderId  SCardGetProviderIdA
+宏定义 SCardGetStatusChange  SCardGetStatusChangeA
+宏定义 SCardIntroduceCardType  SCardIntroduceCardTypeA
+宏定义 SCardIntroduceReader  SCardIntroduceReaderA
+宏定义 SCardIntroduceReaderGroup  SCardIntroduceReaderGroupA
+宏定义 SCardListCards  SCardListCardsA
+宏定义 SCardListInterfaces  SCardListInterfacesA
+宏定义 SCardListReaderGroups  SCardListReaderGroupsA
+宏定义 SCardListReaders  SCardListReadersA
+宏定义 SCardLocateCards  SCardLocateCardsA
+宏定义 SCardLocateCardsByATR  SCardLocateCardsByATRA
+宏定义 SCardRemoveReaderFromGroup  SCardRemoveReaderFromGroupA
+宏定义 SCardSetCardTypeProviderName  SCardSetCardTypeProviderNameA
+宏定义 SCardStatus  SCardStatusA
+}

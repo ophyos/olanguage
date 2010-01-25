@@ -1,0 +1,264 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCloseDriver(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDefDriverProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDriverCallback(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrvGetModuleHandle(Ë«×Ö)
+¡ÒGetDriverModuleHandle(Ë«×Ö)
+¡ÒMigrateAllDrivers()
+¡ÒMigrateSoundEvents()
+¡ÒNotifyCallbackData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenDriver(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPlaySoundA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPlaySound  PlaySoundA
+
+¡ÒPlaySoundW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSendDriverMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWOW32DriverCallback(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWOW32ResolveMultiMediaHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWOWAppExit(Ë«×Ö)
+¡ÒWinmmLogoff()
+¡ÒWinmmLogon(Ë«×Ö)
+¡Òaux32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒauxGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßauxGetDevCaps  auxGetDevCapsA
+
+¡ÒauxGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒauxGetNumDevs()
+¡ÒauxGetVolume(Ë«×Ö,Ë«×Ö)
+¡ÒauxOutMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒauxSetVolume(Ë«×Ö,Ë«×Ö)
+¡ÒgfxAddGfx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒgfxBatchChange(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒgfxCreateGfxFactoriesList(Ë«×Ö,Ë«×Ö)
+¡ÒgfxCreateZoneFactoriesList(Ë«×Ö)
+¡ÒgfxDestroyDeviceInterfaceList(Ë«×Ö)
+¡ÒgfxEnumerateGfxs(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒgfxLogoff()
+¡ÒgfxLogon(Ë«×Ö)
+¡ÒgfxModifyGfx(Ë«×Ö,Ë«×Ö)
+¡ÒgfxOpenGfx(Ë«×Ö,Ë«×Ö)
+¡ÒgfxRemoveGfx(Ë«×Ö)
+¡Òjoy32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒjoyConfigChanged(Ë«×Ö)
+¡ÒjoyGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßjoyGetDevCaps  joyGetDevCapsA
+
+¡ÒjoyGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒjoyGetNumDevs()
+¡ÒjoyGetPos(Ë«×Ö,Ë«×Ö)
+¡ÒjoyGetPosEx(Ë«×Ö,Ë«×Ö)
+¡ÒjoyGetThreshold(Ë«×Ö,Ë«×Ö)
+¡ÒjoyReleaseCapture(Ë«×Ö)
+¡ÒjoySetCapture(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒjoySetThreshold(Ë«×Ö,Ë«×Ö)
+¡Òmci32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmciDriverNotify(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmciDriverYield(Ë«×Ö)
+¡ÒmciExecute(Ë«×Ö)
+¡ÒmciFreeCommandResource(Ë«×Ö)
+¡ÒmciGetCreatorTask(Ë«×Ö)
+¡ÒmciGetDeviceIDA(Ë«×Ö)
+¡ßmciGetDeviceID  mciGetDeviceIDA
+
+¡ÒmciGetDeviceIDFromElementIDA(Ë«×Ö,Ë«×Ö)
+¡ßmciGetDeviceIDFromElementID  mciGetDeviceIDFromElementIDA
+
+¡ÒmciGetDeviceIDFromElementIDW(Ë«×Ö,Ë«×Ö)
+¡ÒmciGetDeviceIDW(Ë«×Ö)
+¡ÒmciGetDriverData(Ë«×Ö)
+¡ÒmciGetErrorStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmciGetErrorString  mciGetErrorStringA
+
+¡ÒmciGetErrorStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmciGetYieldProc(Ë«×Ö,Ë«×Ö)
+¡ÒmciLoadCommandResource(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmciSendCommandA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmciSendCommand  mciSendCommandA
+
+¡ÒmciSendCommandW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmciSendStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmciSendString  mciSendStringA
+
+¡ÒmciSendStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmciSetDriverData(Ë«×Ö,Ë«×Ö)
+¡ÒmciSetYieldProc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òmid32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiConnect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiDisconnect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInAddBuffer(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInClose(Ë«×Ö)
+¡ÒmidiInGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmidiInGetDevCaps  midiInGetDevCapsA
+
+¡ÒmidiInGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInGetErrorTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmidiInGetErrorText  midiInGetErrorTextA
+
+¡ÒmidiInGetErrorTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInGetID(Ë«×Ö,Ë«×Ö)
+¡ÒmidiInGetNumDevs()
+¡ÒmidiInMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInPrepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiInReset(Ë«×Ö)
+¡ÒmidiInStart(Ë«×Ö)
+¡ÒmidiInStop(Ë«×Ö)
+¡ÒmidiInUnprepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutCacheDrumPatches(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutCachePatches(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutClose(Ë«×Ö)
+¡ÒmidiOutGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmidiOutGetDevCaps  midiOutGetDevCapsA
+
+¡ÒmidiOutGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutGetErrorTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmidiOutGetErrorText  midiOutGetErrorTextA
+
+¡ÒmidiOutGetErrorTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutGetID(Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutGetNumDevs()
+¡ÒmidiOutGetVolume(Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutLongMsg(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutPrepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutReset(Ë«×Ö)
+¡ÒmidiOutSetVolume(Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutShortMsg(Ë«×Ö,Ë«×Ö)
+¡ÒmidiOutUnprepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiStreamClose(Ë«×Ö)
+¡ÒmidiStreamOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiStreamOut(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiStreamPause(Ë«×Ö)
+¡ÒmidiStreamPosition(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiStreamProperty(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmidiStreamRestart(Ë«×Ö)
+¡ÒmidiStreamStop(Ë«×Ö)
+¡ÒmixerClose(Ë«×Ö)
+¡ÒmixerGetControlDetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmixerGetControlDetails  mixerGetControlDetailsA
+
+¡ÒmixerGetControlDetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmixerGetDevCaps  mixerGetDevCapsA
+
+¡ÒmixerGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerGetID(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerGetLineControlsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmixerGetLineControls  mixerGetLineControlsA
+
+¡ÒmixerGetLineControlsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerGetLineInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmixerGetLineInfo  mixerGetLineInfoA
+
+¡ÒmixerGetLineInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerGetNumDevs()
+¡ÒmixerMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmixerSetControlDetails(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmDrvInstall(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmGetCurrentTask()
+¡ÒmmTaskBlock(Ë«×Ö)
+¡ÒmmTaskCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmTaskSignal(Ë«×Ö)
+¡ÒmmTaskYield()
+¡ÒmmioAdvance(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioAscend(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioClose(Ë«×Ö,Ë«×Ö)
+¡ÒmmioCreateChunk(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioDescend(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioFlush(Ë«×Ö,Ë«×Ö)
+¡ÒmmioGetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioInstallIOProcA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmmioInstallIOProc  mmioInstallIOProcA
+
+¡ÒmmioInstallIOProcW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioOpenA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmmioOpen  mmioOpenA
+
+¡ÒmmioOpenW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioRead(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioRenameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßmmioRename  mmioRenameA
+
+¡ÒmmioRenameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioSeek(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioSendMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioSetBuffer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioSetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmioStringToFOURCCA(Ë«×Ö,Ë«×Ö)
+¡ßmmioStringToFOURCC  mmioStringToFOURCCA
+
+¡ÒmmioStringToFOURCCW(Ë«×Ö,Ë«×Ö)
+¡ÒmmioWrite(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒmmsystemGetVersion()
+¡Òmod32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òmxd32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒsndPlaySoundA(Ë«×Ö,Ë«×Ö)
+¡ßsndPlaySound  sndPlaySoundA
+
+¡ÒsndPlaySoundW(Ë«×Ö,Ë«×Ö)
+¡Òtid32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒtimeBeginPeriod(Ë«×Ö)
+¡ÒtimeEndPeriod(Ë«×Ö)
+¡ÒtimeGetDevCaps(Ë«×Ö,Ë«×Ö)
+¡ÒtimeGetSystemTime(Ë«×Ö,Ë«×Ö)
+¡ÒtimeGetTime()
+¡ÒtimeKillEvent(Ë«×Ö)
+¡ÒtimeSetEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInAddBuffer(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInClose(Ë«×Ö)
+¡ÒwaveInGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßwaveInGetDevCaps  waveInGetDevCapsA
+
+¡ÒwaveInGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInGetErrorTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßwaveInGetErrorText  waveInGetErrorTextA
+
+¡ÒwaveInGetErrorTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInGetID(Ë«×Ö,Ë«×Ö)
+¡ÒwaveInGetNumDevs()
+¡ÒwaveInGetPosition(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInPrepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveInReset(Ë«×Ö)
+¡ÒwaveInStart(Ë«×Ö)
+¡ÒwaveInStop(Ë«×Ö)
+¡ÒwaveInUnprepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutBreakLoop(Ë«×Ö)
+¡ÒwaveOutClose(Ë«×Ö)
+¡ÒwaveOutGetDevCapsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßwaveOutGetDevCaps  waveOutGetDevCapsA
+
+¡ÒwaveOutGetDevCapsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutGetErrorTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßwaveOutGetErrorText  waveOutGetErrorTextA
+
+¡ÒwaveOutGetErrorTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutGetID(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutGetNumDevs()
+¡ÒwaveOutGetPitch(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutGetPlaybackRate(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutGetPosition(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutGetVolume(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutPause(Ë«×Ö)
+¡ÒwaveOutPrepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutReset(Ë«×Ö)
+¡ÒwaveOutRestart(Ë«×Ö)
+¡ÒwaveOutSetPitch(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutSetPlaybackRate(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutSetVolume(Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutUnprepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒwaveOutWrite(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òwid32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C winmmDbgOut(Ë«×Ö, ..)
+¡ÒwinmmSetDebugLevel(Ë«×Ö)
+¡Òwod32Message(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

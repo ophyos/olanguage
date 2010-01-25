@@ -1,0 +1,28 @@
+引用段
+{
+函数 TcAddFilter(整数32,整数32,整数32)=>整数32;
+函数 TcAddFlow(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TcCloseInterface(整数32)=>整数32;
+函数 TcDeleteFilter(整数32)=>整数32;
+函数 TcDeleteFlow(整数32)=>整数32;
+函数 TcDeregisterClient(整数32)=>整数32;
+函数 TcEnumerateFlows(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TcEnumerateInterfaces(整数32,整数32,整数32)=>整数32;
+函数 TcGetFlowNameA(整数32,整数32,整数32)=>整数32;
+函数 TcGetFlowNameW(整数32,整数32,整数32)=>整数32;
+函数 TcModifyFlow(整数32,整数32)=>整数32;
+函数 TcOpenInterfaceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcOpenInterfaceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcQueryFlowA(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcQueryFlowW(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcQueryInterface(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TcRegisterClient(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcSetFlowA(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcSetFlowW(整数32,整数32,整数32,整数32)=>整数32;
+函数 TcSetInterface(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 TcGetFlowName  TcGetFlowNameA
+宏定义 TcOpenInterface  TcOpenInterfaceA
+宏定义 TcQueryFlow  TcQueryFlowA
+宏定义 TcSetFlow  TcSetFlowA
+}

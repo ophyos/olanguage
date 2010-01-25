@@ -1,0 +1,94 @@
+
+引用段
+{
+
+//////////////////////////////////////////////////////////////////////////
+//TreeItem
+函数 树形项目_获取文本:TreeItem_GetText(地址 pTreeItem)=>地址;			
+函数 树形项目_设置文本:TreeItem_SetText(地址 pTreeItem,地址 string);
+函数 树形项目_置为拓展:TreeItem_IsExpanded(地址 pTreeItem)=>整数32;
+函数 树形项目_拓展:TreeItem_Expand(地址 pTreeItem,整数32 expand);   
+函数 树形项目_获取被选中:TreeItem_GetChecked(地址 pTreeItem)=>整数32;
+函数 树形项目_设置被选中:TreeItem_SetChecked(地址 pTreeItem,整数32 check); 
+函数 树形项目_置为选择:TreeItem_IsSelected(地址 pTreeItem)=>整数32;
+函数 树形项目_设置选择:TreeItem_SetSelected(地址 pTreeItem,整数32 select);   
+函数 树形项目_有按钮:TreeItem_HasButton(地址 pTreeItem)=>整数32;
+函数 树形项目_显示按钮:TreeItem_ShowButton(地址 pTreeItem,整数32 showbtn);
+函数 树形项目_置为剪切:TreeItem_IsCut(地址 pTreeItem)=>整数32;
+函数 树形项目_设置剪切:TreeItem_SetCut(地址 pTreeItem,整数32 cut);   
+函数 树形项目_置为加粗:TreeItem_IsBold(地址 pTreeItem)=>整数32;    
+函数 树形项目_设置加粗:TreeItem_SetBold(地址 pTreeItem,整数32 blod);
+函数 TreeItem_SetDropHilited(地址 pTreeItem,整数32 hilit);
+函数 TreeItem_GetDropHilited(地址 pTreeItem)=>整数32;
+函数 树形项目_获取文本颜色:TreeItem_GetTextColor(地址 pTreeItem)=>正数32;
+函数 树形项目_设置文本颜色:TreeItem_SetTextColor(地址 pTreeItem,正数32 color);	  
+函数 树形项目_获取文本背景色:TreeItem_GetTextBackColor(地址 pTreeItem)=>正数32; 
+函数 树形项目_设置文本背景色:TreeItem_SetTextBackColor(地址 pTreeItem,正数32 color);   
+函数 树形项目_获取图像:TreeItem_GetImage(地址 pTreeItem)=>整数32;
+函数 树形项目_设置图像:TreeItem_SetImage(地址 pTreeItem,整数32 image);		 
+函数 树形项目_获取被选择图像:TreeItem_GetSelectedImage(地址 pTreeItem)=>整数32;
+函数 树形项目_设置被选择图像:TreeItem_SetSelectedImage(地址 pTreeItem,整数32 image);
+函数 树形项目_获取图像状态:TreeItem_GetStateImage(地址 pTreeItem)=>整数32;
+函数 树形项目_设置图像状态:TreeItem_SetStateImage(地址 pTreeItem,整数32 image);	 
+函数 树形项目_获取覆盖图像:TreeItem_GetOverlayImage(地址 pTreeItem)=>整数32;	
+函数 树形项目_设置覆盖图像:TreeItem_SetOverlayImage(地址 pTreeItem,整数32 image);
+函数 树形项目_设置数据:TreeItem_SetData(地址 pTreeItem,地址 data);
+函数 树形项目_获取矩形:TreeItem_GetRect(地址 pTreeItem,地址 rc);
+函数 树形项目_获取数据:TreeItem_GetData(地址 pTreeItem)=>地址;
+函数 树形项目_获取父项目:TreeItem_GetParentItem(地址 pTreeItem)=>地址;   
+函数 树形项目_获取上个项目:TreeItem_GetPrevItem(地址 pTreeItem)=>地址;
+函数 树形项目_获取下个项目:TreeItem_GetNextItem(地址 pTreeItem)=>地址;
+函数 树形项目_获取第一子项目:TreeItem_GetFirstChildItem(地址 pTreeItem)=>地址;
+函数 树形项目_获取句柄:TreeItem_GetHandle(地址 pTreeItem)=>HTREEITEM;
+
+//////////////////////////////////////////////////////////////////////////
+//TreeView
+函数 树形框_设置文本颜色:OTreeView_SetTextColor(地址 pTreeView,正数32 color);
+函数 树形框_获取文本颜色:OTreeView_GetTextColor(地址 pTreeView)=>正数32;
+函数 树形框_设置行颜色:OTreeView_SetLineColor(地址 pTreeView,正数32 color);
+函数 树形框_获取行颜色:OTreeView_GetLineColor(地址 pTreeView)=>正数32;
+函数 树形框_设置项目缩进:OTreeView_SetItemIndent(地址 pTreeView,整数32 indent);
+函数 树形框_获取项目缩进:OTreeView_GetItemIndent(地址 pTreeView)=>整数32;
+函数 树形框_设置项目高:OTreeView_SetItemHeight(地址 pTreeView,整数32 height);
+函数 树形框_获取项目高:OTreeView_GetItemHeight(地址 pTreeView)=>整数32;
+函数 树形框_设置工具提示:OTreeView_SetToolTip(地址 pTreeView,HWND tip);
+函数 树形框_获取工具提示:OTreeView_GetToolTip(地址 pTreeView)=>HWND;
+函数 树形框_获取编辑控件:OTreeView_GetEditControl(地址 pTreeView)=>HWND;
+函数 树形框_获取首项目:OTreeView_GetTopItem(地址 pTreeView)=>地址;	 
+函数 树形框_获取根项目:OTreeView_GetRootItem(地址 pTreeView)=>地址; 
+函数 树形框_获取被选择项目:OTreeView_GetSelectedItem(地址 pTreeView)=>地址; 
+
+//设置ImageList，可分为显示状态图标用的ImageList和显示正常图标用的ImageList两种
+函数 树形框_设置图像列表:OTreeView_SetImageList(地址 pTreeView,整数32 type,地址 imageList);
+//获取指定类型的ImageList
+函数 树形框_获取图像列表:OTreeView_GetImageList(地址 pTreeView,整数32 type)=>地址;	
+//在指定的兄弟Item之后插入一个新的Item，after若为NULL则添加一个根Item，否则在其后加一个新Item
+函数 树形框_插入项目:OTreeView_InsertSibling(地址 pTreeView,地址 after)=>地址;
+//在指定的父Item之下追加一个新的子Item，parent参数不能为NULL
+函数 树形框_插入子项目:OTreeView_InsertChild(地址 pTreeView,地址 parent)=>地址;
+//删除指定的Item
+函数 树形框_删除项目:OTreeView_DeleteItem(地址 pTreeView,地址 item);
+//删除所有的Item
+函数 树形框_删除所有项目:OTreeView_DeleteAllItems(地址 pTreeView); 
+//获取指定句柄的Item
+函数 树形框_获取项目:OTreeView_GetItem(地址 pTreeView,HTREEITEM item)=>地址;   
+//给定相对于控件客户区原点的坐标x,y，返回坐标之下的Item
+函数 树形框_测试坐标:OTreeView_TestPoint(地址 pTreeView,整数32 x,整数32 y)=>地址;
+//确保指定的Item可视，若不可视则自动滚动窗口使之可视
+函数 树形框_确保可视:OTreeView_EnsureVisible(地址 pTreeView,地址 item);
+//开始编辑某个Item，返回值说明是否确实进入了编辑模式(要求控件有TreeViewDesc::mCanEdit风格)
+函数 树形框_开始编辑:OTreeView_BeginEdit(地址 pTreeView,地址 item)=>整数32;
+//结束编辑模式，用户的输入生效
+函数 树形框_结束编辑:OTreeView_EndEdit(地址 pTreeView);
+//取消编辑模式，用户的输入被丢弃，Item的文本不变
+函数 树形框_取消编辑:OTreeView_CancelEdit(地址 pTreeView);
+
+函数 树形框_销毁控件:OTreeView_DestroyControl(地址 pTreeView);
+函数 树形框_获取类:OTreeView_GetClass(地址 pTreeView)=>地址;
+函数 树形框_设置标题:OTreeView_SetCaption(地址 pTreeView,地址 string);
+函数 树形框_获取标题:OTreeView_GetCaption(地址 pTreeView)=>地址;
+函数 树形框_移动:OTreeView_Move(地址 pTreeView,整数32 dx,整数32 dy);
+函数 树形框_设置大小:OTreeView_SetSize(地址 pTreeView,整数32 width,整数32 height);
+函数 树形框_设置位置大小:OTreeView_SetPositionSize(地址 pTreeView,整数32 letf,整数32 top,整数32 width,整数32 height);
+
+}

@@ -1,0 +1,71 @@
+.Î»Ä£Ê½ 32
+
+1¡ã  ¡Ê ×Ö½Ú
+2¡ã  ¡Ê ×Ö
+4¡ã  ¡Ê Ë«×Ö
+
+¡´*Kernel32.lib¡µ
+¡´*user32.lib¡µ
+
+¦æ
+¡ÒSendDlgItemMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetModuleHandleA(Ë«×Ö) 
+¡ÒDialogBoxParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)   
+¡ÒExitProcess(Ë«×Ö)
+¡ÒGetDlgItem(Ë«×Ö,Ë«×Ö)   
+¡ÒSendMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)   
+¡ÒPostQuitMessage(Ë«×Ö)
+¡ÒEndDialog(Ë«×Ö,Ë«×Ö)
+
+¦ç
+
+¡ßWM_CLOSE   0x10
+¡ßWM_COMMAND   0x111
+¡ßWM_INITDIALOG   0x110
+
+¦î
+×Ö½Ú µÚÒ»¨E= "Can not print out!"
+×Ö½Ú µÚ¶þ¨E= "Why?"
+×Ö½Ú µÚÈý¨E= "ÎÒ²»ÖªµÀ¡£"
+¦ï
+
+¦è
+Ë«×Ö hInstance
+Ë«×Ö h_Combo
+¦é
+¦ð
+¡ÇÖ÷º¯Êý()
+{
+          GetModuleHandleA(0) 
+          hInstance=ÀÛ¼Ó32
+          DialogBoxParamA(hInstance,1,0,WndProc,0)   
+          ExitProcess(0)
+}
+
+¡ÒWndProc(Ë«×Ö hWnd,Ë«×Ö wMsg,Ë«×Ö wParam,Ë«×Ö lParam)
+{
+             ÀÛ¼Ó32 = wMsg
+          ¡Ó(ÀÛ¼Ó32 == WM_INITDIALOG)  
+           {
+                  GetDlgItem(hWnd,100)
+                  h_Combo=ÀÛ¼Ó32
+                  SendMessageA(h_Combo,0x143,0,£¦µÚÒ»)
+                  SendMessageA(h_Combo,0x143,0,£¦µÚ¶þ)
+                  SendMessageA(h_Combo,0x143,0,£¦µÚÈý)
+                  SendMessageA(h_Combo,0x14E,2,0)     
+            }             
+          ¡Ø¡Ó(ÀÛ¼Ó32 == WM_COMMAND)  
+             {
+              ¡Ó(wParam == 110)                                                 
+               {
+                EndDialog(hWnd,0)
+                }
+              }
+           ¡Ø¡Ó(ÀÛ¼Ó32 == WM_CLOSE)   
+            {
+            PostQuitMessage(0)   
+            }
+           ¡û0
+}
+
+¦ñ

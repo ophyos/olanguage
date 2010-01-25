@@ -1,0 +1,237 @@
+引用段
+{
+函数 CloseDriver(整数32,整数32,整数32)=>整数32;
+函数 DefDriverProc(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DriverCallback(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrvGetModuleHandle(整数32)=>整数32;
+函数 GetDriverModuleHandle(整数32)=>整数32;
+函数 MigrateAllDrivers()=>整数32;
+函数 MigrateSoundEvents()=>整数32;
+函数 NotifyCallbackData(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenDriver(整数32,整数32,整数32)=>整数32;
+函数 PlaySoundA(整数32,整数32,整数32)=>整数32;
+函数 PlaySoundW(整数32,整数32,整数32)=>整数32;
+函数 SendDriverMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 WOW32DriverCallback(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WOW32ResolveMultiMediaHandle(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WOWAppExit(整数32)=>整数32;
+函数 WinmmLogoff()=>整数32;
+函数 WinmmLogon(整数32)=>整数32;
+函数 aux32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 auxGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 auxGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 auxGetNumDevs()=>整数32;
+函数 auxGetVolume(整数32,整数32)=>整数32;
+函数 auxOutMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 auxSetVolume(整数32,整数32)=>整数32;
+函数 gfxAddGfx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gfxBatchChange(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gfxCreateGfxFactoriesList(整数32,整数32)=>整数32;
+函数 gfxCreateZoneFactoriesList(整数32)=>整数32;
+函数 gfxDestroyDeviceInterfaceList(整数32)=>整数32;
+函数 gfxEnumerateGfxs(整数32,整数32,整数32)=>整数32;
+函数 gfxLogoff()=>整数32;
+函数 gfxLogon(整数32)=>整数32;
+函数 gfxModifyGfx(整数32,整数32)=>整数32;
+函数 gfxOpenGfx(整数32,整数32)=>整数32;
+函数 gfxRemoveGfx(整数32)=>整数32;
+函数 joy32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 joyConfigChanged(整数32)=>整数32;
+函数 joyGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 joyGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 joyGetNumDevs()=>整数32;
+函数 joyGetPos(整数32,整数32)=>整数32;
+函数 joyGetPosEx(整数32,整数32)=>整数32;
+函数 joyGetThreshold(整数32,整数32)=>整数32;
+函数 joyReleaseCapture(整数32)=>整数32;
+函数 joySetCapture(整数32,整数32,整数32,整数32)=>整数32;
+函数 joySetThreshold(整数32,整数32)=>整数32;
+函数 mci32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 mciDriverNotify(整数32,整数32,整数32)=>整数32;
+函数 mciDriverYield(整数32)=>整数32;
+函数 mciExecute(整数32)=>整数32;
+函数 mciFreeCommandResource(整数32)=>整数32;
+函数 mciGetCreatorTask(整数32)=>整数32;
+函数 mciGetDeviceIDA(整数32)=>整数32;
+函数 mciGetDeviceIDFromElementIDA(整数32,整数32)=>整数32;
+函数 mciGetDeviceIDFromElementIDW(整数32,整数32)=>整数32;
+函数 mciGetDeviceIDW(整数32)=>整数32;
+函数 mciGetDriverData(整数32)=>整数32;
+函数 mciGetErrorStringA(整数32,整数32,整数32)=>整数32;
+函数 mciGetErrorStringW(整数32,整数32,整数32)=>整数32;
+函数 mciGetYieldProc(整数32,整数32)=>整数32;
+函数 mciLoadCommandResource(整数32,整数32,整数32)=>整数32;
+函数 mciSendCommandA(整数32,整数32,整数32,整数32)=>整数32;
+函数 mciSendCommandW(整数32,整数32,整数32,整数32)=>整数32;
+函数 mciSendStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 mciSendStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 mciSetDriverData(整数32,整数32)=>整数32;
+函数 mciSetYieldProc(整数32,整数32,整数32)=>整数32;
+函数 mid32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 midiConnect(整数32,整数32,整数32)=>整数32;
+函数 midiDisconnect(整数32,整数32,整数32)=>整数32;
+函数 midiInAddBuffer(整数32,整数32,整数32)=>整数32;
+函数 midiInClose(整数32)=>整数32;
+函数 midiInGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 midiInGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 midiInGetErrorTextA(整数32,整数32,整数32)=>整数32;
+函数 midiInGetErrorTextW(整数32,整数32,整数32)=>整数32;
+函数 midiInGetID(整数32,整数32)=>整数32;
+函数 midiInGetNumDevs()=>整数32;
+函数 midiInMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 midiInOpen(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 midiInPrepareHeader(整数32,整数32,整数32)=>整数32;
+函数 midiInReset(整数32)=>整数32;
+函数 midiInStart(整数32)=>整数32;
+函数 midiInStop(整数32)=>整数32;
+函数 midiInUnprepareHeader(整数32,整数32,整数32)=>整数32;
+函数 midiOutCacheDrumPatches(整数32,整数32,整数32,整数32)=>整数32;
+函数 midiOutCachePatches(整数32,整数32,整数32,整数32)=>整数32;
+函数 midiOutClose(整数32)=>整数32;
+函数 midiOutGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 midiOutGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 midiOutGetErrorTextA(整数32,整数32,整数32)=>整数32;
+函数 midiOutGetErrorTextW(整数32,整数32,整数32)=>整数32;
+函数 midiOutGetID(整数32,整数32)=>整数32;
+函数 midiOutGetNumDevs()=>整数32;
+函数 midiOutGetVolume(整数32,整数32)=>整数32;
+函数 midiOutLongMsg(整数32,整数32,整数32)=>整数32;
+函数 midiOutMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 midiOutOpen(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 midiOutPrepareHeader(整数32,整数32,整数32)=>整数32;
+函数 midiOutReset(整数32)=>整数32;
+函数 midiOutSetVolume(整数32,整数32)=>整数32;
+函数 midiOutShortMsg(整数32,整数32)=>整数32;
+函数 midiOutUnprepareHeader(整数32,整数32,整数32)=>整数32;
+函数 midiStreamClose(整数32)=>整数32;
+函数 midiStreamOpen(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 midiStreamOut(整数32,整数32,整数32)=>整数32;
+函数 midiStreamPause(整数32)=>整数32;
+函数 midiStreamPosition(整数32,整数32,整数32)=>整数32;
+函数 midiStreamProperty(整数32,整数32,整数32)=>整数32;
+函数 midiStreamRestart(整数32)=>整数32;
+函数 midiStreamStop(整数32)=>整数32;
+函数 mixerClose(整数32)=>整数32;
+函数 mixerGetControlDetailsA(整数32,整数32,整数32)=>整数32;
+函数 mixerGetControlDetailsW(整数32,整数32,整数32)=>整数32;
+函数 mixerGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 mixerGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 mixerGetID(整数32,整数32,整数32)=>整数32;
+函数 mixerGetLineControlsA(整数32,整数32,整数32)=>整数32;
+函数 mixerGetLineControlsW(整数32,整数32,整数32)=>整数32;
+函数 mixerGetLineInfoA(整数32,整数32,整数32)=>整数32;
+函数 mixerGetLineInfoW(整数32,整数32,整数32)=>整数32;
+函数 mixerGetNumDevs()=>整数32;
+函数 mixerMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 mixerOpen(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 mixerSetControlDetails(整数32,整数32,整数32)=>整数32;
+函数 mmDrvInstall(整数32,整数32,整数32,整数32)=>整数32;
+函数 mmGetCurrentTask()=>整数32;
+函数 mmTaskBlock(整数32)=>整数32;
+函数 mmTaskCreate(整数32,整数32,整数32)=>整数32;
+函数 mmTaskSignal(整数32)=>整数32;
+函数 mmTaskYield()=>整数32;
+函数 mmioAdvance(整数32,整数32,整数32)=>整数32;
+函数 mmioAscend(整数32,整数32,整数32)=>整数32;
+函数 mmioClose(整数32,整数32)=>整数32;
+函数 mmioCreateChunk(整数32,整数32,整数32)=>整数32;
+函数 mmioDescend(整数32,整数32,整数32,整数32)=>整数32;
+函数 mmioFlush(整数32,整数32)=>整数32;
+函数 mmioGetInfo(整数32,整数32,整数32)=>整数32;
+函数 mmioInstallIOProcA(整数32,整数32,整数32)=>整数32;
+函数 mmioInstallIOProcW(整数32,整数32,整数32)=>整数32;
+函数 mmioOpenA(整数32,整数32,整数32)=>整数32;
+函数 mmioOpenW(整数32,整数32,整数32)=>整数32;
+函数 mmioRead(整数32,整数32,整数32)=>整数32;
+函数 mmioRenameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 mmioRenameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 mmioSeek(整数32,整数32,整数32)=>整数32;
+函数 mmioSendMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 mmioSetBuffer(整数32,整数32,整数32,整数32)=>整数32;
+函数 mmioSetInfo(整数32,整数32,整数32)=>整数32;
+函数 mmioStringToFOURCCA(整数32,整数32)=>整数32;
+函数 mmioStringToFOURCCW(整数32,整数32)=>整数32;
+函数 mmioWrite(整数32,整数32,整数32)=>整数32;
+函数 mmsystemGetVersion()=>整数32;
+函数 mod32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 mxd32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 sndPlaySoundA(整数32,整数32)=>整数32;
+函数 sndPlaySoundW(整数32,整数32)=>整数32;
+函数 tid32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 timeBeginPeriod(整数32)=>整数32;
+函数 timeEndPeriod(整数32)=>整数32;
+函数 timeGetDevCaps(整数32,整数32)=>整数32;
+函数 timeGetSystemTime(整数32,整数32)=>整数32;
+函数 timeGetTime()=>整数32;
+函数 timeKillEvent(整数32)=>整数32;
+函数 timeSetEvent(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 waveInAddBuffer(整数32,整数32,整数32)=>整数32;
+函数 waveInClose(整数32)=>整数32;
+函数 waveInGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 waveInGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 waveInGetErrorTextA(整数32,整数32,整数32)=>整数32;
+函数 waveInGetErrorTextW(整数32,整数32,整数32)=>整数32;
+函数 waveInGetID(整数32,整数32)=>整数32;
+函数 waveInGetNumDevs()=>整数32;
+函数 waveInGetPosition(整数32,整数32,整数32)=>整数32;
+函数 waveInMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 waveInOpen(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 waveInPrepareHeader(整数32,整数32,整数32)=>整数32;
+函数 waveInReset(整数32)=>整数32;
+函数 waveInStart(整数32)=>整数32;
+函数 waveInStop(整数32)=>整数32;
+函数 waveInUnprepareHeader(整数32,整数32,整数32)=>整数32;
+函数 waveOutBreakLoop(整数32)=>整数32;
+函数 waveOutClose(整数32)=>整数32;
+函数 waveOutGetDevCapsA(整数32,整数32,整数32)=>整数32;
+函数 waveOutGetDevCapsW(整数32,整数32,整数32)=>整数32;
+函数 waveOutGetErrorTextA(整数32,整数32,整数32)=>整数32;
+函数 waveOutGetErrorTextW(整数32,整数32,整数32)=>整数32;
+函数 waveOutGetID(整数32,整数32)=>整数32;
+函数 waveOutGetNumDevs()=>整数32;
+函数 waveOutGetPitch(整数32,整数32)=>整数32;
+函数 waveOutGetPlaybackRate(整数32,整数32)=>整数32;
+函数 waveOutGetPosition(整数32,整数32,整数32)=>整数32;
+函数 waveOutGetVolume(整数32,整数32)=>整数32;
+函数 waveOutMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 waveOutOpen(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 waveOutPause(整数32)=>整数32;
+函数 waveOutPrepareHeader(整数32,整数32,整数32)=>整数32;
+函数 waveOutReset(整数32)=>整数32;
+函数 waveOutRestart(整数32)=>整数32;
+函数 waveOutSetPitch(整数32,整数32)=>整数32;
+函数 waveOutSetPlaybackRate(整数32,整数32)=>整数32;
+函数 waveOutSetVolume(整数32,整数32)=>整数32;
+函数 waveOutUnprepareHeader(整数32,整数32,整数32)=>整数32;
+函数 waveOutWrite(整数32,整数32,整数32)=>整数32;
+函数 wid32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 winmmDbgOut(整数32, ..)=>整数32;
+函数 winmmSetDebugLevel(整数32)=>整数32;
+函数 wod32Message(整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 PlaySound  PlaySoundA
+宏定义 auxGetDevCaps  auxGetDevCapsA
+宏定义 joyGetDevCaps  joyGetDevCapsA
+宏定义 mciGetDeviceID  mciGetDeviceIDA
+宏定义 mciGetDeviceIDFromElementID  mciGetDeviceIDFromElementIDA
+宏定义 mciGetErrorString  mciGetErrorStringA
+宏定义 mciSendCommand  mciSendCommandA
+宏定义 mciSendString  mciSendStringA
+宏定义 midiInGetDevCaps  midiInGetDevCapsA
+宏定义 midiInGetErrorText  midiInGetErrorTextA
+宏定义 midiOutGetDevCaps  midiOutGetDevCapsA
+宏定义 midiOutGetErrorText  midiOutGetErrorTextA
+宏定义 mixerGetControlDetails  mixerGetControlDetailsA
+宏定义 mixerGetDevCaps  mixerGetDevCapsA
+宏定义 mixerGetLineControls  mixerGetLineControlsA
+宏定义 mixerGetLineInfo  mixerGetLineInfoA
+宏定义 mmioInstallIOProc  mmioInstallIOProcA
+宏定义 mmioOpen  mmioOpenA
+宏定义 mmioRename  mmioRenameA
+宏定义 mmioStringToFOURCC  mmioStringToFOURCCA
+宏定义 sndPlaySound  sndPlaySoundA
+宏定义 waveInGetDevCaps  waveInGetDevCapsA
+宏定义 waveInGetErrorText  waveInGetErrorTextA
+宏定义 waveOutGetDevCaps  waveOutGetDevCapsA
+宏定义 waveOutGetErrorText  waveOutGetErrorTextA
+}

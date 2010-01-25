@@ -1,0 +1,9 @@
+引用段
+{
+函数 AcsLan(整数32,整数32)=>整数32;
+函数 DlcCallDriver(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAdapterNameFromNumber(整数32,整数32)=>整数32;
+函数 GetAdapterNumberFromName(整数32,整数32)=>整数32;
+函数 NtAcsLan(整数32,整数32,整数32,整数32)=>整数32;
+
+}

@@ -1,0 +1,23 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒDefScreenSaverProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDummyEntry()
+¡Ò:C MyHelpMessage(Ë«×Ö, ..)
+¡ÒRealScreenSaverProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒScreenSaverChangePassword(Ë«×Ö)
+¡ÒWinMain(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWinMainN(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C fChildPreview(Ë«×Ö, ..)
+¡Ò:C hMainInstance(Ë«×Ö, ..)
+¡Ò:C hMainWindow(Ë«×Ö, ..)
+¡Ò:C main(Ë«×Ö, ..)
+¡Ò:C szAppName(Ë«×Ö, ..)
+¡Ò:C szHelpFile(Ë«×Ö, ..)
+¡Ò:C szIniFile(Ë«×Ö, ..)
+¡Ò:C szName(Ë«×Ö, ..)
+¡Ò:C szNoHelpMemory(Ë«×Ö, ..)
+¡Ò:C szScreenSaver(Ë«×Ö, ..)
+
+¦ç

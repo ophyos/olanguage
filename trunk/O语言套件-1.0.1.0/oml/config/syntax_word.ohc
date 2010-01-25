@@ -1,0 +1,59 @@
+;本文件是O汇编语法字配置文件
+;本文件忽略所有以分号开头的行及所有空行
+;注意：本文件还忽略所有行首及行尾的所有(英文的)空白字符
+;文件以行为单位，每个语法字以空格或者行分隔符进行分隔
+;文件以双百分号(%%)为开始的行进行分段，并在双百分号之后加一个数字序号
+;数字序号代表这个段的意义如下：
+;0 -- 注释符
+;1 -- 关键字
+;2 -- 操作符
+;3 -- 宏定义
+
+
+;-----注释符------
+%%0
+;下面的语法符号字符串是按顺序的，请不要变更字符位置
+;注释
+ //  /*   */
+
+;------关键字------
+%%1
+.包含文  .引用库  引用段  外部的
+宏定义  取消宏定义 类定义  取地址  取数值  取大小
+入口  函数  结构  联合  枚举 函数类型
+如果  否则如果  否则  循环  跳出  继续  返回
+若  又若  则  执行  当  设  标签  跳到
+C调用 标准调用 O调用
+
+整数  正数  整数8  正数8   整数16  正数16  整数32  正数32  小数32  小数64 
+
+单整  单正整  短整  短正整  整数  正整  长整  长正整  单浮点  单精度  双浮点  双精度
+字符  正字符
+地址  句柄  逻辑
+
+;英文关键字
+.include .library externs extern
+define macro undef typedef addrof valueof sizeof
+entry function struct union enum funtype
+if elseif else while break continue return for lable goto
+cdecl stdcall ocall
+int int8 uint8 int16 uint16 int32 uint32 float32 float64 float double
+addr char uchar bool short ushort int uint
+BOOL HANDLE
+
+;界面描述关键字
+界面描述 窗口 层 控件
+
+;-------操作符-------
+%%2
++ - * / =  ! & | ^ % ~ 
+[ ] < > { } ( )
+, . ;
+
+;-------------宏--------------
+%%3
+真 假
+TRUE FALSE
+true false
+NULL null
+

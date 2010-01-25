@@ -1,0 +1,226 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒDDMFreePhonebookContext(Ë«×Ö)
+¡ÒDDMGetPhonebookInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDwCloneEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDwDeleteSubEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDwEnumEntriesForAllUsers(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDwEnumEntryDetails(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDwRasUninitialize()
+¡ÒRasAutoDialSharedConnection()
+¡ÒRasAutodialAddressToNetwork(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAutodialEntryToNetwork(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasClearConnectionStatistics(Ë«×Ö)
+¡ÒRasClearLinkStatistics(Ë«×Ö,Ë«×Ö)
+¡ÒRasConnectionNotificationA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasConnectionNotification  RasConnectionNotificationA
+
+¡ÒRasConnectionNotificationW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasCreatePhonebookEntryA(Ë«×Ö,Ë«×Ö)
+¡ßRasCreatePhonebookEntry  RasCreatePhonebookEntryA
+
+¡ÒRasCreatePhonebookEntryW(Ë«×Ö,Ë«×Ö)
+¡ÒRasDeleteEntryA(Ë«×Ö,Ë«×Ö)
+¡ßRasDeleteEntry  RasDeleteEntryA
+
+¡ÒRasDeleteEntryW(Ë«×Ö,Ë«×Ö)
+¡ÒRasDeleteSubEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasDeleteSubEntry  RasDeleteSubEntryA
+
+¡ÒRasDeleteSubEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasDialA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasDial  RasDialA
+
+¡ÒRasDialW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasDialWow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEditPhonebookEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasEditPhonebookEntry  RasEditPhonebookEntryA
+
+¡ÒRasEditPhonebookEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEnumAutodialAddressesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasEnumAutodialAddresses  RasEnumAutodialAddressesA
+
+¡ÒRasEnumAutodialAddressesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEnumConnectionsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasEnumConnections  RasEnumConnectionsA
+
+¡ÒRasEnumConnectionsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEnumConnectionsWow(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEnumDevicesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasEnumDevices  RasEnumDevicesA
+
+¡ÒRasEnumDevicesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEnumEntriesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasEnumEntries  RasEnumEntriesA
+
+¡ÒRasEnumEntriesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEnumEntriesWow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasFreeEapUserIdentityA(Ë«×Ö)
+¡ßRasFreeEapUserIdentity  RasFreeEapUserIdentityA
+
+¡ÒRasFreeEapUserIdentityW(Ë«×Ö)
+¡ÒRasGetAutodialAddressA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetAutodialAddress  RasGetAutodialAddressA
+
+¡ÒRasGetAutodialAddressW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetAutodialEnableA(Ë«×Ö,Ë«×Ö)
+¡ßRasGetAutodialEnable  RasGetAutodialEnableA
+
+¡ÒRasGetAutodialEnableW(Ë«×Ö,Ë«×Ö)
+¡ÒRasGetAutodialParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetAutodialParam  RasGetAutodialParamA
+
+¡ÒRasGetAutodialParamW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetConnectResponse(Ë«×Ö,Ë«×Ö)
+¡ÒRasGetConnectStatusA(Ë«×Ö,Ë«×Ö)
+¡ßRasGetConnectStatus  RasGetConnectStatusA
+
+¡ÒRasGetConnectStatusW(Ë«×Ö,Ë«×Ö)
+¡ÒRasGetConnectStatusWow(Ë«×Ö,Ë«×Ö)
+¡ÒRasGetConnectionStatistics(Ë«×Ö,Ë«×Ö)
+¡ÒRasGetCountryInfoA(Ë«×Ö,Ë«×Ö)
+¡ßRasGetCountryInfo  RasGetCountryInfoA
+
+¡ÒRasGetCountryInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒRasGetCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetCredentials  RasGetCredentialsA
+
+¡ÒRasGetCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetCustomAuthDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetCustomAuthData  RasGetCustomAuthDataA
+
+¡ÒRasGetCustomAuthDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetEapUserDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetEapUserData  RasGetEapUserDataA
+
+¡ÒRasGetEapUserDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetEapUserIdentityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetEapUserIdentity  RasGetEapUserIdentityA
+
+¡ÒRasGetEapUserIdentityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetEntryDialParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetEntryDialParams  RasGetEntryDialParamsA
+
+¡ÒRasGetEntryDialParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetEntryHrasconnA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetEntryHrasconn  RasGetEntryHrasconnA
+
+¡ÒRasGetEntryHrasconnW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetEntryPropertiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetEntryProperties  RasGetEntryPropertiesA
+
+¡ÒRasGetEntryPropertiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetErrorStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetErrorString  RasGetErrorStringA
+
+¡ÒRasGetErrorStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetErrorStringWow(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetHport(Ë«×Ö)
+¡ÒRasGetLinkStatistics(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetProjectionInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetProjectionInfo  RasGetProjectionInfoA
+
+¡ÒRasGetProjectionInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetSubEntryHandleA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetSubEntryHandle  RasGetSubEntryHandleA
+
+¡ÒRasGetSubEntryHandleW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasGetSubEntryPropertiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasGetSubEntryProperties  RasGetSubEntryPropertiesA
+
+¡ÒRasGetSubEntryPropertiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasHangUpA(Ë«×Ö)
+¡ßRasHangUp  RasHangUpA
+
+¡ÒRasHangUpW(Ë«×Ö)
+¡ÒRasHangUpWow(Ë«×Ö)
+¡ÒRasInvokeEapUI(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasIsRouterConnection(Ë«×Ö)
+¡ÒRasIsSharedConnection(Ë«×Ö,Ë«×Ö)
+¡ÒRasQueryRedialOnLinkFailure(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasQuerySharedAutoDial(Ë«×Ö)
+¡ÒRasQuerySharedConnection(Ë«×Ö)
+¡ÒRasRenameEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasRenameEntry  RasRenameEntryA
+
+¡ÒRasRenameEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasScriptExecute(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasScriptGetEventCode(Ë«×Ö)
+¡ÒRasScriptGetIpAddress(Ë«×Ö,Ë«×Ö)
+¡ÒRasScriptInit(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasScriptReceive(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasScriptSend(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasScriptTerm(Ë«×Ö)
+¡ÒRasSetAutodialAddressA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetAutodialAddress  RasSetAutodialAddressA
+
+¡ÒRasSetAutodialAddressW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetAutodialEnableA(Ë«×Ö,Ë«×Ö)
+¡ßRasSetAutodialEnable  RasSetAutodialEnableA
+
+¡ÒRasSetAutodialEnableW(Ë«×Ö,Ë«×Ö)
+¡ÒRasSetAutodialParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetAutodialParam  RasSetAutodialParamA
+
+¡ÒRasSetAutodialParamW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetCredentials  RasSetCredentialsA
+
+¡ÒRasSetCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetCustomAuthDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetCustomAuthData  RasSetCustomAuthDataA
+
+¡ÒRasSetCustomAuthDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetEapUserDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetEapUserData  RasSetEapUserDataA
+
+¡ÒRasSetEapUserDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetEntryDialParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetEntryDialParams  RasSetEntryDialParamsA
+
+¡ÒRasSetEntryDialParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetEntryPropertiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetEntryProperties  RasSetEntryPropertiesA
+
+¡ÒRasSetEntryPropertiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSetOldPassword(Ë«×Ö,Ë«×Ö)
+¡ÒRasSetSharedAutoDial(Ë«×Ö)
+¡ÒRasSetSubEntryPropertiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasSetSubEntryProperties  RasSetSubEntryPropertiesA
+
+¡ÒRasSetSubEntryPropertiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasValidateEntryNameA(Ë«×Ö,Ë«×Ö)
+¡ßRasValidateEntryName  RasValidateEntryNameA
+
+¡ÒRasValidateEntryNameW(Ë«×Ö,Ë«×Ö)
+¡ÒRasfileClose(Ë«×Ö)
+¡ÒRasfileDeleteLine(Ë«×Ö)
+¡ÒRasfileFindFirstLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileFindLastLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileFindMarkedLine(Ë«×Ö,Ë«×Ö)
+¡ÒRasfileFindNextKeyLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileFindNextLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileFindPrevLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileFindSectionLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileGetKeyValueFields(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileGetLine(Ë«×Ö)
+¡ÒRasfileGetLineMark(Ë«×Ö)
+¡ÒRasfileGetLineText(Ë«×Ö,Ë«×Ö)
+¡ÒRasfileGetLineType(Ë«×Ö)
+¡ÒRasfileGetSectionName(Ë«×Ö,Ë«×Ö)
+¡ÒRasfileInsertLine(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileLoad(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileLoadEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfileLoadInfo(Ë«×Ö,Ë«×Ö)
+¡ÒRasfilePutKeyValueFields(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasfilePutLineMark(Ë«×Ö,Ë«×Ö)
+¡ÒRasfilePutLineText(Ë«×Ö,Ë«×Ö)
+¡ÒRasfilePutSectionName(Ë«×Ö,Ë«×Ö)
+¡ÒRasfileWrite(Ë«×Ö,Ë«×Ö)
+¡ÒSharedAccessResponseListToString(Ë«×Ö,Ë«×Ö)
+¡ÒSharedAccessResponseStringToList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnInitializeRAS()
+
+¦ç

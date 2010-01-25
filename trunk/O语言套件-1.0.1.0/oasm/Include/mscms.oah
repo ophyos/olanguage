@@ -1,0 +1,93 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAssociateColorProfileWithDeviceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAssociateColorProfileWithDevice  AssociateColorProfileWithDeviceA
+
+¡ÒAssociateColorProfileWithDeviceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckBitmapBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckColors(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCloseColorProfile(Ë«×Ö)
+¡ÒConvertColorNameToIndex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertIndexToColorName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateColorTransformA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateColorTransform  CreateColorTransformA
+
+¡ÒCreateColorTransformW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDeviceLinkProfile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateMultiProfileTransform(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateProfileFromLogColorSpaceA(Ë«×Ö,Ë«×Ö)
+¡ßCreateProfileFromLogColorSpace  CreateProfileFromLogColorSpaceA
+
+¡ÒCreateProfileFromLogColorSpaceW(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteColorTransform(Ë«×Ö)
+¡ÒDisassociateColorProfileFromDeviceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDisassociateColorProfileFromDevice  DisassociateColorProfileFromDeviceA
+
+¡ÒDisassociateColorProfileFromDeviceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumColorProfilesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumColorProfiles  EnumColorProfilesA
+
+¡ÒEnumColorProfilesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGenerateCopyFilePaths(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCMMInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetColorDirectoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetColorDirectory  GetColorDirectoryA
+
+¡ÒGetColorDirectoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetColorProfileElement(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetColorProfileElementTag(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetColorProfileFromHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetColorProfileHeader(Ë«×Ö,Ë«×Ö)
+¡ÒGetCountColorProfileElements(Ë«×Ö,Ë«×Ö)
+¡ÒGetNamedProfileInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetPS2ColorRenderingDictionary(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPS2ColorRenderingIntent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPS2ColorSpaceArray(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetStandardColorSpaceProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetStandardColorSpaceProfile  GetStandardColorSpaceProfileA
+
+¡ÒGetStandardColorSpaceProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInstallColorProfileA(Ë«×Ö,Ë«×Ö)
+¡ßInstallColorProfile  InstallColorProfileA
+
+¡ÒInstallColorProfileW(Ë«×Ö,Ë«×Ö)
+¡ÒInternalGetDeviceConfig(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternalGetPS2CSAFromLCS(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternalGetPS2ColorRenderingDictionary(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternalGetPS2ColorSpaceArray(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternalGetPS2PreviewCRD(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternalSetDeviceConfig(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsColorProfileTagPresent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsColorProfileValid(Ë«×Ö,Ë«×Ö)
+¡ÒOpenColorProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenColorProfile  OpenColorProfileA
+
+¡ÒOpenColorProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterCMMA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegisterCMM  RegisterCMMA
+
+¡ÒRegisterCMMW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSelectCMM(Ë«×Ö)
+¡ÒSetColorProfileElement(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetColorProfileElementReference(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetColorProfileElementSize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetColorProfileHeader(Ë«×Ö,Ë«×Ö)
+¡ÒSetStandardColorSpaceProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetStandardColorSpaceProfile  SetStandardColorSpaceProfileA
+
+¡ÒSetStandardColorSpaceProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSpoolerCopyFileEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTranslateBitmapBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTranslateColors(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUninstallColorProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUninstallColorProfile  UninstallColorProfileA
+
+¡ÒUninstallColorProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnregisterCMMA(Ë«×Ö,Ë«×Ö)
+¡ßUnregisterCMM  UnregisterCMMA
+
+¡ÒUnregisterCMMW(Ë«×Ö,Ë«×Ö)
+
+¦ç

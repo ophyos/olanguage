@@ -1,0 +1,143 @@
+引用段
+{
+函数 PdhAddCounterA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhAddCounterW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhBindInputDataSourceA(整数32,整数32)=>整数32;
+函数 PdhBindInputDataSourceW(整数32,整数32)=>整数32;
+函数 PdhBrowseCountersA(整数32)=>整数32;
+函数 PdhBrowseCountersHA(整数32)=>整数32;
+函数 PdhBrowseCountersHW(整数32)=>整数32;
+函数 PdhBrowseCountersW(整数32)=>整数32;
+函数 PdhCalculateCounterFromRawValue(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhCloseLog(整数32,整数32)=>整数32;
+函数 PdhCloseQuery(整数32)=>整数32;
+函数 PdhCollectQueryData(整数32)=>整数32;
+函数 PdhCollectQueryDataEx(整数32,整数32,整数32)=>整数32;
+函数 PdhComputeCounterStatistics(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhConnectMachineA(整数32)=>整数32;
+函数 PdhConnectMachineW(整数32)=>整数32;
+函数 PdhCreateSQLTablesA(整数32)=>整数32;
+函数 PdhCreateSQLTablesW(整数32)=>整数32;
+函数 PdhEnumLogSetNamesA(整数32,整数32,整数32)=>整数32;
+函数 PdhEnumLogSetNamesW(整数32,整数32,整数32)=>整数32;
+函数 PdhEnumMachinesA(整数32,整数32,整数32)=>整数32;
+函数 PdhEnumMachinesHA(整数32,整数32,整数32)=>整数32;
+函数 PdhEnumMachinesHW(整数32,整数32,整数32)=>整数32;
+函数 PdhEnumMachinesW(整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectItemsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectItemsHA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectItemsHW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectItemsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectsHA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectsHW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhEnumObjectsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhExpandCounterPathA(整数32,整数32,整数32)=>整数32;
+函数 PdhExpandCounterPathW(整数32,整数32,整数32)=>整数32;
+函数 PdhExpandWildCardPathA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhExpandWildCardPathHA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhExpandWildCardPathHW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhExpandWildCardPathW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhFormatFromRawValue(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetCounterInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetCounterInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetCounterTimeBase(整数32,整数32)=>整数32;
+函数 PdhGetDataSourceTimeRangeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDataSourceTimeRangeH(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDataSourceTimeRangeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfCounterA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfCounterHA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfCounterHW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfCounterW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfObjectA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfObjectHA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfObjectHW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDefaultPerfObjectW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetDllVersion(整数32)=>整数32;
+函数 PdhGetFormattedCounterArrayA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetFormattedCounterArrayW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetFormattedCounterValue(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetLogFileSize(整数32,整数32)=>整数32;
+函数 PdhGetLogSetGUID(整数32,整数32,整数32)=>整数32;
+函数 PdhGetRawCounterArrayA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetRawCounterArrayW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhGetRawCounterValue(整数32,整数32,整数32)=>整数32;
+函数 PdhIsRealTimeQuery(整数32)=>整数32;
+函数 PdhLookupPerfIndexByNameA(整数32,整数32,整数32)=>整数32;
+函数 PdhLookupPerfIndexByNameW(整数32,整数32,整数32)=>整数32;
+函数 PdhLookupPerfNameByIndexA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhLookupPerfNameByIndexW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhMakeCounterPathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhMakeCounterPathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhOpenLogA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhOpenLogW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhOpenQueryA(整数32,整数32,整数32)=>整数32;
+函数 PdhOpenQueryH(整数32,整数32,整数32)=>整数32;
+函数 PdhOpenQueryW(整数32,整数32,整数32)=>整数32;
+函数 PdhParseCounterPathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhParseCounterPathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhParseInstanceNameA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhParseInstanceNameW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhReadRawLogRecord(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhRemoveCounter(整数32)=>整数32;
+函数 PdhSelectDataSourceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhSelectDataSourceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhSetCounterScaleFactor(整数32,整数32)=>整数32;
+函数 PdhSetDefaultRealTimeDataSource(整数32)=>整数32;
+函数 PdhSetLogSetRunID(整数32,整数32)=>整数32;
+函数 PdhSetQueryTimeRange(整数32,整数32)=>整数32;
+函数 PdhUpdateLogA(整数32,整数32)=>整数32;
+函数 PdhUpdateLogFileCatalog(整数32)=>整数32;
+函数 PdhUpdateLogW(整数32,整数32)=>整数32;
+函数 PdhValidatePathA(整数32)=>整数32;
+函数 PdhValidatePathW(整数32)=>整数32;
+函数 PdhVbAddCounter(整数32,整数32,整数32)=>整数32;
+函数 PdhVbCreateCounterPathList(整数32,整数32)=>整数32;
+函数 PdhVbGetCounterPathElements(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhVbGetCounterPathFromList(整数32,整数32,整数32)=>整数32;
+函数 PdhVbGetDoubleCounterValue(整数32,整数32)=>整数32;
+函数 PdhVbGetLogFileSize(整数32,整数32)=>整数32;
+函数 PdhVbGetOneCounterPath(整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhVbIsGoodStatus(整数32)=>整数32;
+函数 PdhVbOpenLog(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PdhVbOpenQuery(整数32)=>整数32;
+函数 PdhVbUpdateLog(整数32,整数32)=>整数32;
+函数 PdhVerifySQLDBA(整数32)=>整数32;
+函数 PdhVerifySQLDBW(整数32)=>整数32;
+
+宏定义 PdhAddCounter  PdhAddCounterA
+宏定义 PdhBindInputDataSource  PdhBindInputDataSourceA
+宏定义 PdhBrowseCounters  PdhBrowseCountersA
+宏定义 PdhBrowseCountersH  PdhBrowseCountersHA
+宏定义 PdhConnectMachine  PdhConnectMachineA
+宏定义 PdhCreateSQLTables  PdhCreateSQLTablesA
+宏定义 PdhEnumLogSetNames  PdhEnumLogSetNamesA
+宏定义 PdhEnumMachines  PdhEnumMachinesA
+宏定义 PdhEnumMachinesH  PdhEnumMachinesHA
+宏定义 PdhEnumObjectItems  PdhEnumObjectItemsA
+宏定义 PdhEnumObjectItemsH  PdhEnumObjectItemsHA
+宏定义 PdhEnumObjects  PdhEnumObjectsA
+宏定义 PdhEnumObjectsH  PdhEnumObjectsHA
+宏定义 PdhExpandCounterPath  PdhExpandCounterPathA
+宏定义 PdhExpandWildCardPath  PdhExpandWildCardPathA
+宏定义 PdhExpandWildCardPathH  PdhExpandWildCardPathHA
+宏定义 PdhGetCounterInfo  PdhGetCounterInfoA
+宏定义 PdhGetDataSourceTimeRange  PdhGetDataSourceTimeRangeA
+宏定义 PdhGetDefaultPerfCounter  PdhGetDefaultPerfCounterA
+宏定义 PdhGetDefaultPerfCounterH  PdhGetDefaultPerfCounterHA
+宏定义 PdhGetDefaultPerfObject  PdhGetDefaultPerfObjectA
+宏定义 PdhGetDefaultPerfObjectH  PdhGetDefaultPerfObjectHA
+宏定义 PdhGetFormattedCounterArray  PdhGetFormattedCounterArrayA
+宏定义 PdhGetRawCounterArray  PdhGetRawCounterArrayA
+宏定义 PdhLookupPerfIndexByName  PdhLookupPerfIndexByNameA
+宏定义 PdhLookupPerfNameByIndex  PdhLookupPerfNameByIndexA
+宏定义 PdhMakeCounterPath  PdhMakeCounterPathA
+宏定义 PdhOpenLog  PdhOpenLogA
+宏定义 PdhOpenQuery  PdhOpenQueryA
+宏定义 PdhParseCounterPath  PdhParseCounterPathA
+宏定义 PdhParseInstanceName  PdhParseInstanceNameA
+宏定义 PdhSelectDataSource  PdhSelectDataSourceA
+宏定义 PdhUpdateLog  PdhUpdateLogA
+宏定义 PdhValidatePath  PdhValidatePathA
+宏定义 PdhVerifySQLDB  PdhVerifySQLDBA
+}

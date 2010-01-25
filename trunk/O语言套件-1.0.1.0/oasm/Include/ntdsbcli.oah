@@ -1,0 +1,54 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒDsBackupClose(Ë«×Ö)
+¡ÒDsBackupEnd(Ë«×Ö)
+¡ÒDsBackupFree(Ë«×Ö)
+¡ÒDsBackupGetBackupLogsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBackupGetBackupLogs  DsBackupGetBackupLogsA
+
+¡ÒDsBackupGetBackupLogsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBackupGetDatabaseNamesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBackupGetDatabaseNames  DsBackupGetDatabaseNamesA
+
+¡ÒDsBackupGetDatabaseNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBackupOpenFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBackupOpenFile  DsBackupOpenFileA
+
+¡ÒDsBackupOpenFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBackupPrepareA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBackupPrepare  DsBackupPrepareA
+
+¡ÒDsBackupPrepareW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBackupRead(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBackupTruncateLogs(Ë«×Ö)
+¡ÒDsIsNTDSOnlineA(Ë«×Ö,Ë«×Ö)
+¡ßDsIsNTDSOnline  DsIsNTDSOnlineA
+
+¡ÒDsIsNTDSOnlineW(Ë«×Ö,Ë«×Ö)
+¡ÒDsRestoreCheckExpiryToken(Ë«×Ö,Ë«×Ö)
+¡ÒDsRestoreEnd(Ë«×Ö)
+¡ÒDsRestoreGetDatabaseLocationsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsRestoreGetDatabaseLocations  DsRestoreGetDatabaseLocationsA
+
+¡ÒDsRestoreGetDatabaseLocationsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsRestorePrepareA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsRestorePrepare  DsRestorePrepareA
+
+¡ÒDsRestorePrepareW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsRestoreRegisterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsRestoreRegister  DsRestoreRegisterA
+
+¡ÒDsRestoreRegisterComplete(Ë«×Ö,Ë«×Ö)
+¡ÒDsRestoreRegisterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsSetAuthIdentityA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsSetAuthIdentity  DsSetAuthIdentityA
+
+¡ÒDsSetAuthIdentityW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsSetCurrentBackupLogA(Ë«×Ö,Ë«×Ö)
+¡ßDsSetCurrentBackupLog  DsSetCurrentBackupLogA
+
+¡ÒDsSetCurrentBackupLogW(Ë«×Ö,Ë«×Ö)
+
+¦ç

@@ -1,0 +1,475 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAbortDoc(Ë«×Ö)
+¡ÒAbortPath(Ë«×Ö)
+¡ÒAddFontMemResourceEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddFontResourceA(Ë«×Ö)
+¡ßAddFontResource  AddFontResourceA
+
+¡ÒAddFontResourceExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddFontResourceEx  AddFontResourceExA
+
+¡ÒAddFontResourceExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddFontResourceW(Ë«×Ö)
+¡ÒAngleArc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAnimatePalette(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒArc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒArcTo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBeginPath(Ë«×Ö)
+¡ÒBitBlt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCancelDC(Ë«×Ö)
+¡ÒCheckColorsInGamut(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChoosePixelFormat(Ë«×Ö,Ë«×Ö)
+¡ÒChord(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCloseEnhMetaFile(Ë«×Ö)
+¡ÒCloseFigure(Ë«×Ö)
+¡ÒCloseMetaFile(Ë«×Ö)
+¡ÒColorCorrectPalette(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒColorMatchToTarget(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCombineRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCombineTransform(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCopyEnhMetaFileA(Ë«×Ö,Ë«×Ö)
+¡ßCopyEnhMetaFile  CopyEnhMetaFileA
+
+¡ÒCopyEnhMetaFileW(Ë«×Ö,Ë«×Ö)
+¡ÒCopyMetaFileA(Ë«×Ö,Ë«×Ö)
+¡ßCopyMetaFile  CopyMetaFileA
+
+¡ÒCopyMetaFileW(Ë«×Ö,Ë«×Ö)
+¡ÒCreateBitmap(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateBitmapIndirect(Ë«×Ö)
+¡ÒCreateBrushIndirect(Ë«×Ö)
+¡ÒCreateColorSpaceA(Ë«×Ö)
+¡ßCreateColorSpace  CreateColorSpaceA
+
+¡ÒCreateColorSpaceW(Ë«×Ö)
+¡ÒCreateCompatibleBitmap(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨¼æÈÝÉè±¸»·¾³:CreateCompatibleDC(Ë«×Ö)
+¡Ò´´½¨Éè±¸»·¾³:CreateDCA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateDC  CreateDCA
+
+¡ÒCreateDCW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDIBPatternBrush(Ë«×Ö,Ë«×Ö)
+¡ÒCreateDIBPatternBrushPt(Ë«×Ö,Ë«×Ö)
+¡ÒCreateDIBSection(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDIBitmap(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDiscardableBitmap(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateEllipticRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateEllipticRgnIndirect(Ë«×Ö)
+¡ÒCreateEnhMetaFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateEnhMetaFile  CreateEnhMetaFileA
+
+¡ÒCreateEnhMetaFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateFontA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateFont  CreateFontA
+
+¡ÒCreateFontIndirectA(Ë«×Ö)
+¡ßCreateFontIndirect  CreateFontIndirectA
+
+¡ÒCreateFontIndirectExA(Ë«×Ö)
+¡ßCreateFontIndirectEx  CreateFontIndirectExA
+
+¡ÒCreateFontIndirectExW(Ë«×Ö)
+¡ÒCreateFontIndirectW(Ë«×Ö)
+¡ÒCreateFontW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateHalftonePalette(Ë«×Ö)
+¡ÒCreateHatchBrush(Ë«×Ö,Ë«×Ö)
+¡ÒCreateICA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateIC  CreateICA
+
+¡ÒCreateICW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateMetaFileA(Ë«×Ö)
+¡ßCreateMetaFile  CreateMetaFileA
+
+¡ÒCreateMetaFileW(Ë«×Ö)
+¡ÒCreatePalette(Ë«×Ö)
+¡ÒCreatePatternBrush(Ë«×Ö)
+¡ÒCreatePen(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePenIndirect(Ë«×Ö)
+¡ÒCreatePolyPolygonRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePolygonRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateRectRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateRectRgnIndirect(Ë«×Ö)
+¡ÒCreateRoundRectRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateScalableFontResourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateScalableFontResource  CreateScalableFontResourceA
+
+¡ÒCreateScalableFontResourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨ÊµÌå±ÊË¢:CreateSolidBrush(Ë«×Ö)
+¡ÒDPtoLP(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteColorSpace(Ë«×Ö)
+¡ÒÉ¾³ýÉè±¸»·¾³:DeleteDC(Ë«×Ö)
+¡ÒDeleteEnhMetaFile(Ë«×Ö)
+¡ÒDeleteMetaFile(Ë«×Ö)
+¡ÒÉ¾³ý¶ÔÏó:DeleteObject(Ë«×Ö)
+¡ÒDescribePixelFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeviceCapabilitiesExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeviceCapabilitiesEx  DeviceCapabilitiesExA
+
+¡ÒDeviceCapabilitiesExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawEscape(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEllipse(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnableEUDC(Ë«×Ö)
+¡ÒEndDoc(Ë«×Ö)
+¡ÒEndFormPage(Ë«×Ö)
+¡ÒEndPage(Ë«×Ö)
+¡ÒEndPath(Ë«×Ö)
+¡ÒEnumEnhMetaFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumFontFamiliesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumFontFamilies  EnumFontFamiliesA
+
+¡ÒEnumFontFamiliesExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumFontFamiliesEx  EnumFontFamiliesExA
+
+¡ÒEnumFontFamiliesExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumFontFamiliesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumFontsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumFonts  EnumFontsA
+
+¡ÒEnumFontsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumICMProfilesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumICMProfiles  EnumICMProfilesA
+
+¡ÒEnumICMProfilesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumMetaFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumObjects(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEqualRgn(Ë«×Ö,Ë«×Ö)
+¡ÒEscape(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEudcLoadLinkW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEudcUnloadLinkW(Ë«×Ö,Ë«×Ö)
+¡ÒExcludeClipRect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtCreatePen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtCreateRegion(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtEscape(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¸ß¼¶ÍêÈ«Ìî³ä:ExtFloodFill(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtSelectClipRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtTextOutA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExtTextOut  ExtTextOutA
+
+¡ÒExtTextOutW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFillPath(Ë«×Ö)
+¡ÒFillRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFixBrushOrgEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFlattenPath(Ë«×Ö)
+¡ÒFloodFill(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFrameRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiArtificialDecrementDriver(Ë«×Ö,Ë«×Ö)
+¡ÒGdiComment(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiDeleteSpoolFileHandle(Ë«×Ö)
+¡ÒGdiEndDocEMF(Ë«×Ö)
+¡ÒGdiEndPageEMF(Ë«×Ö,Ë«×Ö)
+¡ÒGdiFlush()
+¡ÒGdiGetBatchLimit()
+¡ÒGdiGetDC(Ë«×Ö)
+¡ÒGdiGetDevmodeForPage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiGetPageCount(Ë«×Ö)
+¡ÒGdiGetPageHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiGetSpoolFileHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiPlayDCScript(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiPlayEMF(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiPlayJournal(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiPlayPageEMF(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiPlayPrivatePageEMF(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiPlayScript(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGdiResetDCEMF(Ë«×Ö,Ë«×Ö)
+¡ÒGdiSetBatchLimit(Ë«×Ö)
+¡ÒGdiStartDocEMF(Ë«×Ö,Ë«×Ö)
+¡ÒGdiStartPageEMF(Ë«×Ö)
+¡ÒGetArcDirection(Ë«×Ö)
+¡ÒGetAspectRatioFilterEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetBitmapBits(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetBitmapDimensionEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetBkColor(Ë«×Ö)
+¡ÒGetBkMode(Ë«×Ö)
+¡ÒGetBoundsRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetBrushOrgEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetCharABCWidthsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCharABCWidths  GetCharABCWidthsA
+
+¡ÒGetCharABCWidthsFloatA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCharABCWidthsFloat  GetCharABCWidthsFloatA
+
+¡ÒGetCharABCWidthsFloatW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharABCWidthsI(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharABCWidthsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharWidth32A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCharWidth32  GetCharWidth32A
+
+¡ÒGetCharWidth32W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharWidthA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCharWidth  GetCharWidthA
+
+¡ÒGetCharWidthFloatA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCharWidthFloat  GetCharWidthFloatA
+
+¡ÒGetCharWidthFloatW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharWidthI(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharWidthW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCharacterPlacementA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCharacterPlacement  GetCharacterPlacementA
+
+¡ÒGetCharacterPlacementW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClipBox(Ë«×Ö,Ë«×Ö)
+¡ÒGetClipRgn(Ë«×Ö,Ë«×Ö)
+¡ÒGetColorAdjustment(Ë«×Ö,Ë«×Ö)
+¡ÒGetColorSpace(Ë«×Ö)
+¡ÒGetCurrentObject(Ë«×Ö,Ë«×Ö)
+¡ÒGetCurrentPositionEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetDCBrushColor(Ë«×Ö)
+¡ÒGetDCOrgEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetDCPenColor(Ë«×Ö)
+¡ÒGetDIBColorTable(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDIBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDeviceCaps(Ë«×Ö,Ë«×Ö)
+¡ÒGetDeviceGammaRamp(Ë«×Ö,Ë«×Ö)
+¡ÒGetEnhMetaFileA(Ë«×Ö)
+¡ßGetEnhMetaFile  GetEnhMetaFileA
+
+¡ÒGetEnhMetaFileBits(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetEnhMetaFileDescriptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetEnhMetaFileDescription  GetEnhMetaFileDescriptionA
+
+¡ÒGetEnhMetaFileDescriptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetEnhMetaFileHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetEnhMetaFilePaletteEntries(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetEnhMetaFilePixelFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetEnhMetaFileW(Ë«×Ö)
+¡ÒGetFontAssocStatus(Ë«×Ö)
+¡ÒGetFontData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFontLanguageInfo(Ë«×Ö)
+¡ÒGetFontResourceInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFontUnicodeRanges(Ë«×Ö,Ë«×Ö)
+¡ÒGetGlyphIndicesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetGlyphIndices  GetGlyphIndicesA
+
+¡ÒGetGlyphIndicesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetGlyphOutlineA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetGlyphOutline  GetGlyphOutlineA
+
+¡ÒGetGlyphOutlineW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetGraphicsMode(Ë«×Ö)
+¡ÒGetICMProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetICMProfile  GetICMProfileA
+
+¡ÒGetICMProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetKerningPairsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetKerningPairs  GetKerningPairsA
+
+¡ÒGetKerningPairsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetLayout(Ë«×Ö)
+¡ÒGetLogColorSpaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetLogColorSpace  GetLogColorSpaceA
+
+¡ÒGetLogColorSpaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMapMode(Ë«×Ö)
+¡ÒGetMetaFileA(Ë«×Ö)
+¡ßGetMetaFile  GetMetaFileA
+
+¡ÒGetMetaFileBitsEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMetaFileW(Ë«×Ö)
+¡ÒGetMetaRgn(Ë«×Ö,Ë«×Ö)
+¡ÒGetMiterLimit(Ë«×Ö,Ë«×Ö)
+¡ÒGetNearestColor(Ë«×Ö,Ë«×Ö)
+¡ÒGetNearestPaletteIndex(Ë«×Ö,Ë«×Ö)
+¡ÒGetObjectA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetObject  GetObjectA
+
+¡ÒGetObjectType(Ë«×Ö)
+¡ÒGetObjectW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetOutlineTextMetricsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetOutlineTextMetrics  GetOutlineTextMetricsA
+
+¡ÒGetOutlineTextMetricsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPaletteEntries(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPath(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡ÏóËØ:GetPixel(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPixelFormat(Ë«×Ö)
+¡ÒGetPolyFillMode(Ë«×Ö)
+¡ÒGetROP2(Ë«×Ö)
+¡ÒGetRandomRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRasterizerCaps(Ë«×Ö,Ë«×Ö)
+¡ÒGetRegionData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRelAbs(Ë«×Ö,Ë«×Ö)
+¡ÒGetRgnBox(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡¹ÌÓÐ¶ÔÏó:GetStockObject(Ë«×Ö)
+¡ÒGetStretchBltMode(Ë«×Ö)
+¡ÒGetSystemPaletteEntries(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemPaletteUse(Ë«×Ö)
+¡ÒGetTextAlign(Ë«×Ö)
+¡ÒGetTextCharacterExtra(Ë«×Ö)
+¡ÒGetTextCharset(Ë«×Ö)
+¡ÒGetTextCharsetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextColor(Ë«×Ö)
+¡ÒGetTextExtentExPointA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTextExtentExPoint  GetTextExtentExPointA
+
+¡ÒGetTextExtentExPointI(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextExtentExPointW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextExtentPoint32A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTextExtentPoint32  GetTextExtentPoint32A
+
+¡ÒGetTextExtentPoint32W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextExtentPointA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTextExtentPoint  GetTextExtentPointA
+
+¡ÒGetTextExtentPointI(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextExtentPointW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextFaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTextFace  GetTextFaceA
+
+¡ÒGetTextFaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTextMetricsA(Ë«×Ö,Ë«×Ö)
+¡ßGetTextMetrics  GetTextMetricsA
+
+¡ÒGetTextMetricsW(Ë«×Ö,Ë«×Ö)
+¡ÒGetViewportExtEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetViewportOrgEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetWinMetaFileBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowExtEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowOrgEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetWorldTransform(Ë«×Ö,Ë«×Ö)
+¡ÒIntersectClipRect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInvertRgn(Ë«×Ö,Ë«×Ö)
+¡ÒLPtoDP(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLineDDA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLineDD  LineDDA
+
+¡ÒLineTo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMaskBlt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒModifyWorldTransform(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMoveToEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOffsetClipRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOffsetRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOffsetViewportOrgEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOffsetWindowOrgEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPaintRgn(Ë«×Ö,Ë«×Ö)
+¡ÒPatBlt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathToRegion(Ë«×Ö)
+¡ÒPie(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPlayEnhMetaFile(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPlayEnhMetaFileRecord(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPlayMetaFile(Ë«×Ö,Ë«×Ö)
+¡ÒPlayMetaFileRecord(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPlgBlt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyBezier(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyBezierTo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyDraw(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyPolygon(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyPolyline(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyTextOutA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPolyTextOut  PolyTextOutA
+
+¡ÒPolyTextOutW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolygon(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolyline(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPolylineTo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPtInRegion(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPtVisible(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRealizePalette(Ë«×Ö)
+¡ÒRectInRegion(Ë«×Ö,Ë«×Ö)
+¡ÒRectVisible(Ë«×Ö,Ë«×Ö)
+¡ÒRectangle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRemoveFontMemResourceEx(Ë«×Ö)
+¡ÒRemoveFontResourceA(Ë«×Ö)
+¡ßRemoveFontResource  RemoveFontResourceA
+
+¡ÒRemoveFontResourceExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRemoveFontResourceEx  RemoveFontResourceExA
+
+¡ÒRemoveFontResourceExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRemoveFontResourceW(Ë«×Ö)
+¡ÒResetDCA(Ë«×Ö,Ë«×Ö)
+¡ßResetDC  ResetDCA
+
+¡ÒResetDCW(Ë«×Ö,Ë«×Ö)
+¡ÒResizePalette(Ë«×Ö,Ë«×Ö)
+¡ÒRestoreDC(Ë«×Ö,Ë«×Ö)
+¡ÒRoundRect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaveDC(Ë«×Ö)
+¡ÒScaleViewportExtEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒScaleWindowExtEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSelectBrushLocal(Ë«×Ö,Ë«×Ö)
+¡ÒSelectClipPath(Ë«×Ö,Ë«×Ö)
+¡ÒSelectClipRgn(Ë«×Ö,Ë«×Ö)
+¡ÒSelectFontLocal(Ë«×Ö,Ë«×Ö)
+¡ÒÑ¡Ôñ¶ÔÏó:SelectObject(Ë«×Ö,Ë«×Ö)
+¡ÒSelectPalette(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetAbortProc(Ë«×Ö,Ë«×Ö)
+¡ÒSetArcDirection(Ë«×Ö,Ë«×Ö)
+¡ÒSetBitmapBits(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetBitmapDimensionEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetBkColor(Ë«×Ö,Ë«×Ö)
+¡ÒSetBkMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetBoundsRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetBrushOrgEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetColorAdjustment(Ë«×Ö,Ë«×Ö)
+¡ÒSetColorSpace(Ë«×Ö,Ë«×Ö)
+¡ÒSetDCBrushColor(Ë«×Ö,Ë«×Ö)
+¡ÒSetDCPenColor(Ë«×Ö,Ë«×Ö)
+¡ÒSetDIBColorTable(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetDIBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetDIBitsToDevice(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetDeviceGammaRamp(Ë«×Ö,Ë«×Ö)
+¡ÒSetEnhMetaFileBits(Ë«×Ö,Ë«×Ö)
+¡ÒSetFontEnumeration(Ë«×Ö)
+¡ÒSetGraphicsMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetICMMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetICMProfileA(Ë«×Ö,Ë«×Ö)
+¡ßSetICMProfile  SetICMProfileA
+
+¡ÒSetICMProfileW(Ë«×Ö,Ë«×Ö)
+¡ÒSetLayout(Ë«×Ö,Ë«×Ö)
+¡ÒSetMagicColors(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetMapMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetMapperFlags(Ë«×Ö,Ë«×Ö)
+¡ÒSetMetaFileBitsEx(Ë«×Ö,Ë«×Ö)
+¡ÒSetMetaRgn(Ë«×Ö)
+¡ÒSetMiterLimit(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPaletteEntries(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPixel(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPixelFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPixelV(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPolyFillMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetROP2(Ë«×Ö,Ë«×Ö)
+¡ÒSetRectRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetRelAbs(Ë«×Ö,Ë«×Ö)
+¡ÒSetStretchBltMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetSystemPaletteUse(Ë«×Ö,Ë«×Ö)
+¡ÒSetTextAlign(Ë«×Ö,Ë«×Ö)
+¡ÒSetTextCharacterExtra(Ë«×Ö,Ë«×Ö)
+¡ÒSetTextColor(Ë«×Ö,Ë«×Ö)
+¡ÒSetTextJustification(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetViewportExtEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetViewportOrgEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWinMetaFileBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowExtEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowOrgEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWorldTransform(Ë«×Ö,Ë«×Ö)
+¡ÒStartDocA(Ë«×Ö,Ë«×Ö)
+¡ßStartDoc  StartDocA
+
+¡ÒStartDocW(Ë«×Ö,Ë«×Ö)
+¡ÒStartFormPage(Ë«×Ö)
+¡ÒStartPage(Ë«×Ö)
+¡ÒStretchBlt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStretchDIBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrokeAndFillPath(Ë«×Ö)
+¡ÒStrokePath(Ë«×Ö)
+¡ÒSwapBuffers(Ë«×Ö)
+¡ÒTextOutA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTextOut  TextOutA
+
+¡ÒTextOutW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTranslateCharsetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnrealizeObject(Ë«×Ö)
+¡ÒUpdateColors(Ë«×Ö)
+¡ÒUpdateICMRegKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUpdateICMRegKey  UpdateICMRegKeyA
+
+¡ÒUpdateICMRegKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWidenPath(Ë«×Ö)
+¡ÒgdiPlaySpoolStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

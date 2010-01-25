@@ -1,0 +1,20 @@
+引用段
+{
+函数 CreatePatchFileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePatchFileByHandles(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePatchFileByHandlesEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePatchFileExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePatchFileExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePatchFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtractPatchHeaderToFileA(整数32,整数32)=>整数32;
+函数 ExtractPatchHeaderToFileByHandles(整数32,整数32)=>整数32;
+函数 ExtractPatchHeaderToFileW(整数32,整数32)=>整数32;
+函数 GetFilePatchSignatureA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFilePatchSignatureByHandle(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFilePatchSignatureW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 CreatePatchFile  CreatePatchFileA
+宏定义 CreatePatchFileEx  CreatePatchFileExA
+宏定义 ExtractPatchHeaderToFile  ExtractPatchHeaderToFileA
+宏定义 GetFilePatchSignature  GetFilePatchSignatureA
+}

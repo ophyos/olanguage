@@ -1,0 +1,11 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫CryptSIPCreateIndirectData(双字,双字,双字)
+∫CryptSIPGetSignedDataMsg(双字,双字,双字,双字,双字)
+∫CryptSIPPutSignedDataMsg(双字,双字,双字,双字,双字)
+∫CryptSIPRemoveSignedDataMsg(双字,双字)
+∫CryptSIPVerifyIndirectData(双字,双字)
+
+︾

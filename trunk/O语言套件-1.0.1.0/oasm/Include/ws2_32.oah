@@ -1,0 +1,146 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒFreeAddrInfoW(Ë«×Ö)
+¡ÒGetAddrInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNameInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWEP()
+¡ÒWPUCompleteOverlappedRequest(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAccept(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAddressToStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSAAddressToString  WSAAddressToStringA
+
+¡ÒWSAAddressToStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncGetHostByAddr(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncGetHostByName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncGetProtoByName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncGetProtoByNumber(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncGetServByName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncGetServByPort(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAAsyncSelect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSACancelAsyncRequest(Ë«×Ö)
+¡ÒWSACancelBlockingCall()
+¡ÒWSACleanup()
+¡ÒWSACloseEvent(Ë«×Ö)
+¡ÒWSAConnect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSACreateEvent()
+¡ÒWSADuplicateSocketA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSADuplicateSocket  WSADuplicateSocketA
+
+¡ÒWSADuplicateSocketW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAEnumNameSpaceProvidersA(Ë«×Ö,Ë«×Ö)
+¡ßWSAEnumNameSpaceProviders  WSAEnumNameSpaceProvidersA
+
+¡ÒWSAEnumNameSpaceProvidersW(Ë«×Ö,Ë«×Ö)
+¡ÒWSAEnumNetworkEvents(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAEnumProtocolsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSAEnumProtocols  WSAEnumProtocolsA
+
+¡ÒWSAEnumProtocolsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAEventSelect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAGetLastError()
+¡ÒWSAGetOverlappedResult(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAGetQOSByName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAGetServiceClassInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSAGetServiceClassInfo  WSAGetServiceClassInfoA
+
+¡ÒWSAGetServiceClassInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAGetServiceClassNameByClassIdA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSAGetServiceClassNameByClassId  WSAGetServiceClassNameByClassIdA
+
+¡ÒWSAGetServiceClassNameByClassIdW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAHtonl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAHtons(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAInstallServiceClassA(Ë«×Ö)
+¡ßWSAInstallServiceClass  WSAInstallServiceClassA
+
+¡ÒWSAInstallServiceClassW(Ë«×Ö)
+¡ÒWSAIoctl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAIsBlocking()
+¡ÒWSAJoinLeaf(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSALookupServiceBeginA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSALookupServiceBegin  WSALookupServiceBeginA
+
+¡ÒWSALookupServiceBeginW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSALookupServiceEnd(Ë«×Ö)
+¡ÒWSALookupServiceNextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSALookupServiceNext  WSALookupServiceNextA
+
+¡ÒWSALookupServiceNextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSANSPIoctl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSANtohl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSANtohs(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAProviderConfigChange(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSARecv(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSARecvDisconnect(Ë«×Ö,Ë«×Ö)
+¡ÒWSARecvFrom(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSARemoveServiceClass(Ë«×Ö)
+¡ÒWSAResetEvent(Ë«×Ö)
+¡ÒWSASend(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSASendDisconnect(Ë«×Ö,Ë«×Ö)
+¡ÒWSASendTo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSASetBlockingHook(Ë«×Ö)
+¡ÒWSASetEvent(Ë«×Ö)
+¡ÒWSASetLastError(Ë«×Ö)
+¡ÒWSASetServiceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSASetService  WSASetServiceA
+
+¡ÒWSASetServiceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSASocketA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSASocket  WSASocketA
+
+¡ÒWSASocketW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAStartup(Ë«×Ö,Ë«×Ö)
+¡ÒWSAStringToAddressA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWSAStringToAddress  WSAStringToAddressA
+
+¡ÒWSAStringToAddressW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSAUnhookBlockingHook()
+¡ÒWSAWaitForMultipleEvents(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSCDeinstallProvider(Ë«×Ö,Ë«×Ö)
+¡ÒWSCEnableNSProvider(Ë«×Ö,Ë«×Ö)
+¡ÒWSCEnumProtocols(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSCGetProviderPath(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSCInstallNameSpace(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSCInstallProvider(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSCUnInstallNameSpace(Ë«×Ö)
+¡ÒWSCUpdateProvider(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSCWriteNameSpaceOrder(Ë«×Ö,Ë«×Ö)
+¡ÒWSCWriteProviderOrder(Ë«×Ö,Ë«×Ö)
+¡Ò__WSAFDIsSet(Ë«×Ö,Ë«×Ö)
+¡Òaccept(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òbind(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òclosesocket(Ë«×Ö)
+¡Òconnect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òfreeaddrinfo(Ë«×Ö)
+¡Ògetaddrinfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ògethostbyaddr(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ògethostbyname(Ë«×Ö)
+¡Ògethostname(Ë«×Ö,Ë«×Ö)
+¡Ògetnameinfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ògetpeername(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ògetprotobyname(Ë«×Ö)
+¡Ògetprotobynumber(Ë«×Ö)
+¡Ògetservbyname(Ë«×Ö,Ë«×Ö)
+¡Ògetservbyport(Ë«×Ö,Ë«×Ö)
+¡Ògetsockname(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ògetsockopt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òhtonl(Ë«×Ö)
+¡Òhtons(Ë«×Ö)
+¡Òinet_addr(Ë«×Ö)
+¡Òinet_ntoa(Ë«×Ö)
+¡Òioctlsocket(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òlisten(Ë«×Ö,Ë«×Ö)
+¡Òntohl(Ë«×Ö)
+¡Òntohs(Ë«×Ö)
+¡Òrecv(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òrecvfrom(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òselect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òsend(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òsendto(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òsetsockopt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òshutdown(Ë«×Ö,Ë«×Ö)
+¡Òsocket(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

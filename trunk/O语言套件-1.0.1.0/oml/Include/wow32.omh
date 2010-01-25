@@ -1,0 +1,32 @@
+引用段
+{
+函数 CopyDropFilesFrom16(整数32)=>整数32;
+函数 CopyDropFilesFrom32(整数32)=>整数32;
+函数 GetCommHandle(整数32)=>整数32;
+函数 GetCommShadowMSR(整数32)=>整数32;
+函数 W32Dispatch()=>整数32;
+函数 W32HungAppNotifyThread(整数32)=>整数32;
+函数 W32Init()=>整数32;
+函数 WOW32DriverCallback(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WOW32ResolveHandle(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WOW32ResolveMemory(整数32)=>整数32;
+函数 WOWCallback16(整数32,整数32)=>整数32;
+函数 WOWCallback16Ex(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WOWDirectedYield16(整数32)=>整数32;
+函数 WOWFreeMetafile(整数32)=>整数32;
+函数 WOWGetVDMPointer(整数32,整数32,整数32)=>整数32;
+函数 WOWGetVDMPointerFix(整数32,整数32,整数32)=>整数32;
+函数 WOWGetVDMPointerUnfix(整数32)=>整数32;
+函数 WOWGlobalAlloc16(整数32,整数32)=>整数32;
+函数 WOWGlobalAllocLock16(整数32,整数32,整数32)=>整数32;
+函数 WOWGlobalFree16(整数32)=>整数32;
+函数 WOWGlobalLock16(整数32)=>整数32;
+函数 WOWGlobalLockSize16(整数32,整数32)=>整数32;
+函数 WOWGlobalUnlock16(整数32)=>整数32;
+函数 WOWGlobalUnlockFree16(整数32)=>整数32;
+函数 WOWHandle16(整数32,整数32)=>整数32;
+函数 WOWHandle32(整数32,整数32)=>整数32;
+函数 WOWUseMciavi16()=>整数32;
+函数 WOWYield16()=>整数32;
+
+}

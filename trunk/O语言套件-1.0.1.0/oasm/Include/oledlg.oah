@@ -1,0 +1,51 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒOleUIAddVerbMenuA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOleUIAddVerbMenu  OleUIAddVerbMenuA
+
+¡ÒOleUIAddVerbMenuW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOleUIBusyA(Ë«×Ö)
+¡ßOleUIBusy  OleUIBusyA
+
+¡ÒOleUIBusyW(Ë«×Ö)
+¡ÒOleUICanConvertOrActivateAs(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOleUIChangeIconA(Ë«×Ö)
+¡ßOleUIChangeIcon  OleUIChangeIconA
+
+¡ÒOleUIChangeIconW(Ë«×Ö)
+¡ÒOleUIChangeSourceA(Ë«×Ö)
+¡ßOleUIChangeSource  OleUIChangeSourceA
+
+¡ÒOleUIChangeSourceW(Ë«×Ö)
+¡ÒOleUIConvertA(Ë«×Ö)
+¡ßOleUIConvert  OleUIConvertA
+
+¡ÒOleUIConvertW(Ë«×Ö)
+¡ÒOleUIEditLinksA(Ë«×Ö)
+¡ßOleUIEditLinks  OleUIEditLinksA
+
+¡ÒOleUIEditLinksW(Ë«×Ö)
+¡ÒOleUIInsertObjectA(Ë«×Ö)
+¡ßOleUIInsertObject  OleUIInsertObjectA
+
+¡ÒOleUIInsertObjectW(Ë«×Ö)
+¡ÒOleUIObjectPropertiesA(Ë«×Ö)
+¡ßOleUIObjectProperties  OleUIObjectPropertiesA
+
+¡ÒOleUIObjectPropertiesW(Ë«×Ö)
+¡ÒOleUIPasteSpecialA(Ë«×Ö)
+¡ßOleUIPasteSpecial  OleUIPasteSpecialA
+
+¡ÒOleUIPasteSpecialW(Ë«×Ö)
+¡Ò:C OleUIPromptUserA(Ë«×Ö, ..)
+¡ßOleUIPromptUser  OleUIPromptUserA
+
+¡Ò:C OleUIPromptUserW(Ë«×Ö, ..)
+¡ÒOleUIUpdateLinksA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOleUIUpdateLinks  OleUIUpdateLinksA
+
+¡ÒOleUIUpdateLinksW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

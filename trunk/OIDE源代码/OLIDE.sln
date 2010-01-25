@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OLIDE", "OLIDE\OLIDE.vcproj", "{DE13A00D-39B4-4345-8ADE-29C0B53CD713}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SciLexer", "OLIDE\Controls\scintilla\scintilla\vcbuild\SciLexer.vcproj", "{7E39EA9D-2BA0-41BF-A540-25CB1CF66E77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE13A00D-39B4-4345-8ADE-29C0B53CD713}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE13A00D-39B4-4345-8ADE-29C0B53CD713}.Debug|Win32.Build.0 = Debug|Win32
+		{DE13A00D-39B4-4345-8ADE-29C0B53CD713}.Release|Win32.ActiveCfg = Release|Win32
+		{DE13A00D-39B4-4345-8ADE-29C0B53CD713}.Release|Win32.Build.0 = Release|Win32
+		{7E39EA9D-2BA0-41BF-A540-25CB1CF66E77}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E39EA9D-2BA0-41BF-A540-25CB1CF66E77}.Debug|Win32.Build.0 = Debug|Win32
+		{7E39EA9D-2BA0-41BF-A540-25CB1CF66E77}.Release|Win32.ActiveCfg = Release|Win32
+		{7E39EA9D-2BA0-41BF-A540-25CB1CF66E77}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

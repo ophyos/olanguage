@@ -1,0 +1,55 @@
+∥ #########################################################################
+
+∥ 包含文件
+
+ 《*oasm32.oah》
+ 《*windows.oah》
+ 《*masm32.oah》
+ 《*gdi32.oah》
+ 《*user32.oah》
+ 《*kernel32.oah》
+ 《*Comctl32.oah》
+ 《*comdlg32.oah》
+ 《*shell32.oah》
+ 《*oleaut32.oah》
+
+∥ 引用库文件
+ 〈*masm32.lib〉
+ 〈*gdi32.lib〉
+ 〈*user32.lib〉
+ 〈*kernel32.lib〉
+ 〈*Comctl32.lib〉
+ 〈*comdlg32.lib〉
+ 〈*shell32.lib〉
+ 〈*oleaut32.lib〉
+
+∥ #########################################################################
+
+∥数据段
+.数据段
+{
+
+双字 CommandLine
+双字 hWnd
+双字 hInstance
+双字 hIcon
+双字 hEdit
+双字 WrapFlag
+双字 lpEditProc
+字节 szDisplayName‥ = "快速记事本"
+字节 szUntitled‥    = "无标题"
+字节 szOpenedAt‥    = "文件打开 "
+字节 szSavedAt‥     = "文件保存 "
+字节 bytes‥         = " 字节"
+字节 sizeBuffer‥16
+字节 PthBuffer‥128
+
+}
+
+∥ ########################### 包含模块 ############################
+
+ 《.\工具条.oam》
+ 《.\文件对话框.oam》
+ 《.\状态栏.oam》
+
+∥ #########################################################################

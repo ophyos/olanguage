@@ -1,0 +1,108 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒFaxAbort(Ë«×Ö,Ë«×Ö)
+¡ÒFaxAccessCheck(Ë«×Ö,Ë«×Ö)
+¡ÒFaxClose(Ë«×Ö)
+¡ÒFaxCompleteJobParamsA(Ë«×Ö,Ë«×Ö)
+¡ßFaxCompleteJobParams  FaxCompleteJobParamsA
+
+¡ÒFaxCompleteJobParamsW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxConnectFaxServerA(Ë«×Ö,Ë«×Ö)
+¡ßFaxConnectFaxServer  FaxConnectFaxServerA
+
+¡ÒFaxConnectFaxServerW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxEnableRoutingMethodA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxEnableRoutingMethod  FaxEnableRoutingMethodA
+
+¡ÒFaxEnableRoutingMethodW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxEnumGlobalRoutingInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxEnumGlobalRoutingInfo  FaxEnumGlobalRoutingInfoA
+
+¡ÒFaxEnumGlobalRoutingInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxEnumJobsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxEnumJobs  FaxEnumJobsA
+
+¡ÒFaxEnumJobsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxEnumPortsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxEnumPorts  FaxEnumPortsA
+
+¡ÒFaxEnumPortsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxEnumRoutingMethodsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxEnumRoutingMethods  FaxEnumRoutingMethodsA
+
+¡ÒFaxEnumRoutingMethodsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxFreeBuffer(Ë«×Ö)
+¡ÒFaxGetConfigurationA(Ë«×Ö,Ë«×Ö)
+¡ßFaxGetConfiguration  FaxGetConfigurationA
+
+¡ÒFaxGetConfigurationW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxGetDeviceStatusA(Ë«×Ö,Ë«×Ö)
+¡ßFaxGetDeviceStatus  FaxGetDeviceStatusA
+
+¡ÒFaxGetDeviceStatusW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxGetJobA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxGetJob  FaxGetJobA
+
+¡ÒFaxGetJobW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxGetLoggingCategoriesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxGetLoggingCategories  FaxGetLoggingCategoriesA
+
+¡ÒFaxGetLoggingCategoriesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxGetPageData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxGetPortA(Ë«×Ö,Ë«×Ö)
+¡ßFaxGetPort  FaxGetPortA
+
+¡ÒFaxGetPortW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxGetRoutingInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxGetRoutingInfo  FaxGetRoutingInfoA
+
+¡ÒFaxGetRoutingInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxInitializeEventQueue(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxOpenPort(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxPrintCoverPageA(Ë«×Ö,Ë«×Ö)
+¡ßFaxPrintCoverPage  FaxPrintCoverPageA
+
+¡ÒFaxPrintCoverPageW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxRegisterRoutingExtensionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxRegisterServiceProviderW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxSendDocumentA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxSendDocument  FaxSendDocumentA
+
+¡ÒFaxSendDocumentForBroadcastA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxSendDocumentForBroadcast  FaxSendDocumentForBroadcastA
+
+¡ÒFaxSendDocumentForBroadcastW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxSendDocumentW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxSetConfigurationA(Ë«×Ö,Ë«×Ö)
+¡ßFaxSetConfiguration  FaxSetConfigurationA
+
+¡ÒFaxSetConfigurationW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxSetGlobalRoutingInfoA(Ë«×Ö,Ë«×Ö)
+¡ßFaxSetGlobalRoutingInfo  FaxSetGlobalRoutingInfoA
+
+¡ÒFaxSetGlobalRoutingInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxSetJobA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxSetJob  FaxSetJobA
+
+¡ÒFaxSetJobW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxSetLoggingCategoriesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxSetLoggingCategories  FaxSetLoggingCategoriesA
+
+¡ÒFaxSetLoggingCategoriesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxSetPortA(Ë«×Ö,Ë«×Ö)
+¡ßFaxSetPort  FaxSetPortA
+
+¡ÒFaxSetPortW(Ë«×Ö,Ë«×Ö)
+¡ÒFaxSetRoutingInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxSetRoutingInfo  FaxSetRoutingInfoA
+
+¡ÒFaxSetRoutingInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxStartPrintJobA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFaxStartPrintJob  FaxStartPrintJobA
+
+¡ÒFaxStartPrintJobW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFaxUnregisterServiceProviderW(Ë«×Ö)
+
+¦ç

@@ -1,0 +1,22 @@
+引用段
+{
+函数 WlxActivateUserShell(整数32,整数32,整数32,整数32)=>整数32;
+函数 WlxDisplayLockedNotice(整数32)=>整数32;
+函数 WlxDisplaySASNotice(整数32)=>整数32;
+函数 WlxDisplayStatusMessage(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WlxGetStatusMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 WlxInitialize(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WlxIsLockOk(整数32)=>整数32;
+函数 WlxIsLogoffOk(整数32)=>整数32;
+函数 WlxLoggedOnSAS(整数32,整数32,整数32)=>整数32;
+函数 WlxLoggedOutSAS(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WlxLogoff(整数32)=>整数32;
+函数 WlxNegotiate(整数32,整数32)=>整数32;
+函数 WlxNetworkProviderLoad(整数32,整数32)=>整数32;
+函数 WlxRemoveStatusMessage(整数32)=>整数32;
+函数 WlxScreenSaverNotify(整数32,整数32)=>整数32;
+函数 WlxShutdown(整数32,整数32)=>整数32;
+函数 WlxStartApplication(整数32,整数32,整数32,整数32)=>整数32;
+函数 WlxWkstaLockedSAS(整数32,整数32)=>整数32;
+
+}

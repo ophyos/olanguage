@@ -1,0 +1,10 @@
+引用段
+{
+函数 capCreateCaptureWindowA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 capCreateCaptureWindowW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 capGetDriverDescriptionA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 capGetDriverDescriptionW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 capCreateCaptureWindow  capCreateCaptureWindowA
+宏定义 capGetDriverDescription  capGetDriverDescriptionA
+}

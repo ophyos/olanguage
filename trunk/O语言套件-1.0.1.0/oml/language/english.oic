@@ -1,0 +1,1066 @@
+
+6F6963001   ∥oic文件标识
+
+∥系统标识符          系统内码              注释
+
+∥系统保留字定义
+byte               0x00001050     ∥    系统类型1字节  1°           Just for Doasm
+word               0x00001051     ∥    系统类型2字节  2°           Just for Doasm
+dword              0x00001052     ∥    系统类型4字节  4°           Just for Doasm
+qword              0x00001053     ∥    系统类型8字节  8°           Just for Doasm
+real4              0x00001054     ∥    系统浮点类型4字节   4.°     Just for Doasm
+real8              0x00001055     ∥    系统浮点类型8字节   8.°     Just for Doasm
+real10             0x00001056     ∥    系统浮点类型10字节  10.°    Just for Doasm
+
+bits               0x00004051     ∥    位模式
+include            0x00004052     ∥    包含文
+library            0x00004053     ∥    引用库
+insns              0x00004054     ∥    指令集
+typedef            0x00004055     ∥    类定义
+macro              0x00004056     ∥    宏定义
+struct             0x00004057     ∥    结构
+union              0x00004058     ∥    联合
+enum               0x00004059     ∥    枚举
+commons            0x00004060     ∥    通用段
+datas              0x00004061     ∥    数据段
+consts             0x00004062     ∥    只读段
+bss                0x00004063     ∥    预留段
+codes              0x00004064     ∥    代码段
+externs            0x00004065     ∥    引用段
+extras             0x00004066     ∥    附加段
+stacks             0x00004067     ∥    堆栈段
+entry              0x00004070     ∥    入口
+function           0x00004071     ∥    函数
+if                 0x00004072     ∥    如果
+elseif             0x00004073     ∥    否则如果
+else               0x00004074     ∥    否则
+while              0x00004075     ∥    循环
+break              0x00004076     ∥    跳出
+continue           0x00004077     ∥    继续
+return             0x00004078     ∥    返回
+sizeof             0x00004079     ∥    取大小
+addrof             0x0000407A     ∥    取地址
+lable              0x0000407B     ∥    标签
+bodh               0x0000407C     ∥    进制(B、O、D、H)
+above              0x0000407D     ∥    高于
+abovee             0x0000407E     ∥    高于等于
+below              0x0000407F     ∥    低于
+belowe             0x00004080     ∥    低于等于
+greater            0x00004081     ∥    大于
+greatere           0x00004082     ∥    大于等于
+less               0x00004083     ∥    小于
+lesse              0x00004084     ∥    小于等于
+overflow           0x00004085     ∥    溢出
+carry              0x00004086     ∥    进位
+odd                0x00004087     ∥    为奇
+even               0x00004088     ∥    为偶
+zero               0x00004089     ∥    为零
+equal              0x0000408A     ∥    相等
+plus               0x0000408B     ∥    为正
+negative           0x0000408C     ∥    为负
+nabove             0x0000408D     ∥    不高于
+nabovee            0x0000408E     ∥    不高于等于
+nbelow             0x0000408F     ∥    不低于
+nbelowe            0x00004090     ∥    不低于等于
+ngreater           0x00004091     ∥    不大于
+ngreatere          0x00004092     ∥    不大于等于
+nless              0x00004093     ∥    不小于
+nlesse             0x00004094     ∥    不小于等于
+noverflow          0x00004095     ∥    不溢出
+ncarry             0x00004096     ∥    不进位
+nzero              0x00004097     ∥    不为零
+nequal             0x00004098     ∥    不等
+set                0x00004099     ∥    置
+flagr              0x0000409A     ∥    标寄
+equs               0x0000409B     ∥    串等于
+ins                0x0000409C     ∥    串输入
+outs               0x0000409D     ∥    串输出
+cmps               0x0000409E     ∥    串比较
+join               0x0000409F     ∥    联接
+
+define             0x00004056     ∥    宏定义 macro
+
+undef              0x00100001     ∥    取消宏定义
+extern             0x00100002     ∥    外部的
+valueof            0x00100003     ∥    取数值
+const              0x00100004     ∥    只读的
+cdecl              0x00100005     ∥    C调用
+stdcall            0x00100006     ∥    标准调用
+ocall              0x00100007     ∥    O调用
+goto               0x00100008     ∥    跳到 goto
+funtype            0x00100009     ∥    函数类型
+interface_describe 0x0010000A     ∥    界面描述
+
+∥用户自定义关键字
+for                0x00102001     ∥    for循环
+do                 0x00102002     ∥    do..while循环
+
+∥寄存器定义
+
+al                 0x10010300     ∥reg    x86_reg8    0    0
+bl                 0x10020303     ∥reg    x86_reg8    3    0
+cl                 0x10030301     ∥reg    x86_reg8    1    0
+dl                 0x10040302     ∥reg    x86_reg8    2    0
+ah                 0x10050104     ∥reg    x86_reg8    4    0
+bh                 0x10060107     ∥reg    x86_reg8    7    0
+ch                 0x10070105     ∥reg    x86_reg8    5    0
+dh                 0x10080106     ∥reg    x86_reg8    6    0
+∥r8b                0x10090208     ∥reg    x86_reg8    8    64
+∥r9b                0x100a0209     ∥reg    x86_reg8    9    64
+∥r10b               0x100b020a     ∥reg    x86_reg8    10   64
+∥r11b               0x100c020b     ∥reg    x86_reg8    11   64
+∥r12b               0x100d020c     ∥reg    x86_reg8    12   64
+∥r13b               0x100e020d     ∥reg    x86_reg8    13   64
+∥r14b               0x100f020e     ∥reg    x86_reg8    14   64
+∥r15b               0x1010020f     ∥reg    x86_reg8    15   64
+∥spl                0x10110204     ∥reg    x86_reg8x   4    64
+∥bpl                0x10120205     ∥reg    x86_reg8x   5    64
+∥sil                0x10130206     ∥reg    x86_reg8x   6    64
+∥dil                0x10140207     ∥reg    x86_reg8x   7    64
+
+ax                 0x11010300     ∥reg    x86_reg16   0    0
+bx                 0x11020303     ∥reg    x86_reg16   3    0
+cx                 0x11030301     ∥reg    x86_reg16   1    0
+dx                 0x11040302     ∥reg    x86_reg16   2    0
+sp                 0x11050304     ∥reg    x86_reg16   4    0
+bp                 0x11060305     ∥reg    x86_reg16   5    0
+si                 0x11070306     ∥reg    x86_reg16   6    0
+di                 0x11080307     ∥reg    x86_reg16   7    0
+∥r8w                0x11090208     ∥reg    x86_reg16   8    64
+∥r9w                0x110a0209     ∥reg    x86_reg16   9    64
+∥r10w               0x110b020a     ∥reg    x86_reg16   10   64
+∥r11w               0x110c020b     ∥reg    x86_reg16   11   64
+∥r13w               0x110d020c     ∥reg    x86_reg16   13   64
+∥r12w               0x110e020d     ∥reg    x86_reg16   12   64
+∥r14w               0x110f020e     ∥reg    x86_reg16   14   64
+∥r15w               0x1110020f     ∥reg    x86_reg16   15   64
+
+eax                0x12010300     ∥reg    x86_reg32   0    0
+ebx                0x12020303     ∥reg    x86_reg32   3    0
+ecx                0x12030301     ∥reg    x86_reg32   1    0
+edx                0x12040302     ∥reg    x86_reg32   2    0
+esp                0x12050304     ∥reg    x86_reg32   4    0
+ebp                0x12060305     ∥reg    x86_reg32   5    0
+esi                0x12070306     ∥reg    x86_reg32   6    0
+edi                0x12080307     ∥reg    x86_reg32   7    0
+∥r8d                0x12090208     ∥reg    x86_reg32   8    64
+∥r9d                0x120a0209     ∥reg    x86_reg32   9    64
+∥r10d               0x120b020a     ∥reg    x86_reg32   10   64
+∥r11d               0x120c020b     ∥reg    x86_reg32   11   64
+∥r12d               0x120d020c     ∥reg    x86_reg32   12   64
+∥r13d               0x120e020d     ∥reg    x86_reg32   13   64
+∥r14d               0x120f020e     ∥reg    x86_reg32   14   64
+∥r15d               0x1210020f     ∥reg    x86_reg32   15   64
+
+∥rax                0x13010200     ∥reg    x86_reg64   0    64
+∥rbx                0x13020203     ∥reg    x86_reg64   3    64
+∥rcx                0x13030201     ∥reg    x86_reg64   1    64
+∥rdx                0x13040202     ∥reg    x86_reg64   2    64
+∥rsp                0x13050204     ∥reg    x86_reg64   4    64
+∥rbp                0x13060205     ∥reg    x86_reg64   5    64
+∥rsi                0x13070206     ∥reg    x86_reg64   6    64
+∥rdi                0x13080207     ∥reg    x86_reg64   7    64
+∥r8                 0x13090208     ∥reg    x86_reg64   8    64
+∥r9                 0x130a0209     ∥reg    x86_reg64   9    64
+∥r10                0x130b020a     ∥reg    x86_reg64   10   64
+∥r11                0x130c020b     ∥reg    x86_reg64   11   64
+∥r12                0x130d020c     ∥reg    x86_reg64   12   64
+∥r13                0x130e020d     ∥reg    x86_reg64   13   64
+∥r14                0x130f020e     ∥reg    x86_reg64   14   64
+∥r15                0x1310020f     ∥reg    x86_reg64   15   64
+∥rip                0x13110200     ∥reg    x86_rip     0    64
+
+cr0                0x14010300     ∥reg    x86_crreg   0    0
+cr2                0x14020302     ∥reg    x86_crreg   2    0
+cr3                0x14030303     ∥reg    x86_crreg   3    0
+cr4                0x14040304     ∥reg    x86_crreg   4    0
+cr8                0x14050208     ∥reg    x86_crreg   8    64
+
+tr0                0x15010300     ∥reg    x86_trreg   0    0
+tr1                0x15020301     ∥reg    x86_trreg   1    0
+tr2                0x15030302     ∥reg    x86_trreg   2    0
+tr3                0x15040303     ∥reg    x86_trreg   3    0
+tr4                0x15050304     ∥reg    x86_trreg   4    0
+tr5                0x15060305     ∥reg    x86_trreg   5    0
+tr6                0x15070306     ∥reg    x86_trreg   6    0
+tr7                0x15080307     ∥reg    x86_trreg   7    0
+
+dr0                0x16010300     ∥reg    x86_drreg   0    0
+dr1                0x16020301     ∥reg    x86_drreg   1    0
+dr2                0x16030302     ∥reg    x86_drreg   2    0
+dr3                0x16040303     ∥reg    x86_drreg   3    0
+dr4                0x16050304     ∥reg    x86_drreg   4    0
+dr5                0x16060305     ∥reg    x86_drreg   5    0
+dr6                0x16070306     ∥reg    x86_drreg   6    0
+dr7                0x16080307     ∥reg    x86_drreg   7    0
+
+st0                0x17010300     ∥reg    x86_fpureg  0    0
+st1                0x17020301     ∥reg    x86_fpureg  1    0
+st2                0x17030302     ∥reg    x86_fpureg  2    0
+st3                0x17040303     ∥reg    x86_fpureg  3    0
+st4                0x17050304     ∥reg    x86_fpureg  4    0
+st5                0x17060305     ∥reg    x86_fpureg  5    0
+st6                0x17070306     ∥reg    x86_fpureg  6    0
+st7                0x17080307     ∥reg    x86_fpureg  7    0
+
+mm0                0x18010300     ∥reg    x86_mmxreg  0    0
+mm1                0x18020301     ∥reg    x86_mmxreg  1    0
+mm2                0x18030302     ∥reg    x86_mmxreg  2    0
+mm3                0x18040303     ∥reg    x86_mmxreg  3    0
+mm4                0x18050304     ∥reg    x86_mmxreg  4    0
+mm5                0x18060305     ∥reg    x86_mmxreg  5    0
+mm6                0x18070306     ∥reg    x86_mmxreg  6    0
+mm7                0x18080307     ∥reg    x86_mmxreg  7    0
+
+xmm0               0x19010300     ∥reg    x86_xmmreg  0    0
+xmm1               0x19020301     ∥reg    x86_xmmreg  1    0
+xmm2               0x19030302     ∥reg    x86_xmmreg  2    0
+xmm3               0x19040303     ∥reg    x86_xmmreg  3    0
+xmm4               0x19050304     ∥reg    x86_xmmreg  4    0
+xmm5               0x19060305     ∥reg    x86_xmmreg  5    0
+xmm6               0x19070306     ∥reg    x86_xmmreg  6    0
+xmm7               0x19080307     ∥reg    x86_xmmreg  7    0
+xmm8               0x19090208     ∥reg    x86_xmmreg  8    64
+xmm9               0x190a0209     ∥reg    x86_xmmreg  9    64
+xmm10              0x190b020a     ∥reg    x86_xmmreg  10   64
+xmm11              0x190c020b     ∥reg    x86_xmmreg  11   64
+xmm12              0x190d020c     ∥reg    x86_xmmreg  12   64
+xmm13              0x190e020d     ∥reg    x86_xmmreg  13   64
+xmm14              0x190f020e     ∥reg    x86_xmmreg  14   64
+xmm15              0x1910020f     ∥reg    x86_xmmreg  15   64
+
+cs                 0x1a010301     ∥segreg  0x2e        1    0
+ds                 0x1a020203     ∥segreg  0x3e        3    64(64位模式下被忽略)
+es                 0x1a030200     ∥segreg  0x26        0    64(64位模式下被忽略)
+ss                 0x1a040202     ∥segreg  0x36        2    64(64位模式下被忽略)
+fs                 0x1a050304     ∥segreg  0x64        4    0
+gs                 0x1a060305     ∥segreg  0x65        5    0
+
+「
+∥在内存寻址情况下要用到的组合的寄存器
+RT_16BIT_ADDRESS_FORMS_BX_SI     0x1B010100   ∥16位寻址模式下的[BX+SI]寻址
+RT_16BIT_ADDRESS_FORMS_BX_DI     0x1B020101   ∥16位寻址模式下的[BX+DI]寻址
+RT_16BIT_ADDRESS_FORMS_BP_SI     0x1B030102   ∥16位寻址模式下的[BP+SI]寻址
+RT_16BIT_ADDRESS_FORMS_BP_DI     0x1B040103   ∥16位寻址模式下的[BP+DI]寻址
+RT_16BIT_ADDRESS_FORMS_SI        0x1B050104   ∥16位寻址模式下的[SI]寻址
+RT_16BIT_ADDRESS_FORMS_DI        0x1B060105   ∥16位寻址模式下的[DI]寻址
+RT_16BIT_ADDRESS_FORMS_DISP16    0x1B070106   ∥16位寻址模式下的[disp16]寻址
+RT_16BIT_ADDRESS_FORMS_BX        0x1B080107   ∥16位寻址模式下的[BX])寻址
+RT_32BIT_ADDRESS_FORMS_EAX       0x1B090300   ∥32位寻址模式下的[EAX]寻址
+RT_32BIT_ADDRESS_FORMS_ECX       0x1B0A0301   ∥32位寻址模式下的[ECX]寻址
+RT_32BIT_ADDRESS_FORMS_EDX       0x1B0B0302   ∥32位寻址模式下的[EDX]寻址
+RT_32BIT_ADDRESS_FORMS_EBX       0x1B0C0303   ∥32位寻址模式下的[EBX]寻址
+RT_32BIT_ADDRESS_FORMS_SCALE     0x1B0D0304   ∥32位寻址模式下的[比例变址]寻址
+RT_32BIT_ADDRESS_FORMS_DISP32    0x1B0E0305   ∥32位寻址模式下的[disp32]寻址
+RT_32BIT_ADDRESS_FORMS_ESI       0x1B0F0306   ∥32位寻址模式下的[ESI]寻址
+RT_32BIT_ADDRESS_FORMS_EDI       0x1B100307   ∥32位寻址模式下的[EDI])寻址
+」
+
+gdtr                             0x1c000001   ∥全局描述符寄存器
+idtr                             0x1c000002   ∥中断描述符寄存器
+ldtr                             0x1c000003   ∥局部描述符寄存器
+tssr                             0x1c000004   ∥任务状态寄存器
+msw                              0x1c000005   ∥机器状态字
+
+「
+∥指令集类型
+
+generic32         0x30000001   ∥    PROCESSOR_GENERIC32   CT_CPU186|CT_CPU286|CT_CPU386}
+generic64         0x30000002   ∥    PROCESSOR_GENERIC64   CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2}
+i8086             0x30000003   ∥    PROCESSOR_UNKNOWN     0}
+i186              0x30000004   ∥    PROCESSOR_UNKNOWN     CT_CPU186}
+i286              0x30000005   ∥    PROCESSOR_UNKNOWN     CT_CPU186|CT_CPU286}
+i386              0x30000006   ∥    PROCESSOR_I386        CT_CPU186|CT_CPU286|CT_CPU386}
+i486              0x30000007   ∥    PROCESSOR_I486        CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486}
+i586              0x30000008   ∥    PROCESSOR_PENTIUM     CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586}
+i686              0x30000009   ∥    PROCESSOR_PENTIUMPRO  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686}
+pentium           0x3000000A   ∥    PROCESSOR_PENTIUM     CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586}
+pentiumpro        0x3000000B   ∥    PROCESSOR_PENTIUMPRO  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686}
+pentiumii         0x3000000C   ∥    PROCESSOR_PENTIUMPRO  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUMMX}
+pentiumiii        0x3000000D   ∥    PROCESSOR_PENTIUMPRO  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE}
+pentium4          0x3000000E   ∥    PROCESSOR_PENTIUM4    CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2}    
+prescott          0x3000000F   ∥    PROCESSOR_NOCONA      CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}
+nocona            0x30000010   ∥    PROCESSOR_NOCONA      CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}
+yonah             0x30000011   ∥    PROCESSOR_CORE        CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}
+core              0x30000012   ∥    PROCESSOR_CORE        CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}
+merom             0x30000013   ∥    PROCESSOR_CORE2       CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3}
+core2             0x30000014   ∥    PROCESSOR_CORE2       CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3}
+k6                0x30000015   ∥    PROCESSOR_K6          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPUK6|CT_CPUMMX}
+k6_2              0x30000016   ∥    PROCESSOR_K6          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPUK6|CT_CPUMMX|CT_CPU3DNOW}
+athlon            0x30000017   ∥    PROCESSOR_ATHLON      CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA}
+sledgehammer      0x30000018   ∥    PROCESSOR_K8          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2}
+opteron           0x30000019   ∥    PROCESSOR_K8          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2}
+k8                0x3000001A   ∥    PROCESSOR_K8          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2}
+amdfam10          0x3000001B   ∥    PROCESSOR_AMDFAM10    CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSE4A|CT_CPUABM}
+mmx               0x3000001C   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX}
+sse               0x3000001D   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE}
+sse2              0x3000001E   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2}
+sse3              0x3000001F   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}
+ssse3             0x30000020   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3}
+sse4.1            0x30000021   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3|CT_CPUSSE4_1}
+sse4.2            0x30000022   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3|CT_CPUSSE4}
+sse4              0x30000023   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3|CT_CPUSSE4}
+3dnow             0x30000024   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPU3DNOW}
+3dnowa            0x30000025   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA}
+padlock           0x30000026   ∥    PROCESSOR_UNKNOWN     CT_CPUPADLOCK}
+pacifica          0x30000027   ∥    PROCESSOR_UNKNOWN     CT_CPUSVME}
+svme              0x30000028   ∥    PROCESSOR_UNKNOWN     CT_CPUSVME}
+sse4a             0x30000029   ∥    PROCESSOR_UNKNOWN     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSE4A}
+abm               0x3000002A   ∥    PROCESSOR_UNKNOWN     CT_CPUABM}
+
+」
+
+∥汇编指令定义
+
+aaa               0x40000001
+aad               0x40000002
+aam               0x40000003
+aas               0x40000004
+adc               0x40000005
+∥add               0x40000006
+∥and               0x40000007
+arpl              0x40000008
+
+bound             0x40000010
+bsf               0x40000011
+bsr               0x40000012
+bswap             0x40000013
+bt                0x40000014
+btc               0x40000015
+btr               0x40000016
+bts               0x40000017
+
+call              0x40000020
+callfar           0x40000021
+∥cbw               0x40000022
+∥cwde              0x40000023
+∥cdqe              0x40000024
+∥clc               0x40000025
+∥cld               0x40000026
+clflush           0x40000027
+∥cli               0x40000028
+∥clts              0x40000029
+∥cmc               0x4000002a
+∥cmova             0x4000002b
+∥cmovae            0x4000002c
+∥cmovb             0x4000002d
+∥cmovbe            0x4000002e
+∥cmovc             0x4000002f
+∥cmove             0x40000030
+∥cmovg             0x40000031
+∥cmovge            0x40000032
+∥cmovl             0x40000033
+∥cmovle            0x40000034
+∥cmovna            0x40000035
+∥cmovnae           0x40000036
+∥cmovnb            0x40000037
+∥cmovnbe           0x40000038
+∥cmovnc            0x40000039
+∥cmovne            0x4000003a
+∥cmovng            0x4000003b
+∥cmovnge           0x4000003c
+∥cmovnl            0x4000003d
+∥cmovnle           0x4000003e
+∥cmovno            0x4000003f
+∥cmovnp            0x40000040
+∥cmovns            0x40000041
+∥cmovnz            0x40000042
+∥cmovo             0x40000043
+∥cmovp             0x40000044
+∥cmovpe            0x40000045
+∥cmovpo            0x40000046
+∥cmovs             0x40000047
+∥cmovz             0x40000048
+cmp               0x40000049
+∥cmpsb             0x4000004a
+∥cmpsw             0x4000004b
+∥cmpsd             0x4000004c
+∥cmpsq             0x4000004d
+cmpxchg           0x4000004e
+∥cmpxchg8b         0x4000004f
+∥cmpxchg16b        0x40000050
+cpuid             0x40000051
+∥cwd               0x40000052
+∥cdq               0x40000053
+∥cqo               0x40000054
+
+daa               0x40000070
+das               0x40000071
+∥dec               0x40000072
+∥div               0x40000073
+
+enter             0x40000080
+
+hlt               0x40000090
+ 
+idiv              0x40000100
+imul              0x40000101
+in                0x40000102
+∥inc               0x40000103
+∥insb              0x40000104
+∥insw              0x40000105
+∥insd              0x40000106
+int               0x40000107
+into              0x40000108
+invd              0x40000109
+invlpg            0x4000010a
+iret              0x4000010b
+∥iretd             0x4000010c
+∥iretq             0x4000010d
+
+∥ja                0x40000120
+∥jae               0x40000121
+∥jb                0x40000122
+∥jbe               0x40000123
+∥jc                0x40000124
+∥je                0x40000125
+∥jg                0x40000126
+∥jge               0x40000127
+∥jl                0x40000128
+∥jle               0x40000129
+∥jna               0x4000012a
+∥jnae              0x4000012b
+∥jnb               0x4000012c
+∥jnbe              0x4000012d
+∥jnc               0x4000012e
+∥jne               0x4000012f
+∥jng               0x40000130
+∥jnge              0x40000131
+∥jnl               0x40000132
+∥jnle              0x40000133
+∥jno               0x40000134
+∥jnp               0x40000135
+∥jns               0x40000136
+∥jnz               0x40000137
+∥jo                0x40000138
+∥jp                0x40000139
+∥jpe               0x4000013a
+∥jpo               0x4000013b
+∥js                0x4000013c
+∥jz                0x4000013d
+∥jcxz              0x4000013e
+∥jecxz             0x4000013f
+∥jrcxz             0x40000140
+jmp               0x40000141
+jmpfar            0x40000142
+
+∥lahf              0x40000160
+lar               0x40000161
+∥lds               0x40000162
+∥lss               0x40000163
+∥les               0x40000164
+∥lfs               0x40000165
+∥lgs               0x40000166
+∥lea               0x40000167
+leave             0x40000168
+lfence            0x40000169
+∥lgdt              0x4000016a
+∥lidt              0x4000016b
+∥lldt              0x4000016c
+∥lmsw              0x4000016d
+lock              0x4000016e
+∥lodsb             0x4000016f
+∥lodsw             0x40000170
+∥lodsd             0x40000171
+∥lodsq             0x40000172
+loop              0x40000173
+loope             0x40000174
+loopz             0x40000175
+loopne            0x40000176
+loopnz            0x40000177
+lsl               0x40000178
+∥ltr               0x40000179
+
+mfence            0x40000190
+monitor           0x40000191
+∥mov               0x40000192
+movnti            0x40000193
+∥movsb             0x40000194
+∥movsw             0x40000195
+∥movsd             0x40000196
+∥movsq             0x40000197
+movsx             0x40000198
+∥movsxd            0x40000199
+movzx             0x4000019a
+∥mul               0x4000019b
+mwait             0x4000019c
+
+neg               0x40000210
+nop               0x40000211
+not               0x40000212
+
+∥or                0x40000220
+out               0x40000221
+∥outsb             0x40000222
+∥outsw             0x40000223
+∥outsd             0x40000224
+
+pause             0x40000240
+pop               0x40000241
+popa              0x40000242
+∥popad             0x40000243
+popf              0x40000244
+∥popfd             0x40000245
+∥popfq             0x40000246
+prefetchnta       0x40000247
+prefetcht0        0x40000248
+prefetcht1        0x40000249
+prefetcht2        0x4000024a
+push              0x4000024b
+pusha             0x4000024c
+∥pushad            0x4000024d
+pushf             0x4000024e
+∥pushfd            0x4000024f
+∥pushfq            0x40000250
+
+rcl               0x40000260
+rcr               0x40000261
+rol               0x40000262
+ror               0x40000263
+rdmsr             0x40000264
+rdpmc             0x40000265
+rdtsc             0x40000266
+rdtscp            0x40000267
+rep               0x40000268
+repe              0x40000269
+repz              0x4000026a
+repne             0x4000026b
+repnz             0x4000026c
+ret               0x4000026d
+retf              0x4000026e
+rsm               0x4000026f
+
+∥sahf              0x40000280
+sal               0x40000281
+sar               0x40000282
+shl               0x40000283
+shr               0x40000284
+sbb               0x40000285
+∥scasb             0x40000286
+∥scasw             0x40000287
+∥scasd             0x40000288
+∥scasq             0x40000289
+scas              0x4000028a
+∥seto             0x4000028b
+∥setno            0x4000028d
+∥setb             0x4000028d
+∥setc             0x4000028e
+∥setnae           0x4000028f
+∥setnb            0x40000290
+∥setnc            0x40000291
+∥setae            0x40000292
+∥setz             0x40000293
+∥sete             0x40000294
+∥setnz            0x40000295
+∥setne            0x40000296
+∥setbe            0x40000297
+∥setna            0x40000298
+∥setnbe           0x40000299
+∥seta             0x4000029a
+∥sets             0x4000029b
+∥setns            0x4000029c
+∥setp             0x4000029d
+∥setpe            0x4000029e
+∥setnp            0x4000029f
+∥setpo            0x40000300
+∥setl             0x40000301
+∥setnge           0x40000302
+∥setnl            0x40000303
+∥setge            0x40000304
+∥setle            0x40000305
+∥setng            0x40000306
+∥setnle           0x40000307
+∥setg             0x40000308
+sfence            0x40000309
+∥sgdt             0x4000030a
+shld              0x4000030b
+shrd              0x4000030c
+∥sidt             0x4000030d
+∥sldt             0x4000030e
+∥smsw             0x4000030f
+∥stc              0x40000310
+∥std              0x40000311
+∥sti              0x40000312
+∥stosb            0x40000313
+∥stosw            0x40000314
+∥stosd            0x40000315
+∥stosq            0x40000316
+∥str              0x40000317
+∥sub              0x40000318
+swapgs            0x40000319
+syscall           0x4000031a
+sysenter          0x4000031b
+sysexit           0x4000031c
+sysret            0x4000031d
+
+test              0x40000330
+
+ud2               0x40000340
+
+verr              0x40000350
+verw              0x40000351
+
+wait              0x40000360
+wbinvd            0x40000361
+wrmsr             0x40000362
+
+xadd              0x40000370
+xchg              0x40000371
+xlatb             0x40000372
+∥xor               0x40000373
+
+
+
+∥浮点指令
+emms             0x41000001   ∥emms
+f2xm1            0x41000002   ∥f2xm1
+∥fabs             0x41000003
+∥fadd             0x41000004
+∥faddp            0x41000005
+∥fiadd            0x41000006
+∥fbld             0x41000007
+∥fbstp            0x41000008
+∥fchs             0x41000009
+fclex            0x4100000a   ∥fclex
+fnclex           0x4100000b   ∥fnclex
+∥fcmovb           0x4100000c
+∥fcmove           0x4100000d
+∥fcmovbe          0x4100000e
+∥fcmovu           0x4100000f
+∥fcmovnb          0x41000020
+∥fcmovne          0x41000021
+∥fcmovnbe         0x41000022
+∥fcmovbnu         0x41000023
+∥fcom             0x41000024
+∥fcomp            0x41000025
+∥fcompp           0x41000026
+fcomi            0x41000027   ∥fcomi
+fcomip           0x41000028   ∥fcomip
+fucomi           0x41000029   ∥fucomi
+fucomip          0x4100002a   ∥fucomip
+∥fcos             0x4100002b
+∥fdecstp          0x4100002c
+∥fdiv             0x4100002d
+∥fdivp            0x4100002e
+∥fidiv            0x4100002f
+∥fdivr            0x41000040
+∥fdivrp           0x41000041
+∥fidivr           0x41000042
+ffree            0x41000043   ∥ffree
+∥ficom            0x41000044
+∥ficomp           0x41000045
+∥fild             0x41000046
+∥fincstp          0x41000047
+finit            0x41000048   ∥finit
+fninit           0x41000049   ∥fninit
+∥fist             0x4100004a
+∥fistp            0x4100004b
+∥fisttp           0x4100004c
+∥fld              0x4100004d
+∥fld1             0x4100004e
+∥fldl2t           0x4100004f
+∥fldl2e           0x41000060
+fldpi            0x41000061  ∥fldpi
+∥fldlg2           0x41000062
+∥fldln2           0x41000063
+∥fldz             0x41000064
+fldcw            0x41000065   ∥fldcw
+fldenv           0x41000066   ∥fldenv
+∥fmul             0x41000067
+∥fmulp            0x41000068
+∥fimul            0x41000069
+fnop             0x4100006a   ∥fnop
+∥fpatan           0x4100006b
+∥fprem            0x4100006c
+∥fprem1           0x4100006d
+∥fptan            0x4100006e
+frndint          0x4100006f     ∥frndint
+frstor           0x41000080   ∥frstor
+fsave            0x41000081   ∥fsave
+fnsave           0x41000082   ∥fnsave
+∥fscale           0x41000083
+∥fsin             0x41000084
+∥fsincos          0x41000085
+fsqrt            0x41000086  ∥fsqrt
+∥fst              0x41000087
+∥fstp             0x41000088
+fstcw            0x41000089   ∥fstcw
+fnstcw           0x4100008a   ∥fnstcw
+fstenv           0x4100008b   ∥fstenv
+fnstenv          0x4100008c   ∥fnstenv
+fstsw            0x4100008d   ∥fstsw
+fnstsw           0x4100008e   ∥fnstsw
+∥fsub             0x4100008f
+∥fsubp            0x410000a0
+∥fisub            0x410000a1
+∥fsubr            0x410000a2
+∥fsubrp           0x410000a3
+∥fisubr           0x410000a4
+∥ftst             0x410000a5
+fucom            0x410000a6
+∥fucomp           0x410000a7
+∥fucompp          0x410000a8
+fwait            0x410000a9   ∥fwait
+fxam             0x410000aa   ∥fxam
+∥fxch             0x410000ab
+fxrstor          0x410000ac   ∥fxrstor
+fxsave           0x410000ad   ∥fxsave
+fxtract          0x410000ae   ∥fxtract
+∥fyl2x            0x410000af
+∥fyl2xp1          0x410000c0
+
+∥多媒体指令
+addpd             0x41100001
+addps             0x41100002
+addsd             0x41100003
+addss             0x41100004
+addsubpd          0x41100005
+addsubps          0x41100006
+andpd             0x41100007
+andps             0x41100008
+andnpd            0x41100009
+andnps            0x4110000a
+cmppd             0x4110000b
+cmpps             0x4110000c
+mm_cmpsd          0x4110000d
+cmpss             0x4110000e
+comisd            0x4110000f
+comiss            0x41100020
+cvtdq2pd          0x41100021
+cvtdq2ps          0x41100022
+cvtpd2dq          0x41100023
+cvtpd2pi          0x41100024
+cvtpd2ps          0x41100025
+cvtpi2pd         0x41100026  ∥
+cvtpi2ps         0x41100027  ∥
+cvtps2dq         0x41100028  ∥
+cvtps2pd         0x41100029  ∥
+cvtps2pi         0x4110002a  ∥
+cvtsd2si         0x4110002b  ∥
+cvtsd2ss         0x4110002c  ∥
+cvtsi2sd         0x4110002d  ∥
+cvtsi2ss         0x4110002e  ∥
+cvtss2sd         0x4110002f  ∥
+cvtss2si         0x41100040  ∥
+cvttpd2pi        0x41100041  ∥
+cvttpd2dq        0x41100042  ∥
+cvttps2dq        0x41100043  ∥
+cvttps2pi        0x41100044  ∥
+cvttsd2si        0x41100045  ∥
+cvttss2si        0x41100046  ∥
+divpd            0x41100047  ∥
+divps            0x41100048  ∥
+divsd            0x41100049  ∥
+divss            0x4110004a  ∥
+haddpd           0x4110004b  ∥
+haddps           0x4110004c  ∥
+hsubpd           0x4110004d  ∥
+hsubps           0x4110004e  ∥
+lddqu            0x4110004f  ∥
+ldmxcsr          0x41100060  ∥
+maskmovdqu       0x41100061  ∥
+maskmovq         0x41100062  ∥
+maxpd            0x41100063  ∥
+maxps            0x41100064  ∥
+maxsd            0x41100065  ∥
+maxss            0x41100066  ∥
+minpd            0x41100067  ∥
+minps            0x41100068  ∥
+minsd            0x41100069  ∥
+minss            0x4110006a  ∥
+movapd           0x4110006b  ∥
+movaps           0x4110006c  ∥
+movd             0x4110006d  ∥
+movq             0x4110006e  ∥
+movddup          0x4110006f  ∥
+movdqa           0x41100080  ∥
+movdqu           0x41100081  ∥
+movdq2q          0x41100082  ∥
+movhlps          0x41100083  ∥
+movhpd           0x41100084  ∥
+movhps           0x41100085  ∥
+movlhps          0x41100086  ∥
+movlpd           0x41100087  ∥
+movlps           0x41100088  ∥
+movmskpd         0x41100089  ∥
+movmskps         0x4110008a  ∥
+movntdq          0x4110008b  ∥
+movntpd          0x4110008c  ∥
+movntps          0x4110008d  ∥
+movntq           0x4110008e  ∥
+movq2dq          0x4110008f  ∥
+mm_movsd         0x411000a0  ∥
+movshdup         0x411000a1  ∥
+movsldup         0x411000a2  ∥
+movss            0x411000a3  ∥
+movupd           0x411000a4  ∥
+movups           0x411000a5  ∥
+mulpd            0x411000a6  ∥
+mulps            0x411000a7  ∥
+mulsd            0x411000a8  ∥
+mulss            0x411000a9  ∥
+orpd             0x411000aa  ∥
+orps             0x411000ab  ∥
+pabsb            0x411000ac  ∥
+pabsw            0x411000ad  ∥
+pabsd            0x411000ae  ∥
+packsswb         0x411000af  ∥
+packssdw         0x411000c0  ∥
+packuswb         0x411000c1  ∥
+paddb            0x411000c2  ∥
+paddw            0x411000c3  ∥ 
+paddd            0x411000c4  ∥
+paddq            0x411000c5  ∥
+paddsb           0x411000c6  ∥
+paddsw           0x411000c7  ∥
+paddusb          0x411000c8  ∥
+paddusw          0x411000c9  ∥
+palignr          0x411000ca  ∥
+pand             0x411000cb  ∥
+pandn            0x411000cc  ∥
+pavgb            0x411000cd  ∥
+pavgw            0x411000ce  ∥
+pcmpeqb          0x411000cf  ∥
+pcmpeqw          0x411000e0  ∥
+pcmpeqd          0x411000e1  ∥
+pcmpgtb          0x411000e2  ∥
+pcmpgtw          0x411000e3  ∥
+pcmpgtd          0x411000e4  ∥
+pextrw           0x411000e5  ∥
+phaddw           0x411000e6  ∥
+phaddd           0x411000e7  ∥
+phaddsw          0x411000e8  ∥
+phsubw           0x411000e9  ∥
+phsubd           0x411000ea  ∥
+phsubsw          0x411000eb  ∥
+pinsrw           0x411000ec  ∥
+pmaddubsw        0x411000ed  ∥
+pmaddwd          0x411000ee  ∥
+pmaxsw           0x411000ef  ∥
+pmaxub           0x41100100  ∥
+pminsw           0x41100101  ∥
+pminub           0x41100102  ∥
+pmovmskb         0x41100103  ∥
+pmulhrsw         0x41100104  ∥
+pmulhuw          0x41100105  ∥
+pmulhw           0x41100106  ∥
+pmullw           0x41100107  ∥
+pmuludq          0x41100108  ∥
+por              0x41100109  ∥
+psadbw           0x4110010a  ∥
+pshufb           0x4110010b  ∥
+pshufd           0x4110010c  ∥
+pshufhw          0x4110010d  ∥
+pshuflw          0x4110010e  ∥
+pshufw           0x4110010f  ∥
+psignb           0x41100120  ∥
+psignw           0x41100121  ∥
+psignd           0x41100122  ∥
+pslldq           0x41100123  ∥
+psllw            0x41100124  ∥
+pslld            0x41100125  ∥
+psllq            0x41100126  ∥
+psraw            0x41100127  ∥
+psrad            0x41100128  ∥
+psrldq           0x41100129  ∥
+psrlw            0x4110012a  ∥
+psrld            0x4110012b  ∥
+psrlq            0x4110012c  ∥
+psubb            0x4110012d  ∥
+psubw            0x4110012e  ∥
+psubd            0x4110012f  ∥
+psubq            0x41100140  ∥
+psubsb           0x41100141  ∥
+psubsw           0x41100142  ∥
+psubusb          0x41100143  ∥
+psubusw          0x41100144  ∥
+punpckhbw        0x41100145  ∥
+punpckhwd        0x41100146  ∥
+punpckhdq        0x41100147  ∥
+punpckhqdq       0x41100148  ∥
+punpcklbw        0x41100149  ∥
+punpcklwd        0x4110014a  ∥
+punpckldq        0x4110014b  ∥
+punpcklqdq       0x4110014c  ∥
+pxor             0x4110014d  ∥
+rcpps            0x4110014e  ∥
+rcpss            0x4110014f  ∥
+rsqrtps          0x41100160  ∥
+rsqrtss          0x41100161  ∥
+shufpd           0x41100162  ∥
+shufps           0x41100163  ∥
+sqrtpd           0x41100164  ∥
+sqrtps           0x41100165  ∥
+sqrtsd           0x41100166  ∥
+sqrtss           0x41100167  ∥
+stmxcsr          0x41100168  ∥
+subpd            0x41100169  ∥
+subps            0x4110016a  ∥
+subsd            0x4110016b  ∥
+subss            0x4110016c  ∥
+ucomisd          0x4110016d  ∥
+ucomiss          0x4110016e  ∥
+unpckhpd         0x4110016f  ∥
+unpckhps         0x41100180  ∥
+unpcklpd         0x41100181  ∥
+unpcklps         0x41100182  ∥
+xorpd            0x41100183  ∥
+xorps            0x41100184  ∥
+
+∥AMD 3DNow!及3DNow!+指令
+femms             0x41200001
+pavgusb           0x41200002
+pf2id             0x41200003
+pf2iw             0x41200004
+pfacc             0x41200005
+pfadd             0x41200006
+pfcmpeq           0x41200007
+pfcmpge           0x41200008
+pfcmpgt           0x41200009
+pfmax             0x4120000a
+pfmin             0x4120000b
+pfmul             0x4120000c
+pfnacc            0x4120000d
+pfpnacc           0x4120000e
+pfrcp             0x4120000f
+pfrcpit1          0x41200020
+pfrcpit2          0x41200021
+pfrsqit1          0x41200022
+pfrsqrt           0x41200023
+pfsub             0x41200024
+pfsubr            0x41200025
+pi2fd             0x41200026
+pi2fw             0x41200027
+pmulhrw           0x41200028
+prefetch          0x41200029
+prefetchw         0x4120002a
+pswapd            0x4120002b
+
+∥AMD Secure Virtual Machine Ext-s
+clgi              0x41210001
+invlpga           0x41210002
+skinit            0x41210003
+stgi              0x41210004
+vmload            0x41210005
+vmmcall           0x41210006
+vmrun             0x41210007
+vmsave            0x41210008
+
+∥AMD Barcelona 芯片指令
+lzcnt             0x41210101
+∥POPCNT
+extrq             0x41210102
+insertq           0x41210103
+movntsd           0x41210104
+movntss           0x41210105
+
+
+∥SEE4指令
+blendpd           0x41300001
+blendps           0x41300002
+blendvpd          0x41300003
+blendvps          0x41300004
+crc32             0x41300005
+dppd              0x41300006
+dpps              0x41300007
+extractps         0x41300008
+insertps          0x41300009
+movntdqa          0x4130000a
+mpsadbw           0x4130000b
+packusdw          0x4130000c
+pblendvb          0x4130000d
+pblendw           0x4130000e
+pcmpeqq           0x4130000f
+pcmpestri         0x41300020
+pcmpestrm         0x41300021
+pcmpistri         0x41300022
+pcmpistrm         0x41300023
+pcmpgtq           0x41300024
+pextrb            0x41300025
+pextrd            0x41300026
+pextrq            0x41300027
+∥pextrw
+phminposuw        0x41300028
+pinsrb            0x41300029
+pinsrd            0x4130002a
+pinsrq            0x4130002b
+pmaxsb            0x4130002c
+pmaxsd            0x4130002d
+pmaxud            0x4130002e
+pmaxuw            0x4130002f
+pminsb            0x41300040
+pminsd            0x41300041
+pminud            0x41300042
+pminuw            0x41300043
+pmovsxbw          0x41300044
+pmovsxbd          0x41300045
+pmovsxbq          0x41300046
+pmovsxwd          0x41300047
+pmovsxwq          0x41300048
+pmovsxdq          0x41300049
+pmovzxbw          0x4130004a
+pmovzxbd          0x4130004b
+pmovzxbq          0x4130004c
+pmovzxwd          0x4130004d
+pmovzxwq          0x4130004e
+pmovzxdq          0x4130004f
+pmuldq            0x41300060
+pmullq            0x41300061
+popcnt            0x41300062
+ptest             0x41300063
+roundpd           0x41300064
+roundps           0x41300065
+roundsd           0x41300066
+roundss           0x41300067
+
+
+∥Intel VMX(virtual-machine extensions)指令
+vmptrst           0x41f00001
+vmclear           0x41f00002
+vmptrld           0x41f00003
+vmread            0x41f00004
+vmwrite           0x41f00005
+vmcall            0x41f00006
+vmlaunch          0x41f00007
+vmresume          0x41f00008
+vmxoff            0x41f00009
+vmxon             0x41f0000a
+
+
+∥Cyrix EMMX Instructions — OpCode List
+paddsiw           0x41f10001
+paveb             0x41f10002
+pdistib           0x41f10003
+pmachriw          0x41f10004
+pmagw             0x41f10005
+∥pmulhrw             0x41f10006
+pmulhriw          0x41f10007
+pmvzb             0x41f10008
+pmvnzb            0x41f10009
+pmvlzb            0x41f1000a
+pmvgezb           0x41f1000b
+psubsiw           0x41f1000c
+
+
+「
+∥下面指令尚未支持
+∥VIA PadLock高级加密引擎
+xstore_rng        0x41f20001
+xcrypt_ecb        0x41f20002
+xcrypt_cbc        0x41f20003
+xcrypt_ctr        0x41f20004
+xcrypt_cfb        0x41f20005
+xcrypt_ofb        0x41f20006
+montmul           0x41f20007
+xsha1             0x41f20008
+xsha256           0x41f20009
+xstorerng         0x41f2000a
+xcryptecb         0x41f2000b
+xcryptcbc         0x41f2000c
+xcryptctr         0x41f2000d
+xcryptcfb         0x41f2000e
+xcryptofb         0x41f2000f
+xstore            0x41f20020
+」
+
+∥END              0x41FFFFFF   ∥    汇编指令定义结束

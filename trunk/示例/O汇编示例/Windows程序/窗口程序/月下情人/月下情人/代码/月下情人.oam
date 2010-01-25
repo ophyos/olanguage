@@ -1,0 +1,949 @@
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//   本程序是根据 罗云彬编写的MASM源代码 月下情人简单动画 Ver 1.0
+//	使用O汇编语言重写的O汇编语言示例
+//   本程序的版权归原作者所有
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	版本信息
+//	月下情人简单动画 Ver 1.0
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+		
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	Include 数据
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.包含文<*oasm32.oah>
+.包含文<*windows.oah>
+.包含文<*user32.oah>
+.包含文<*kernel32.oah>
+.包含文<*comctl32.oah>
+.包含文<*comdlg32.oah>
+.包含文<*shell32.oah>
+.包含文<*gdi32.oah>
+.包含文<*advapi32.oah>
+.包含文<*.\winmm.oah>
+.包含文<..\包含\播放MP3.oam>
+
+
+.引用库<*user32.lib>
+.引用库<*kernel32.lib>
+.引用库<*comctl32.lib>
+.引用库<*comdlg32.lib>
+.引用库<*shell32.lib>
+.引用库<*gdi32.lib>
+.引用库<*advapi32.lib>
+.引用库<*.\winmm.lib>
+
+.包含文<..\资源\资源.oah>
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	宏定义 数据
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+宏定义 
+{
+DW_PIG_ADJY		45
+TIMER_MOON	     	1
+TIMER_BACK           2
+
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	数据段
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.预留段
+{
+
+双字 hIcon		 
+双字 hInstance	 
+双字 hWinMain	 
+双字 hMenu		 
+//********************************************************************
+// DC 句柄
+//********************************************************************
+双字 hDcBack		 
+双字 hDcPicture	 
+双字 hDcGround	 
+双字 hDcGroundMask	 
+双字 hDcMoon		 
+双字 hDcMoonMask	 
+双字 hDcPig		 
+双字 hDcPigMask	 
+//********************************************************************
+// Bmp 句柄
+//********************************************************************
+双字 hBmpBack	 
+双字 hBmpPicture	 
+双字 hBmpGround	 
+双字 hBmpGroundMask	 
+双字 hBmpMoon	 
+双字 hBmpMoonMask	 
+双字 hBmpPig		 
+双字 hBmpPigMask	 
+//********************************************************************
+// 图片及窗口大小
+//********************************************************************
+双字 dwWidth		 	//窗口大小
+双字 dwHeight	 
+
+双字 dwPigWidth	 	//图片大小
+双字 dwPigHeight	 
+双字 dwGroundWidth	 
+双字 dwGroundHeight	 
+双字 dwMoonWidth	 
+双字 dwMoonHeight	 
+//********************************************************************
+// 图片各部分的坐标
+//********************************************************************
+双字 dwPigOffsetX	 
+双字 dwPigOffsetY	 	//图片Y方向开始坐标
+
+双字 dwGroundOffsetY	 
+双字 dwMoonOffsetY	 
+//********************************************************************
+// 随时间变化的值
+//********************************************************************
+双字 dwMoonOffsetX	 
+双字 dwBackOffsetX	 
+
+双字 dwTimerMoonNow	 		//现在月亮位置
+双字 dwTimerBackNow	 		//现在星空位置
+双字 dwRandom	 
+//********************************************************************
+双字 dwTimerMoonMax	 		//循环时间
+双字 dwTimerBackMax	 
+双字 dwStar1		 		//大星星
+双字 dwStar2		 		//中星星
+双字 dwStar3		 		//小星星
+
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	数据段
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.只读段
+{
+
+字节 szClassName..    = "LoverMovie"
+字节 szCaptionMain..	 = "月下情人 - http:\//www.olanguage.org"  //字符串里的 "//" "/*" "∥"  "「" 这些特殊的符号必须在前面加上"\"转义字符才能正常显示
+字节 AboutMsg..       = "月下情人 - O汇编示例"
+
+字节 szKeyName ..	 = "Software\\Lyb Software\\LoverScreenSaver"
+字节 szKeyStar1 ..	 = "Big Stars"
+字节 szKeyStar2 ..	 = "Stars"
+字节 szKeyStar3 ..	 = "Small Stars"
+字节 szKeyTime1 ..	 = "Moon circle Time"
+字节 szKeyTime2 ..	 = "Star circle Time"
+字节 szMp3FileName..  = "music.mp3"
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	代码段
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+.代码段
+{
+
+.包含文<../包含/Win.oam>
+.包含文<../包含/Graphic.oam>
+.包含文<../包含/Reg.oam>
+//.包含文<About.oam>
+
+//********************************************************************
+//	随机数发生器
+//		输入：累加32 = 随机数最大值
+//		返回：累加32 = 随机数
+//********************************************************************
+函数 _Random()
+{ <基数32,计数32,数据32>
+
+	压栈	累加32
+	计数低 = 32
+	累加32 ^= 累加32
+      数据32 @= dwRandom
+	基数低 = [字节|数据32]
+	基数低 &= 1
+标签 Gen_bit:			// make n bit numbers
+	累加32 逻辑左移 1
+	数据32 = dwRandom	// Copy seed
+	数据32 逻辑右移 9
+	基数低 ^= 数据低
+	数据32 逻辑右移 5
+	基数低 ^= 数据低
+	基数32 位测试 1		// Copy bit 1 to carry flag
+	dwRandom 进位循环右移 1	// Rotate seed right 1 bit
+	进位? 基数低 置 1		// Set bl TRUE if carry is set
+	累加低 |= 基数低
+
+	计数低 --
+	不为零? 跳转到 Gen_bit
+	出栈	计数32
+	数据32:累加32 = 累加32 * 计数32
+	累加32 = 数据32
+}
+
+//********************************************************************
+函数 SetupDialogProc(双字 hWnd,双字 wMsg,双字 wParam,双字 lParam)
+{ <基数32,的址32,源址32>
+
+	双字 dwTemp
+
+	累加32 = wMsg
+//********************************************************************
+	如果(累加32 == WM_CLOSE)
+     {
+		终止对话框(hWnd,NULL)
+//********************************************************************
+     }
+	否则如果(累加32 == WM_INITDIALOG)
+     {
+		窗体居中(hWnd)
+		_GetConfig()
+//********************************************************************
+		发送对话框子项消息(hWnd,IDC_STAR1,EM_LIMITTEXT,2,NULL)
+		发送对话框子项消息(hWnd,IDC_STAR2,EM_LIMITTEXT,2,NULL)
+		发送对话框子项消息(hWnd,IDC_STAR3,EM_LIMITTEXT,2,NULL)
+		发送对话框子项消息(hWnd,IDC_TIME1,EM_LIMITTEXT,2,NULL)
+		发送对话框子项消息(hWnd,IDC_TIME2,EM_LIMITTEXT,2,NULL)
+//********************************************************************
+		SetDlgItemInt(hWnd,IDC_STAR1,dwStar1,FALSE)
+		SetDlgItemInt(hWnd,IDC_STAR2,dwStar2,FALSE)
+		SetDlgItemInt(hWnd,IDC_STAR3,dwStar3,FALSE)
+		累加32 = dwTimerMoonMax
+		数据32 ^= 数据32
+		计数32 = 600
+		数据32:累加32 /= 计数32
+		SetDlgItemInt(hWnd,IDC_TIME1,累加32,FALSE)
+		累加32 = dwTimerBackMax
+		数据32 ^= 数据32
+		计数32 = 600
+		数据32:累加32 /= 计数32
+		SetDlgItemInt(hWnd,IDC_TIME2,累加32,FALSE)
+		
+		发送对话框子项消息(hWnd,IDC_PLAYMUSIC,BM_SETCHECK,dwMp3PlayFlag,0)
+     }
+//********************************************************************
+	否则如果(累加32 == WM_COMMAND)
+     {
+		累加32 = wParam
+		如果(累加32 ==	IDOK)
+          {
+//********************************************************************
+                累加32 @= dwTemp
+			获取对话框子项整数值(hWnd,IDC_STAR1,累加32,FALSE)
+			如果(累加32 < 1)
+                {
+				累加32 = 1
+			}
+			如果(累加32 > 50)
+                {
+				累加32 = 50
+			}
+			dwStar1 = 累加32
+//********************************************************************
+                累加32 @= dwTemp
+			获取对话框子项整数值(hWnd,IDC_STAR2,累加32,FALSE)
+			如果(累加32 < 1)
+                {
+				累加32 = 1
+			}
+			如果(累加32 > 99)
+                {
+				累加32 = 99
+			}
+			dwStar2 = 累加32
+//********************************************************************
+                累加32 @= dwTemp
+			获取对话框子项整数值(hWnd,IDC_STAR3,累加32,FALSE)
+			如果(累加32 < 1)
+                {
+				累加32 = 1
+			}
+			如果(累加32 > 99)
+                {
+				累加32 = 99
+			}
+			dwStar3 = 累加32
+//********************************************************************
+                累加32 @= dwTemp
+			获取对话框子项整数值(hWnd,IDC_TIME1,累加32,FALSE)
+			如果(累加32 < 1)
+                {
+				累加32 = 1
+			}
+			如果(累加32 > 60)
+                {
+				累加32 = 60
+			}
+			计数32 = 600
+			数据32:累加32 = 累加32 * 计数32
+			dwTimerMoonMax = 累加32
+//********************************************************************
+                累加32 @= dwTemp
+			获取对话框子项整数值(hWnd,IDC_TIME2,累加32,FALSE)
+			如果(累加32 < 5)
+                {
+				累加32 = 5
+			}
+			如果(累加32 > 60)
+                {
+				累加32 = 60
+			}
+			计数32 = 600
+			数据32:累加32 = 累加32 * 计数32
+			dwTimerBackMax = 累加32
+//********************************************************************			
+			对话框按钮被选中(hWnd,IDC_PLAYMUSIC) //检查按钮是否被选中
+                如果(累加32 == BST_CHECKED) //被选中
+                {
+                    如果(dwMp3PlayFlag == 0)
+                    {
+                        PlayMP3(取地址 szMp3FileName)
+                    }                    
+                }
+                否则
+                {
+                    如果(dwMp3PlayFlag == 1)
+                    {
+                        StopPlayMP3()
+                    }
+                }
+//********************************************************************
+			_SaveConfig()
+			终止对话框(hWnd,NULL)
+			_InitValue()
+			_CreatePic()
+           }		
+//********************************************************************
+		否则如果(累加32 ==	IDCANCEL)
+           {
+			终止对话框(hWnd,NULL)
+           }
+//********************************************************************
+		否则如果(累加32 ==	ID_ABOUT)
+          {
+			//DialogBoxParam(hInstance,DLG_ABOUT,hWnd,AboutDialogProc,DLG_ABOUT)
+                关于对话框()
+		}
+     }
+	否则
+     {
+//********************************************************************
+//	注意：对话框的消息处理后，要返回 TRUE,对没有处理的消息
+//	要返回 FALSE
+//********************************************************************
+		返回  假
+	}
+
+	返回  真
+}
+
+//********************************************************************
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	程序开始
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+入口 主函数()
+{
+	主窗口()	
+	退出进程(NULL)
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	主窗口程序
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 主窗口()
+{
+	WNDCLASSEX stWcMain
+
+	获取模块句柄(NULL)
+	hInstance = 累加32
+	加载图标(hInstance,ICO_MAIN)
+	hIcon = 累加32
+	加载菜单(hInstance,IDM_MAIN)
+	hMenu = 累加32
+//*************** 注册窗口类 *****************************************
+	加载指针(0,IDC_ARROW)
+	stWcMain.hCursor = 累加32
+	stWcMain.cbSize = 取大小 WNDCLASSEX
+	stWcMain.hIconSm = 0
+	stWcMain.style = CS_HREDRAW | CS_VREDRAW
+	stWcMain.lpfnWndProc = WndMainProc
+	stWcMain.cbClsExtra = 0
+	stWcMain.cbWndExtra = 0
+	累加32 = hInstance
+	stWcMain.hInstance = 累加32
+	stWcMain.hIcon = 0
+	stWcMain.hbrBackground = COLOR_BACKGROUND
+	stWcMain.lpszClassName = 取地址 szClassName
+	stWcMain.lpszMenuName = 0
+      累加32 @= stWcMain
+	高级注册窗体类(累加32)
+//*************** 建立输出窗口 ***************************************
+	高级创建窗体(WS_EX_CLIENTEDGE,取地址 szClassName,取地址 szCaptionMain,   ...
+			WS_OVERLAPPEDWINDOW,0,0,640,480,NULL,hMenu,hInstance,NULL)
+
+	显示窗体(hWinMain,SW_SHOWNORMAL)
+	更新窗体(hWinMain)
+
+//*************** 消息循环 *******************************************
+     MSG 消息
+     循环(真)
+     {         
+         累加32 @= 消息
+         GetMessage(累加32 ,0,0,0)
+         如果(累加32 == 0)
+         {
+            跳出
+         }
+         累加32 @= 消息
+         TranslateMessage(累加32)
+         累加32 @= 消息
+         消息调度(累加32)
+     }
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 WndMainProc(双字 hWnd,双字 uMsg,双字 wParam,双字 lParam)
+{  <基数32,的址32,源址32>
+
+	PAINTSTRUCT stPs
+     双字 hDc
+
+	累加32 = uMsg
+	如果(累加32 ==	WM_CREATE)
+     {
+		累加32 = hWnd
+		hWinMain = 累加32
+		_Init()		
+		PlayMP3(取地址 szMp3FileName)
+     }
+//********************************************************************
+	否则如果(累加32 ==	WM_TIMER)
+     {
+		_CreatePic()
+		InvalidateRect(hWinMain,NULL,FALSE)	//刷新屏幕
+     }
+//********************************************************************
+	否则如果(累加32 ==	WM_CLOSE)
+     {
+		_Quit()
+     }
+//********************************************************************
+	否则如果(累加32 ==	WM_COMMAND)
+     {
+		累加32 = wParam
+		如果(累加32 ==	IDM_EXIT)
+          {
+			_Quit()
+          }
+		否则如果(累加32 ==	IDM_ABOUT)
+          {
+			//DialogBoxParam(hInstance,DLG_ABOUT,hWnd,AboutDialogProc,DLG_ABOUT)
+                关于对话框()
+          }
+		否则如果(累加32 ==	IDM_SETUP)
+          {
+			DialogBoxParam(hInstance,DLG_SETUP,hWnd,SetupDialogProc,DLG_SETUP)
+		}
+     }
+//********************************************************************
+	否则如果(累加32 ==	WM_SIZE)
+     {
+		删除对象(hBmpBack)
+		删除对象(hBmpPicture)
+		删除设备环境(hDcBack)
+		删除设备环境(hDcPicture)
+		_InitValue()
+		_CreatePic()
+		InvalidateRect(hWinMain,NULL,FALSE)	//刷新屏幕
+     }
+//********************************************************************
+	否则如果(累加32 ==	WM_PAINT)
+     {
+           累加32 @= stPs
+		开始绘制(hWnd,累加32)
+		hDc = 累加32
+
+		累加32 = stPs.rcPaint.right
+		累加32 -= stPs.rcPaint.left
+		计数32 = stPs.rcPaint.bottom
+		计数32 -= stPs.rcPaint.top
+
+		BitBlt(hDc,stPs.rcPaint.left,stPs.rcPaint.top,累加32,计数32,  ...
+				hDcPicture,stPs.rcPaint.left,stPs.rcPaint.top,SRCCOPY)
+
+           累加32 @= stPs
+		终止绘制(hWnd,累加32)
+     }
+//********************************************************************
+	否则
+     {
+		默认窗体过程(hWnd,uMsg,wParam,lParam)
+		返回
+	}
+//********************************************************************
+//	注意：WndProc 处理 Windows 消息后，必须在 Eax 中返回 0
+//	但是由 DefWindowProc 处理后的返回值不能改变，否则窗口
+//	将无法显示!
+//********************************************************************
+	累加32 ^= 累加32
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//	主窗口控制子程序
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _Init()
+{
+	双字 hDc
+	BITMAP stBmp
+
+	GetTickCount()
+	dwRandom = 累加32
+
+	发送消息(hWinMain,WM_SETICON,ICON_SMALL,hIcon)
+	窗体居中(hWinMain)
+
+	_GetConfig()
+//********************************************************************
+// 创建要用到的 DC 和位图
+//********************************************************************
+	GetDC(hWinMain)
+	hDc = 累加32
+	创建兼容设备环境(hDc)
+	hDcGround = 累加32
+	创建兼容设备环境(hDc)
+	hDcGroundMask = 累加32
+	创建兼容设备环境(hDc)
+	hDcMoon = 累加32
+	创建兼容设备环境(hDc)
+	hDcMoonMask = 累加32
+	创建兼容设备环境(hDc)
+	hDcPig = 累加32
+	创建兼容设备环境(hDc)
+	hDcPigMask = 累加32
+
+	加载位图(hInstance,BMP_GROUND)
+	hBmpGround = 累加32
+	加载位图(hInstance,BMP_MOON)
+	hBmpMoon = 累加32
+	加载位图(hInstance,BMP_PIG)
+	hBmpPig = 累加32
+//********************************************************************
+// 将位图连接到 DC
+//********************************************************************
+	选择对象(hDcGround,hBmpGround)
+	选择对象(hDcMoon,hBmpMoon)
+	选择对象(hDcPig,hBmpPig)
+//********************************************************************
+// 获取位图的宽度和高度备用
+//********************************************************************
+      累加32 @= stBmp
+	GetObject(hBmpGround,取大小 BITMAP,累加32)
+	压栈	stBmp.bmWidth
+	出栈	dwGroundWidth
+	压栈	stBmp.bmHeight
+	出栈	dwGroundHeight
+
+     累加32 @= stBmp
+	GetObject(hBmpPig,取大小 BITMAP,累加32)
+	压栈	stBmp.bmWidth
+	出栈	dwPigWidth
+	压栈	stBmp.bmHeight
+	出栈	dwPigHeight
+
+      累加32 @= stBmp
+	GetObject(hBmpMoon,取大小 BITMAP,累加32)
+	压栈	stBmp.bmWidth
+	出栈	dwMoonWidth
+	压栈	stBmp.bmHeight
+	出栈	dwMoonHeight
+//********************************************************************
+// 建立猪图象的 Mask
+//********************************************************************
+	CreateCompatibleBitmap(hDc,dwPigWidth,dwPigHeight)
+	hBmpPigMask = 累加32
+	选择对象(hDcPigMask,累加32)
+	BitBlt(hDcPigMask,0,0,dwPigWidth,dwPigHeight,hDcPig,0,0,SRCCOPY)
+
+	_CreateMask(hDcPigMask,dwPigWidth,dwPigHeight)
+	BitBlt(hDcPig,0,0,dwPigWidth,dwPigHeight,hDcPigMask,0,0,SRCAND)
+	BitBlt(hDcPigMask,0,0,dwPigWidth,dwPigHeight,hDcPigMask,0,0,DSTINVERT)
+//********************************************************************
+// 建立月亮图象的 Mask
+//********************************************************************
+	CreateCompatibleBitmap(hDc,dwMoonWidth,dwMoonHeight)
+	hBmpMoonMask = 累加32
+	选择对象(hDcMoonMask,累加32)
+	BitBlt(hDcMoonMask,0,0,dwMoonWidth,dwMoonHeight,hDcMoon,0,0,SRCCOPY)
+
+	_CreateMask(hDcMoonMask,dwMoonWidth,dwMoonHeight)
+	BitBlt(hDcMoon,0,0,dwMoonWidth,dwMoonHeight,hDcMoonMask,0,0,SRCAND)
+	BitBlt(hDcMoonMask,0,0,dwMoonWidth,dwMoonHeight,hDcMoonMask,0,0,DSTINVERT)
+//********************************************************************
+// 建立草地图象的 Mask
+//********************************************************************
+	CreateCompatibleBitmap(hDc,dwGroundWidth,dwGroundHeight)
+	hBmpGroundMask = 累加32
+	选择对象(hDcGroundMask,累加32)
+	BitBlt(hDcGroundMask,0,0,dwGroundWidth,dwGroundHeight,hDcGround,0,0,SRCCOPY)
+
+	_CreateMask(hDcGroundMask,dwGroundWidth,dwGroundHeight)
+	BitBlt(hDcGround,0,0,dwGroundWidth,dwGroundHeight,hDcGroundMask,0,0,SRCAND)
+	BitBlt(hDcGroundMask,0,0,dwGroundWidth,dwGroundHeight,hDcGroundMask,0,0,DSTINVERT)
+//********************************************************************
+	ReleaseDC(hWinMain,hDc)
+	_InitValue()
+	_CreatePic()
+	设置定时器(hWinMain,TIMER_MOON,100,NULL)
+}
+
+//********************************************************************
+函数 _InitValue()
+{
+	RECT stRect
+	双字 hBmpTmp,hDcTmp,dwX,dwY,dwWinWidth,dwWinHeight
+	BITMAP stBmp
+//********************************************************************
+// 取屏幕尺寸
+//********************************************************************
+     累加32 @= stRect
+	获取客户区矩形(hWinMain,累加32)
+	累加32 = stRect.right
+	累加32 -= stRect.left
+	dwWidth = 累加32
+	累加32 = stRect.bottom
+	累加32 -= stRect.top
+	dwHeight = 累加32
+//********************************************************************
+// 创建背景和图片的位图和 DC
+//********************************************************************
+	GetDC(hWinMain)
+	hDcTmp = 累加32
+	创建兼容设备环境(hDcTmp)
+	hDcBack = 累加32
+	创建兼容设备环境(hDcTmp)
+	hDcPicture = 累加32
+	CreateCompatibleBitmap(hDcTmp,dwWidth,dwHeight)
+	hBmpBack = 累加32
+	CreateCompatibleBitmap(hDcTmp,dwWidth,dwHeight)
+	hBmpPicture = 累加32
+	ReleaseDC(hWinMain,hDcTmp)
+
+	选择对象(hDcBack,hBmpBack)
+	选择对象(hDcPicture,hBmpPicture)
+//********************************************************************
+// 猪、草地的（Y）坐标
+//********************************************************************
+	累加32 = dwHeight
+	累加32 -= dwGroundHeight
+	dwGroundOffsetY = 累加32
+
+	累加32 += DW_PIG_ADJY
+	累加32 -= dwPigHeight
+	dwPigOffsetY = 累加32
+//********************************************************************
+// 把背景填黑色
+//********************************************************************
+	累加32 ^= 累加32
+	stRect.top = 累加32
+	stRect.left = 累加32
+	压栈	dwWidth
+	出栈	stRect.right
+	压栈	dwHeight
+	出栈	stRect.bottom
+	获取固有对象(BLACK_BRUSH)
+      数据32 @= stRect
+	FillRect(hDcBack,数据32,累加32)
+//********************************************************************
+// 随机分布 Star3 星星
+// 中间的  累加32 -= dwWinWidth 是为了不至于在屏幕上出现只有一半的星星
+//********************************************************************
+	创建兼容设备环境(hDcBack)
+	hDcTmp = 累加32
+	加载位图(hInstance,BMP_STAR3)
+	hBmpTmp = 累加32
+	选择对象(hDcTmp,hBmpTmp)
+     累加32 @= stBmp
+	GetObject(hBmpTmp,取大小 BITMAP,累加32)
+	压栈	stBmp.bmWidth
+	出栈	dwWinWidth
+	压栈	stBmp.bmHeight
+	出栈	dwWinHeight
+
+	计数32 = dwStar3
+
+标签 位置一
+	压栈	计数32
+	累加32 = dwWidth
+	累加32 -= dwWinWidth		//Star3.bmp 宽度
+	_Random()
+	dwX = 累加32
+	累加32 = dwGroundOffsetY
+	累加32 -= 20
+	_Random()
+	dwY = 累加32
+	BitBlt(hDcBack,dwX,dwY,dwWinWidth,dwWinHeight,hDcTmp,0,0,SRCPAINT)
+	出栈	计数32
+	循环到 位置一
+
+	删除对象(hDcTmp)
+	删除对象(hBmpTmp)
+//********************************************************************
+// 随机分布 Star2 星星
+// 中间的 累加32 -= dwWinWidth 是为了不至于在屏幕上出现只有一半的星星
+//********************************************************************
+	创建兼容设备环境(hDcBack)
+	hDcTmp = 累加32
+	加载位图(hInstance,BMP_STAR2)
+	hBmpTmp = 累加32
+	选择对象(hDcTmp,hBmpTmp)
+     累加32 @= stBmp
+	GetObject(hBmpTmp,取大小 BITMAP,累加32)
+	压栈	stBmp.bmWidth
+	出栈	dwWinWidth
+	压栈	stBmp.bmHeight
+	出栈	dwWinHeight
+
+	计数32 = dwStar2
+
+标签 位置二
+	压栈	计数32
+	累加32 = dwWidth
+	累加32 -= dwWinWidth		//Star2.bmp 宽度
+	_Random()
+	dwX = 累加32
+	累加32 = dwGroundOffsetY
+	累加32 -= 20
+	_Random()
+	dwY = 累加32
+	BitBlt(hDcBack,dwX,dwY,dwWinWidth,dwWinHeight,hDcTmp,0,0,SRCPAINT)
+	出栈	计数32
+	循环到 位置二
+
+	删除对象(hDcTmp)
+	删除对象(hBmpTmp)
+//********************************************************************
+// 随机分布 Star1 星星
+// 中间的 sub 累加32,dwWinWidth 是为了不至于在屏幕上出现只有一半的星星
+//********************************************************************
+	创建兼容设备环境(hDcBack)
+	hDcTmp = 累加32
+	加载位图(hInstance,BMP_STAR1)
+	hBmpTmp = 累加32
+	选择对象(hDcTmp,hBmpTmp)
+     累加32  @= stBmp
+	GetObject(hBmpTmp,取大小 BITMAP,累加32)
+	压栈	stBmp.bmWidth
+	出栈	dwWinWidth
+	压栈	stBmp.bmHeight
+	出栈	dwWinHeight
+
+	计数32 = dwStar1
+标签 位置三
+	压栈	计数32
+	累加32 = dwWidth
+	累加32 -= dwWinWidth		//Star1.bmp 宽度
+	_Random()
+	dwX = 累加32
+	累加32 = dwGroundOffsetY
+	累加32 -= 60
+	_Random()
+	dwY = 累加32
+	BitBlt(hDcBack,dwX,dwY,dwWinWidth,dwWinHeight,hDcTmp,0,0,SRCPAINT)
+	出栈	计数32
+	循环到  位置三
+
+	删除对象(hDcTmp)
+	删除对象(hBmpTmp)
+//********************************************************************
+// 猪的位置 - 随机
+//********************************************************************
+	累加32 = dwWidth
+	累加32 -= dwPigWidth
+	_Random()
+	dwPigOffsetX = 累加32
+//********************************************************************
+// 月亮的位置 - 1/8 to 1/4 高度随机
+//********************************************************************
+	累加32 = dwHeight
+	累加32 逻辑右移 3
+	_Random()
+	计数32 = 累加32
+	累加32 = dwHeight
+	累加32 逻辑右移 3
+	累加32 += 计数32
+	dwMoonOffsetY = 累加32
+}
+
+//********************************************************************
+函数 _CreatePic()
+{
+
+//********************************************************************
+// 画星空
+//********************************************************************
+	计数32 = dwTimerBackMax
+	累加32 = dwTimerBackNow
+	累加32 ++
+	如果(累加32 >= 计数32)	//如果移动到尽头则循环
+     {
+		累加32 ^= 累加32
+	}
+	dwTimerBackNow = 累加32
+     数据32:累加32  = 累加32 * dwWidth	
+	数据32:累加32 /= 计数32
+	dwBackOffsetX = 累加32	//按时间比例计算坐标
+
+	如果(dwBackOffsetX != 0)
+     {
+		累加32 = dwWidth
+		累加32 -= dwBackOffsetX
+		BitBlt(hDcPicture,0,0,dwBackOffsetX,dwHeight,hDcBack,累加32,0,SRCCOPY)
+	}
+	累加32 = dwWidth
+	累加32 -= dwBackOffsetX
+	BitBlt(hDcPicture,dwBackOffsetX,0,累加32,dwHeight,hDcBack,0,0,SRCCOPY)
+//********************************************************************
+// 从负的月亮宽度开始（这样效果是月亮的右边从屏幕左边慢慢出来）
+// 根据现在时间和循环时间的比例，在对应的屏幕位置上画月亮
+//********************************************************************
+	计数32 = dwTimerMoonMax
+	累加32 = dwTimerMoonNow
+	累加32 ++
+	如果(累加32 >= 计数32)
+     {
+		累加32 ^= 累加32
+	}
+	dwTimerMoonNow = 累加32
+	数据32 = dwWidth		//从 -dwMoonWidth 开始
+	数据32 += dwMoonWidth
+	数据32:累加32  = 累加32 * 数据32
+	数据32:累加32 /= 计数32
+	累加32 -= dwMoonWidth
+	dwMoonOffsetX = 累加32
+
+	BitBlt(hDcPicture,dwMoonOffsetX,dwMoonOffsetY,dwMoonWidth,dwMoonHeight,hDcMoonMask,0,0,SRCAND)
+	BitBlt(hDcPicture,dwMoonOffsetX,dwMoonOffsetY,dwMoonWidth,dwMoonHeight,hDcMoon,0,0,SRCPAINT)
+//********************************************************************
+// 画草地
+// 从坐标 0 开始，循环画到屏幕的右边
+//********************************************************************
+	累加32 ^= 累加32
+	循环(累加32 < dwWidth)
+     {
+		压栈	累加32
+		BitBlt(hDcPicture,累加32,dwGroundOffsetY,dwGroundWidth,dwGroundHeight,hDcGroundMask,0,0,SRCAND)
+		出栈	累加32
+		压栈	累加32
+		BitBlt(hDcPicture,累加32,dwGroundOffsetY,dwGroundWidth,dwGroundHeight,hDcGround,0,0,SRCPAINT)
+		出栈	累加32
+		计数32 = dwGroundWidth
+		累加32 += 计数32
+	}
+//********************************************************************
+// 画猪
+//********************************************************************
+	BitBlt(hDcPicture,dwPigOffsetX,dwPigOffsetY,dwPigWidth,dwPigHeight,hDcPigMask,0,0,SRCAND)
+	BitBlt(hDcPicture,dwPigOffsetX,dwPigOffsetY,dwPigWidth,dwPigHeight,hDcPig,0,0,SRCPAINT)
+	
+}
+
+//********************************************************************
+函数 _Quit()
+{
+
+	终止定时器(hWinMain,TIMER_MOON)
+	销毁窗体(hWinMain)
+	邮送退出消息(NULL)
+
+	删除对象(hBmpBack)
+	删除对象(hBmpPicture)
+	删除对象(hBmpGround)
+	删除对象(hBmpGroundMask)
+	删除对象(hBmpMoon)
+	删除对象(hBmpMoonMask)
+	删除对象(hBmpPig)
+	删除对象(hBmpPigMask)
+
+	删除设备环境(hDcBack)
+	删除设备环境(hDcPicture)
+	删除设备环境(hDcGround)
+	删除设备环境(hDcGroundMask)
+	删除设备环境(hDcMoon)
+	删除设备环境(hDcMoonMask)
+	删除设备环境(hDcPig)
+	删除设备环境(hDcPigMask)
+}
+
+//********************************************************************
+函数 _GetConfig()
+{
+	_GetRegKeyDw(取地址 szKeyName,取地址 szKeyStar1)
+	如果(累加32 == -1)
+     {
+		累加32 = 5
+	}
+	dwStar1 = 累加32
+	_GetRegKeyDw(取地址 szKeyName,取地址 szKeyStar2)
+	如果(累加32 == -1)
+     {
+		累加32 = 10
+	}
+	dwStar2 = 累加32
+	_GetRegKeyDw(取地址 szKeyName,取地址 szKeyStar3)
+	如果(累加32 == -1)
+     {
+		累加32 = 20
+	}
+	dwStar3 = 累加32
+	_GetRegKeyDw(取地址 szKeyName,取地址 szKeyTime1)
+	如果(累加32 == -1)
+     {
+		累加32 = 2
+	}
+	计数32 = 600
+	数据32:累加32 = 累加32 * 计数32
+	dwTimerMoonMax = 累加32
+	_GetRegKeyDw(取地址 szKeyName,取地址 szKeyTime2)
+	如果(累加32 == -1)
+     {
+		累加32 = 10
+	}
+	计数32 = 600
+	数据32:累加32 = 累加32 * 计数32
+	dwTimerBackMax = 累加32
+}
+
+//********************************************************************
+函数 _SaveConfig()
+{
+
+	_SetRegKeyDw(取地址 szKeyName,取地址 szKeyStar1,dwStar1)
+	_SetRegKeyDw(取地址 szKeyName,取地址 szKeyStar2,dwStar2)
+	_SetRegKeyDw(取地址 szKeyName,取地址 szKeyStar3,dwStar3)
+	累加32 = dwTimerMoonMax
+	数据32 ^= 数据32
+	计数32 = 600
+	数据32:累加32 /= 计数32
+	_SetRegKeyDw(取地址 szKeyName,取地址 szKeyTime1,累加32)
+	累加32 = dwTimerBackMax
+	数据32 ^= 数据32
+	计数32 = 600
+	数据32:累加32 /= 计数32
+	_SetRegKeyDw(取地址 szKeyName,取地址 szKeyTime2,累加32)
+
+}
+
+//********************************************************************
+函数 关于对话框()
+{    
+    ShellAbout(hWinMain,取地址 szCaptionMain,取地址 AboutMsg,hIcon)
+}
+
+}  //代码段结束

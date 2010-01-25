@@ -1,0 +1,21 @@
+引用段
+{
+函数 SRSetRestorePointA(整数32,整数32)=>整数32;
+函数 SRSetRestorePointW(整数32,整数32)=>整数32;
+函数 SfcClose(整数32)=>整数32;
+函数 SfcConnectToServer(整数32)=>整数32;
+函数 SfcFileException(整数32,整数32,整数32)=>整数32;
+函数 SfcGetNextProtectedFile(整数32,整数32)=>整数32;
+函数 SfcInitProt(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SfcInitiateScan(整数32,整数32)=>整数32;
+函数 SfcInstallProtectedFiles(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SfcIsFileProtected(整数32,整数32)=>整数32;
+函数 SfcTerminateWatcherThread()=>整数32;
+函数 SfcWLEventLogoff(整数32)=>整数32;
+函数 SfcWLEventLogon(整数32)=>整数32;
+函数 SfpDeleteCatalog(整数32,整数32)=>整数32;
+函数 SfpInstallCatalog(整数32,整数32,整数32)=>整数32;
+函数 SfpVerifyFile(整数32,整数32,整数32)=>整数32;
+
+宏定义 SRSetRestorePoint  SRSetRestorePointA
+}

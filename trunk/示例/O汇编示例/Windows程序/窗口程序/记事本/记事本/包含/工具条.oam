@@ -1,0 +1,195 @@
+∥ ########################################################################
+
+∥数据段
+.数据段
+{
+    
+双字 h工具条句柄
+
+}
+
+∥只读段
+.只读段
+{
+    字节 工具条类名‥ = "ToolbarWindow32"
+}
+
+
+∵H宽度  16
+∵H高度  16
+
+∥ ########################################################################
+
+∥代码段
+.代码段
+{
+
+函数 构建工具条(双字 h父窗口句柄,双字 位图ID)
+{
+    ∥ ---------------------------------------
+    ∥ This proc works by using macros so that 
+    ∥ the code is easier to read and modify
+    ∥ ---------------------------------------
+
+    双字 bSize
+    TBADDBITMAP tbab
+    TBBUTTON tbb
+    
+    双字 h工具条位图
+
+    ∥ ------------------
+    ∥ The toolbar bitmap
+    ∥ ~~~~~~~~~~~~~~~~~~
+    ∥ You must supply a bitmap for the toolbar that has the 
+    ∥ correct number of the required images, each of the same
+    ∥ size and in the following strip bitmap form.
+    
+    ∥  -------------------------------------
+    ∥  |  1  |  2  |  3  |  4  |  5  |  6  |
+    ∥  -------------------------------------
+
+    ∥ ------------------------
+    ∥ Uncomment following when
+    ∥ bitmap has been created
+    ∥ ------------------------
+    LoadBitmap(hInstance,位图ID)
+    h工具条位图 = 累加32
+
+    ∥ --------------------------------------------------
+    ∥ Set toolbar button dimensions here, width & height
+    ∥ --------------------------------------------------
+    累加32 @= 工具条类名
+    CreateWindowEx(0,累加32,0,WS_CHILD | WS_VISIBLE,0,0,10,10,h父窗口句柄,NULL,hInstance,NULL) ∥ | TBSTYLE_FLAT
+    h工具条句柄 =  累加32
+    
+    SendMessage(h工具条句柄,TB_BUTTONSTRUCTSIZE,取大小 TBBUTTON,0)
+    
+    ∥ ---------------------------------------
+    ∥ Put width & height of bitmap into DWORD
+    ∥ ---------------------------------------
+    计数32 = H宽度  ∥ loword = bitmap Width
+    累加32 = H高度  ∥ hiword = bitmap Height
+    累加32 逻辑左移 16
+    累加16 = 计数16
+
+    bSize =  累加32
+    
+    SendMessage(h工具条句柄,TB_SETBITMAPSIZE,0,bSize)
+    
+    设置位图颜色(h工具条位图)
+    h工具条位图 = 累加32
+    
+    tbab.hInst = 0
+    压栈 h工具条位图
+    出栈 tbab.nID
+    
+    累加32 @= tbab
+    SendMessage(h工具条句柄,TB_ADDBITMAP,12,累加32)
+    
+    SendMessage(h工具条句柄,TB_SETBUTTONSIZE,0,bSize)
+
+    ∥ additional data for TBBUTTON structure
+    tbb.fsState =  TBSTATE_ENABLED
+    tbb.dwData  =  0
+    tbb.iString =  0
+
+    ∥ -----------------------------------
+    ∥ Add toolbar buttons and spaces here
+    ∥ Syntax for the macro TBbutton is
+    ∥ TBbutton bmpID number, WM_COMMAND ID number
+    ∥ WM_COMMAND ID numbers start at 50
+    ∥ -----------------------------------
+    tbb.iBitmap =   0
+    tbb.idCommand = 0
+    tbb.fsStyle =   TBSTYLE_SEP
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   0   ∥ 第0个图标
+    tbb.idCommand = 50  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   1   ∥ 第1个图标
+    tbb.idCommand = 51  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   2   ∥ 第2个图标
+    tbb.idCommand = 52  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   0
+    tbb.idCommand = 0
+    tbb.fsStyle =   TBSTYLE_SEP
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   3   ∥ 第3个图标
+    tbb.idCommand = 53  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   4   ∥ 第4个图标
+    tbb.idCommand = 54  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   5   ∥ 第5个图标
+    tbb.idCommand = 55  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+
+    tbb.iBitmap =   6   ∥ 第6个图标
+    tbb.idCommand = 56  ∥ command ID number
+    tbb.fsStyle =   TBSTYLE_BUTTON
+    累加32 @= tbb
+    SendMessage(h工具条句柄,TB_ADDBUTTONS,1,累加32)
+}
+
+∥ ########################################################################
+
+函数 设置位图颜色(双字 h位图)
+{
+    双字 h内存设备环境
+    双字 h笔刷
+    双字 h旧位图
+    双字 h结果
+    双字 h旧笔刷
+
+    创建兼容设备环境(NULL)
+    h内存设备环境 = 累加32
+
+    选择对象(h内存设备环境,h位图)
+    h旧位图 = 累加32
+
+    获取系统颜色(COLOR_BTNFACE)
+    创建实体笔刷(累加32)
+    h笔刷 = 累加32
+
+    选择对象(h内存设备环境,h笔刷)
+    h旧笔刷 = 累加32
+
+    获取象素(h内存设备环境,1,1)
+    高级完全填充(h内存设备环境,1,1,累加32,FLOODFILLSURFACE)
+
+    选择对象(h内存设备环境,h旧笔刷)
+    删除对象(h笔刷)
+
+    选择对象(h内存设备环境,h位图)
+    h结果 = 累加32
+    删除设备环境(h内存设备环境)
+
+    累加32 = h结果
+}
+
+}
+
+∥ #########################################################################

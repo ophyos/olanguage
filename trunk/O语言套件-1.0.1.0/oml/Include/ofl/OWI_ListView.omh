@@ -1,0 +1,198 @@
+
+引用段
+{
+
+//////////////////////////////////////////////////////////////////////////
+//ListItem
+函数 ListItem_GetIndex(地址 pListItem)=>整数32;
+函数 ListItem_SetText(地址 pListItem,整数32 subindex,地址 string);
+函数 ListItem_GetText(地址 pListItem,整数32 subindex)=>地址;
+函数 ListItem_SetImage(地址 pListItem,整数32 subindex,整数32 image);
+函数 ListItem_GetImage(地址 pListItem,整数32 subindex)=>整数32;
+函数 ListItem_SetStateImage(地址 pListItem,整数32 subindex,整数32 image);
+函数 ListItem_GetStateImage(地址 pListItem,整数32 subindex)=>整数32;
+函数 ListItem_SetOverlayImage(地址 pListItem,整数32 subindex,整数32 image);
+函数 ListItem_GetOverlayImage(地址 pListItem,整数32 subindex)=>整数32;   
+函数 ListItem_SetGroup(地址 pListItem,地址 pListGroup);
+函数 ListItem_SetIndent(地址 pListItem,整数32 indent);
+函数 ListItem_GetIndent(地址 pListItem)=>整数32;
+函数 ListItem_SetChecked(地址 pListItem,整数32 check);
+函数 ListItem_GetChecked(地址 pListItem)=>整数32;
+函数 ListItem_SetSelected(地址 pListItem,整数32 select);
+函数 ListItem_IsSelected(地址 pListItem)=>整数32;
+函数 ListItem_SetCut(地址 pListItem,整数32 cut);
+函数 ListItem_IsCut(地址 pListItem)=>整数32; 
+函数 ListItem_SetFocused(地址 pListItem,整数32 focus);
+函数 ListItem_GetFocused(地址 pListItem)=>整数32;
+函数 ListItem_SetDropHilited(地址 pListItem,整数32 hilite);
+函数 ListItem_GetDropHilited(地址 pListItem)=>整数32;
+函数 ListItem_SetTextColor(地址 pListItem,整数32 subindex,正数32 color);
+函数 ListItem_GetTextColor(地址 pListItem,整数32 subindex)=>正数32;
+函数 ListItem_SetTextBackColor(地址 pListItem,整数32 subindex,正数32 color);
+函数 ListItem_GetTextBackColor(地址 pListItem,整数32 color)=>正数32;
+函数 ListItem_GetRect(地址 pListItem,地址 rc);
+函数 ListItem_GetSubRect(地址 pListItem,整数32 subIndex,地址 rc);
+函数 ListItem_SetData(地址 pListItem,地址 data);
+函数 ListItem_GetData(地址 pListItem)=>地址;
+函数 ListItem_SetPosition(地址 pListItem,地址 p);
+函数 ListItem_GetPosition(地址 pListItem,地址 p);
+函数 ListItem_GetGroup(地址 pListItem)=>地址;
+函数 ListItem_GetOwner(地址 pListItem)=>地址;
+
+//////////////////////////////////////////////////////////////////////////
+//ListColumn
+函数 ListColumn_GetIndex(地址 pListColumn)=>整数32;
+函数 ListColumn_SetText(地址 pListColumn,地址 name);
+函数 ListColumn_GetText(地址 pListColumn)=>地址;
+函数 ListColumn_SetFormat(地址 pListColumn,整数32 format);
+函数 ListColumn_GetFormat(地址 pListColumn)=>整数32;
+函数 ListColumn_SetWidth(地址 pListColumn,整数32 width);
+函数 ListColumn_GetWidth(地址 pListColumn)=>整数32;
+函数 ListColumn_SetImage(地址 pListColumn,整数32 image);
+函数 ListColumn_GetImage(地址 pListColumn)=>整数32;
+函数 ListColumn_SetOrder(地址 pListColumn,整数32 order);
+函数 ListColumn_GetOrder(地址 pListColumn)=>整数32;   
+函数 ListColumn_GetOwner(地址 pListColumn)=>地址;
+
+//////////////////////////////////////////////////////////////////////////
+//ListGroup
+函数 ListGroup_GetId(地址 pListGroup)=>整数32;
+函数 ListGroup_SetFormat(地址 pListGroup,正数32 format);
+函数 ListGroup_GetFormat(地址 pListGroup)=>正数32;
+函数 ListGroup_SetPosition(地址 pListGroup,整数32 pos);
+函数 ListGroup_SetHeader(地址 pListGroup,地址 name); //name为宽字符(wchar_t)地址
+函数 ListGroup_SetFooter(地址 pListGroup,地址 name); //name为宽字符(wchar_t)地址
+函数 ListGroup_GetHeader(地址 pListGroup)=>地址;  //返回宽字符(wchar_t)地址
+函数 ListGroup_GetFooter(地址 pListGroup)=>地址;  //返回宽字符(wchar_t)地址
+函数 ListGroup_GetOwner(地址 pListGroup)=>地址;
+
+//////////////////////////////////////////////////////////////////////////
+//ListView
+
+函数 OListView_SetToolTip(地址 pListView,HWND hToolTip);
+函数 OListView_GetColumnCount(地址 pListView)=>整数32;
+函数 OListView_GetItemCount(地址 pListView)=>整数32;
+函数 OListView_GetSelectedItemCount(地址 pListView)=>整数32;
+函数 OListView_SetTextColor(地址 pListView,正数32 color);
+函数 OListView_GetTextColor(地址 pListView)=>正数32;	
+函数 OListView_SetTextBackColor(地址 pListView,正数32 color);
+函数 OListView_GetTextBackColor(地址 pListView)=>正数32;
+函数 OListView_SetWorkAreaCount(地址 pListView,整数32 count);
+函数 OListView_GetWorkAreaCount(地址 pListView)=>整数32; 
+函数 OListView_GetTopIndex(地址 pListView)=>整数32;
+函数 OListView_SetHoverTime(地址 pListView,正数32 time);
+函数 OListView_GetHoverTime(地址 pListView)=>正数32;
+函数 OListView_SetSelectionMark(地址 pListView,整数32 mark);
+函数 OListView_GetSelectionMark(地址 pListView)=>整数32;
+函数 OListView_SetHotItem(地址 pListView,整数32 item);
+函数 OListView_GetHotItem(地址 pListView)=>整数32;
+函数 OListView_GetCountPerPage(地址 pListView)=>整数32;
+函数 OListView_SetGroupEnabled(地址 pListView,整数32 enable); 
+函数 OListView_IsGroupEnabled(地址 pListView)=>整数32;
+函数 OListView_GetGroupCount(地址 pListView)=>整数32;
+函数 OListView_SetInsertMark(地址 pListView,整数32 mark);
+函数 OListView_GetInsertMark(地址 pListView)=>整数32;
+函数 OListView_SetInsertMarkColor(地址 pListView,正数32 color);
+函数 OListView_GetInsertMarkColor(地址 pListView)=>正数32;	
+函数 OListView_SetOutlineColor(地址 pListView,正数32 color);
+函数 OListView_GetOutlineColor(地址 pListView)=>正数32;
+函数 OListView_SetSelectedColumn(地址 pListView,正数32 column);
+函数 OListView_GetSelectedColumn(地址 pListView)=>正数32; 
+函数 OListView_SetWorkArea(地址 pListView,整数32 index,地址 rc);
+函数 OListView_SetHotCursor(地址 pListView,HCURSOR hCursor);
+函数 OListView_SetViewMode(地址 pListView,整数32 mode);
+函数 OListView_GetWorkArea(地址 pListView,整数32 index,地址 rc);	
+函数 OListView_GetViewRect(地址 pListView,地址 rc);
+函数 OListView_GetInsertMarkRect(地址 pListView,地址 rc);   
+函数 OListView_GetToolTip(地址 pListView)=>HWND;
+函数 OListView_GetHeader(地址 pListView)=>HWND;  
+函数 OListView_GetEditControl(地址 pListView)=>HWND;	
+函数 OListView_GetOrigin(地址 pListView,地址 p);	 
+函数 OListView_GetHotCursor(地址 pListView)=>HCURSOR;	
+函数 OListView_GetItem(地址 pListView,整数32 index)=>地址;  
+函数 OListView_GetGroup(地址 pListView,整数32 index)=>地址;	 
+函数 OListView_GetColumn(地址 pListView,整数32 index)=>地址; 
+函数 OListView_GetViewMode(地址 pListView)=>整数32;	
+
+//追加一列，默认格式为左对齐，列宽为50个像素，无列文本，操作成功返回一个列结构，否则返回NULL
+函数 OListView_AddColumn(地址 pListView)=>地址;
+//追加一列，默认格式为左对齐，width为列宽，text为列文本，操作成功返回一个列结构，否则返回NULL
+函数 OListView_AddColumnText(地址 pListView,整数32 width,地址 text)=>地址;
+//追加一列，format为左对齐格式，width为列宽，text为列文本，操作成功返回一个列结构，否则返回NULL
+函数 OListView_AddColumnFormat(地址 pListView,整数32 format,整数32 width,地址 text)=>地址;
+//在索引index前插入一列，默认左对齐，列宽50个像素，无列文本，操作成功返回一个列结构，否则返回NULL
+函数 OListView_InsertColumn(地址 pListView,整数32 index)=>地址;
+//在索引index前插入一列，默认左对齐另外两个参数指定列宽和列文本，操作成功返回一个列结构，否则返回NULL
+函数 OListView_InsertColumnText(地址 pListView,整数32 index,整数32 width,地址 text)=>地址;
+//在索引index前插入一列，format为对齐格式，width为列宽，text为列文本，操作成功返回一个列结构，否则返回NULL
+函数 OListView_InsertColumnFormat(地址 pListView,整数32 index,整数32 format,整数32 width,地址 text)=>地址;
+//删除索引为index的列(注意：第一列不能删除，必须保留)，返回值表明删除操作是否成功
+函数 OListView_DeleteColumn(地址 pListView,整数32 index)=>整数32; 
+//删除所有列
+函数 OListView_DeleteAllColumns(地址 pListView);
+//设置ImageList，ListView可以设置包含3个ImageList：分别为大图标模式下所使用的ImageList、小图标模式
+//下所使用的ImageList、用于显示状态的ImageList。
+函数 OListView_SetImageList(地址 pListView,整数32 type,地址 imagelist);
+//获取相应的ImageList
+函数 OListView_GetImageList(地址 pListView,整数32 type)=>地址;
+//追加一个新的Item，返回新加的ListItem，如果控件具有某种排序风格，则此函数不一定是在控件尾部执行追加，而很可能在某个位置
+//执行插入操作。返回值的含义请参考下面的InsertItem()注释。
+函数 OListView_AddItem(地址 pListView)=>地址;
+//在第index个索引前插入一个新的Item。注意：返回值ListItem的成员mIndex只有临时意义。如果以后用户在此ListItem之前添加或
+//删除其他的ListItem，则此ListItem的mIndex将失效，用户应当主动调用UpdateItemIndex刷新其mIndex值。如果控件有排序风格，
+//则插入操作不一定发生在指定Item之前。
+函数 OListView_InsertItem(地址 pListView,整数32 index)=>地址;
+//删除指定的Item
+函数 OListView_DeleteItem(地址 pListView,地址 item)=>整数32;
+//删除指定索引的Item
+函数 OListView_DeleteItemIndex(地址 pListView,整数32 index)=>整数32;
+//删除所有的Item
+函数 OListView_DeleteAllItems(地址 pListView);
+//获取Item在控件中的索引
+函数 OListView_GetItemIndex(地址 pListView,地址 item)=>整数32;
+//搜索其文本匹配text的Item，exact指定文本是否要精确匹配：true则要求文本完全相同，false只要求Item文本以text开始。搜索过程是
+//大小写敏感的。找到符合要求的Item则返回其指针，否则返回NULL
+函数 OListView_FindItem(地址 pListView,地址 text, 整数32 exact)=>地址;
+//在大图标或小图标模式，在direction方向找到离p点(相对控件客户区原点)最近的Item，方向可为VK_LEFT、VK_RIGHT、VK_UP、VK_DOWN
+函数 OListView_FindNearestItem(地址 pListView,地址 p,正数32 direction)=>地址;
+//开始编辑指定的Item，控件必须具有可编辑风格(ListViewDesc::mCanEdit必须设为true)，此时会创建一个Edit控件，
+//其文本为Item的文本，并且全部高亮选中。返回值指明是否确实显示了Edit控件。
+函数 OListView_BeginEdit(地址 pListView,整数32 index)=>整数32;
+//如果某个Item正处于编辑状态，此函数将取消其编辑状态，编辑控件自动隐藏并销毁(XP)
+函数 OListView_CancelEdit(地址 pListView);
+//在大图标模式，重新安排所有的Item，确保对齐，参数align指明对齐方式(请参考枚举类型ListItemAlign{})
+函数 OListView_Arrange(地址 pListView,整数32 align);
+//确保指定的Item可视，若不可视，则滚动ListView使之可视
+函数 OListView_EnsureVisible(地址 pListView,整数32 index);
+//滚动客户区中的内容，两参数分别指定水平和垂直滚动的像素数(若控件模式为Report，只能垂直滚动，且dy会自动舍入成整行数)
+函数 OListView_Scroll(地址 pListView,整数32 dx, 整数32 dy);
+//设置在Icon模式下图标之间的间隔，注意cx和cy必须包括图标的宽高，不然会导致图标的重叠；两参数为-1，则恢复默认值
+函数 OListView_SetIconSpacing(地址 pListView,整数32 cx,整数32 cy);
+//获取Item之间的间距，参数为true指明求小图标模式下的Item间距，否则求大图标模式下的Item间距
+函数 OListView_GetItemSpacing(地址 pListView,整数32 smallIcon)=>正数32;
+//返回在控件当前字体下文本的像素宽度
+函数 OListView_GetStringWidth(地址 pListView,地址 text)=>整数32;
+//返回指定坐标之下的Item(p相对与控件客户区原点)
+函数 OListView_IsOnItem(地址 pListView,地址 p)=>地址;
+//测试一个点是否在Item图标之上，p是相对控件客户区原点的坐标，返回Item(若坐标不在一个Item上则返回NULL)
+函数 OListView_IsOnIcon(地址 pListView,地址 p,/*Out*/地址 subItem)=>地址;   
+//测试一个点是否在Item状态图标之上，参数含义同IsOnIcon()说明
+函数 OListView_IsOnStateIcon(地址 pListView,地址 p,/*Out*/地址 subItem)=>地址; 
+//测试一个点是否在Item标签文本之上，参数含义同IsOnIcon()说明
+函数 OListView_IsOnLabel(地址 pListView,地址 p,/*Out*/地址 subItem)=>地址;  
+//追加一个新组，返回值指明了新加的组，用户以后可以通过此返回值操控组的各项属性(Vista)
+函数 OListView_AddGroup(地址 pListView)=>地址;
+//获取相应ID的组(Vista)
+函数 OListView_GetGroupById(地址 pListView,整数32 id)=>地址;
+//删除指定的组，返回值指明操作是否成功(Vista)
+函数 OListView_DeleteGroup(地址 pListView,地址 group)=>整数32;
+//删除所有的组(Vista)
+函数 OListView_DeleteAllGroups(地址 pListView);	
+
+函数 OListView_DestroyControl(地址 pListView);
+函数 OListView_GetClass(地址 pListView)=>地址;
+函数 OListView_SetCaption(地址 pListView,地址 string);
+函数 OListView_GetCaption(地址 pListView)=>地址;
+函数 OListView_RedrawControl(地址 pListView,整数32 redraw);
+
+} //_OWI_LISTVIEW_H_

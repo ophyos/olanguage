@@ -1,0 +1,81 @@
+引用段
+{
+函数 BindAsyncMoniker(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CoGetClassObjectFromURL(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetCombineUrl(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetCompareUrl(整数32,整数32,整数32)=>整数32;
+函数 CoInternetCreateSecurityManager(整数32,整数32,整数32)=>整数32;
+函数 CoInternetCreateZoneManager(整数32,整数32,整数32)=>整数32;
+函数 CoInternetGetProtocolFlags(整数32,整数32,整数32)=>整数32;
+函数 CoInternetGetSecurityUrl(整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetGetSession(整数32,整数32,整数32)=>整数32;
+函数 CoInternetIsFeatureEnabled(整数32,整数32)=>整数32;
+函数 CoInternetIsFeatureEnabledForUrl(整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetIsFeatureZoneElevationEnabled(整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetParseUrl(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetQueryInfo(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CoInternetSetFeatureEnabled(整数32,整数32,整数32)=>整数32;
+函数 CompareSecurityIds(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CompatFlagsFromClsid(整数32,整数32,整数32)=>整数32;
+函数 CopyBindInfo(整数32,整数32)=>整数32;
+函数 CopyStgMedium(整数32,整数32)=>整数32;
+函数 CreateAsyncBindCtx(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateAsyncBindCtxEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFormatEnumerator(整数32,整数32,整数32)=>整数32;
+函数 CreateURLMoniker(整数32,整数32,整数32)=>整数32;
+函数 CreateURLMonikerEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 Extract(整数32,整数32)=>整数32;
+函数 FaultInIEFeature(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindMediaType(整数32,整数32)=>整数32;
+函数 FindMediaTypeClass(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindMimeFromData(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetClassFileOrMime(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetClassURL(整数32,整数32)=>整数32;
+函数 GetComponentIDFromCLSSPEC(整数32,整数32)=>整数32;
+函数 GetSoftwareUpdateInfo(整数32,整数32)=>整数32;
+函数 HlinkGoBack(整数32)=>整数32;
+函数 HlinkGoForward(整数32)=>整数32;
+函数 HlinkNavigateMoniker(整数32,整数32)=>整数32;
+函数 HlinkNavigateString(整数32,整数32)=>整数32;
+函数 HlinkSimpleNavigateToMoniker(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HlinkSimpleNavigateToString(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IsAsyncMoniker(整数32)=>整数32;
+函数 IsJITInProgress()=>整数32;
+函数 IsLoggingEnabledA(整数32)=>整数32;
+函数 IsLoggingEnabledW(整数32)=>整数32;
+函数 IsValidURL(整数32,整数32,整数32)=>整数32;
+函数 MkParseDisplayNameEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 ObtainUserAgentString(整数32,整数32,整数32)=>整数32;
+函数 RegisterBindStatusCallback(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterFormatEnumerator(整数32,整数32,整数32)=>整数32;
+函数 RegisterMediaTypeClass(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterMediaTypes(整数32,整数32,整数32)=>整数32;
+函数 ReleaseBindInfo(整数32)=>整数32;
+函数 RevokeBindStatusCallback(整数32,整数32)=>整数32;
+函数 RevokeFormatEnumerator(整数32,整数32)=>整数32;
+函数 SetSoftwareUpdateAdvertisementState(整数32,整数32,整数32,整数32)=>整数32;
+函数 URLDownloadA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLDownloadToCacheFileA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLDownloadToCacheFileW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLDownloadToFileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLDownloadToFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLDownloadW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLOpenBlockingStreamA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLOpenBlockingStreamW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 URLOpenPullStreamA(整数32,整数32,整数32,整数32)=>整数32;
+函数 URLOpenPullStreamW(整数32,整数32,整数32,整数32)=>整数32;
+函数 URLOpenStreamA(整数32,整数32,整数32,整数32)=>整数32;
+函数 URLOpenStreamW(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlMkBuildVersion()=>整数32;
+函数 UrlMkGetSessionOption(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlMkSetSessionOption(整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteHitLogging(整数32)=>整数32;
+
+宏定义 IsLoggingEnabled  IsLoggingEnabledA
+宏定义 URLDownload  URLDownloadA
+宏定义 URLDownloadToCacheFile  URLDownloadToCacheFileA
+宏定义 URLDownloadToFile  URLDownloadToFileA
+宏定义 URLOpenBlockingStream  URLOpenBlockingStreamA
+宏定义 URLOpenPullStream  URLOpenPullStreamA
+宏定义 URLOpenStream  URLOpenStreamA
+}

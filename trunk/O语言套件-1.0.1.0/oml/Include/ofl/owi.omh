@@ -1,0 +1,47 @@
+
+引用段
+{
+//用默认语种进行初始化 nLanguageType < 0时不加载语言内码 
+//nLanguageType == 0 时使用默认语言文件进行初始化
+函数 界面_默认初始化:OFDefaultInit(整数32 nLanguageType)=>整数32;
+函数 界面_加载默认语言:OFLoadDefaultLanguage(整数32 nLanguageType)=>整数32; //加载默认语言内码
+函数 界面_初始化:OFInit(地址 pchAppDir,地址 pchLanguageFile)=>整数32; //使用指定的语言文件进行初始化
+函数 界面_清理:OFClear(); //解析完进行清理
+函数 界面_添加函数:OFAddFunction(地址 pchFunctionName,地址 pfun)=>整数32; //添加函数
+函数 界面_解析:OFParse(地址 pchScriptFileName,整数32 nShowError)=>整数32; //解析代码文件
+//解析字符串pchFileName是字符串所在的文件或者是块名称,nRelativeLine字符串在文件中的行起始行,用于提示错误行号
+函数 界面_解析文本:OFParseString(地址 pchScriptString,地址 pchFileName,整数32 nShowError,整数32 nRelativeLine,整数32 bNoSearchFunction)=>整数32; 
+函数 界面_获取解析文本:OFGetParseText()=>地址;
+函数 界面_释放内存:OFFreeMem(地址 p); //调用了 界面_获取解析文本 这个函数之后得到的文本内存地址需要用这个函数来释放
+
+函数 界面_显示主窗口:OFShowMainWnd(地址 pchWndName)=>地址;
+函数 界面_显示窗口:OFShowWnd(地址 pchWndName)=>地址;
+函数 界面_获取控件:OFGetControl(地址 pchControlName)=>地址;
+
+}
+
+.包含文<OWI_Button.omh>
+.包含文<OWI_Check.omh>
+.包含文<OWI_ComboBox.omh>
+.包含文<OWI_Control.omh>
+.包含文<OWI_Edit.omh>
+.包含文<OWI_Group.omh>
+.包含文<OWI_ImageList.omh>
+.包含文<OWI_ListBox.omh>
+.包含文<OWI_ListView.omh>
+.包含文<OWI_Menu.omh>
+.包含文<OWI_Panel.omh>
+.包含文<OWI_Progress.omh>
+.包含文<OWI_Radio.omh>
+.包含文<OWI_Rebar.omh>
+.包含文<OWI_ScrollBar.omh>
+.包含文<OWI_Slider.omh>
+.包含文<OWI_Spin.omh>
+.包含文<OWI_Splitter.omh>
+.包含文<OWI_StatusBar.omh>
+.包含文<OWI_Tab.omh>
+.包含文<OWI_Text.omh>
+.包含文<OWI_Toolbar.omh>
+.包含文<OWI_TreeView.omh>
+.包含文<OWI_Window.omh>
+

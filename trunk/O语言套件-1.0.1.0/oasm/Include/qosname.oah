@@ -1,0 +1,9 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫WPUGetQOSTemplate(双字,双字,双字)
+∫WSCInstallQOSTemplate(双字,双字,双字)
+∫WSCRemoveQOSTemplate(双字,双字)
+
+︾

@@ -1,0 +1,24 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒWlxActivateUserShell(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxDisplayLockedNotice(Ë«×Ö)
+¡ÒWlxDisplaySASNotice(Ë«×Ö)
+¡ÒWlxDisplayStatusMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxGetStatusMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxInitialize(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxIsLockOk(Ë«×Ö)
+¡ÒWlxIsLogoffOk(Ë«×Ö)
+¡ÒWlxLoggedOnSAS(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxLoggedOutSAS(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxLogoff(Ë«×Ö)
+¡ÒWlxNegotiate(Ë«×Ö,Ë«×Ö)
+¡ÒWlxNetworkProviderLoad(Ë«×Ö,Ë«×Ö)
+¡ÒWlxRemoveStatusMessage(Ë«×Ö)
+¡ÒWlxScreenSaverNotify(Ë«×Ö,Ë«×Ö)
+¡ÒWlxShutdown(Ë«×Ö,Ë«×Ö)
+¡ÒWlxStartApplication(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWlxWkstaLockedSAS(Ë«×Ö,Ë«×Ö)
+
+¦ç

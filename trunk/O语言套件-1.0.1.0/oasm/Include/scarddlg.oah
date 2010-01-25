@@ -1,0 +1,15 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫GetOpenCardNameA(双字)
+∵GetOpenCardName  GetOpenCardNameA
+
+∫GetOpenCardNameW(双字)
+∫SCardDlgExtendedError()
+∫SCardUIDlgSelectCardA(双字)
+∵SCardUIDlgSelectCard  SCardUIDlgSelectCardA
+
+∫SCardUIDlgSelectCardW(双字)
+
+︾

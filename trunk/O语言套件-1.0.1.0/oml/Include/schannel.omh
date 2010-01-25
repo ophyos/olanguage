@@ -1,0 +1,32 @@
+引用段
+{
+函数 AcceptSecurityContext(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AcquireCredentialsHandleA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AcquireCredentialsHandleW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyControlToken(整数32,整数32)=>整数32;
+函数 CompleteAuthToken(整数32,整数32)=>整数32;
+函数 DeleteSecurityContext(整数32)=>整数32;
+函数 EnumerateSecurityPackagesA(整数32,整数32)=>整数32;
+函数 EnumerateSecurityPackagesW(整数32,整数32)=>整数32;
+函数 FreeContextBuffer(整数32)=>整数32;
+函数 FreeCredentialsHandle(整数32)=>整数32;
+函数 ImpersonateSecurityContext(整数32)=>整数32;
+函数 InitSecurityInterfaceA()=>整数32;
+函数 InitSecurityInterfaceW()=>整数32;
+函数 InitializeSecurityContextA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InitializeSecurityContextW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MakeSignature(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryContextAttributesA(整数32,整数32,整数32)=>整数32;
+函数 QueryContextAttributesW(整数32,整数32,整数32)=>整数32;
+函数 QuerySecurityPackageInfoA(整数32,整数32)=>整数32;
+函数 QuerySecurityPackageInfoW(整数32,整数32)=>整数32;
+函数 RevertSecurityContext(整数32)=>整数32;
+函数 VerifySignature(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 AcquireCredentialsHandle  AcquireCredentialsHandleA
+宏定义 EnumerateSecurityPackages  EnumerateSecurityPackagesA
+宏定义 InitSecurityInterface  InitSecurityInterfaceA
+宏定义 InitializeSecurityContext  InitializeSecurityContextA
+宏定义 QueryContextAttributes  QueryContextAttributesA
+宏定义 QuerySecurityPackageInfo  QuerySecurityPackageInfoA
+}

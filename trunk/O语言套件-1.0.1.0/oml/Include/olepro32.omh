@@ -1,0 +1,11 @@
+引用段
+{
+函数 OleCreateFontIndirect(整数32,整数32,整数32)=>整数32;
+函数 OleCreatePictureIndirect(整数32,整数32,整数32,整数32)=>整数32;
+函数 OleCreatePropertyFrame(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OleCreatePropertyFrameIndirect(整数32)=>整数32;
+函数 OleIconToCursor(整数32,整数32)=>整数32;
+函数 OleLoadPicture(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OleTranslateColor(整数32,整数32,整数32)=>整数32;
+
+}

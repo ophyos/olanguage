@@ -1,0 +1,1031 @@
+引用段
+{
+函数 ActivateActCtx(整数32,整数32)=>逻辑;
+函数 AddAtomA(整数32)=>整数32;
+函数 AddAtomW(整数32)=>整数32;
+函数 AddConsoleAliasA(整数32,整数32,整数32)=>逻辑;
+函数 AddConsoleAliasW(整数32,整数32,整数32)=>逻辑;
+函数 AddLocalAlternateComputerNameA(整数32,整数32)=>整数32;
+函数 AddLocalAlternateComputerNameW(整数32,整数32)=>整数32;
+函数 AddRefActCtx(整数32);
+函数 AddVectoredContinueHandler(整数32,整数32)=>整数32;
+函数 AddVectoredExceptionHandler(整数32,整数32)=>整数32;
+函数 AllocConsole()=>整数32;
+函数 AllocateUserPhysicalPages(整数32,整数32,整数32)=>逻辑;
+函数 AreFileApisANSI()=>整数32;
+函数 AssignProcessToJobObject(整数32,整数32)=>整数32;
+函数 AttachConsole(整数32)=>整数32;
+函数 BackupRead(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BackupSeek(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BackupWrite(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 Beep(整数32,整数32)=>整数32;
+函数 BeginUpdateResourceA(整数32,整数32)=>整数32;
+函数 BeginUpdateResourceW(整数32,整数32)=>整数32;
+函数 BindIoCompletionCallback(整数32,整数32,整数32)=>整数32;
+函数 BuildCommDCBA(整数32,整数32)=>整数32;
+函数 BuildCommDCBAndTimeoutsA(整数32,整数32,整数32)=>整数32;
+函数 BuildCommDCBAndTimeoutsW(整数32,整数32,整数32)=>整数32;
+函数 BuildCommDCBW(整数32,整数32)=>整数32;
+函数 CallNamedPipeA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CallNamedPipeW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CancelDeviceWakeupRequest(整数32)=>整数32;
+函数 CancelIo(整数32)=>整数32;
+函数 CancelTimerQueueTimer(整数32,整数32)=>整数32;
+函数 CancelWaitableTimer(整数32)=>整数32;
+函数 ChangeTimerQueueTimer(整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckNameLegalDOS8Dot3A(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckNameLegalDOS8Dot3W(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckRemoteDebuggerPresent(整数32,整数32)=>整数32;
+函数 ClearCommBreak(整数32)=>整数32;
+函数 ClearCommError(整数32,整数32,整数32)=>整数32;
+函数 关闭句柄:CloseHandle(整数32)=>整数32;
+函数 CommConfigDialogA(整数32,整数32,整数32)=>整数32;
+函数 CommConfigDialogW(整数32,整数32,整数32)=>整数32;
+函数 CompareFileTime(整数32,整数32)=>整数32;
+函数 CompareStringA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CompareStringW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConnectNamedPipe(整数32,整数32)=>整数32;
+函数 ContinueDebugEvent(整数32,整数32,整数32)=>整数32;
+函数 ConvertDefaultLocale(整数32)=>整数32;
+函数 ConvertFiberToThread()=>整数32;
+函数 ConvertThreadToFiber(整数32)=>整数32;
+函数 ConvertThreadToFiberEx(整数32,整数32)=>整数32;
+函数 CopyFileA(整数32,整数32,整数32)=>整数32;
+函数 CopyFileExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CopyFileExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CopyFileW(整数32,整数32,整数32)=>整数32;
+函数 CreateActCtxA(整数32)=>整数32;
+函数 CreateActCtxW(整数32)=>整数32;
+函数 CreateConsoleScreenBuffer(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDirectoryA(整数32,整数32)=>整数32;
+函数 CreateDirectoryExA(整数32,整数32,整数32)=>整数32;
+函数 CreateDirectoryExW(整数32,整数32,整数32)=>整数32;
+函数 CreateDirectoryW(整数32,整数32)=>整数32;
+函数 创建事件:CreateEventA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateEventW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFiber(整数32,整数32,整数32)=>整数32;
+函数 CreateFiberEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 创建文件:CreateFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFileMappingA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFileMappingW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateHardLinkA(整数32,整数32,整数32)=>整数32;
+函数 CreateHardLinkW(整数32,整数32,整数32)=>整数32;
+函数 CreateIoCompletionPort(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateJobObjectA(整数32,整数32)=>整数32;
+函数 CreateJobObjectW(整数32,整数32)=>整数32;
+函数 CreateJobSet(整数32,整数32,整数32)=>整数32;
+函数 CreateMailslotA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateMailslotW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateMemoryResourceNotification(整数32)=>整数32;
+函数 CreateMutexA(整数32,整数32,整数32)=>整数32;
+函数 CreateMutexW(整数32,整数32,整数32)=>整数32;
+函数 CreateNamedPipeA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateNamedPipeW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePipe(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProcessA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProcessW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateRemoteThread(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateSemaphoreA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateSemaphoreW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateTapePartition(整数32,整数32,整数32,整数32)=>整数32;
+函数 创建线程:CreateThread(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateTimerQueue()=>整数32;
+函数 CreateTimerQueueTimer(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateToolhelp32Snapshot(整数32,整数32)=>整数32;
+函数 CreateWaitableTimerA(整数32,整数32,整数32)=>整数32;
+函数 CreateWaitableTimerW(整数32,整数32,整数32)=>整数32;
+函数 DeactivateActCtx(整数32,整数32)=>整数32;
+函数 DebugActiveProcess(整数32)=>整数32;
+函数 DebugActiveProcessStop(整数32)=>整数32;
+函数 DebugBreak();
+函数 DebugBreakProcess(整数32)=>整数32;
+函数 DebugSetProcessKillOnExit(整数32)=>整数32;
+函数 DecodePointer(整数32)=>整数32;
+函数 DecodeSystemPointer(整数32)=>整数32;
+函数 DefineDosDeviceA(整数32,整数32,整数32)=>整数32;
+函数 DefineDosDeviceW(整数32,整数32,整数32)=>整数32;
+函数 DeleteAtom(整数32)=>整数32;
+函数 DeleteCriticalSection(整数32);
+函数 DeleteFiber(整数32);
+函数 DeleteFileA(整数32)=>整数32;
+函数 DeleteFileW(整数32)=>整数32;
+函数 DeleteTimerQueue(整数32)=>整数32;
+函数 DeleteTimerQueueEx(整数32,整数32)=>整数32;
+函数 DeleteTimerQueueTimer(整数32,整数32,整数32)=>整数32;
+函数 DeleteVolumeMountPointA(整数32)=>整数32;
+函数 DeleteVolumeMountPointW(整数32)=>整数32;
+函数 DeviceIoControl(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DisableThreadLibraryCalls(整数32)=>整数32;
+函数 DisconnectNamedPipe(整数32)=>整数32;
+函数 DnsHostnameToComputerNameA(整数32,整数32,整数32)=>整数32;
+函数 DnsHostnameToComputerNameW(整数32,整数32,整数32)=>整数32;
+函数 DosDateTimeToFileTime(整数32,整数32,整数32)=>整数32;
+函数 DuplicateHandle(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EncodePointer(整数32)=>整数32;
+函数 EncodeSystemPointer(整数32)=>整数32;
+函数 EndUpdateResourceA(整数32,整数32)=>整数32;
+函数 EndUpdateResourceW(整数32,整数32)=>整数32;
+函数 EnterCriticalSection(整数32);
+函数 EnumCalendarInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumCalendarInfoExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumCalendarInfoExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumCalendarInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDateFormatsA(整数32,整数32,整数32)=>整数32;
+函数 EnumDateFormatsExA(整数32,整数32,整数32)=>整数32;
+函数 EnumDateFormatsExW(整数32,整数32,整数32)=>整数32;
+函数 EnumDateFormatsW(整数32,整数32,整数32)=>整数32;
+函数 EnumLanguageGroupLocalesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumLanguageGroupLocalesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumResourceLanguagesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumResourceLanguagesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumResourceNamesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumResourceNamesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumResourceTypesA(整数32,整数32,整数32)=>整数32;
+函数 EnumResourceTypesW(整数32,整数32,整数32)=>整数32;
+函数 EnumSystemCodePagesA(整数32,整数32)=>整数32;
+函数 EnumSystemCodePagesW(整数32,整数32)=>整数32;
+函数 EnumSystemFirmwareTables(整数32,整数32,整数32)=>整数32;
+函数 EnumSystemGeoID(整数32,整数32,整数32)=>整数32;
+函数 EnumSystemLanguageGroupsA(整数32,整数32,整数32)=>整数32;
+函数 EnumSystemLanguageGroupsW(整数32,整数32,整数32)=>整数32;
+函数 EnumSystemLocalesA(整数32,整数32)=>整数32;
+函数 EnumSystemLocalesW(整数32,整数32)=>整数32;
+函数 EnumTimeFormatsA(整数32,整数32,整数32)=>整数32;
+函数 EnumTimeFormatsW(整数32,整数32,整数32)=>整数32;
+函数 EnumUILanguagesA(整数32,整数32,整数32)=>整数32;
+函数 EnumUILanguagesW(整数32,整数32,整数32)=>整数32;
+函数 EnumerateLocalComputerNamesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumerateLocalComputerNamesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EraseTape(整数32,整数32,整数32)=>整数32;
+函数 EscapeCommFunction(整数32,整数32)=>整数32;
+函数 退出进程:ExitProcess(整数32);
+函数 ExitThread(整数32);
+函数 ExpandEnvironmentStringsA(整数32,整数32,整数32)=>整数32;
+函数 ExpandEnvironmentStringsW(整数32,整数32,整数32)=>整数32;
+函数 FatalAppExitA(整数32,整数32);
+函数 FatalAppExitW(整数32,整数32);
+函数 FatalExit(整数32);
+函数 FileTimeToDosDateTime(整数32,整数32,整数32)=>整数32;
+函数 FileTimeToLocalFileTime(整数32,整数32)=>整数32;
+函数 FileTimeToSystemTime(整数32,整数32)=>整数32;
+函数 FillConsoleOutputAttribute(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FillConsoleOutputCharacterA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FillConsoleOutputCharacterW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindActCtxSectionGuid(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindActCtxSectionStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindActCtxSectionStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindAtomA(整数32)=>整数32;
+函数 FindAtomW(整数32)=>整数32;
+函数 FindClose(整数32)=>整数32;
+函数 FindCloseChangeNotification(整数32)=>整数32;
+函数 FindFirstChangeNotificationA(整数32,整数32,整数32)=>整数32;
+函数 FindFirstChangeNotificationW(整数32,整数32,整数32)=>整数32;
+函数 FindFirstFileA(整数32,整数32)=>整数32;
+函数 FindFirstFileExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstFileExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstFileW(整数32,整数32)=>整数32;
+函数 FindFirstStreamW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstVolumeA(整数32,整数32)=>整数32;
+函数 FindFirstVolumeMountPointA(整数32,整数32,整数32)=>整数32;
+函数 FindFirstVolumeMountPointW(整数32,整数32,整数32)=>整数32;
+函数 FindFirstVolumeW(整数32,整数32)=>整数32;
+函数 FindNextChangeNotification(整数32)=>整数32;
+函数 FindNextFileA(整数32,整数32)=>整数32;
+函数 FindNextFileW(整数32,整数32)=>整数32;
+函数 FindNextStreamW(整数32,整数32)=>整数32;
+函数 FindNextVolumeA(整数32,整数32,整数32)=>整数32;
+函数 FindNextVolumeMountPointA(整数32,整数32,整数32)=>整数32;
+函数 FindNextVolumeMountPointW(整数32,整数32,整数32)=>整数32;
+函数 FindNextVolumeW(整数32,整数32,整数32)=>整数32;
+函数 FindResourceA(整数32,整数32,整数32)=>整数32;
+函数 FindResourceExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindResourceExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindResourceW(整数32,整数32,整数32)=>整数32;
+函数 FindVolumeClose(整数32)=>整数32;
+函数 FindVolumeMountPointClose(整数32)=>整数32;
+函数 FlsAlloc(整数32)=>整数32;
+函数 FlsFree(整数32)=>整数32;
+函数 FlsGetValue(整数32)=>整数32;
+函数 FlsSetValue(整数32,整数32)=>整数32;
+函数 FlushConsoleInputBuffer(整数32)=>整数32;
+函数 FlushFileBuffers(整数32)=>整数32;
+函数 FlushInstructionCache(整数32,整数32,整数32)=>整数32;
+函数 FlushViewOfFile(整数32,整数32)=>整数32;
+函数 FoldStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FoldStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FormatMessageA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FormatMessageW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FreeConsole()=>整数32;
+函数 FreeEnvironmentStringsA(整数32)=>整数32;
+函数 FreeEnvironmentStringsW(整数32)=>整数32;
+函数 释放库:FreeLibrary(整数32)=>整数32;
+函数 FreeLibraryAndExitThread(整数32,整数32);
+函数 FreeResource(整数32)=>整数32;
+函数 FreeUserPhysicalPages(整数32,整数32,整数32)=>整数32;
+函数 GenerateConsoleCtrlEvent(整数32,整数32)=>整数32;
+函数 GetACP()=>整数32;
+函数 GetAtomNameA(整数32,整数32,整数32)=>整数32;
+函数 GetAtomNameW(整数32,整数32,整数32)=>整数32;
+函数 GetBinaryTypeA(整数32,整数32)=>整数32;
+函数 GetBinaryTypeW(整数32,整数32)=>整数32;
+函数 GetCPInfo(整数32,整数32)=>整数32;
+函数 GetCPInfoExA(整数32,整数32,整数32)=>整数32;
+函数 GetCPInfoExW(整数32,整数32,整数32)=>整数32;
+函数 GetCalendarInfoA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCalendarInfoW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCommConfig(整数32,整数32,整数32)=>整数32;
+函数 GetCommMask(整数32,整数32)=>整数32;
+函数 GetCommModemStatus(整数32,整数32)=>整数32;
+函数 GetCommProperties(整数32,整数32)=>整数32;
+函数 GetCommState(整数32,整数32)=>整数32;
+函数 GetCommTimeouts(整数32,整数32)=>整数32;
+函数 获取命令行:GetCommandLineA()=>整数32;
+函数 GetCommandLineW()=>整数32;
+函数 GetCompressedFileSizeA(整数32,整数32)=>整数32;
+函数 GetCompressedFileSizeW(整数32,整数32)=>整数32;
+函数 GetComputerNameA(整数32,整数32)=>整数32;
+函数 GetComputerNameExA(整数32,整数32,整数32)=>整数32;
+函数 GetComputerNameExW(整数32,整数32,整数32)=>整数32;
+函数 GetComputerNameW(整数32,整数32)=>整数32;
+函数 GetConsoleAliasA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetConsoleAliasExesA(整数32,整数32)=>整数32;
+函数 GetConsoleAliasExesLengthA()=>整数32;
+函数 GetConsoleAliasExesLengthW()=>整数32;
+函数 GetConsoleAliasExesW(整数32,整数32)=>整数32;
+函数 GetConsoleAliasW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetConsoleAliasesA(整数32,整数32,整数32)=>整数32;
+函数 GetConsoleAliasesLengthA(整数32)=>整数32;
+函数 GetConsoleAliasesLengthW(整数32)=>整数32;
+函数 GetConsoleAliasesW(整数32,整数32,整数32)=>整数32;
+函数 GetConsoleCP()=>整数32;
+函数 GetConsoleCursorInfo(整数32,整数32)=>整数32;
+函数 GetConsoleDisplayMode(整数32)=>整数32;
+函数 GetConsoleFontSize(整数32,整数32)=>整数32;
+函数 GetConsoleMode(整数32,整数32)=>整数32;
+函数 GetConsoleOutputCP()=>整数32;
+函数 GetConsoleProcessList(整数32,整数32)=>整数32;
+函数 GetConsoleScreenBufferInfo(整数32,整数32)=>整数32;
+函数 GetConsoleSelectionInfo(整数32)=>整数32;
+函数 GetConsoleTitleA(整数32,整数32)=>整数32;
+函数 GetConsoleTitleW(整数32,整数32)=>整数32;
+函数 GetConsoleWindow()=>整数32;
+函数 GetCurrencyFormatA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCurrencyFormatW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCurrentActCtx(整数32)=>整数32;
+函数 GetCurrentConsoleFont(整数32,整数32,整数32)=>整数32;
+函数 GetCurrentDirectoryA(整数32,整数32)=>整数32;
+函数 GetCurrentDirectoryW(整数32,整数32)=>整数32;
+函数 GetCurrentProcess()=>整数32;
+函数 GetCurrentProcessId()=>整数32;
+函数 GetCurrentProcessorNumber()=>整数32;
+函数 GetCurrentThread()=>整数32;
+函数 GetCurrentThreadId()=>整数32;
+函数 GetDateFormatA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDateFormatW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDefaultCommConfigA(整数32,整数32,整数32)=>整数32;
+函数 GetDefaultCommConfigW(整数32,整数32,整数32)=>整数32;
+函数 GetDevicePowerState(整数32,整数32)=>整数32;
+函数 GetDiskFreeSpaceA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDiskFreeSpaceExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDiskFreeSpaceExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDiskFreeSpaceW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDllDirectoryA(整数32,整数32)=>整数32;
+函数 GetDllDirectoryW(整数32,整数32)=>整数32;
+函数 GetDriveTypeA(整数32)=>整数32;
+函数 GetDriveTypeW(整数32)=>整数32;
+函数 GetEnvironmentStringsA()=>整数32;
+函数 GetEnvironmentStringsW()=>整数32;
+函数 GetEnvironmentVariableA(整数32,整数32,整数32)=>整数32;
+函数 GetEnvironmentVariableW(整数32,整数32,整数32)=>整数32;
+函数 GetExitCodeProcess(整数32,整数32)=>整数32;
+函数 GetExitCodeThread(整数32,整数32)=>整数32;
+函数 GetFileAttributesA(整数32)=>整数32;
+函数 GetFileAttributesExA(整数32,整数32,整数32)=>整数32;
+函数 GetFileAttributesExW(整数32,整数32,整数32)=>整数32;
+函数 GetFileAttributesW(整数32)=>整数32;
+函数 GetFileInformationByHandle(整数32,整数32)=>整数32;
+函数 获取文件大小:GetFileSize(整数32,整数32)=>整数32;
+函数 高级获取文件大小:GetFileSizeEx(整数32,整数32)=>整数32;
+函数 GetFileTime(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFileType(整数32)=>整数32;
+函数 GetFirmwareEnvironmentVariableA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFirmwareEnvironmentVariableW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFullPathNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFullPathNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGeoInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGeoInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetHandleInformation(整数32,整数32)=>整数32;
+函数 GetLargePageMinimum()=>整数32;
+函数 GetLargestConsoleWindowSize(整数32)=>整数32;
+函数 获取最后错误:GetLastError()=>整数32;
+函数 GetLocalTime(整数32);
+函数 GetLocaleInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetLocaleInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetLogicalDriveStringsA(整数32,整数32)=>整数32;
+函数 GetLogicalDriveStringsW(整数32,整数32)=>整数32;
+函数 GetLogicalDrives()=>整数32;
+函数 GetLogicalProcessorInformation(整数32,整数32)=>整数32;
+函数 GetLongPathNameA(整数32,整数32,整数32)=>整数32;
+函数 GetLongPathNameW(整数32,整数32,整数32)=>整数32;
+函数 GetMailslotInfo(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 获取模块文件名:GetModuleFileNameA(整数32,整数32,整数32)=>整数32;
+函数 GetModuleFileNameW(整数32,整数32,整数32)=>整数32;
+函数 获取模块句柄:GetModuleHandleA(整数32)=>整数32;
+函数 GetModuleHandleExA(整数32,整数32,整数32)=>整数32;
+函数 GetModuleHandleExW(整数32,整数32,整数32)=>整数32;
+函数 GetModuleHandleW(整数32)=>整数32;
+函数 GetNLSVersion(整数32,整数32,整数32)=>整数32;
+函数 GetNamedPipeHandleStateA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNamedPipeHandleStateW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNamedPipeInfo(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNativeSystemInfo(整数32);
+函数 GetNumaAvailableMemoryNode(整数32,整数32)=>整数32;
+函数 GetNumaHighestNodeNumber(整数32)=>整数32;
+函数 GetNumaNodeProcessorMask(整数32,整数32)=>整数32;
+函数 GetNumaProcessorNode(整数32,整数32)=>整数32;
+函数 GetNumberFormatA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNumberFormatW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNumberOfConsoleInputEvents(整数32,整数32)=>整数32;
+函数 GetNumberOfConsoleMouseButtons(整数32)=>整数32;
+函数 GetOEMCP()=>整数32;
+函数 GetOverlappedResult(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPriorityClass(整数32)=>整数32;
+函数 获取私有INI文件整数:GetPrivateProfileIntA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileIntW(整数32,整数32,整数32,整数32)=>整数32;
+函数 获取私有INI文件节:GetPrivateProfileSectionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileSectionNamesA(整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileSectionNamesW(整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileSectionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 获取私有INI文件字符串:GetPrivateProfileStringA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileStringW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileStructA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrivateProfileStructW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 获取过程地址:GetProcAddress(整数32,整数32)=>整数32;
+函数 GetProcessAffinityMask(整数32,整数32,整数32)=>整数32;
+函数 GetProcessHandleCount(整数32,整数32)=>整数32;
+函数 获取进程堆:GetProcessHeap()=>整数32;
+函数 GetProcessHeaps(整数32,整数32)=>整数32;
+函数 获取进程ID:GetProcessId(整数32)=>整数32;
+函数 GetProcessIdOfThread(整数32)=>整数32;
+函数 GetProcessIoCounters(整数32,整数32)=>整数32;
+函数 GetProcessPriorityBoost(整数32,整数32)=>整数32;
+函数 GetProcessShutdownParameters(整数32,整数32)=>整数32;
+函数 GetProcessTimes(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetProcessVersion(整数32)=>整数32;
+函数 GetProcessWorkingSetSize(整数32,整数32,整数32)=>整数32;
+函数 GetProcessWorkingSetSizeEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetProfileIntA(整数32,整数32,整数32)=>整数32;
+函数 GetProfileIntW(整数32,整数32,整数32)=>整数32;
+函数 GetProfileSectionA(整数32,整数32,整数32)=>整数32;
+函数 GetProfileSectionW(整数32,整数32,整数32)=>整数32;
+函数 GetProfileStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetProfileStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetQueuedCompletionStatus(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetShortPathNameA(整数32,整数32,整数32)=>整数32;
+函数 GetShortPathNameW(整数32,整数32,整数32)=>整数32;
+函数 GetStartupInfoA(整数32);
+函数 GetStartupInfoW(整数32);
+函数 获得标准句柄:GetStdHandle(整数32)=>整数32;
+函数 GetStringTypeA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStringTypeExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStringTypeExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStringTypeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSystemDefaultLCID()=>整数32;
+函数 GetSystemDefaultLangID()=>整数32;
+函数 GetSystemDefaultUILanguage()=>整数32;
+函数 GetSystemDirectoryA(整数32,整数32)=>整数32;
+函数 GetSystemDirectoryW(整数32,整数32)=>整数32;
+函数 GetSystemFileCacheSize(整数32,整数32,整数32)=>整数32;
+函数 GetSystemFirmwareTable(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSystemInfo(整数32);
+函数 GetSystemPowerStatus(整数32)=>整数32;
+函数 GetSystemRegistryQuota(整数32,整数32)=>整数32;
+函数 GetSystemTime(整数32);
+函数 GetSystemTimeAdjustment(整数32,整数32,整数32)=>整数32;
+函数 GetSystemTimeAsFileTime(整数32);
+函数 GetSystemTimes(整数32,整数32,整数32)=>整数32;
+函数 GetSystemWindowsDirectoryA(整数32,整数32)=>整数32;
+函数 GetSystemWindowsDirectoryW(整数32,整数32)=>整数32;
+函数 GetSystemWow64DirectoryA(整数32,整数32)=>整数32;
+函数 GetSystemWow64DirectoryW(整数32,整数32)=>整数32;
+函数 GetTapeParameters(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTapePosition(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTapeStatus(整数32)=>整数32;
+函数 GetTempFileNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTempFileNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTempPathA(整数32,整数32)=>整数32;
+函数 GetTempPathW(整数32,整数32)=>整数32;
+函数 GetThreadContext(整数32,整数32)=>整数32;
+函数 GetThreadIOPendingFlag(整数32,整数32)=>整数32;
+函数 GetThreadId(整数32)=>整数32;
+函数 GetThreadLocale()=>整数32;
+函数 GetThreadPriority(整数32)=>整数32;
+函数 GetThreadPriorityBoost(整数32,整数32)=>整数32;
+函数 GetThreadSelectorEntry(整数32,整数32,整数32)=>整数32;
+函数 GetThreadTimes(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTickCount()=>整数32;
+函数 GetTimeFormatA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTimeFormatW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTimeZoneInformation(整数32)=>整数32;
+函数 GetUserDefaultLCID()=>整数32;
+函数 GetUserDefaultLangID()=>整数32;
+函数 GetUserDefaultUILanguage()=>整数32;
+函数 GetUserGeoID(整数32)=>整数32;
+函数 GetVersion()=>整数32;
+函数 GetVersionExA(整数32)=>整数32;
+函数 GetVersionExW(整数32)=>整数32;
+函数 GetVolumeInformationA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetVolumeInformationW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetVolumeNameForVolumeMountPointA(整数32,整数32,整数32)=>整数32;
+函数 GetVolumeNameForVolumeMountPointW(整数32,整数32,整数32)=>整数32;
+函数 GetVolumePathNameA(整数32,整数32,整数32)=>整数32;
+函数 GetVolumePathNameW(整数32,整数32,整数32)=>整数32;
+函数 GetVolumePathNamesForVolumeNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetVolumePathNamesForVolumeNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetWindowsDirectoryA(整数32,整数32)=>整数32;
+函数 GetWindowsDirectoryW(整数32,整数32)=>整数32;
+函数 GetWriteWatch(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GlobalAddAtomA(整数32)=>整数32;
+函数 GlobalAddAtomW(整数32)=>整数32;
+函数 GlobalAlloc(整数32,整数32)=>整数32;
+函数 GlobalCompact(整数32)=>整数32;
+函数 GlobalDeleteAtom(整数32)=>整数32;
+函数 GlobalFindAtomA(整数32)=>整数32;
+函数 GlobalFindAtomW(整数32)=>整数32;
+函数 GlobalFix(整数32);
+函数 GlobalFlags(整数32)=>整数32;
+函数 GlobalFree(整数32)=>整数32;
+函数 GlobalGetAtomNameA(整数32,整数32,整数32)=>整数32;
+函数 GlobalGetAtomNameW(整数32,整数32,整数32)=>整数32;
+函数 GlobalHandle(整数32)=>整数32;
+函数 GlobalLock(整数32)=>整数32;
+函数 GlobalMemoryStatus(整数32);
+函数 GlobalMemoryStatusEx(整数32)=>整数32;
+函数 GlobalReAlloc(整数32,整数32,整数32)=>整数32;
+函数 GlobalSize(整数32)=>整数32;
+函数 GlobalUnWire(整数32)=>整数32;
+函数 GlobalUnfix(整数32);
+函数 GlobalUnlock(整数32)=>整数32;
+函数 GlobalWire(整数32)=>整数32;
+函数 Heap32First(整数32,整数32,整数32)=>整数32;
+函数 Heap32ListFirst(整数32,整数32)=>整数32;
+函数 Heap32ListNext(整数32,整数32)=>整数32;
+函数 Heap32Next(整数32)=>整数32;
+函数 堆分配:HeapAlloc(整数32,整数32,整数32)=>整数32;
+函数 HeapCompact(整数32,整数32)=>整数32;
+函数 堆创建:HeapCreate(整数32,整数32,整数32)=>整数32;
+函数 堆销毁:HeapDestroy(整数32)=>整数32;
+函数 堆释放:HeapFree(整数32,整数32,整数32)=>整数32;
+函数 堆锁定:HeapLock(整数32)=>整数32;
+函数 HeapQueryInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 堆重分配:HeapReAlloc(整数32,整数32,整数32,整数32)=>整数32;
+函数 HeapSetInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 堆大小:HeapSize(整数32,整数32,整数32)=>整数32;
+函数 堆解锁:HeapUnlock(整数32)=>整数32;
+函数 HeapValidate(整数32,整数32,整数32)=>整数32;
+函数 HeapWalk(整数32,整数32)=>整数32;
+函数 InitAtomTable(整数32)=>整数32;
+函数 InitializeCriticalSection(整数32);
+函数 InitializeCriticalSectionAndSpinCount(整数32,整数32)=>整数32;
+函数 InitializeSListHead(整数32);
+函数 InterlockedCompareExchange64(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InterlockedCompareExchange(整数32,整数32,整数32)=>整数32;
+函数 InterlockedDecrement(整数32)=>整数32;
+函数 InterlockedExchange(整数32,整数32)=>整数32;
+函数 InterlockedExchangeAdd(整数32,整数32)=>整数32;
+函数 InterlockedFlushSList(整数32)=>整数32;
+函数 InterlockedIncrement(整数32)=>整数32;
+函数 InterlockedPopEntrySList(整数32)=>整数32;
+函数 InterlockedPushEntrySList(整数32,整数32)=>整数32;
+函数 IsBadCodePtr(整数32)=>整数32;
+函数 IsBadHugeReadPtr(整数32,整数32)=>整数32;
+函数 IsBadHugeWritePtr(整数32,整数32)=>整数32;
+函数 IsBadReadPtr(整数32,整数32)=>整数32;
+函数 IsBadStringPtrA(整数32,整数32)=>整数32;
+函数 IsBadStringPtrW(整数32,整数32)=>整数32;
+函数 IsBadWritePtr(整数32,整数32)=>整数32;
+函数 IsDBCSLeadByte(整数32)=>整数32;
+函数 IsDBCSLeadByteEx(整数32,整数32)=>整数32;
+函数 IsDebuggerPresent()=>整数32;
+函数 IsNLSDefinedString(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IsProcessInJob(整数32,整数32,整数32)=>整数32;
+函数 IsProcessorFeaturePresent(整数32)=>整数32;
+函数 IsSystemResumeAutomatic()=>整数32;
+函数 IsValidCodePage(整数32)=>整数32;
+函数 IsValidLanguageGroup(整数32,整数32)=>整数32;
+函数 IsValidLocale(整数32,整数32)=>整数32;
+函数 IsWow64Process(整数32,整数32)=>整数32;
+函数 LCMapStringA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LCMapStringW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LeaveCriticalSection(整数32);
+函数 加载库:LoadLibraryA(整数32)=>整数32;
+函数 LoadLibraryExA(整数32,整数32,整数32)=>整数32;
+函数 LoadLibraryExW(整数32,整数32,整数32)=>整数32;
+函数 LoadLibraryW(整数32)=>整数32;
+函数 LoadModule(整数32,整数32)=>整数32;
+函数 LoadResource(整数32,整数32)=>整数32;
+函数 LocalAlloc(整数32,整数32)=>整数32;
+函数 LocalCompact(整数32)=>整数32;
+函数 LocalFileTimeToFileTime(整数32,整数32)=>整数32;
+函数 LocalFlags(整数32)=>整数32;
+函数 LocalFree(整数32)=>整数32;
+函数 LocalHandle(整数32)=>整数32;
+函数 LocalLock(整数32)=>整数32;
+函数 LocalReAlloc(整数32,整数32,整数32)=>整数32;
+函数 LocalShrink(整数32,整数32)=>整数32;
+函数 LocalSize(整数32)=>整数32;
+函数 LocalUnlock(整数32)=>整数32;
+函数 LockFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LockFileEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LockResource(整数32)=>整数32;
+函数 MapUserPhysicalPages(整数32,整数32,整数32)=>整数32;
+函数 MapUserPhysicalPagesScatter(整数32,整数32,整数32)=>整数32;
+函数 MapViewOfFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MapViewOfFileEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 Module32First(整数32,整数32)=>整数32;
+函数 Module32FirstW(整数32,整数32)=>整数32;
+函数 Module32Next(整数32,整数32)=>整数32;
+函数 Module32NextW(整数32,整数32)=>整数32;
+函数 MoveFileA(整数32,整数32)=>整数32;
+函数 MoveFileExA(整数32,整数32,整数32)=>整数32;
+函数 MoveFileExW(整数32,整数32,整数32)=>整数32;
+函数 MoveFileW(整数32,整数32)=>整数32;
+函数 MoveFileWithProgressA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MoveFileWithProgressW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MulDiv(整数32,整数32,整数32)=>整数32;
+函数 MultiByteToWideChar(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NeedCurrentDirectoryForExePathA(整数32)=>整数32;
+函数 NeedCurrentDirectoryForExePathW(整数32)=>整数32;
+函数 OpenEventA(整数32,整数32,整数32)=>整数32;
+函数 OpenEventW(整数32,整数32,整数32)=>整数32;
+函数 OpenFile(整数32,整数32,整数32)=>整数32;
+函数 OpenFileMappingA(整数32,整数32,整数32)=>整数32;
+函数 OpenFileMappingW(整数32,整数32,整数32)=>整数32;
+函数 OpenJobObjectA(整数32,整数32,整数32)=>整数32;
+函数 OpenJobObjectW(整数32,整数32,整数32)=>整数32;
+函数 OpenMutexA(整数32,整数32,整数32)=>整数32;
+函数 OpenMutexW(整数32,整数32,整数32)=>整数32;
+函数 OpenProcess(整数32,整数32,整数32)=>整数32;
+函数 OpenSemaphoreA(整数32,整数32,整数32)=>整数32;
+函数 OpenSemaphoreW(整数32,整数32,整数32)=>整数32;
+函数 OpenThread(整数32,整数32,整数32)=>整数32;
+函数 OpenWaitableTimerA(整数32,整数32,整数32)=>整数32;
+函数 OpenWaitableTimerW(整数32,整数32,整数32)=>整数32;
+函数 OutputDebugStringA(整数32);
+函数 OutputDebugStringW(整数32);
+函数 PeekConsoleInputA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PeekConsoleInputW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PeekNamedPipe(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PostQueuedCompletionStatus(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrepareTape(整数32,整数32,整数32)=>整数32;
+函数 Process32First(整数32,整数32)=>整数32;
+函数 Process32FirstW(整数32,整数32)=>整数32;
+函数 Process32Next(整数32,整数32)=>整数32;
+函数 Process32NextW(整数32,整数32)=>整数32;
+函数 ProcessIdToSessionId(整数32,整数32)=>整数32;
+函数 PulseEvent(整数32)=>整数32;
+函数 PurgeComm(整数32,整数32)=>整数32;
+函数 QueryActCtxW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryDepthSList(整数32)=>整数32;
+函数 QueryDosDeviceA(整数32,整数32,整数32)=>整数32;
+函数 QueryDosDeviceW(整数32,整数32,整数32)=>整数32;
+函数 QueryInformationJobObject(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryMemoryResourceNotification(整数32,整数32)=>整数32;
+函数 QueryPerformanceCounter(整数32)=>整数32;
+函数 QueryPerformanceFrequency(整数32)=>整数32;
+函数 QueueUserAPC(整数32,整数32,整数32)=>整数32;
+函数 QueueUserWorkItem(整数32,整数32,整数32)=>整数32;
+函数 RaiseException(整数32,整数32,整数32,整数32);
+函数 ReOpenFile(整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleInputA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleInputW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleOutputA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleOutputAttribute(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleOutputCharacterA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleOutputCharacterW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleOutputW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadConsoleW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadDirectoryChangesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 读文件:ReadFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadFileEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadFileScatter(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadProcessMemory(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterWaitForSingleObject(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterWaitForSingleObjectEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReleaseActCtx(整数32);
+函数 ReleaseMutex(整数32)=>整数32;
+函数 ReleaseSemaphore(整数32,整数32,整数32)=>整数32;
+函数 RemoveDirectoryA(整数32)=>整数32;
+函数 RemoveDirectoryW(整数32)=>整数32;
+函数 RemoveLocalAlternateComputerNameA(整数32,整数32)=>整数32;
+函数 RemoveLocalAlternateComputerNameW(整数32,整数32)=>整数32;
+函数 RemoveVectoredContinueHandler(整数32)=>整数32;
+函数 RemoveVectoredExceptionHandler(整数32)=>整数32;
+函数 ReplaceFileA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReplaceFileW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RequestDeviceWakeup(整数32)=>整数32;
+函数 RequestWakeupLatency(整数32)=>整数32;
+函数 重置事件:ResetEvent(整数32)=>整数32;
+函数 ResetWriteWatch(整数32,整数32)=>整数32;
+函数 RestoreLastError(整数32);
+函数 ResumeThread(整数32)=>整数32;
+函数 RtlCaptureContext(整数32)=>整数32;
+函数 RtlCaptureStackBackTrace(整数32,整数32,整数32,整数32)=>整数32;
+函数 RtlFillMemory(整数32,整数32,整数32)=>整数32;
+函数 RtlMoveMemory(整数32,整数32,整数32)=>整数32;
+函数 RtlUnwind(整数32,整数32,整数32,整数32)=>整数32;
+函数 Rtl内存清零:RtlZeroMemory(整数32,整数32)=>整数32;
+函数 ScrollConsoleScreenBufferA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScrollConsoleScreenBufferW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SearchPathA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SearchPathW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetCalendarInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetCalendarInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetCommBreak(整数32)=>整数32;
+函数 SetCommConfig(整数32,整数32,整数32)=>整数32;
+函数 SetCommMask(整数32,整数32)=>整数32;
+函数 SetCommState(整数32,整数32)=>整数32;
+函数 SetCommTimeouts(整数32,整数32)=>整数32;
+函数 SetComputerNameA(整数32)=>整数32;
+函数 SetComputerNameExA(整数32,整数32)=>整数32;
+函数 SetComputerNameExW(整数32,整数32)=>整数32;
+函数 SetComputerNameW(整数32)=>整数32;
+函数 SetConsoleActiveScreenBuffer(整数32)=>整数32;
+函数 SetConsoleCP(整数32)=>整数32;
+函数 SetConsoleCtrlHandler(整数32,整数32)=>整数32;
+函数 SetConsoleCursor(整数32,整数32)=>整数32;
+函数 SetConsoleCursorInfo(整数32,整数32)=>整数32;
+函数 SetConsoleCursorPosition(整数32,整数32)=>整数32;
+函数 SetConsoleMode(整数32,整数32)=>整数32;
+函数 SetConsoleOutputCP(整数32)=>整数32;
+函数 SetConsoleScreenBufferSize(整数32,整数32)=>整数32;
+函数 SetConsoleTextAttribute(整数32,整数32)=>整数32;
+函数 SetConsoleTitleA(整数32)=>整数32;
+函数 SetConsoleTitleW(整数32)=>整数32;
+函数 SetConsoleWindowInfo(整数32,整数32,整数32)=>整数32;
+函数 SetCriticalSectionSpinCount(整数32,整数32)=>整数32;
+函数 SetCurrentDirectoryA(整数32)=>整数32;
+函数 SetCurrentDirectoryW(整数32)=>整数32;
+函数 SetDefaultCommConfigA(整数32,整数32,整数32)=>整数32;
+函数 SetDefaultCommConfigW(整数32,整数32,整数32)=>整数32;
+函数 SetDllDirectoryA(整数32)=>整数32;
+函数 SetDllDirectoryW(整数32)=>整数32;
+函数 SetEndOfFile(整数32)=>整数32;
+函数 SetEnvironmentStringsA(整数32)=>整数32;
+函数 SetEnvironmentStringsW(整数32)=>整数32;
+函数 SetEnvironmentVariableA(整数32,整数32)=>整数32;
+函数 SetEnvironmentVariableW(整数32,整数32)=>整数32;
+函数 SetErrorMode(整数32)=>整数32;
+函数 设置事件:SetEvent(整数32)=>整数32;
+函数 SetFileApisToANSI();
+函数 SetFileApisToOEM();
+函数 SetFileAttributesA(整数32,整数32)=>整数32;
+函数 SetFileAttributesW(整数32,整数32)=>整数32;
+函数 SetFilePointer(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetFilePointerEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetFileShortNameA(整数32,整数32)=>整数32;
+函数 SetFileShortNameW(整数32,整数32)=>整数32;
+函数 SetFileTime(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetFileValidData(整数32,整数32,整数32)=>整数32;
+函数 SetFirmwareEnvironmentVariableA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetFirmwareEnvironmentVariableW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetHandleCount(整数32)=>整数32;
+函数 SetHandleInformation(整数32,整数32,整数32)=>整数32;
+函数 SetInformationJobObject(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetLastError(整数32);
+函数 SetLocalPrimaryComputerNameA(整数32,整数32)=>整数32;
+函数 SetLocalPrimaryComputerNameW(整数32,整数32)=>整数32;
+函数 SetLocalTime(整数32)=>整数32;
+函数 SetLocaleInfoA(整数32,整数32,整数32)=>整数32;
+函数 SetLocaleInfoW(整数32,整数32,整数32)=>整数32;
+函数 SetMailslotInfo(整数32,整数32)=>整数32;
+函数 SetMessageWaitingIndicator(整数32,整数32)=>整数32;
+函数 SetNamedPipeHandleState(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPriorityClass(整数32,整数32)=>整数32;
+函数 SetProcessAffinityMask(整数32,整数32)=>整数32;
+函数 SetProcessPriorityBoost(整数32,整数32)=>整数32;
+函数 SetProcessShutdownParameters(整数32,整数32)=>整数32;
+函数 SetProcessWorkingSetSize(整数32,整数32,整数32)=>整数32;
+函数 SetProcessWorkingSetSizeEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetStdHandle(整数32,整数32)=>整数32;
+函数 SetSystemFileCacheSize(整数32,整数32,整数32)=>整数32;
+函数 SetSystemPowerState(整数32,整数32)=>整数32;
+函数 SetSystemTime(整数32)=>整数32;
+函数 SetSystemTimeAdjustment(整数32,整数32)=>整数32;
+函数 SetTapeParameters(整数32,整数32,整数32)=>整数32;
+函数 SetTapePosition(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetThreadAffinityMask(整数32,整数32)=>整数32;
+函数 SetThreadContext(整数32,整数32)=>整数32;
+函数 SetThreadExecutionState(整数32)=>整数32;
+函数 SetThreadIdealProcessor(整数32,整数32)=>整数32;
+函数 SetThreadLocale(整数32)=>整数32;
+函数 SetThreadPriority(整数32,整数32)=>整数32;
+函数 SetThreadPriorityBoost(整数32,整数32)=>整数32;
+函数 SetThreadStackGuarantee(整数32)=>整数32;
+函数 SetTimeZoneInformation(整数32)=>整数32;
+函数 SetTimerQueueTimer(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUnhandledExceptionFilter(整数32)=>整数32;
+函数 SetUserGeoID(整数32)=>整数32;
+函数 SetVolumeLabelA(整数32,整数32)=>整数32;
+函数 SetVolumeLabelW(整数32,整数32)=>整数32;
+函数 SetVolumeMountPointA(整数32,整数32)=>整数32;
+函数 SetVolumeMountPointW(整数32,整数32)=>整数32;
+函数 SetWaitableTimer(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupComm(整数32,整数32,整数32)=>整数32;
+函数 SignalObjectAndWait(整数32,整数32,整数32,整数32)=>整数32;
+函数 SizeofResource(整数32,整数32)=>整数32;
+函数 睡眠:Sleep(整数32);
+函数 SleepEx(整数32,整数32)=>整数32;
+函数 SuspendThread(整数32)=>整数32;
+函数 SwitchToFiber(整数32);
+函数 SwitchToThread()=>整数32;
+函数 SystemTimeToFileTime(整数32,整数32)=>整数32;
+函数 SystemTimeToTzSpecificLocalTime(整数32,整数32,整数32)=>整数32;
+函数 TerminateJobObject(整数32,整数32)=>整数32;
+函数 TerminateProcess(整数32,整数32)=>整数32;
+函数 终止线程:TerminateThread(整数32,整数32)=>整数32;
+函数 Thread32First(整数32,整数32)=>整数32;
+函数 Thread32Next(整数32,整数32)=>整数32;
+函数 TlsAlloc()=>整数32;
+函数 TlsFree(整数32)=>整数32;
+函数 TlsGetValue(整数32)=>整数32;
+函数 TlsSetValue(整数32,整数32)=>整数32;
+函数 Toolhelp32ReadProcessMemory(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TransactNamedPipe(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TransmitCommChar(整数32,整数32)=>整数32;
+函数 TryEnterCriticalSection(整数32)=>整数32;
+函数 TzSpecificLocalTimeToSystemTime(整数32,整数32,整数32)=>整数32;
+函数 UnhandledExceptionFilter(整数32)=>整数32;
+函数 UnlockFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UnlockFileEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UnmapViewOfFile(整数32)=>整数32;
+函数 UnregisterWait(整数32)=>整数32;
+函数 UnregisterWaitEx(整数32,整数32)=>整数32;
+函数 UpdateResourceA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UpdateResourceW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerLanguageNameA(整数32,整数32,整数32)=>整数32;
+函数 VerLanguageNameW(整数32,整数32,整数32)=>整数32;
+函数 VerSetConditionMask(整数32,整数32,整数32,整数32)=>整数32;
+函数 VerifyVersionInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 VerifyVersionInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualAlloc(整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualAllocEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualFree(整数32,整数32,整数32)=>整数32;
+函数 VirtualFreeEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualLock(整数32,整数32)=>整数32;
+函数 VirtualProtect(整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualProtectEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualQuery(整数32,整数32,整数32)=>整数32;
+函数 VirtualQueryEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 VirtualUnlock(整数32,整数32)=>整数32;
+函数 WTSGetActiveConsoleSessionId()=>整数32;
+函数 WaitCommEvent(整数32,整数32,整数32)=>整数32;
+函数 WaitForDebugEvent(整数32,整数32)=>整数32;
+函数 WaitForMultipleObjects(整数32,整数32,整数32,整数32)=>整数32;
+函数 WaitForMultipleObjectsEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 等待单一对象:WaitForSingleObject(整数32,整数32)=>整数32;
+函数 WaitForSingleObjectEx(整数32,整数32,整数32)=>整数32;
+函数 WaitNamedPipeA(整数32,整数32)=>整数32;
+函数 WaitNamedPipeW(整数32,整数32)=>整数32;
+函数 WideCharToMultiByte(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WinExec(整数32,整数32)=>整数32;
+函数 Wow64DisableWow64FsRedirection(整数32)=>整数32;
+函数 Wow64EnableWow64FsRedirection(整数32)=>整数32;
+函数 Wow64RevertWow64FsRedirection(整数32)=>整数32;
+函数 控制台输出:WriteConsoleA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleInputA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleInputW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleOutputA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleOutputAttribute(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleOutputCharacterA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleOutputCharacterW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleOutputW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteConsoleW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 写文件:WriteFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteFileEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteFileGather(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 写入私有INI文件节:WritePrivateProfileSectionA(整数32,整数32,整数32)=>整数32;
+函数 WritePrivateProfileSectionW(整数32,整数32,整数32)=>整数32;
+函数 写入私有INI文件字符串:WritePrivateProfileStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WritePrivateProfileStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 写入私有INI文件结构:WritePrivateProfileStructA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WritePrivateProfileStructW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WriteProcessMemory(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 写入INI文件节:WriteProfileSectionA(整数32,整数32)=>整数32;
+函数 WriteProfileSectionW(整数32,整数32)=>整数32;
+函数 写入INI文件字符串:WriteProfileStringA(整数32,整数32,整数32)=>整数32;
+函数 WriteProfileStringW(整数32,整数32,整数32)=>整数32;
+函数 WriteTapemark(整数32,整数32,整数32,整数32)=>整数32;
+函数 ZombifyActCtx(整数32)=>整数32;
+函数 _hread(整数32,整数32,整数32)=>整数32;
+函数 _hwrite(整数32,整数32,整数32)=>整数32;
+函数 _lclose(整数32)=>整数32;
+函数 _lcreat(整数32,整数32)=>整数32;
+函数 _llseek(整数32,整数32,整数32)=>整数32;
+函数 _lopen(整数32,整数32)=>整数32;
+函数 _lread(整数32,整数32,整数32)=>整数32;
+函数 _lwrite(整数32,整数32,整数32)=>整数32;
+函数 字符串联接:lstrcatA(整数32,整数32)=>整数32;
+函数 lstrcatW(整数32,整数32)=>整数32;
+函数 字符串比较:lstrcmpA(整数32,整数32)=>整数32;
+函数 lstrcmpW(整数32,整数32)=>整数32;
+函数 字符串比较无大小写:lstrcmpiA(整数32,整数32)=>整数32;
+函数 lstrcmpiW(整数32,整数32)=>整数32;
+函数 字符串复制:lstrcpyA(整数32,整数32)=>整数32;
+函数 lstrcpyW(整数32,整数32)=>整数32;
+函数 lstrcpynA(整数32,整数32,整数32)=>整数32;
+函数 lstrcpynW(整数32,整数32,整数32)=>整数32;
+函数 字符串长度:lstrlenA(整数32)=>整数32;
+函数 lstrlenW(整数32)=>整数32;
+
+宏定义 AddAtom  AddAtomA
+宏定义 AddConsoleAlias  AddConsoleAliasA
+宏定义 AddLocalAlternateComputerName  AddLocalAlternateComputerNameA
+宏定义 BeginUpdateResource  BeginUpdateResourceA
+宏定义 BuildCommDCB  BuildCommDCBA
+宏定义 BuildCommDCBAndTimeouts  BuildCommDCBAndTimeoutsA
+宏定义 CallNamedPipe  CallNamedPipeA
+宏定义 CheckNameLegalDOS8Dot3  CheckNameLegalDOS8Dot3A
+宏定义 CommConfigDialog  CommConfigDialogA
+宏定义 CompareString  CompareStringA
+宏定义 CopyFile  CopyFileA
+宏定义 CopyFileEx  CopyFileExA
+宏定义 CreateActCtx  CreateActCtxA
+宏定义 CreateDirectory  CreateDirectoryA
+宏定义 CreateDirectoryEx  CreateDirectoryExA
+宏定义 CreateEvent  CreateEventA
+宏定义 CreateFile  CreateFileA
+宏定义 CreateFileMapping  CreateFileMappingA
+宏定义 CreateHardLink  CreateHardLinkA
+宏定义 CreateJobObject  CreateJobObjectA
+宏定义 CreateMailslot  CreateMailslotA
+宏定义 CreateMutex  CreateMutexA
+宏定义 CreateNamedPipe  CreateNamedPipeA
+宏定义 CreateProcess  CreateProcessA
+宏定义 CreateSemaphore  CreateSemaphoreA
+宏定义 CreateWaitableTimer  CreateWaitableTimerA
+宏定义 DefineDosDevice  DefineDosDeviceA
+宏定义 DeleteFile  DeleteFileA
+宏定义 DeleteVolumeMountPoint  DeleteVolumeMountPointA
+宏定义 DnsHostnameToComputerName  DnsHostnameToComputerNameA
+宏定义 EndUpdateResource  EndUpdateResourceA
+宏定义 EnumCalendarInfo  EnumCalendarInfoA
+宏定义 EnumCalendarInfoEx  EnumCalendarInfoExA
+宏定义 EnumDateFormats  EnumDateFormatsA
+宏定义 EnumDateFormatsEx  EnumDateFormatsExA
+宏定义 EnumLanguageGroupLocales  EnumLanguageGroupLocalesA
+宏定义 EnumResourceLanguages  EnumResourceLanguagesA
+宏定义 EnumResourceNames  EnumResourceNamesA
+宏定义 EnumResourceTypes  EnumResourceTypesA
+宏定义 EnumSystemCodePages  EnumSystemCodePagesA
+宏定义 EnumSystemLanguageGroups  EnumSystemLanguageGroupsA
+宏定义 EnumSystemLocales  EnumSystemLocalesA
+宏定义 EnumTimeFormats  EnumTimeFormatsA
+宏定义 EnumUILanguages  EnumUILanguagesA
+宏定义 EnumerateLocalComputerNames  EnumerateLocalComputerNamesA
+宏定义 ExpandEnvironmentStrings  ExpandEnvironmentStringsA
+宏定义 FatalAppExit  FatalAppExitA
+宏定义 FillConsoleOutputCharacter  FillConsoleOutputCharacterA
+宏定义 FindActCtxSectionString  FindActCtxSectionStringA
+宏定义 FindAtom  FindAtomA
+宏定义 FindFirstChangeNotification  FindFirstChangeNotificationA
+宏定义 FindFirstFile  FindFirstFileA
+宏定义 FindFirstFileEx  FindFirstFileExA
+宏定义 FindFirstVolume  FindFirstVolumeA
+宏定义 FindFirstVolumeMountPoint  FindFirstVolumeMountPointA
+宏定义 FindNextFile  FindNextFileA
+宏定义 FindNextVolume  FindNextVolumeA
+宏定义 FindNextVolumeMountPoint  FindNextVolumeMountPointA
+宏定义 FindResource  FindResourceA
+宏定义 FindResourceEx  FindResourceExA
+宏定义 FoldString  FoldStringA
+宏定义 FormatMessage  FormatMessageA
+宏定义 FreeEnvironmentStrings  FreeEnvironmentStringsA
+宏定义 GetAtomName  GetAtomNameA
+宏定义 GetBinaryType  GetBinaryTypeA
+宏定义 GetCPInfoEx  GetCPInfoExA
+宏定义 GetCalendarInfo  GetCalendarInfoA
+宏定义 GetCommandLine  GetCommandLineA
+宏定义 GetCompressedFileSize  GetCompressedFileSizeA
+宏定义 GetComputerName  GetComputerNameA
+宏定义 GetComputerNameEx  GetComputerNameExA
+宏定义 GetConsoleAlias  GetConsoleAliasA
+宏定义 GetConsoleAliasExes  GetConsoleAliasExesA
+宏定义 GetConsoleAliasExesLength  GetConsoleAliasExesLengthA
+宏定义 GetConsoleAliases  GetConsoleAliasesA
+宏定义 GetConsoleAliasesLength  GetConsoleAliasesLengthA
+宏定义 GetConsoleTitle  GetConsoleTitleA
+宏定义 GetCurrencyFormat  GetCurrencyFormatA
+宏定义 GetCurrentDirectory  GetCurrentDirectoryA
+宏定义 GetDateFormat  GetDateFormatA
+宏定义 GetDefaultCommConfig  GetDefaultCommConfigA
+宏定义 GetDiskFreeSpace  GetDiskFreeSpaceA
+宏定义 GetDiskFreeSpaceEx  GetDiskFreeSpaceExA
+宏定义 GetDllDirectory  GetDllDirectoryA
+宏定义 GetDriveType  GetDriveTypeA
+宏定义 GetEnvironmentStrings  GetEnvironmentStringsA
+宏定义 GetEnvironmentVariable  GetEnvironmentVariableA
+宏定义 GetFileAttributes  GetFileAttributesA
+宏定义 GetFileAttributesEx  GetFileAttributesExA
+宏定义 GetFirmwareEnvironmentVariable  GetFirmwareEnvironmentVariableA
+宏定义 GetFullPathName  GetFullPathNameA
+宏定义 GetGeoInfo  GetGeoInfoA
+宏定义 GetLocaleInfo  GetLocaleInfoA
+宏定义 GetLogicalDriveStrings  GetLogicalDriveStringsA
+宏定义 GetLongPathName  GetLongPathNameA
+宏定义 GetModuleFileName  GetModuleFileNameA
+宏定义 GetModuleHandle  GetModuleHandleA
+宏定义 GetModuleHandleEx  GetModuleHandleExA
+宏定义 GetNamedPipeHandleState  GetNamedPipeHandleStateA
+宏定义 GetNumberFormat  GetNumberFormatA
+宏定义 GetPrivateProfileInt  GetPrivateProfileIntA
+宏定义 GetPrivateProfileSection  GetPrivateProfileSectionA
+宏定义 GetPrivateProfileSectionNames  GetPrivateProfileSectionNamesA
+宏定义 GetPrivateProfileString  GetPrivateProfileStringA
+宏定义 GetPrivateProfileStruct  GetPrivateProfileStructA
+宏定义 GetProfileInt  GetProfileIntA
+宏定义 GetProfileSection  GetProfileSectionA
+宏定义 GetProfileString  GetProfileStringA
+宏定义 GetShortPathName  GetShortPathNameA
+宏定义 GetStartupInfo  GetStartupInfoA
+宏定义 GetStringType  GetStringTypeA
+宏定义 GetStringTypeEx  GetStringTypeExA
+宏定义 GetSystemDirectory  GetSystemDirectoryA
+宏定义 GetSystemWindowsDirectory  GetSystemWindowsDirectoryA
+宏定义 GetSystemWow64Directory  GetSystemWow64DirectoryA
+宏定义 GetTempFileName  GetTempFileNameA
+宏定义 GetTempPath  GetTempPathA
+宏定义 GetTimeFormat  GetTimeFormatA
+宏定义 GetVersionEx  GetVersionExA
+宏定义 GetVolumeInformation  GetVolumeInformationA
+宏定义 GetVolumeNameForVolumeMountPoint  GetVolumeNameForVolumeMountPointA
+宏定义 GetVolumePathName  GetVolumePathNameA
+宏定义 GetVolumePathNamesForVolumeName  GetVolumePathNamesForVolumeNameA
+宏定义 GetWindowsDirectory  GetWindowsDirectoryA
+宏定义 GlobalAddAtom  GlobalAddAtomA
+宏定义 GlobalFindAtom  GlobalFindAtomA
+宏定义 GlobalGetAtomName  GlobalGetAtomNameA
+宏定义 IsBadStringPtr  IsBadStringPtrA
+宏定义 LCMapString  LCMapStringA
+宏定义 LoadLibrary  LoadLibraryA
+宏定义 LoadLibraryEx  LoadLibraryExA
+宏定义 MoveFile  MoveFileA
+宏定义 MoveFileEx  MoveFileExA
+宏定义 MoveFileWithProgress  MoveFileWithProgressA
+宏定义 NeedCurrentDirectoryForExePath  NeedCurrentDirectoryForExePathA
+宏定义 OpenEvent  OpenEventA
+宏定义 OpenFileMapping  OpenFileMappingA
+宏定义 OpenJobObject  OpenJobObjectA
+宏定义 OpenMutex  OpenMutexA
+宏定义 OpenSemaphore  OpenSemaphoreA
+宏定义 OpenWaitableTimer  OpenWaitableTimerA
+宏定义 OutputDebugString  OutputDebugStringA
+宏定义 PeekConsoleInput  PeekConsoleInputA
+宏定义 QueryDosDevice  QueryDosDeviceA
+宏定义 ReadConsole  ReadConsoleA
+宏定义 ReadConsoleInput  ReadConsoleInputA
+宏定义 ReadConsoleOutput  ReadConsoleOutputA
+宏定义 ReadConsoleOutputCharacter  ReadConsoleOutputCharacterA
+宏定义 RemoveDirectory  RemoveDirectoryA
+宏定义 RemoveLocalAlternateComputerName  RemoveLocalAlternateComputerNameA
+宏定义 ReplaceFile  ReplaceFileA
+宏定义 ScrollConsoleScreenBuffer  ScrollConsoleScreenBufferA
+宏定义 SearchPath  SearchPathA
+宏定义 SetCalendarInfo  SetCalendarInfoA
+宏定义 SetComputerName  SetComputerNameA
+宏定义 SetComputerNameEx  SetComputerNameExA
+宏定义 SetConsoleTitle  SetConsoleTitleA
+宏定义 SetCurrentDirectory  SetCurrentDirectoryA
+宏定义 SetDefaultCommConfig  SetDefaultCommConfigA
+宏定义 SetDllDirectory  SetDllDirectoryA
+宏定义 SetEnvironmentStrings  SetEnvironmentStringsA
+宏定义 SetEnvironmentVariable  SetEnvironmentVariableA
+宏定义 SetFileAttributes  SetFileAttributesA
+宏定义 SetFileShortName  SetFileShortNameA
+宏定义 SetFirmwareEnvironmentVariable  SetFirmwareEnvironmentVariableA
+宏定义 SetLocalPrimaryComputerName  SetLocalPrimaryComputerNameA
+宏定义 SetLocaleInfo  SetLocaleInfoA
+宏定义 SetVolumeLabel  SetVolumeLabelA
+宏定义 SetVolumeMountPoint  SetVolumeMountPointA
+宏定义 UpdateResource  UpdateResourceA
+宏定义 VerLanguageName  VerLanguageNameA
+宏定义 VerifyVersionInfo  VerifyVersionInfoA
+宏定义 WaitNamedPipe  WaitNamedPipeA
+宏定义 WriteConsole  WriteConsoleA
+宏定义 WriteConsoleInput  WriteConsoleInputA
+宏定义 WriteConsoleOutput  WriteConsoleOutputA
+宏定义 WriteConsoleOutputCharacter  WriteConsoleOutputCharacterA
+宏定义 WritePrivateProfileSection  WritePrivateProfileSectionA
+宏定义 WritePrivateProfileString  WritePrivateProfileStringA
+宏定义 WritePrivateProfileStruct  WritePrivateProfileStructA
+宏定义 WriteProfileSection  WriteProfileSectionA
+宏定义 WriteProfileString  WriteProfileStringA
+宏定义 lstrcat  lstrcatA
+宏定义 lstrcmp  lstrcmpA
+宏定义 lstrcmpi  lstrcmpiA
+宏定义 lstrcpy  lstrcpyA
+宏定义 lstrcpyn  lstrcpynA
+宏定义 lstrlen  lstrlenA
+}

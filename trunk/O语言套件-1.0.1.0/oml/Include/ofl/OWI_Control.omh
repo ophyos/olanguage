@@ -1,0 +1,29 @@
+
+引用段
+{
+
+函数  控件_获取句柄:Ctrl_GetHandle(地址 控制指针)=>HWND;
+
+函数  控件_获取客户区矩形:Ctrl_GetClientRect(地址 控制指针,地址 rc);
+
+//把自己调到屏幕最前方，盖住所有其他窗口(即改变它的Z秩序)
+函数  控件_置顶:Ctrl_BringToTop(地址 控制指针);
+//把自己调到屏幕最后方(因此它可能位置垫底，被许多窗口盖住)
+函数  控件_置底:Ctrl_BringToBottom(地址 控制指针);
+//设置窗口的焦点
+函数  控件_设置焦点:Ctrl_SetFocus(地址 控制指针);
+
+函数  控件_设置标题:Ctrl_SetCaption(地址 控制指针,地址 pchCaption);
+函数  控件_获取标题:Ctrl_GetCaption(地址 控制指针)=>地址;
+函数  控件_显示:Ctrl_Show(地址 控制指针);
+函数  控件_隐藏:Ctrl_Hide(地址 控制指针);
+函数  控件_设置应用状态:Ctrl_Enable(地址 控制指针,整数32 bEnable);
+函数  控件_为应用:Ctrl_IsEnabled(地址 控制指针)=>整数32;
+函数  控件_为可视:Ctrl_IsVisible(地址 控制指针)=>整数32;
+函数  控件_移动:Ctrl_Move(地址 控制指针,整数32 dx,整数32 dy);
+函数  控件_设置大小:Ctrl_SetSize(地址 控制指针,整数32 width,整数32 height);
+函数  控件_设置位置大小:Ctrl_SetPositionSize(地址 控制指针,整数32 nLeft,整数32 nRight,整数32 nWidth,整数32 nHeight);
+函数  控件_对齐:Ctrl_Align(地址 控制指针,正数32 edge);
+
+} //_OWI_CONTROL_H_
+

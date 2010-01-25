@@ -1,0 +1,186 @@
+引用段
+{
+函数 CloseODBCPerfData()=>整数32;
+函数 CollectODBCPerfData(整数32,整数32,整数32,整数32)=>整数32;
+函数 CursorLibLockDbc(整数32,整数32)=>整数32;
+函数 CursorLibLockDesc(整数32,整数32)=>整数32;
+函数 CursorLibLockStmt(整数32,整数32)=>整数32;
+函数 CursorLibTransact(整数32,整数32,整数32)=>整数32;
+函数 DllBidEntryPoint(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetODBCSharedData()=>整数32;
+函数 LockHandle(整数32,整数32,整数32)=>整数32;
+函数 C调用 MpHeapAlloc(整数32, ..)=>整数32;
+函数 C调用 MpHeapCompact(整数32, ..)=>整数32;
+函数 C调用 MpHeapCreate(整数32, ..)=>整数32;
+函数 C调用 MpHeapDestroy(整数32, ..)=>整数32;
+函数 C调用 MpHeapFree(整数32, ..)=>整数32;
+函数 C调用 MpHeapReAlloc(整数32, ..)=>整数32;
+函数 C调用 MpHeapSize(整数32, ..)=>整数32;
+函数 C调用 MpHeapValidate(整数32, ..)=>整数32;
+函数 ODBCGetTryWaitValue()=>整数32;
+函数 ODBCInternalConnectW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ODBCQualifyFileDSNW(整数32)=>整数32;
+函数 ODBCSetTryWaitValue(整数32)=>整数32;
+函数 OpenODBCPerfData(整数32)=>整数32;
+函数 PostComponentError(整数32)=>整数32;
+函数 PostODBCComponentError(整数32)=>整数32;
+函数 PostODBCError(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL分配连接:SQLAllocConnect(整数32,整数32)=>整数32;
+函数 SQL分配环境:SQLAllocEnv(整数32)=>整数32;
+函数 SQL分配句柄:SQLAllocHandle(整数32,整数32,整数32)=>整数32;
+函数 SQLAllocHandleStd(整数32,整数32,整数32)=>整数32;
+函数 SQLAllocStmt(整数32,整数32)=>整数32;
+函数 SQL绑定列:SQLBindCol(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLBindParam(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL绑定参数:SQLBindParameter(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL浏览连接:SQLBrowseConnectA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLBrowseConnectW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLBulkOperations(整数32,整数32)=>整数32;
+函数 SQL取消:SQLCancel(整数32)=>整数32;
+函数 SQL关闭指针:SQLCloseCursor(整数32)=>整数32;
+函数 SQLColAttributeA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColAttributeW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColAttributesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColAttributesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColumnPrivilegesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColumnPrivilegesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColumnsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLColumnsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL连接:SQLConnectA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLConnectW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLCopyDesc(整数32,整数32)=>整数32;
+函数 SQL数据源:SQLDataSourcesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLDataSourcesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLDescribeColA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLDescribeColW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLDescribeParam(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL断开连接:SQLDisconnect(整数32)=>整数32;
+函数 SQL驱动器连接:SQLDriverConnectA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLDriverConnectW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL驱动器:SQLDriversA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLDriversW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLEndTran(整数32,整数32,整数32)=>整数32;
+函数 SQL错误:SQLErrorA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLErrorW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL直接执行:SQLExecDirectA(整数32,整数32,整数32)=>整数32;
+函数 SQLExecDirectW(整数32,整数32,整数32)=>整数32;
+函数 SQL执行:SQLExecute(整数32)=>整数32;
+函数 SQLExtendedFetch(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL取得:SQLFetch(整数32)=>整数32;
+函数 SQL取得卷:SQLFetchScroll(整数32,整数32,整数32)=>整数32;
+函数 SQLForeignKeysA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLForeignKeysW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL释放连接:SQLFreeConnect(整数32)=>整数32;
+函数 SQL释放环境:SQLFreeEnv(整数32)=>整数32;
+函数 SQL释放句柄:SQLFreeHandle(整数32,整数32)=>整数32;
+函数 SQL释放语句:SQLFreeStmt(整数32,整数32)=>整数32;
+函数 SQL获取连接属性:SQLGetConnectAttrA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetConnectAttrW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL获取连接选项:SQLGetConnectOptionA(整数32,整数32,整数32)=>整数32;
+函数 SQLGetConnectOptionW(整数32,整数32,整数32)=>整数32;
+函数 SQL获取指针名:SQLGetCursorNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetCursorNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL获取数据:SQLGetData(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDescFieldA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDescFieldW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDescRecA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDescRecW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDiagFieldA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDiagFieldW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDiagRecA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetDiagRecW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetEnvAttr(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetFunctions(整数32,整数32,整数32)=>整数32;
+函数 SQLGetInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetStmtAttrA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetStmtAttrW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetStmtOption(整数32,整数32,整数32)=>整数32;
+函数 SQLGetTypeInfoA(整数32,整数32)=>整数32;
+函数 SQLGetTypeInfoW(整数32,整数32)=>整数32;
+函数 SQLMoreResults(整数32)=>整数32;
+函数 SQLNativeSqlA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLNativeSqlW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLNumParams(整数32,整数32)=>整数32;
+函数 SQL结果列数:SQLNumResultCols(整数32,整数32)=>整数32;
+函数 SQLParamData(整数32,整数32)=>整数32;
+函数 SQLParamOptions(整数32,整数32,整数32)=>整数32;
+函数 SQL准备:SQLPrepareA(整数32,整数32,整数32)=>整数32;
+函数 SQLPrepareW(整数32,整数32,整数32)=>整数32;
+函数 SQLPrimaryKeysA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLPrimaryKeysW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLProcedureColumnsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLProcedureColumnsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLProceduresA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLProceduresW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLPutData(整数32,整数32,整数32)=>整数32;
+函数 SQLRowCount(整数32,整数32)=>整数32;
+函数 SQL设置连接属性:SQLSetConnectAttrA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSetConnectAttrW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL设置连接选项:SQLSetConnectOptionA(整数32,整数32,整数32)=>整数32;
+函数 SQLSetConnectOptionW(整数32,整数32,整数32)=>整数32;
+函数 SQL设置指针名:SQLSetCursorNameA(整数32,整数32,整数32)=>整数32;
+函数 SQLSetCursorNameW(整数32,整数32,整数32)=>整数32;
+函数 SQLSetDescFieldA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSetDescFieldW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSetDescRec(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL设置环境属性:SQLSetEnvAttr(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL设置参数:SQLSetParam(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL设置位置:SQLSetPos(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSetScrollOptions(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQL设置语句属性:SQLSetStmtAttrA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSetStmtAttrW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSetStmtOption(整数32,整数32,整数32)=>整数32;
+函数 SQLSpecialColumnsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLSpecialColumnsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLStatisticsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLStatisticsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLTablePrivilegesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLTablePrivilegesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLTablesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLTablesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLTransact(整数32,整数32,整数32)=>整数32;
+函数 SearchStatusCode(整数32,整数32)=>整数32;
+函数 VFreeErrors(整数32)=>整数32;
+函数 VRetrieveDriverErrorsRowCol(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ValidateErrorQueue(整数32,整数32)=>整数32;
+函数 C调用 g_hHeapMalloc(整数32, ..)=>整数32;
+
+宏定义 SQLBrowseConnect  SQLBrowseConnectA
+宏定义 SQLColAttribute  SQLColAttributeA
+宏定义 SQLColAttributes  SQLColAttributesA
+宏定义 SQLColumnPrivileges  SQLColumnPrivilegesA
+宏定义 SQLColumns  SQLColumnsA
+宏定义 SQLConnect  SQLConnectA
+宏定义 SQLDataSources  SQLDataSourcesA
+宏定义 SQLDescribeCol  SQLDescribeColA
+宏定义 SQLDriverConnect  SQLDriverConnectA
+宏定义 SQLDrivers  SQLDriversA
+宏定义 SQLError  SQLErrorA
+宏定义 SQLExecDirect  SQLExecDirectA
+宏定义 SQLForeignKeys  SQLForeignKeysA
+宏定义 SQLGetConnectAttr  SQLGetConnectAttrA
+宏定义 SQLGetConnectOption  SQLGetConnectOptionA
+宏定义 SQLGetCursorName  SQLGetCursorNameA
+宏定义 SQLGetDescField  SQLGetDescFieldA
+宏定义 SQLGetDescRec  SQLGetDescRecA
+宏定义 SQLGetDiagField  SQLGetDiagFieldA
+宏定义 SQLGetDiagRec  SQLGetDiagRecA
+宏定义 SQLGetInfo  SQLGetInfoA
+宏定义 SQLGetStmtAttr  SQLGetStmtAttrA
+宏定义 SQLGetTypeInfo  SQLGetTypeInfoA
+宏定义 SQLNativeSql  SQLNativeSqlA
+宏定义 SQLPrepare  SQLPrepareA
+宏定义 SQLPrimaryKeys  SQLPrimaryKeysA
+宏定义 SQLProcedureColumns  SQLProcedureColumnsA
+宏定义 SQLProcedures  SQLProceduresA
+宏定义 SQLSetConnectAttr  SQLSetConnectAttrA
+宏定义 SQLSetConnectOption  SQLSetConnectOptionA
+宏定义 SQLSetCursorName  SQLSetCursorNameA
+宏定义 SQLSetDescField  SQLSetDescFieldA
+宏定义 SQLSetStmtAttr  SQLSetStmtAttrA
+宏定义 SQLSpecialColumns  SQLSpecialColumnsA
+宏定义 SQLStatistics  SQLStatisticsA
+宏定义 SQLTablePrivileges  SQLTablePrivilegesA
+宏定义 SQLTables  SQLTablesA
+}

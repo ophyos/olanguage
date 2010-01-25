@@ -1,0 +1,20 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒRasAdminCompressPhoneNumber(Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminDLLInit(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminFreeBuffer(Ë«×Ö)
+¡ÒRasAdminGetErrorString(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminGetUserAccountServer(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminGetUserParms(Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminPortClearStatistics(Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminPortDisconnect(Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminPortEnum(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminPortGetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminServerGetInfo(Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminSetUserParms(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminUserGetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasAdminUserSetInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

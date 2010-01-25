@@ -1,0 +1,132 @@
+引用段
+{
+函数 FreeAddrInfoW(整数32)=>整数32;
+函数 GetAddrInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNameInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WEP()=>整数32;
+函数 WPUCompleteOverlappedRequest(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAccept(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAddressToStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAddressToStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetHostByAddr(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetHostByName(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetProtoByName(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetProtoByNumber(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetServByName(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetServByPort(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncSelect(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSACancelAsyncRequest(整数32)=>整数32;
+函数 WSACancelBlockingCall()=>整数32;
+函数 WSACleanup()=>整数32;
+函数 WSACloseEvent(整数32)=>整数32;
+函数 WSAConnect(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSACreateEvent()=>整数32;
+函数 WSADuplicateSocketA(整数32,整数32,整数32)=>整数32;
+函数 WSADuplicateSocketW(整数32,整数32,整数32)=>整数32;
+函数 WSAEnumNameSpaceProvidersA(整数32,整数32)=>整数32;
+函数 WSAEnumNameSpaceProvidersW(整数32,整数32)=>整数32;
+函数 WSAEnumNetworkEvents(整数32,整数32,整数32)=>整数32;
+函数 WSAEnumProtocolsA(整数32,整数32,整数32)=>整数32;
+函数 WSAEnumProtocolsW(整数32,整数32,整数32)=>整数32;
+函数 WSAEventSelect(整数32,整数32,整数32)=>整数32;
+函数 WSAGetLastError()=>整数32;
+函数 WSAGetOverlappedResult(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAGetQOSByName(整数32,整数32,整数32)=>整数32;
+函数 WSAGetServiceClassInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAGetServiceClassInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAGetServiceClassNameByClassIdA(整数32,整数32,整数32)=>整数32;
+函数 WSAGetServiceClassNameByClassIdW(整数32,整数32,整数32)=>整数32;
+函数 WSAHtonl(整数32,整数32,整数32)=>整数32;
+函数 WSAHtons(整数32,整数32,整数32)=>整数32;
+函数 WSAInstallServiceClassA(整数32)=>整数32;
+函数 WSAInstallServiceClassW(整数32)=>整数32;
+函数 WSAIoctl(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAIsBlocking()=>整数32;
+函数 WSAJoinLeaf(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSALookupServiceBeginA(整数32,整数32,整数32)=>整数32;
+函数 WSALookupServiceBeginW(整数32,整数32,整数32)=>整数32;
+函数 WSALookupServiceEnd(整数32)=>整数32;
+函数 WSALookupServiceNextA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSALookupServiceNextW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSANSPIoctl(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSANtohl(整数32,整数32,整数32)=>整数32;
+函数 WSANtohs(整数32,整数32,整数32)=>整数32;
+函数 WSAProviderConfigChange(整数32,整数32,整数32)=>整数32;
+函数 WSARecv(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSARecvDisconnect(整数32,整数32)=>整数32;
+函数 WSARecvFrom(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSARemoveServiceClass(整数32)=>整数32;
+函数 WSAResetEvent(整数32)=>整数32;
+函数 WSASend(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSASendDisconnect(整数32,整数32)=>整数32;
+函数 WSASendTo(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSASetBlockingHook(整数32)=>整数32;
+函数 WSASetEvent(整数32)=>整数32;
+函数 WSASetLastError(整数32);
+函数 WSASetServiceA(整数32,整数32,整数32)=>整数32;
+函数 WSASetServiceW(整数32,整数32,整数32)=>整数32;
+函数 WSASocketA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSASocketW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAStartup(整数32,整数32)=>整数32;
+函数 WSAStringToAddressA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAStringToAddressW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAUnhookBlockingHook()=>整数32;
+函数 WSAWaitForMultipleEvents(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSCDeinstallProvider(整数32,整数32)=>整数32;
+函数 WSCEnableNSProvider(整数32,整数32)=>整数32;
+函数 WSCEnumProtocols(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSCGetProviderPath(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSCInstallNameSpace(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSCInstallProvider(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSCUnInstallNameSpace(整数32)=>整数32;
+函数 WSCUpdateProvider(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSCWriteNameSpaceOrder(整数32,整数32)=>整数32;
+函数 WSCWriteProviderOrder(整数32,整数32)=>整数32;
+函数 __WSAFDIsSet(整数32,整数32)=>整数32;
+函数 accept(整数32,整数32,整数32)=>整数32;
+函数 bind(整数32,整数32,整数32)=>整数32;
+函数 closesocket(整数32)=>整数32;
+函数 connect(整数32,整数32,整数32)=>整数32;
+函数 freeaddrinfo(整数32);
+函数 getaddrinfo(整数32,整数32,整数32,整数32)=>整数32;
+函数 gethostbyaddr(整数32,整数32,整数32)=>整数32;
+函数 gethostbyname(整数32)=>整数32;
+函数 gethostname(整数32,整数32)=>整数32;
+函数 getnameinfo(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 getpeername(整数32,整数32,整数32)=>整数32;
+函数 getprotobyname(整数32)=>整数32;
+函数 getprotobynumber(整数32)=>整数32;
+函数 getservbyname(整数32,整数32)=>整数32;
+函数 getservbyport(整数32,整数32)=>整数32;
+函数 getsockname(整数32,整数32,整数32)=>整数32;
+函数 getsockopt(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 htonl(整数32)=>整数32;
+函数 htons(整数32)=>整数32;
+函数 inet_addr(整数32)=>整数32;
+函数 inet_ntoa(整数32)=>整数32;
+函数 ioctlsocket(整数32,整数32,整数32)=>整数32;
+函数 listen(整数32,整数32)=>整数32;
+函数 ntohl(整数32)=>整数32;
+函数 ntohs(整数32)=>整数32;
+函数 recv(整数32,整数32,整数32,整数32)=>整数32;
+函数 recvfrom(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 select(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 send(整数32,整数32,整数32,整数32)=>整数32;
+函数 sendto(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 setsockopt(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 shutdown(整数32,整数32)=>整数32;
+函数 socket(整数32,整数32,整数32)=>整数32;
+
+宏定义 WSAAddressToString  WSAAddressToStringA
+宏定义 WSADuplicateSocket  WSADuplicateSocketA
+宏定义 WSAEnumNameSpaceProviders  WSAEnumNameSpaceProvidersA
+宏定义 WSAEnumProtocols  WSAEnumProtocolsA
+宏定义 WSAGetServiceClassInfo  WSAGetServiceClassInfoA
+宏定义 WSAGetServiceClassNameByClassId  WSAGetServiceClassNameByClassIdA
+宏定义 WSAInstallServiceClass  WSAInstallServiceClassA
+宏定义 WSALookupServiceBegin  WSALookupServiceBeginA
+宏定义 WSALookupServiceNext  WSALookupServiceNextA
+宏定义 WSASetService  WSASetServiceA
+宏定义 WSASocket  WSASocketA
+宏定义 WSAStringToAddress  WSAStringToAddressA
+}

@@ -1,0 +1,40 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAcceptSecurityContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAcquireCredentialsHandleA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAcquireCredentialsHandle  AcquireCredentialsHandleA
+
+¡ÒAcquireCredentialsHandleW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒApplyControlToken(Ë«×Ö,Ë«×Ö)
+¡ÒCompleteAuthToken(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteSecurityContext(Ë«×Ö)
+¡ÒEnumerateSecurityPackagesA(Ë«×Ö,Ë«×Ö)
+¡ßEnumerateSecurityPackages  EnumerateSecurityPackagesA
+
+¡ÒEnumerateSecurityPackagesW(Ë«×Ö,Ë«×Ö)
+¡ÒFreeContextBuffer(Ë«×Ö)
+¡ÒFreeCredentialsHandle(Ë«×Ö)
+¡ÒImpersonateSecurityContext(Ë«×Ö)
+¡ÒInitSecurityInterfaceA()
+¡ßInitSecurityInterface  InitSecurityInterfaceA
+
+¡ÒInitSecurityInterfaceW()
+¡ÒInitializeSecurityContextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInitializeSecurityContext  InitializeSecurityContextA
+
+¡ÒInitializeSecurityContextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMakeSignature(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryContextAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryContextAttributes  QueryContextAttributesA
+
+¡ÒQueryContextAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQuerySecurityPackageInfoA(Ë«×Ö,Ë«×Ö)
+¡ßQuerySecurityPackageInfo  QuerySecurityPackageInfoA
+
+¡ÒQuerySecurityPackageInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒRevertSecurityContext(Ë«×Ö)
+¡ÒVerifySignature(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

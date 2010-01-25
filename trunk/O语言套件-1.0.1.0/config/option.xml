@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<O语言文件 TYPE="3">
+    <系统选项>
+        <常规项>
+            <升级 每次启动升级="0" />
+        </常规项>
+        <汇编器>
+            <汇编器路径>./oasm/OASM.exe</汇编器路径>
+            <语言路径>./oasm/language/default.oic</语言路径>
+        </汇编器>
+        <中间语言编译器>
+            <中间语言编译器路径>./oml/OML.exe</中间语言编译器路径>
+            <中间语言内码文件路径>./oml/language/default.oic</中间语言内码文件路径>
+        </中间语言编译器>
+        <链接器>
+            <链接器路径>./oasm/link.exe</链接器路径>
+        </链接器>
+        <OASM编辑器>
+            <OASM语法字文件名>./oasm/config/syntax_word.ohc</OASM语法字文件名>
+            <OASM选择列表框文件名>./oasm/config/oasm.ohc</OASM选择列表框文件名>
+            <OASM模板目录>./oasm/Template/</OASM模板目录>
+            <OASM自动完成配置文件名>./oasm/config/auto_complete.ohc</OASM自动完成配置文件名>
+            <OASM提示配置文件名>./oasm/config/tip.ohc</OASM提示配置文件名>
+            <OASM语法着色 OASM背景颜色="16777215" OASM文本颜色="0" OASM注释行颜色="32768" OASM注释块颜色="32768" OASM引用文颜色="16744448" OASM引用库颜色="16744448" OASM数据段标记颜色="4194491" OASM只读段标记颜色="4194491" OASM预留段标记颜色="4194491" OASM外部段标记颜色="4194491" OASM代码段标记颜色="4194491" OASM数字颜色="8421376" OASM指令颜色="16123779" OASM浮点指令颜色="16123779" OASM寄存器颜色="10923023" OASM单字符颜色="8384" OASM字符串颜色="8384" OASM定义定颜色="15927589" OASM宏标识符颜色="3735680" OASM文本操作符颜色="32896" OASM操作符颜色="32896" />
+            <OASM文本字体 OASMlfHeight="-12" OASMlfWidth="0" OASMlfEscapement="0" OASMlfOrientation="0" OASMlfWeight="400" OASMItalic="0" OASMlfUnderline="0" OASMlfStrikeOut="0" OASMlfCharSet="134" OASMlfOutPrecision="0" OASMlfClipPrecision="0" OASMlfQuality="0" OASMlfPitchAndFamily="0">宋体</OASM文本字体>
+            <OASM附加栏 OASM行号="-1" OASM书签="-1" OASM折叠="0" />
+            <OASM保存 OASM自动保存="0" />
+        </OASM编辑器>
+        <OML编辑器>
+            <OML语法字文件名>./oml/config/syntax_word.ohc</OML语法字文件名>
+            <OML选择列表框文件名>./oml/config/oml.ohc</OML选择列表框文件名>
+            <OML模板目录>./oml/Template/</OML模板目录>
+            <OML自动完成配置文件名>./oml/config/auto_complete.ohc</OML自动完成配置文件名>
+            <OML提示配置文件名>./oml/config/tip.ohc</OML提示配置文件名>
+            <OML语法着色 OML背景颜色="16777215" OML文本颜色="0" OML注释行颜色="32768" OML注释块颜色="32768" OML数字颜色="8421376" OML单字符颜色="8384" OML字符串颜色="8384" OML关键字颜色="15927589" OML宏标识符颜色="3735680" OML操作符颜色="32896" />
+            <OML文本字体 OMLlfHeight="-12" OMLlfWidth="0" OMLlfEscapement="0" OMLlfOrientation="0" OMLlfWeight="400" OMLItalic="0" OMLlfUnderline="0" OMLlfStrikeOut="0" OMLlfCharSet="134" OMLlfOutPrecision="0" OMLlfClipPrecision="0" OMLlfQuality="0" OMLlfPitchAndFamily="0">宋体</OML文本字体>
+            <OML附加栏 OML行号="-1" OML书签="-1" OML折叠="-1" />
+            <OML保存 OML自动保存="0" />
+        </OML编辑器>
+        <反汇编>
+            <反汇编器路径>./oasm/DOASM.exe</反汇编器路径>
+            <反汇编语言路径>./oasm/language/chinese.oic</反汇编语言路径>
+        </反汇编>
+    </系统选项>
+</O语言文件>

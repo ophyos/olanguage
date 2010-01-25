@@ -1,0 +1,44 @@
+引用段
+{
+函数 CreateSocketPort(整数32)=>整数32;
+函数 DeleteSocketPort(整数32)=>整数32;
+函数 FwBindFwInterfaceToAdapter(整数32,整数32)=>整数32;
+函数 FwConnectionRequestFailed(整数32)=>整数32;
+函数 FwCreateInterface(整数32,整数32,整数32)=>整数32;
+函数 FwDeleteInterface(整数32)=>整数32;
+函数 FwDisableFwInterface(整数32)=>整数32;
+函数 FwEnableFwInterface(整数32)=>整数32;
+函数 FwGetInterface(整数32,整数32,整数32)=>整数32;
+函数 FwGetNotificationResult(整数32,整数32)=>整数32;
+函数 FwGetStaticNetbiosNames(整数32,整数32,整数32)=>整数32;
+函数 FwIsStarted(整数32)=>整数32;
+函数 FwNotifyConnectionRequest(整数32,整数32,整数32)=>整数32;
+函数 FwSetInterface(整数32,整数32)=>整数32;
+函数 FwSetStaticNetbiosNames(整数32,整数32,整数32)=>整数32;
+函数 FwStart(整数32,整数32)=>整数32;
+函数 FwStop()=>整数32;
+函数 FwUnbindFwInterfaceFromAdapter(整数32)=>整数32;
+函数 FwUpdateConfig(整数32)=>整数32;
+函数 FwUpdateRouteTable(整数32,整数32,整数32)=>整数32;
+函数 GetAdapterNameFromMacAddrW(整数32,整数32,整数32)=>整数32;
+函数 GetAdapterNameW(整数32,整数32,整数32)=>整数32;
+函数 GetFilters(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxAdjustIoCompletionParams(整数32,整数32,整数32)=>整数32;
+函数 IpxCreateAdapterConfigurationPort(整数32,整数32)=>整数32;
+函数 IpxDeleteAdapterConfigurationPort(整数32)=>整数32;
+函数 IpxDoesRouteExist(整数32,整数32)=>整数32;
+函数 IpxGetAdapterConfig(整数32,整数32)=>整数32;
+函数 IpxGetAdapterList(整数32,整数32,整数32)=>整数32;
+函数 IpxGetOverlappedResult(整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxGetQueuedAdapterConfigurationStatus(整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxGetQueuedCompletionStatus(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxPostQueuedCompletionStatus(整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxRecvPacket(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxSendPacket(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IpxWanCreateAdapterConfigurationPort(整数32,整数32)=>整数32;
+函数 IpxWanQueryInactivityTimer(整数32,整数32,整数32)=>整数32;
+函数 IpxWanSetAdapterConfiguration(整数32,整数32)=>整数32;
+函数 ServiceMain(整数32,整数32)=>整数32;
+函数 SetFilters(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+}

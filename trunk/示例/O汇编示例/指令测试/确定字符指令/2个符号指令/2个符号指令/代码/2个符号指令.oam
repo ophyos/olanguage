@@ -1,0 +1,88 @@
+
+.位模式 32
+
+∥这个程序只是用来测试指令是否正确编译
+∥不要运行这个程序，因为这个程序的指令是无序排列的
+∥请使用反汇编工具查看指令编译后的代码
+
+
+∥代码段开始
+︷
+
+∥开始函数定义
+∏主函数()
+{
+
+↑3              ∥中断 3  INT 3
+累加低 加后A调整   ∥AL在加法后进行ASCII调整 AAA 
+累加低 减后A调整   ∥AL在减法后进行ASCII调整 AAS
+累加低 加后十调整  ∥AL在加法后进行十进制调整 DAA
+累加低 减后十调整  ∥AL在减法后进行十进制调整 DAS
+累加低 定位表      ∥AL  = [byte|DS:(E|R)BX+AL]将BX作为首地址AL为偏移量 XLATB
+累加16 除后A调整   ∥AX在除法前进行ASCII调整 AAD
+累加16 乘后A调整   ∥AX在乘法后进行ASCII调整 AAM
+
+
+≯数段             ∥出栈 DS POP DS
+≯附段             ∥出栈 ES POP ES 
+≯栈段             ∥出栈 SS POP SS 
+≯志段             ∥出栈 FS POP FS 
+≯全段             ∥出栈 GS POP GS 
+≮码段             ∥压栈 CS PUSH CS 
+≮数段             ∥压栈 DS PUSH DS 
+≮附段             ∥压栈 ES PUSH ES 
+≮栈段             ∥压栈 SS PUSH SS 
+≮志段             ∥压栈 FS PUSH FS 
+≮全段             ∥压栈 GS PUSH GS 
+
+
+≯累加16 ∥出栈 16位寄存器 POP AX
+≯基数32 ∥出栈 32位寄存器 POP EBX
+≮计数16 ∥压栈 16位寄存器 PUSH CX
+≮数据32 ∥压栈 32位寄存器 PUSH EDX
+
+
+
+Φ 累加16    ∥空 16位寄存器 NOP reg16  NOP指令通常不使用操作数
+Φ 累加32    ∥空 32位寄存器 NOP reg32  NOP指令通常不使用操作数
+
+↘ 基数16    ∥过程调用 16寄存器 CALL BX
+↘ 基数32    ∥过程调用 32寄存器 CALL EBX
+→计数16     ∥跳转到 16位寄存器 JMP CX
+→计数32     ∥跳转到 32位寄存器 JMP ECX
+
+
+累加低  --    ∥8位寄存器  减一 DEC AL
+累加高  ++    ∥8位寄存器  加一 INC AH
+基数低ˉ      ∥8位寄存器  求补 NEG BL
+基数高~       ∥8位寄存器  求反 NOT BH
+栈址16 --     ∥16位寄存器 减一 DEC SP
+基址16 ++     ∥16位寄存器 加一 INC BP
+源址16ˉ     ∥16位寄存器 求补 NEG SI
+的址16~      ∥16位寄存器  求反 NOT DI
+计数16 验证读  ∥16位寄存器 验证所指向的选择子的段是否可读 VERR CX
+数据16 验证写  ∥16位寄存器 验证所指向的选择子的段是否可写 VERW DX
+源址32 字节交换 ∥32位寄存器 字节交换 BSWAP ESI
+的址32 --    ∥32位寄存器 减一 DEC EDI
+栈址32 ++    ∥32位寄存器 加一 INC ESP
+基址32ˉ     ∥32位寄存器 求补 NEG EBP
+数据32~      ∥32位寄存器  求反 NOT EDX
+
+
+∥下面是浮点指令
+浮点检查保存状态器 累加16        ∥将FPU状态字保存到AX，检查非屏蔽浮点异常 FSTSW AX
+浮点不检查保存状态器 累加16      ∥将FPU状态字保存到AX，不检查非屏蔽浮点异常 FNSTSW AX
+浮点释放  浮2                  ∥将与ST(i)相对应的标志位设置为空，即TAG(i)←11B FFREE ST(i)
+浮0--                          ∥将FPU的栈顶指针值减1 FDECSTP
+浮0++                          ∥将FPU的栈顶指针值增1 FINCSTP
+浮0-                           ∥改变ST0符号位 FCHS
+浮0 cos                        ∥ST0 余弦运算 FCOS
+浮0 tan                        ∥正切函数Tan，ST0 = tangent(ST0) 执行一次压栈1.0的操作 FPTAN
+浮0 ≈                         ∥取整 ST0 = Round(ST0) FRNDINT
+浮0 sin                        ∥正弦函数Sin ST0 = sine(ST0) FSIN
+浮0 sincos                     ∥SinCos函数 ST0 = sine(ST0) PUSH cosine(ST0) FSINCOS
+浮0 √                         ∥求平方根 ST0 = SQRT(ST0) FSQRT
+
+}
+
+︸ ∥代码段结束

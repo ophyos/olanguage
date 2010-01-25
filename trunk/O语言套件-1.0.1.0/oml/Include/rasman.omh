@@ -1,0 +1,7 @@
+引用段
+{
+函数 RasSecurityDialogGetInfo(整数32,整数32)=>整数32;
+函数 RasSecurityDialogReceive(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSecurityDialogSend(整数32,整数32,整数32)=>整数32;
+
+}

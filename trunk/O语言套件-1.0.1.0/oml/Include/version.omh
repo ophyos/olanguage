@@ -1,0 +1,22 @@
+引用段
+{
+函数 GetFileVersionInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFileVersionInfoSizeA(整数32,整数32)=>整数32;
+函数 GetFileVersionInfoSizeW(整数32,整数32)=>整数32;
+函数 GetFileVersionInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 VerFindFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerFindFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerInstallFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerInstallFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerQueryValueA(整数32,整数32,整数32,整数32)=>整数32;
+函数 VerQueryValueIndexA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerQueryValueIndexW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 VerQueryValueW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 GetFileVersionInfo  GetFileVersionInfoA
+宏定义 GetFileVersionInfoSize  GetFileVersionInfoSizeA
+宏定义 VerFindFile  VerFindFileA
+宏定义 VerInstallFile  VerInstallFileA
+宏定义 VerQueryValue  VerQueryValueA
+宏定义 VerQueryValueIndex  VerQueryValueIndexA
+}

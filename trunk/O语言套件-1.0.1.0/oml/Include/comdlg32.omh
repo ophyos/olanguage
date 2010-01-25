@@ -1,0 +1,41 @@
+引用段
+{
+函数 ChooseColorA(整数32)=>整数32;
+函数 ChooseColorW(整数32)=>整数32;
+函数 ChooseFontA(整数32)=>整数32;
+函数 ChooseFontW(整数32)=>整数32;
+函数 CommDlgExtendedError()=>整数32;
+函数 FindTextA(整数32)=>整数32;
+函数 FindTextW(整数32)=>整数32;
+函数 FormatCharDlgProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFileTitleA(整数32,整数32,整数32)=>整数32;
+函数 GetFileTitleW(整数32,整数32,整数32)=>整数32;
+函数 获取打开文件名:GetOpenFileNameA(整数32)=>整数32;
+函数 GetOpenFileNameW(整数32)=>整数32;
+函数 获取保存文件名:GetSaveFileNameA(整数32)=>整数32;
+函数 GetSaveFileNameW(整数32)=>整数32;
+函数 LoadAlterBitmap(整数32,整数32,整数32)=>整数32;
+函数 PageSetupDlgA(整数32)=>整数32;
+函数 PageSetupDlgW(整数32)=>整数32;
+函数 PrintDlgA(整数32)=>整数32;
+函数 PrintDlgExA(整数32)=>整数32;
+函数 PrintDlgExW(整数32)=>整数32;
+函数 PrintDlgW(整数32)=>整数32;
+函数 ReplaceTextA(整数32)=>整数32;
+函数 ReplaceTextW(整数32)=>整数32;
+函数 Ssync_ANSI_UNICODE_Struct_For_WOW(整数32,整数32,整数32)=>整数32;
+函数 WantArrows(整数32,整数32,整数32,整数32)=>整数32;
+函数 dwLBSubclass(整数32,整数32,整数32,整数32)=>整数32;
+函数 dwOKSubclass(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 ChooseColor  ChooseColorA
+宏定义 ChooseFont  ChooseFontA
+宏定义 FindText  FindTextA
+宏定义 GetFileTitle  GetFileTitleA
+宏定义 GetOpenFileName  GetOpenFileNameA
+宏定义 GetSaveFileName  GetSaveFileNameA
+宏定义 PageSetupDlg  PageSetupDlgA
+宏定义 PrintDlg  PrintDlgA
+宏定义 PrintDlgEx  PrintDlgExA
+宏定义 ReplaceText  ReplaceTextA
+}

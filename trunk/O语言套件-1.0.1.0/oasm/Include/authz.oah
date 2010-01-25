@@ -1,0 +1,29 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAuthzAccessCheck(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzAddSidsToContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzCachedAccessCheck(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzEnumerateSecurityEventSources(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzFreeAuditEvent(Ë«×Ö)
+¡ÒAuthzFreeContext(Ë«×Ö)
+¡ÒAuthzFreeHandle(Ë«×Ö)
+¡ÒAuthzFreeResourceManager(Ë«×Ö)
+¡ÒAuthzGetInformationFromContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzInitializeContextFromAuthzContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzInitializeContextFromSid(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzInitializeContextFromToken(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C AuthzInitializeObjectAccessAuditEvent(Ë«×Ö, ..)
+¡Ò:C AuthzInitializeObjectAccessAuditEvent2(Ë«×Ö, ..)
+¡ÒAuthzInitializeResourceManager(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzInstallSecurityEventSource(Ë«×Ö,Ë«×Ö)
+¡ÒAuthzOpenObjectAudit(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzRegisterSecurityEventSource(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C AuthzReportSecurityEvent(Ë«×Ö, ..)
+¡ÒAuthzReportSecurityEventFromParams(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAuthzUninstallSecurityEventSource(Ë«×Ö,Ë«×Ö)
+¡ÒAuthzUnregisterSecurityEventSource(Ë«×Ö,Ë«×Ö)
+¡ÒAuthziLogAuditEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

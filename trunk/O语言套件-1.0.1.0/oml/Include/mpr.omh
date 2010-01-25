@@ -1,0 +1,67 @@
+引用段
+{
+函数 MultinetGetConnectionPerformanceA(整数32,整数32)=>整数32;
+函数 MultinetGetConnectionPerformanceW(整数32,整数32)=>整数32;
+函数 WNetAddConnection2A(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetAddConnection2W(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetAddConnection3A(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetAddConnection3W(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetAddConnectionA(整数32,整数32,整数32)=>整数32;
+函数 WNetAddConnectionW(整数32,整数32,整数32)=>整数32;
+函数 WNetCancelConnection2A(整数32,整数32,整数32)=>整数32;
+函数 WNetCancelConnection2W(整数32,整数32,整数32)=>整数32;
+函数 WNetCancelConnectionA(整数32,整数32)=>整数32;
+函数 WNetCancelConnectionW(整数32,整数32)=>整数32;
+函数 WNetCloseEnum(整数32)=>整数32;
+函数 WNetConnectionDialog1A(整数32)=>整数32;
+函数 WNetConnectionDialog1W(整数32)=>整数32;
+函数 WNetConnectionDialog(整数32,整数32)=>整数32;
+函数 WNetDisconnectDialog1A(整数32)=>整数32;
+函数 WNetDisconnectDialog1W(整数32)=>整数32;
+函数 WNetDisconnectDialog(整数32,整数32)=>整数32;
+函数 WNetEnumResourceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetEnumResourceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetConnectionA(整数32,整数32,整数32)=>整数32;
+函数 WNetGetConnectionW(整数32,整数32,整数32)=>整数32;
+函数 WNetGetLastErrorA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetLastErrorW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetNetworkInformationA(整数32,整数32)=>整数32;
+函数 WNetGetNetworkInformationW(整数32,整数32)=>整数32;
+函数 WNetGetProviderNameA(整数32,整数32,整数32)=>整数32;
+函数 WNetGetProviderNameW(整数32,整数32,整数32)=>整数32;
+函数 WNetGetResourceInformationA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetResourceInformationW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetResourceParentA(整数32,整数32,整数32)=>整数32;
+函数 WNetGetResourceParentW(整数32,整数32,整数32)=>整数32;
+函数 WNetGetUniversalNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetUniversalNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetGetUserA(整数32,整数32,整数32)=>整数32;
+函数 WNetGetUserW(整数32,整数32,整数32)=>整数32;
+函数 WNetOpenEnumA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetOpenEnumW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetSetLastErrorA(整数32,整数32,整数32)=>整数32;
+函数 WNetSetLastErrorW(整数32,整数32,整数32)=>整数32;
+函数 WNetUseConnectionA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WNetUseConnectionW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 MultinetGetConnectionPerformance  MultinetGetConnectionPerformanceA
+宏定义 WNetAddConnection2  WNetAddConnection2A
+宏定义 WNetAddConnection3  WNetAddConnection3A
+宏定义 WNetAddConnection  WNetAddConnectionA
+宏定义 WNetCancelConnection2  WNetCancelConnection2A
+宏定义 WNetCancelConnection  WNetCancelConnectionA
+宏定义 WNetConnectionDialog1  WNetConnectionDialog1A
+宏定义 WNetDisconnectDialog1  WNetDisconnectDialog1A
+宏定义 WNetEnumResource  WNetEnumResourceA
+宏定义 WNetGetConnection  WNetGetConnectionA
+宏定义 WNetGetLastError  WNetGetLastErrorA
+宏定义 WNetGetNetworkInformation  WNetGetNetworkInformationA
+宏定义 WNetGetProviderName  WNetGetProviderNameA
+宏定义 WNetGetResourceInformation  WNetGetResourceInformationA
+宏定义 WNetGetResourceParent  WNetGetResourceParentA
+宏定义 WNetGetUniversalName  WNetGetUniversalNameA
+宏定义 WNetGetUser  WNetGetUserA
+宏定义 WNetOpenEnum  WNetOpenEnumA
+宏定义 WNetSetLastError  WNetSetLastErrorA
+宏定义 WNetUseConnection  WNetUseConnectionA
+}

@@ -1,0 +1,26 @@
+
+引用段
+{ 
+
+函数 微调_设置位置:Spin_SetPosition(地址 pSpin,整数32 pos);
+函数 微调_获取位置:Spin_GetPosition(地址 pSpin)=>整数32;
+函数 Spin_SetBase(地址 pSpin,整数32 base);
+函数 Spin_GetBase(地址 pSpin)=>整数32;
+函数 Spin_SetBuddy(地址 pSpin,地址 buddy);
+函数 Spin_GetBuddy(地址 pSpin)=>地址;
+
+//设置控件的最小、最大调节范围
+函数 微调_设置范围:Spin_SetRange(地址 pSpin,整数32 min, 整数32 max);
+//获取控件的最小调节范围
+函数 微调_获取最小范围:Spin_GetRangeMin(地址 pSpin)=>整数32;
+//获取控件的最大调节范围
+函数 微调_获取最大范围:Spin_GetRangeMax(地址 pSpin)=>整数32;	
+//获取控件的最小、最大调节范围
+函数 微调_获取范围:Spin_GetRange(地址 pSpin,地址 min, 地址 max);
+
+函数 微调_销毁控件:Spin_DestroyControl(地址 pSpin);	
+函数 微调_获取类:Spin_GetClass(地址 pSpin)=>地址;
+函数 微调_设置标题:Spin_SetCaption(地址 pSpin,地址 string);
+函数 微调_获取标题:Spin_GetCaption(地址 pSpin)=>地址;
+
+} 

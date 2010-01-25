@@ -1,0 +1,12 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫MigrateRegisteredSTIAppsForWIAEvents(双字,双字,双字,双字)
+∫RegSTIforWia(双字,双字,双字,双字)
+∫StiCreateInstanceA(双字,双字,双字,双字)
+∵StiCreateInstance  StiCreateInstanceA
+
+∫StiCreateInstanceW(双字,双字,双字,双字)
+
+︾

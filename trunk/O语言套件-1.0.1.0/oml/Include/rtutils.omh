@@ -1,0 +1,66 @@
+引用段
+{
+函数 LogErrorA(整数32,整数32,整数32,整数32)=>整数32;
+函数 LogErrorW(整数32,整数32,整数32,整数32)=>整数32;
+函数 LogEventA(整数32,整数32,整数32,整数32)=>整数32;
+函数 LogEventW(整数32,整数32,整数32,整数32)=>整数32;
+函数 MprSetupProtocolEnum(整数32,整数32,整数32)=>整数32;
+函数 MprSetupProtocolFree(整数32)=>整数32;
+函数 QueueWorkItem(整数32,整数32,整数32)=>整数32;
+函数 RouterAssert(整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterGetErrorStringA(整数32,整数32)=>整数32;
+函数 RouterGetErrorStringW(整数32,整数32)=>整数32;
+函数 RouterLogDeregisterA(整数32)=>整数32;
+函数 RouterLogDeregisterW(整数32)=>整数32;
+函数 RouterLogEventA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogEventDataA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogEventDataW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 RouterLogEventExA(整数32, ..)=>整数32;
+函数 C调用 RouterLogEventExW(整数32, ..)=>整数32;
+函数 RouterLogEventStringA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogEventStringW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogEventValistExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogEventValistExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogEventW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RouterLogRegisterA(整数32)=>整数32;
+函数 RouterLogRegisterW(整数32)=>整数32;
+函数 SetIoCompletionProc(整数32,整数32)=>整数32;
+函数 TraceDeregisterA(整数32)=>整数32;
+函数 TraceDeregisterExA(整数32,整数32)=>整数32;
+函数 TraceDeregisterExW(整数32,整数32)=>整数32;
+函数 TraceDeregisterW(整数32)=>整数32;
+函数 TraceDumpExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TraceDumpExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TraceGetConsoleA(整数32,整数32)=>整数32;
+函数 TraceGetConsoleW(整数32,整数32)=>整数32;
+函数 C调用 TracePrintfA(整数32, ..)=>整数32;
+函数 C调用 TracePrintfExA(整数32, ..)=>整数32;
+函数 C调用 TracePrintfExW(整数32, ..)=>整数32;
+函数 C调用 TracePrintfW(整数32, ..)=>整数32;
+函数 TracePutsExA(整数32,整数32,整数32)=>整数32;
+函数 TracePutsExW(整数32,整数32,整数32)=>整数32;
+函数 TraceRegisterExA(整数32,整数32)=>整数32;
+函数 TraceRegisterExW(整数32,整数32)=>整数32;
+函数 TraceVprintfExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 TraceVprintfExW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 LogError  LogErrorA
+宏定义 LogEvent  LogEventA
+宏定义 RouterGetErrorString  RouterGetErrorStringA
+宏定义 RouterLogDeregister  RouterLogDeregisterA
+宏定义 RouterLogEvent  RouterLogEventA
+宏定义 RouterLogEventData  RouterLogEventDataA
+宏定义 RouterLogEventEx  RouterLogEventExA
+宏定义 RouterLogEventString  RouterLogEventStringA
+宏定义 RouterLogEventValistEx  RouterLogEventValistExA
+宏定义 RouterLogRegister  RouterLogRegisterA
+宏定义 TraceDeregister  TraceDeregisterA
+宏定义 TraceDeregisterEx  TraceDeregisterExA
+宏定义 TraceDumpEx  TraceDumpExA
+宏定义 TraceGetConsole  TraceGetConsoleA
+宏定义 TracePrintf  TracePrintfA
+宏定义 TracePrintfEx  TracePrintfExA
+宏定义 TracePutsEx  TracePutsExA
+宏定义 TraceRegisterEx  TraceRegisterExA
+宏定义 TraceVprintfEx  TraceVprintfExA
+}

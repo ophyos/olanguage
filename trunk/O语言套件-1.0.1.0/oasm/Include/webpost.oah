@@ -1,0 +1,38 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒWpBindToSiteA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWpBindToSite  WpBindToSiteA
+
+¡ÒWpBindToSiteW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWpCreateSiteA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWpCreateSite  WpCreateSiteA
+
+¡ÒWpCreateSiteW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWpDeleteSiteA(Ë«×Ö)
+¡ßWpDeleteSite  WpDeleteSiteA
+
+¡ÒWpDeleteSiteW(Ë«×Ö)
+¡ÒWpDoesSiteExistA(Ë«×Ö,Ë«×Ö)
+¡ßWpDoesSiteExist  WpDoesSiteExistA
+
+¡ÒWpDoesSiteExistW(Ë«×Ö,Ë«×Ö)
+¡ÒWpEnumProvidersA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWpEnumProviders  WpEnumProvidersA
+
+¡ÒWpEnumProvidersW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWpGetErrorStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWpGetErrorString  WpGetErrorStringA
+
+¡ÒWpGetErrorStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWpListSitesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWpListSites  WpListSitesA
+
+¡ÒWpListSitesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWpPostA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWpPost  WpPostA
+
+¡ÒWpPostW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

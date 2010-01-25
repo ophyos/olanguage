@@ -1,0 +1,292 @@
+引用段
+{
+函数 GetTapi16CallbackMsg(整数32,整数32)=>整数32;
+函数 LAddrParamsInited(整数32)=>整数32;
+函数 LOpenDialAsst(整数32,整数32,整数32,整数32)=>整数32;
+函数 LocWizardDlgProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 MMCAddProvider(整数32,整数32,整数32,整数32)=>整数32;
+函数 MMCConfigProvider(整数32,整数32,整数32)=>整数32;
+函数 MMCGetAvailableProviders(整数32,整数32)=>整数32;
+函数 MMCGetDeviceFlags(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MMCGetLineInfo(整数32,整数32)=>整数32;
+函数 MMCGetLineStatus(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MMCGetPhoneInfo(整数32,整数32)=>整数32;
+函数 MMCGetPhoneStatus(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MMCGetProviderList(整数32,整数32)=>整数32;
+函数 MMCGetServerConfig(整数32,整数32)=>整数32;
+函数 MMCInitialize(整数32,整数32,整数32,整数32)=>整数32;
+函数 MMCRemoveProvider(整数32,整数32,整数32)=>整数32;
+函数 MMCSetLineInfo(整数32,整数32)=>整数32;
+函数 MMCSetPhoneInfo(整数32,整数32)=>整数32;
+函数 MMCSetServerConfig(整数32,整数32)=>整数32;
+函数 MMCShutdown(整数32)=>整数32;
+函数 NonAsyncEventThread()=>整数32;
+函数 TAPIWndProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 TUISPIDLLCallback(整数32,整数32,整数32,整数32)=>整数32;
+函数 internalConfig(整数32,整数32,整数32,整数32)=>整数32;
+函数 internalCreateDefLocation(整数32)=>整数32;
+函数 internalNewLocationW(整数32)=>整数32;
+函数 internalPerformance(整数32)=>整数32;
+函数 internalRemoveLocation(整数32)=>整数32;
+函数 internalRenameLocationW(整数32,整数32)=>整数32;
+函数 lineAccept(整数32,整数32,整数32)=>整数32;
+函数 lineAddProviderA(整数32,整数32,整数32)=>整数32;
+函数 lineAddProviderW(整数32,整数32,整数32)=>整数32;
+函数 lineAddToConference(整数32,整数32)=>整数32;
+函数 lineAgentSpecific(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineAnswer(整数32,整数32,整数32)=>整数32;
+函数 lineBlindTransferA(整数32,整数32,整数32)=>整数32;
+函数 lineBlindTransferW(整数32,整数32,整数32)=>整数32;
+函数 lineClose(整数32)=>整数32;
+函数 lineCompleteCall(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineCompleteTransfer(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineConfigDialogA(整数32,整数32,整数32)=>整数32;
+函数 lineConfigDialogEditA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineConfigDialogEditW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineConfigDialogW(整数32,整数32,整数32)=>整数32;
+函数 lineConfigProvider(整数32,整数32)=>整数32;
+函数 lineCreateAgentA(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineCreateAgentSessionA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineCreateAgentSessionW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineCreateAgentW(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineDeallocateCall(整数32)=>整数32;
+函数 lineDevSpecific(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineDevSpecificFeature(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineDialA(整数32,整数32,整数32)=>整数32;
+函数 lineDialW(整数32,整数32,整数32)=>整数32;
+函数 lineDrop(整数32,整数32,整数32)=>整数32;
+函数 lineForwardA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineForwardW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGatherDigitsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGatherDigitsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGenerateDigitsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGenerateDigitsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGenerateTone(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAddressCapsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAddressCapsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAddressIDA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAddressIDW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAddressStatusA(整数32,整数32,整数32)=>整数32;
+函数 lineGetAddressStatusW(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentActivityListA(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentActivityListW(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentCapsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentCapsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentGroupListA(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentGroupListW(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentInfo(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentSessionInfo(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentSessionList(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentStatusA(整数32,整数32,整数32)=>整数32;
+函数 lineGetAgentStatusW(整数32,整数32,整数32)=>整数32;
+函数 lineGetAppPriorityA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetAppPriorityW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetCallInfoA(整数32,整数32)=>整数32;
+函数 lineGetCallInfoW(整数32,整数32)=>整数32;
+函数 lineGetCallStatus(整数32,整数32)=>整数32;
+函数 lineGetConfRelatedCalls(整数32,整数32)=>整数32;
+函数 lineGetCountryA(整数32,整数32,整数32)=>整数32;
+函数 lineGetCountryW(整数32,整数32,整数32)=>整数32;
+函数 lineGetDevCapsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetDevCapsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetDevConfigA(整数32,整数32,整数32)=>整数32;
+函数 lineGetDevConfigW(整数32,整数32,整数32)=>整数32;
+函数 lineGetGroupListA(整数32,整数32)=>整数32;
+函数 lineGetGroupListW(整数32,整数32)=>整数32;
+函数 lineGetIDA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetIDW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetIconA(整数32,整数32,整数32)=>整数32;
+函数 lineGetIconW(整数32,整数32,整数32)=>整数32;
+函数 lineGetLineDevStatusA(整数32,整数32)=>整数32;
+函数 lineGetLineDevStatusW(整数32,整数32)=>整数32;
+函数 lineGetMessage(整数32,整数32,整数32)=>整数32;
+函数 lineGetNewCalls(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetNumRings(整数32,整数32,整数32)=>整数32;
+函数 lineGetProviderListA(整数32,整数32)=>整数32;
+函数 lineGetProviderListW(整数32,整数32)=>整数32;
+函数 lineGetProxyStatus(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineGetQueueInfo(整数32,整数32,整数32)=>整数32;
+函数 lineGetQueueListA(整数32,整数32,整数32)=>整数32;
+函数 lineGetQueueListW(整数32,整数32,整数32)=>整数32;
+函数 lineGetRequestA(整数32,整数32,整数32)=>整数32;
+函数 lineGetRequestW(整数32,整数32,整数32)=>整数32;
+函数 lineGetStatusMessages(整数32,整数32,整数32)=>整数32;
+函数 lineGetTranslateCapsA(整数32,整数32,整数32)=>整数32;
+函数 lineGetTranslateCapsW(整数32,整数32,整数32)=>整数32;
+函数 lineHandoffA(整数32,整数32,整数32)=>整数32;
+函数 lineHandoffW(整数32,整数32,整数32)=>整数32;
+函数 lineHold(整数32)=>整数32;
+函数 lineInitialize(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineInitializeExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineInitializeExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineMakeCallA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineMakeCallW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineMonitorDigits(整数32,整数32)=>整数32;
+函数 lineMonitorMedia(整数32,整数32)=>整数32;
+函数 lineMonitorTones(整数32,整数32,整数32)=>整数32;
+函数 lineNegotiateAPIVersion(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineNegotiateExtVersion(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineOpenA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineOpenW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineParkA(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineParkW(整数32,整数32,整数32,整数32)=>整数32;
+函数 linePickupA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 linePickupW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 linePrepareAddToConferenceA(整数32,整数32,整数32)=>整数32;
+函数 linePrepareAddToConferenceW(整数32,整数32,整数32)=>整数32;
+函数 lineProxyMessage(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineProxyResponse(整数32,整数32,整数32)=>整数32;
+函数 lineRedirectA(整数32,整数32,整数32)=>整数32;
+函数 lineRedirectW(整数32,整数32,整数32)=>整数32;
+函数 lineRegisterRequestRecipient(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineReleaseUserUserInfo(整数32)=>整数32;
+函数 lineRemoveFromConference(整数32)=>整数32;
+函数 lineRemoveProvider(整数32,整数32)=>整数32;
+函数 lineSecureCall(整数32)=>整数32;
+函数 lineSendUserUserInfo(整数32,整数32,整数32)=>整数32;
+函数 lineSetAgentActivity(整数32,整数32,整数32)=>整数32;
+函数 lineSetAgentGroup(整数32,整数32,整数32)=>整数32;
+函数 lineSetAgentMeasurementPeriod(整数32,整数32,整数32)=>整数32;
+函数 lineSetAgentSessionState(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetAgentState(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetAgentStateEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetAppPriorityA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetAppPriorityW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetAppSpecific(整数32,整数32)=>整数32;
+函数 lineSetCallData(整数32,整数32,整数32)=>整数32;
+函数 lineSetCallParams(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetCallPrivilege(整数32,整数32)=>整数32;
+函数 lineSetCallQualityOfService(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetCallTreatment(整数32,整数32)=>整数32;
+函数 lineSetCurrentLocation(整数32,整数32)=>整数32;
+函数 lineSetDevConfigA(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetDevConfigW(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetLineDevStatus(整数32,整数32,整数32)=>整数32;
+函数 lineSetMediaControl(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetMediaMode(整数32,整数32)=>整数32;
+函数 lineSetNumRings(整数32,整数32,整数32)=>整数32;
+函数 lineSetQueueMeasurementPeriod(整数32,整数32,整数32)=>整数32;
+函数 lineSetStatusMessages(整数32,整数32,整数32)=>整数32;
+函数 lineSetTerminal(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetTollListA(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetTollListW(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetupConferenceA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetupConferenceW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineSetupTransferA(整数32,整数32,整数32)=>整数32;
+函数 lineSetupTransferW(整数32,整数32,整数32)=>整数32;
+函数 lineShutdown(整数32)=>整数32;
+函数 lineSwapHold(整数32,整数32)=>整数32;
+函数 lineTranslateAddressA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineTranslateAddressW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineTranslateDialogA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineTranslateDialogW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 lineUncompleteCall(整数32,整数32)=>整数32;
+函数 lineUnhold(整数32)=>整数32;
+函数 lineUnparkA(整数32,整数32,整数32,整数32)=>整数32;
+函数 lineUnparkW(整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneClose(整数32)=>整数32;
+函数 phoneConfigDialogA(整数32,整数32,整数32)=>整数32;
+函数 phoneConfigDialogW(整数32,整数32,整数32)=>整数32;
+函数 phoneDevSpecific(整数32,整数32,整数32)=>整数32;
+函数 phoneGetButtonInfoA(整数32,整数32,整数32)=>整数32;
+函数 phoneGetButtonInfoW(整数32,整数32,整数32)=>整数32;
+函数 phoneGetData(整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneGetDevCapsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneGetDevCapsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneGetDisplay(整数32,整数32)=>整数32;
+函数 phoneGetGain(整数32,整数32,整数32)=>整数32;
+函数 phoneGetHookSwitch(整数32,整数32)=>整数32;
+函数 phoneGetIDA(整数32,整数32,整数32)=>整数32;
+函数 phoneGetIDW(整数32,整数32,整数32)=>整数32;
+函数 phoneGetIconA(整数32,整数32,整数32)=>整数32;
+函数 phoneGetIconW(整数32,整数32,整数32)=>整数32;
+函数 phoneGetLamp(整数32,整数32,整数32)=>整数32;
+函数 phoneGetMessage(整数32,整数32,整数32)=>整数32;
+函数 phoneGetRing(整数32,整数32,整数32)=>整数32;
+函数 phoneGetStatusA(整数32,整数32)=>整数32;
+函数 phoneGetStatusMessages(整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneGetStatusW(整数32,整数32)=>整数32;
+函数 phoneGetVolume(整数32,整数32,整数32)=>整数32;
+函数 phoneInitialize(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneInitializeExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneInitializeExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneNegotiateAPIVersion(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneNegotiateExtVersion(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneOpen(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneSetButtonInfoA(整数32,整数32,整数32)=>整数32;
+函数 phoneSetButtonInfoW(整数32,整数32,整数32)=>整数32;
+函数 phoneSetData(整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneSetDisplay(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneSetGain(整数32,整数32,整数32)=>整数32;
+函数 phoneSetHookSwitch(整数32,整数32,整数32)=>整数32;
+函数 phoneSetLamp(整数32,整数32,整数32)=>整数32;
+函数 phoneSetRing(整数32,整数32,整数32)=>整数32;
+函数 phoneSetStatusMessages(整数32,整数32,整数32,整数32)=>整数32;
+函数 phoneSetVolume(整数32,整数32,整数32)=>整数32;
+函数 phoneShutdown(整数32)=>整数32;
+函数 tapiGetLocationInfoA(整数32,整数32)=>整数32;
+函数 tapiGetLocationInfoW(整数32,整数32)=>整数32;
+函数 tapiRequestDrop(整数32,整数32)=>整数32;
+函数 tapiRequestMakeCallA(整数32,整数32,整数32,整数32)=>整数32;
+函数 tapiRequestMakeCallW(整数32,整数32,整数32,整数32)=>整数32;
+函数 tapiRequestMediaCallA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 tapiRequestMediaCallW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 lineAddProvider  lineAddProviderA
+宏定义 lineBlindTransfer  lineBlindTransferA
+宏定义 lineConfigDialog  lineConfigDialogA
+宏定义 lineConfigDialogEdit  lineConfigDialogEditA
+宏定义 lineCreateAgent  lineCreateAgentA
+宏定义 lineCreateAgentSession  lineCreateAgentSessionA
+宏定义 lineDial  lineDialA
+宏定义 lineForward  lineForwardA
+宏定义 lineGatherDigits  lineGatherDigitsA
+宏定义 lineGenerateDigits  lineGenerateDigitsA
+宏定义 lineGetAddressCaps  lineGetAddressCapsA
+宏定义 lineGetAddressID  lineGetAddressIDA
+宏定义 lineGetAddressStatus  lineGetAddressStatusA
+宏定义 lineGetAgentActivityList  lineGetAgentActivityListA
+宏定义 lineGetAgentCaps  lineGetAgentCapsA
+宏定义 lineGetAgentGroupList  lineGetAgentGroupListA
+宏定义 lineGetAgentStatus  lineGetAgentStatusA
+宏定义 lineGetAppPriority  lineGetAppPriorityA
+宏定义 lineGetCallInfo  lineGetCallInfoA
+宏定义 lineGetCountry  lineGetCountryA
+宏定义 lineGetDevCaps  lineGetDevCapsA
+宏定义 lineGetDevConfig  lineGetDevConfigA
+宏定义 lineGetGroupList  lineGetGroupListA
+宏定义 lineGetID  lineGetIDA
+宏定义 lineGetIcon  lineGetIconA
+宏定义 lineGetLineDevStatus  lineGetLineDevStatusA
+宏定义 lineGetProviderList  lineGetProviderListA
+宏定义 lineGetQueueList  lineGetQueueListA
+宏定义 lineGetRequest  lineGetRequestA
+宏定义 lineGetTranslateCaps  lineGetTranslateCapsA
+宏定义 lineHandoff  lineHandoffA
+宏定义 lineInitializeEx  lineInitializeExA
+宏定义 lineMakeCall  lineMakeCallA
+宏定义 lineOpen  lineOpenA
+宏定义 linePark  lineParkA
+宏定义 linePickup  linePickupA
+宏定义 linePrepareAddToConference  linePrepareAddToConferenceA
+宏定义 lineRedirect  lineRedirectA
+宏定义 lineSetAppPriority  lineSetAppPriorityA
+宏定义 lineSetDevConfig  lineSetDevConfigA
+宏定义 lineSetTollList  lineSetTollListA
+宏定义 lineSetupConference  lineSetupConferenceA
+宏定义 lineSetupTransfer  lineSetupTransferA
+宏定义 lineTranslateAddress  lineTranslateAddressA
+宏定义 lineTranslateDialog  lineTranslateDialogA
+宏定义 lineUnpark  lineUnparkA
+宏定义 phoneConfigDialog  phoneConfigDialogA
+宏定义 phoneGetButtonInfo  phoneGetButtonInfoA
+宏定义 phoneGetDevCaps  phoneGetDevCapsA
+宏定义 phoneGetID  phoneGetIDA
+宏定义 phoneGetIcon  phoneGetIconA
+宏定义 phoneGetStatus  phoneGetStatusA
+宏定义 phoneInitializeEx  phoneInitializeExA
+宏定义 phoneSetButtonInfo  phoneSetButtonInfoA
+宏定义 tapiGetLocationInfo  tapiGetLocationInfoA
+宏定义 tapiRequestMakeCall  tapiRequestMakeCallA
+宏定义 tapiRequestMediaCall  tapiRequestMediaCallA
+}

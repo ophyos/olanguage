@@ -1,0 +1,18 @@
+引用段
+{
+函数 CredUICmdLinePromptForCredentialsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUICmdLinePromptForCredentialsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUIConfirmCredentialsA(整数32,整数32)=>整数32;
+函数 CredUIConfirmCredentialsW(整数32,整数32)=>整数32;
+函数 CredUIParseUserNameA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUIParseUserNameW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUIPromptForCredentialsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUIPromptForCredentialsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUIReadSSOCredW(整数32,整数32)=>整数32;
+函数 CredUIStoreSSOCredW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 CredUICmdLinePromptForCredentials  CredUICmdLinePromptForCredentialsA
+宏定义 CredUIConfirmCredentials  CredUIConfirmCredentialsA
+宏定义 CredUIParseUserName  CredUIParseUserNameA
+宏定义 CredUIPromptForCredentials  CredUIPromptForCredentialsA
+}

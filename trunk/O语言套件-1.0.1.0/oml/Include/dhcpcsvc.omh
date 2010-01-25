@@ -1,0 +1,41 @@
+引用段
+{
+函数 DhcpAcquireParameters(整数32)=>整数32;
+函数 DhcpAcquireParametersByBroadcast(整数32)=>整数32;
+函数 DhcpCApiCleanup()=>整数32;
+函数 DhcpCApiInitialize(整数32)=>整数32;
+函数 DhcpDeRegisterOptions(整数32)=>整数32;
+函数 DhcpDeRegisterParamChange(整数32,整数32,整数32)=>整数32;
+函数 DhcpDelPersistentRequestParams(整数32,整数32)=>整数32;
+函数 DhcpEnumClasses(整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpFallbackRefreshParams(整数32)=>整数32;
+函数 DhcpHandlePnPEvent(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpLeaseIpAddress(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpLeaseIpAddressEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpNotifyConfigChange(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpNotifyConfigChangeEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpNotifyMediaReconnected(整数32)=>整数32;
+函数 DhcpOpenGlobalEvent()=>整数32;
+函数 DhcpPersistentRequestParams(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpRegisterOptions(整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpRegisterParamChange(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpReleaseIpAddressLease(整数32,整数32)=>整数32;
+函数 DhcpReleaseIpAddressLeaseEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpReleaseParameters(整数32)=>整数32;
+函数 DhcpRemoveDNSRegistrations()=>整数32;
+函数 DhcpRenewIpAddressLease(整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpRenewIpAddressLeaseEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpRequestOptions(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpRequestParams(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DhcpStaticRefreshParams(整数32)=>整数32;
+函数 DhcpUndoRequestParams(整数32,整数32,整数32,整数32)=>整数32;
+函数 McastApiCleanup()=>整数32;
+函数 McastApiStartup(整数32)=>整数32;
+函数 McastEnumerateScopes(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 McastGenUID(整数32)=>整数32;
+函数 McastReleaseAddress(整数32,整数32,整数32)=>整数32;
+函数 McastRenewAddress(整数32,整数32,整数32,整数32)=>整数32;
+函数 McastRequestAddress(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ServiceMain(整数32,整数32)=>整数32;
+
+}

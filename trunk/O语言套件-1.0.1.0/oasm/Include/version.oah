@@ -1,0 +1,30 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒGetFileVersionInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFileVersionInfo  GetFileVersionInfoA
+
+¡ÒGetFileVersionInfoSizeA(Ë«×Ö,Ë«×Ö)
+¡ßGetFileVersionInfoSize  GetFileVersionInfoSizeA
+
+¡ÒGetFileVersionInfoSizeW(Ë«×Ö,Ë«×Ö)
+¡ÒGetFileVersionInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerFindFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßVerFindFile  VerFindFileA
+
+¡ÒVerFindFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerInstallFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßVerInstallFile  VerInstallFileA
+
+¡ÒVerInstallFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerQueryValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßVerQueryValue  VerQueryValueA
+
+¡ÒVerQueryValueIndexA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßVerQueryValueIndex  VerQueryValueIndexA
+
+¡ÒVerQueryValueIndexW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerQueryValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

@@ -1,0 +1,74 @@
+引用段
+{
+函数 AVIBuildFilterA(整数32,整数32,整数32)=>整数32;
+函数 AVIBuildFilterW(整数32,整数32,整数32)=>整数32;
+函数 AVIClearClipboard()=>整数32;
+函数 AVIFileAddRef(整数32)=>整数32;
+函数 AVIFileCreateStreamA(整数32,整数32,整数32)=>整数32;
+函数 AVIFileCreateStreamW(整数32,整数32,整数32)=>整数32;
+函数 AVIFileEndRecord(整数32)=>整数32;
+函数 AVIFileExit()=>整数32;
+函数 AVIFileGetStream(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIFileInfoA(整数32,整数32,整数32)=>整数32;
+函数 AVIFileInfoW(整数32,整数32,整数32)=>整数32;
+函数 AVIFileInit()=>整数32;
+函数 AVIFileOpenA(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIFileOpenW(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIFileReadData(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIFileRelease(整数32)=>整数32;
+函数 AVIFileWriteData(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIGetFromClipboard(整数32)=>整数32;
+函数 AVIMakeCompressedStream(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIMakeFileFromStreams(整数32,整数32,整数32)=>整数32;
+函数 AVIMakeStreamFromClipboard(整数32,整数32,整数32)=>整数32;
+函数 AVIPutFileOnClipboard(整数32)=>整数32;
+函数 AVISaveOptions(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVISaveOptionsFree(整数32,整数32)=>整数32;
+函数 AVISaveVA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVISaveVW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamAddRef(整数32)=>整数32;
+函数 AVIStreamBeginStreaming(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamCreate(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamEndStreaming(整数32)=>整数32;
+函数 AVIStreamFindSample(整数32,整数32,整数32)=>整数32;
+函数 AVIStreamGetFrame(整数32,整数32)=>整数32;
+函数 AVIStreamGetFrameClose(整数32)=>整数32;
+函数 AVIStreamGetFrameOpen(整数32,整数32)=>整数32;
+函数 AVIStreamInfoA(整数32,整数32,整数32)=>整数32;
+函数 AVIStreamInfoW(整数32,整数32,整数32)=>整数32;
+函数 AVIStreamLength(整数32)=>整数32;
+函数 AVIStreamOpenFromFileA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamOpenFromFileW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamRead(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamReadData(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamReadFormat(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamRelease(整数32)=>整数32;
+函数 AVIStreamSampleToTime(整数32,整数32)=>整数32;
+函数 AVIStreamSetFormat(整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamStart(整数32)=>整数32;
+函数 AVIStreamTimeToSample(整数32,整数32)=>整数32;
+函数 AVIStreamWrite(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AVIStreamWriteData(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateEditableStream(整数32,整数32)=>整数32;
+函数 EditStreamClone(整数32,整数32)=>整数32;
+函数 EditStreamCopy(整数32,整数32,整数32,整数32)=>整数32;
+函数 EditStreamCut(整数32,整数32,整数32,整数32)=>整数32;
+函数 EditStreamPaste(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EditStreamSetInfoA(整数32,整数32,整数32)=>整数32;
+函数 EditStreamSetInfoW(整数32,整数32,整数32)=>整数32;
+函数 EditStreamSetNameA(整数32,整数32)=>整数32;
+函数 EditStreamSetNameW(整数32,整数32)=>整数32;
+函数 C调用 _AVISaveA(整数32, ..)=>整数32;
+函数 C调用 _AVISaveW(整数32, ..)=>整数32;
+
+宏定义 AVIBuildFilter  AVIBuildFilterA
+宏定义 AVIFileCreateStream  AVIFileCreateStreamA
+宏定义 AVIFileInfo  AVIFileInfoA
+宏定义 AVIFileOpen  AVIFileOpenA
+宏定义 AVISaveV  AVISaveVA
+宏定义 AVIStreamInfo  AVIStreamInfoA
+宏定义 AVIStreamOpenFromFile  AVIStreamOpenFromFileA
+宏定义 EditStreamSetInfo  EditStreamSetInfoA
+宏定义 EditStreamSetName  EditStreamSetNameA
+宏定义 _AVISave  _AVISaveA
+}

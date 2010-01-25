@@ -1,0 +1,6 @@
+//O汇编头文件
+
+.引用段
+{
+    函数 创建URL下载窗口:CreateURLDownloadWnd(双字 h对话框句柄)
+}

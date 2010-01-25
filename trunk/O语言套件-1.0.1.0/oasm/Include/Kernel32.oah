@@ -1,0 +1,1221 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒActivateActCtx(Ë«×Ö,Ë«×Ö)
+¡ÒAddAtomA(Ë«×Ö)
+¡ßAddAtom  AddAtomA
+
+¡ÒAddAtomW(Ë«×Ö)
+¡ÒAddConsoleAliasA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddConsoleAlias  AddConsoleAliasA
+
+¡ÒAddConsoleAliasW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddLocalAlternateComputerNameA(Ë«×Ö,Ë«×Ö)
+¡ßAddLocalAlternateComputerName  AddLocalAlternateComputerNameA
+
+¡ÒAddLocalAlternateComputerNameW(Ë«×Ö,Ë«×Ö)
+¡ÒAddRefActCtx(Ë«×Ö)
+¡ÒAddVectoredContinueHandler(Ë«×Ö,Ë«×Ö)
+¡ÒAddVectoredExceptionHandler(Ë«×Ö,Ë«×Ö)
+¡ÒAllocConsole()
+¡ÒAllocateUserPhysicalPages(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAreFileApisANSI()
+¡ÒAssignProcessToJobObject(Ë«×Ö,Ë«×Ö)
+¡ÒAttachConsole(Ë«×Ö)
+¡ÒBackupRead(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBackupSeek(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBackupWrite(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBeep(Ë«×Ö,Ë«×Ö)
+¡ÒBeginUpdateResourceA(Ë«×Ö,Ë«×Ö)
+¡ßBeginUpdateResource  BeginUpdateResourceA
+
+¡ÒBeginUpdateResourceW(Ë«×Ö,Ë«×Ö)
+¡ÒBindIoCompletionCallback(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildCommDCBA(Ë«×Ö,Ë«×Ö)
+¡ßBuildCommDCB  BuildCommDCBA
+
+¡ÒBuildCommDCBAndTimeoutsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBuildCommDCBAndTimeouts  BuildCommDCBAndTimeoutsA
+
+¡ÒBuildCommDCBAndTimeoutsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildCommDCBW(Ë«×Ö,Ë«×Ö)
+¡ÒCallNamedPipeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCallNamedPipe  CallNamedPipeA
+
+¡ÒCallNamedPipeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCancelDeviceWakeupRequest(Ë«×Ö)
+¡ÒCancelIo(Ë«×Ö)
+¡ÒCancelTimerQueueTimer(Ë«×Ö,Ë«×Ö)
+¡ÒCancelWaitableTimer(Ë«×Ö)
+¡ÒChangeTimerQueueTimer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckNameLegalDOS8Dot3A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCheckNameLegalDOS8Dot3  CheckNameLegalDOS8Dot3A
+
+¡ÒCheckNameLegalDOS8Dot3W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckRemoteDebuggerPresent(Ë«×Ö,Ë«×Ö)
+¡ÒClearCommBreak(Ë«×Ö)
+¡ÒClearCommError(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¹Ø±Õ¾ä±ú:CloseHandle(Ë«×Ö)
+¡ÒCommConfigDialogA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCommConfigDialog  CommConfigDialogA
+
+¡ÒCommConfigDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCompareFileTime(Ë«×Ö,Ë«×Ö)
+¡ÒCompareStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCompareString  CompareStringA
+
+¡ÒCompareStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConnectNamedPipe(Ë«×Ö,Ë«×Ö)
+¡ÒContinueDebugEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertDefaultLocale(Ë«×Ö)
+¡ÒConvertFiberToThread()
+¡ÒConvertThreadToFiber(Ë«×Ö)
+¡ÒConvertThreadToFiberEx(Ë«×Ö,Ë«×Ö)
+¡ÒCopyFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCopyFile  CopyFileA
+
+¡ÒCopyFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCopyFileEx  CopyFileExA
+
+¡ÒCopyFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCopyFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateActCtxA(Ë«×Ö)
+¡ßCreateActCtx  CreateActCtxA
+
+¡ÒCreateActCtxW(Ë«×Ö)
+¡ÒCreateConsoleScreenBuffer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßCreateDirectory  CreateDirectoryA
+
+¡ÒCreateDirectoryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateDirectoryEx  CreateDirectoryExA
+
+¡ÒCreateDirectoryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDirectoryW(Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨ÊÂ¼þ:CreateEventA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateEvent  CreateEventA
+
+¡ÒCreateEventW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateFiber(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateFiberEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨ÎÄ¼þ:CreateFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateFile  CreateFileA
+
+¡ÒCreateFileMappingA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateFileMapping  CreateFileMappingA
+
+¡ÒCreateFileMappingW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateHardLinkA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateHardLink  CreateHardLinkA
+
+¡ÒCreateHardLinkW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateIoCompletionPort(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateJobObjectA(Ë«×Ö,Ë«×Ö)
+¡ßCreateJobObject  CreateJobObjectA
+
+¡ÒCreateJobObjectW(Ë«×Ö,Ë«×Ö)
+¡ÒCreateJobSet(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateMailslotA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateMailslot  CreateMailslotA
+
+¡ÒCreateMailslotW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateMemoryResourceNotification(Ë«×Ö)
+¡ÒCreateMutexA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateMutex  CreateMutexA
+
+¡ÒCreateMutexW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateNamedPipeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateNamedPipe  CreateNamedPipeA
+
+¡ÒCreateNamedPipeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePipe(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateProcessA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateProcess  CreateProcessA
+
+¡ÒCreateProcessW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateRemoteThread(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateSemaphoreA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateSemaphore  CreateSemaphoreA
+
+¡ÒCreateSemaphoreW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateTapePartition(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨Ïß³Ì:CreateThread(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateTimerQueue()
+¡ÒCreateTimerQueueTimer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateToolhelp32Snapshot(Ë«×Ö,Ë«×Ö)
+¡ÒCreateWaitableTimerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateWaitableTimer  CreateWaitableTimerA
+
+¡ÒCreateWaitableTimerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeactivateActCtx(Ë«×Ö,Ë«×Ö)
+¡ÒDebugActiveProcess(Ë«×Ö)
+¡ÒDebugActiveProcessStop(Ë«×Ö)
+¡ÒDebugBreak()
+¡ÒDebugBreakProcess(Ë«×Ö)
+¡ÒDebugSetProcessKillOnExit(Ë«×Ö)
+¡ÒDecodePointer(Ë«×Ö)
+¡ÒDecodeSystemPointer(Ë«×Ö)
+¡ÒDefineDosDeviceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDefineDosDevice  DefineDosDeviceA
+
+¡ÒDefineDosDeviceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteAtom(Ë«×Ö)
+¡ÒDeleteCriticalSection(Ë«×Ö)
+¡ÒDeleteFiber(Ë«×Ö)
+¡ÒDeleteFileA(Ë«×Ö)
+¡ßDeleteFile  DeleteFileA
+
+¡ÒDeleteFileW(Ë«×Ö)
+¡ÒDeleteTimerQueue(Ë«×Ö)
+¡ÒDeleteTimerQueueEx(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteTimerQueueTimer(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteVolumeMountPointA(Ë«×Ö)
+¡ßDeleteVolumeMountPoint  DeleteVolumeMountPointA
+
+¡ÒDeleteVolumeMountPointW(Ë«×Ö)
+¡ÒDeviceIoControl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDisableThreadLibraryCalls(Ë«×Ö)
+¡ÒDisconnectNamedPipe(Ë«×Ö)
+¡ÒDnsHostnameToComputerNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDnsHostnameToComputerName  DnsHostnameToComputerNameA
+
+¡ÒDnsHostnameToComputerNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDosDateTimeToFileTime(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDuplicateHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEncodePointer(Ë«×Ö)
+¡ÒEncodeSystemPointer(Ë«×Ö)
+¡ÒEndUpdateResourceA(Ë«×Ö,Ë«×Ö)
+¡ßEndUpdateResource  EndUpdateResourceA
+
+¡ÒEndUpdateResourceW(Ë«×Ö,Ë«×Ö)
+¡ÒEnterCriticalSection(Ë«×Ö)
+¡ÒEnumCalendarInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumCalendarInfo  EnumCalendarInfoA
+
+¡ÒEnumCalendarInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumCalendarInfoEx  EnumCalendarInfoExA
+
+¡ÒEnumCalendarInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumCalendarInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumDateFormatsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDateFormats  EnumDateFormatsA
+
+¡ÒEnumDateFormatsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDateFormatsEx  EnumDateFormatsExA
+
+¡ÒEnumDateFormatsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumDateFormatsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumLanguageGroupLocalesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumLanguageGroupLocales  EnumLanguageGroupLocalesA
+
+¡ÒEnumLanguageGroupLocalesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumResourceLanguagesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumResourceLanguages  EnumResourceLanguagesA
+
+¡ÒEnumResourceLanguagesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumResourceNamesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumResourceNames  EnumResourceNamesA
+
+¡ÒEnumResourceNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumResourceTypesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumResourceTypes  EnumResourceTypesA
+
+¡ÒEnumResourceTypesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumSystemCodePagesA(Ë«×Ö,Ë«×Ö)
+¡ßEnumSystemCodePages  EnumSystemCodePagesA
+
+¡ÒEnumSystemCodePagesW(Ë«×Ö,Ë«×Ö)
+¡ÒEnumSystemFirmwareTables(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumSystemGeoID(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumSystemLanguageGroupsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumSystemLanguageGroups  EnumSystemLanguageGroupsA
+
+¡ÒEnumSystemLanguageGroupsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumSystemLocalesA(Ë«×Ö,Ë«×Ö)
+¡ßEnumSystemLocales  EnumSystemLocalesA
+
+¡ÒEnumSystemLocalesW(Ë«×Ö,Ë«×Ö)
+¡ÒEnumTimeFormatsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumTimeFormats  EnumTimeFormatsA
+
+¡ÒEnumTimeFormatsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumUILanguagesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumUILanguages  EnumUILanguagesA
+
+¡ÒEnumUILanguagesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumerateLocalComputerNamesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumerateLocalComputerNames  EnumerateLocalComputerNamesA
+
+¡ÒEnumerateLocalComputerNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEraseTape(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEscapeCommFunction(Ë«×Ö,Ë«×Ö)
+¡ÒÍË³ö½ø³Ì:ExitProcess(Ë«×Ö)
+¡ÒExitThread(Ë«×Ö)
+¡ÒExpandEnvironmentStringsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExpandEnvironmentStrings  ExpandEnvironmentStringsA
+
+¡ÒExpandEnvironmentStringsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFatalAppExitA(Ë«×Ö,Ë«×Ö)
+¡ßFatalAppExit  FatalAppExitA
+
+¡ÒFatalAppExitW(Ë«×Ö,Ë«×Ö)
+¡ÒFatalExit(Ë«×Ö)
+¡ÒFileTimeToDosDateTime(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFileTimeToLocalFileTime(Ë«×Ö,Ë«×Ö)
+¡ÒFileTimeToSystemTime(Ë«×Ö,Ë«×Ö)
+¡ÒFillConsoleOutputAttribute(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFillConsoleOutputCharacterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFillConsoleOutputCharacter  FillConsoleOutputCharacterA
+
+¡ÒFillConsoleOutputCharacterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindActCtxSectionGuid(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindActCtxSectionStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindActCtxSectionString  FindActCtxSectionStringA
+
+¡ÒFindActCtxSectionStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindAtomA(Ë«×Ö)
+¡ßFindAtom  FindAtomA
+
+¡ÒFindAtomW(Ë«×Ö)
+¡ÒFindClose(Ë«×Ö)
+¡ÒFindCloseChangeNotification(Ë«×Ö)
+¡ÒFindFirstChangeNotificationA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindFirstChangeNotification  FindFirstChangeNotificationA
+
+¡ÒFindFirstChangeNotificationW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstFileA(Ë«×Ö,Ë«×Ö)
+¡ßFindFirstFile  FindFirstFileA
+
+¡ÒFindFirstFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindFirstFileEx  FindFirstFileExA
+
+¡ÒFindFirstFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstFileW(Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstVolumeA(Ë«×Ö,Ë«×Ö)
+¡ßFindFirstVolume  FindFirstVolumeA
+
+¡ÒFindFirstVolumeMountPointA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindFirstVolumeMountPoint  FindFirstVolumeMountPointA
+
+¡ÒFindFirstVolumeMountPointW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstVolumeW(Ë«×Ö,Ë«×Ö)
+¡ÒFindNextChangeNotification(Ë«×Ö)
+¡ÒFindNextFileA(Ë«×Ö,Ë«×Ö)
+¡ßFindNextFile  FindNextFileA
+
+¡ÒFindNextFileW(Ë«×Ö,Ë«×Ö)
+¡ÒFindNextStreamW(Ë«×Ö,Ë«×Ö)
+¡ÒFindNextVolumeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindNextVolume  FindNextVolumeA
+
+¡ÒFindNextVolumeMountPointA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindNextVolumeMountPoint  FindNextVolumeMountPointA
+
+¡ÒFindNextVolumeMountPointW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindNextVolumeW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindResourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindResource  FindResourceA
+
+¡ÒFindResourceExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindResourceEx  FindResourceExA
+
+¡ÒFindResourceExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindResourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindVolumeClose(Ë«×Ö)
+¡ÒFindVolumeMountPointClose(Ë«×Ö)
+¡ÒFlsAlloc(Ë«×Ö)
+¡ÒFlsFree(Ë«×Ö)
+¡ÒFlsGetValue(Ë«×Ö)
+¡ÒFlsSetValue(Ë«×Ö,Ë«×Ö)
+¡ÒFlushConsoleInputBuffer(Ë«×Ö)
+¡ÒFlushFileBuffers(Ë«×Ö)
+¡ÒFlushInstructionCache(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFlushViewOfFile(Ë«×Ö,Ë«×Ö)
+¡ÒFoldStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFoldString  FoldStringA
+
+¡ÒFoldStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFormatMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFormatMessage  FormatMessageA
+
+¡ÒFormatMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeConsole()
+¡ÒFreeEnvironmentStringsA(Ë«×Ö)
+¡ßFreeEnvironmentStrings  FreeEnvironmentStringsA
+
+¡ÒFreeEnvironmentStringsW(Ë«×Ö)
+¡ÒÊÍ·Å¿â:FreeLibrary(Ë«×Ö)
+¡ÒFreeLibraryAndExitThread(Ë«×Ö,Ë«×Ö)
+¡ÒFreeResource(Ë«×Ö)
+¡ÒFreeUserPhysicalPages(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGenerateConsoleCtrlEvent(Ë«×Ö,Ë«×Ö)
+¡ÒGetACP()
+¡ÒGetAtomNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetAtomName  GetAtomNameA
+
+¡ÒGetAtomNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetBinaryTypeA(Ë«×Ö,Ë«×Ö)
+¡ßGetBinaryType  GetBinaryTypeA
+
+¡ÒGetBinaryTypeW(Ë«×Ö,Ë«×Ö)
+¡ÒGetCPInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetCPInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCPInfoEx  GetCPInfoExA
+
+¡ÒGetCPInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCalendarInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCalendarInfo  GetCalendarInfoA
+
+¡ÒGetCalendarInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCommConfig(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCommMask(Ë«×Ö,Ë«×Ö)
+¡ÒGetCommModemStatus(Ë«×Ö,Ë«×Ö)
+¡ÒGetCommProperties(Ë«×Ö,Ë«×Ö)
+¡ÒGetCommState(Ë«×Ö,Ë«×Ö)
+¡ÒGetCommTimeouts(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡ÃüÁîÐÐ:GetCommandLineA()
+¡ßGetCommandLine  GetCommandLineA
+
+¡ÒGetCommandLineW()
+¡ÒGetCompressedFileSizeA(Ë«×Ö,Ë«×Ö)
+¡ßGetCompressedFileSize  GetCompressedFileSizeA
+
+¡ÒGetCompressedFileSizeW(Ë«×Ö,Ë«×Ö)
+¡ÒGetComputerNameA(Ë«×Ö,Ë«×Ö)
+¡ßGetComputerName  GetComputerNameA
+
+¡ÒGetComputerNameExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetComputerNameEx  GetComputerNameExA
+
+¡ÒGetComputerNameExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetComputerNameW(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleAliasA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetConsoleAlias  GetConsoleAliasA
+
+¡ÒGetConsoleAliasExesA(Ë«×Ö,Ë«×Ö)
+¡ßGetConsoleAliasExes  GetConsoleAliasExesA
+
+¡ÒGetConsoleAliasExesLengthA()
+¡ßGetConsoleAliasExesLength  GetConsoleAliasExesLengthA
+
+¡ÒGetConsoleAliasExesLengthW()
+¡ÒGetConsoleAliasExesW(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleAliasW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleAliasesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetConsoleAliases  GetConsoleAliasesA
+
+¡ÒGetConsoleAliasesLengthA(Ë«×Ö)
+¡ßGetConsoleAliasesLength  GetConsoleAliasesLengthA
+
+¡ÒGetConsoleAliasesLengthW(Ë«×Ö)
+¡ÒGetConsoleAliasesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleCP()
+¡ÒGetConsoleCursorInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleDisplayMode(Ë«×Ö)
+¡ÒGetConsoleFontSize(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleMode(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleOutputCP()
+¡ÒGetConsoleProcessList(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleScreenBufferInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleSelectionInfo(Ë«×Ö)
+¡ÒGetConsoleTitleA(Ë«×Ö,Ë«×Ö)
+¡ßGetConsoleTitle  GetConsoleTitleA
+
+¡ÒGetConsoleTitleW(Ë«×Ö,Ë«×Ö)
+¡ÒGetConsoleWindow()
+¡ÒGetCurrencyFormatA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetCurrencyFormat  GetCurrencyFormatA
+
+¡ÒGetCurrencyFormatW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCurrentActCtx(Ë«×Ö)
+¡ÒGetCurrentConsoleFont(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCurrentDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetCurrentDirectory  GetCurrentDirectoryA
+
+¡ÒGetCurrentDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetCurrentProcess()
+¡ÒGetCurrentProcessId()
+¡ÒGetCurrentProcessorNumber()
+¡ÒGetCurrentThread()
+¡ÒGetCurrentThreadId()
+¡ÒGetDateFormatA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDateFormat  GetDateFormatA
+
+¡ÒGetDateFormatW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDefaultCommConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDefaultCommConfig  GetDefaultCommConfigA
+
+¡ÒGetDefaultCommConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDevicePowerState(Ë«×Ö,Ë«×Ö)
+¡ÒGetDiskFreeSpaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDiskFreeSpace  GetDiskFreeSpaceA
+
+¡ÒGetDiskFreeSpaceExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDiskFreeSpaceEx  GetDiskFreeSpaceExA
+
+¡ÒGetDiskFreeSpaceExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDiskFreeSpaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDllDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetDllDirectory  GetDllDirectoryA
+
+¡ÒGetDllDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetDriveTypeA(Ë«×Ö)
+¡ßGetDriveType  GetDriveTypeA
+
+¡ÒGetDriveTypeW(Ë«×Ö)
+¡ÒGetEnvironmentStringsA()
+¡ßGetEnvironmentStrings  GetEnvironmentStringsA
+
+¡ÒGetEnvironmentStringsW()
+¡ÒGetEnvironmentVariableA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetEnvironmentVariable  GetEnvironmentVariableA
+
+¡ÒGetEnvironmentVariableW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetExitCodeProcess(Ë«×Ö,Ë«×Ö)
+¡ÒGetExitCodeThread(Ë«×Ö,Ë«×Ö)
+¡ÒGetFileAttributesA(Ë«×Ö)
+¡ßGetFileAttributes  GetFileAttributesA
+
+¡ÒGetFileAttributesExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFileAttributesEx  GetFileAttributesExA
+
+¡ÒGetFileAttributesExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFileAttributesW(Ë«×Ö)
+¡ÒGetFileInformationByHandle(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡ÎÄ¼þ´óÐ¡:GetFileSize(Ë«×Ö,Ë«×Ö)
+¡Ò¸ß¼¶»ñÈ¡ÎÄ¼þ´óÐ¡:GetFileSizeEx(Ë«×Ö,Ë«×Ö)
+¡ÒGetFileTime(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFileType(Ë«×Ö)
+¡ÒGetFirmwareEnvironmentVariableA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFirmwareEnvironmentVariable  GetFirmwareEnvironmentVariableA
+
+¡ÒGetFirmwareEnvironmentVariableW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFullPathNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFullPathName  GetFullPathNameA
+
+¡ÒGetFullPathNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetGeoInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetGeoInfo  GetGeoInfoA
+
+¡ÒGetGeoInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetHandleInformation(Ë«×Ö,Ë«×Ö)
+¡ÒGetLargePageMinimum()
+¡ÒGetLargestConsoleWindowSize(Ë«×Ö)
+¡ÒGetLastError()
+¡ÒGetLocalTime(Ë«×Ö)
+¡ÒGetLocaleInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetLocaleInfo  GetLocaleInfoA
+
+¡ÒGetLocaleInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetLogicalDriveStringsA(Ë«×Ö,Ë«×Ö)
+¡ßGetLogicalDriveStrings  GetLogicalDriveStringsA
+
+¡ÒGetLogicalDriveStringsW(Ë«×Ö,Ë«×Ö)
+¡ÒGetLogicalDrives()
+¡ÒGetLogicalProcessorInformation(Ë«×Ö,Ë«×Ö)
+¡ÒGetLongPathNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetLongPathName  GetLongPathNameA
+
+¡ÒGetLongPathNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMailslotInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡Ä£¿éÎÄ¼þÃû:GetModuleFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetModuleFileName  GetModuleFileNameA
+
+¡ÒGetModuleFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡Ä£¿é¾ä±ú:GetModuleHandleA(Ë«×Ö)
+¡ßGetModuleHandle  GetModuleHandleA
+
+¡ÒGetModuleHandleExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetModuleHandleEx  GetModuleHandleExA
+
+¡ÒGetModuleHandleExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetModuleHandleW(Ë«×Ö)
+¡ÒGetNLSVersion(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNamedPipeHandleStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNamedPipeHandleState  GetNamedPipeHandleStateA
+
+¡ÒGetNamedPipeHandleStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNamedPipeInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNativeSystemInfo(Ë«×Ö)
+¡ÒGetNumaAvailableMemoryNode(Ë«×Ö,Ë«×Ö)
+¡ÒGetNumaHighestNodeNumber(Ë«×Ö)
+¡ÒGetNumaNodeProcessorMask(Ë«×Ö,Ë«×Ö)
+¡ÒGetNumaProcessorNode(Ë«×Ö,Ë«×Ö)
+¡ÒGetNumberFormatA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNumberFormat  GetNumberFormatA
+
+¡ÒGetNumberFormatW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNumberOfConsoleInputEvents(Ë«×Ö,Ë«×Ö)
+¡ÒGetNumberOfConsoleMouseButtons(Ë«×Ö)
+¡ÒGetOEMCP()
+¡ÒGetOverlappedResult(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPriorityClass(Ë«×Ö)
+¡Ò»ñÈ¡Ë½ÓÐINIÎÄ¼þÕûÊý:GetPrivateProfileIntA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrivateProfileInt  GetPrivateProfileIntA
+
+¡ÒGetPrivateProfileIntW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡Ë½ÓÐINIÎÄ¼þ½Ú:GetPrivateProfileSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrivateProfileSection  GetPrivateProfileSectionA
+
+¡ÒGetPrivateProfileSectionNamesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrivateProfileSectionNames  GetPrivateProfileSectionNamesA
+
+¡ÒGetPrivateProfileSectionNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrivateProfileSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡Ë½ÓÐINIÎÄ¼þ×Ö·û´®:GetPrivateProfileStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrivateProfileString  GetPrivateProfileStringA
+
+¡ÒGetPrivateProfileStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrivateProfileStructA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrivateProfileStruct  GetPrivateProfileStructA
+
+¡ÒGetPrivateProfileStructW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡¹ý³ÌµØÖ·:GetProcAddress(Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessAffinityMask(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessHandleCount(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡½ø³Ì¶Ñ:GetProcessHeap()
+¡ÒGetProcessHeaps(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡½ø³ÌID:GetProcessId(Ë«×Ö)
+¡ÒGetProcessIdOfThread(Ë«×Ö)
+¡ÒGetProcessIoCounters(Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessPriorityBoost(Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessShutdownParameters(Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessTimes(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessVersion(Ë«×Ö)
+¡ÒGetProcessWorkingSetSize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessWorkingSetSizeEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProfileIntA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetProfileInt  GetProfileIntA
+
+¡ÒGetProfileIntW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProfileSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetProfileSection  GetProfileSectionA
+
+¡ÒGetProfileSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProfileStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetProfileString  GetProfileStringA
+
+¡ÒGetProfileStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetQueuedCompletionStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetShortPathNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetShortPathName  GetShortPathNameA
+
+¡ÒGetShortPathNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetStartupInfoA(Ë«×Ö)
+¡ßGetStartupInfo  GetStartupInfoA
+
+¡ÒGetStartupInfoW(Ë«×Ö)
+¡Ò»ñµÃ±ê×¼¾ä±ú:GetStdHandle(Ë«×Ö)
+¡ÒGetStringTypeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetStringType  GetStringTypeA
+
+¡ÒGetStringTypeExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetStringTypeEx  GetStringTypeExA
+
+¡ÒGetStringTypeExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetStringTypeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemDefaultLCID()
+¡ÒGetSystemDefaultLangID()
+¡ÒGetSystemDefaultUILanguage()
+¡ÒGetSystemDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetSystemDirectory  GetSystemDirectoryA
+
+¡ÒGetSystemDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemFileCacheSize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemFirmwareTable(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemInfo(Ë«×Ö)
+¡ÒGetSystemPowerStatus(Ë«×Ö)
+¡ÒGetSystemRegistryQuota(Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemTime(Ë«×Ö)
+¡ÒGetSystemTimeAdjustment(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemTimeAsFileTime(Ë«×Ö)
+¡ÒGetSystemTimes(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemWindowsDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetSystemWindowsDirectory  GetSystemWindowsDirectoryA
+
+¡ÒGetSystemWindowsDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemWow64DirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetSystemWow64Directory  GetSystemWow64DirectoryA
+
+¡ÒGetSystemWow64DirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetTapeParameters(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTapePosition(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTapeStatus(Ë«×Ö)
+¡ÒGetTempFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTempFileName  GetTempFileNameA
+
+¡ÒGetTempFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTempPathA(Ë«×Ö,Ë«×Ö)
+¡ßGetTempPath  GetTempPathA
+
+¡ÒGetTempPathW(Ë«×Ö,Ë«×Ö)
+¡ÒGetThreadContext(Ë«×Ö,Ë«×Ö)
+¡ÒGetThreadIOPendingFlag(Ë«×Ö,Ë«×Ö)
+¡ÒGetThreadId(Ë«×Ö)
+¡ÒGetThreadLocale()
+¡ÒGetThreadPriority(Ë«×Ö)
+¡ÒGetThreadPriorityBoost(Ë«×Ö,Ë«×Ö)
+¡ÒGetThreadSelectorEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetThreadTimes(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTickCount()
+¡ÒGetTimeFormatA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTimeFormat  GetTimeFormatA
+
+¡ÒGetTimeFormatW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTimeZoneInformation(Ë«×Ö)
+¡ÒGetUserDefaultLCID()
+¡ÒGetUserDefaultLangID()
+¡ÒGetUserDefaultUILanguage()
+¡ÒGetUserGeoID(Ë«×Ö)
+¡ÒGetVersion()
+¡ÒGetVersionExA(Ë«×Ö)
+¡ßGetVersionEx  GetVersionExA
+
+¡ÒGetVersionExW(Ë«×Ö)
+¡ÒGetVolumeInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetVolumeInformation  GetVolumeInformationA
+
+¡ÒGetVolumeInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetVolumeNameForVolumeMountPointA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetVolumeNameForVolumeMountPoint  GetVolumeNameForVolumeMountPointA
+
+¡ÒGetVolumeNameForVolumeMountPointW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetVolumePathNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetVolumePathName  GetVolumePathNameA
+
+¡ÒGetVolumePathNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetVolumePathNamesForVolumeNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetVolumePathNamesForVolumeName  GetVolumePathNamesForVolumeNameA
+
+¡ÒGetVolumePathNamesForVolumeNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowsDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetWindowsDirectory  GetWindowsDirectoryA
+
+¡ÒGetWindowsDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetWriteWatch(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGlobalAddAtomA(Ë«×Ö)
+¡ßGlobalAddAtom  GlobalAddAtomA
+
+¡ÒGlobalAddAtomW(Ë«×Ö)
+¡ÒGlobalAlloc(Ë«×Ö,Ë«×Ö)
+¡ÒGlobalCompact(Ë«×Ö)
+¡ÒGlobalDeleteAtom(Ë«×Ö)
+¡ÒGlobalFindAtomA(Ë«×Ö)
+¡ßGlobalFindAtom  GlobalFindAtomA
+
+¡ÒGlobalFindAtomW(Ë«×Ö)
+¡ÒGlobalFix(Ë«×Ö)
+¡ÒGlobalFlags(Ë«×Ö)
+¡ÒGlobalFree(Ë«×Ö)
+¡ÒGlobalGetAtomNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGlobalGetAtomName  GlobalGetAtomNameA
+
+¡ÒGlobalGetAtomNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGlobalHandle(Ë«×Ö)
+¡ÒGlobalLock(Ë«×Ö)
+¡ÒGlobalMemoryStatus(Ë«×Ö)
+¡ÒGlobalMemoryStatusEx(Ë«×Ö)
+¡ÒGlobalReAlloc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGlobalSize(Ë«×Ö)
+¡ÒGlobalUnWire(Ë«×Ö)
+¡ÒGlobalUnfix(Ë«×Ö)
+¡ÒGlobalUnlock(Ë«×Ö)
+¡ÒGlobalWire(Ë«×Ö)
+¡ÒHeap32First(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHeap32ListFirst(Ë«×Ö,Ë«×Ö)
+¡ÒHeap32ListNext(Ë«×Ö,Ë«×Ö)
+¡ÒHeap32Next(Ë«×Ö)
+¡Ò¶Ñ·ÖÅä:HeapAlloc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHeapCompact(Ë«×Ö,Ë«×Ö)
+¡Ò¶Ñ´´½¨:HeapCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶ÑÏú»Ù:HeapDestroy(Ë«×Ö)
+¡Ò¶ÑÊÍ·Å:HeapFree(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶ÑËø¶¨:HeapLock(Ë«×Ö)
+¡ÒHeapQueryInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶ÑÖØ·ÖÅä:HeapReAlloc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHeapSetInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶Ñ´óÐ¡:HeapSize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶Ñ½âËø:HeapUnlock(Ë«×Ö)
+¡ÒHeapValidate(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHeapWalk(Ë«×Ö,Ë«×Ö)
+¡ÒInitAtomTable(Ë«×Ö)
+¡ÒInitializeCriticalSection(Ë«×Ö)
+¡ÒInitializeCriticalSectionAndSpinCount(Ë«×Ö,Ë«×Ö)
+¡ÒInitializeSListHead(Ë«×Ö)
+¡ÒInterlockedCompareExchange64(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInterlockedCompareExchange(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInterlockedDecrement(Ë«×Ö)
+¡ÒInterlockedExchange(Ë«×Ö,Ë«×Ö)
+¡ÒInterlockedExchangeAdd(Ë«×Ö,Ë«×Ö)
+¡ÒInterlockedFlushSList(Ë«×Ö)
+¡ÒInterlockedIncrement(Ë«×Ö)
+¡ÒInterlockedPopEntrySList(Ë«×Ö)
+¡ÒInterlockedPushEntrySList(Ë«×Ö,Ë«×Ö)
+¡ÒIsBadCodePtr(Ë«×Ö)
+¡ÒIsBadHugeReadPtr(Ë«×Ö,Ë«×Ö)
+¡ÒIsBadHugeWritePtr(Ë«×Ö,Ë«×Ö)
+¡ÒIsBadReadPtr(Ë«×Ö,Ë«×Ö)
+¡ÒIsBadStringPtrA(Ë«×Ö,Ë«×Ö)
+¡ßIsBadStringPtr  IsBadStringPtrA
+
+¡ÒIsBadStringPtrW(Ë«×Ö,Ë«×Ö)
+¡ÒIsBadWritePtr(Ë«×Ö,Ë«×Ö)
+¡ÒIsDBCSLeadByte(Ë«×Ö)
+¡ÒIsDBCSLeadByteEx(Ë«×Ö,Ë«×Ö)
+¡ÒIsDebuggerPresent()
+¡ÒIsNLSDefinedString(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsProcessInJob(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsProcessorFeaturePresent(Ë«×Ö)
+¡ÒIsSystemResumeAutomatic()
+¡ÒIsValidCodePage(Ë«×Ö)
+¡ÒIsValidLanguageGroup(Ë«×Ö,Ë«×Ö)
+¡ÒIsValidLocale(Ë«×Ö,Ë«×Ö)
+¡ÒIsWow64Process(Ë«×Ö,Ë«×Ö)
+¡ÒLCMapStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLCMapString  LCMapStringA
+
+¡ÒLCMapStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLeaveCriticalSection(Ë«×Ö)
+¡Ò¼ÓÔØ¿â:LoadLibraryA(Ë«×Ö)
+¡ßLoadLibrary  LoadLibraryA
+
+¡ÒLoadLibraryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLoadLibraryEx  LoadLibraryExA
+
+¡ÒLoadLibraryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLoadLibraryW(Ë«×Ö)
+¡ÒLoadModule(Ë«×Ö,Ë«×Ö)
+¡ÒLoadResource(Ë«×Ö,Ë«×Ö)
+¡ÒLocalAlloc(Ë«×Ö,Ë«×Ö)
+¡ÒLocalCompact(Ë«×Ö)
+¡ÒLocalFileTimeToFileTime(Ë«×Ö,Ë«×Ö)
+¡ÒLocalFlags(Ë«×Ö)
+¡ÒLocalFree(Ë«×Ö)
+¡ÒLocalHandle(Ë«×Ö)
+¡ÒLocalLock(Ë«×Ö)
+¡ÒLocalReAlloc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLocalShrink(Ë«×Ö,Ë«×Ö)
+¡ÒLocalSize(Ë«×Ö)
+¡ÒLocalUnlock(Ë«×Ö)
+¡ÒLockFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLockFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLockResource(Ë«×Ö)
+¡ÒMapUserPhysicalPages(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMapUserPhysicalPagesScatter(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMapViewOfFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMapViewOfFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒModule32First(Ë«×Ö,Ë«×Ö)
+¡ÒModule32FirstW(Ë«×Ö,Ë«×Ö)
+¡ÒModule32Next(Ë«×Ö,Ë«×Ö)
+¡ÒModule32NextW(Ë«×Ö,Ë«×Ö)
+¡ÒMoveFileA(Ë«×Ö,Ë«×Ö)
+¡ßMoveFile  MoveFileA
+
+¡ÒMoveFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMoveFileEx  MoveFileExA
+
+¡ÒMoveFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMoveFileW(Ë«×Ö,Ë«×Ö)
+¡ÒMoveFileWithProgressA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMoveFileWithProgress  MoveFileWithProgressA
+
+¡ÒMoveFileWithProgressW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMulDiv(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMultiByteToWideChar(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNeedCurrentDirectoryForExePathA(Ë«×Ö)
+¡ßNeedCurrentDirectoryForExePath  NeedCurrentDirectoryForExePathA
+
+¡ÒNeedCurrentDirectoryForExePathW(Ë«×Ö)
+¡ÒOpenEventA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenEvent  OpenEventA
+
+¡ÒOpenEventW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenFile(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenFileMappingA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenFileMapping  OpenFileMappingA
+
+¡ÒOpenFileMappingW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenJobObjectA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenJobObject  OpenJobObjectA
+
+¡ÒOpenJobObjectW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenMutexA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenMutex  OpenMutexA
+
+¡ÒOpenMutexW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenProcess(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenSemaphoreA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenSemaphore  OpenSemaphoreA
+
+¡ÒOpenSemaphoreW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenThread(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenWaitableTimerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenWaitableTimer  OpenWaitableTimerA
+
+¡ÒOpenWaitableTimerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOutputDebugStringA(Ë«×Ö)
+¡ßOutputDebugString  OutputDebugStringA
+
+¡ÒOutputDebugStringW(Ë«×Ö)
+¡ÒPeekConsoleInputA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPeekConsoleInput  PeekConsoleInputA
+
+¡ÒPeekConsoleInputW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPeekNamedPipe(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPostQueuedCompletionStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrepareTape(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒProcess32First(Ë«×Ö,Ë«×Ö)
+¡ÒProcess32FirstW(Ë«×Ö,Ë«×Ö)
+¡ÒProcess32Next(Ë«×Ö,Ë«×Ö)
+¡ÒProcess32NextW(Ë«×Ö,Ë«×Ö)
+¡ÒProcessIdToSessionId(Ë«×Ö,Ë«×Ö)
+¡ÒPulseEvent(Ë«×Ö)
+¡ÒPurgeComm(Ë«×Ö,Ë«×Ö)
+¡ÒQueryActCtxW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryDepthSList(Ë«×Ö)
+¡ÒQueryDosDeviceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryDosDevice  QueryDosDeviceA
+
+¡ÒQueryDosDeviceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryInformationJobObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryMemoryResourceNotification(Ë«×Ö,Ë«×Ö)
+¡ÒQueryPerformanceCounter(Ë«×Ö)
+¡ÒQueryPerformanceFrequency(Ë«×Ö)
+¡ÒQueueUserAPC(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueueUserWorkItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRaiseException(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReOpenFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadConsoleA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReadConsole  ReadConsoleA
+
+¡ÒReadConsoleInputA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReadConsoleInput  ReadConsoleInputA
+
+¡ÒReadConsoleInputW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadConsoleOutputA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReadConsoleOutput  ReadConsoleOutputA
+
+¡ÒReadConsoleOutputAttribute(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadConsoleOutputCharacterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReadConsoleOutputCharacter  ReadConsoleOutputCharacterA
+
+¡ÒReadConsoleOutputCharacterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadConsoleOutputW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadConsoleW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadDirectoryChangesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶ÁÎÄ¼þ:ReadFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadFileScatter(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadProcessMemory(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterWaitForSingleObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterWaitForSingleObjectEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReleaseActCtx(Ë«×Ö)
+¡ÒReleaseMutex(Ë«×Ö)
+¡ÒReleaseSemaphore(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRemoveDirectoryA(Ë«×Ö)
+¡ßRemoveDirectory  RemoveDirectoryA
+
+¡ÒRemoveDirectoryW(Ë«×Ö)
+¡ÒRemoveLocalAlternateComputerNameA(Ë«×Ö,Ë«×Ö)
+¡ßRemoveLocalAlternateComputerName  RemoveLocalAlternateComputerNameA
+
+¡ÒRemoveLocalAlternateComputerNameW(Ë«×Ö,Ë«×Ö)
+¡ÒRemoveVectoredContinueHandler(Ë«×Ö)
+¡ÒRemoveVectoredExceptionHandler(Ë«×Ö)
+¡ÒReplaceFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReplaceFile  ReplaceFileA
+
+¡ÒReplaceFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRequestDeviceWakeup(Ë«×Ö)
+¡ÒRequestWakeupLatency(Ë«×Ö)
+¡ÒÖØÖÃÊÂ¼þ:ResetEvent(Ë«×Ö)
+¡ÒResetWriteWatch(Ë«×Ö,Ë«×Ö)
+¡ÒRestoreLastError(Ë«×Ö)
+¡ÒResumeThread(Ë«×Ö)
+¡ÒRtlCaptureContext(Ë«×Ö)
+¡ÒRtlCaptureStackBackTrace(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRtlFillMemory(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRtlMoveMemory(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRtlUnwind(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRtlÄÚ´æÇåÁã:RtlZeroMemory(Ë«×Ö,Ë«×Ö)
+¡ÒScrollConsoleScreenBufferA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßScrollConsoleScreenBuffer  ScrollConsoleScreenBufferA
+
+¡ÒScrollConsoleScreenBufferW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSearchPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSearchPath  SearchPathA
+
+¡ÒSearchPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetCalendarInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetCalendarInfo  SetCalendarInfoA
+
+¡ÒSetCalendarInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetCommBreak(Ë«×Ö)
+¡ÒSetCommConfig(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetCommMask(Ë«×Ö,Ë«×Ö)
+¡ÒSetCommState(Ë«×Ö,Ë«×Ö)
+¡ÒSetCommTimeouts(Ë«×Ö,Ë«×Ö)
+¡ÒSetComputerNameA(Ë«×Ö)
+¡ßSetComputerName  SetComputerNameA
+
+¡ÒSetComputerNameExA(Ë«×Ö,Ë«×Ö)
+¡ßSetComputerNameEx  SetComputerNameExA
+
+¡ÒSetComputerNameExW(Ë«×Ö,Ë«×Ö)
+¡ÒSetComputerNameW(Ë«×Ö)
+¡ÒSetConsoleActiveScreenBuffer(Ë«×Ö)
+¡ÒSetConsoleCP(Ë«×Ö)
+¡ÒSetConsoleCtrlHandler(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleCursor(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleCursorInfo(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleCursorPosition(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleMode(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleOutputCP(Ë«×Ö)
+¡ÒSetConsoleScreenBufferSize(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleTextAttribute(Ë«×Ö,Ë«×Ö)
+¡ÒSetConsoleTitleA(Ë«×Ö)
+¡ßSetConsoleTitle  SetConsoleTitleA
+
+¡ÒSetConsoleTitleW(Ë«×Ö)
+¡ÒSetConsoleWindowInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetCriticalSectionSpinCount(Ë«×Ö,Ë«×Ö)
+¡ÒSetCurrentDirectoryA(Ë«×Ö)
+¡ßSetCurrentDirectory  SetCurrentDirectoryA
+
+¡ÒSetCurrentDirectoryW(Ë«×Ö)
+¡ÒSetDefaultCommConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetDefaultCommConfig  SetDefaultCommConfigA
+
+¡ÒSetDefaultCommConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetDllDirectoryA(Ë«×Ö)
+¡ßSetDllDirectory  SetDllDirectoryA
+
+¡ÒSetDllDirectoryW(Ë«×Ö)
+¡ÒSetEndOfFile(Ë«×Ö)
+¡ÒSetEnvironmentStringsA(Ë«×Ö)
+¡ßSetEnvironmentStrings  SetEnvironmentStringsA
+
+¡ÒSetEnvironmentStringsW(Ë«×Ö)
+¡ÒSetEnvironmentVariableA(Ë«×Ö,Ë«×Ö)
+¡ßSetEnvironmentVariable  SetEnvironmentVariableA
+
+¡ÒSetEnvironmentVariableW(Ë«×Ö,Ë«×Ö)
+¡ÒSetErrorMode(Ë«×Ö)
+¡ÒÉèÖÃÊÂ¼þ:SetEvent(Ë«×Ö)
+¡ÒSetFileApisToANSI()
+¡ÒSetFileApisToOEM()
+¡ÒSetFileAttributesA(Ë«×Ö,Ë«×Ö)
+¡ßSetFileAttributes  SetFileAttributesA
+
+¡ÒSetFileAttributesW(Ë«×Ö,Ë«×Ö)
+¡ÒSetFilePointer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetFilePointerEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetFileShortNameA(Ë«×Ö,Ë«×Ö)
+¡ßSetFileShortName  SetFileShortNameA
+
+¡ÒSetFileShortNameW(Ë«×Ö,Ë«×Ö)
+¡ÒSetFileTime(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetFileValidData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetFirmwareEnvironmentVariableA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetFirmwareEnvironmentVariable  SetFirmwareEnvironmentVariableA
+
+¡ÒSetFirmwareEnvironmentVariableW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetHandleCount(Ë«×Ö)
+¡ÒSetHandleInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetInformationJobObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetLastError(Ë«×Ö)
+¡ÒSetLocalPrimaryComputerNameA(Ë«×Ö,Ë«×Ö)
+¡ßSetLocalPrimaryComputerName  SetLocalPrimaryComputerNameA
+
+¡ÒSetLocalPrimaryComputerNameW(Ë«×Ö,Ë«×Ö)
+¡ÒSetLocalTime(Ë«×Ö)
+¡ÒSetLocaleInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetLocaleInfo  SetLocaleInfoA
+
+¡ÒSetLocaleInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetMailslotInfo(Ë«×Ö,Ë«×Ö)
+¡ÒSetMessageWaitingIndicator(Ë«×Ö,Ë«×Ö)
+¡ÒSetNamedPipeHandleState(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPriorityClass(Ë«×Ö,Ë«×Ö)
+¡ÒSetProcessAffinityMask(Ë«×Ö,Ë«×Ö)
+¡ÒSetProcessPriorityBoost(Ë«×Ö,Ë«×Ö)
+¡ÒSetProcessShutdownParameters(Ë«×Ö,Ë«×Ö)
+¡ÒSetProcessWorkingSetSize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetProcessWorkingSetSizeEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetStdHandle(Ë«×Ö,Ë«×Ö)
+¡ÒSetSystemFileCacheSize(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSystemPowerState(Ë«×Ö,Ë«×Ö)
+¡ÒSetSystemTime(Ë«×Ö)
+¡ÒSetSystemTimeAdjustment(Ë«×Ö,Ë«×Ö)
+¡ÒSetTapeParameters(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetTapePosition(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadAffinityMask(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadContext(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadExecutionState(Ë«×Ö)
+¡ÒSetThreadIdealProcessor(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadLocale(Ë«×Ö)
+¡ÒSetThreadPriority(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadPriorityBoost(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadStackGuarantee(Ë«×Ö)
+¡ÒSetTimeZoneInformation(Ë«×Ö)
+¡ÒSetTimerQueueTimer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUnhandledExceptionFilter(Ë«×Ö)
+¡ÒSetUserGeoID(Ë«×Ö)
+¡ÒSetVolumeLabelA(Ë«×Ö,Ë«×Ö)
+¡ßSetVolumeLabel  SetVolumeLabelA
+
+¡ÒSetVolumeLabelW(Ë«×Ö,Ë«×Ö)
+¡ÒSetVolumeMountPointA(Ë«×Ö,Ë«×Ö)
+¡ßSetVolumeMountPoint  SetVolumeMountPointA
+
+¡ÒSetVolumeMountPointW(Ë«×Ö,Ë«×Ö)
+¡ÒSetWaitableTimer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupComm(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSignalObjectAndWait(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSizeofResource(Ë«×Ö,Ë«×Ö)
+¡ÒË¯Ãß:Sleep(Ë«×Ö)
+¡ÒSleepEx(Ë«×Ö,Ë«×Ö)
+¡ÒSuspendThread(Ë«×Ö)
+¡ÒSwitchToFiber(Ë«×Ö)
+¡ÒSwitchToThread()
+¡ÒSystemTimeToFileTime(Ë«×Ö,Ë«×Ö)
+¡ÒSystemTimeToTzSpecificLocalTime(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTerminateJobObject(Ë«×Ö,Ë«×Ö)
+¡ÒTerminateProcess(Ë«×Ö,Ë«×Ö)
+¡ÒÖÕÖ¹Ïß³Ì:TerminateThread(Ë«×Ö,Ë«×Ö)
+¡ÒThread32First(Ë«×Ö,Ë«×Ö)
+¡ÒThread32Next(Ë«×Ö,Ë«×Ö)
+¡ÒTlsAlloc()
+¡ÒTlsFree(Ë«×Ö)
+¡ÒTlsGetValue(Ë«×Ö)
+¡ÒTlsSetValue(Ë«×Ö,Ë«×Ö)
+¡ÒToolhelp32ReadProcessMemory(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTransactNamedPipe(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTransmitCommChar(Ë«×Ö,Ë«×Ö)
+¡ÒTryEnterCriticalSection(Ë«×Ö)
+¡ÒTzSpecificLocalTimeToSystemTime(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnhandledExceptionFilter(Ë«×Ö)
+¡ÒUnlockFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnlockFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnmapViewOfFile(Ë«×Ö)
+¡ÒUnregisterWait(Ë«×Ö)
+¡ÒUnregisterWaitEx(Ë«×Ö,Ë«×Ö)
+¡ÒUpdateResourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUpdateResource  UpdateResourceA
+
+¡ÒUpdateResourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerLanguageNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßVerLanguageName  VerLanguageNameA
+
+¡ÒVerLanguageNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerSetConditionMask(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerifyVersionInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßVerifyVersionInfo  VerifyVersionInfoA
+
+¡ÒVerifyVersionInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualAlloc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualAllocEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualFree(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualFreeEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualLock(Ë«×Ö,Ë«×Ö)
+¡ÒVirtualProtect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualProtectEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualQuery(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualQueryEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVirtualUnlock(Ë«×Ö,Ë«×Ö)
+¡ÒWTSGetActiveConsoleSessionId()
+¡ÒWaitCommEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWaitForDebugEvent(Ë«×Ö,Ë«×Ö)
+¡ÒWaitForMultipleObjects(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWaitForMultipleObjectsEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒµÈ´ýµ¥Ò»¶ÔÏó:WaitForSingleObject(Ë«×Ö,Ë«×Ö)
+¡ÒWaitForSingleObjectEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWaitNamedPipeA(Ë«×Ö,Ë«×Ö)
+¡ßWaitNamedPipe  WaitNamedPipeA
+
+¡ÒWaitNamedPipeW(Ë«×Ö,Ë«×Ö)
+¡ÒWideCharToMultiByte(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWinExec(Ë«×Ö,Ë«×Ö)
+¡ÒWow64DisableWow64FsRedirection(Ë«×Ö)
+¡ÒWow64EnableWow64FsRedirection(Ë«×Ö)
+¡ÒWow64RevertWow64FsRedirection(Ë«×Ö)
+¡Ò¿ØÖÆÌ¨Êä³ö:WriteConsoleA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWriteConsole  WriteConsoleA
+
+¡ÒWriteConsoleInputA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWriteConsoleInput  WriteConsoleInputA
+
+¡ÒWriteConsoleInputW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteConsoleOutputA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWriteConsoleOutput  WriteConsoleOutputA
+
+¡ÒWriteConsoleOutputAttribute(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteConsoleOutputCharacterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWriteConsoleOutputCharacter  WriteConsoleOutputCharacterA
+
+¡ÒWriteConsoleOutputCharacterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteConsoleOutputW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteConsoleW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÐ´ÎÄ¼þ:WriteFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteFileGather(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÐ´ÈëË½ÓÐINIÎÄ¼þ½Ú:WritePrivateProfileSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWritePrivateProfileSection  WritePrivateProfileSectionA
+
+¡ÒWritePrivateProfileSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÐ´ÈëË½ÓÐINIÎÄ¼þ×Ö·û´®:WritePrivateProfileStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWritePrivateProfileString  WritePrivateProfileStringA
+
+¡ÒWritePrivateProfileStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÐ´ÈëË½ÓÐINIÎÄ¼þ½á¹¹:WritePrivateProfileStructA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWritePrivateProfileStruct  WritePrivateProfileStructA
+
+¡ÒWritePrivateProfileStructW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteProcessMemory(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÐ´ÈëINIÎÄ¼þ½Ú:WriteProfileSectionA(Ë«×Ö,Ë«×Ö)
+¡ßWriteProfileSection  WriteProfileSectionA
+
+¡ÒWriteProfileSectionW(Ë«×Ö,Ë«×Ö)
+¡ÒÐ´ÈëINIÎÄ¼þ×Ö·û´®:WriteProfileStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWriteProfileString  WriteProfileStringA
+
+¡ÒWriteProfileStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteTapemark(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒZombifyActCtx(Ë«×Ö)
+¡Ò_hread(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò_hwrite(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò_lclose(Ë«×Ö)
+¡Ò_lcreat(Ë«×Ö,Ë«×Ö)
+¡Ò_llseek(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò_lopen(Ë«×Ö,Ë«×Ö)
+¡Ò_lread(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò_lwrite(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×Ö·û´®Áª½Ó:lstrcatA(Ë«×Ö,Ë«×Ö)
+¡ßlstrcat  lstrcatA
+
+¡ÒlstrcatW(Ë«×Ö,Ë«×Ö)
+¡Ò×Ö·û´®±È½Ï:lstrcmpA(Ë«×Ö,Ë«×Ö)
+¡ßlstrcmp  lstrcmpA
+
+¡ÒlstrcmpW(Ë«×Ö,Ë«×Ö)
+¡Ò×Ö·û´®±È½ÏÎÞ´óÐ¡Ð´:lstrcmpiA(Ë«×Ö,Ë«×Ö)
+¡ßlstrcmpi  lstrcmpiA
+
+¡ÒlstrcmpiW(Ë«×Ö,Ë«×Ö)
+¡Ò×Ö·û´®¸´ÖÆ:lstrcpyA(Ë«×Ö,Ë«×Ö)
+¡ßlstrcpy  lstrcpyA
+
+¡ÒlstrcpyW(Ë«×Ö,Ë«×Ö)
+¡ÒlstrcpynA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßlstrcpyn  lstrcpynA
+
+¡ÒlstrcpynW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×Ö·û´®³¤¶È:lstrlenA(Ë«×Ö)
+¡ßlstrlen  lstrlenA
+
+¡ÒlstrlenW(Ë«×Ö)
+
+¦ç

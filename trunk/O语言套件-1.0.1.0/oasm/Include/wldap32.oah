@@ -1,0 +1,331 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡Ò:C LdapGetLastError(Ë«×Ö, ..)
+¡Ò:C LdapMapErrorToWin32(Ë«×Ö, ..)
+¡Ò:C LdapUTF8ToUnicode(Ë«×Ö, ..)
+¡Ò:C LdapUnicodeToUTF8(Ë«×Ö, ..)
+¡Ò:C ber_alloc_t(Ë«×Ö, ..)
+¡Ò:C ber_bvdup(Ë«×Ö, ..)
+¡Ò:C ber_bvecfree(Ë«×Ö, ..)
+¡Ò:C ber_bvfree(Ë«×Ö, ..)
+¡Ò:C ber_first_element(Ë«×Ö, ..)
+¡Ò:C ber_flatten(Ë«×Ö, ..)
+¡Ò:C ber_free(Ë«×Ö, ..)
+¡Ò:C ber_init(Ë«×Ö, ..)
+¡Ò:C ber_next_element(Ë«×Ö, ..)
+¡Ò:C ber_peek_tag(Ë«×Ö, ..)
+¡Ò:C ber_printf(Ë«×Ö, ..)
+¡Ò:C ber_scanf(Ë«×Ö, ..)
+¡Ò:C ber_skip_tag(Ë«×Ö, ..)
+¡Ò:C cldap_openA(Ë«×Ö, ..)
+¡ßcldap_open  cldap_openA
+
+¡Ò:C cldap_openW(Ë«×Ö, ..)
+¡Ò:C ldap_abandon(Ë«×Ö, ..)
+¡Ò:C ldap_addA(Ë«×Ö, ..)
+¡ßldap_add  ldap_addA
+
+¡Ò:C ldap_addW(Ë«×Ö, ..)
+¡Ò:C ldap_add_extA(Ë«×Ö, ..)
+¡ßldap_add_ext  ldap_add_extA
+
+¡Ò:C ldap_add_extW(Ë«×Ö, ..)
+¡Ò:C ldap_add_ext_sA(Ë«×Ö, ..)
+¡ßldap_add_ext_s  ldap_add_ext_sA
+
+¡Ò:C ldap_add_ext_sW(Ë«×Ö, ..)
+¡Ò:C ldap_add_sA(Ë«×Ö, ..)
+¡ßldap_add_s  ldap_add_sA
+
+¡Ò:C ldap_add_sW(Ë«×Ö, ..)
+¡Ò:C ldap_bindA(Ë«×Ö, ..)
+¡ßldap_bind  ldap_bindA
+
+¡Ò:C ldap_bindW(Ë«×Ö, ..)
+¡Ò:C ldap_bind_sA(Ë«×Ö, ..)
+¡ßldap_bind_s  ldap_bind_sA
+
+¡Ò:C ldap_bind_sW(Ë«×Ö, ..)
+¡Ò:C ldap_check_filterA(Ë«×Ö, ..)
+¡ßldap_check_filter  ldap_check_filterA
+
+¡Ò:C ldap_check_filterW(Ë«×Ö, ..)
+¡Ò:C ldap_cleanup(Ë«×Ö, ..)
+¡Ò:C ldap_close_extended_op(Ë«×Ö, ..)
+¡Ò:C ldap_compareA(Ë«×Ö, ..)
+¡ßldap_compare  ldap_compareA
+
+¡Ò:C ldap_compareW(Ë«×Ö, ..)
+¡Ò:C ldap_compare_extA(Ë«×Ö, ..)
+¡ßldap_compare_ext  ldap_compare_extA
+
+¡Ò:C ldap_compare_extW(Ë«×Ö, ..)
+¡Ò:C ldap_compare_ext_sA(Ë«×Ö, ..)
+¡ßldap_compare_ext_s  ldap_compare_ext_sA
+
+¡Ò:C ldap_compare_ext_sW(Ë«×Ö, ..)
+¡Ò:C ldap_compare_sA(Ë«×Ö, ..)
+¡ßldap_compare_s  ldap_compare_sA
+
+¡Ò:C ldap_compare_sW(Ë«×Ö, ..)
+¡Ò:C ldap_conn_from_msg(Ë«×Ö, ..)
+¡Ò:C ldap_connect(Ë«×Ö, ..)
+¡Ò:C ldap_control_freeA(Ë«×Ö, ..)
+¡ßldap_control_free  ldap_control_freeA
+
+¡Ò:C ldap_control_freeW(Ë«×Ö, ..)
+¡Ò:C ldap_controls_freeA(Ë«×Ö, ..)
+¡ßldap_controls_free  ldap_controls_freeA
+
+¡Ò:C ldap_controls_freeW(Ë«×Ö, ..)
+¡Ò:C ldap_count_entries(Ë«×Ö, ..)
+¡Ò:C ldap_count_references(Ë«×Ö, ..)
+¡Ò:C ldap_count_valuesA(Ë«×Ö, ..)
+¡ßldap_count_values  ldap_count_valuesA
+
+¡Ò:C ldap_count_valuesW(Ë«×Ö, ..)
+¡Ò:C ldap_count_values_len(Ë«×Ö, ..)
+¡Ò:C ldap_create_page_controlA(Ë«×Ö, ..)
+¡ßldap_create_page_control  ldap_create_page_controlA
+
+¡Ò:C ldap_create_page_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_create_sort_controlA(Ë«×Ö, ..)
+¡ßldap_create_sort_control  ldap_create_sort_controlA
+
+¡Ò:C ldap_create_sort_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_create_vlv_controlA(Ë«×Ö, ..)
+¡ßldap_create_vlv_control  ldap_create_vlv_controlA
+
+¡Ò:C ldap_create_vlv_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_deleteA(Ë«×Ö, ..)
+¡ßldap_delete  ldap_deleteA
+
+¡Ò:C ldap_deleteW(Ë«×Ö, ..)
+¡Ò:C ldap_delete_extA(Ë«×Ö, ..)
+¡ßldap_delete_ext  ldap_delete_extA
+
+¡Ò:C ldap_delete_extW(Ë«×Ö, ..)
+¡Ò:C ldap_delete_ext_sA(Ë«×Ö, ..)
+¡ßldap_delete_ext_s  ldap_delete_ext_sA
+
+¡Ò:C ldap_delete_ext_sW(Ë«×Ö, ..)
+¡Ò:C ldap_delete_sA(Ë«×Ö, ..)
+¡ßldap_delete_s  ldap_delete_sA
+
+¡Ò:C ldap_delete_sW(Ë«×Ö, ..)
+¡Ò:C ldap_dn2ufnA(Ë«×Ö, ..)
+¡ßldap_dn2ufn  ldap_dn2ufnA
+
+¡Ò:C ldap_dn2ufnW(Ë«×Ö, ..)
+¡Ò:C ldap_encode_sort_controlA(Ë«×Ö, ..)
+¡ßldap_encode_sort_control  ldap_encode_sort_controlA
+
+¡Ò:C ldap_encode_sort_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_err2stringA(Ë«×Ö, ..)
+¡ßldap_err2string  ldap_err2stringA
+
+¡Ò:C ldap_err2stringW(Ë«×Ö, ..)
+¡Ò:C ldap_escape_filter_elementA(Ë«×Ö, ..)
+¡ßldap_escape_filter_element  ldap_escape_filter_elementA
+
+¡Ò:C ldap_escape_filter_elementW(Ë«×Ö, ..)
+¡Ò:C ldap_explode_dnA(Ë«×Ö, ..)
+¡ßldap_explode_dn  ldap_explode_dnA
+
+¡Ò:C ldap_explode_dnW(Ë«×Ö, ..)
+¡Ò:C ldap_extended_operationA(Ë«×Ö, ..)
+¡ßldap_extended_operation  ldap_extended_operationA
+
+¡Ò:C ldap_extended_operationW(Ë«×Ö, ..)
+¡Ò:C ldap_extended_operation_sA(Ë«×Ö, ..)
+¡ßldap_extended_operation_s  ldap_extended_operation_sA
+
+¡Ò:C ldap_extended_operation_sW(Ë«×Ö, ..)
+¡Ò:C ldap_first_attributeA(Ë«×Ö, ..)
+¡ßldap_first_attribute  ldap_first_attributeA
+
+¡Ò:C ldap_first_attributeW(Ë«×Ö, ..)
+¡Ò:C ldap_first_entry(Ë«×Ö, ..)
+¡Ò:C ldap_first_reference(Ë«×Ö, ..)
+¡Ò:C ldap_free_controlsA(Ë«×Ö, ..)
+¡ßldap_free_controls  ldap_free_controlsA
+
+¡Ò:C ldap_free_controlsW(Ë«×Ö, ..)
+¡Ò:C ldap_get_dnA(Ë«×Ö, ..)
+¡ßldap_get_dn  ldap_get_dnA
+
+¡Ò:C ldap_get_dnW(Ë«×Ö, ..)
+¡Ò:C ldap_get_next_page(Ë«×Ö, ..)
+¡Ò:C ldap_get_next_page_s(Ë«×Ö, ..)
+¡Ò:C ldap_get_optionA(Ë«×Ö, ..)
+¡ßldap_get_option  ldap_get_optionA
+
+¡Ò:C ldap_get_optionW(Ë«×Ö, ..)
+¡Ò:C ldap_get_paged_count(Ë«×Ö, ..)
+¡Ò:C ldap_get_valuesA(Ë«×Ö, ..)
+¡ßldap_get_values  ldap_get_valuesA
+
+¡Ò:C ldap_get_valuesW(Ë«×Ö, ..)
+¡Ò:C ldap_get_values_lenA(Ë«×Ö, ..)
+¡ßldap_get_values_len  ldap_get_values_lenA
+
+¡Ò:C ldap_get_values_lenW(Ë«×Ö, ..)
+¡Ò:C ldap_initA(Ë«×Ö, ..)
+¡ßldap_init  ldap_initA
+
+¡Ò:C ldap_initW(Ë«×Ö, ..)
+¡Ò:C ldap_memfreeA(Ë«×Ö, ..)
+¡ßldap_memfree  ldap_memfreeA
+
+¡Ò:C ldap_memfreeW(Ë«×Ö, ..)
+¡Ò:C ldap_modifyA(Ë«×Ö, ..)
+¡ßldap_modify  ldap_modifyA
+
+¡Ò:C ldap_modifyW(Ë«×Ö, ..)
+¡Ò:C ldap_modify_extA(Ë«×Ö, ..)
+¡ßldap_modify_ext  ldap_modify_extA
+
+¡Ò:C ldap_modify_extW(Ë«×Ö, ..)
+¡Ò:C ldap_modify_ext_sA(Ë«×Ö, ..)
+¡ßldap_modify_ext_s  ldap_modify_ext_sA
+
+¡Ò:C ldap_modify_ext_sW(Ë«×Ö, ..)
+¡Ò:C ldap_modify_sA(Ë«×Ö, ..)
+¡ßldap_modify_s  ldap_modify_sA
+
+¡Ò:C ldap_modify_sW(Ë«×Ö, ..)
+¡Ò:C ldap_modrdn(Ë«×Ö, ..)
+¡Ò:C ldap_modrdn2A(Ë«×Ö, ..)
+¡ßldap_modrdn2  ldap_modrdn2A
+
+¡Ò:C ldap_modrdn2W(Ë«×Ö, ..)
+¡Ò:C ldap_modrdn2_sA(Ë«×Ö, ..)
+¡ßldap_modrdn2_s  ldap_modrdn2_sA
+
+¡Ò:C ldap_modrdn2_sW(Ë«×Ö, ..)
+¡Ò:C ldap_modrdnA(Ë«×Ö, ..)
+¡ßldap_modrdn  ldap_modrdnA
+
+¡Ò:C ldap_modrdnW(Ë«×Ö, ..)
+¡Ò:C ldap_modrdn_sA(Ë«×Ö, ..)
+¡ßldap_modrdn_s  ldap_modrdn_sA
+
+¡Ò:C ldap_modrdn_sW(Ë«×Ö, ..)
+¡Ò:C ldap_msgfree(Ë«×Ö, ..)
+¡Ò:C ldap_next_attributeA(Ë«×Ö, ..)
+¡ßldap_next_attribute  ldap_next_attributeA
+
+¡Ò:C ldap_next_attributeW(Ë«×Ö, ..)
+¡Ò:C ldap_next_entry(Ë«×Ö, ..)
+¡Ò:C ldap_next_reference(Ë«×Ö, ..)
+¡Ò:C ldap_openA(Ë«×Ö, ..)
+¡ßldap_open  ldap_openA
+
+¡Ò:C ldap_openW(Ë«×Ö, ..)
+¡Ò:C ldap_parse_extended_resultA(Ë«×Ö, ..)
+¡ßldap_parse_extended_result  ldap_parse_extended_resultA
+
+¡Ò:C ldap_parse_extended_resultW(Ë«×Ö, ..)
+¡Ò:C ldap_parse_page_controlA(Ë«×Ö, ..)
+¡ßldap_parse_page_control  ldap_parse_page_controlA
+
+¡Ò:C ldap_parse_page_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_parse_referenceA(Ë«×Ö, ..)
+¡ßldap_parse_reference  ldap_parse_referenceA
+
+¡Ò:C ldap_parse_referenceW(Ë«×Ö, ..)
+¡Ò:C ldap_parse_resultA(Ë«×Ö, ..)
+¡ßldap_parse_result  ldap_parse_resultA
+
+¡Ò:C ldap_parse_resultW(Ë«×Ö, ..)
+¡Ò:C ldap_parse_sort_controlA(Ë«×Ö, ..)
+¡ßldap_parse_sort_control  ldap_parse_sort_controlA
+
+¡Ò:C ldap_parse_sort_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_parse_vlv_controlA(Ë«×Ö, ..)
+¡ßldap_parse_vlv_control  ldap_parse_vlv_controlA
+
+¡Ò:C ldap_parse_vlv_controlW(Ë«×Ö, ..)
+¡Ò:C ldap_perror(Ë«×Ö, ..)
+¡Ò:C ldap_rename_extA(Ë«×Ö, ..)
+¡ßldap_rename_ext  ldap_rename_extA
+
+¡Ò:C ldap_rename_extW(Ë«×Ö, ..)
+¡Ò:C ldap_rename_ext_sA(Ë«×Ö, ..)
+¡ßldap_rename_ext_s  ldap_rename_ext_sA
+
+¡Ò:C ldap_rename_ext_sW(Ë«×Ö, ..)
+¡Ò:C ldap_result(Ë«×Ö, ..)
+¡Ò:C ldap_result2error(Ë«×Ö, ..)
+¡Ò:C ldap_sasl_bindA(Ë«×Ö, ..)
+¡ßldap_sasl_bind  ldap_sasl_bindA
+
+¡Ò:C ldap_sasl_bindW(Ë«×Ö, ..)
+¡Ò:C ldap_sasl_bind_sA(Ë«×Ö, ..)
+¡ßldap_sasl_bind_s  ldap_sasl_bind_sA
+
+¡Ò:C ldap_sasl_bind_sW(Ë«×Ö, ..)
+¡Ò:C ldap_searchA(Ë«×Ö, ..)
+¡ßldap_search  ldap_searchA
+
+¡Ò:C ldap_searchW(Ë«×Ö, ..)
+¡Ò:C ldap_search_abandon_page(Ë«×Ö, ..)
+¡Ò:C ldap_search_extA(Ë«×Ö, ..)
+¡ßldap_search_ext  ldap_search_extA
+
+¡Ò:C ldap_search_extW(Ë«×Ö, ..)
+¡Ò:C ldap_search_ext_sA(Ë«×Ö, ..)
+¡ßldap_search_ext_s  ldap_search_ext_sA
+
+¡Ò:C ldap_search_ext_sW(Ë«×Ö, ..)
+¡Ò:C ldap_search_init_pageA(Ë«×Ö, ..)
+¡ßldap_search_init_page  ldap_search_init_pageA
+
+¡Ò:C ldap_search_init_pageW(Ë«×Ö, ..)
+¡Ò:C ldap_search_sA(Ë«×Ö, ..)
+¡ßldap_search_s  ldap_search_sA
+
+¡Ò:C ldap_search_sW(Ë«×Ö, ..)
+¡Ò:C ldap_search_stA(Ë«×Ö, ..)
+¡ßldap_search_st  ldap_search_stA
+
+¡Ò:C ldap_search_stW(Ë«×Ö, ..)
+¡Ò:C ldap_set_dbg_flags(Ë«×Ö, ..)
+¡Ò:C ldap_set_dbg_routine(Ë«×Ö, ..)
+¡Ò:C ldap_set_optionA(Ë«×Ö, ..)
+¡ßldap_set_option  ldap_set_optionA
+
+¡Ò:C ldap_set_optionW(Ë«×Ö, ..)
+¡Ò:C ldap_simple_bindA(Ë«×Ö, ..)
+¡ßldap_simple_bind  ldap_simple_bindA
+
+¡Ò:C ldap_simple_bindW(Ë«×Ö, ..)
+¡Ò:C ldap_simple_bind_sA(Ë«×Ö, ..)
+¡ßldap_simple_bind_s  ldap_simple_bind_sA
+
+¡Ò:C ldap_simple_bind_sW(Ë«×Ö, ..)
+¡Ò:C ldap_sslinitA(Ë«×Ö, ..)
+¡ßldap_sslinit  ldap_sslinitA
+
+¡Ò:C ldap_sslinitW(Ë«×Ö, ..)
+¡Ò:C ldap_start_tls_sA(Ë«×Ö, ..)
+¡ßldap_start_tls_s  ldap_start_tls_sA
+
+¡Ò:C ldap_start_tls_sW(Ë«×Ö, ..)
+¡Ò:C ldap_startup(Ë«×Ö, ..)
+¡Ò:C ldap_stop_tls_s(Ë«×Ö, ..)
+¡Ò:C ldap_ufn2dnA(Ë«×Ö, ..)
+¡ßldap_ufn2dn  ldap_ufn2dnA
+
+¡Ò:C ldap_ufn2dnW(Ë«×Ö, ..)
+¡Ò:C ldap_unbind(Ë«×Ö, ..)
+¡Ò:C ldap_unbind_s(Ë«×Ö, ..)
+¡Ò:C ldap_value_freeA(Ë«×Ö, ..)
+¡ßldap_value_free  ldap_value_freeA
+
+¡Ò:C ldap_value_freeW(Ë«×Ö, ..)
+¡Ò:C ldap_value_free_len(Ë«×Ö, ..)
+
+¦ç

@@ -1,0 +1,180 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒPdhAddCounterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhAddCounter  PdhAddCounterA
+
+¡ÒPdhAddCounterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhBindInputDataSourceA(Ë«×Ö,Ë«×Ö)
+¡ßPdhBindInputDataSource  PdhBindInputDataSourceA
+
+¡ÒPdhBindInputDataSourceW(Ë«×Ö,Ë«×Ö)
+¡ÒPdhBrowseCountersA(Ë«×Ö)
+¡ßPdhBrowseCounters  PdhBrowseCountersA
+
+¡ÒPdhBrowseCountersHA(Ë«×Ö)
+¡ßPdhBrowseCountersH  PdhBrowseCountersHA
+
+¡ÒPdhBrowseCountersHW(Ë«×Ö)
+¡ÒPdhBrowseCountersW(Ë«×Ö)
+¡ÒPdhCalculateCounterFromRawValue(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhCloseLog(Ë«×Ö,Ë«×Ö)
+¡ÒPdhCloseQuery(Ë«×Ö)
+¡ÒPdhCollectQueryData(Ë«×Ö)
+¡ÒPdhCollectQueryDataEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhComputeCounterStatistics(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhConnectMachineA(Ë«×Ö)
+¡ßPdhConnectMachine  PdhConnectMachineA
+
+¡ÒPdhConnectMachineW(Ë«×Ö)
+¡ÒPdhCreateSQLTablesA(Ë«×Ö)
+¡ßPdhCreateSQLTables  PdhCreateSQLTablesA
+
+¡ÒPdhCreateSQLTablesW(Ë«×Ö)
+¡ÒPdhEnumLogSetNamesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumLogSetNames  PdhEnumLogSetNamesA
+
+¡ÒPdhEnumLogSetNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhEnumMachinesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumMachines  PdhEnumMachinesA
+
+¡ÒPdhEnumMachinesHA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumMachinesH  PdhEnumMachinesHA
+
+¡ÒPdhEnumMachinesHW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhEnumMachinesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhEnumObjectItemsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumObjectItems  PdhEnumObjectItemsA
+
+¡ÒPdhEnumObjectItemsHA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumObjectItemsH  PdhEnumObjectItemsHA
+
+¡ÒPdhEnumObjectItemsHW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhEnumObjectItemsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhEnumObjectsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumObjects  PdhEnumObjectsA
+
+¡ÒPdhEnumObjectsHA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhEnumObjectsH  PdhEnumObjectsHA
+
+¡ÒPdhEnumObjectsHW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhEnumObjectsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhExpandCounterPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhExpandCounterPath  PdhExpandCounterPathA
+
+¡ÒPdhExpandCounterPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhExpandWildCardPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhExpandWildCardPath  PdhExpandWildCardPathA
+
+¡ÒPdhExpandWildCardPathHA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhExpandWildCardPathH  PdhExpandWildCardPathHA
+
+¡ÒPdhExpandWildCardPathHW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhExpandWildCardPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhFormatFromRawValue(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetCounterInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetCounterInfo  PdhGetCounterInfoA
+
+¡ÒPdhGetCounterInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetCounterTimeBase(Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDataSourceTimeRangeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetDataSourceTimeRange  PdhGetDataSourceTimeRangeA
+
+¡ÒPdhGetDataSourceTimeRangeH(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDataSourceTimeRangeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDefaultPerfCounterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetDefaultPerfCounter  PdhGetDefaultPerfCounterA
+
+¡ÒPdhGetDefaultPerfCounterHA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetDefaultPerfCounterH  PdhGetDefaultPerfCounterHA
+
+¡ÒPdhGetDefaultPerfCounterHW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDefaultPerfCounterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDefaultPerfObjectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetDefaultPerfObject  PdhGetDefaultPerfObjectA
+
+¡ÒPdhGetDefaultPerfObjectHA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetDefaultPerfObjectH  PdhGetDefaultPerfObjectHA
+
+¡ÒPdhGetDefaultPerfObjectHW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDefaultPerfObjectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetDllVersion(Ë«×Ö)
+¡ÒPdhGetFormattedCounterArrayA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetFormattedCounterArray  PdhGetFormattedCounterArrayA
+
+¡ÒPdhGetFormattedCounterArrayW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetFormattedCounterValue(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetLogFileSize(Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetLogSetGUID(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetRawCounterArrayA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhGetRawCounterArray  PdhGetRawCounterArrayA
+
+¡ÒPdhGetRawCounterArrayW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhGetRawCounterValue(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhIsRealTimeQuery(Ë«×Ö)
+¡ÒPdhLookupPerfIndexByNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhLookupPerfIndexByName  PdhLookupPerfIndexByNameA
+
+¡ÒPdhLookupPerfIndexByNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhLookupPerfNameByIndexA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhLookupPerfNameByIndex  PdhLookupPerfNameByIndexA
+
+¡ÒPdhLookupPerfNameByIndexW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhMakeCounterPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhMakeCounterPath  PdhMakeCounterPathA
+
+¡ÒPdhMakeCounterPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhOpenLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhOpenLog  PdhOpenLogA
+
+¡ÒPdhOpenLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhOpenQueryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhOpenQuery  PdhOpenQueryA
+
+¡ÒPdhOpenQueryH(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhOpenQueryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhParseCounterPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhParseCounterPath  PdhParseCounterPathA
+
+¡ÒPdhParseCounterPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhParseInstanceNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhParseInstanceName  PdhParseInstanceNameA
+
+¡ÒPdhParseInstanceNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhReadRawLogRecord(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhRemoveCounter(Ë«×Ö)
+¡ÒPdhSelectDataSourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPdhSelectDataSource  PdhSelectDataSourceA
+
+¡ÒPdhSelectDataSourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhSetCounterScaleFactor(Ë«×Ö,Ë«×Ö)
+¡ÒPdhSetDefaultRealTimeDataSource(Ë«×Ö)
+¡ÒPdhSetLogSetRunID(Ë«×Ö,Ë«×Ö)
+¡ÒPdhSetQueryTimeRange(Ë«×Ö,Ë«×Ö)
+¡ÒPdhUpdateLogA(Ë«×Ö,Ë«×Ö)
+¡ßPdhUpdateLog  PdhUpdateLogA
+
+¡ÒPdhUpdateLogFileCatalog(Ë«×Ö)
+¡ÒPdhUpdateLogW(Ë«×Ö,Ë«×Ö)
+¡ÒPdhValidatePathA(Ë«×Ö)
+¡ßPdhValidatePath  PdhValidatePathA
+
+¡ÒPdhValidatePathW(Ë«×Ö)
+¡ÒPdhVbAddCounter(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbCreateCounterPathList(Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbGetCounterPathElements(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbGetCounterPathFromList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbGetDoubleCounterValue(Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbGetLogFileSize(Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbGetOneCounterPath(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbIsGoodStatus(Ë«×Ö)
+¡ÒPdhVbOpenLog(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPdhVbOpenQuery(Ë«×Ö)
+¡ÒPdhVbUpdateLog(Ë«×Ö,Ë«×Ö)
+¡ÒPdhVerifySQLDBA(Ë«×Ö)
+¡ßPdhVerifySQLDB  PdhVerifySQLDBA
+
+¡ÒPdhVerifySQLDBW(Ë«×Ö)
+
+¦ç

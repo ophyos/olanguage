@@ -1,0 +1,71 @@
+∥ ########################################################################
+
+∥数据段
+.数据段
+{
+ 字节 szFileName‥260
+ OPENFILENAME  ofn 
+}
+
+
+∥ ########################################################################
+
+∥代码段
+.代码段
+{
+
+
+函数 获得要打开的文件名(双字 hParent,双字 lpTitle,双字 lpFilter)
+{
+    ofn.lStructSize =        取大小 OPENFILENAME
+    压栈 hParent
+    出栈 ofn.hWndOwner
+    压栈 hInstance
+    出栈 ofn.hInstance
+    压栈 lpFilter
+    出栈 ofn.lpstrFilter
+    ofn.lpstrFile = 取地址 szFileName
+    ofn.nMaxFile  = 取大小 szFileName
+    压栈 lpTitle
+    出栈 ofn.lpstrTitle    
+    ofn.Flags =   OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_LONGNAMES
+
+    GetOpenFileName(取地址 ofn)
+}
+
+∥ #########################################################################
+
+函数 获取要保存的文件名(双字 hParent,双字 lpTitle,双字 lpFilter)
+{
+    ofn.lStructSize = 取大小 OPENFILENAME
+    压栈 hParent
+    出栈 ofn.hWndOwner
+    压栈 hInstance
+    出栈 ofn.hInstance
+    压栈 lpFilter
+    出栈 ofn.lpstrFilter        
+    ofn.lpstrFile =   取地址 szFileName
+    ofn.nMaxFile  =   取大小 szFileName
+    压栈 lpTitle
+    出栈 ofn.lpstrTitle
+    ofn.Flags =              OFN_EXPLORER | OFN_LONGNAMES
+                                
+    GetSaveFileName(取地址 ofn)
+}
+
+∥ ########################################################################
+
+函数 填充缓冲区(双字 lpBuffer,双字 lenBuffer,双字 TheChar)
+{ <的址32>    ∥保护 的址32 寄存器
+    
+    的址32 = lpBuffer   ∥ address of buffer
+    计数32 = lenBuffer  ∥ buffer length
+    数据32 @= TheChar
+    累加低 = [字节|数据32]    ∥ load al with character
+    重复 [的址16]  ≌ 累加低           ∥ write character to buffer until ecx = 0
+}
+
+}
+
+∥ #########################################################################
+

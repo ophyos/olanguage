@@ -1,0 +1,152 @@
+引用段
+{
+函数 DsAddSidHistoryA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsAddSidHistoryW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindA(整数32,整数32,整数32)=>整数32;
+函数 DsBindToISTGA(整数32,整数32)=>整数32;
+函数 DsBindToISTGW(整数32,整数32)=>整数32;
+函数 DsBindW(整数32,整数32,整数32)=>整数32;
+函数 DsBindWithCredA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindWithCredW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindWithSpnA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindWithSpnExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindWithSpnExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindWithSpnW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsBindingSetTimeout(整数32,整数32)=>整数32;
+函数 DsClientMakeSpnForTargetServerA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsClientMakeSpnForTargetServerW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackNamesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackNamesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackSpn2A(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackSpn2W(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackSpn3W(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackSpnA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackSpnW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackUnquotedMangledRdnA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsCrackUnquotedMangledRdnW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsFreeDomainControllerInfoA(整数32,整数32,整数32)=>整数32;
+函数 DsFreeDomainControllerInfoW(整数32,整数32,整数32)=>整数32;
+函数 DsFreeNameResultA(整数32)=>整数32;
+函数 DsFreeNameResultW(整数32)=>整数32;
+函数 DsFreePasswordCredentials(整数32)=>整数32;
+函数 DsFreeSchemaGuidMapA(整数32)=>整数32;
+函数 DsFreeSchemaGuidMapW(整数32)=>整数32;
+函数 DsFreeSpnArrayA(整数32,整数32)=>整数32;
+函数 DsFreeSpnArrayW(整数32,整数32)=>整数32;
+函数 DsGetDomainControllerInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsGetDomainControllerInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsGetRdnW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsGetSpnA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsGetSpnW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsInheritSecurityIdentityA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsInheritSecurityIdentityW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsIsMangledDnA(整数32,整数32)=>整数32;
+函数 DsIsMangledDnW(整数32,整数32)=>整数32;
+函数 DsIsMangledRdnValueA(整数32,整数32,整数32)=>整数32;
+函数 DsIsMangledRdnValueW(整数32,整数32,整数32)=>整数32;
+函数 DsListDomainsInSiteA(整数32,整数32,整数32)=>整数32;
+函数 DsListDomainsInSiteW(整数32,整数32,整数32)=>整数32;
+函数 DsListInfoForServerA(整数32,整数32,整数32)=>整数32;
+函数 DsListInfoForServerW(整数32,整数32,整数32)=>整数32;
+函数 DsListRolesA(整数32,整数32)=>整数32;
+函数 DsListRolesW(整数32,整数32)=>整数32;
+函数 DsListServersForDomainInSiteA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsListServersForDomainInSiteW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsListServersInSiteA(整数32,整数32,整数32)=>整数32;
+函数 DsListServersInSiteW(整数32,整数32,整数32)=>整数32;
+函数 DsListSitesA(整数32,整数32)=>整数32;
+函数 DsListSitesW(整数32,整数32)=>整数32;
+函数 C调用 DsLogEntry(整数32, ..)=>整数32;
+函数 DsMakePasswordCredentialsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsMakePasswordCredentialsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsMakeSpnA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsMakeSpnW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsMapSchemaGuidsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsMapSchemaGuidsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsQuerySitesByCostA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsQuerySitesByCostW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsQuerySitesFree(整数32)=>整数32;
+函数 DsQuoteRdnValueA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsQuoteRdnValueW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsRemoveDsDomainA(整数32,整数32)=>整数32;
+函数 DsRemoveDsDomainW(整数32,整数32)=>整数32;
+函数 DsRemoveDsServerA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsRemoveDsServerW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaAddA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaAddW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaConsistencyCheck(整数32,整数32,整数32)=>整数32;
+函数 DsReplicaDelA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaDelW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaFreeInfo(整数32,整数32)=>整数32;
+函数 DsReplicaGetInfo2W(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaGetInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaModifyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaModifyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaSyncA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaSyncAllA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaSyncAllW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaSyncW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaUpdateRefsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaUpdateRefsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaVerifyObjectsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsReplicaVerifyObjectsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsServerRegisterSpnA(整数32,整数32,整数32)=>整数32;
+函数 DsServerRegisterSpnW(整数32,整数32,整数32)=>整数32;
+函数 DsUnBindA(整数32)=>整数32;
+函数 DsUnBindW(整数32)=>整数32;
+函数 DsUnquoteRdnValueA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsUnquoteRdnValueW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsWriteAccountSpnA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsWriteAccountSpnW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsaopBind(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsaopBindWithCred(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsaopBindWithSpn(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsaopExecuteScript(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DsaopPrepareScript(整数32,整数32,整数32,整数32)=>整数32;
+函数 DsaopUnBind(整数32)=>整数32;
+
+宏定义 DsAddSidHistory  DsAddSidHistoryA
+宏定义 DsBind  DsBindA
+宏定义 DsBindToISTG  DsBindToISTGA
+宏定义 DsBindWithCred  DsBindWithCredA
+宏定义 DsBindWithSpn  DsBindWithSpnA
+宏定义 DsBindWithSpnEx  DsBindWithSpnExA
+宏定义 DsClientMakeSpnForTargetServer  DsClientMakeSpnForTargetServerA
+宏定义 DsCrackNames  DsCrackNamesA
+宏定义 DsCrackSpn2  DsCrackSpn2A
+宏定义 DsCrackSpn  DsCrackSpnA
+宏定义 DsCrackUnquotedMangledRdn  DsCrackUnquotedMangledRdnA
+宏定义 DsFreeDomainControllerInfo  DsFreeDomainControllerInfoA
+宏定义 DsFreeNameResult  DsFreeNameResultA
+宏定义 DsFreeSchemaGuidMap  DsFreeSchemaGuidMapA
+宏定义 DsFreeSpnArray  DsFreeSpnArrayA
+宏定义 DsGetDomainControllerInfo  DsGetDomainControllerInfoA
+宏定义 DsGetSpn  DsGetSpnA
+宏定义 DsInheritSecurityIdentity  DsInheritSecurityIdentityA
+宏定义 DsIsMangledDn  DsIsMangledDnA
+宏定义 DsIsMangledRdnValue  DsIsMangledRdnValueA
+宏定义 DsListDomainsInSite  DsListDomainsInSiteA
+宏定义 DsListInfoForServer  DsListInfoForServerA
+宏定义 DsListRoles  DsListRolesA
+宏定义 DsListServersForDomainInSite  DsListServersForDomainInSiteA
+宏定义 DsListServersInSite  DsListServersInSiteA
+宏定义 DsListSites  DsListSitesA
+宏定义 DsMakePasswordCredentials  DsMakePasswordCredentialsA
+宏定义 DsMakeSpn  DsMakeSpnA
+宏定义 DsMapSchemaGuids  DsMapSchemaGuidsA
+宏定义 DsQuerySitesByCost  DsQuerySitesByCostA
+宏定义 DsQuoteRdnValue  DsQuoteRdnValueA
+宏定义 DsRemoveDsDomain  DsRemoveDsDomainA
+宏定义 DsRemoveDsServer  DsRemoveDsServerA
+宏定义 DsReplicaAdd  DsReplicaAddA
+宏定义 DsReplicaDel  DsReplicaDelA
+宏定义 DsReplicaModify  DsReplicaModifyA
+宏定义 DsReplicaSync  DsReplicaSyncA
+宏定义 DsReplicaSyncAll  DsReplicaSyncAllA
+宏定义 DsReplicaUpdateRefs  DsReplicaUpdateRefsA
+宏定义 DsReplicaVerifyObjects  DsReplicaVerifyObjectsA
+宏定义 DsServerRegisterSpn  DsServerRegisterSpnA
+宏定义 DsUnBind  DsUnBindA
+宏定义 DsUnquoteRdnValue  DsUnquoteRdnValueA
+宏定义 DsWriteAccountSpn  DsWriteAccountSpnA
+}

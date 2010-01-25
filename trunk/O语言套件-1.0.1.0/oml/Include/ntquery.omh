@@ -1,0 +1,12 @@
+引用段
+{
+函数 BindIFilterFromStorage(整数32,整数32,整数32)=>整数32;
+函数 BindIFilterFromStream(整数32,整数32,整数32)=>整数32;
+函数 CIState(整数32,整数32,整数32)=>整数32;
+函数 LoadIFilter(整数32,整数32,整数32)=>整数32;
+函数 LocateCatalogsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LocateCatalogsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetCatalogState(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 LocateCatalogs  LocateCatalogsA
+}

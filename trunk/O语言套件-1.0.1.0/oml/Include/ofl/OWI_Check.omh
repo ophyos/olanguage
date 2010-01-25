@@ -1,0 +1,12 @@
+
+引用段
+{
+
+函数 复选框_设置选中状态:Check_SetChecked(地址 复选框指针,整数32 选中状态);
+函数 复选框_获取选中状态:Check_GetChecked(地址 复选框指针)=>整数32;
+函数 复选框_设置文本颜色:Check_SetTextColor(地址 复选框指针,正数32 颜色);
+函数 复选框_获取文本颜色:Check_GetTextColor(地址 复选框指针)=>正数32;
+函数 复选框_销毁控件:Check_DestroyControl(地址 复选框指针);	 
+函数 复选框_获取类:Check_GetClass(地址 复选框指针)=>地址;
+
+} 

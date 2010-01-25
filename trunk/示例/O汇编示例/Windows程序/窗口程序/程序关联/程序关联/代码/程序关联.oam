@@ -1,0 +1,87 @@
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 包含文件和引用库文件定义
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.包含文<*oasm32.oah>
+.包含文<*windows.oah>
+.包含文<*user32.oah>
+.包含文<*kernel32.oah>
+.包含文<*Advapi32.oah>
+
+.引用库<*user32.lib>
+.引用库<*kernel32.lib>
+.引用库<*Advapi32.lib>
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 数据段
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.只读段
+{
+字节 szCaption..  = "程序关联"
+字节 szOutput..   = "程序关联成功"
+字节 szKeyEnter.. = "testfile"
+字节 szKeyExt1..  = ".test"
+字节 szKeyExt2..  = "oasmfile\\shell\\open\\command"
+字节 szParam..    = " \"%1\""
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 代码段
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.代码段
+{
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+入口 主函数()
+{
+     设置关联()
+     如果(累加32 != 假)
+     {
+        MessageBox(NULL,&szOutput,&szCaption,MB_OK)
+     }
+     退出进程(NULL)
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 设置关联()
+{
+	双字 hKey
+	字节 szFileName..MAX_PATH
+
+	RegCreateKey(HKEY_CLASSES_ROOT,&szKeyExt1,&hKey)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		RegSetValueEx(hKey,NULL,NULL, ...
+			REG_SZ,&szKeyEnter,取大小 szKeyEnter)
+
+		RegCloseKey(hKey)
+	}
+     否则
+     {
+         返回 假
+     }
+
+	RegCreateKey(HKEY_CLASSES_ROOT,&szKeyExt2,&hKey)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		GetModuleFileName(NULL,&szFileName,MAX_PATH)
+		lstrcat(&szFileName,&szParam)
+		lstrlen(&szFileName)
+		累加32 ++
+		RegSetValueEx(hKey,NULL,NULL, ...
+			REG_EXPAND_SZ,&szFileName,累加32)
+		RegCloseKey(hKey)
+	}
+     否则
+     {
+         返回 假
+     }
+
+     返回  真
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+}

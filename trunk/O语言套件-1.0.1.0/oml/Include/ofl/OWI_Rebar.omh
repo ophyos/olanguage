@@ -1,0 +1,94 @@
+
+引用段 
+{ 
+
+//////////////////////////////////////////////////////////////////////////
+//RebarBand
+函数 多重工具条BAND_取ID:RebarBand_GetId(地址 pRebarBand)=>正数32;
+函数 多重工具条BAND_取索引:RebarBand_GetIndex(地址 pRebarBand)=>整数32;
+函数 多重工具条BAND_置文本:RebarBand_SetText(地址 pRebarBand,地址 text);
+函数 多重工具条BAND_取文本:RebarBand_GetText(地址 pRebarBand)=>地址;
+函数 多重工具条BAND_置图像:RebarBand_SetImage(地址 pRebarBand,整数32 index);
+函数 多重工具条BAND_取图像:RebarBand_GetImage(地址 pRebarBand)=>整数32; 
+函数 多重工具条BAND_置宽:RebarBand_SetWidth(地址 pRebarBand,整数32 width);
+函数 多重工具条BAND_取宽:RebarBand_GetWidth(地址 pRebarBand)=>整数32;
+函数 多重工具条BAND_置可视:RebarBand_SetVisible(地址 pRebarBand,整数32 visible);
+函数 多重工具条BAND_取可视:RebarBand_GetVisible(地址 pRebarBand)=>整数32;
+函数 RebarBand_HasChevron(地址 pRebarBand)=>整数32; 
+函数 多重工具条BAND_置文本颜色:RebarBand_SetTextColor(地址 pRebarBand,正数32 color);
+函数 多重工具条BAND_取文本颜色:RebarBand_GetTextColor(地址 pRebarBand)=>正数32;
+函数 多重工具条BAND_置背景色:RebarBand_SetBackColor(地址 pRebarBand,正数32 color);
+函数 多重工具条BAND_取背景色:RebarBand_GetBackColor(地址 pRebarBand)=>正数32;
+函数 多重工具条BAND_置左边缘:RebarBand_SetLeftMargin(地址 pRebarBand,整数32 margin);
+函数 多重工具条BAND_取左边缘:RebarBand_GetLeftMargin(地址 pRebarBand)=>整数32; 
+函数 RebarBand_SetChevronLimit(地址 pRebarBand,整数32 limit);
+函数 RebarBand_GetChevronLimit(地址 pRebarBand)=>整数32;
+函数 多重工具条BAND_置最小子宽:RebarBand_SetMinChildWidth(地址 pRebarBand,整数32 width);
+函数 多重工具条BAND_取最小子宽:RebarBand_GetMinChildWidth(地址 pRebarBand)=>整数32;
+函数 多重工具条BAND_置最小化高:RebarBand_SetMinHeight(地址 pRebarBand,整数32 height);
+函数 多重工具条BAND_取最小化高:RebarBand_GetMinHeight(地址 pRebarBand)=>整数32;		
+函数 多重工具条BAND_取矩形:RebarBand_GetRect(地址 pRebarBand,地址 rc);
+函数 多重工具条BAND_置背景位置:RebarBand_SetBackBitmap(地址 pRebarBand,HBITMAP bitmap);
+函数 多重工具条BAND_取背景位图:RebarBand_GetBackBitmap(地址 pRebarBand)=>HBITMAP;	 
+函数 多重工具条BAND_取父:RebarBand_GetParent(地址 pRebarBand)=>地址;
+函数 多重工具条BAND_取子:RebarBand_GetChild(地址 pRebarBand)=>地址;
+
+函数 多重工具条BAND_获取拥有者:RebarBand_GetOwner(地址 pRebarBand)=>地址;
+函数 多重工具条BAND_置为空客户区:RebarBand_IsClientEmpty(地址 pRebarBand)=>整数32;
+函数 多重工具条BAND_添加控件:RebarBand_AddControl(地址 pRebarBand,地址 pControl);
+函数 多重工具条BAND_移除控件:RebarBand_RemoveControl(地址 pRebarBand,地址 pControl);
+
+函数 多重工具条BAND_设置颜色:RebarBand_SetColor(地址 pRebarBand,正数32 foreColor,正数32 backColor);
+函数 多重工具条BAND_获取颜色:RebarBand_GetColor(地址 pRebarBand,地址 foreColor,地址 backColor);	
+函数 多重工具条BAND_设置最小化子大小:RebarBand_SetMinChildSize(地址 pRebarBand,整数32 minWidth,整数32 minHeight);
+函数 多重工具条BAND_获取最小化子大小:RebarBand_GetMinChildSize(地址 pRebarBand,地址 minWidth,地址 minHeight);
+
+//////////////////////////////////////////////////////////////////////////
+//Rebar
+函数 多重工具条_获取BAND计数:Rebar_GetBandCount(地址 pRebar)=>整数32;
+函数 多重工具条_获取行计数:Rebar_GetRowCount(地址 pRebar)=>整数32;
+函数 多重工具条_获取行高:Rebar_GetRowHeight(地址 pRebar,整数32 index)=>整数32;
+函数 多重工具条_设置文本颜色:Rebar_SetTextColor(地址 pRebar,正数32 color);
+函数 多重工具条_获取文本颜色:Rebar_GetTextColor(地址 pRebar)=>正数32;
+函数 多重工具条_获取BAND矩形:Rebar_GetBandRect(地址 pRebar,整数32 pos,地址 rc); 
+函数 多重工具条_设置图像列表:Rebar_SetImageList(地址 pRebar,地址 imageList);
+函数 多重工具条_获取BAND:Rebar_GetBand(地址 pRebar,整数32 index)=>地址;	 
+函数 多重工具条_获取图像列表:Rebar_GetImageList(地址 pRebar)=>地址;
+
+//添加一个Band，参数1指明Band的宽度，参数2指明Band的最小高度，参数3表明是否要把Band放在新的一行，参数4指明是否Band的尺寸要固定下来
+函数 多重工具条_添加BAND:Rebar_AddBand(地址 pRebar,整数32 width,整数32 height,整数32 newLine,整数32 fixedSize)=>地址;
+//在索引为index的Band之前插入一个新的Band，其他参数可参考AddBand()的注释说明
+函数 多重工具条_插入BAND:Rebar_InsertBand(地址 pRebar,整数32 index,整数32 width,整数32 height,整数32 newLine,整数32 fixedSize)=>地址;
+//删除指针为band的Band
+函数 多重工具条_删除BAND:Rebar_DeleteBand(地址 pRebar,地址 band);
+//删除索引为index的Band
+函数 多重工具条_删除BAND索引:Rebar_DeleteBandIndex(地址 pRebar,整数32 index);
+//删除所有的Band
+函数 多重工具条_删除所有BAND:Rebar_DeleteAllBand(地址 pRebar);
+//用程序代码来最大化索引为index的Band，用户也可用鼠标单击(或双击Band的抓取器来最大化/最小化Band)
+函数 多重工具条_最大化BAND:Rebar_MaximizeBand(地址 pRebar,整数32 index);
+//用程序代码来最小化索引为index的Band
+函数 多重工具条_最小会BAND:Rebar_MinimizeBand(地址 pRebar,整数32 index);
+//用程序代码来移动索引为iFrom的Band，使其索引位置为iTo
+函数 多重工具条_移动BAND:Rebar_MoveBand(地址 pRebar,整数32 iFrom, 整数32 iTo);
+//用程序代码来按下索引为index的Band的尖形按钮
+函数 Rebar_PushChevron(地址 pRebar,整数32 index);
+//用程序代码来开始拖拽索引为index的Band，此时会进入拖拽模式
+函数 多重工具条_开始拖拽:Rebar_BeginDrag(地址 pRebar,整数32 index);
+//在拖拽模式下，鼠标位置移动到(x,y)
+函数 多重工具条_拖拽移动:Rebar_DragMove(地址 pRebar,整数32 x, 整数32 y);
+//结束拖拽模式
+函数 多重工具条_结束拖拽:Rebar_EndDrag(地址 pRebar);
+//测试哪一个Band正好在坐标p(相对于控件客户区原点)之下
+函数 Rebar_IsOnBand(地址 pRebar,地址 p)=>地址;
+
+函数 多重工具条_销毁控件:Rebar_DestroyControl(地址 pRebar);
+函数 多重工具条_获取类:Rebar_GetClass(地址 pRebar)=>地址;
+函数 多重工具条_设置标题:Rebar_SetCaption(地址 pRebar,地址 string);
+函数 多重工具条_获取标题:Rebar_GetCaption(地址 pRebar)=>地址;
+函数 多重工具条_移动:Rebar_Move(地址 pRebar,整数32 dx,整数32 dy);
+函数 多重工具条_设置大小:Rebar_SetSize(地址 pRebar,整数32 width,整数32 height);
+函数 多重工具条_设置位置:Rebar_SetPositionSize(地址 pRebar,整数32 left,整数32 top,整数32 width,整数32 height);
+函数 多重工具条_重绘控件:Rebar_RedrawControl(地址 pRebar,整数32 redraw);
+
+} 

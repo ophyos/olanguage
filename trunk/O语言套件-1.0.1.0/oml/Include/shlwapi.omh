@@ -1,0 +1,453 @@
+引用段
+{
+函数 AssocCreate(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocGetPerceivedType(整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocIsDangerous(整数32)=>整数32;
+函数 AssocQueryKeyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocQueryKeyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocQueryStringA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocQueryStringByKeyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocQueryStringByKeyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AssocQueryStringW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ChrCmpIA(整数32,整数32)=>整数32;
+函数 ChrCmpIW(整数32,整数32)=>整数32;
+函数 ColorAdjustLuma(整数32,整数32,整数32)=>整数32;
+函数 ColorHLSToRGB(整数32,整数32,整数32)=>整数32;
+函数 ColorRGBToHLS(整数32,整数32,整数32,整数32);
+函数 GetAcceptLanguagesA(整数32,整数32)=>整数32;
+函数 GetAcceptLanguagesW(整数32,整数32)=>整数32;
+函数 GetMenuPosFromID(整数32,整数32)=>整数32;
+函数 HashData(整数32,整数32,整数32,整数32)=>整数32;
+函数 IntlStrEqWorkerA(整数32,整数32,整数32,整数32)=>整数32;
+函数 IntlStrEqWorkerW(整数32,整数32,整数32,整数32)=>整数32;
+函数 IsCharSpaceA(整数32)=>整数32;
+函数 IsCharSpaceW(整数32)=>整数32;
+函数 IsInternetESCEnabled()=>整数32;
+函数 PathAddBackslashA(整数32)=>整数32;
+函数 PathAddBackslashW(整数32)=>整数32;
+函数 PathAddExtensionA(整数32,整数32)=>整数32;
+函数 PathAddExtensionW(整数32,整数32)=>整数32;
+函数 PathAppendA(整数32,整数32)=>整数32;
+函数 PathAppendW(整数32,整数32)=>整数32;
+函数 PathBuildRootA(整数32,整数32)=>整数32;
+函数 PathBuildRootW(整数32,整数32)=>整数32;
+函数 PathCanonicalizeA(整数32,整数32)=>整数32;
+函数 PathCanonicalizeW(整数32,整数32)=>整数32;
+函数 PathCombineA(整数32,整数32,整数32)=>整数32;
+函数 PathCombineW(整数32,整数32,整数32)=>整数32;
+函数 PathCommonPrefixA(整数32,整数32,整数32)=>整数32;
+函数 PathCommonPrefixW(整数32,整数32,整数32)=>整数32;
+函数 PathCompactPathA(整数32,整数32,整数32)=>整数32;
+函数 PathCompactPathExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PathCompactPathExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PathCompactPathW(整数32,整数32,整数32)=>整数32;
+函数 PathCreateFromUrlA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PathCreateFromUrlW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PathFileExistsA(整数32)=>整数32;
+函数 PathFileExistsW(整数32)=>整数32;
+函数 PathFindExtensionA(整数32)=>整数32;
+函数 PathFindExtensionW(整数32)=>整数32;
+函数 PathFindFileNameA(整数32)=>整数32;
+函数 PathFindFileNameW(整数32)=>整数32;
+函数 PathFindNextComponentA(整数32)=>整数32;
+函数 PathFindNextComponentW(整数32)=>整数32;
+函数 PathFindOnPathA(整数32,整数32)=>整数32;
+函数 PathFindOnPathW(整数32,整数32)=>整数32;
+函数 PathFindSuffixArrayA(整数32,整数32,整数32)=>整数32;
+函数 PathFindSuffixArrayW(整数32,整数32,整数32)=>整数32;
+函数 PathGetArgsA(整数32)=>整数32;
+函数 PathGetArgsW(整数32)=>整数32;
+函数 PathGetCharTypeA(整数32)=>整数32;
+函数 PathGetCharTypeW(整数32)=>整数32;
+函数 PathGetDriveNumberA(整数32)=>整数32;
+函数 PathGetDriveNumberW(整数32)=>整数32;
+函数 PathIsContentTypeA(整数32,整数32)=>整数32;
+函数 PathIsContentTypeW(整数32,整数32)=>整数32;
+函数 PathIsDirectoryA(整数32)=>整数32;
+函数 PathIsDirectoryEmptyA(整数32)=>整数32;
+函数 PathIsDirectoryEmptyW(整数32)=>整数32;
+函数 PathIsDirectoryW(整数32)=>整数32;
+函数 PathIsFileSpecA(整数32)=>整数32;
+函数 PathIsFileSpecW(整数32)=>整数32;
+函数 PathIsLFNFileSpecA(整数32)=>整数32;
+函数 PathIsLFNFileSpecW(整数32)=>整数32;
+函数 PathIsNetworkPathA(整数32)=>整数32;
+函数 PathIsNetworkPathW(整数32)=>整数32;
+函数 PathIsPrefixA(整数32,整数32)=>整数32;
+函数 PathIsPrefixW(整数32,整数32)=>整数32;
+函数 PathIsRelativeA(整数32)=>整数32;
+函数 PathIsRelativeW(整数32)=>整数32;
+函数 PathIsRootA(整数32)=>整数32;
+函数 PathIsRootW(整数32)=>整数32;
+函数 PathIsSameRootA(整数32,整数32)=>整数32;
+函数 PathIsSameRootW(整数32,整数32)=>整数32;
+函数 PathIsSystemFolderA(整数32,整数32)=>整数32;
+函数 PathIsSystemFolderW(整数32,整数32)=>整数32;
+函数 PathIsUNCA(整数32)=>整数32;
+函数 PathIsUNCServerA(整数32)=>整数32;
+函数 PathIsUNCServerShareA(整数32)=>整数32;
+函数 PathIsUNCServerShareW(整数32)=>整数32;
+函数 PathIsUNCServerW(整数32)=>整数32;
+函数 PathIsUNCW(整数32)=>整数32;
+函数 PathIsURLA(整数32)=>整数32;
+函数 PathIsURLW(整数32)=>整数32;
+函数 PathMakePrettyA(整数32)=>整数32;
+函数 PathMakePrettyW(整数32)=>整数32;
+函数 PathMakeSystemFolderA(整数32)=>整数32;
+函数 PathMakeSystemFolderW(整数32)=>整数32;
+函数 PathMatchSpecA(整数32,整数32)=>整数32;
+函数 PathMatchSpecW(整数32,整数32)=>整数32;
+函数 PathParseIconLocationA(整数32)=>整数32;
+函数 PathParseIconLocationW(整数32)=>整数32;
+函数 PathQuoteSpacesA(整数32);
+函数 PathQuoteSpacesW(整数32);
+函数 PathRelativePathToA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PathRelativePathToW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PathRemoveArgsA(整数32);
+函数 PathRemoveArgsW(整数32);
+函数 PathRemoveBackslashA(整数32)=>整数32;
+函数 PathRemoveBackslashW(整数32)=>整数32;
+函数 PathRemoveBlanksA(整数32);
+函数 PathRemoveBlanksW(整数32);
+函数 PathRemoveExtensionA(整数32);
+函数 PathRemoveExtensionW(整数32);
+函数 PathRemoveFileSpecA(整数32)=>整数32;
+函数 PathRemoveFileSpecW(整数32)=>整数32;
+函数 PathRenameExtensionA(整数32,整数32)=>整数32;
+函数 PathRenameExtensionW(整数32,整数32)=>整数32;
+函数 PathSearchAndQualifyA(整数32,整数32,整数32)=>整数32;
+函数 PathSearchAndQualifyW(整数32,整数32,整数32)=>整数32;
+函数 PathSetDlgItemPathA(整数32,整数32,整数32);
+函数 PathSetDlgItemPathW(整数32,整数32,整数32);
+函数 PathSkipRootA(整数32)=>整数32;
+函数 PathSkipRootW(整数32)=>整数32;
+函数 PathStripPathA(整数32);
+函数 PathStripPathW(整数32);
+函数 PathStripToRootA(整数32)=>整数32;
+函数 PathStripToRootW(整数32)=>整数32;
+函数 PathUnExpandEnvStringsA(整数32,整数32,整数32)=>整数32;
+函数 PathUnExpandEnvStringsW(整数32,整数32,整数32)=>整数32;
+函数 PathUndecorateA(整数32);
+函数 PathUndecorateW(整数32);
+函数 PathUnmakeSystemFolderA(整数32)=>整数32;
+函数 PathUnmakeSystemFolderW(整数32)=>整数32;
+函数 PathUnquoteSpacesA(整数32);
+函数 PathUnquoteSpacesW(整数32);
+函数 SHAllocShared(整数32,整数32,整数32)=>整数32;
+函数 SHAutoComplete(整数32,整数32)=>整数32;
+函数 SHCopyKeyA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCopyKeyW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateShellPalette(整数32)=>整数32;
+函数 SHCreateStreamOnFileA(整数32,整数32,整数32)=>整数32;
+函数 SHCreateStreamOnFileEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateStreamOnFileW(整数32,整数32,整数32)=>整数32;
+函数 SHCreateStreamWrapper(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateThread(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHCreateThreadRef(整数32,整数32)=>整数32;
+函数 SHDeleteEmptyKeyA(整数32,整数32)=>整数32;
+函数 SHDeleteEmptyKeyW(整数32,整数32)=>整数32;
+函数 壳删除键:SHDeleteKeyA(整数32,整数32)=>整数32;
+函数 SHDeleteKeyW(整数32,整数32)=>整数32;
+函数 SHDeleteOrphanKeyA(整数32,整数32)=>整数32;
+函数 SHDeleteOrphanKeyW(整数32,整数32)=>整数32;
+函数 SHDeleteValueA(整数32,整数32,整数32)=>整数32;
+函数 SHDeleteValueW(整数32,整数32,整数32)=>整数32;
+函数 SHEnumKeyExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHEnumKeyExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHEnumValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHEnumValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHFreeShared(整数32,整数32)=>整数32;
+函数 SHGetInverseCMAP(整数32,整数32)=>整数32;
+函数 SHGetThreadRef(整数32)=>整数32;
+函数 SHGetValueA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetValueW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHGetViewStatePropertyBag(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHIsLowMemoryMachine(整数32)=>整数32;
+函数 SHLoadIndirectString(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHLockShared(整数32,整数32)=>整数32;
+函数 SHOpenRegStream2A(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHOpenRegStream2W(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHOpenRegStreamA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHOpenRegStreamW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHQueryInfoKeyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHQueryInfoKeyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHQueryValueExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHQueryValueExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegCloseUSKey(整数32)=>整数32;
+函数 SHRegCreateUSKeyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegCreateUSKeyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegDeleteEmptyUSKeyA(整数32,整数32,整数32)=>整数32;
+函数 SHRegDeleteEmptyUSKeyW(整数32,整数32,整数32)=>整数32;
+函数 SHRegDeleteUSValueA(整数32,整数32,整数32)=>整数32;
+函数 SHRegDeleteUSValueW(整数32,整数32,整数32)=>整数32;
+函数 SHRegDuplicateHKey(整数32)=>整数32;
+函数 SHRegEnumUSKeyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegEnumUSKeyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegEnumUSValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegEnumUSValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetBoolUSValueA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetBoolUSValueW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetPathA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetPathW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetUSValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetUSValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegGetValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegOpenUSKeyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegOpenUSKeyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegQueryInfoUSKeyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegQueryInfoUSKeyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegQueryUSValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegQueryUSValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegSetPathA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegSetPathW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegSetUSValueA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegSetUSValueW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegWriteUSValueA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegWriteUSValueW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHRegisterValidateTemplate(整数32,整数32)=>整数32;
+函数 SHReleaseThreadRef()=>整数32;
+函数 SHSetThreadRef(整数32)=>整数32;
+函数 SHSetValueA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHSetValueW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SHSkipJunction(整数32,整数32)=>整数32;
+函数 SHStrDupA(整数32,整数32)=>整数32;
+函数 SHStrDupW(整数32,整数32)=>整数32;
+函数 SHUnlockShared(整数32)=>整数32;
+函数 StrCSpnA(整数32,整数32)=>整数32;
+函数 StrCSpnIA(整数32,整数32)=>整数32;
+函数 StrCSpnIW(整数32,整数32)=>整数32;
+函数 StrCSpnW(整数32,整数32)=>整数32;
+函数 StrCatBuffA(整数32,整数32,整数32)=>整数32;
+函数 StrCatBuffW(整数32,整数32,整数32)=>整数32;
+函数 StrCatChainW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrCatW(整数32,整数32)=>整数32;
+函数 StrChrA(整数32,整数32)=>整数32;
+函数 StrChrIA(整数32,整数32)=>整数32;
+函数 StrChrIW(整数32,整数32)=>整数32;
+函数 StrChrNIW(整数32,整数32,整数32)=>整数32;
+函数 StrChrNW(整数32,整数32,整数32)=>整数32;
+函数 StrChrW(整数32,整数32)=>整数32;
+函数 StrCmpCA(整数32,整数32)=>整数32;
+函数 StrCmpCW(整数32,整数32)=>整数32;
+函数 StrCmpICA(整数32,整数32)=>整数32;
+函数 StrCmpICW(整数32,整数32)=>整数32;
+函数 StrCmpIW(整数32,整数32)=>整数32;
+函数 StrCmpLogicalW(整数32,整数32)=>整数32;
+函数 StrCmpNA(整数32,整数32,整数32)=>整数32;
+函数 StrCmpNIA(整数32,整数32,整数32)=>整数32;
+函数 StrCmpNIW(整数32,整数32,整数32)=>整数32;
+函数 StrCmpNW(整数32,整数32,整数32)=>整数32;
+函数 StrCmpW(整数32,整数32)=>整数32;
+函数 StrCpyNW(整数32,整数32,整数32)=>整数32;
+函数 StrCpyW(整数32,整数32)=>整数32;
+函数 StrDupA(整数32)=>整数32;
+函数 StrDupW(整数32)=>整数32;
+函数 StrFormatByteSize64A(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrFormatByteSizeA(整数32,整数32,整数32)=>整数32;
+函数 StrFormatByteSizeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrFormatKBSizeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrFormatKBSizeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrFromTimeIntervalA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrFromTimeIntervalW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrIsIntlEqualA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrIsIntlEqualW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrNCatA(整数32,整数32,整数32)=>整数32;
+函数 StrNCatW(整数32,整数32,整数32)=>整数32;
+函数 StrPBrkA(整数32,整数32)=>整数32;
+函数 StrPBrkW(整数32,整数32)=>整数32;
+函数 StrRChrA(整数32,整数32,整数32)=>整数32;
+函数 StrRChrIA(整数32,整数32,整数32)=>整数32;
+函数 StrRChrIW(整数32,整数32,整数32)=>整数32;
+函数 StrRChrW(整数32,整数32,整数32)=>整数32;
+函数 StrRStrIA(整数32,整数32,整数32)=>整数32;
+函数 StrRStrIW(整数32,整数32,整数32)=>整数32;
+函数 StrRetToBSTR(整数32,整数32,整数32)=>整数32;
+函数 StrRetToBufA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrRetToBufW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StrRetToStrA(整数32,整数32,整数32)=>整数32;
+函数 StrRetToStrW(整数32,整数32,整数32)=>整数32;
+函数 StrSpnA(整数32,整数32)=>整数32;
+函数 StrSpnW(整数32,整数32)=>整数32;
+函数 StrStrA(整数32,整数32)=>整数32;
+函数 StrStrIA(整数32,整数32)=>整数32;
+函数 StrStrIW(整数32,整数32)=>整数32;
+函数 StrStrNIW(整数32,整数32,整数32)=>整数32;
+函数 StrStrNW(整数32,整数32,整数32)=>整数32;
+函数 StrStrW(整数32,整数32)=>整数32;
+函数 StrToInt64ExA(整数32,整数32,整数32)=>整数32;
+函数 StrToInt64ExW(整数32,整数32,整数32)=>整数32;
+函数 StrToIntA(整数32)=>整数32;
+函数 StrToIntExA(整数32,整数32,整数32)=>整数32;
+函数 StrToIntExW(整数32,整数32,整数32)=>整数32;
+函数 StrToIntW(整数32)=>整数32;
+函数 StrTrimA(整数32,整数32)=>整数32;
+函数 StrTrimW(整数32,整数32)=>整数32;
+函数 UrlApplySchemeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlApplySchemeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlCanonicalizeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlCanonicalizeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlCombineA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlCombineW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlCompareA(整数32,整数32,整数32)=>整数32;
+函数 UrlCompareW(整数32,整数32,整数32)=>整数32;
+函数 UrlCreateFromPathA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlCreateFromPathW(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlEscapeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlEscapeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlGetLocationA(整数32)=>整数32;
+函数 UrlGetLocationW(整数32)=>整数32;
+函数 UrlGetPartA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlGetPartW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlHashA(整数32,整数32,整数32)=>整数32;
+函数 UrlHashW(整数32,整数32,整数32)=>整数32;
+函数 UrlIsA(整数32,整数32)=>整数32;
+函数 UrlIsNoHistoryA(整数32)=>整数32;
+函数 UrlIsNoHistoryW(整数32)=>整数32;
+函数 UrlIsOpaqueA(整数32)=>整数32;
+函数 UrlIsOpaqueW(整数32)=>整数32;
+函数 UrlIsW(整数32,整数32)=>整数32;
+函数 UrlUnescapeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UrlUnescapeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 wnsprintfA(整数32, ..)=>整数32;
+函数 C调用 wnsprintfW(整数32, ..)=>整数32;
+函数 wvnsprintfA(整数32,整数32,整数32,整数32)=>整数32;
+函数 wvnsprintfW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 AssocQueryKey  AssocQueryKeyA
+宏定义 AssocQueryString  AssocQueryStringA
+宏定义 AssocQueryStringByKey  AssocQueryStringByKeyA
+宏定义 ChrCmpI  ChrCmpIA
+宏定义 GetAcceptLanguages  GetAcceptLanguagesA
+宏定义 IntlStrEqWorker  IntlStrEqWorkerA
+宏定义 IsCharSpace  IsCharSpaceA
+宏定义 PathAddBackslash  PathAddBackslashA
+宏定义 PathAddExtension  PathAddExtensionA
+宏定义 PathAppend  PathAppendA
+宏定义 PathBuildRoot  PathBuildRootA
+宏定义 PathCanonicalize  PathCanonicalizeA
+宏定义 PathCombine  PathCombineA
+宏定义 PathCommonPrefix  PathCommonPrefixA
+宏定义 PathCompactPath  PathCompactPathA
+宏定义 PathCompactPathEx  PathCompactPathExA
+宏定义 PathCreateFromUrl  PathCreateFromUrlA
+宏定义 PathFileExists  PathFileExistsA
+宏定义 PathFindExtension  PathFindExtensionA
+宏定义 PathFindFileName  PathFindFileNameA
+宏定义 PathFindNextComponent  PathFindNextComponentA
+宏定义 PathFindOnPath  PathFindOnPathA
+宏定义 PathFindSuffixArray  PathFindSuffixArrayA
+宏定义 PathGetArgs  PathGetArgsA
+宏定义 PathGetCharType  PathGetCharTypeA
+宏定义 PathGetDriveNumber  PathGetDriveNumberA
+宏定义 PathIsContentType  PathIsContentTypeA
+宏定义 PathIsDirectory  PathIsDirectoryA
+宏定义 PathIsDirectoryEmpty  PathIsDirectoryEmptyA
+宏定义 PathIsFileSpec  PathIsFileSpecA
+宏定义 PathIsLFNFileSpec  PathIsLFNFileSpecA
+宏定义 PathIsNetworkPath  PathIsNetworkPathA
+宏定义 PathIsPrefix  PathIsPrefixA
+宏定义 PathIsRelative  PathIsRelativeA
+宏定义 PathIsRoot  PathIsRootA
+宏定义 PathIsSameRoot  PathIsSameRootA
+宏定义 PathIsSystemFolder  PathIsSystemFolderA
+宏定义 PathIsUNC  PathIsUNCA
+宏定义 PathIsUNCServer  PathIsUNCServerA
+宏定义 PathIsUNCServerShare  PathIsUNCServerShareA
+宏定义 PathIsURL  PathIsURLA
+宏定义 PathMakePretty  PathMakePrettyA
+宏定义 PathMakeSystemFolder  PathMakeSystemFolderA
+宏定义 PathMatchSpec  PathMatchSpecA
+宏定义 PathParseIconLocation  PathParseIconLocationA
+宏定义 PathQuoteSpaces  PathQuoteSpacesA
+宏定义 PathRelativePathTo  PathRelativePathToA
+宏定义 PathRemoveArgs  PathRemoveArgsA
+宏定义 PathRemoveBackslash  PathRemoveBackslashA
+宏定义 PathRemoveBlanks  PathRemoveBlanksA
+宏定义 PathRemoveExtension  PathRemoveExtensionA
+宏定义 PathRemoveFileSpec  PathRemoveFileSpecA
+宏定义 PathRenameExtension  PathRenameExtensionA
+宏定义 PathSearchAndQualify  PathSearchAndQualifyA
+宏定义 PathSetDlgItemPath  PathSetDlgItemPathA
+宏定义 PathSkipRoot  PathSkipRootA
+宏定义 PathStripPath  PathStripPathA
+宏定义 PathStripToRoot  PathStripToRootA
+宏定义 PathUnExpandEnvStrings  PathUnExpandEnvStringsA
+宏定义 PathUndecorate  PathUndecorateA
+宏定义 PathUnmakeSystemFolder  PathUnmakeSystemFolderA
+宏定义 PathUnquoteSpaces  PathUnquoteSpacesA
+宏定义 SHCopyKey  SHCopyKeyA
+宏定义 SHCreateStreamOnFile  SHCreateStreamOnFileA
+宏定义 SHDeleteEmptyKey  SHDeleteEmptyKeyA
+宏定义 SHDeleteKey  SHDeleteKeyA
+宏定义 SHDeleteOrphanKey  SHDeleteOrphanKeyA
+宏定义 SHDeleteValue  SHDeleteValueA
+宏定义 SHEnumKeyEx  SHEnumKeyExA
+宏定义 SHEnumValue  SHEnumValueA
+宏定义 SHGetValue  SHGetValueA
+宏定义 SHOpenRegStream2  SHOpenRegStream2A
+宏定义 SHOpenRegStream  SHOpenRegStreamA
+宏定义 SHQueryInfoKey  SHQueryInfoKeyA
+宏定义 SHQueryValueEx  SHQueryValueExA
+宏定义 SHRegCreateUSKey  SHRegCreateUSKeyA
+宏定义 SHRegDeleteEmptyUSKey  SHRegDeleteEmptyUSKeyA
+宏定义 SHRegDeleteUSValue  SHRegDeleteUSValueA
+宏定义 SHRegEnumUSKey  SHRegEnumUSKeyA
+宏定义 SHRegEnumUSValue  SHRegEnumUSValueA
+宏定义 SHRegGetBoolUSValue  SHRegGetBoolUSValueA
+宏定义 SHRegGetPath  SHRegGetPathA
+宏定义 SHRegGetUSValue  SHRegGetUSValueA
+宏定义 SHRegGetValue  SHRegGetValueA
+宏定义 SHRegOpenUSKey  SHRegOpenUSKeyA
+宏定义 SHRegQueryInfoUSKey  SHRegQueryInfoUSKeyA
+宏定义 SHRegQueryUSValue  SHRegQueryUSValueA
+宏定义 SHRegSetPath  SHRegSetPathA
+宏定义 SHRegSetUSValue  SHRegSetUSValueA
+宏定义 SHRegWriteUSValue  SHRegWriteUSValueA
+宏定义 SHSetValue  SHSetValueA
+宏定义 SHStrDup  SHStrDupA
+宏定义 StrCSpn  StrCSpnA
+宏定义 StrCSpnI  StrCSpnIA
+宏定义 StrCatBuff  StrCatBuffA
+宏定义 StrChr  StrChrA
+宏定义 StrChrI  StrChrIA
+宏定义 StrCmpC  StrCmpCA
+宏定义 StrCmpIC  StrCmpICA
+宏定义 StrCmpN  StrCmpNA
+宏定义 StrCmpNI  StrCmpNIA
+宏定义 StrDup  StrDupA
+宏定义 StrFormatByteSize64  StrFormatByteSize64A
+宏定义 StrFormatByteSize  StrFormatByteSizeA
+宏定义 StrFormatKBSize  StrFormatKBSizeA
+宏定义 StrFromTimeInterval  StrFromTimeIntervalA
+宏定义 StrIsIntlEqual  StrIsIntlEqualA
+宏定义 StrNCat  StrNCatA
+宏定义 StrPBrk  StrPBrkA
+宏定义 StrRChr  StrRChrA
+宏定义 StrRChrI  StrRChrIA
+宏定义 StrRStrI  StrRStrIA
+宏定义 StrRetToBuf  StrRetToBufA
+宏定义 StrRetToStr  StrRetToStrA
+宏定义 StrSpn  StrSpnA
+宏定义 StrStr  StrStrA
+宏定义 StrStrI  StrStrIA
+宏定义 StrToInt64Ex  StrToInt64ExA
+宏定义 StrToInt  StrToIntA
+宏定义 StrToIntEx  StrToIntExA
+宏定义 StrTrim  StrTrimA
+宏定义 UrlApplyScheme  UrlApplySchemeA
+宏定义 UrlCanonicalize  UrlCanonicalizeA
+宏定义 UrlCombine  UrlCombineA
+宏定义 UrlCompare  UrlCompareA
+宏定义 UrlCreateFromPath  UrlCreateFromPathA
+宏定义 UrlEscape  UrlEscapeA
+宏定义 UrlGetLocation  UrlGetLocationA
+宏定义 UrlGetPart  UrlGetPartA
+宏定义 UrlHash  UrlHashA
+宏定义 UrlIs  UrlIsA
+宏定义 UrlIsNoHistory  UrlIsNoHistoryA
+宏定义 UrlIsOpaque  UrlIsOpaqueA
+宏定义 UrlUnescape  UrlUnescapeA
+宏定义 wnsprintf  wnsprintfA
+宏定义 wvnsprintf  wvnsprintfA
+}

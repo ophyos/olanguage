@@ -1,0 +1,57 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒDwTerminalDlg(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRasDialOutProtocols()
+¡ÒRasAutodialDisableDlgA(Ë«×Ö)
+¡ßRasAutodialDisableDlg  RasAutodialDisableDlgA
+
+¡ÒRasAutodialDisableDlgW(Ë«×Ö)
+¡ÒRasAutodialQueryDlgA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasAutodialQueryDlg  RasAutodialQueryDlgA
+
+¡ÒRasAutodialQueryDlgW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasDialDlgA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasDialDlg  RasDialDlgA
+
+¡ÒRasDialDlgW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasEntryDlgA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasEntryDlg  RasEntryDlgA
+
+¡ÒRasEntryDlgW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasMonitorDlgA(Ë«×Ö,Ë«×Ö)
+¡ßRasMonitorDlg  RasMonitorDlgA
+
+¡ÒRasMonitorDlgW(Ë«×Ö,Ë«×Ö)
+¡ÒRasPhonebookDlgA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRasPhonebookDlg  RasPhonebookDlgA
+
+¡ÒRasPhonebookDlgW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSrvAddPropPages(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSrvAddWizPages(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSrvAllowConnectionsConfig(Ë«×Ö)
+¡ÒRasSrvCleanupService()
+¡ÒRasSrvEnumConnections(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasSrvHangupConnection(Ë«×Ö)
+¡ÒRasSrvInitializeService()
+¡ÒRasSrvIsConnectionConnected(Ë«×Ö,Ë«×Ö)
+¡ÒRasSrvIsICConfigured(Ë«×Ö)
+¡ÒRasSrvIsServiceRunning(Ë«×Ö)
+¡ÒRasSrvQueryShowIcon(Ë«×Ö)
+¡ÒRasUserEnableManualDial(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasUserGetManualDial(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasUserPrefsDlg(Ë«×Ö)
+¡ÒRasWizCreateNewEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasWizGetNCCFlags(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasWizGetSuggestedEntryName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasWizGetUserInputConnectionName(Ë«×Ö,Ë«×Ö)
+¡ÒRasWizIsEntryRenamable(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRasWizQueryMaxPageCount(Ë«×Ö)
+¡ÒRasWizSetEntryName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRouterEntryDlgA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRouterEntryDlg  RouterEntryDlgA
+
+¡ÒRouterEntryDlgW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

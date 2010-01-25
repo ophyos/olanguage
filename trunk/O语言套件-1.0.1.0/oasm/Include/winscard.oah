@@ -1,0 +1,105 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒSCardAccessStartedEvent()
+¡ÒSCardAddReaderToGroupA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardAddReaderToGroup  SCardAddReaderToGroupA
+
+¡ÒSCardAddReaderToGroupW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardBeginTransaction(Ë«×Ö)
+¡ÒSCardCancel(Ë«×Ö)
+¡ÒSCardConnectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardConnect  SCardConnectA
+
+¡ÒSCardConnectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardControl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardDisconnect(Ë«×Ö,Ë«×Ö)
+¡ÒSCardEndTransaction(Ë«×Ö,Ë«×Ö)
+¡ÒSCardEstablishContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardForgetCardTypeA(Ë«×Ö,Ë«×Ö)
+¡ßSCardForgetCardType  SCardForgetCardTypeA
+
+¡ÒSCardForgetCardTypeW(Ë«×Ö,Ë«×Ö)
+¡ÒSCardForgetReaderA(Ë«×Ö,Ë«×Ö)
+¡ßSCardForgetReader  SCardForgetReaderA
+
+¡ÒSCardForgetReaderGroupA(Ë«×Ö,Ë«×Ö)
+¡ßSCardForgetReaderGroup  SCardForgetReaderGroupA
+
+¡ÒSCardForgetReaderGroupW(Ë«×Ö,Ë«×Ö)
+¡ÒSCardForgetReaderW(Ë«×Ö,Ë«×Ö)
+¡ÒSCardFreeMemory(Ë«×Ö,Ë«×Ö)
+¡ÒSCardGetAttrib(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardGetCardTypeProviderNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardGetCardTypeProviderName  SCardGetCardTypeProviderNameA
+
+¡ÒSCardGetCardTypeProviderNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardGetProviderIdA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardGetProviderId  SCardGetProviderIdA
+
+¡ÒSCardGetProviderIdW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardGetStatusChangeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardGetStatusChange  SCardGetStatusChangeA
+
+¡ÒSCardGetStatusChangeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardIntroduceCardTypeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardIntroduceCardType  SCardIntroduceCardTypeA
+
+¡ÒSCardIntroduceCardTypeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardIntroduceReaderA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardIntroduceReader  SCardIntroduceReaderA
+
+¡ÒSCardIntroduceReaderGroupA(Ë«×Ö,Ë«×Ö)
+¡ßSCardIntroduceReaderGroup  SCardIntroduceReaderGroupA
+
+¡ÒSCardIntroduceReaderGroupW(Ë«×Ö,Ë«×Ö)
+¡ÒSCardIntroduceReaderW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardIsValidContext(Ë«×Ö)
+¡ÒSCardListCardsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardListCards  SCardListCardsA
+
+¡ÒSCardListCardsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardListInterfacesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardListInterfaces  SCardListInterfacesA
+
+¡ÒSCardListInterfacesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardListReaderGroupsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardListReaderGroups  SCardListReaderGroupsA
+
+¡ÒSCardListReaderGroupsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardListReadersA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardListReaders  SCardListReadersA
+
+¡ÒSCardListReadersW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardLocateCardsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardLocateCards  SCardLocateCardsA
+
+¡ÒSCardLocateCardsByATRA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardLocateCardsByATR  SCardLocateCardsByATRA
+
+¡ÒSCardLocateCardsByATRW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardLocateCardsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardReconnect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardReleaseContext(Ë«×Ö)
+¡ÒSCardReleaseStartedEvent()
+¡ÒSCardRemoveReaderFromGroupA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardRemoveReaderFromGroup  SCardRemoveReaderFromGroupA
+
+¡ÒSCardRemoveReaderFromGroupW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardSetAttrib(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardSetCardTypeProviderNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardSetCardTypeProviderName  SCardSetCardTypeProviderNameA
+
+¡ÒSCardSetCardTypeProviderNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardState(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardStatusA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSCardStatus  SCardStatusA
+
+¡ÒSCardStatusW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSCardTransmit(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C g_rgSCardRawPci(Ë«×Ö, ..)
+¡Ò:C g_rgSCardT0Pci(Ë«×Ö, ..)
+¡Ò:C g_rgSCardT1Pci(Ë«×Ö, ..)
+
+¦ç

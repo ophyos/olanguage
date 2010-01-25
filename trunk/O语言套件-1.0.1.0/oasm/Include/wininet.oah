@@ -1,0 +1,404 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCommitUrlCacheEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCommitUrlCacheEntry  CommitUrlCacheEntryA
+
+¡ÒCommitUrlCacheEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateMD5SSOHash(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateUrlCacheContainerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateUrlCacheContainer  CreateUrlCacheContainerA
+
+¡ÒCreateUrlCacheContainerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateUrlCacheEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateUrlCacheEntry  CreateUrlCacheEntryA
+
+¡ÒCreateUrlCacheEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateUrlCacheGroup(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteIE3Cache(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteUrlCacheContainerA(Ë«×Ö,Ë«×Ö)
+¡ßDeleteUrlCacheContainer  DeleteUrlCacheContainerA
+
+¡ÒDeleteUrlCacheContainerW(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteUrlCacheEntryA(Ë«×Ö)
+¡ßDeleteUrlCacheEntry  DeleteUrlCacheEntryA
+
+¡ÒDeleteUrlCacheEntryW(Ë«×Ö)
+¡ÒDeleteUrlCacheGroup(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDetectAutoProxyUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDoConnectoidsExist()
+¡ÒExportCookieFileA(Ë«×Ö,Ë«×Ö)
+¡ßExportCookieFile  ExportCookieFileA
+
+¡ÒExportCookieFileW(Ë«×Ö,Ë«×Ö)
+¡ÒFindCloseUrlCache(Ë«×Ö)
+¡ÒFindFirstUrlCacheContainerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindFirstUrlCacheContainer  FindFirstUrlCacheContainerA
+
+¡ÒFindFirstUrlCacheContainerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstUrlCacheEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindFirstUrlCacheEntry  FindFirstUrlCacheEntryA
+
+¡ÒFindFirstUrlCacheEntryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindFirstUrlCacheEntryEx  FindFirstUrlCacheEntryExA
+
+¡ÒFindFirstUrlCacheEntryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstUrlCacheEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstUrlCacheGroup(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindNextUrlCacheContainerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindNextUrlCacheContainer  FindNextUrlCacheContainerA
+
+¡ÒFindNextUrlCacheContainerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindNextUrlCacheEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindNextUrlCacheEntry  FindNextUrlCacheEntryA
+
+¡ÒFindNextUrlCacheEntryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindNextUrlCacheEntryEx  FindNextUrlCacheEntryExA
+
+¡ÒFindNextUrlCacheEntryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindNextUrlCacheEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindNextUrlCacheGroup(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindP3PPolicySymbol(Ë«×Ö)
+¡ÒForceNexusLookup()
+¡ÒForceNexusLookupExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeP3PObject(Ë«×Ö)
+¡ÒFreeUrlCacheSpaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFreeUrlCacheSpace  FreeUrlCacheSpaceA
+
+¡ÒFreeUrlCacheSpaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpCommandA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpCommand  FtpCommandA
+
+¡ÒFtpCommandW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpCreateDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßFtpCreateDirectory  FtpCreateDirectoryA
+
+¡ÒFtpCreateDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒFtpDeleteFileA(Ë«×Ö,Ë«×Ö)
+¡ßFtpDeleteFile  FtpDeleteFileA
+
+¡ÒFtpDeleteFileW(Ë«×Ö,Ë«×Ö)
+¡ÒFtpFindFirstFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpFindFirstFile  FtpFindFirstFileA
+
+¡ÒFtpFindFirstFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpGetCurrentDirectoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpGetCurrentDirectory  FtpGetCurrentDirectoryA
+
+¡ÒFtpGetCurrentDirectoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpGetFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpGetFile  FtpGetFileA
+
+¡ÒFtpGetFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpGetFileSize(Ë«×Ö,Ë«×Ö)
+¡ÒFtpGetFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpOpenFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpOpenFile  FtpOpenFileA
+
+¡ÒFtpOpenFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpPutFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpPutFile  FtpPutFileA
+
+¡ÒFtpPutFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpPutFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpRemoveDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßFtpRemoveDirectory  FtpRemoveDirectoryA
+
+¡ÒFtpRemoveDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒFtpRenameFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFtpRenameFile  FtpRenameFileA
+
+¡ÒFtpRenameFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFtpSetCurrentDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßFtpSetCurrentDirectory  FtpSetCurrentDirectoryA
+
+¡ÒFtpSetCurrentDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetDiskInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDiskInfo  GetDiskInfoA
+
+¡ÒGetP3PPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetP3PRequestStatus(Ë«×Ö)
+¡ÒGetUrlCacheConfigInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUrlCacheConfigInfo  GetUrlCacheConfigInfoA
+
+¡ÒGetUrlCacheConfigInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUrlCacheEntryInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUrlCacheEntryInfo  GetUrlCacheEntryInfoA
+
+¡ÒGetUrlCacheEntryInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUrlCacheEntryInfoEx  GetUrlCacheEntryInfoExA
+
+¡ÒGetUrlCacheEntryInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUrlCacheEntryInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUrlCacheGroupAttributeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUrlCacheGroupAttribute  GetUrlCacheGroupAttributeA
+
+¡ÒGetUrlCacheGroupAttributeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUrlCacheHeaderData(Ë«×Ö,Ë«×Ö)
+¡ÒGopherCreateLocatorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGopherCreateLocator  GopherCreateLocatorA
+
+¡ÒGopherCreateLocatorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGopherFindFirstFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGopherFindFirstFile  GopherFindFirstFileA
+
+¡ÒGopherFindFirstFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGopherGetAttributeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGopherGetAttribute  GopherGetAttributeA
+
+¡ÒGopherGetAttributeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGopherGetLocatorTypeA(Ë«×Ö,Ë«×Ö)
+¡ßGopherGetLocatorType  GopherGetLocatorTypeA
+
+¡ÒGopherGetLocatorTypeW(Ë«×Ö,Ë«×Ö)
+¡ÒGopherOpenFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGopherOpenFile  GopherOpenFileA
+
+¡ÒGopherOpenFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpAddRequestHeadersA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpAddRequestHeaders  HttpAddRequestHeadersA
+
+¡ÒHttpAddRequestHeadersW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpCheckDavComplianceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpCheckDavCompliance  HttpCheckDavComplianceA
+
+¡ÒHttpCheckDavComplianceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpEndRequestA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpEndRequest  HttpEndRequestA
+
+¡ÒHttpEndRequestW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpOpenRequestA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpOpenRequest  HttpOpenRequestA
+
+¡ÒHttpOpenRequestW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpÑ¯ÎÊÐÅÏ¢:HttpQueryInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpQueryInfo  HttpQueryInfoA
+
+¡ÒHttpQueryInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpSendRequestA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpSendRequest  HttpSendRequestA
+
+¡ÒHttpSendRequestExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßHttpSendRequestEx  HttpSendRequestExA
+
+¡ÒHttpSendRequestExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHttpSendRequestW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImportCookieFileA(Ë«×Ö)
+¡ßImportCookieFile  ImportCookieFileA
+
+¡ÒImportCookieFileW(Ë«×Ö)
+¡ÒIncrementUrlCacheHeaderData(Ë«×Ö,Ë«×Ö)
+¡ÒInternetAlgIdToStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetAlgIdToString  InternetAlgIdToStringA
+
+¡ÒInternetAlgIdToStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetAttemptConnect(Ë«×Ö)
+¡ÒInternetAutodial(Ë«×Ö,Ë«×Ö)
+¡ÒInternetAutodialCallback(Ë«×Ö,Ë«×Ö)
+¡ÒInternetAutodialHangup(Ë«×Ö)
+¡ÒInternetCanonicalizeUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetCanonicalizeUrl  InternetCanonicalizeUrlA
+
+¡ÒInternetCanonicalizeUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetCheckConnectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetCheckConnection  InternetCheckConnectionA
+
+¡ÒInternetCheckConnectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetClearAllPerSiteCookieDecisions()
+¡Ò»¥ÁªÍø¹Ø±Õ¾ä±ú:InternetCloseHandle(Ë«×Ö)
+¡ÒInternetCombineUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetCombineUrl  InternetCombineUrlA
+
+¡ÒInternetCombineUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetConfirmZoneCrossingA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetConfirmZoneCrossing  InternetConfirmZoneCrossingA
+
+¡ÒInternetConfirmZoneCrossingW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetConnectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetConnect  InternetConnectA
+
+¡ÒInternetConnectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetCrackUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetCrackUrl  InternetCrackUrlA
+
+¡ÒInternetCrackUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetCreateUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetCreateUrl  InternetCreateUrlA
+
+¡ÒInternetCreateUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetDialA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetDial  InternetDialA
+
+¡ÒInternetDialW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetEnumPerSiteCookieDecisionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetEnumPerSiteCookieDecision  InternetEnumPerSiteCookieDecisionA
+
+¡ÒInternetEnumPerSiteCookieDecisionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetErrorDlg(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetFindNextFileA(Ë«×Ö,Ë«×Ö)
+¡ßInternetFindNextFile  InternetFindNextFileA
+
+¡ÒInternetFindNextFileW(Ë«×Ö,Ë«×Ö)
+¡ÒInternetFortezzaCommand(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetGetCertByURLA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetGetCertByURL  InternetGetCertByURLA
+
+¡ÒInternetGetConnectedState(Ë«×Ö,Ë«×Ö)
+¡ÒInternetGetConnectedStateExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetGetConnectedStateEx  InternetGetConnectedStateExA
+
+¡ÒInternetGetConnectedStateExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetGetCookieA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetGetCookie  InternetGetCookieA
+
+¡ÒInternetGetCookieExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetGetCookieEx  InternetGetCookieExA
+
+¡ÒInternetGetCookieExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetGetCookieW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetGetLastResponseInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetGetLastResponseInfo  InternetGetLastResponseInfoA
+
+¡ÒInternetGetLastResponseInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetGetPerSiteCookieDecisionA(Ë«×Ö,Ë«×Ö)
+¡ßInternetGetPerSiteCookieDecision  InternetGetPerSiteCookieDecisionA
+
+¡ÒInternetGetPerSiteCookieDecisionW(Ë«×Ö,Ë«×Ö)
+¡ÒInternetGoOnlineA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetGoOnline  InternetGoOnlineA
+
+¡ÒInternetGoOnlineW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetHangUp(Ë«×Ö,Ë«×Ö)
+¡ÒInternetInitializeAutoProxyDll(Ë«×Ö)
+¡ÒInternetLockRequestFile(Ë«×Ö,Ë«×Ö)
+¡Ò»¥ÁªÍø´ò¿ª:InternetOpenA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetOpen  InternetOpenA
+
+¡Ò»¥ÁªÍø´ò¿ªUrl:InternetOpenUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetOpenUrl  InternetOpenUrlA
+
+¡ÒInternetOpenUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetOpenW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetQueryDataAvailable(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetQueryFortezzaStatus(Ë«×Ö,Ë«×Ö)
+¡ÒInternetQueryOptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetQueryOption  InternetQueryOptionA
+
+¡ÒInternetQueryOptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»¥ÁªÍø¶ÁÎÄ¼þ:InternetReadFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetReadFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetReadFileEx  InternetReadFileExA
+
+¡ÒInternetReadFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSecurityProtocolToStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetSecurityProtocolToString  InternetSecurityProtocolToStringA
+
+¡ÒInternetSecurityProtocolToStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetCookieA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetSetCookie  InternetSetCookieA
+
+¡ÒInternetSetCookieExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetSetCookieEx  InternetSetCookieExA
+
+¡ÒInternetSetCookieExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetCookieW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetDialStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetSetDialState  InternetSetDialStateA
+
+¡ÒInternetSetDialStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetFilePointer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetOptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetSetOption  InternetSetOptionA
+
+¡ÒInternetSetOptionExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetSetOptionEx  InternetSetOptionExA
+
+¡ÒInternetSetOptionExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetOptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetPerSiteCookieDecisionA(Ë«×Ö,Ë«×Ö)
+¡ßInternetSetPerSiteCookieDecision  InternetSetPerSiteCookieDecisionA
+
+¡ÒInternetSetPerSiteCookieDecisionW(Ë«×Ö,Ë«×Ö)
+¡ÒInternetSetStatusCallbackA(Ë«×Ö,Ë«×Ö)
+¡ßInternetSetStatusCallback  InternetSetStatusCallbackA
+
+¡ÒInternetSetStatusCallbackW(Ë«×Ö,Ë«×Ö)
+¡ÒInternetShowSecurityInfoByURLA(Ë«×Ö,Ë«×Ö)
+¡ßInternetShowSecurityInfoByURL  InternetShowSecurityInfoByURLA
+
+¡ÒInternetShowSecurityInfoByURLW(Ë«×Ö,Ë«×Ö)
+¡ÒInternetTimeFromSystemTimeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetTimeFromSystemTime  InternetTimeFromSystemTimeA
+
+¡ÒInternetTimeFromSystemTimeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetTimeToSystemTimeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetTimeToSystemTime  InternetTimeToSystemTimeA
+
+¡ÒInternetTimeToSystemTimeW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetUnlockRequestFile(Ë«×Ö)
+¡ÒInternetWriteFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternetWriteFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternetWriteFileEx  InternetWriteFileExA
+
+¡ÒInternetWriteFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsDomainLegalCookieDomainA(Ë«×Ö,Ë«×Ö)
+¡ßIsDomainLegalCookieDomain  IsDomainLegalCookieDomainA
+
+¡ÒIsDomainLegalCookieDomainW(Ë«×Ö,Ë«×Ö)
+¡ÒIsHostInProxyBypassList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsProfilesEnabled()
+¡ÒIsUrlCacheEntryExpiredA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßIsUrlCacheEntryExpired  IsUrlCacheEntryExpiredA
+
+¡ÒIsUrlCacheEntryExpiredW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLoadUrlCacheContent()
+¡ÒMapResourceToPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒParseX509EncodedCertificateForListBoxEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPerformOperationOverUrlCacheA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPerformOperationOverUrlCache  PerformOperationOverUrlCacheA
+
+¡ÒPrivacyGetZonePreferenceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrivacySetZonePreferenceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadUrlCacheEntryStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterUrlCacheNotification(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒResumeSuspendedDownload(Ë«×Ö,Ë«×Ö)
+¡ÒRetrieveUrlCacheEntryFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRetrieveUrlCacheEntryFile  RetrieveUrlCacheEntryFileA
+
+¡ÒRetrieveUrlCacheEntryFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRetrieveUrlCacheEntryStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRetrieveUrlCacheEntryStream  RetrieveUrlCacheEntryStreamA
+
+¡ÒRetrieveUrlCacheEntryStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRunOnceUrlCache(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUrlCacheConfigInfoA(Ë«×Ö,Ë«×Ö)
+¡ßSetUrlCacheConfigInfo  SetUrlCacheConfigInfoA
+
+¡ÒSetUrlCacheConfigInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒSetUrlCacheEntryGroupA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetUrlCacheEntryGroup  SetUrlCacheEntryGroupA
+
+¡ÒSetUrlCacheEntryGroupW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUrlCacheEntryInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetUrlCacheEntryInfo  SetUrlCacheEntryInfoA
+
+¡ÒSetUrlCacheEntryInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUrlCacheGroupAttributeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetUrlCacheGroupAttribute  SetUrlCacheGroupAttributeA
+
+¡ÒSetUrlCacheGroupAttributeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUrlCacheHeaderData(Ë«×Ö,Ë«×Ö)
+¡ÒShowCertificate(Ë«×Ö,Ë«×Ö)
+¡ÒShowClientAuthCerts(Ë«×Ö)
+¡ÒShowSecurityInfo(Ë«×Ö,Ë«×Ö)
+¡ÒShowX509EncodedCertificate(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnlockUrlCacheEntryFileA(Ë«×Ö,Ë«×Ö)
+¡ßUnlockUrlCacheEntryFile  UnlockUrlCacheEntryFileA
+
+¡ÒUnlockUrlCacheEntryFileW(Ë«×Ö,Ë«×Ö)
+¡ÒUnlockUrlCacheEntryStream(Ë«×Ö,Ë«×Ö)
+¡ÒUpdateUrlCacheContentPath(Ë«×Ö)
+¡ÒUrlZonesDetach()
+
+¦ç

@@ -1,0 +1,48 @@
+引用段
+{
+函数 MQADsPathToFormatName(整数32,整数32,整数32)=>整数32;
+函数 MQAllocateMemory(整数32)=>整数32;
+函数 MQBeginTransaction(整数32)=>整数32;
+函数 MQCloseCursor(整数32)=>整数32;
+函数 MQCloseQueue(整数32)=>整数32;
+函数 MQCreateCursor(整数32,整数32)=>整数32;
+函数 MQCreateQueue(整数32,整数32,整数32,整数32)=>整数32;
+函数 MQDeleteQueue(整数32)=>整数32;
+函数 MQFreeMemory(整数32)=>整数32;
+函数 MQFreeSecurityContext(整数32)=>整数32;
+函数 MQGetMachineProperties(整数32,整数32,整数32)=>整数32;
+函数 MQGetOverlappedResult(整数32)=>整数32;
+函数 MQGetPrivateComputerInformation(整数32,整数32)=>整数32;
+函数 MQGetQueueProperties(整数32,整数32)=>整数32;
+函数 MQGetQueueSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MQGetSecurityContext(整数32,整数32,整数32)=>整数32;
+函数 MQGetSecurityContextEx(整数32,整数32,整数32)=>整数32;
+函数 MQHandleToFormatName(整数32,整数32,整数32)=>整数32;
+函数 MQInstanceToFormatName(整数32,整数32,整数32)=>整数32;
+函数 MQLocateBegin(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MQLocateEnd(整数32)=>整数32;
+函数 MQLocateNext(整数32,整数32,整数32)=>整数32;
+函数 MQMgmtAction(整数32,整数32,整数32)=>整数32;
+函数 MQMgmtGetInfo(整数32,整数32,整数32)=>整数32;
+函数 MQOpenQueue(整数32,整数32,整数32,整数32)=>整数32;
+函数 MQPathNameToFormatName(整数32,整数32,整数32)=>整数32;
+函数 MQPurgeQueue(整数32)=>整数32;
+函数 MQReceiveMessage(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MQReceiveMessageByLookupId(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MQRegisterCertificate(整数32,整数32,整数32)=>整数32;
+函数 MQSendMessage(整数32,整数32,整数32)=>整数32;
+函数 MQSetQueueProperties(整数32,整数32)=>整数32;
+函数 MQSetQueueSecurity(整数32,整数32,整数32)=>整数32;
+函数 RTCreateInternalCertificate(整数32)=>整数32;
+函数 RTDeleteInternalCert(整数32)=>整数32;
+函数 RTGetInternalCert(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RTGetUserCerts(整数32,整数32,整数32)=>整数32;
+函数 RTIsDependentClient()=>整数32;
+函数 RTLogOnRegisterCert(整数32)=>整数32;
+函数 RTOpenInternalCertStore(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RTRegisterUserCert(整数32,整数32)=>整数32;
+函数 RTRemoveUserCert(整数32)=>整数32;
+函数 RTRemoveUserCertSid(整数32,整数32)=>整数32;
+函数 RTXactGetDTC(整数32)=>整数32;
+
+}

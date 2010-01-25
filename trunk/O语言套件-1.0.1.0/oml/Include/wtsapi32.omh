@@ -1,0 +1,48 @@
+引用段
+{
+函数 WTSCloseServer(整数32)=>整数32;
+函数 WTSDisconnectSession(整数32,整数32,整数32)=>整数32;
+函数 WTSEnumerateProcessesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSEnumerateProcessesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSEnumerateServersA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSEnumerateServersW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSEnumerateSessionsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSEnumerateSessionsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSFreeMemory(整数32)=>整数32;
+函数 WTSLogoffSession(整数32,整数32,整数32)=>整数32;
+函数 WTSOpenServerA(整数32)=>整数32;
+函数 WTSOpenServerW(整数32)=>整数32;
+函数 WTSQuerySessionInformationA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSQuerySessionInformationW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSQueryUserConfigA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSQueryUserConfigW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSQueryUserToken(整数32,整数32)=>整数32;
+函数 WTSRegisterSessionNotification(整数32,整数32)=>整数32;
+函数 WTSSendMessageA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSSendMessageW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSSetSessionInformationA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSSetSessionInformationW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSSetUserConfigA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSSetUserConfigW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSShutdownSystem(整数32,整数32)=>整数32;
+函数 WTSTerminateProcess(整数32,整数32,整数32)=>整数32;
+函数 WTSUnRegisterSessionNotification(整数32)=>整数32;
+函数 WTSVirtualChannelClose(整数32)=>整数32;
+函数 WTSVirtualChannelOpen(整数32,整数32,整数32)=>整数32;
+函数 WTSVirtualChannelPurgeInput(整数32)=>整数32;
+函数 WTSVirtualChannelPurgeOutput(整数32)=>整数32;
+函数 WTSVirtualChannelQuery(整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSVirtualChannelRead(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSVirtualChannelWrite(整数32,整数32,整数32,整数32)=>整数32;
+函数 WTSWaitSystemEvent(整数32,整数32,整数32)=>整数32;
+
+宏定义 WTSEnumerateProcesses  WTSEnumerateProcessesA
+宏定义 WTSEnumerateServers  WTSEnumerateServersA
+宏定义 WTSEnumerateSessions  WTSEnumerateSessionsA
+宏定义 WTSOpenServer  WTSOpenServerA
+宏定义 WTSQuerySessionInformation  WTSQuerySessionInformationA
+宏定义 WTSQueryUserConfig  WTSQueryUserConfigA
+宏定义 WTSSendMessage  WTSSendMessageA
+宏定义 WTSSetSessionInformation  WTSSetSessionInformationA
+宏定义 WTSSetUserConfig  WTSSetUserConfigA
+}

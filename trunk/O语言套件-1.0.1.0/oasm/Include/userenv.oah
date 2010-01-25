@@ -1,0 +1,179 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAddDesktopItemA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddDesktopItem  AddDesktopItemA
+
+¡ÒAddDesktopItemW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddGPO(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddItemA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddItem  AddItemA
+
+¡ÒAddItemW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAllocGpContainer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒApplyGroupPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒApplySystemPolicyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßApplySystemPolicy  ApplySystemPolicyA
+
+¡ÒApplySystemPolicyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckAccessForPolicyGeneration(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckForSkippedExtensions(Ë«×Ö,Ë«×Ö)
+¡ÒCheckXForestLogon(Ë«×Ö)
+¡ÒCopyProfileDirectoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCopyProfileDirectory  CopyProfileDirectoryA
+
+¡ÒCopyProfileDirectoryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCopyProfileDirectoryEx  CopyProfileDirectoryExA
+
+¡ÒCopyProfileDirectoryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCopyProfileDirectoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCopySystemProfile(Ë«×Ö)
+¡ÒCreateEnvironmentBlock(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateGroupA(Ë«×Ö,Ë«×Ö)
+¡ßCreateGroup  CreateGroupA
+
+¡ÒCreateGroupExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateGroupEx  CreateGroupExA
+
+¡ÒCreateGroupExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateGroupW(Ë«×Ö,Ë«×Ö)
+¡ÒCreateLinkFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateLinkFile  CreateLinkFileA
+
+¡ÒCreateLinkFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateLinkFileEx  CreateLinkFileExA
+
+¡ÒCreateLinkFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateLinkFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateURLFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateUserProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateUserProfile  CreateUserProfileA
+
+¡ÒCreateUserProfileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateUserProfileEx  CreateUserProfileExA
+
+¡ÒCreateUserProfileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateUserProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteDesktopItemA(Ë«×Ö,Ë«×Ö)
+¡ßDeleteDesktopItem  DeleteDesktopItemA
+
+¡ÒDeleteDesktopItemW(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteGroupA(Ë«×Ö,Ë«×Ö)
+¡ßDeleteGroup  DeleteGroupA
+
+¡ÒDeleteGroupW(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteItemA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeleteItem  DeleteItemA
+
+¡ÒDeleteItemW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteLinkFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeleteLinkFile  DeleteLinkFileA
+
+¡ÒDeleteLinkFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteProfileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeleteProfile  DeleteProfileA
+
+¡ÒDeleteProfileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteURLFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDestroyEnvironmentBlock(Ë«×Ö)
+¡ÒDetermineProfilesLocation(Ë«×Ö)
+¡ÒEnterCriticalPolicySection(Ë«×Ö)
+¡ÒEnterUserProfileLock(Ë«×Ö)
+¡ÒExpandEnvironmentStringsForUserA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExpandEnvironmentStringsForUser  ExpandEnvironmentStringsForUserA
+
+¡ÒExpandEnvironmentStringsForUserW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFilterGPOs(Ë«×Ö,Ë«×Ö)
+¡ÒForceSyncFgPolicy(Ë«×Ö)
+¡ÒFreeGPOListA(Ë«×Ö)
+¡ßFreeGPOList  FreeGPOListA
+
+¡ÒFreeGPOListW(Ë«×Ö)
+¡ÒFreeGpoInfo(Ë«×Ö)
+¡ÒGPOExceptionFilter(Ë«×Ö)
+¡ÒGenerateRsopPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAllUsersProfileDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetAllUsersProfileDirectory  GetAllUsersProfileDirectoryA
+
+¡ÒGetAllUsersProfileDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetAppliedGPOListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetAppliedGPOList  GetAppliedGPOListA
+
+¡ÒGetAppliedGPOListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDefaultUserProfileDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetDefaultUserProfileDirectory  GetDefaultUserProfileDirectoryA
+
+¡ÒGetDefaultUserProfileDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetGPOListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetGPOList  GetGPOListA
+
+¡ÒGetGPOListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetGroupPolicyNetworkName(Ë«×Ö,Ë«×Ö)
+¡ÒGetNextFgPolicyRefreshInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetPreviousFgPolicyRefreshInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetProfileType(Ë«×Ö)
+¡ÒGetProfilesDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetProfilesDirectory  GetProfilesDirectoryA
+
+¡ÒGetProfilesDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetSystemTempDirectoryA(Ë«×Ö,Ë«×Ö)
+¡ßGetSystemTempDirectory  GetSystemTempDirectoryA
+
+¡ÒGetSystemTempDirectoryW(Ë«×Ö,Ë«×Ö)
+¡ÒGetUserAppDataPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUserAppDataPath  GetUserAppDataPathA
+
+¡ÒGetUserAppDataPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUserProfileDirFromSidA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUserProfileDirFromSid  GetUserProfileDirFromSidA
+
+¡ÒGetUserProfileDirFromSidW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUserProfileDirectoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUserProfileDirectory  GetUserProfileDirectoryA
+
+¡ÒGetUserProfileDirectoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUserSid(Ë«×Ö)
+¡ÒGetWbemServices(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInitializeProfiles(Ë«×Ö)
+¡ÒInitializeUserProfile()
+¡ÒIsSyncForegroundPolicyRefresh(Ë«×Ö,Ë«×Ö)
+¡ÒLeaveCriticalPolicySection(Ë«×Ö)
+¡ÒLeaveUserProfileLock(Ë«×Ö)
+¡ÒLoadUserProfileA(Ë«×Ö,Ë«×Ö)
+¡ßLoadUserProfile  LoadUserProfileA
+
+¡ÒLoadUserProfileW(Ë«×Ö,Ë«×Ö)
+¡ÒLogExtSessionStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLogGpoData(Ë«×Ö)
+¡ÒLogSessionData(Ë«×Ö,Ë«×Ö)
+¡ÒMigrateNT4ToNT5()
+¡ÒPingComputer(Ë«×Ö,Ë«×Ö)
+¡ÒProcessGroupPolicyCompleted(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒProcessGroupPolicyCompletedEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒProcessMachAndUserGpoList(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadGPExtensions(Ë«×Ö)
+¡ÒRefreshPolicy(Ë«×Ö)
+¡ÒRefreshPolicyEx(Ë«×Ö,Ë«×Ö)
+¡ÒRegisterGPNotification(Ë«×Ö,Ë«×Ö)
+¡ÒResetUserSpecialFolderPaths()
+¡ÒRsopAccessCheckByType(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRsopFileAccessCheck(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRsopLoggingEnabled()
+¡ÒRsopResetPolicySettingStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRsopSetPolicySettingStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSecureUserProfiles()
+¡ÒSetNextFgPolicyRefreshInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGPOFilter(Ë«×Ö)
+¡ÒShutdownGPOProcessing(Ë«×Ö)
+¡ÒSignalMachinePolicyForegroundProcessingDone()
+¡ÒSignalUserPolicyForegroundProcessingDone()
+¡ÒTranslateNameXForest(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnloadGPExtensions(Ë«×Ö)
+¡ÒUnloadUserProfile(Ë«×Ö,Ë«×Ö)
+¡ÒUnregisterGPNotification(Ë«×Ö)
+¡ÒUpdateExtSessionStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWaitForMachinePolicyForegroundProcessing()
+¡ÒWaitForUserPolicyForegroundProcessing()
+
+¦ç

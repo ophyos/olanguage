@@ -1,0 +1,875 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCMP_GetBlockedDriverInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMP_GetServerSideDeviceInstallFlags(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMP_Init_Detection(Ë«×Ö)
+¡ÒCMP_RegisterNotification(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMP_Report_LogOn(Ë«×Ö,Ë«×Ö)
+¡ÒCMP_UnregisterNotification(Ë«×Ö)
+¡ÒCMP_WaitNoPendingInstallEvents(Ë«×Ö)
+¡ÒCMP_WaitServicesAvailable(Ë«×Ö)
+¡ÒCM_Add_Empty_Log_Conf(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Add_Empty_Log_Conf_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Add_IDA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Add_ID  CM_Add_IDA
+
+¡ÒCM_Add_IDW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Add_ID_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Add_ID_Ex  CM_Add_ID_ExA
+
+¡ÒCM_Add_ID_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Add_Range(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Add_Res_Des(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Add_Res_Des_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Connect_MachineA(Ë«×Ö,Ë«×Ö)
+¡ßCM_Connect_Machine  CM_Connect_MachineA
+
+¡ÒCM_Connect_MachineW(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Create_DevNodeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Create_DevNode  CM_Create_DevNodeA
+
+¡ÒCM_Create_DevNodeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Create_DevNode_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Create_DevNode_Ex  CM_Create_DevNode_ExA
+
+¡ÒCM_Create_DevNode_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Create_Range_List(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Delete_Class_Key(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Delete_Class_Key_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Delete_DevNode_Key(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Delete_DevNode_Key_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Delete_Range(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Detect_Resource_Conflict(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Detect_Resource_Conflict_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Disable_DevNode(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Disable_DevNode_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Disconnect_Machine(Ë«×Ö)
+¡ÒCM_Dup_Range_List(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Enable_DevNode(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Enable_DevNode_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Enumerate_Classes(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Enumerate_Classes_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Enumerate_EnumeratorsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Enumerate_Enumerators  CM_Enumerate_EnumeratorsA
+
+¡ÒCM_Enumerate_EnumeratorsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Enumerate_Enumerators_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Enumerate_Enumerators_Ex  CM_Enumerate_Enumerators_ExA
+
+¡ÒCM_Enumerate_Enumerators_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Find_Range(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_First_Range(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Free_Log_Conf(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Free_Log_Conf_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Free_Log_Conf_Handle(Ë«×Ö)
+¡ÒCM_Free_Range_List(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Free_Res_Des(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Free_Res_Des_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Free_Res_Des_Handle(Ë«×Ö)
+¡ÒCM_Free_Resource_Conflict_Handle(Ë«×Ö)
+¡ÒCM_Get_Child(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Child_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Class_Key_NameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Class_Key_Name  CM_Get_Class_Key_NameA
+
+¡ÒCM_Get_Class_Key_NameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Class_Key_Name_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Class_Key_Name_Ex  CM_Get_Class_Key_Name_ExA
+
+¡ÒCM_Get_Class_Key_Name_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Class_NameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Class_Name  CM_Get_Class_NameA
+
+¡ÒCM_Get_Class_NameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Class_Name_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Class_Name_Ex  CM_Get_Class_Name_ExA
+
+¡ÒCM_Get_Class_Name_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Class_Registry_PropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Class_Registry_Property  CM_Get_Class_Registry_PropertyA
+
+¡ÒCM_Get_Class_Registry_PropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Depth(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Depth_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_DevNode_Custom_PropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_DevNode_Custom_Property  CM_Get_DevNode_Custom_PropertyA
+
+¡ÒCM_Get_DevNode_Custom_PropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_DevNode_Custom_Property_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_DevNode_Custom_Property_Ex  CM_Get_DevNode_Custom_Property_ExA
+
+¡ÒCM_Get_DevNode_Custom_Property_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_DevNode_Registry_PropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_DevNode_Registry_Property  CM_Get_DevNode_Registry_PropertyA
+
+¡ÒCM_Get_DevNode_Registry_PropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_DevNode_Registry_Property_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_DevNode_Registry_Property_Ex  CM_Get_DevNode_Registry_Property_ExA
+
+¡ÒCM_Get_DevNode_Registry_Property_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_DevNode_Status(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_DevNode_Status_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_IDA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_ID  CM_Get_Device_IDA
+
+¡ÒCM_Get_Device_IDW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_ID_Ex  CM_Get_Device_ID_ExA
+
+¡ÒCM_Get_Device_ID_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_ListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_ID_List  CM_Get_Device_ID_ListA
+
+¡ÒCM_Get_Device_ID_ListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_List_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_ID_List_Ex  CM_Get_Device_ID_List_ExA
+
+¡ÒCM_Get_Device_ID_List_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_List_SizeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_ID_List_Size  CM_Get_Device_ID_List_SizeA
+
+¡ÒCM_Get_Device_ID_List_SizeW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_List_Size_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_ID_List_Size_Ex  CM_Get_Device_ID_List_Size_ExA
+
+¡ÒCM_Get_Device_ID_List_Size_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_Size(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_ID_Size_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_Interface_AliasA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_Interface_Alias  CM_Get_Device_Interface_AliasA
+
+¡ÒCM_Get_Device_Interface_AliasW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_Interface_Alias_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_Interface_Alias_Ex  CM_Get_Device_Interface_Alias_ExA
+
+¡ÒCM_Get_Device_Interface_Alias_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_Interface_ListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_Interface_List  CM_Get_Device_Interface_ListA
+
+¡ÒCM_Get_Device_Interface_ListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_Interface_List_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_Interface_List_Ex  CM_Get_Device_Interface_List_ExA
+
+¡ÒCM_Get_Device_Interface_List_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_Interface_List_SizeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_Interface_List_Size  CM_Get_Device_Interface_List_SizeA
+
+¡ÒCM_Get_Device_Interface_List_SizeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Device_Interface_List_Size_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Device_Interface_List_Size_Ex  CM_Get_Device_Interface_List_Size_ExA
+
+¡ÒCM_Get_Device_Interface_List_Size_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_First_Log_Conf(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_First_Log_Conf_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Global_State(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Global_State_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_HW_Prof_FlagsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_HW_Prof_Flags  CM_Get_HW_Prof_FlagsA
+
+¡ÒCM_Get_HW_Prof_FlagsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_HW_Prof_Flags_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_HW_Prof_Flags_Ex  CM_Get_HW_Prof_Flags_ExA
+
+¡ÒCM_Get_HW_Prof_Flags_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Hardware_Profile_InfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Hardware_Profile_Info  CM_Get_Hardware_Profile_InfoA
+
+¡ÒCM_Get_Hardware_Profile_InfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Hardware_Profile_Info_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Hardware_Profile_Info_Ex  CM_Get_Hardware_Profile_Info_ExA
+
+¡ÒCM_Get_Hardware_Profile_Info_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Log_Conf_Priority(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Log_Conf_Priority_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Next_Log_Conf(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Next_Log_Conf_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Next_Res_Des(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Next_Res_Des_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Parent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Parent_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Res_Des_Data(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Res_Des_Data_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Res_Des_Data_Size(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Res_Des_Data_Size_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Resource_Conflict_Count(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Resource_Conflict_DetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Get_Resource_Conflict_Details  CM_Get_Resource_Conflict_DetailsA
+
+¡ÒCM_Get_Resource_Conflict_DetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Sibling(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Sibling_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Get_Version()
+¡ÒCM_Get_Version_Ex(Ë«×Ö)
+¡ÒCM_Intersect_Range_List(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Invert_Range_List(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Is_Dock_Station_Present(Ë«×Ö)
+¡ÒCM_Is_Dock_Station_Present_Ex(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Is_Version_Available(Ë«×Ö)
+¡ÒCM_Is_Version_Available_Ex(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Locate_DevNodeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Locate_DevNode  CM_Locate_DevNodeA
+
+¡ÒCM_Locate_DevNodeW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Locate_DevNode_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Locate_DevNode_Ex  CM_Locate_DevNode_ExA
+
+¡ÒCM_Locate_DevNode_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Merge_Range_List(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Modify_Res_Des(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Modify_Res_Des_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Move_DevNode(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Move_DevNode_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Next_Range(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Open_Class_KeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Open_Class_Key  CM_Open_Class_KeyA
+
+¡ÒCM_Open_Class_KeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Open_Class_Key_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Open_Class_Key_Ex  CM_Open_Class_Key_ExA
+
+¡ÒCM_Open_Class_Key_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Open_DevNode_Key(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Open_DevNode_Key_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_And_Remove_SubTreeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Query_And_Remove_SubTree  CM_Query_And_Remove_SubTreeA
+
+¡ÒCM_Query_And_Remove_SubTreeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_And_Remove_SubTree_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Query_And_Remove_SubTree_Ex  CM_Query_And_Remove_SubTree_ExA
+
+¡ÒCM_Query_And_Remove_SubTree_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Arbitrator_Free_Data(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Arbitrator_Free_Data_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Arbitrator_Free_Size(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Arbitrator_Free_Size_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Remove_SubTree(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Remove_SubTree_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Query_Resource_Conflict_List(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Reenumerate_DevNode(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Reenumerate_DevNode_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Register_Device_Driver(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Register_Device_Driver_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Register_Device_InterfaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Register_Device_Interface  CM_Register_Device_InterfaceA
+
+¡ÒCM_Register_Device_InterfaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Register_Device_Interface_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Register_Device_Interface_Ex  CM_Register_Device_Interface_ExA
+
+¡ÒCM_Register_Device_Interface_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Remove_SubTree(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Remove_SubTree_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Request_Device_EjectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Request_Device_Eject  CM_Request_Device_EjectA
+
+¡ÒCM_Request_Device_EjectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Request_Device_Eject_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Request_Device_Eject_Ex  CM_Request_Device_Eject_ExA
+
+¡ÒCM_Request_Device_Eject_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Request_Eject_PC()
+¡ÒCM_Request_Eject_PC_Ex(Ë«×Ö)
+¡ÒCM_Run_Detection(Ë«×Ö)
+¡ÒCM_Run_Detection_Ex(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_Class_Registry_PropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Set_Class_Registry_Property  CM_Set_Class_Registry_PropertyA
+
+¡ÒCM_Set_Class_Registry_PropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_DevNode_Problem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_DevNode_Problem_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_DevNode_Registry_PropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Set_DevNode_Registry_Property  CM_Set_DevNode_Registry_PropertyA
+
+¡ÒCM_Set_DevNode_Registry_PropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_DevNode_Registry_Property_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Set_DevNode_Registry_Property_Ex  CM_Set_DevNode_Registry_Property_ExA
+
+¡ÒCM_Set_DevNode_Registry_Property_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_HW_Prof(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_HW_Prof_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_HW_Prof_FlagsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Set_HW_Prof_Flags  CM_Set_HW_Prof_FlagsA
+
+¡ÒCM_Set_HW_Prof_FlagsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Set_HW_Prof_Flags_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Set_HW_Prof_Flags_Ex  CM_Set_HW_Prof_Flags_ExA
+
+¡ÒCM_Set_HW_Prof_Flags_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Setup_DevNode(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Setup_DevNode_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Test_Range_Available(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Uninstall_DevNode(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Uninstall_DevNode_Ex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCM_Unregister_Device_InterfaceA(Ë«×Ö,Ë«×Ö)
+¡ßCM_Unregister_Device_Interface  CM_Unregister_Device_InterfaceA
+
+¡ÒCM_Unregister_Device_InterfaceW(Ë«×Ö,Ë«×Ö)
+¡ÒCM_Unregister_Device_Interface_ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCM_Unregister_Device_Interface_Ex  CM_Unregister_Device_Interface_ExA
+
+¡ÒCM_Unregister_Device_Interface_ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtensionPropSheetPageProc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInstallHinfSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInstallHinfSection  InstallHinfSectionA
+
+¡ÒInstallHinfSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupAddInstallSectionToDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupAddInstallSectionToDiskSpaceList  SetupAddInstallSectionToDiskSpaceListA
+
+¡ÒSetupAddInstallSectionToDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupAddSectionToDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupAddSectionToDiskSpaceList  SetupAddSectionToDiskSpaceListA
+
+¡ÒSetupAddSectionToDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupAddToDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupAddToDiskSpaceList  SetupAddToDiskSpaceListA
+
+¡ÒSetupAddToDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupAddToSourceListA(Ë«×Ö,Ë«×Ö)
+¡ßSetupAddToSourceList  SetupAddToSourceListA
+
+¡ÒSetupAddToSourceListW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupAdjustDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupAdjustDiskSpaceList  SetupAdjustDiskSpaceListA
+
+¡ÒSetupAdjustDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupBackupErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupBackupError  SetupBackupErrorA
+
+¡ÒSetupBackupErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupCancelTemporarySourceList()
+¡ÒSetupCloseFileQueue(Ë«×Ö)
+¡ÒSetupCloseInfFile(Ë«×Ö)
+¡ÒSetupCloseLog()
+¡ÒSetupCommitFileQueueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupCommitFileQueue  SetupCommitFileQueueA
+
+¡ÒSetupCommitFileQueueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupConfigureWmiFromInfSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupConfigureWmiFromInfSection  SetupConfigureWmiFromInfSectionA
+
+¡ÒSetupConfigureWmiFromInfSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupCopyErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupCopyError  SetupCopyErrorA
+
+¡ÒSetupCopyErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupCopyOEMInfA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupCopyOEMInf  SetupCopyOEMInfA
+
+¡ÒSetupCopyOEMInfW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupCreateDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupCreateDiskSpaceList  SetupCreateDiskSpaceListA
+
+¡ÒSetupCreateDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDecompressOrCopyFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDecompressOrCopyFile  SetupDecompressOrCopyFileA
+
+¡ÒSetupDecompressOrCopyFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDefaultQueueCallbackA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDefaultQueueCallback  SetupDefaultQueueCallbackA
+
+¡ÒSetupDefaultQueueCallbackW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDeleteErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDeleteError  SetupDeleteErrorA
+
+¡ÒSetupDeleteErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDestroyDiskSpaceList(Ë«×Ö)
+¡ÒSetupDiAskForOEMDisk(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiBuildClassInfoList(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiBuildClassInfoListExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiBuildClassInfoListEx  SetupDiBuildClassInfoListExA
+
+¡ÒSetupDiBuildClassInfoListExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiBuildDriverInfoList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCallClassInstaller(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCancelDriverInfoSearch(Ë«×Ö)
+¡ÒSetupDiChangeState(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiClassGuidsFromNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiClassGuidsFromName  SetupDiClassGuidsFromNameA
+
+¡ÒSetupDiClassGuidsFromNameExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiClassGuidsFromNameEx  SetupDiClassGuidsFromNameExA
+
+¡ÒSetupDiClassGuidsFromNameExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiClassGuidsFromNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiClassNameFromGuidA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiClassNameFromGuid  SetupDiClassNameFromGuidA
+
+¡ÒSetupDiClassNameFromGuidExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiClassNameFromGuidEx  SetupDiClassNameFromGuidExA
+
+¡ÒSetupDiClassNameFromGuidExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiClassNameFromGuidW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCreateDevRegKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiCreateDevRegKey  SetupDiCreateDevRegKeyA
+
+¡ÒSetupDiCreateDevRegKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCreateDeviceInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiCreateDeviceInfo  SetupDiCreateDeviceInfoA
+
+¡ÒSetupDiCreateDeviceInfoList(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCreateDeviceInfoListExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiCreateDeviceInfoListEx  SetupDiCreateDeviceInfoListExA
+
+¡ÒSetupDiCreateDeviceInfoListExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCreateDeviceInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCreateDeviceInterfaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiCreateDeviceInterface  SetupDiCreateDeviceInterfaceA
+
+¡ÒSetupDiCreateDeviceInterfaceRegKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiCreateDeviceInterfaceRegKey  SetupDiCreateDeviceInterfaceRegKeyA
+
+¡ÒSetupDiCreateDeviceInterfaceRegKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiCreateDeviceInterfaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiDeleteDevRegKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiDeleteDeviceInfo(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiDeleteDeviceInterfaceData(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiDeleteDeviceInterfaceRegKey(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiDestroyClassImageList(Ë«×Ö)
+¡ÒSetupDiDestroyDeviceInfoList(Ë«×Ö)
+¡ÒSetupDiDestroyDriverInfoList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiDrawMiniIcon(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiEnumDeviceInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiEnumDeviceInterfaces(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiEnumDriverInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiEnumDriverInfo  SetupDiEnumDriverInfoA
+
+¡ÒSetupDiEnumDriverInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetActualModelsSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetActualModelsSection  SetupDiGetActualModelsSectionA
+
+¡ÒSetupDiGetActualModelsSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetActualSectionToInstallA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetActualSectionToInstall  SetupDiGetActualSectionToInstallA
+
+¡ÒSetupDiGetActualSectionToInstallExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetActualSectionToInstallEx  SetupDiGetActualSectionToInstallExA
+
+¡ÒSetupDiGetActualSectionToInstallExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetActualSectionToInstallW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassBitmapIndex(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassDescriptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassDescription  SetupDiGetClassDescriptionA
+
+¡ÒSetupDiGetClassDescriptionExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassDescriptionEx  SetupDiGetClassDescriptionExA
+
+¡ÒSetupDiGetClassDescriptionExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassDescriptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassDevPropertySheetsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassDevPropertySheets  SetupDiGetClassDevPropertySheetsA
+
+¡ÒSetupDiGetClassDevPropertySheetsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassDevsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassDevs  SetupDiGetClassDevsA
+
+¡ÒSetupDiGetClassDevsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassDevsEx  SetupDiGetClassDevsExA
+
+¡ÒSetupDiGetClassDevsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassDevsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassImageIndex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassImageList(Ë«×Ö)
+¡ÒSetupDiGetClassImageListExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassImageListEx  SetupDiGetClassImageListExA
+
+¡ÒSetupDiGetClassImageListExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassInstallParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassInstallParams  SetupDiGetClassInstallParamsA
+
+¡ÒSetupDiGetClassInstallParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetClassRegistryPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetClassRegistryProperty  SetupDiGetClassRegistryPropertyA
+
+¡ÒSetupDiGetClassRegistryPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetCustomDevicePropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetCustomDeviceProperty  SetupDiGetCustomDevicePropertyA
+
+¡ÒSetupDiGetCustomDevicePropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceInfoListClass(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceInfoListDetailA(Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDeviceInfoListDetail  SetupDiGetDeviceInfoListDetailA
+
+¡ÒSetupDiGetDeviceInfoListDetailW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceInstallParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDeviceInstallParams  SetupDiGetDeviceInstallParamsA
+
+¡ÒSetupDiGetDeviceInstallParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceInstanceIdA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDeviceInstanceId  SetupDiGetDeviceInstanceIdA
+
+¡ÒSetupDiGetDeviceInstanceIdW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceInterfaceAlias(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceInterfaceDetailA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDeviceInterfaceDetail  SetupDiGetDeviceInterfaceDetailA
+
+¡ÒSetupDiGetDeviceInterfaceDetailW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDeviceRegistryPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDeviceRegistryProperty  SetupDiGetDeviceRegistryPropertyA
+
+¡ÒSetupDiGetDeviceRegistryPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDriverInfoDetailA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDriverInfoDetail  SetupDiGetDriverInfoDetailA
+
+¡ÒSetupDiGetDriverInfoDetailW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetDriverInstallParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetDriverInstallParams  SetupDiGetDriverInstallParamsA
+
+¡ÒSetupDiGetDriverInstallParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetHwProfileFriendlyNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetHwProfileFriendlyName  SetupDiGetHwProfileFriendlyNameA
+
+¡ÒSetupDiGetHwProfileFriendlyNameExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetHwProfileFriendlyNameEx  SetupDiGetHwProfileFriendlyNameExA
+
+¡ÒSetupDiGetHwProfileFriendlyNameExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetHwProfileFriendlyNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetHwProfileList(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetHwProfileListExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetHwProfileListEx  SetupDiGetHwProfileListExA
+
+¡ÒSetupDiGetHwProfileListExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetINFClassA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetINFClass  SetupDiGetINFClassA
+
+¡ÒSetupDiGetINFClassW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetSelectedDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetSelectedDriverA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiGetSelectedDriver  SetupDiGetSelectedDriverA
+
+¡ÒSetupDiGetSelectedDriverW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiGetWizardPage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiInstallClassA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiInstallClass  SetupDiInstallClassA
+
+¡ÒSetupDiInstallClassExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiInstallClassEx  SetupDiInstallClassExA
+
+¡ÒSetupDiInstallClassExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiInstallClassW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiInstallDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiInstallDeviceInterfaces(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiInstallDriverFiles(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiLoadClassIcon(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiMoveDuplicateDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiOpenClassRegKey(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiOpenClassRegKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiOpenClassRegKeyEx  SetupDiOpenClassRegKeyExA
+
+¡ÒSetupDiOpenClassRegKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiOpenDevRegKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiOpenDeviceInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiOpenDeviceInfo  SetupDiOpenDeviceInfoA
+
+¡ÒSetupDiOpenDeviceInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiOpenDeviceInterfaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiOpenDeviceInterface  SetupDiOpenDeviceInterfaceA
+
+¡ÒSetupDiOpenDeviceInterfaceRegKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiOpenDeviceInterfaceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiRegisterCoDeviceInstallers(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiRegisterDeviceInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiRemoveDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiRemoveDeviceInterface(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiRestartDevices(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSelectBestCompatDrv(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSelectDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSelectOEMDrv(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetClassInstallParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiSetClassInstallParams  SetupDiSetClassInstallParamsA
+
+¡ÒSetupDiSetClassInstallParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetClassRegistryPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiSetClassRegistryProperty  SetupDiSetClassRegistryPropertyA
+
+¡ÒSetupDiSetClassRegistryPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetDeviceInstallParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiSetDeviceInstallParams  SetupDiSetDeviceInstallParamsA
+
+¡ÒSetupDiSetDeviceInstallParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetDeviceInterfaceDefault(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetDeviceRegistryPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiSetDeviceRegistryProperty  SetupDiSetDeviceRegistryPropertyA
+
+¡ÒSetupDiSetDeviceRegistryPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetDriverInstallParamsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiSetDriverInstallParams  SetupDiSetDriverInstallParamsA
+
+¡ÒSetupDiSetDriverInstallParamsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetSelectedDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiSetSelectedDriverA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDiSetSelectedDriver  SetupDiSetSelectedDriverA
+
+¡ÒSetupDiSetSelectedDriverW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupDiUnremoveDevice(Ë«×Ö,Ë«×Ö)
+¡ÒSetupDuplicateDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupDuplicateDiskSpaceList  SetupDuplicateDiskSpaceListA
+
+¡ÒSetupDuplicateDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupEnumInfSectionsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupEnumInfSections  SetupEnumInfSectionsA
+
+¡ÒSetupEnumInfSectionsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupFindFirstLineA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupFindFirstLine  SetupFindFirstLineA
+
+¡ÒSetupFindFirstLineW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupFindNextLine(Ë«×Ö,Ë«×Ö)
+¡ÒSetupFindNextMatchLineA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupFindNextMatchLine  SetupFindNextMatchLineA
+
+¡ÒSetupFindNextMatchLineW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupFreeSourceListA(Ë«×Ö,Ë«×Ö)
+¡ßSetupFreeSourceList  SetupFreeSourceListA
+
+¡ÒSetupFreeSourceListW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetBackupInformationA(Ë«×Ö,Ë«×Ö)
+¡ßSetupGetBackupInformation  SetupGetBackupInformationA
+
+¡ÒSetupGetBackupInformationW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetBinaryField(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetFieldCount(Ë«×Ö)
+¡ÒSetupGetFileCompressionInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetFileCompressionInfo  SetupGetFileCompressionInfoA
+
+¡ÒSetupGetFileCompressionInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetFileCompressionInfoEx  SetupGetFileCompressionInfoExA
+
+¡ÒSetupGetFileCompressionInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetFileCompressionInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetFileQueueCount(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetFileQueueFlags(Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetInfFileListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetInfFileList  SetupGetInfFileListA
+
+¡ÒSetupGetInfFileListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetInfInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetInfInformation  SetupGetInfInformationA
+
+¡ÒSetupGetInfInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetInfSections(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetIntField(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetLineByIndexA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetLineByIndex  SetupGetLineByIndexA
+
+¡ÒSetupGetLineByIndexW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetLineCountA(Ë«×Ö,Ë«×Ö)
+¡ßSetupGetLineCount  SetupGetLineCountA
+
+¡ÒSetupGetLineCountW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetLineTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetLineText  SetupGetLineTextA
+
+¡ÒSetupGetLineTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetMultiSzFieldA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetMultiSzField  SetupGetMultiSzFieldA
+
+¡ÒSetupGetMultiSzFieldW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetNonInteractiveMode()
+¡ÒSetupGetSourceFileLocationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetSourceFileLocation  SetupGetSourceFileLocationA
+
+¡ÒSetupGetSourceFileLocationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetSourceFileSizeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetSourceFileSize  SetupGetSourceFileSizeA
+
+¡ÒSetupGetSourceFileSizeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetSourceInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetSourceInfo  SetupGetSourceInfoA
+
+¡ÒSetupGetSourceInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetStringFieldA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetStringField  SetupGetStringFieldA
+
+¡ÒSetupGetStringFieldW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupGetTargetPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupGetTargetPath  SetupGetTargetPathA
+
+¡ÒSetupGetTargetPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInitDefaultQueueCallback(Ë«×Ö)
+¡ÒSetupInitDefaultQueueCallbackEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInitializeFileLogA(Ë«×Ö,Ë«×Ö)
+¡ßSetupInitializeFileLog  SetupInitializeFileLogA
+
+¡ÒSetupInitializeFileLogW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupInstallFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupInstallFile  SetupInstallFileA
+
+¡ÒSetupInstallFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupInstallFileEx  SetupInstallFileExA
+
+¡ÒSetupInstallFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInstallFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInstallFilesFromInfSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupInstallFilesFromInfSection  SetupInstallFilesFromInfSectionA
+
+¡ÒSetupInstallFilesFromInfSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInstallFromInfSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupInstallFromInfSection  SetupInstallFromInfSectionA
+
+¡ÒSetupInstallFromInfSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInstallServicesFromInfSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupInstallServicesFromInfSection  SetupInstallServicesFromInfSectionA
+
+¡ÒSetupInstallServicesFromInfSectionExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupInstallServicesFromInfSectionEx  SetupInstallServicesFromInfSectionExA
+
+¡ÒSetupInstallServicesFromInfSectionExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupInstallServicesFromInfSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupIterateCabinetA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupIterateCabinet  SetupIterateCabinetA
+
+¡ÒSetupIterateCabinetW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupLogErrorA(Ë«×Ö,Ë«×Ö)
+¡ßSetupLogError  SetupLogErrorA
+
+¡ÒSetupLogErrorW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupLogFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupLogFile  SetupLogFileA
+
+¡ÒSetupLogFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupOpenAppendInfFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupOpenAppendInfFile  SetupOpenAppendInfFileA
+
+¡ÒSetupOpenAppendInfFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupOpenFileQueue()
+¡ÒSetupOpenInfFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupOpenInfFile  SetupOpenInfFileA
+
+¡ÒSetupOpenInfFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupOpenLog(Ë«×Ö)
+¡ÒSetupOpenMasterInf()
+¡ÒSetupPrepareQueueForRestoreA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupPrepareQueueForRestore  SetupPrepareQueueForRestoreA
+
+¡ÒSetupPrepareQueueForRestoreW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupPromptForDiskA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupPromptForDisk  SetupPromptForDiskA
+
+¡ÒSetupPromptForDiskW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupPromptReboot(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueryDrivesInDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueryDrivesInDiskSpaceList  SetupQueryDrivesInDiskSpaceListA
+
+¡ÒSetupQueryDrivesInDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueryFileLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueryFileLog  SetupQueryFileLogA
+
+¡ÒSetupQueryFileLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueryInfFileInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueryInfFileInformation  SetupQueryInfFileInformationA
+
+¡ÒSetupQueryInfFileInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueryInfOriginalFileInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueryInfOriginalFileInformation  SetupQueryInfOriginalFileInformationA
+
+¡ÒSetupQueryInfOriginalFileInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueryInfVersionInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueryInfVersionInformation  SetupQueryInfVersionInformationA
+
+¡ÒSetupQueryInfVersionInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQuerySourceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQuerySourceList  SetupQuerySourceListA
+
+¡ÒSetupQuerySourceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQuerySpaceRequiredOnDriveA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQuerySpaceRequiredOnDrive  SetupQuerySpaceRequiredOnDriveA
+
+¡ÒSetupQuerySpaceRequiredOnDriveW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueCopyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueCopy  SetupQueueCopyA
+
+¡ÒSetupQueueCopyIndirectA(Ë«×Ö)
+¡ßSetupQueueCopyIndirect  SetupQueueCopyIndirectA
+
+¡ÒSetupQueueCopyIndirectW(Ë«×Ö)
+¡ÒSetupQueueCopySectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueCopySection  SetupQueueCopySectionA
+
+¡ÒSetupQueueCopySectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueCopyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueDefaultCopyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueDefaultCopy  SetupQueueDefaultCopyA
+
+¡ÒSetupQueueDefaultCopyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueDeleteA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueDelete  SetupQueueDeleteA
+
+¡ÒSetupQueueDeleteSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueDeleteSection  SetupQueueDeleteSectionA
+
+¡ÒSetupQueueDeleteSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueDeleteW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueRenameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueRename  SetupQueueRenameA
+
+¡ÒSetupQueueRenameSectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupQueueRenameSection  SetupQueueRenameSectionA
+
+¡ÒSetupQueueRenameSectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupQueueRenameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupRemoveFileLogEntryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupRemoveFileLogEntry  SetupRemoveFileLogEntryA
+
+¡ÒSetupRemoveFileLogEntryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupRemoveFromDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupRemoveFromDiskSpaceList  SetupRemoveFromDiskSpaceListA
+
+¡ÒSetupRemoveFromDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupRemoveFromSourceListA(Ë«×Ö,Ë«×Ö)
+¡ßSetupRemoveFromSourceList  SetupRemoveFromSourceListA
+
+¡ÒSetupRemoveFromSourceListW(Ë«×Ö,Ë«×Ö)
+¡ÒSetupRemoveInstallSectionFromDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupRemoveInstallSectionFromDiskSpaceList  SetupRemoveInstallSectionFromDiskSpaceListA
+
+¡ÒSetupRemoveInstallSectionFromDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupRemoveSectionFromDiskSpaceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupRemoveSectionFromDiskSpaceList  SetupRemoveSectionFromDiskSpaceListA
+
+¡ÒSetupRemoveSectionFromDiskSpaceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupRenameErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupRenameError  SetupRenameErrorA
+
+¡ÒSetupRenameErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupScanFileQueueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupScanFileQueue  SetupScanFileQueueA
+
+¡ÒSetupScanFileQueueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupSetDirectoryIdA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupSetDirectoryId  SetupSetDirectoryIdA
+
+¡ÒSetupSetDirectoryIdExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupSetDirectoryIdEx  SetupSetDirectoryIdExA
+
+¡ÒSetupSetDirectoryIdExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupSetDirectoryIdW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupSetFileQueueAlternatePlatformA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupSetFileQueueAlternatePlatform  SetupSetFileQueueAlternatePlatformA
+
+¡ÒSetupSetFileQueueAlternatePlatformW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupSetFileQueueFlags(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupSetNonInteractiveMode(Ë«×Ö)
+¡ÒSetupSetPlatformPathOverrideA(Ë«×Ö)
+¡ßSetupSetPlatformPathOverride  SetupSetPlatformPathOverrideA
+
+¡ÒSetupSetPlatformPathOverrideW(Ë«×Ö)
+¡ÒSetupSetSourceListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupSetSourceList  SetupSetSourceListA
+
+¡ÒSetupSetSourceListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupTermDefaultQueueCallback(Ë«×Ö)
+¡ÒSetupTerminateFileLog(Ë«×Ö)
+¡ÒSetupUninstallNewlyCopiedInfs(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupUninstallOEMInfA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupUninstallOEMInf  SetupUninstallOEMInfA
+
+¡ÒSetupUninstallOEMInfW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetupVerifyInfFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetupVerifyInfFile  SetupVerifyInfFileA
+
+¡ÒSetupVerifyInfFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

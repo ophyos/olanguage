@@ -1,0 +1,58 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒNDdeGetErrorStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeGetErrorString  NDdeGetErrorStringA
+
+¡ÒNDdeGetErrorStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeGetShareSecurityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeGetShareSecurity  NDdeGetShareSecurityA
+
+¡ÒNDdeGetShareSecurityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeGetTrustedShareA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeGetTrustedShare  NDdeGetTrustedShareA
+
+¡ÒNDdeGetTrustedShareW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeIsValidAppTopicListA(Ë«×Ö)
+¡ßNDdeIsValidAppTopicList  NDdeIsValidAppTopicListA
+
+¡ÒNDdeIsValidAppTopicListW(Ë«×Ö)
+¡ÒNDdeIsValidShareNameA(Ë«×Ö)
+¡ßNDdeIsValidShareName  NDdeIsValidShareNameA
+
+¡ÒNDdeIsValidShareNameW(Ë«×Ö)
+¡ÒNDdeSetShareSecurityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeSetShareSecurity  NDdeSetShareSecurityA
+
+¡ÒNDdeSetShareSecurityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeSetTrustedShareA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeSetTrustedShare  NDdeSetTrustedShareA
+
+¡ÒNDdeSetTrustedShareW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeShareAddA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeShareAdd  NDdeShareAddA
+
+¡ÒNDdeShareAddW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeShareDelA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeShareDel  NDdeShareDelA
+
+¡ÒNDdeShareDelW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeShareEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeShareEnum  NDdeShareEnumA
+
+¡ÒNDdeShareEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeShareGetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeShareGetInfo  NDdeShareGetInfoA
+
+¡ÒNDdeShareGetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeShareSetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeShareSetInfo  NDdeShareSetInfoA
+
+¡ÒNDdeShareSetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNDdeTrustedShareEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßNDdeTrustedShareEnum  NDdeTrustedShareEnumA
+
+¡ÒNDdeTrustedShareEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

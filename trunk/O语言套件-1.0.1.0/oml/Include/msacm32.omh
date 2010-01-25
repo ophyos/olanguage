@@ -1,0 +1,60 @@
+引用段
+{
+函数 XRegThunkEntry(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmDriverAddA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmDriverAddW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmDriverClose(整数32,整数32)=>整数32;
+函数 acmDriverDetailsA(整数32,整数32,整数32)=>整数32;
+函数 acmDriverDetailsW(整数32,整数32,整数32)=>整数32;
+函数 acmDriverEnum(整数32,整数32,整数32)=>整数32;
+函数 acmDriverID(整数32,整数32,整数32)=>整数32;
+函数 acmDriverMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 acmDriverOpen(整数32,整数32,整数32)=>整数32;
+函数 acmDriverPriority(整数32,整数32,整数32)=>整数32;
+函数 acmDriverRemove(整数32,整数32)=>整数32;
+函数 acmFilterChooseA(整数32)=>整数32;
+函数 acmFilterChooseW(整数32)=>整数32;
+函数 acmFilterDetailsA(整数32,整数32,整数32)=>整数32;
+函数 acmFilterDetailsW(整数32,整数32,整数32)=>整数32;
+函数 acmFilterEnumA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFilterEnumW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFilterTagDetailsA(整数32,整数32,整数32)=>整数32;
+函数 acmFilterTagDetailsW(整数32,整数32,整数32)=>整数32;
+函数 acmFilterTagEnumA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFilterTagEnumW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFormatChooseA(整数32)=>整数32;
+函数 acmFormatChooseW(整数32)=>整数32;
+函数 acmFormatDetailsA(整数32,整数32,整数32)=>整数32;
+函数 acmFormatDetailsW(整数32,整数32,整数32)=>整数32;
+函数 acmFormatEnumA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFormatEnumW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFormatSuggest(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFormatTagDetailsA(整数32,整数32,整数32)=>整数32;
+函数 acmFormatTagDetailsW(整数32,整数32,整数32)=>整数32;
+函数 acmFormatTagEnumA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmFormatTagEnumW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmGetVersion()=>整数32;
+函数 acmMessage32(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmMetrics(整数32,整数32,整数32)=>整数32;
+函数 acmStreamClose(整数32,整数32)=>整数32;
+函数 acmStreamConvert(整数32,整数32,整数32)=>整数32;
+函数 acmStreamMessage(整数32,整数32,整数32,整数32)=>整数32;
+函数 acmStreamOpen(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 acmStreamPrepareHeader(整数32,整数32,整数32)=>整数32;
+函数 acmStreamReset(整数32,整数32)=>整数32;
+函数 acmStreamSize(整数32,整数32,整数32,整数32)=>整数32;
+函数 acmStreamUnprepareHeader(整数32,整数32,整数32)=>整数32;
+
+宏定义 acmDriverAdd  acmDriverAddA
+宏定义 acmDriverDetails  acmDriverDetailsA
+宏定义 acmFilterChoose  acmFilterChooseA
+宏定义 acmFilterDetails  acmFilterDetailsA
+宏定义 acmFilterEnum  acmFilterEnumA
+宏定义 acmFilterTagDetails  acmFilterTagDetailsA
+宏定义 acmFilterTagEnum  acmFilterTagEnumA
+宏定义 acmFormatChoose  acmFormatChooseA
+宏定义 acmFormatDetails  acmFormatDetailsA
+宏定义 acmFormatEnum  acmFormatEnumA
+宏定义 acmFormatTagDetails  acmFormatTagDetailsA
+宏定义 acmFormatTagEnum  acmFormatTagEnumA
+}

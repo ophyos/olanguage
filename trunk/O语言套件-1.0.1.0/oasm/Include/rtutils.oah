@@ -1,0 +1,87 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒLogErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLogError  LogErrorA
+
+¡ÒLogErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLogEventA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLogEvent  LogEventA
+
+¡ÒLogEventW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMprSetupProtocolEnum(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMprSetupProtocolFree(Ë«×Ö)
+¡ÒQueueWorkItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRouterAssert(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRouterGetErrorStringA(Ë«×Ö,Ë«×Ö)
+¡ßRouterGetErrorString  RouterGetErrorStringA
+
+¡ÒRouterGetErrorStringW(Ë«×Ö,Ë«×Ö)
+¡ÒRouterLogDeregisterA(Ë«×Ö)
+¡ßRouterLogDeregister  RouterLogDeregisterA
+
+¡ÒRouterLogDeregisterW(Ë«×Ö)
+¡ÒRouterLogEventA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRouterLogEvent  RouterLogEventA
+
+¡ÒRouterLogEventDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRouterLogEventData  RouterLogEventDataA
+
+¡ÒRouterLogEventDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C RouterLogEventExA(Ë«×Ö, ..)
+¡ßRouterLogEventEx  RouterLogEventExA
+
+¡Ò:C RouterLogEventExW(Ë«×Ö, ..)
+¡ÒRouterLogEventStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRouterLogEventString  RouterLogEventStringA
+
+¡ÒRouterLogEventStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRouterLogEventValistExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRouterLogEventValistEx  RouterLogEventValistExA
+
+¡ÒRouterLogEventValistExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRouterLogEventW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRouterLogRegisterA(Ë«×Ö)
+¡ßRouterLogRegister  RouterLogRegisterA
+
+¡ÒRouterLogRegisterW(Ë«×Ö)
+¡ÒSetIoCompletionProc(Ë«×Ö,Ë«×Ö)
+¡ÒTraceDeregisterA(Ë«×Ö)
+¡ßTraceDeregister  TraceDeregisterA
+
+¡ÒTraceDeregisterExA(Ë«×Ö,Ë«×Ö)
+¡ßTraceDeregisterEx  TraceDeregisterExA
+
+¡ÒTraceDeregisterExW(Ë«×Ö,Ë«×Ö)
+¡ÒTraceDeregisterW(Ë«×Ö)
+¡ÒTraceDumpExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTraceDumpEx  TraceDumpExA
+
+¡ÒTraceDumpExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTraceGetConsoleA(Ë«×Ö,Ë«×Ö)
+¡ßTraceGetConsole  TraceGetConsoleA
+
+¡ÒTraceGetConsoleW(Ë«×Ö,Ë«×Ö)
+¡Ò:C TracePrintfA(Ë«×Ö, ..)
+¡ßTracePrintf  TracePrintfA
+
+¡Ò:C TracePrintfExA(Ë«×Ö, ..)
+¡ßTracePrintfEx  TracePrintfExA
+
+¡Ò:C TracePrintfExW(Ë«×Ö, ..)
+¡Ò:C TracePrintfW(Ë«×Ö, ..)
+¡ÒTracePutsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTracePutsEx  TracePutsExA
+
+¡ÒTracePutsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTraceRegisterExA(Ë«×Ö,Ë«×Ö)
+¡ßTraceRegisterEx  TraceRegisterExA
+
+¡ÒTraceRegisterExW(Ë«×Ö,Ë«×Ö)
+¡ÒTraceVprintfExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTraceVprintfEx  TraceVprintfExA
+
+¡ÒTraceVprintfExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

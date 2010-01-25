@@ -1,0 +1,22 @@
+引用段
+{
+函数 CertSrvBackupClose(整数32)=>整数32;
+函数 CertSrvBackupEnd(整数32)=>整数32;
+函数 CertSrvBackupFree(整数32)=>整数32;
+函数 CertSrvBackupGetBackupLogsW(整数32,整数32,整数32)=>整数32;
+函数 CertSrvBackupGetDatabaseNamesW(整数32,整数32,整数32)=>整数32;
+函数 CertSrvBackupGetDynamicFileListW(整数32,整数32,整数32)=>整数32;
+函数 CertSrvBackupOpenFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CertSrvBackupPrepareW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CertSrvBackupRead(整数32,整数32,整数32,整数32)=>整数32;
+函数 CertSrvBackupTruncateLogs(整数32)=>整数32;
+函数 CertSrvIsServerOnlineW(整数32,整数32)=>整数32;
+函数 CertSrvRestoreEnd(整数32)=>整数32;
+函数 CertSrvRestoreGetDatabaseLocationsW(整数32,整数32,整数32)=>整数32;
+函数 CertSrvRestorePrepareW(整数32,整数32,整数32)=>整数32;
+函数 CertSrvRestoreRegisterComplete(整数32,整数32)=>整数32;
+函数 CertSrvRestoreRegisterThroughFile(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CertSrvRestoreRegisterW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CertSrvServerControlW(整数32,整数32,整数32,整数32)=>整数32;
+
+}

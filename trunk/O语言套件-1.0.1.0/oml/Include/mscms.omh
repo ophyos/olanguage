@@ -1,0 +1,78 @@
+引用段
+{
+函数 AssociateColorProfileWithDeviceA(整数32,整数32,整数32)=>整数32;
+函数 AssociateColorProfileWithDeviceW(整数32,整数32,整数32)=>整数32;
+函数 CheckBitmapBits(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckColors(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CloseColorProfile(整数32)=>整数32;
+函数 ConvertColorNameToIndex(整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertIndexToColorName(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateColorTransformA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateColorTransformW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDeviceLinkProfile(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateMultiProfileTransform(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProfileFromLogColorSpaceA(整数32,整数32)=>整数32;
+函数 CreateProfileFromLogColorSpaceW(整数32,整数32)=>整数32;
+函数 DeleteColorTransform(整数32)=>整数32;
+函数 DisassociateColorProfileFromDeviceA(整数32,整数32,整数32)=>整数32;
+函数 DisassociateColorProfileFromDeviceW(整数32,整数32,整数32)=>整数32;
+函数 EnumColorProfilesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumColorProfilesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GenerateCopyFilePaths(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCMMInfo(整数32,整数32)=>整数32;
+函数 GetColorDirectoryA(整数32,整数32,整数32)=>整数32;
+函数 GetColorDirectoryW(整数32,整数32,整数32)=>整数32;
+函数 GetColorProfileElement(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetColorProfileElementTag(整数32,整数32,整数32)=>整数32;
+函数 GetColorProfileFromHandle(整数32,整数32,整数32)=>整数32;
+函数 GetColorProfileHeader(整数32,整数32)=>整数32;
+函数 GetCountColorProfileElements(整数32,整数32)=>整数32;
+函数 GetNamedProfileInfo(整数32,整数32)=>整数32;
+函数 GetPS2ColorRenderingDictionary(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPS2ColorRenderingIntent(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPS2ColorSpaceArray(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStandardColorSpaceProfileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStandardColorSpaceProfileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InstallColorProfileA(整数32,整数32)=>整数32;
+函数 InstallColorProfileW(整数32,整数32)=>整数32;
+函数 InternalGetDeviceConfig(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternalGetPS2CSAFromLCS(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternalGetPS2ColorRenderingDictionary(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternalGetPS2ColorSpaceArray(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternalGetPS2PreviewCRD(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternalSetDeviceConfig(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IsColorProfileTagPresent(整数32,整数32,整数32)=>整数32;
+函数 IsColorProfileValid(整数32,整数32)=>整数32;
+函数 OpenColorProfileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenColorProfileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterCMMA(整数32,整数32,整数32)=>整数32;
+函数 RegisterCMMW(整数32,整数32,整数32)=>整数32;
+函数 SelectCMM(整数32)=>整数32;
+函数 SetColorProfileElement(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetColorProfileElementReference(整数32,整数32,整数32)=>整数32;
+函数 SetColorProfileElementSize(整数32,整数32,整数32)=>整数32;
+函数 SetColorProfileHeader(整数32,整数32)=>整数32;
+函数 SetStandardColorSpaceProfileA(整数32,整数32,整数32)=>整数32;
+函数 SetStandardColorSpaceProfileW(整数32,整数32,整数32)=>整数32;
+函数 SpoolerCopyFileEvent(整数32,整数32,整数32)=>整数32;
+函数 TranslateBitmapBits(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TranslateColors(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UninstallColorProfileA(整数32,整数32,整数32)=>整数32;
+函数 UninstallColorProfileW(整数32,整数32,整数32)=>整数32;
+函数 UnregisterCMMA(整数32,整数32)=>整数32;
+函数 UnregisterCMMW(整数32,整数32)=>整数32;
+
+宏定义 AssociateColorProfileWithDevice  AssociateColorProfileWithDeviceA
+宏定义 CreateColorTransform  CreateColorTransformA
+宏定义 CreateProfileFromLogColorSpace  CreateProfileFromLogColorSpaceA
+宏定义 DisassociateColorProfileFromDevice  DisassociateColorProfileFromDeviceA
+宏定义 EnumColorProfiles  EnumColorProfilesA
+宏定义 GetColorDirectory  GetColorDirectoryA
+宏定义 GetStandardColorSpaceProfile  GetStandardColorSpaceProfileA
+宏定义 InstallColorProfile  InstallColorProfileA
+宏定义 OpenColorProfile  OpenColorProfileA
+宏定义 RegisterCMM  RegisterCMMA
+宏定义 SetStandardColorSpaceProfile  SetStandardColorSpaceProfileA
+宏定义 UninstallColorProfile  UninstallColorProfileA
+宏定义 UnregisterCMM  UnregisterCMMA
+}

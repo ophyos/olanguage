@@ -1,0 +1,16 @@
+
+引用段
+{
+
+函数 按钮_获取图标宽:Button_GetIconWidth(地址 按钮指针)=>整数32;
+函数 按钮_设置按下:Button_SetPressed(地址 按钮指针,整数32 pressed);
+函数 按钮_处于按下:Button_IsPressed(地址 按钮指针)=>整数32;
+函数 按钮_处于焦点:Button_IsFocused(地址 按钮指针)=>整数32;  
+函数 按钮_设置文本颜色:Button_SetTextColor(地址 按钮指针,正数32 color);
+函数 按钮_获取文本颜色:Button_GetTextColor(地址 按钮指针)=>正数32;
+函数 按钮_设置图标:Button_SetIcon(地址 按钮指针,HICON 图标);
+函数 按钮_获取图标:Button_GetIcon(地址 按钮指针)=>HICON; 
+函数 按钮_销毁控件:Button_DestroyControl(地址 按钮指针);	
+函数 按钮_获取类:Button_GetClass(地址 按钮指针)=>地址;
+
+}

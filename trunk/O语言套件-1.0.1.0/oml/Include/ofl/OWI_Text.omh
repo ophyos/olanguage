@@ -1,0 +1,13 @@
+
+引用段
+{
+
+函数 文本_设置文本颜色:Text_SetTextColor(地址 pText,正数32 color);
+函数 文本_获取文本颜色:Text_GetTextColor(地址 pText)=>整数32;
+
+函数 文本_销毁控件:Text_DestroyControl(地址 pText);
+函数 文本_获取类:Text_GetClass(地址 pText)=>整数32;
+函数 文本_应用:Text_Enable(地址 pText,整数32 enable);
+函数 文本_置为应用:Text_IsEnabled(地址 pText)=>整数32;
+
+}

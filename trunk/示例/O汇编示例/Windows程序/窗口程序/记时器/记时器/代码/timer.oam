@@ -1,0 +1,91 @@
+
+
+《*oasm32.oah》
+《*windows.oah》
+
+〈*user32.lib〉
+〈*kernel32.lib〉
+
+∥预留段
+﹁
+双字 h实例句柄
+双字 h主窗口
+双字 idTimer
+﹂
+
+∵ID_TIMER1   1
+∵DLG_MAIN	   1
+∵IDC_COUNT  101
+
+∥外部引用段
+︽
+∫获取模块:GetModuleHandleA(双字)
+∫退出进程:ExitProcess(双字)
+∫创建模式对话框:DialogBoxParamA(双字,双字,双字,双字,双字)
+∫结束对话框:EndDialog(双字,双字)
+∫设置定时器:SetTimer(双字,双字,双字,双字)
+∫终止定时器:KillTimer(双字,双字)
+∫蜂鸣提示:MessageBeep(双字)
+∫获取对话框子项整数值:GetDlgItemInt(双字,双字,双字,双字)
+∫设置对话框子项整数值:SetDlgItemInt(双字,双字,双字,双字)
+︾
+
+
+∥代码段开始
+︷
+
+∥开始函数定义
+∏主函数()
+{
+∥这里添加代码
+
+  获取模块(NULL)
+  h实例句柄 = 累加32
+  创建模式对话框(h实例句柄,DLG_MAIN,NULL,主对话框过程,NULL)
+  退出进程(NULL)
+}
+
+∫定时器过程(双字 _hWnd,双字 _uMsg,双字 _idEvent,双字 _dwTime)
+{
+    ≮@  ∥全部压栈
+    获取对话框子项整数值(h主窗口,IDC_COUNT,NULL,假)
+    累加32++
+    设置对话框子项整数值(h主窗口,IDC_COUNT,累加32,假)
+    ≯@ ∥全部出栈
+}
+
+∫主对话框过程(双字 h窗口句柄,双字 u消息,双字 wParam,双字 lParam)
+{ <基数32,的址32,源址32>
+  
+   累加32 = u消息
+   ∮(累加32 ==	WM_TIMER)
+   {
+       累加32 = wParam
+	 ∮(累加32 == ID_TIMER1)
+       {
+          蜂鸣提示(-1) ∥发出一点声音
+	  }
+   }
+   ∝∮(累加32 == WM_INITDIALOG)
+   {
+	 ≮ h窗口句柄 
+	 ≯ h主窗口
+      设置定时器(h窗口句柄,ID_TIMER1,2000,NULL)
+      设置定时器(NULL,NULL,1000,定时器过程)
+      idTimer = 累加32
+   }
+   ∝∮(累加32 == WM_CLOSE)
+   {
+      终止定时器(h窗口句柄,ID_TIMER1)
+      终止定时器(NULL,idTimer)
+      结束对话框(h窗口句柄,NULL)
+   }
+   ∝
+   {
+       ← 假	 ∥返回 假		
+   }
+
+   ← 真	 ∥返回 真
+}
+
+︸ ∥代码段结束

@@ -1,0 +1,53 @@
+//O汇编文件
+
+
+.数据段
+{
+    双字 dwMp3PlayFlag
+    双字 hDevice
+    字节 szDevice.. = "MPEGVideo"
+}
+
+.代码段
+{
+    函数 PlayMP3(双字 lp文件名)
+    {
+        MCI_OPEN_PARMS stMCIOpen
+        MCI_PLAY_PARMS stMCIPlay
+
+        stMCIOpen.lpstrDeviceType = 取地址 szDevice
+        压栈 lp文件名
+        出栈 stMCIOpen.lpstrElementName
+        累加32 @= stMCIOpen
+        mciSendCommand(0,MCI_OPEN,MCI_OPEN_TYPE | MCI_OPEN_ELEMENT,累加32)
+        累加32 = stMCIOpen.wDeviceID
+        hDevice = 累加32
+        累加32 = hWinMain
+        stMCIPlay.dwCallback = 累加32
+        累加32 @= stMCIPlay
+        mciSendCommand(hDevice,MCI_PLAY,MCI_NOTIFY,累加32)
+        如果(累加32 == 0)
+        {            
+            dwMp3PlayFlag = 1           
+        }
+        否则
+        {            
+            dwMp3PlayFlag = 0
+        }        
+    }
+		
+
+    函数 StopPlayMP3()
+    {
+        MCI_GENERIC_PARMS stMCIStop
+
+        累加32 = hWinMain
+        stMCIStop.dwCallback = 累加32
+        累加32 @= stMCIStop
+        mciSendCommand(hDevice,MCI_STOP,MCI_NOTIFY,累加32)
+        累加32 @= stMCIStop
+        mciSendCommand(hDevice,MCI_CLOSE,MCI_NOTIFY,累加32)
+        //SetDlgItemText(hWinMain,IDOK,取地址 szPlay)
+        dwMp3PlayFlag = 0
+    }
+}

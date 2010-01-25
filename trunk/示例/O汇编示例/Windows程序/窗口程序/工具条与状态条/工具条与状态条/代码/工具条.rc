@@ -1,0 +1,52 @@
+
+#include "resource.h"
+#include <windows.h>
+#include <commctrl.h>
+#include <richedit.h>
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ICO_MAIN	ICON		"Main.ico"
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+IDM_MAIN	menu	discardable
+{
+	popup	"文件(&F)"
+	{
+		menuitem	"新文件(&N)...", IDM_NEW
+		menuitem	"打开文件(&O)...", IDM_OPEN
+		menuitem	"保存文件(&S)", IDM_SAVE
+		menuitem	separator
+		menuitem	"页面设置(&A)...", IDM_PAGESETUP
+		menuitem	"打印(&P)...", IDM_PRINT
+		menuitem	separator
+		menuitem	"退出(&X)", IDM_EXIT
+	}
+	popup	"编辑(&E)"
+	{
+		menuitem	"剪切(&U)", IDM_CUT
+		menuitem	"拷贝(&C)", IDM_COPY
+		menuitem	"粘贴(&P)", IDM_PASTE
+		menuitem	separator
+		menuitem	"查找字符串(&S)...",IDM_FIND
+		menuitem	"替换字符串(&R)...",IDM_REPLACE
+	}
+	popup	"帮助(&H)"
+	{
+		menuitem	"帮助(&H)", IDM_HELP
+	}
+}
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+stringtable	discardable
+{
+	IDM_NEW "新建文件"
+	IDM_OPEN "打开文件"
+	IDM_SAVE "保存文件"
+	IDM_PAGESETUP "页面设置"
+	IDM_PRINT "打印"
+	IDM_COPY "拷贝"
+	IDM_CUT "剪切"
+	IDM_PASTE "粘贴"
+	IDM_FIND "查找"
+	IDM_REPLACE "替换"
+	IDM_HELP "帮助"
+}
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

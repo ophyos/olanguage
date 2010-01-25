@@ -1,0 +1,63 @@
+引用段
+{
+函数 ACUIProviderInvokeUI(整数32)=>整数32;
+函数 CryptUIDlgCertMgr(整数32)=>整数32;
+函数 CryptUIDlgFreeCAContext(整数32)=>整数32;
+函数 CryptUIDlgSelectCA(整数32)=>整数32;
+函数 CryptUIDlgSelectCertificateA(整数32)=>整数32;
+函数 CryptUIDlgSelectCertificateFromStore(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIDlgSelectCertificateW(整数32)=>整数32;
+函数 CryptUIDlgSelectStoreA(整数32)=>整数32;
+函数 CryptUIDlgSelectStoreW(整数32)=>整数32;
+函数 CryptUIDlgViewCRLA(整数32)=>整数32;
+函数 CryptUIDlgViewCRLW(整数32)=>整数32;
+函数 CryptUIDlgViewCTLA(整数32)=>整数32;
+函数 CryptUIDlgViewCTLW(整数32)=>整数32;
+函数 CryptUIDlgViewCertificateA(整数32,整数32)=>整数32;
+函数 CryptUIDlgViewCertificatePropertiesA(整数32,整数32)=>整数32;
+函数 CryptUIDlgViewCertificatePropertiesW(整数32,整数32)=>整数32;
+函数 CryptUIDlgViewCertificateW(整数32,整数32)=>整数32;
+函数 CryptUIDlgViewContext(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIDlgViewSignerInfoA(整数32)=>整数32;
+函数 CryptUIDlgViewSignerInfoW(整数32)=>整数32;
+函数 CryptUIFreeCertificatePropertiesPagesA(整数32,整数32)=>整数32;
+函数 CryptUIFreeCertificatePropertiesPagesW(整数32,整数32)=>整数32;
+函数 CryptUIFreeViewSignaturesPagesA(整数32,整数32)=>整数32;
+函数 CryptUIFreeViewSignaturesPagesW(整数32,整数32)=>整数32;
+函数 CryptUIGetCertificatePropertiesPagesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIGetCertificatePropertiesPagesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIGetViewSignaturesPagesA(整数32,整数32,整数32)=>整数32;
+函数 CryptUIGetViewSignaturesPagesW(整数32,整数32,整数32)=>整数32;
+函数 CryptUIStartCertMgr(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizBuildCTL(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizCertRequest(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizCreateCertRequestNoDS(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizDigitalSign(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizExport(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizFreeCertRequestNoDS(整数32)=>整数32;
+函数 CryptUIWizFreeDigitalSignContext(整数32)=>整数32;
+函数 CryptUIWizImport(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptUIWizQueryCertRequestNoDS(整数32,整数32)=>整数32;
+函数 CryptUIWizSubmitCertRequestNoDS(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnrollmentCOMObjectFactory_getInstance(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 I_CryptUIProtect(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 I_CryptUIProtectFailure(整数32,整数32,整数32)=>整数32;
+函数 LocalEnroll(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LocalEnrollNoDS(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RetrievePKCS7FromCA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WizardFree(整数32)=>整数32;
+
+宏定义 CryptUIDlgSelectC  CryptUIDlgSelectCA
+宏定义 CryptUIDlgSelectCertificate  CryptUIDlgSelectCertificateA
+宏定义 CryptUIDlgSelectStore  CryptUIDlgSelectStoreA
+宏定义 CryptUIDlgViewCRL  CryptUIDlgViewCRLA
+宏定义 CryptUIDlgViewCTL  CryptUIDlgViewCTLA
+宏定义 CryptUIDlgViewCertificate  CryptUIDlgViewCertificateA
+宏定义 CryptUIDlgViewCertificateProperties  CryptUIDlgViewCertificatePropertiesA
+宏定义 CryptUIDlgViewSignerInfo  CryptUIDlgViewSignerInfoA
+宏定义 CryptUIFreeCertificatePropertiesPages  CryptUIFreeCertificatePropertiesPagesA
+宏定义 CryptUIFreeViewSignaturesPages  CryptUIFreeViewSignaturesPagesA
+宏定义 CryptUIGetCertificatePropertiesPages  CryptUIGetCertificatePropertiesPagesA
+宏定义 CryptUIGetViewSignaturesPages  CryptUIGetViewSignaturesPagesA
+宏定义 RetrievePKCS7FromC  RetrievePKCS7FromCA
+}

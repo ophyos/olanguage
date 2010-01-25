@@ -1,0 +1,18 @@
+引用段
+{
+函数 RasAdminCompressPhoneNumber(整数32,整数32)=>整数32;
+函数 RasAdminDLLInit(整数32,整数32,整数32)=>整数32;
+函数 RasAdminFreeBuffer(整数32)=>整数32;
+函数 RasAdminGetErrorString(整数32,整数32,整数32)=>整数32;
+函数 RasAdminGetUserAccountServer(整数32,整数32,整数32)=>整数32;
+函数 RasAdminGetUserParms(整数32,整数32)=>整数32;
+函数 RasAdminPortClearStatistics(整数32,整数32)=>整数32;
+函数 RasAdminPortDisconnect(整数32,整数32)=>整数32;
+函数 RasAdminPortEnum(整数32,整数32,整数32)=>整数32;
+函数 RasAdminPortGetInfo(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasAdminServerGetInfo(整数32,整数32)=>整数32;
+函数 RasAdminSetUserParms(整数32,整数32,整数32)=>整数32;
+函数 RasAdminUserGetInfo(整数32,整数32,整数32)=>整数32;
+函数 RasAdminUserSetInfo(整数32,整数32,整数32)=>整数32;
+
+}

@@ -1,0 +1,785 @@
+引用段
+{
+函数 ActivateKeyboardLayout(整数32,整数32)=>整数32;
+函数 AdjustWindowRect(整数32,整数32,整数32)=>整数32;
+函数 AdjustWindowRectEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 AllowSetForegroundWindow(整数32)=>整数32;
+函数 动态窗体:AnimateWindow(整数32,整数32,整数32)=>整数32;
+函数 AnyPopup()=>整数32;
+函数 增加菜单:AppendMenuA(整数32,整数32,整数32,整数32)=>整数32;
+函数 AppendMenuW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ArrangeIconicWindows(整数32)=>整数32;
+函数 AttachThreadInput(整数32,整数32,整数32)=>整数32;
+函数 BeginDeferWindowPos(整数32)=>整数32;
+函数 开始绘制:BeginPaint(整数32,整数32)=>整数32;
+函数 BlockInput(整数32)=>整数32;
+函数 BringWindowToTop(整数32)=>整数32;
+函数 BroadcastSystemMessageA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BroadcastSystemMessageExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BroadcastSystemMessageExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BroadcastSystemMessageW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CallMsgFilterA(整数32,整数32)=>整数32;
+函数 CallMsgFilterW(整数32,整数32)=>整数32;
+函数 CallNextHookEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 调用窗体过程:CallWindowProcA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CallWindowProcW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CascadeChildWindows(整数32,整数32)=>整数32;
+函数 CascadeWindows(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ChangeClipboardChain(整数32,整数32)=>整数32;
+函数 ChangeDisplaySettingsA(整数32,整数32)=>整数32;
+函数 ChangeDisplaySettingsExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ChangeDisplaySettingsExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ChangeDisplaySettingsW(整数32,整数32)=>整数32;
+函数 ChangeMenuA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ChangeMenuW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CharLowerA(整数32)=>整数32;
+函数 CharLowerBuffA(整数32,整数32)=>整数32;
+函数 CharLowerBuffW(整数32,整数32)=>整数32;
+函数 CharLowerW(整数32)=>整数32;
+函数 CharNextA(整数32)=>整数32;
+函数 CharNextExA(整数32,整数32,整数32)=>整数32;
+函数 CharNextW(整数32)=>整数32;
+函数 CharPrevA(整数32,整数32)=>整数32;
+函数 CharPrevExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CharPrevW(整数32,整数32)=>整数32;
+函数 CharToOemA(整数32,整数32)=>整数32;
+函数 CharToOemBuffA(整数32,整数32,整数32)=>整数32;
+函数 CharToOemBuffW(整数32,整数32,整数32)=>整数32;
+函数 CharToOemW(整数32,整数32)=>整数32;
+函数 CharUpperA(整数32)=>整数32;
+函数 CharUpperBuffA(整数32,整数32)=>整数32;
+函数 CharUpperBuffW(整数32,整数32)=>整数32;
+函数 CharUpperW(整数32)=>整数32;
+函数 CheckDlgButton(整数32,整数32,整数32)=>整数32;
+函数 控制菜单项:CheckMenuItem(整数32,整数32,整数32)=>整数32;
+函数 CheckMenuRadioItem(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckRadioButton(整数32,整数32,整数32,整数32)=>整数32;
+函数 ChildWindowFromPoint(整数32,整数32,整数32)=>整数32;
+函数 ChildWindowFromPointEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 客户区到屏幕:ClientToScreen(整数32,整数32)=>整数32;
+函数 限制鼠标指针:ClipCursor(整数32)=>整数32;
+函数 关闭剪贴板:CloseClipboard()=>整数32;
+函数 关闭桌面:CloseDesktop(整数32)=>整数32;
+函数 关闭窗体:CloseWindow(整数32)=>整数32;
+函数 CloseWindowStation(整数32)=>整数32;
+函数 CopyAcceleratorTableA(整数32,整数32,整数32)=>整数32;
+函数 CopyAcceleratorTableW(整数32,整数32,整数32)=>整数32;
+函数 复制图标:CopyIcon(整数32)=>整数32;
+函数 复制图像:CopyImage(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 复制矩形:CopyRect(整数32,整数32)=>整数32;
+函数 CountClipboardFormats()=>整数32;
+函数 CreateAcceleratorTableA(整数32,整数32)=>整数32;
+函数 CreateAcceleratorTableW(整数32,整数32)=>整数32;
+函数 CreateCaret(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateCursor(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 创建桌面:CreateDesktopA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDesktopW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDialogIndirectParamA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDialogIndirectParamW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 创建对话框参数:CreateDialogParamA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateDialogParamW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 创建图标:CreateIcon(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateIconFromResource(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateIconFromResourceEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateIconIndirect(整数32)=>整数32;
+函数 创建多文档窗体:CreateMDIWindowA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateMDIWindowW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 创建菜单:CreateMenu()=>整数32;
+函数 创建弹出菜单:CreatePopupMenu()=>整数32;
+函数 高级创建窗体:CreateWindowExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateWindowExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateWindowStationA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateWindowStationW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeAbandonTransaction(整数32,整数32,整数32)=>整数32;
+函数 DdeAccessData(整数32,整数32)=>整数32;
+函数 DdeAddData(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeClientTransaction(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeCmpStringHandles(整数32,整数32)=>整数32;
+函数 DdeConnect(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeConnectList(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeCreateDataHandle(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeCreateStringHandleA(整数32,整数32,整数32)=>整数32;
+函数 DdeCreateStringHandleW(整数32,整数32,整数32)=>整数32;
+函数 DdeDisconnect(整数32)=>整数32;
+函数 DdeDisconnectList(整数32)=>整数32;
+函数 DdeEnableCallback(整数32,整数32,整数32)=>整数32;
+函数 DdeFreeDataHandle(整数32)=>整数32;
+函数 DdeFreeStringHandle(整数32,整数32)=>整数32;
+函数 DdeGetData(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeGetLastError(整数32)=>整数32;
+函数 DdeImpersonateClient(整数32)=>整数32;
+函数 DdeInitializeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeInitializeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeKeepStringHandle(整数32,整数32)=>整数32;
+函数 DdeNameService(整数32,整数32,整数32,整数32)=>整数32;
+函数 DdePostAdvise(整数32,整数32,整数32)=>整数32;
+函数 DdeQueryConvInfo(整数32,整数32,整数32)=>整数32;
+函数 DdeQueryNextServer(整数32,整数32)=>整数32;
+函数 DdeQueryStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeQueryStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DdeReconnect(整数32)=>整数32;
+函数 DdeSetQualityOfService(整数32,整数32,整数32)=>整数32;
+函数 DdeSetUserHandle(整数32,整数32,整数32)=>整数32;
+函数 DdeUnaccessData(整数32)=>整数32;
+函数 DdeUninitialize(整数32)=>整数32;
+函数 默认对话框过程:DefDlgProcA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DefDlgProcW(整数32,整数32,整数32,整数32)=>整数32;
+函数 默认框架过程:DefFrameProcA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DefFrameProcW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 默认多文档子过程:DefMDIChildProcA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DefMDIChildProcW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DefRawInputProc(整数32,整数32,整数32)=>整数32;
+函数 默认窗体过程:DefWindowProcA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DefWindowProcW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeferWindowPos(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 删除菜单:DeleteMenu(整数32,整数32,整数32)=>整数32;
+函数 DeregisterShellHookWindow(整数32)=>整数32;
+函数 DestroyAcceleratorTable(整数32)=>整数32;
+函数 DestroyCaret()=>整数32;
+函数 销毁鼠标指针:DestroyCursor(整数32)=>整数32;
+函数 销毁图标:DestroyIcon(整数32)=>整数32;
+函数 销毁菜单:DestroyMenu(整数32)=>整数32;
+函数 销毁窗体:DestroyWindow(整数32)=>整数32;
+函数 DialogBoxIndirectParamA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DialogBoxIndirectParamW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 对话框参数:DialogBoxParamA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DialogBoxParamW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DisableProcessWindowsGhosting()=>整数32;
+函数 消息调度:DispatchMessageA(整数32)=>整数32;
+函数 DispatchMessageW(整数32)=>整数32;
+函数 DlgDirListA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirListComboBoxA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirListComboBoxW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirListW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirSelectComboBoxExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirSelectComboBoxExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirSelectExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DlgDirSelectExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DragDetect(整数32,整数32,整数32)=>整数32;
+函数 DragObject(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawAnimatedRects(整数32,整数32,整数32,整数32)=>整数32;
+函数 绘制标题:DrawCaption(整数32,整数32,整数32,整数32)=>整数32;
+函数 绘制边缘:DrawEdge(整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawFocusRect(整数32,整数32)=>整数32;
+函数 绘制框架:DrawFrame(整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawFrameControl(整数32,整数32,整数32,整数32)=>整数32;
+函数 绘制图标:DrawIcon(整数32,整数32,整数32,整数32)=>整数32;
+函数 高级绘制图标:DrawIconEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 绘制菜单条:DrawMenuBar(整数32)=>整数32;
+函数 DrawStateA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawStateW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 绘制文本:DrawTextA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 高级绘制文本:DrawTextExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawTextExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawTextW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EditWndProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 清空剪贴板:EmptyClipboard()=>整数32;
+函数 有效菜单项:EnableMenuItem(整数32,整数32,整数32)=>整数32;
+函数 有效滚动条:EnableScrollBar(整数32,整数32)=>整数32;
+函数 有效窗体:EnableWindow(整数32,整数32)=>整数32;
+函数 EndDeferWindowPos(整数32)=>整数32;
+函数 终止对话框:EndDialog(整数32,整数32)=>整数32;
+函数 终止菜单:EndMenu()=>整数32;
+函数 终止绘制:EndPaint(整数32,整数32)=>整数32;
+函数 终止任务:EndTask(整数32,整数32,整数32)=>整数32;
+函数 枚举子窗体:EnumChildWindows(整数32,整数32,整数32)=>整数32;
+函数 EnumClipboardFormats(整数32)=>整数32;
+函数 EnumDesktopWindows(整数32,整数32,整数32)=>整数32;
+函数 枚举桌面:EnumDesktopsA(整数32,整数32,整数32)=>整数32;
+函数 EnumDesktopsW(整数32,整数32,整数32)=>整数32;
+函数 EnumDisplayDevicesA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDisplayDevicesW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDisplayMonitors(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDisplaySettingsA(整数32,整数32,整数32)=>整数32;
+函数 EnumDisplaySettingsExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDisplaySettingsExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDisplaySettingsW(整数32,整数32,整数32)=>整数32;
+函数 EnumPropsA(整数32,整数32)=>整数32;
+函数 EnumPropsExA(整数32,整数32,整数32)=>整数32;
+函数 EnumPropsExW(整数32,整数32,整数32)=>整数32;
+函数 EnumPropsW(整数32,整数32)=>整数32;
+函数 EnumThreadWindows(整数32,整数32,整数32)=>整数32;
+函数 EnumWindowStationsA(整数32,整数32)=>整数32;
+函数 EnumWindowStationsW(整数32,整数32)=>整数32;
+函数 枚举窗体:EnumWindows(整数32,整数32)=>整数32;
+函数 EqualRect(整数32,整数32)=>整数32;
+函数 ExcludeUpdateRgn(整数32,整数32)=>整数32;
+函数 ExitWindowsEx(整数32,整数32)=>整数32;
+函数 填充矩形:FillRect(整数32,整数32,整数32)=>整数32;
+函数 查找窗体:FindWindowA(整数32,整数32)=>整数32;
+函数 高级查找窗体:FindWindowExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindWindowExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindWindowW(整数32,整数32)=>整数32;
+函数 闪烁窗体:FlashWindow(整数32,整数32)=>整数32;
+函数 高级闪烁窗体:FlashWindowEx(整数32)=>整数32;
+函数 框架矩形:FrameRect(整数32,整数32,整数32)=>整数32;
+函数 FreeDDElParam(整数32,整数32)=>整数32;
+函数 获取活动窗体:GetActiveWindow()=>整数32;
+函数 GetAltTabInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAltTabInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAncestor(整数32,整数32)=>整数32;
+函数 GetAsyncKeyState(整数32)=>整数32;
+函数 获取捕捉:GetCapture()=>整数32;
+函数 GetCaretBlinkTime()=>整数32;
+函数 GetCaretPos(整数32)=>整数32;
+函数 GetClassInfoA(整数32,整数32,整数32)=>整数32;
+函数 GetClassInfoExA(整数32,整数32,整数32)=>整数32;
+函数 GetClassInfoExW(整数32,整数32,整数32)=>整数32;
+函数 GetClassInfoW(整数32,整数32,整数32)=>整数32;
+函数 GetClassLongA(整数32,整数32)=>整数32;
+函数 GetClassLongW(整数32,整数32)=>整数32;
+函数 GetClassNameA(整数32,整数32,整数32)=>整数32;
+函数 GetClassNameW(整数32,整数32,整数32)=>整数32;
+函数 GetClassWord(整数32,整数32)=>整数32;
+函数 获取客户区矩形:GetClientRect(整数32,整数32)=>整数32;
+函数 GetClipCursor(整数32)=>整数32;
+函数 GetClipboardData(整数32)=>整数32;
+函数 GetClipboardFormatNameA(整数32,整数32,整数32)=>整数32;
+函数 GetClipboardFormatNameW(整数32,整数32,整数32)=>整数32;
+函数 GetClipboardOwner()=>整数32;
+函数 GetClipboardSequenceNumber()=>整数32;
+函数 GetClipboardViewer()=>整数32;
+函数 GetComboBoxInfo(整数32,整数32)=>整数32;
+函数 获取鼠标指针:GetCursor()=>整数32;
+函数 获取鼠标指针信息:GetCursorInfo(整数32)=>整数32;
+函数 获取鼠标指针位置:GetCursorPos(整数32)=>整数32;
+函数 GetDC(整数32)=>整数32;
+函数 GetDCEx(整数32,整数32,整数32)=>整数32;
+函数 获取桌面窗体:GetDesktopWindow()=>整数32;
+函数 GetDialogBaseUnits()=>整数32;
+函数 GetDlgCtrlID(整数32)=>整数32;
+函数 获取对话框子项:GetDlgItem(整数32,整数32)=>整数32;
+函数 获取对话框子项整数值:GetDlgItemInt(整数32,整数32,整数32,整数32)=>整数32;
+函数 获取对话框子项文本:GetDlgItemTextA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDlgItemTextW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDoubleClickTime()=>整数32;
+函数 获取焦点:GetFocus()=>整数32;
+函数 GetForegroundWindow()=>整数32;
+函数 GetGUIThreadInfo(整数32,整数32)=>整数32;
+函数 GetGuiResources(整数32,整数32)=>整数32;
+函数 GetIconInfo(整数32,整数32)=>整数32;
+函数 GetInputDesktop()=>整数32;
+函数 GetInputState()=>整数32;
+函数 GetKBCodePage()=>整数32;
+函数 GetKeyNameTextA(整数32,整数32,整数32)=>整数32;
+函数 GetKeyNameTextW(整数32,整数32,整数32)=>整数32;
+函数 GetKeyState(整数32)=>整数32;
+函数 GetKeyboardLayout(整数32)=>整数32;
+函数 GetKeyboardLayoutList(整数32,整数32)=>整数32;
+函数 GetKeyboardLayoutNameA(整数32)=>整数32;
+函数 GetKeyboardLayoutNameW(整数32)=>整数32;
+函数 GetKeyboardState(整数32)=>整数32;
+函数 GetKeyboardType(整数32)=>整数32;
+函数 GetLastActivePopup(整数32)=>整数32;
+函数 GetLastInputInfo(整数32)=>整数32;
+函数 GetLayeredWindowAttributes(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetListBoxInfo(整数32)=>整数32;
+函数 获取菜单:GetMenu(整数32)=>整数32;
+函数 GetMenuBarInfo(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMenuCheckMarkDimensions()=>整数32;
+函数 GetMenuContextHelpId(整数32)=>整数32;
+函数 GetMenuDefaultItem(整数32,整数32,整数32)=>整数32;
+函数 GetMenuInfo(整数32,整数32)=>整数32;
+函数 GetMenuItemCount(整数32)=>整数32;
+函数 GetMenuItemID(整数32,整数32)=>整数32;
+函数 GetMenuItemInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMenuItemInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 获取菜单项矩形:GetMenuItemRect(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMenuState(整数32,整数32,整数32)=>整数32;
+函数 GetMenuStringA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMenuStringW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 获取消息:GetMessageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMessageExtraInfo()=>整数32;
+函数 GetMessagePos()=>整数32;
+函数 GetMessageTime()=>整数32;
+函数 GetMessageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMonitorInfoA(整数32,整数32)=>整数32;
+函数 GetMonitorInfoW(整数32,整数32)=>整数32;
+函数 GetMouseMovePointsEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNextDlgGroupItem(整数32,整数32,整数32)=>整数32;
+函数 GetNextDlgTabItem(整数32,整数32,整数32)=>整数32;
+函数 GetOpenClipboardWindow()=>整数32;
+函数 获取父窗体:GetParent(整数32)=>整数32;
+函数 GetPriorityClipboardFormat(整数32,整数32)=>整数32;
+函数 GetProcessDefaultLayout(整数32)=>整数32;
+函数 GetProcessWindowStation()=>整数32;
+函数 GetPropA(整数32,整数32)=>整数32;
+函数 GetPropW(整数32,整数32)=>整数32;
+函数 GetQueueStatus(整数32)=>整数32;
+函数 GetRawInputBuffer(整数32,整数32,整数32)=>整数32;
+函数 GetRawInputData(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetRawInputDeviceInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetRawInputDeviceInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetRawInputDeviceList(整数32,整数32,整数32)=>整数32;
+函数 GetRegisteredRawInputDevices(整数32,整数32,整数32)=>整数32;
+函数 GetScrollBarInfo(整数32,整数32,整数32)=>整数32;
+函数 GetScrollInfo(整数32,整数32,整数32)=>整数32;
+函数 GetScrollPos(整数32,整数32)=>整数32;
+函数 GetScrollRange(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetShellWindow()=>整数32;
+函数 获取子菜单:GetSubMenu(整数32,整数32)=>整数32;
+函数 获取系统颜色:GetSysColor(整数32)=>整数32;
+函数 获取系统色刷:GetSysColorBrush(整数32)=>整数32;
+函数 获取系统菜单:GetSystemMenu(整数32,整数32)=>整数32;
+函数 获取系统度量:GetSystemMetrics(整数32)=>整数32;
+函数 GetTabbedTextExtentA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTabbedTextExtentW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThreadDesktop(整数32)=>整数32;
+函数 GetTitleBarInfo(整数32,整数32)=>整数32;
+函数 GetTopWindow(整数32)=>整数32;
+函数 GetUpdateRect(整数32,整数32,整数32)=>整数32;
+函数 GetUpdateRgn(整数32,整数32,整数32)=>整数32;
+函数 GetUserObjectInformationA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetUserObjectInformationW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetUserObjectSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetWindow(整数32,整数32)=>整数32;
+函数 GetWindowContextHelpId(整数32)=>整数32;
+函数 获取窗体设备环境:GetWindowDC(整数32)=>整数32;
+函数 获取窗体信息:GetWindowInfo(整数32,整数32)=>整数32;
+函数 获取窗体特定值:GetWindowLongA(整数32,整数32)=>整数32;
+函数 GetWindowLongW(整数32,整数32)=>整数32;
+函数 GetWindowModuleFileNameA(整数32,整数32,整数32)=>整数32;
+函数 GetWindowModuleFileNameW(整数32,整数32,整数32)=>整数32;
+函数 GetWindowPlacement(整数32,整数32)=>整数32;
+函数 获取窗体矩形:GetWindowRect(整数32,整数32)=>整数32;
+函数 获取窗体区域:GetWindowRgn(整数32,整数32)=>整数32;
+函数 GetWindowRgnBox(整数32,整数32)=>整数32;
+函数 获取窗体文本:GetWindowTextA(整数32,整数32,整数32)=>整数32;
+函数 获取窗体文本长度:GetWindowTextLengthA(整数32)=>整数32;
+函数 GetWindowTextLengthW(整数32)=>整数32;
+函数 GetWindowTextW(整数32,整数32,整数32)=>整数32;
+函数 GetWindowThreadProcessId(整数32,整数32)=>整数32;
+函数 GetWindowWord(整数32,整数32)=>整数32;
+函数 GrayStringA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GrayStringW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HideCaret(整数32)=>整数32;
+函数 HiliteMenuItem(整数32,整数32,整数32,整数32)=>整数32;
+函数 IMPGetIMEA(整数32,整数32)=>整数32;
+函数 IMPGetIMEW(整数32,整数32)=>整数32;
+函数 IMPQueryIMEA(整数32)=>整数32;
+函数 IMPQueryIMEW(整数32)=>整数32;
+函数 IMPSetIMEA(整数32,整数32)=>整数32;
+函数 IMPSetIMEW(整数32,整数32)=>整数32;
+函数 ImpersonateDdeClientWindow(整数32,整数32)=>整数32;
+函数 InSendMessage()=>整数32;
+函数 InSendMessageEx(整数32)=>整数32;
+函数 InflateRect(整数32,整数32,整数32)=>整数32;
+函数 插入菜单:InsertMenuA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InsertMenuItemA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InsertMenuItemW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InsertMenuW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternalGetWindowText(整数32,整数32,整数32)=>整数32;
+函数 IntersectRect(整数32,整数32,整数32)=>整数32;
+函数 无效矩形:InvalidateRect(整数32,整数32,整数32)=>整数32;
+函数 无效区域:InvalidateRgn(整数32,整数32,整数32)=>整数32;
+函数 矩形翻转:InvertRect(整数32,整数32)=>整数32;
+函数 IsCharAlphaA(整数32)=>整数32;
+函数 IsCharAlphaNumericA(整数32)=>整数32;
+函数 IsCharAlphaNumericW(整数32)=>整数32;
+函数 IsCharAlphaW(整数32)=>整数32;
+函数 IsCharLowerA(整数32)=>整数32;
+函数 IsCharLowerW(整数32)=>整数32;
+函数 IsCharUpperA(整数32)=>整数32;
+函数 IsCharUpperW(整数32)=>整数32;
+函数 IsChild(整数32,整数32)=>整数32;
+函数 IsClipboardFormatAvailable(整数32)=>整数32;
+函数 IsDialogMessageA(整数32,整数32)=>整数32;
+函数 IsDialogMessageW(整数32,整数32)=>整数32;
+函数 对话框按钮被选中:IsDlgButtonChecked(整数32,整数32)=>整数32;
+函数 IsGUIThread(整数32)=>整数32;
+函数 IsHungAppWindow(整数32)=>整数32;
+函数 IsIconic(整数32)=>整数32;
+函数 IsMenu(整数32)=>整数32;
+函数 IsRectEmpty(整数32)=>整数32;
+函数 IsWinEventHookInstalled(整数32)=>整数32;
+函数 IsWindow(整数32)=>整数32;
+函数 IsWindowEnabled(整数32)=>整数32;
+函数 IsWindowUnicode(整数32)=>整数32;
+函数 IsWindowVisible(整数32)=>整数32;
+函数 IsWow64Message()=>整数32;
+函数 IsZoomed(整数32)=>整数32;
+函数 终止定时器:KillTimer(整数32,整数32)=>整数32;
+函数 LoadAcceleratorsA(整数32,整数32)=>整数32;
+函数 LoadAcceleratorsW(整数32,整数32)=>整数32;
+函数 加载位图:LoadBitmapA(整数32,整数32)=>整数32;
+函数 LoadBitmapW(整数32,整数32)=>整数32;
+函数 加载指针:LoadCursorA(整数32,整数32)=>整数32;
+函数 LoadCursorFromFileA(整数32)=>整数32;
+函数 LoadCursorFromFileW(整数32)=>整数32;
+函数 LoadCursorW(整数32,整数32)=>整数32;
+函数 加载图标:LoadIconA(整数32,整数32)=>整数32;
+函数 LoadIconW(整数32,整数32)=>整数32;
+函数 加载图像:LoadImageA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LoadImageW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LoadKeyboardLayoutA(整数32,整数32)=>整数32;
+函数 LoadKeyboardLayoutW(整数32,整数32)=>整数32;
+函数 加载菜单:LoadMenuA(整数32,整数32)=>整数32;
+函数 LoadMenuIndirectA(整数32)=>整数32;
+函数 LoadMenuIndirectW(整数32)=>整数32;
+函数 LoadMenuW(整数32,整数32)=>整数32;
+函数 加载字符串:LoadStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 LoadStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 LockSetForegroundWindow(整数32)=>整数32;
+函数 LockWindowUpdate(整数32)=>整数32;
+函数 LockWorkStation()=>整数32;
+函数 LookupIconIdFromDirectory(整数32,整数32)=>整数32;
+函数 LookupIconIdFromDirectoryEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MapDialogRect(整数32,整数32)=>整数32;
+函数 MapVirtualKeyA(整数32,整数32)=>整数32;
+函数 MapVirtualKeyExA(整数32,整数32,整数32)=>整数32;
+函数 MapVirtualKeyExW(整数32,整数32,整数32)=>整数32;
+函数 MapVirtualKeyW(整数32,整数32)=>整数32;
+函数 MapWindowPoints(整数32,整数32,整数32,整数32)=>整数32;
+函数 MenuItemFromPoint(整数32,整数32,整数32,整数32)=>整数32;
+函数 蜂鸣提示:MessageBeep(整数32)=>整数32;
+函数 提示框:MessageBoxA(整数32,整数32,整数32,整数32)=>整数32;
+函数 高级提示框:MessageBoxExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MessageBoxExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MessageBoxIndirectA(整数32)=>整数32;
+函数 MessageBoxIndirectW(整数32)=>整数32;
+函数 MessageBoxTimeoutA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MessageBoxTimeoutW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MessageBoxW(整数32,整数32,整数32,整数32)=>整数32;
+函数 修改菜单:ModifyMenuA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ModifyMenuW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MonitorFromPoint(整数32,整数32,整数32)=>整数32;
+函数 MonitorFromRect(整数32,整数32)=>整数32;
+函数 MonitorFromWindow(整数32,整数32)=>整数32;
+函数 移动窗体:MoveWindow(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsgWaitForMultipleObjects(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MsgWaitForMultipleObjectsEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 NotifyWinEvent(整数32,整数32,整数32,整数32);
+函数 OemKeyScan(整数32)=>整数32;
+函数 OemToCharA(整数32,整数32)=>整数32;
+函数 OemToCharBuffA(整数32,整数32,整数32)=>整数32;
+函数 OemToCharBuffW(整数32,整数32,整数32)=>整数32;
+函数 OemToCharW(整数32,整数32)=>整数32;
+函数 OffsetRect(整数32,整数32,整数32)=>整数32;
+函数 打开剪贴板:OpenClipboard(整数32)=>整数32;
+函数 OpenDesktopA(整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenDesktopW(整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenIcon(整数32)=>整数32;
+函数 OpenInputDesktop(整数32,整数32,整数32)=>整数32;
+函数 OpenWindowStationA(整数32,整数32,整数32)=>整数32;
+函数 OpenWindowStationW(整数32,整数32,整数32)=>整数32;
+函数 PackDDElParam(整数32,整数32,整数32)=>整数32;
+函数 PaintDesktop(整数32)=>整数32;
+函数 探视消息:PeekMessageA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PeekMessageW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 邮送消息:PostMessageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PostMessageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 邮送退出消息:PostQuitMessage(整数32);
+函数 PostThreadMessageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 PostThreadMessageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintWindow(整数32,整数32,整数32)=>整数32;
+函数 PrivateExtractIconsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrivateExtractIconsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PtInRect(整数32,整数32,整数32)=>整数32;
+函数 RealChildWindowFromPoint(整数32,整数32,整数32)=>整数32;
+函数 RealGetWindowClassA(整数32,整数32,整数32)=>整数32;
+函数 RealGetWindowClassW(整数32,整数32,整数32)=>整数32;
+函数 RedrawWindow(整数32,整数32,整数32,整数32)=>整数32;
+函数 注册窗体类:RegisterClassA(整数32)=>整数32;
+函数 高级注册窗体类:RegisterClassExA(整数32)=>整数32;
+函数 RegisterClassExW(整数32)=>整数32;
+函数 RegisterClassW(整数32)=>整数32;
+函数 RegisterClipboardFormatA(整数32)=>整数32;
+函数 RegisterClipboardFormatW(整数32)=>整数32;
+函数 RegisterDeviceNotificationA(整数32,整数32,整数32)=>整数32;
+函数 RegisterDeviceNotificationW(整数32,整数32,整数32)=>整数32;
+函数 RegisterHotKey(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterRawInputDevices(整数32,整数32,整数32)=>整数32;
+函数 RegisterShellHookWindow(整数32)=>整数32;
+函数 RegisterWindowMessageA(整数32)=>整数32;
+函数 RegisterWindowMessageW(整数32)=>整数32;
+函数 释放捕捉:ReleaseCapture()=>整数32;
+函数 ReleaseDC(整数32,整数32)=>整数32;
+函数 RemoveMenu(整数32,整数32,整数32)=>整数32;
+函数 RemovePropA(整数32,整数32)=>整数32;
+函数 RemovePropW(整数32,整数32)=>整数32;
+函数 ReplyMessage(整数32)=>整数32;
+函数 ReuseDDElParam(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScreenToClient(整数32,整数32)=>整数32;
+函数 ScrollDC(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScrollWindow(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScrollWindowEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 发送对话框子项消息:SendDlgItemMessageA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendDlgItemMessageW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendIMEMessageExA(整数32,整数32)=>整数32;
+函数 SendIMEMessageExW(整数32,整数32)=>整数32;
+函数 SendInput(整数32,整数32,整数32)=>整数32;
+函数 发送消息:SendMessageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SendMessageCallbackA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendMessageCallbackW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendMessageTimeoutA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendMessageTimeoutW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendMessageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SendNotifyMessageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SendNotifyMessageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetActiveWindow(整数32)=>整数32;
+函数 设置捕捉:SetCapture(整数32)=>整数32;
+函数 SetCaretBlinkTime(整数32)=>整数32;
+函数 SetCaretPos(整数32,整数32)=>整数32;
+函数 SetClassLongA(整数32,整数32,整数32)=>整数32;
+函数 SetClassLongW(整数32,整数32,整数32)=>整数32;
+函数 SetClassWord(整数32,整数32,整数32)=>整数32;
+函数 SetClipboardData(整数32,整数32)=>整数32;
+函数 SetClipboardViewer(整数32)=>整数32;
+函数 SetCursor(整数32)=>整数32;
+函数 SetCursorPos(整数32,整数32)=>整数32;
+函数 SetDebugErrorLevel(整数32);
+函数 SetDeskWallpaper(整数32)=>整数32;
+函数 设置对话框子项整数值:SetDlgItemInt(整数32,整数32,整数32,整数32)=>整数32;
+函数 设置对话框子项文本:SetDlgItemTextA(整数32,整数32,整数32)=>整数32;
+函数 SetDlgItemTextW(整数32,整数32,整数32)=>整数32;
+函数 SetDoubleClickTime(整数32)=>整数32;
+函数 设置焦点:SetFocus(整数32)=>整数32;
+函数 SetForegroundWindow(整数32)=>整数32;
+函数 SetKeyboardState(整数32)=>整数32;
+函数 SetLastErrorEx(整数32,整数32)=>整数32;
+函数 SetLayeredWindowAttributes(整数32,整数32,整数32,整数32)=>整数32;
+函数 设置菜单:SetMenu(整数32,整数32)=>整数32;
+函数 SetMenuContextHelpId(整数32,整数32)=>整数32;
+函数 SetMenuDefaultItem(整数32,整数32,整数32)=>整数32;
+函数 SetMenuInfo(整数32,整数32)=>整数32;
+函数 SetMenuItemBitmaps(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetMenuItemInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetMenuItemInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetMessageExtraInfo(整数32)=>整数32;
+函数 SetMessageQueue(整数32)=>整数32;
+函数 SetParent(整数32,整数32)=>整数32;
+函数 SetProcessDefaultLayout(整数32)=>整数32;
+函数 SetProcessWindowStation(整数32)=>整数32;
+函数 SetPropA(整数32,整数32,整数32)=>整数32;
+函数 SetPropW(整数32,整数32,整数32)=>整数32;
+函数 SetRect(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetRectEmpty(整数32)=>整数32;
+函数 SetScrollInfo(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetScrollPos(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetScrollRange(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetShellWindow(整数32)=>整数32;
+函数 SetSysColors(整数32,整数32,整数32)=>整数32;
+函数 SetSystemCursor(整数32,整数32)=>整数32;
+函数 SetThreadDesktop(整数32)=>整数32;
+函数 设置定时器:SetTimer(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUserObjectInformationA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUserObjectInformationW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUserObjectSecurity(整数32,整数32,整数32)=>整数32;
+函数 SetWinEventHook(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWindowContextHelpId(整数32,整数32)=>整数32;
+函数 SetWindowLongA(整数32,整数32,整数32)=>整数32;
+函数 SetWindowLongW(整数32,整数32,整数32)=>整数32;
+函数 SetWindowPlacement(整数32,整数32)=>整数32;
+函数 设置窗体位置:SetWindowPos(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWindowRgn(整数32,整数32,整数32)=>整数32;
+函数 设置窗体文本:SetWindowTextA(整数32,整数32)=>整数32;
+函数 SetWindowTextW(整数32,整数32)=>整数32;
+函数 SetWindowWord(整数32,整数32,整数32)=>整数32;
+函数 SetWindowsHookA(整数32,整数32)=>整数32;
+函数 SetWindowsHookExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWindowsHookExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetWindowsHookW(整数32,整数32)=>整数32;
+函数 ShowCaret(整数32)=>整数32;
+函数 ShowCursor(整数32)=>整数32;
+函数 ShowOwnedPopups(整数32,整数32)=>整数32;
+函数 ShowScrollBar(整数32,整数32,整数32)=>整数32;
+函数 显示窗体:ShowWindow(整数32,整数32)=>整数32;
+函数 ShowWindowAsync(整数32,整数32)=>整数32;
+函数 SubtractRect(整数32,整数32,整数32)=>整数32;
+函数 SwapMouseButton(整数32)=>整数32;
+函数 切换桌面:SwitchDesktop(整数32)=>整数32;
+函数 SwitchToThisWindow(整数32,整数32);
+函数 系统参数信息:SystemParametersInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SystemParametersInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 TabbedTextOutA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TabbedTextOutW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TileChildWindows(整数32,整数32)=>整数32;
+函数 TileWindows(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ToAscii(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ToAsciiEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ToUnicode(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ToUnicodeEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TrackMouseEvent(整数32)=>整数32;
+函数 TrackPopupMenu(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TrackPopupMenuEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 转换加速键:TranslateAcceleratorA(整数32,整数32,整数32)=>整数32;
+函数 TranslateAcceleratorW(整数32,整数32,整数32)=>整数32;
+函数 TranslateMDISysAccel(整数32,整数32)=>整数32;
+函数 消息翻译:TranslateMessage(整数32)=>整数32;
+函数 UnhookWinEvent(整数32)=>整数32;
+函数 UnhookWindowsHook(整数32,整数32)=>整数32;
+函数 UnhookWindowsHookEx(整数32)=>整数32;
+函数 UnionRect(整数32,整数32,整数32)=>整数32;
+函数 UnloadKeyboardLayout(整数32)=>整数32;
+函数 UnpackDDElParam(整数32,整数32,整数32,整数32)=>整数32;
+函数 UnregisterClassA(整数32,整数32)=>整数32;
+函数 UnregisterClassW(整数32,整数32)=>整数32;
+函数 UnregisterDeviceNotification(整数32)=>整数32;
+函数 UnregisterHotKey(整数32,整数32)=>整数32;
+函数 UpdateLayeredWindow(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UpdateLayeredWindowIndirect(整数32,整数32)=>整数32;
+函数 更新窗体:UpdateWindow(整数32)=>整数32;
+函数 UserHandleGrantAccess(整数32,整数32,整数32)=>整数32;
+函数 有效矩形:ValidateRect(整数32,整数32)=>整数32;
+函数 有效区域:ValidateRgn(整数32,整数32)=>整数32;
+函数 虚拟键扫描:VkKeyScanA(整数32)=>整数32;
+函数 VkKeyScanExA(整数32,整数32)=>整数32;
+函数 VkKeyScanExW(整数32,整数32)=>整数32;
+函数 VkKeyScanW(整数32)=>整数32;
+函数 WINNLSEnableIME(整数32,整数32)=>整数32;
+函数 WINNLSGetEnableStatus(整数32)=>整数32;
+函数 WINNLSGetIMEHotkey(整数32)=>整数32;
+函数 WaitForInputIdle(整数32,整数32)=>整数32;
+函数 等待消息:WaitMessage()=>整数32;
+函数 WinHelpA(整数32,整数32,整数32,整数32)=>整数32;
+函数 WinHelpW(整数32,整数32,整数32,整数32)=>整数32;
+函数 WindowFromDC(整数32)=>整数32;
+函数 WindowFromPoint(整数32,整数32)=>整数32;
+函数 键盘事件:keybd_event(整数32,整数32,整数32,整数32);
+函数 鼠标事件:mouse_event(整数32,整数32,整数32,整数32,整数32);
+函数 C调用 字符串格式化:wsprintfA(整数32, ..)=>整数32;
+函数 C调用 字符串格式化W:wsprintfW(整数32, ..)=>整数32;
+函数 wvsprintfA(整数32,整数32,整数32)=>整数32;
+函数 wvsprintfW(整数32,整数32,整数32)=>整数32;
+
+宏定义 AppendMenu  AppendMenuA
+宏定义 BroadcastSystemMessage  BroadcastSystemMessageA
+宏定义 BroadcastSystemMessageEx  BroadcastSystemMessageExA
+宏定义 CallMsgFilter  CallMsgFilterA
+宏定义 CallWindowProc  CallWindowProcA
+宏定义 ChangeDisplaySettings  ChangeDisplaySettingsA
+宏定义 ChangeDisplaySettingsEx  ChangeDisplaySettingsExA
+宏定义 ChangeMenu  ChangeMenuA
+宏定义 CharLower  CharLowerA
+宏定义 CharLowerBuff  CharLowerBuffA
+宏定义 CharNext  CharNextA
+宏定义 CharNextEx  CharNextExA
+宏定义 CharPrev  CharPrevA
+宏定义 CharPrevEx  CharPrevExA
+宏定义 CharToOem  CharToOemA
+宏定义 CharToOemBuff  CharToOemBuffA
+宏定义 CharUpper  CharUpperA
+宏定义 CharUpperBuff  CharUpperBuffA
+宏定义 CopyAcceleratorTable  CopyAcceleratorTableA
+宏定义 CreateAcceleratorTable  CreateAcceleratorTableA
+宏定义 CreateDesktop  CreateDesktopA
+宏定义 CreateDialogIndirectParam  CreateDialogIndirectParamA
+宏定义 CreateDialogParam  CreateDialogParamA
+宏定义 CreateMDIWindow  CreateMDIWindowA
+宏定义 CreateWindowEx  CreateWindowExA
+宏定义 CreateWindowStation  CreateWindowStationA
+宏定义 DdeCreateStringHandle  DdeCreateStringHandleA
+宏定义 DdeInitialize  DdeInitializeA
+宏定义 DdeQueryString  DdeQueryStringA
+宏定义 DefDlgProc  DefDlgProcA
+宏定义 DefFrameProc  DefFrameProcA
+宏定义 DefMDIChildProc  DefMDIChildProcA
+宏定义 DefWindowProc  DefWindowProcA
+宏定义 DialogBoxIndirectParam  DialogBoxIndirectParamA
+宏定义 DialogBoxParam  DialogBoxParamA
+宏定义 DispatchMessage  DispatchMessageA
+宏定义 DlgDirList  DlgDirListA
+宏定义 DlgDirListComboBox  DlgDirListComboBoxA
+宏定义 DlgDirSelectComboBoxEx  DlgDirSelectComboBoxExA
+宏定义 DlgDirSelectEx  DlgDirSelectExA
+宏定义 DrawState  DrawStateA
+宏定义 DrawText  DrawTextA
+宏定义 DrawTextEx  DrawTextExA
+宏定义 EnumDesktops  EnumDesktopsA
+宏定义 EnumDisplayDevices  EnumDisplayDevicesA
+宏定义 EnumDisplaySettings  EnumDisplaySettingsA
+宏定义 EnumDisplaySettingsEx  EnumDisplaySettingsExA
+宏定义 EnumProps  EnumPropsA
+宏定义 EnumPropsEx  EnumPropsExA
+宏定义 EnumWindowStations  EnumWindowStationsA
+宏定义 FindWindow  FindWindowA
+宏定义 FindWindowEx  FindWindowExA
+宏定义 GetAltTabInfo  GetAltTabInfoA
+宏定义 GetClassInfo  GetClassInfoA
+宏定义 GetClassInfoEx  GetClassInfoExA
+宏定义 GetClassLong  GetClassLongA
+宏定义 GetClassName  GetClassNameA
+宏定义 GetClipboardFormatName  GetClipboardFormatNameA
+宏定义 GetDlgItemText  GetDlgItemTextA
+宏定义 GetKeyNameText  GetKeyNameTextA
+宏定义 GetKeyboardLayoutName  GetKeyboardLayoutNameA
+宏定义 GetMenuItemInfo  GetMenuItemInfoA
+宏定义 GetMenuString  GetMenuStringA
+宏定义 GetMessage  GetMessageA
+宏定义 GetMonitorInfo  GetMonitorInfoA
+宏定义 GetProp  GetPropA
+宏定义 GetRawInputDeviceInfo  GetRawInputDeviceInfoA
+宏定义 GetTabbedTextExtent  GetTabbedTextExtentA
+宏定义 GetUserObjectInformation  GetUserObjectInformationA
+宏定义 GetWindowLong  GetWindowLongA
+宏定义 GetWindowModuleFileName  GetWindowModuleFileNameA
+宏定义 GetWindowText  GetWindowTextA
+宏定义 GetWindowTextLength  GetWindowTextLengthA
+宏定义 GrayString  GrayStringA
+宏定义 IMPGetIME  IMPGetIMEA
+宏定义 IMPQueryIME  IMPQueryIMEA
+宏定义 IMPSetIME  IMPSetIMEA
+宏定义 InsertMenu  InsertMenuA
+宏定义 InsertMenuItem  InsertMenuItemA
+宏定义 IsCharAlpha  IsCharAlphaA
+宏定义 IsCharAlphaNumeric  IsCharAlphaNumericA
+宏定义 IsCharLower  IsCharLowerA
+宏定义 IsCharUpper  IsCharUpperA
+宏定义 IsDialogMessage  IsDialogMessageA
+宏定义 LoadAccelerators  LoadAcceleratorsA
+宏定义 LoadBitmap  LoadBitmapA
+宏定义 LoadCursor  LoadCursorA
+宏定义 LoadCursorFromFile  LoadCursorFromFileA
+宏定义 LoadIcon  LoadIconA
+宏定义 LoadImage  LoadImageA
+宏定义 LoadKeyboardLayout  LoadKeyboardLayoutA
+宏定义 LoadMenu  LoadMenuA
+宏定义 LoadMenuIndirect  LoadMenuIndirectA
+宏定义 LoadString  LoadStringA
+宏定义 MapVirtualKey  MapVirtualKeyA
+宏定义 MapVirtualKeyEx  MapVirtualKeyExA
+宏定义 MessageBox  MessageBoxA
+宏定义 MessageBoxEx  MessageBoxExA
+宏定义 MessageBoxIndirect  MessageBoxIndirectA
+宏定义 MessageBoxTimeout  MessageBoxTimeoutA
+宏定义 ModifyMenu  ModifyMenuA
+宏定义 OemToChar  OemToCharA
+宏定义 OemToCharBuff  OemToCharBuffA
+宏定义 OpenDesktop  OpenDesktopA
+宏定义 OpenWindowStation  OpenWindowStationA
+宏定义 PeekMessage  PeekMessageA
+宏定义 PostMessage  PostMessageA
+宏定义 PostThreadMessage  PostThreadMessageA
+宏定义 PrivateExtractIcons  PrivateExtractIconsA
+宏定义 RealGetWindowClass  RealGetWindowClassA
+宏定义 RegisterClass  RegisterClassA
+宏定义 RegisterClassEx  RegisterClassExA
+宏定义 RegisterClipboardFormat  RegisterClipboardFormatA
+宏定义 RegisterDeviceNotification  RegisterDeviceNotificationA
+宏定义 RegisterWindowMessage  RegisterWindowMessageA
+宏定义 RemoveProp  RemovePropA
+宏定义 SendDlgItemMessage  SendDlgItemMessageA
+宏定义 SendIMEMessageEx  SendIMEMessageExA
+宏定义 SendMessage  SendMessageA
+宏定义 SendMessageCallback  SendMessageCallbackA
+宏定义 SendMessageTimeout  SendMessageTimeoutA
+宏定义 SendNotifyMessage  SendNotifyMessageA
+宏定义 SetClassLong  SetClassLongA
+宏定义 SetDlgItemText  SetDlgItemTextA
+宏定义 SetMenuItemInfo  SetMenuItemInfoA
+宏定义 SetProp  SetPropA
+宏定义 SetUserObjectInformation  SetUserObjectInformationA
+宏定义 SetWindowLong  SetWindowLongA
+宏定义 SetWindowText  SetWindowTextA
+宏定义 SetWindowsHook  SetWindowsHookA
+宏定义 SetWindowsHookEx  SetWindowsHookExA
+宏定义 SystemParametersInfo  SystemParametersInfoA
+宏定义 TabbedTextOut  TabbedTextOutA
+宏定义 TranslateAccelerator  TranslateAcceleratorA
+宏定义 UnregisterClass  UnregisterClassA
+宏定义 VkKeyScan  VkKeyScanA
+宏定义 VkKeyScanEx  VkKeyScanExA
+宏定义 WinHelp  WinHelpA
+宏定义 wsprintf  wsprintfA
+宏定义 wvsprintf  wvsprintfA
+}

@@ -1,0 +1,74 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒXRegThunkEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverAddA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmDriverAdd  acmDriverAddA
+
+¡ÒacmDriverAddW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverClose(Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverDetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmDriverDetails  acmDriverDetailsA
+
+¡ÒacmDriverDetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverEnum(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverID(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverPriority(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmDriverRemove(Ë«×Ö,Ë«×Ö)
+¡ÒacmFilterChooseA(Ë«×Ö)
+¡ßacmFilterChoose  acmFilterChooseA
+
+¡ÒacmFilterChooseW(Ë«×Ö)
+¡ÒacmFilterDetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFilterDetails  acmFilterDetailsA
+
+¡ÒacmFilterDetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFilterEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFilterEnum  acmFilterEnumA
+
+¡ÒacmFilterEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFilterTagDetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFilterTagDetails  acmFilterTagDetailsA
+
+¡ÒacmFilterTagDetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFilterTagEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFilterTagEnum  acmFilterTagEnumA
+
+¡ÒacmFilterTagEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFormatChooseA(Ë«×Ö)
+¡ßacmFormatChoose  acmFormatChooseA
+
+¡ÒacmFormatChooseW(Ë«×Ö)
+¡ÒacmFormatDetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFormatDetails  acmFormatDetailsA
+
+¡ÒacmFormatDetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFormatEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFormatEnum  acmFormatEnumA
+
+¡ÒacmFormatEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFormatSuggest(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFormatTagDetailsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFormatTagDetails  acmFormatTagDetailsA
+
+¡ÒacmFormatTagDetailsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmFormatTagEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßacmFormatTagEnum  acmFormatTagEnumA
+
+¡ÒacmFormatTagEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmGetVersion()
+¡ÒacmMessage32(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmMetrics(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamClose(Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamConvert(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamPrepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamReset(Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamSize(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒacmStreamUnprepareHeader(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

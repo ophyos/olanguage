@@ -1,0 +1,27 @@
+
+引用段 
+{ 
+
+函数 滚动条_取最小范围:ScrollBar_GetRangeMin(地址 pScrollBar)=>整数32;
+函数 滚动条_取最大范围:ScrollBar_GetRangeMax(地址 pScrollBar)=>整数32;
+函数 滚动条_置位置:ScrollBar_SetPosition(地址 pScrollBar,整数32 pos);
+函数 滚动条_取位置:ScrollBar_GetPosition(地址 pScrollBar)=>整数32;
+函数 滚动条_置页大小:ScrollBar_SetPageSize(地址 pScrollBar,整数32 page);
+函数 滚动条_取页大小:ScrollBar_GetPageSize(地址 pScrollBar)=>整数32;
+函数 滚动条_应用左箭头:ScrollBar_EnableLeftArrow(地址 pScrollBar,整数32 leftarrow);
+函数 滚动条_取应用左箭头状态:ScrollBar_GetLeftArrowEnabled(地址 pScrollBar)=>整数32;
+函数 滚动条_应用右箭头:ScrollBar_EnableRightArrow(地址 pScrollBar,整数32 rightarrow);
+函数 滚动条_取应用右箭头状态:ScrollBar_GetRightArrowEnabled(地址 pScrollBar)=>整数32; 
+函数 滚动条_应用上箭头:ScrollBar_EnableUpArrow(地址 pScrollBar,整数32 uparrow);
+函数 滚动条_取应用上箭头状态:ScrollBar_GetUpArrowEnabled(地址 pScrollBar)=>整数32;
+函数 滚动条_应用下箭头:ScrollBar_EnableDownArrow(地址 pScrollBar,整数32 downarrow);
+函数 滚动条_取应用下箭头状态:ScrollBar_GetDownArrowEnabled(地址 pScrollBar)=>整数32;
+//设置滚动条的滚动范围到【min,max】
+函数 滚动条_置范围:ScrollBar_SetRange(地址 pScrollBar,整数32 min, 整数32 max);	
+
+函数 滚动条_销毁控件:ScrollBar_DestroyControl(地址 pScrollBar);   
+函数 滚动条_取类:ScrollBar_GetClass(地址 pScrollBar)=>地址;
+函数 滚动条_取标题:ScrollBar_GetCaption(地址 pScrollBar)=>地址;
+函数 滚动条_置标题:ScrollBar_SetCaption(地址 pScrollBar,地址 string); 
+
+} 

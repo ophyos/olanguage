@@ -1,0 +1,1055 @@
+
+6F6963002   ∥oic文件标识
+
+∥系统标识符        系统内码              注释
+
+∥系统保留字定义
+
+字节               0x00001050     ∥    系统类型1字节  1°        只在反汇编程序中使用
+字                 0x00001051     ∥    系统类型2字节  2°        只在反汇编程序中使用
+双字               0x00001052     ∥    系统类型4字节  4°        只在反汇编程序中使用
+四字               0x00001053     ∥    系统类型8字节  8°        只在反汇编程序中使用
+单精度             0x00001054     ∥    系统浮点类型4字节   4.°  只在反汇编程序中使用
+双精度             0x00001055     ∥    系统浮点类型8字节   8.°  只在反汇编程序中使用
+长精度             0x00001056     ∥    系统浮点类型10字节  10.° 只在反汇编程序中使用
+
+位模式             0x00004051     ∥    位模式
+包含文             0x00004052     ∥    包含文
+引用库             0x00004053     ∥    引用库
+指令集             0x00004054     ∥    指令集
+类定义             0x00004055     ∥    类定义
+宏定义             0x00004056     ∥    宏定义
+结构               0x00004057     ∥    结构
+联合               0x00004058     ∥    联合
+枚举               0x00004059     ∥    枚举
+通用段             0x00004060     ∥    通用段
+数据段             0x00004061     ∥    数据段
+只读段             0x00004062     ∥    只读段
+预留段             0x00004063     ∥    预留段
+代码段             0x00004064     ∥    代码段
+引用段             0x00004065     ∥    引用段
+附加段             0x00004066     ∥    附加段
+堆栈段             0x00004067     ∥    堆栈段
+入口               0x00004070     ∥    入口
+函数               0x00004071     ∥    函数
+如果               0x00004072     ∥    如果
+否则如果           0x00004073     ∥    否则如果
+否则               0x00004074     ∥    否则
+循环               0x00004075     ∥    循环
+跳出               0x00004076     ∥    跳出
+继续               0x00004077     ∥    继续
+返回               0x00004078     ∥    返回
+取大小             0x00004079     ∥    取大小
+取地址             0x0000407A     ∥    取地址
+标签               0x0000407B     ∥    标签
+进制               0x0000407C     ∥    进制
+高于               0x0000407D     ∥    高于
+高于等于           0x0000407E     ∥    高于等于
+低于               0x0000407F     ∥    低于
+低于等于           0x00004080     ∥    低于等于
+大于               0x00004081     ∥    大于
+大于等于           0x00004082     ∥    大于等于
+小于               0x00004083     ∥    小于
+小于等于           0x00004084     ∥    小于等于
+溢出               0x00004085     ∥    溢出
+进位               0x00004086     ∥    进位
+为奇               0x00004087     ∥    为奇
+为偶               0x00004088     ∥    为偶
+为零               0x00004089     ∥    为零
+相等               0x0000408A     ∥    相等
+为正               0x0000408B     ∥    为正
+为负               0x0000408C     ∥    为负
+不高于             0x0000408D     ∥    不高于
+不高于等于         0x0000408E     ∥    不高于等于
+不低于             0x0000408F     ∥    不低于
+不低于等于         0x00004090     ∥    不低于等于
+不大于             0x00004091     ∥    不大于
+不大于等于         0x00004092     ∥    不大于等于
+不小于             0x00004093     ∥    不小于
+不小于等于         0x00004094     ∥    不小于等于
+不溢出             0x00004095     ∥    不溢出
+不进位             0x00004096     ∥    不进位
+不为零             0x00004097     ∥    不为零
+不等               0x00004098     ∥    不等
+置                 0x00004099     ∥    置
+标寄               0x0000409A     ∥    标寄
+串等于             0x0000409B     ∥    串等于
+串输入             0x0000409C     ∥    串输入
+串输出             0x0000409D     ∥    串输出
+串比较             0x0000409E     ∥    串比较
+联接               0x0000409F     ∥    联接
+嵌入               0x000040A0     ∥    嵌入
+
+
+
+∥寄存器定义
+
+累加低             0x10010300     ∥REG  ∥    X86_REG8  ∥    0  ∥    0
+基数低             0x10020303     ∥REG  ∥    X86_REG8  ∥    3  ∥    0
+计数低             0x10030301     ∥REG  ∥    X86_REG8  ∥    1  ∥    0
+数据低             0x10040302     ∥REG  ∥    X86_REG8  ∥    2  ∥    0
+累加高             0x10050104     ∥REG  ∥    X86_REG8  ∥    4  ∥    0
+基数高             0x10060107     ∥REG  ∥    X86_REG8  ∥    7  ∥    0
+计数高             0x10070105     ∥REG  ∥    X86_REG8  ∥    5  ∥    0
+数据高             0x10080106     ∥REG  ∥    X86_REG8  ∥    6  ∥    0
+∥大王08             0x10090208     ∥REG  ∥    X86_REG8  ∥    8  ∥    64
+∥二王08             0x100A0209     ∥REG  ∥    X86_REG8  ∥    9  ∥    64
+∥三王08             0x100B020A     ∥REG  ∥    X86_REG8  ∥    10  ∥   64
+∥四王08             0x100C020B     ∥REG  ∥    X86_REG8  ∥    11  ∥   64
+∥五王08             0x100D020C     ∥REG  ∥    X86_REG8  ∥    12  ∥   64
+∥六王08             0x100E020D     ∥REG  ∥    X86_REG8  ∥    13  ∥   64
+∥七王08             0x100F020E     ∥REG  ∥    X86_REG8  ∥    14  ∥   64
+∥八王08             0x1010020F     ∥REG  ∥    X86_REG8  ∥    15  ∥   64
+∥旧08               0x10110204     ∥REG  ∥    X86_REG8X  ∥   4  ∥    64
+∥旦08               0x10120205     ∥REG  ∥    X86_REG8X  ∥   5  ∥    64
+∥源08               0x10130206     ∥REG  ∥    X86_REG8X  ∥   6  ∥    64
+∥的08               0x10140207     ∥REG  ∥    X86_REG8X  ∥   7  ∥    64
+
+
+累加16             0x11010300     ∥REG  ∥    X86_REG16  ∥   0  ∥    0
+基数16             0x11020303     ∥REG  ∥    X86_REG16  ∥   3  ∥    0
+计数16             0x11030301     ∥REG  ∥    X86_REG16  ∥   1  ∥    0
+数据16             0x11040302     ∥REG  ∥    X86_REG16  ∥   2  ∥    0
+栈址16             0x11050304     ∥REG  ∥    X86_REG16  ∥   4  ∥    0
+基址16             0x11060305     ∥REG  ∥    X86_REG16  ∥   5  ∥    0
+源址16             0x11070306     ∥REG  ∥    X86_REG16  ∥   6  ∥    0
+的址16             0x11080307     ∥REG  ∥    X86_REG16  ∥   7  ∥    0
+∥大王16             0x11090208     ∥REG  ∥    X86_REG16  ∥   8  ∥    64
+∥二王16             0x110A0209     ∥REG  ∥    X86_REG16  ∥   9  ∥    64
+∥三王16             0x110B020A     ∥REG  ∥    X86_REG16  ∥   10  ∥   64
+∥四王16             0x110C020B     ∥REG  ∥    X86_REG16  ∥   11  ∥   64
+∥五王16             0x110D020C     ∥REG  ∥    X86_REG16  ∥   13  ∥   64
+∥六王16             0x110E020D     ∥REG  ∥    X86_REG16  ∥   12  ∥   64
+∥七王16             0x110F020E     ∥REG  ∥    X86_REG16  ∥   14  ∥   64
+∥八王16             0x1110020F     ∥REG  ∥    X86_REG16  ∥   15  ∥   64
+
+累加32             0x12010300     ∥REG  ∥    X86_REG32  ∥   0  ∥    0
+基数32             0x12020303     ∥REG  ∥    X86_REG32  ∥   3  ∥    0
+计数32             0x12030301     ∥REG  ∥    X86_REG32  ∥   1  ∥    0
+数据32             0x12040302     ∥REG  ∥    X86_REG32  ∥   2  ∥    0
+栈址32             0x12050304     ∥REG  ∥    X86_REG32  ∥   4  ∥    0
+基址32             0x12060305     ∥REG  ∥    X86_REG32  ∥   5  ∥    0
+源址32             0x12070306     ∥REG  ∥    X86_REG32  ∥   6  ∥    0
+的址32             0x12080307     ∥REG  ∥    X86_REG32  ∥   7  ∥    0
+∥大王32             0x12090208     ∥REG  ∥    X86_REG32  ∥   8  ∥    64
+∥二王32             0x120A0209     ∥REG  ∥    X86_REG32  ∥   9  ∥    64
+∥三王32             0x120B020A     ∥REG  ∥    X86_REG32  ∥   10  ∥   64
+∥四王32             0x120C020B     ∥REG  ∥    X86_REG32  ∥   11  ∥   64
+∥五王32             0x120D020C     ∥REG  ∥    X86_REG32  ∥   12  ∥   64
+∥六王32             0x120E020D     ∥REG  ∥    X86_REG32  ∥   13  ∥   64
+∥七王32             0x120F020E     ∥REG  ∥    X86_REG32  ∥   14  ∥   64
+∥八王32             0x1210020F     ∥REG  ∥    X86_REG32  ∥   15  ∥   64
+
+∥千64               0x13010200     ∥REG  ∥    X86_REG64  ∥   0  ∥    64
+∥干64               0x13020203     ∥REG  ∥    X86_REG64  ∥   3  ∥    64
+∥士64               0x13030201     ∥REG  ∥    X86_REG64  ∥   1  ∥    64
+∥土64               0x13040202     ∥REG  ∥    X86_REG64  ∥   2  ∥    64
+∥旧64               0x13050204     ∥REG  ∥    X86_REG64  ∥   4  ∥    64
+∥旦64               0x13060205     ∥REG  ∥    X86_REG64  ∥   5  ∥    64
+∥源64               0x13070206     ∥REG  ∥    X86_REG64  ∥   6  ∥    64
+∥的64               0x13080207     ∥REG  ∥    X86_REG64  ∥   7  ∥    64
+∥大王64             0x13090208     ∥REG  ∥    X86_REG64  ∥   8  ∥    64
+∥二王64             0x130A0209     ∥REG  ∥    X86_REG64  ∥   9  ∥    64
+∥三王64             0x130B020A     ∥REG  ∥    X86_REG64  ∥   10  ∥   64
+∥四王64             0x130C020B     ∥REG  ∥    X86_REG64  ∥   11  ∥   64
+∥五王64             0x130D020C     ∥REG  ∥    X86_REG64  ∥   12  ∥   64
+∥六王64             0x130E020D     ∥REG  ∥    X86_REG64  ∥   13  ∥   64
+∥七王64             0x130F020E     ∥REG  ∥    X86_REG64  ∥   14  ∥   64
+∥八王64             0x1310020F     ∥REG  ∥    X86_REG64  ∥   15  ∥   64
+∥引64               0x13110200     ∥REG  ∥    X86_RIP  ∥     0  ∥    64
+
+控0                0x14010300     ∥REG  ∥    X86_CRREG  ∥   0  ∥    0
+控2                0x14020302     ∥REG  ∥    X86_CRREG  ∥   2  ∥    0
+控3                0x14030303     ∥REG  ∥    X86_CRREG  ∥   3  ∥    0
+控4                0x14040304     ∥REG  ∥    X86_CRREG  ∥   4  ∥    0
+控8                0x14050208     ∥REG  ∥    X86_CRREG  ∥   8  ∥    64
+
+任0                0x15010300     ∥REG  ∥    X86_TRREG  ∥   0  ∥    0
+任1                0x15020301     ∥REG  ∥    X86_TRREG  ∥   1  ∥    0
+任2                0x15030302     ∥REG  ∥    X86_TRREG  ∥   2  ∥    0
+任3                0x15040303     ∥REG  ∥    X86_TRREG  ∥   3  ∥    0
+任4                0x15050304     ∥REG  ∥    X86_TRREG  ∥   4  ∥    0
+任5                0x15060305     ∥REG  ∥    X86_TRREG  ∥   5  ∥    0
+任6                0x15070306     ∥REG  ∥    X86_TRREG  ∥   6  ∥    0
+任7                0x15080307     ∥REG  ∥    X86_TRREG  ∥   7  ∥    0
+
+调0                0x16010300     ∥REG  ∥    X86_DRREG  ∥   0  ∥    0
+调1                0x16020301     ∥REG  ∥    X86_DRREG  ∥   1  ∥    0
+调2                0x16030302     ∥REG  ∥    X86_DRREG  ∥   2  ∥    0
+调3                0x16040303     ∥REG  ∥    X86_DRREG  ∥   3  ∥    0
+调4                0x16050304     ∥REG  ∥    X86_DRREG  ∥   4  ∥    0
+调5                0x16060305     ∥REG  ∥    X86_DRREG  ∥   5  ∥    0
+调6                0x16070306     ∥REG  ∥    X86_DRREG  ∥   6  ∥    0
+调7                0x16080307     ∥REG  ∥    X86_DRREG  ∥   7  ∥    0
+
+浮0                0x17010300     ∥REG  ∥    X86_FPUREG  ∥  0  ∥    0
+浮1                0x17020301     ∥REG  ∥    X86_FPUREG  ∥  1  ∥    0
+浮2                0x17030302     ∥REG  ∥    X86_FPUREG  ∥  2  ∥    0
+浮3                0x17040303     ∥REG  ∥    X86_FPUREG  ∥  3  ∥    0
+浮4                0x17050304     ∥REG  ∥    X86_FPUREG  ∥  4  ∥    0
+浮5                0x17060305     ∥REG  ∥    X86_FPUREG  ∥  5  ∥    0
+浮6                0x17070306     ∥REG  ∥    X86_FPUREG  ∥  6  ∥    0
+浮7                0x17080307     ∥REG  ∥    X86_FPUREG  ∥  7  ∥    0
+
+媒0                0x18010300     ∥REG  ∥    X86_MMXREG  ∥  0  ∥    0
+媒1                0x18020301     ∥REG  ∥    X86_MMXREG  ∥  1  ∥    0
+媒2                0x18030302     ∥REG  ∥    X86_MMXREG  ∥  2  ∥    0
+媒3                0x18040303     ∥REG  ∥    X86_MMXREG  ∥  3  ∥    0
+媒4                0x18050304     ∥REG  ∥    X86_MMXREG  ∥  4  ∥    0
+媒5                0x18060305     ∥REG  ∥    X86_MMXREG  ∥  5  ∥    0
+媒6                0x18070306     ∥REG  ∥    X86_MMXREG  ∥  6  ∥    0
+媒7                0x18080307     ∥REG  ∥    X86_MMXREG  ∥  7  ∥    0
+
+流0              0x19010300     ∥REG  ∥    X86_XMMREG  ∥  0  ∥    0
+流1              0x19020301     ∥REG  ∥    X86_XMMREG  ∥  1  ∥    0
+流2              0x19030302     ∥REG  ∥    X86_XMMREG  ∥  2  ∥    0
+流3              0x19040303     ∥REG  ∥    X86_XMMREG  ∥  3  ∥    0
+流4              0x19050304     ∥REG  ∥    X86_XMMREG  ∥  4  ∥    0
+流5              0x19060305     ∥REG  ∥    X86_XMMREG  ∥  5  ∥    0
+流6              0x19070306     ∥REG  ∥    X86_XMMREG  ∥  6  ∥    0
+流7              0x19080307     ∥REG  ∥    X86_XMMREG  ∥  7  ∥    0
+流8              0x19090208     ∥REG  ∥    X86_XMMREG  ∥  8  ∥    64
+流9              0x190A0209     ∥REG  ∥    X86_XMMREG  ∥  9  ∥    64
+流10             0x190B020A     ∥REG  ∥    X86_XMMREG  ∥  10  ∥   64
+流11             0x190C020B     ∥REG  ∥    X86_XMMREG  ∥  11  ∥   64
+流12             0x190D020C     ∥REG  ∥    X86_XMMREG  ∥  12  ∥   64
+流13             0x190E020D     ∥REG  ∥    X86_XMMREG  ∥  13  ∥   64
+流14             0x190F020E     ∥REG  ∥    X86_XMMREG  ∥  14  ∥   64
+流15             0x1910020F     ∥REG  ∥    X86_XMMREG  ∥  15  ∥   64
+
+码段             0x1A010301     ∥SEGREG  ∥ 0x2e  ∥        1  ∥    0
+数段             0x1A020203     ∥SEGREG  ∥ 0x3e  ∥        3  ∥    64(64位模式下被忽略)
+附段             0x1A030200     ∥SEGREG  ∥ 0x26  ∥        0  ∥    64(64位模式下被忽略)
+栈段             0x1A040202     ∥SEGREG  ∥ 0x36  ∥        2  ∥    64(64位模式下被忽略)
+志段             0x1A050304     ∥SEGREG  ∥ 0x64  ∥        4  ∥    0
+全段             0x1A060305     ∥SEGREG  ∥ 0x65  ∥        5  ∥    0
+
+「
+∥在内存寻址情况下要用到的组合的寄存器
+RT_16BIT_ADDRESS_FORMS_BX_SI    0x1B010100   ∥16位寻址模式下的[BX+SI]寻址
+RT_16BIT_ADDRESS_FORMS_BX_DI    0x1B020101   ∥16位寻址模式下的[BX+DI]寻址
+RT_16BIT_ADDRESS_FORMS_BP_SI    0x1B030102   ∥16位寻址模式下的[BP+SI]寻址
+RT_16BIT_ADDRESS_FORMS_BP_DI    0x1B040103   ∥16位寻址模式下的[BP+DI]寻址
+RT_16BIT_ADDRESS_FORMS_SI       0x1B050104   ∥16位寻址模式下的[SI]寻址
+RT_16BIT_ADDRESS_FORMS_DI       0x1B060105   ∥16位寻址模式下的[DI]寻址
+RT_16BIT_ADDRESS_FORMS_DISP16   0x1B070106   ∥16位寻址模式下的[disp16]寻址
+RT_16BIT_ADDRESS_FORMS_BX       0x1B080107   ∥16位寻址模式下的[BX])寻址
+RT_32BIT_ADDRESS_FORMS_EAX      0x1B090300   ∥32位寻址模式下的[EAX]寻址
+RT_32BIT_ADDRESS_FORMS_ECX      0x1B0A0301   ∥32位寻址模式下的[ECX]寻址
+RT_32BIT_ADDRESS_FORMS_EDX      0x1B0B0302   ∥32位寻址模式下的[EDX]寻址
+RT_32BIT_ADDRESS_FORMS_EBX      0x1B0C0303   ∥32位寻址模式下的[EBX]寻址
+RT_32BIT_ADDRESS_FORMS_SCALE    0x1B0D0304   ∥32位寻址模式下的[比例变址]寻址
+RT_32BIT_ADDRESS_FORMS_DISP32   0x1B0E0305   ∥32位寻址模式下的[disp32]寻址
+RT_32BIT_ADDRESS_FORMS_ESI      0x1B0F0306   ∥32位寻址模式下的[ESI]寻址
+RT_32BIT_ADDRESS_FORMS_EDI      0x1B100307   ∥32位寻址模式下的[EDI])寻址
+」
+
+GDTR                            0x1C000001   ∥全局描述符寄存器
+IDTR                            0x1C000002   ∥中断描述符寄存器
+LDTR                            0x1C000003   ∥局部描述符寄存器
+TSSR                            0x1C000004   ∥任务状态寄存器
+MSW                             0x1C000005   ∥机器状态字
+
+「
+∥指令集类型
+generic32       0x30000001   ∥    PROCESSOR_GENERIC32  ∥   CT_CPU186|CT_CPU286|CT_CPU386}  ∥
+generic64       0x30000002   ∥    PROCESSOR_GENERIC64  ∥   CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2}  ∥
+i8086           0x30000003   ∥    PROCESSOR_UNKNOWN  ∥     0}  ∥
+i186            0x30000004   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPU186}  ∥
+i286            0x30000005   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPU186|CT_CPU286}  ∥
+i386            0x30000006   ∥    PROCESSOR_I386  ∥        CT_CPU186|CT_CPU286|CT_CPU386}  ∥
+i486            0x30000007   ∥    PROCESSOR_I486  ∥        CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486}  ∥
+i586            0x30000008   ∥    PROCESSOR_PENTIUM  ∥     CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586}  ∥
+i686            0x30000009   ∥    PROCESSOR_PENTIUMPRO  ∥  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686}  ∥
+pentium         0x3000000A   ∥    PROCESSOR_PENTIUM  ∥     CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586}  ∥
+pentiumpro      0x3000000B   ∥    PROCESSOR_PENTIUMPRO  ∥  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686}  ∥
+pentiumii       0x3000000C   ∥    PROCESSOR_PENTIUMPRO  ∥  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUMMX}  ∥
+pentiumiii      0x3000000D   ∥    PROCESSOR_PENTIUMPRO  ∥  CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE}  ∥
+pentium4        0x3000000E   ∥    PROCESSOR_PENTIUM4  ∥    CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2}  ∥    
+prescott        0x3000000F   ∥    PROCESSOR_NOCONA  ∥      CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}  ∥
+nocona          0x30000010   ∥    PROCESSOR_NOCONA  ∥      CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}  ∥
+yonah           0x30000011   ∥    PROCESSOR_CORE  ∥        CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}  ∥
+core            0x30000012   ∥    PROCESSOR_CORE  ∥        CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}  ∥
+merom           0x30000013   ∥    PROCESSOR_CORE2  ∥       CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3}  ∥
+core2           0x30000014   ∥    PROCESSOR_CORE2  ∥       CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUP4|CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3}  ∥
+k6              0x30000015   ∥    PROCESSOR_K6  ∥          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPUK6|CT_CPUMMX}  ∥
+k6_2            0x30000016   ∥    PROCESSOR_K6  ∥          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPUK6|CT_CPUMMX|CT_CPU3DNOW}  ∥
+athlon          0x30000017   ∥    PROCESSOR_ATHLON  ∥      CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA}  ∥
+sledgehammer    0x30000018   ∥    PROCESSOR_K8  ∥          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2}  ∥
+opteron         0x30000019   ∥    PROCESSOR_K8  ∥          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2}  ∥
+k8              0x3000001A   ∥    PROCESSOR_K8  ∥          CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2}  ∥
+amdfam10        0x3000001B   ∥    PROCESSOR_AMDFAM10  ∥    CT_CPU186|CT_CPU286|CT_CPU386|CT_CPU486|CT_CPU586|CT_CPU686|CT_CPUK6|CT_CPUSLEDGEHAMMER|CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSE4A|CT_CPUABM}  ∥
+mmx             0x3000001C   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX}  ∥
+sse             0x3000001D   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE}  ∥
+sse2            0x3000001E   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2}  ∥
+sse3            0x3000001F   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3}  ∥
+ssse3           0x30000020   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3}  ∥
+sse4_1          0x30000021   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3|CT_CPUSSE4_1}  ∥
+sse4_2          0x30000022   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3|CT_CPUSSE4}  ∥
+sse4            0x30000023   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSSE3|CT_CPUSSE4}  ∥
+3dnow           0x30000024   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPU3DNOW}  ∥
+3dnowa          0x30000025   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPU3DNOW|CT_CPU3DNOWA}  ∥
+padlock         0x30000026   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUPADLOCK}  ∥
+pacifica        0x30000027   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUSVME}  ∥
+svme            0x30000028   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUSVME}  ∥
+sse4a           0x30000029   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUMMX|CT_CPUMMX2|CT_CPUSSE|CT_CPUSSE2|CT_CPUSSE3|CT_CPUSSE4A}  ∥
+abm             0x3000002A   ∥    PROCESSOR_UNKNOWN  ∥     CT_CPUABM}
+
+」
+
+∥汇编指令定义
+
+加后A调整            0x40000001   ∥AAA
+除后A调整            0x40000002   ∥AAD
+乘后A调整            0x40000003   ∥AAM
+减后A调整            0x40000004   ∥AAS
+进位加               0x40000005   ∥ADC
+∥XII_ADD             0x40000006
+∥XII_AND             0x40000007
+调整优先级到         0x40000008   ∥ARPL
+
+检查数组边界         0x40000010   ∥BOUND
+位左扫描到           0x40000011   ∥BSF
+位右扫描到           0x40000012   ∥BSR
+字节交换             0x40000013   ∥BSWAP
+位测试               0x40000014   ∥BT
+位测试求反           0x40000015   ∥BTC
+位测试清0            0x40000016   ∥BTR
+位测试置1            0x40000017   ∥BTS
+
+调用                0x40000020    ∥CALL
+远调用              0x40000021    ∥CALLFAR
+∥XII_CBW             0x40000022
+∥XII_CWDE            0x40000023
+∥XII_CDQE            0x40000024
+∥XII_CLC             0x40000025
+∥XII_CLD             0x40000026
+缓存队列刷出         0x40000027   ∥CLFLUSH
+∥XII_CLI             0x40000028
+∥XII_CLTS            0x40000029
+∥XII_CMC             0x4000002A
+∥XII_CMOVA           0x4000002B
+∥XII_CMOVAE          0x4000002C
+∥XII_CMOVB           0x4000002D
+∥XII_CMOVBE          0x4000002E
+∥XII_CMOVC           0x4000002F
+∥XII_CMOVE           0x40000030
+∥XII_CMOVG           0x40000031
+∥XII_CMOVGE          0x40000032
+∥XII_CMOVL           0x40000033
+∥XII_CMOVLE          0x40000034
+∥XII_CMOVNA          0x40000035
+∥XII_CMOVNAE         0x40000036
+∥XII_CMOVNB          0x40000037
+∥XII_CMOVNBE         0x40000038
+∥XII_CMOVNC          0x40000039
+∥XII_CMOVNE          0x4000003A
+∥XII_CMOVNG          0x4000003B
+∥XII_CMOVNGE         0x4000003C
+∥XII_CMOVNL          0x4000003D
+∥XII_CMOVNLE         0x4000003E
+∥XII_CMOVNO          0x4000003F
+∥XII_CMOVNP          0x40000040
+∥XII_CMOVNS          0x40000041
+∥XII_CMOVNZ          0x40000042
+∥XII_CMOVO           0x40000043
+∥XII_CMOVP           0x40000044
+∥XII_CMOVPE          0x40000045
+∥XII_CMOVPO          0x40000046
+∥XII_CMOVS           0x40000047
+∥XII_CMOVZ           0x40000048
+比较               0x40000049     ∥CMP
+∥XII_CMPSB           0x4000004A
+∥XII_CMPSW           0x4000004B
+∥XII_CMPSD           0x4000004C
+∥XII_CMPSQ           0x4000004D
+比较交换         0x4000004E   ∥CMPXCHG
+∥XII_CMPXCHG8B       0x4000004F
+∥XII_CMPXCHG16B      0x40000050
+获取CPU标识到          0x40000051   ∥CPUID
+∥XII_CWD             0x40000052
+∥XII_CDQ             0x40000053
+∥XII_CQO             0x40000054
+
+加后十调整           0x40000070   ∥DAA
+减后十调整           0x40000071   ∥DAS
+∥XII_DEC             0x40000072
+∥XII_DIV             0x40000073
+
+建立堆栈帧           0x40000080   ∥ENTER
+
+停止                0x40000090   ∥HLT
+ 
+符号除            0x40000100   ∥IDIV
+符号乘            0x40000101   ∥IMUL
+输入              0x40000102   ∥IN
+∥XII_INC             0x40000103
+∥XII_INSB            0x40000104
+∥XII_INSW            0x40000105
+∥XII_INSD            0x40000106
+中断                0x40000107    ∥INT
+溢出中断            0x40000108    ∥INTO
+无效内在缓存         0x40000109   ∥INVD
+TLB入口无效          0x4000010A   ∥INVLPG
+中断退回            0x4000010B    ∥IRET
+∥XII_IRETD           0x4000010C
+∥XII_IRETQ           0x4000010D
+
+∥XII_JA              0x40000120
+∥XII_JAE             0x40000121
+∥XII_JB              0x40000122
+∥XII_JBE             0x40000123
+∥XII_JC              0x40000124
+∥XII_JE              0x40000125
+∥XII_JG              0x40000126
+∥XII_JGE             0x40000127
+∥XII_JL              0x40000128
+∥XII_JLE             0x40000129
+∥XII_JNA             0x4000012A
+∥XII_JNAE            0x4000012B
+∥XII_JNB             0x4000012C
+∥XII_JNBE            0x4000012D
+∥XII_JNC             0x4000012E
+∥XII_JNE             0x4000012F
+∥XII_JNG             0x40000130
+∥XII_JNGE            0x40000131
+∥XII_JNL             0x40000132
+∥XII_JNLE            0x40000133
+∥XII_JNO             0x40000134
+∥XII_JNP             0x40000135
+∥XII_JNS             0x40000136
+∥XII_JNZ             0x40000137
+∥XII_JO              0x40000138
+∥XII_JP              0x40000139
+∥XII_JPE             0x4000013A
+∥XII_JPO             0x4000013B
+∥XII_JS              0x4000013C
+∥XII_JZ              0x4000013D
+∥XII_JCXZ            0x4000013E
+∥XII_JECXZ           0x4000013F
+∥XII_JRCXZ           0x40000140
+跳转到              0x40000141   ∥JMP
+远跳转到            0x40000142   ∥JMPFAR
+             
+
+∥XII_LAHF            0x40000160
+装入访问权限         0x40000161   ∥LAR
+∥XII_LDS             0x40000162
+∥XII_LSS             0x40000163
+∥XII_LES             0x40000164
+∥XII_LFS             0x40000165
+∥XII_LGS             0x40000166
+∥XII_LEA             0x40000167
+清除堆栈帧           0x40000168   ∥LEAVE
+连接加载操作         0x40000169   ∥LFENCE
+∥XII_LGDT            0x4000016A
+∥XII_LIDT            0x4000016B
+∥XII_LLDT            0x4000016C
+∥XII_LMSW            0x4000016D
+锁                   0x4000016E   ∥LOCK
+∥XII_LODSB           0x4000016F
+∥XII_LODSW           0x40000170
+∥XII_LODSD           0x40000171
+∥XII_LODSQ           0x40000172
+循环到            0x40000173 ∥LOOP
+相等循环到        0x40000174 ∥LOOPE
+为零循环到        0x40000175 ∥LOOPZ
+不等循环到        0x40000176 ∥LOOPNE
+非零循环到        0x40000177 ∥LOOPNZ
+加载段界限           0x40000178   ∥LSL
+∥XII_LTR             0x40000179
+
+连接加载保存操作     0x40000190   ∥MFENCE
+监视                 0x40000191   ∥MONITOR
+∥XII_MOV             0x40000192
+非暂时提示移动到     0x40000193   ∥MOVNTI
+∥XII_MOVSB           0x40000194
+∥XII_MOVSW           0x40000195
+∥XII_MOVSD           0x40000196
+∥XII_MOVSQ           0x40000197
+符号扩展             0x40000198   ∥MOVSX
+∥XII_MOVSXD          0x40000199
+零扩展              0x4000019A    ∥MOVZX
+∥XII_MUL             0x4000019B
+监视等待            0x4000019C   ∥MWAIT
+
+求补                0x40000210   ∥NEG
+空                  0x40000211   ∥NOP
+求反                0x40000212   ∥NOT
+
+∥XII_OR              0x40000220
+输出             0x40000221  ∥OUT
+∥XII_OUTSB           0x40000222
+∥XII_OUTSW           0x40000223
+∥XII_OUTSD           0x40000224
+
+暂停               0x40000240      ∥PAUSE
+出栈               0x40000241      ∥POP
+全部出栈           0x40000242      ∥POPA
+∥XII_POPAD           0x40000243
+标寄出栈           0x40000244     ∥POPF
+∥XII_POPFD           0x40000245
+∥XII_POPFQ           0x40000246
+预读NTA              0x40000247   ∥PREFETCHNTA
+预读NT0              0x40000248   ∥PREFETCHT0
+预读NT1              0x40000249   ∥PREFETCHT1
+预读NT2              0x4000024A   ∥PREFETCHT2
+压栈                0x4000024B    ∥PUSH
+全部压栈            0x4000024C    ∥PUSHA
+∥XII_PUSHAD          0x4000024D
+标寄压栈            0x4000024E    ∥PUSHF
+∥XII_PUSHFD          0x4000024F
+∥XII_PUSHFQ          0x40000250
+
+进位循环左移             0x40000260  ∥RCL
+进位循环右移             0x40000261  ∥RCR
+循环左移             0x40000262   ∥ROL
+循环右移             0x40000263   ∥ROR
+读专用模式寄存器     0x40000264   ∥RDMSR
+读执行监视计数       0x40000265   ∥RDPMC
+读时间戳计数         0x40000266   ∥RDTSC
+读时间戳计数和CPU标识 0x40000267   ∥RDTSCP
+重复              0x40000268    ∥REP
+相等重复          0x40000269    ∥REPE
+为零重复          0x4000026A    ∥REPZ
+不等重复          0x4000026B    ∥REPNE
+非零重复          0x4000026C    ∥REPNZ
+退回              0x4000026D    ∥RET
+远退回            0x4000026E    ∥RETF
+恢复系统模式         0x4000026F   ∥RSM
+
+∥XII_SAHF            0x40000280
+算术左移             0x40000281 ∥SAL
+算术右移             0x40000282 ∥SAR
+逻辑左移             0x40000283 ∥SHL
+逻辑右移             0x40000284 ∥SHR
+错位减               0x40000285 ∥SBB
+∥XII_SCASB           0x40000286
+∥XII_SCASW           0x40000287
+∥XII_SCASD           0x40000288
+∥XII_SCASQ           0x40000289
+串扫描                0x4000028A  ∥SCAS
+∥XII_SETO            0x4000028B
+∥XII_SETNO           0x4000028D
+∥XII_SETB            0x4000028D
+∥XII_SETC            0x4000028E
+∥XII_SETNAE          0x4000028F
+∥XII_SETNB           0x40000290
+∥XII_SETNC           0x40000291
+∥XII_SETAE           0x40000292
+∥XII_SETZ            0x40000293
+∥XII_SETE            0x40000294
+∥XII_SETNZ           0x40000295
+∥XII_SETNE           0x40000296
+∥XII_SETBE           0x40000297
+∥XII_SETNA           0x40000298
+∥XII_SETNBE          0x40000299
+∥XII_SETA            0x4000029A
+∥XII_SETS            0x4000029B
+∥XII_SETNS           0x4000029C
+∥XII_SETP            0x4000029D
+∥XII_SETPE           0x4000029E
+∥XII_SETNP           0x4000029F
+∥XII_SETPO           0x40000300
+∥XII_SETL            0x40000301
+∥XII_SETNGE          0x40000302
+∥XII_SETNL           0x40000303
+∥XII_SETGE           0x40000304
+∥XII_SETLE           0x40000305
+∥XII_SETNG           0x40000306
+∥XII_SETNLE          0x40000307
+∥XII_SETG            0x40000308
+持续保存操作         0x40000309   ∥SFENCE
+∥XII_SGDT            0x4000030A
+双精度左移           0x4000030B   ∥SHLD
+双精度右移           0x4000030C   ∥SHRD
+∥XII_SIDT            0x4000030D
+∥XII_SLDT            0x4000030E
+∥XII_SMSW            0x4000030F
+∥XII_STC             0x40000310
+∥XII_STD             0x40000311
+∥XII_STI             0x40000312
+∥XII_STOSB           0x40000313
+∥XII_STOSW           0x40000314
+∥XII_STOSD           0x40000315
+∥XII_STOSQ           0x40000316
+∥XII_STR             0x40000317
+∥XII_SUB             0x40000318
+交换全段               0x40000319   ∥SWAPGS
+系统调用              0x4000031A    ∥SYSCALL
+系统进入              0x4000031B    ∥SYSENTER
+系统退出              0x4000031C    ∥SYSEXIT
+系统返回              0x4000031D    ∥SYSRET
+
+测试                 0x40000330   ∥TEST
+
+异常CPU              0x40000340   ∥UD2
+
+验证读               0x40000350   ∥VERR
+验证写               0x40000351   ∥VERW
+
+等                   0x40000360   ∥WAIT
+回写并无效内在缓存   0x40000361   ∥WBINVD
+写专用模式寄存器     0x40000362   ∥WRMSR
+
+交换加             0x40000370     ∥XADD
+交换               0x40000371     ∥XCHG
+定位表                0x40000372  ∥XLATB
+∥XII_XOR             0x40000373
+
+
+
+∥浮点指令
+清空浮点寄存器标志   0x41000001   ∥EMMS
+浮点乘方             0x41000002   ∥F2XM1
+∥XII_FABS            0x41000003
+∥XII_FADD            0x41000004
+∥XII_FADDP           0x41000005
+∥XII_FIADD           0x41000006
+∥XII_FBLD            0x41000007
+∥XII_FBSTP           0x41000008
+∥XII_FCHS            0x41000009
+浮点检查清除异常     0x4100000A   ∥FCLEX
+浮点不检查清除异常   0x4100000B   ∥FNCLEX
+∥XII_FCMOVB          0x4100000C
+∥XII_FCMOVE          0x4100000D
+∥XII_FCMOVBE         0x4100000E
+∥XII_FCMOVU          0x4100000F
+∥XII_FCMOVNB         0x41000020
+∥XII_FCMOVNE         0x41000021
+∥XII_FCMOVNBE        0x41000022
+∥XII_FCMOVBNU        0x41000023
+∥XII_FCOM            0x41000024
+∥XII_FCOMP           0x41000025
+∥XII_FCOMPP          0x41000026
+比较加载标寄         0x41000027   ∥FCOMI
+比较加载标寄出栈     0x41000028   ∥FCOMIP
+反比加载标寄         0x41000029   ∥FUCOMI
+反比加载标寄出栈     0x4100002A   ∥FUCOMIP
+∥XII_FCOS            0x4100002B
+∥XII_FDECSTP         0x4100002C
+∥XII_FDIV            0x4100002D
+∥XII_FDIVP           0x4100002E
+∥XII_FIDIV           0x4100002F
+∥XII_FDIVR           0x41000040
+∥XII_FDIVRP          0x41000041
+∥XII_FIDIVR          0x41000042
+浮点释放             0x41000043   ∥FFREE
+∥XII_FICOM           0x41000044
+∥XII_FICOMP          0x41000045
+∥XII_FILD            0x41000046
+∥XII_FINCSTP         0x41000047
+浮点检查初始化       0x41000048   ∥FINIT
+浮点不检查初始化     0x41000049   ∥FNINIT
+∥XII_FIST            0x4100004A
+∥XII_FISTP           0x4100004B
+∥XII_FISTTP          0x4100004C
+∥XII_FLD             0x4100004D
+∥XII_FLD1            0x4100004E
+∥XII_FLDL2T          0x4100004F
+∥XII_FLDL2E          0x41000060
+浮点PI             0x41000061  ∥FLDPI
+∥XII_FLDLG2          0x41000062
+∥XII_FLDLN2          0x41000063
+∥XII_FLDZ            0x41000064
+浮点加载控制器       0x41000065   ∥FLDCW
+浮点加载环境         0x41000066   ∥FLDENV
+∥XII_FMUL            0x41000067
+∥XII_FMULP           0x41000068
+∥XII_FIMUL           0x41000069
+浮点空             0x4100006A   ∥FNOP
+∥XII_FPATAN          0x4100006B
+∥XII_FPREM           0x4100006C
+∥XII_FPREM1          0x4100006D
+∥XII_FPTAN           0x4100006E
+浮点取整           0x4100006F     ∥FRNDINT
+浮点恢复状态         0x41000080   ∥FRSTOR
+浮点检查保存状态     0x41000081   ∥FSAVE
+浮点不检查保存状态   0x41000082   ∥FNSAVE
+∥XII_FSCALE          0x41000083
+∥XII_FSIN            0x41000084
+∥XII_FSINCOS         0x41000085
+浮点平方根          0x41000086  ∥FSQRT
+∥XII_FST             0x41000087
+∥XII_FSTP            0x41000088
+浮点检查保存控制器   0x41000089   ∥FSTCW
+浮点不检查保存控制器 0x4100008A   ∥FNSTCW
+浮点检查保存环境     0x4100008B   ∥FSTENV
+浮点不检查保存环境   0x4100008C   ∥FNSTENV
+浮点检查保存状态器   0x4100008D   ∥FSTSW
+浮点不检查保存状态器 0x4100008E   ∥FNSTSW
+∥XII_FSUB            0x4100008F
+∥XII_FSUBP           0x410000A0
+∥XII_FISUB           0x410000A1
+∥XII_FSUBR           0x410000A2
+∥XII_FSUBRP          0x410000A3
+∥XII_FISUBR          0x410000A4
+∥XII_FTST            0x410000A5
+浮点无序比较          0x410000A6  ∥FUCOM
+∥XII_FUCOMP          0x410000A7
+∥XII_FUCOMPP         0x410000A8
+浮点等               0x410000A9   ∥FWAIT
+浮点检查             0x410000AA   ∥FXAM
+∥XII_FXCH            0x410000AB
+浮点X恢复            0x410000AC   ∥FXRSTOR
+浮点X保存            0x410000AD   ∥FXSAVE
+浮点分解             0x410000AE   ∥FXTRACT
+∥XII_FYL2X           0x410000AF
+∥XII_FYL2XP1         0x410000C0
+
+
+∥多媒体指令
+加双精度包           0x41100001  ∥ADDPD
+加单精度包           0x41100002  ∥ADDPS
+加双精度头           0x41100003  ∥ADDSD
+加单精度头           0x41100004  ∥ADDSS
+加减双精度包         0x41100005  ∥ADDSUBPD
+加减单精度包         0x41100006  ∥ADDSUBPS
+与双精度包           0x41100007  ∥ANDPD
+与单精度包           0x41100008  ∥ANDPS
+先非后与双精度包     0x41100009  ∥ANDNPD
+先非后与单精度包     0x4110000A  ∥ANDNPS
+比双精度包           0x4110000B  ∥CMPPD
+比单精度包           0x4110000C  ∥CMPPS
+比双精度头           0x4110000D  ∥CMPSD
+比单精度头           0x4110000E  ∥CMPSS
+比双精度头置标寄            0x4110000F  ∥COMISD
+比单精度头置标寄            0x41100020  ∥COMISS
+双字整数转为双精度包        0x41100021  ∥CVTDQ2PD
+双字整数转为单精度包        0x41100022  ∥CVTDQ2PS
+双精度包转为双字整数        0x41100023  ∥CVTPD2DQ
+//双精度包转为双字整数      0x41100024  ∥CVTPD2PI 与 CVTPD2DQ 指令意义相同，只是使用不同大小的目的寄存器
+双精度包转为单精度包        0x41100025  ∥CVTPD2PS
+CVTPI2PD        0x41100026  ∥
+CVTPI2PS        0x41100027  ∥
+CVTPS2DQ        0x41100028  ∥
+CVTPS2PD        0x41100029  ∥
+CVTPS2PI        0x4110002A  ∥
+CVTSD2SI        0x4110002B  ∥
+CVTSD2SS        0x4110002C  ∥
+CVTSI2SD        0x4110002D  ∥
+CVTSI2SS        0x4110002E  ∥
+CVTSS2SD        0x4110002F  ∥
+CVTSS2SI        0x41100040  ∥
+CVTTPD2PI       0x41100041  ∥
+CVTTPD2DQ       0x41100042  ∥
+CVTTPS2DQ       0x41100043  ∥
+CVTTPS2PI       0x41100044  ∥
+CVTTSD2SI       0x41100045  ∥
+CVTTSS2SI       0x41100046  ∥
+DIVPD           0x41100047  ∥
+DIVPS           0x41100048  ∥
+DIVSD           0x41100049  ∥
+DIVSS           0x4110004A  ∥
+HADDPD          0x4110004B  ∥
+HADDPS          0x4110004C  ∥
+HSUBPD          0x4110004D  ∥
+HSUBPS          0x4110004E  ∥
+LDDQU           0x4110004F  ∥
+LDMXCSR         0x41100060  ∥
+MASKMOVDQU      0x41100061  ∥
+MASKMOVQ        0x41100062  ∥
+MAXPD           0x41100063  ∥
+MAXPS           0x41100064  ∥
+MAXSD           0x41100065  ∥
+MAXSS           0x41100066  ∥
+MINPD           0x41100067  ∥
+MINPS           0x41100068  ∥
+MINSD           0x41100069  ∥
+MINSS           0x4110006A  ∥
+MOVAPD          0x4110006B  ∥
+MOVAPS          0x4110006C  ∥
+MOVD            0x4110006D  ∥
+MOVQ            0x4110006E  ∥
+MOVDDUP         0x4110006F  ∥
+MOVDQA          0x41100080  ∥
+MOVDQU          0x41100081  ∥
+MOVDQ2Q         0x41100082  ∥
+MOVHLPS         0x41100083  ∥
+MOVHPD          0x41100084  ∥
+MOVHPS          0x41100085  ∥
+MOVLHPS         0x41100086  ∥
+MOVLPD          0x41100087  ∥
+MOVLPS          0x41100088  ∥
+MOVMSKPD        0x41100089  ∥
+MOVMSKPS        0x4110008A  ∥
+MOVNTDQ         0x4110008B  ∥
+MOVNTPD         0x4110008C  ∥
+MOVNTPS         0x4110008D  ∥
+MOVNTQ          0x4110008E  ∥
+MOVQ2DQ         0x4110008F  ∥
+MM_MOVSD        0x411000A0  ∥
+MOVSHDUP        0x411000A1  ∥
+MOVSLDUP        0x411000A2  ∥
+MOVSS           0x411000A3  ∥
+MOVUPD          0x411000A4  ∥
+MOVUPS          0x411000A5  ∥
+MULPD           0x411000A6  ∥
+MULPS           0x411000A7  ∥
+MULSD           0x411000A8  ∥
+MULSS           0x411000A9  ∥
+ORPD            0x411000AA  ∥
+ORPS            0x411000AB  ∥
+PABSB           0x411000AC  ∥
+PABSW           0x411000AD  ∥
+PABSD           0x411000AE  ∥
+PACKSSWB        0x411000AF  ∥
+PACKSSDW        0x411000C0  ∥
+PACKUSWB        0x411000C1  ∥
+PADDB           0x411000C2  ∥
+PADDW           0x411000C3  ∥ 
+PADDD           0x411000C4  ∥
+PADDQ           0x411000C5  ∥
+PADDSB          0x411000C6  ∥
+PADDSW          0x411000C7  ∥
+PADDUSB         0x411000C8  ∥
+PADDUSW         0x411000C9  ∥
+PALIGNR         0x411000CA  ∥
+PAND            0x411000CB  ∥
+PANDN           0x411000CC  ∥
+PAVGB           0x411000CD  ∥
+PAVGW           0x411000CE  ∥
+PCMPEQB         0x411000CF  ∥
+PCMPEQW         0x411000E0  ∥
+PCMPEQD         0x411000E1  ∥
+PCMPGTB         0x411000E2  ∥
+PCMPGTW         0x411000E3  ∥
+PCMPGTD         0x411000E4  ∥
+PEXTRW          0x411000E5  ∥
+PHADDW          0x411000E6  ∥
+PHADDD          0x411000E7  ∥
+PHADDSW         0x411000E8  ∥
+PHSUBW          0x411000E9  ∥
+PHSUBD          0x411000EA  ∥
+PHSUBSW         0x411000EB  ∥
+PINSRW          0x411000EC  ∥
+PMADDUBSW       0x411000ED  ∥
+PMADDWD         0x411000EE  ∥
+PMAXSW          0x411000EF  ∥
+PMAXUB          0x41100100  ∥
+PMINSW          0x41100101  ∥
+PMINUB          0x41100102  ∥
+PMOVMSKB        0x41100103  ∥
+PMULHRSW        0x41100104  ∥
+PMULHUW         0x41100105  ∥
+PMULHW          0x41100106  ∥
+PMULLW          0x41100107  ∥
+PMULUDQ         0x41100108  ∥
+POR             0x41100109  ∥
+PSADBW          0x4110010A  ∥
+PSHUFB          0x4110010B  ∥
+PSHUFD          0x4110010C  ∥
+PSHUFHW         0x4110010D  ∥
+PSHUFLW         0x4110010E  ∥
+PSHUFW          0x4110010F  ∥
+PSIGNB          0x41100120  ∥
+PSIGNW          0x41100121  ∥
+PSIGND          0x41100122  ∥
+PSLLDQ          0x41100123  ∥
+PSLLW           0x41100124  ∥
+PSLLD           0x41100125  ∥
+PSLLQ           0x41100126  ∥
+PSRAW           0x41100127  ∥
+PSRAD           0x41100128  ∥
+PSRLDQ          0x41100129  ∥
+PSRLW           0x4110012A  ∥
+PSRLD           0x4110012B  ∥
+PSRLQ           0x4110012C  ∥
+PSUBB           0x4110012D  ∥
+PSUBW           0x4110012E  ∥
+PSUBD           0x4110012F  ∥
+PSUBQ           0x41100140  ∥
+PSUBSB          0x41100141  ∥
+PSUBSW          0x41100142  ∥
+PSUBUSB         0x41100143  ∥
+PSUBUSW         0x41100144  ∥
+PUNPCKHBW       0x41100145  ∥
+PUNPCKHWD       0x41100146  ∥
+PUNPCKHDQ       0x41100147  ∥
+PUNPCKHQDQ      0x41100148  ∥
+PUNPCKLBW       0x41100149  ∥
+PUNPCKLWD       0x4110014A  ∥
+PUNPCKLDQ       0x4110014B  ∥
+PUNPCKLQDQ      0x4110014C  ∥
+PXOR            0x4110014D  ∥
+RCPPS           0x4110014E  ∥
+RCPSS           0x4110014F  ∥
+RSQRTPS         0x41100160  ∥
+RSQRTSS         0x41100161  ∥
+SHUFPD          0x41100162  ∥
+SHUFPS          0x41100163  ∥
+SQRTPD          0x41100164  ∥
+SQRTPS          0x41100165  ∥
+SQRTSD          0x41100166  ∥
+SQRTSS          0x41100167  ∥
+STMXCSR         0x41100168  ∥
+SUBPD           0x41100169  ∥
+SUBPS           0x4110016A  ∥
+SUBSD           0x4110016B  ∥
+SUBSS           0x4110016C  ∥
+UCOMISD         0x4110016D  ∥
+UCOMISS         0x4110016E  ∥
+UNPCKHPD        0x4110016F  ∥
+UNPCKHPS        0x41100180  ∥
+UNPCKLPD        0x41100181  ∥
+UNPCKLPS        0x41100182  ∥
+XORPD           0x41100183  ∥
+XORPS           0x41100184  ∥
+
+∥AMD 3DNow!及3DNow!+指令
+FEMMS           0x41200001  ∥
+PAVGUSB         0x41200002  ∥
+PF2ID           0x41200003  ∥
+PF2IW           0x41200004  ∥
+PFACC           0x41200005  ∥
+PFADD           0x41200006  ∥
+PFCMPEQ         0x41200007  ∥
+PFCMPGE         0x41200008  ∥
+PFCMPGT         0x41200009  ∥
+PFMAX           0x4120000A  ∥
+PFMIN           0x4120000B  ∥
+PFMUL           0x4120000C  ∥
+PFNACC          0x4120000D  ∥
+PFPNACC         0x4120000E  ∥
+PFRCP           0x4120000F  ∥
+PFRCPIT1        0x41200020  ∥
+PFRCPIT2        0x41200021  ∥
+PFRSQIT1        0x41200022  ∥
+PFRSQRT         0x41200023  ∥
+PFSUB           0x41200024  ∥
+PFSUBR          0x41200025  ∥
+PI2FD           0x41200026  ∥
+PI2FW           0x41200027  ∥
+PMULHRW         0x41200028  ∥
+PREFETCH        0x41200029  ∥
+PREFETCHW       0x4120002A  ∥
+PSWAPD          0x4120002B  ∥
+
+∥AMD Secure Virtual Machine Ext-s
+CLGI            0x41210001  ∥
+INVLPGA         0x41210002  ∥
+SKINIT          0x41210003  ∥
+STGI            0x41210004  ∥
+VMLOAD          0x41210005  ∥
+VMMCALL         0x41210006  ∥
+VMRUN           0x41210007  ∥
+VMSAVE          0x41210008  ∥
+
+∥AMD Barcelona 芯片指令
+LZCNT           0x41210101  ∥
+∥POPCNT
+EXTRQ           0x41210102  ∥
+INSERTQ         0x41210103  ∥
+MOVNTSD         0x41210104  ∥
+MOVNTSS         0x41210105  ∥
+
+
+∥SEE4指令
+BLENDPD         0x41300001  ∥
+BLENDPS         0x41300002  ∥
+BLENDVPD        0x41300003  ∥
+BLENDVPS        0x41300004  ∥
+CRC32           0x41300005  ∥
+DPPD            0x41300006  ∥
+DPPS            0x41300007  ∥
+EXTRACTPS       0x41300008  ∥
+INSERTPS        0x41300009  ∥
+MOVNTDQA        0x4130000A  ∥
+MPSADBW         0x4130000B  ∥
+PACKUSDW        0x4130000C  ∥
+PBLENDVB        0x4130000D  ∥
+PBLENDW         0x4130000E  ∥
+PCMPEQQ         0x4130000F  ∥
+PCMPESTRI       0x41300020  ∥
+PCMPESTRM       0x41300021  ∥
+PCMPISTRI       0x41300022  ∥
+PCMPISTRM       0x41300023  ∥
+PCMPGTQ         0x41300024  ∥
+PEXTRB          0x41300025  ∥
+PEXTRD          0x41300026  ∥
+PEXTRQ          0x41300027  ∥
+∥PEXTRW
+PHMINPOSUW      0x41300028  ∥
+PINSRB          0x41300029  ∥
+PINSRD          0x4130002A  ∥
+PINSRQ          0x4130002B  ∥
+PMAXSB          0x4130002C  ∥
+PMAXSD          0x4130002D  ∥
+PMAXUD          0x4130002E  ∥
+PMAXUW          0x4130002F  ∥
+PMINSB          0x41300040  ∥
+PMINSD          0x41300041  ∥
+PMINUD          0x41300042  ∥
+PMINUW          0x41300043  ∥
+PMOVSXBW        0x41300044  ∥
+PMOVSXBD        0x41300045  ∥
+PMOVSXBQ        0x41300046  ∥
+PMOVSXWD        0x41300047  ∥
+PMOVSXWQ        0x41300048  ∥
+PMOVSXDQ        0x41300049  ∥
+PMOVZXBW        0x4130004A  ∥
+PMOVZXBD        0x4130004B  ∥
+PMOVZXBQ        0x4130004C  ∥
+PMOVZXWD        0x4130004D  ∥
+PMOVZXWQ        0x4130004E  ∥
+PMOVZXDQ        0x4130004F  ∥
+PMULDQ          0x41300060  ∥
+PMULLQ          0x41300061  ∥
+POPCNT          0x41300062  ∥
+PTEST           0x41300063  ∥
+ROUNDPD         0x41300064  ∥
+ROUNDPS         0x41300065  ∥
+ROUNDSD         0x41300066  ∥
+ROUNDSS         0x41300067  ∥
+
+
+∥Intel VMX(virtual-machine extensions)指令
+VMPTRST         0x41F00001  ∥
+VMCLEAR         0x41F00002  ∥
+VMPTRLD         0x41F00003  ∥
+VMREAD          0x41F00004  ∥
+VMWRITE         0x41F00005  ∥
+VMCALL          0x41F00006  ∥
+VMLAUNCH        0x41F00007  ∥
+VMRESUME        0x41F00008  ∥
+VMXOFF          0x41F00009  ∥
+VMXON           0x41F0000A  ∥
+
+
+∥Cyrix EMMX Instructions — OpCode List
+PADDSIW         0x41F10001  ∥
+PAVEB           0x41F10002  ∥
+PDISTIB         0x41F10003  ∥
+PMACHRIW        0x41F10004  ∥
+PMAGW           0x41F10005  ∥
+∥PMULHRW           0x41F10006
+PMULHRIW        0x41F10007  ∥
+PMVZB           0x41F10008  ∥
+PMVNZB          0x41F10009  ∥
+PMVLZB          0x41F1000A  ∥
+PMVGEZB         0x41F1000B  ∥
+PSUBSIW         0x41F1000C  ∥
+
+
+「
+∥下面指令尚未支持
+∥VIA PadLock高级加密引擎
+XII_XSTORE_RNG      0x41F20001
+XII_XCRYPT_ECB      0x41F20002
+XII_XCRYPT_CBC      0x41F20003
+XII_XCRYPT_CTR      0x41F20004
+XII_XCRYPT_CFB      0x41F20005
+XII_XCRYPT_OFB      0x41F20006
+XII_MONTMUL         0x41F20007
+XII_XSHA1           0x41F20008
+XII_XSHA256         0x41F20009
+XII_XSTORERNG       0x41F2000A
+XII_XCRYPTECB       0x41F2000B
+XII_XCRYPTCBC       0x41F2000C
+XII_XCRYPTCTR       0x41F2000D
+XII_XCRYPTCFB       0x41F2000E
+XII_XCRYPTOFB       0x41F2000F
+XII_XSTORE          0x41F20020
+」
+
+∥XII_END             0x41FFFFFF   ∥    汇编指令定义结束

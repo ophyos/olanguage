@@ -1,0 +1,70 @@
+
+引用段
+{
+
+//////////////////////////////////////////////////////////////////////////
+//TabPage
+函数 选项卡页_获取索引:TabPage_GetIndex(地址 pTabPage)=>整数32;
+函数 选项卡页_设置文本:TabPage_SetText(地址 pTabPage,地址 text);
+函数 选项卡页_获取文本:TabPage_GetText(地址 pTabPage)=>地址;
+函数 选项卡页_设置图像:TabPage_SetImage(地址 pTabPage,整数32 index);
+函数 选项卡页_获取图像:TabPage_GetImage(地址 pTabPage)=>整数32;
+函数 选项卡页_设置被按下:TabPage_SetPressed(地址 pTabPage,整数32 pressed);
+函数 选项卡页_置为按下:TabPage_IsPressed(地址 pTabPage)=>整数32;
+函数 TabPage_SetHilited(地址 pTabPage,整数32 high);
+函数 TabPage_GetHilited(地址 pTabPage)=>整数32;
+函数 选项卡页_获取矩形:TabPage_GetRect(地址 pTabPage,地址 rc);
+函数 选项卡页_取父:TabPage_GetParent(地址 pTabPage)=>地址;
+
+函数 选项卡页_取拥有人:TabPage_GetOwner(地址 pTabPage)=>地址;
+函数 选项卡页_置为空客户:TabPage_IsClientEmpty(地址 pTabPage)=>整数32;
+函数 选项卡页_添加控件:TabPage_AddControl(地址 pTabPage,地址 control);	
+函数 选项卡页_移除控件:TabPage_RemoveControl(地址 pTabPage,地址 control);
+
+//////////////////////////////////////////////////////////////////////////
+//Tab
+函数 选项卡_获取行计数:Tab_GetRowCount(地址 pTab)=>整数32;	
+函数 选项卡_获取页计数:Tab_GetPageCount(地址 pTab)=>整数32; 
+函数 选项卡_设置选项卡大小:Tab_SetTabSize(地址 pTab,地址 size);
+函数 选项卡_设置工具提示:Tab_SetToolTip(地址 pTab,HWND tip);
+函数 选项卡_设置小TAB宽:Tab_SetMinTabWidth(地址 pTab,整数32 width);	
+函数 选项卡_选择页:Tab_SelectPage(地址 pTab,地址 page);
+函数 选项卡_选择页索引:Tab_SelectPageIndex(地址 pTab,整数32 index);
+函数 选项卡_设置焦点页:Tab_SetFocusPage(地址 pTab,地址 page);
+函数 选项卡_设置焦点页索引:Tab_SetFocusPageIndex(地址 pTab,整数32 index);
+函数 选项卡_设置图像列表:Tab_SetImageList(地址 pTab,地址 imageList);
+函数 选项卡_获取选项卡大小:Tab_GetTabSize(地址 pTab,地址 size);
+函数 选项卡_获取视图矩形:Tab_GetViewRect(地址 pTab,地址 rc);
+函数 选项卡_获取工具提示:Tab_GetToolTip(地址 pTab)=>HWND;	 
+函数 选项卡_获取焦点页:Tab_GetFocusPage(地址 pTab)=>地址; 
+函数 选项卡_获取被选择页:Tab_GetSelectedPage(地址 pTab)=>地址; 
+函数 选项卡_获取页:Tab_GetPage(地址 pTab,整数32 index)=>地址;
+函数 选项卡_获取图像列表:Tab_GetImageList(地址 pTab)=>地址;
+
+//在index位置前插入新页
+函数 选项卡_插入页:Tab_InsertPage(地址 pTab,整数32 index)=>地址;
+//添加一个新的Page
+函数 选项卡_添加页:Tab_AddPage(地址 pTab)=>地址;
+//删除一个Page
+函数 选项卡_删除页:Tab_DeletePage(地址 pTab,地址 page)=>整数32;
+//删除一个Page
+函数 选项卡_删除页索引:Tab_DeletePageIndex(地址 pTab,整数32 index)=>整数32;
+//删除所有Page
+函数 选项卡_删除所有页:Tab_DeleteAllPage(地址 pTab);   
+//设置每一个Tab在水平方向和垂直方向的边栏宽度(边栏宽度是指图标或文本到Tab边界的像素距离)
+函数 选项卡_设置选项卡边缘:Tab_SetTabMargin(地址 pTab,整数32 horz,整数32 vert);
+//对于按钮风格的Tab控件，取消任何按钮的压下状态
+函数 选项卡_重置按钮:Tab_ResetButtons(地址 pTab);
+//设置/获取Tab边缘到按钮文本或图像之间的距离
+函数 选项卡_设置填充:Tab_SetPadding(地址 pTab,整数32 dx,整数32 dy);
+//获取客户坐标p之下的那个Tab，若p之下不是Tab则返回NULL
+函数 选项卡_置为在选项卡上:Tab_IsOnTab(地址 pTab,地址 p)=>地址;
+
+函数 选项卡_销毁控件:Tab_DestroyControl(地址 pTab);
+函数 选项卡_获取类:Tab_GetClass(地址 pTab)=>地址;
+函数 选项卡_设置标题:Tab_SetCaption(地址 pTab,地址 string);
+函数 选项卡_获取:Tab_GetCaption(地址 pTab)=>地址;
+函数 选项卡_隐藏:Tab_Hide(地址 pTab);
+函数 选项卡_显示:Tab_Show(地址 pTab); 
+
+}
