@@ -1,0 +1,21 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAddMIMEFileTypesPS(Ë«×Ö,Ë«×Ö)
+¡ÒInetIsOffline(Ë«×Ö)
+¡ÒMIMEAssociationDialogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMIMEAssociationDialog  MIMEAssociationDialogA
+
+¡ÒMIMEAssociationDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetInetOffline(Ë«×Ö)
+¡ÒTranslateURLA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTranslateURL  TranslateURLA
+
+¡ÒTranslateURLW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLAssociationDialogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLAssociationDialog  URLAssociationDialogA
+
+¡ÒURLAssociationDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

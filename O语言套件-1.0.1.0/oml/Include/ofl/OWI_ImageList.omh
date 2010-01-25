@@ -1,0 +1,42 @@
+
+引用段
+{
+
+函数 图像列表_获取图像计数:OImageList_GetImageCount(地址 pImageList)=>整数32;   
+函数 图像列表_获取图像宽:OImageList_GetImageWidth(地址 pImageList)=>整数32;
+函数 图像列表_获取图像高:OImageList_GetImageHeight(地址 pImageList)=>整数32;   
+函数 图像列表_设置背景色:OImageList_SetBackColor(地址 pImageList,正数32 color);
+函数 图像列表_获取背景色:OImageList_GetBackColor(地址 pImageList)=>正数32; 
+函数 图像列表_获取句柄:OImageList_GetHandle(地址 pImageList)=>HIMAGELIST;
+
+//从位图文件或者可执行文件中装载位图																	 
+函数 图像列表_从文件增加图像:OImageList_AddImageFromFile(地址 pImageList,地址 image)=>整数32;
+函数 图像列表_从文件掩码增加图像:OImageList_AddImageFromFileMask(地址 pImageList,地址 image,地址 maskImage)=>整数32;
+函数 图像列表_从资源增加图像:OImageList_AddImageFromResource(地址 pImageList,地址 image,地址 maskImage)=>整数32;
+函数 图像列表_从资源掩码增加图像:OImageList_AddImageFromResourceMask(地址 pImageList,HMODULE module,地址 image,地址 maskImage)=>整数32;
+
+//从图标文件或者可执行文件中装载图标
+函数 图像列表_从文件增加图标:OImageList_AddIconFromFile(地址 pImageList,地址 icon)=>整数32;
+函数 图像列表_从资源名增加图标:OImageList_AddIconFromResourceName(地址 pImageList,地址 icon)=>整数32;
+函数 图像列表_从资源ID增加图标:OImageList_AddIconFromResourceID(地址 pImageList,整数32 icon)=>整数32;
+函数 图像列表_从模块资源名增加图标:OImageList_AddIconFromModuleResourceName(地址 pImageList,HMODULE module,地址 icon)=>整数32;
+函数 图像列表_从模块资源ID增加图标:OImageList_AddIconFromModuleResourceID(地址 pImageList,HMODULE module,整数32 icon)=>整数32;
+
+//从光标文件或者可执行文件中装载光标
+函数 图像列表_从文件增加光标:OImageList_AddCursorFromFile(地址 pImageList,地址 cursor)=>整数32;
+函数 图像列表_从资源名增加光标:OImageList_AddCursorFromResourceName(地址 pImageList,地址 cursor)=>整数32;
+函数 图像列表_从资源ID增加光标:OImageList_AddCursorFromResourceID(地址 pImageList,整数32 cursor)=>整数32;
+函数 图像列表_从模块资源名增加光标:OImageList_AddCursorFromModuleResourceName(地址 pImageList,HMODULE module,地址 cursor)=>整数32;
+函数 图像列表_从模块资源ID增加光标:OImageList_AddCursorFromModuleResourceID(地址 pImageList,HMODULE module,整数32 cursor)=>整数32;
+//在ImageList中追加一个图标(ImageList维持图标句柄的副本，如果这个图标是通过调用LoadIcon得到，则图标不必调用者主动释放)
+函数 图像列表_增加图标:OImageList_AddIcon(地址 pImageList,HICON icon)=>整数32;
+函数 图像列表_移除图像:OImageList_RemoveImage(地址 pImageList,整数32 index)=>整数32;
+函数 图像列表_移除全部:OImageList_RemoveAll(地址 pImageList)=>整数32;
+//提取位置为index的图标，用完之后，你需要调用DestroyIcon销毁它
+函数 图像列表_创建图标:OImageList_CreateIcon(地址 pImageList,整数32 index)=>HICON;
+//设置指定的图标为覆盖图标。例如，可以指定索引为45的图标为覆盖图标，函数返回一个编号，这个编号
+//在设置WinListView、WinTreeView的item覆盖图标时有用到
+函数 图像列表_设置覆盖:OImageList_SetOverlay(地址 pImageList,整数32 image)=>整数32;
+函数 图像列表_获取上次覆盖:OImageList_GetLastOverlay(地址 pImageList)=>整数32;
+
+}

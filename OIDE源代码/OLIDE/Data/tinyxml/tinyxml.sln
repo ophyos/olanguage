@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyXmlTest", "tinyXmlTest.vcproj", "{38DED1D4-5416-4C94-94AB-A93BCA05B9F3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3BE243E3-FEBA-4ACB-9607-F3217634E9FF} = {3BE243E3-FEBA-4ACB-9607-F3217634E9FF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyxml", "tinyxml_lib.vcproj", "{3BE243E3-FEBA-4ACB-9607-F3217634E9FF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{38DED1D4-5416-4C94-94AB-A93BCA05B9F3}.Debug.ActiveCfg = Debug|Win32
+		{38DED1D4-5416-4C94-94AB-A93BCA05B9F3}.Debug.Build.0 = Debug|Win32
+		{38DED1D4-5416-4C94-94AB-A93BCA05B9F3}.Release.ActiveCfg = Release|Win32
+		{38DED1D4-5416-4C94-94AB-A93BCA05B9F3}.Release.Build.0 = Release|Win32
+		{3BE243E3-FEBA-4ACB-9607-F3217634E9FF}.Debug.ActiveCfg = Debug|Win32
+		{3BE243E3-FEBA-4ACB-9607-F3217634E9FF}.Debug.Build.0 = Debug|Win32
+		{3BE243E3-FEBA-4ACB-9607-F3217634E9FF}.Release.ActiveCfg = Release|Win32
+		{3BE243E3-FEBA-4ACB-9607-F3217634E9FF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

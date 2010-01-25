@@ -1,0 +1,80 @@
+
+.包含文<*oasm32.oah>
+.包含文<*windows.oah>
+.包含文<*user32.oah>
+.包含文<*kernel32.oah>
+.包含文<..\资源\资源.oah>
+
+.引用库<*user32.lib>
+.引用库<*kernel32.lib>
+
+.只读段
+{
+    字节 信息标题.. = "信息提示"
+    字节 信息内容.. = "信息提示按钮按下"
+}
+
+∥预留段
+.预留段
+{
+    双字 h实例句柄
+}
+
+∥代码段开始
+.代码段
+{
+
+∥开始函数定义
+入口 主函数()
+{
+∥这里添加代码
+
+  GetModuleHandle(NULL)
+  h实例句柄 = 累加32
+  DialogBoxParam(h实例句柄,DLG_MAIN,NULL,对话框窗口过程,NULL)
+  ExitProcess(NULL)
+}
+
+函数 对话框窗口过程(双字 h窗口句柄,双字 wMsg,双字 wParam,双字 lParam)
+{ <基数32,的址32,源址32> ∥使用保护寄存器，将会在函数开始对这些寄存器压栈，在函数退出之前出栈
+
+  累加32 = wMsg
+  ∥如果
+  如果(累加32 == WM_CLOSE)
+  {
+     EndDialog(h窗口句柄,NULL)
+  }
+  ∥否则如果	
+  否则如果(累加32 == WM_INITDIALOG)
+  {
+	LoadIcon(h实例句柄,ICO_MAIN)
+     SendMessage(h窗口句柄,WM_SETICON,ICON_BIG,累加32)
+  }
+  ∥否则如果
+  否则如果(累加32 == WM_COMMAND)
+  {
+	累加32 = wParam
+	如果(累加16 == ID_BUTTON_EXIT)
+     {
+	 EndDialog(h窗口句柄,NULL)
+	}
+	否则如果(累加16 == 10)
+	{
+	    //MessageBox(0,&信息内容,&信息标题,MB_OK)
+	    压栈 MB_OK
+	    压栈 &信息标题
+	    压栈 &信息内容
+	    压栈 0
+	    调用 MessageBox
+     }
+   }
+   ∥否则
+   否则
+   {
+	返回 FALSE
+   }
+
+   累加32 = TRUE
+}
+
+} ∥代码段结束

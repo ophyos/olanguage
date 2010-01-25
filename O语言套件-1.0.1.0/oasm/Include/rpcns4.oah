@@ -1,0 +1,113 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒI_GetDefaultEntrySyntax()
+¡ÒI_RpcNsGetBuffer(Ë«×Ö)
+¡ÒI_RpcNsNegotiateTransferSyntax(Ë«×Ö)
+¡ÒI_RpcNsRaiseException(Ë«×Ö,Ë«×Ö)
+¡ÒI_RpcNsSendReceive(Ë«×Ö,Ë«×Ö)
+¡ÒI_RpcReBindBuffer(Ë«×Ö)
+¡ÒRpcIfIdVectorFree(Ë«×Ö)
+¡ÒRpcNsBindingExportA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsBindingExport  RpcNsBindingExportA
+
+¡ÒRpcNsBindingExportPnPA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsBindingExportPnP  RpcNsBindingExportPnPA
+
+¡ÒRpcNsBindingExportPnPW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingExportW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingImportBeginA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsBindingImportBegin  RpcNsBindingImportBeginA
+
+¡ÒRpcNsBindingImportBeginW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingImportDone(Ë«×Ö)
+¡ÒRpcNsBindingImportNext(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingLookupBeginA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsBindingLookupBegin  RpcNsBindingLookupBeginA
+
+¡ÒRpcNsBindingLookupBeginW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingLookupDone(Ë«×Ö)
+¡ÒRpcNsBindingLookupNext(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingSelect(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingUnexportA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsBindingUnexport  RpcNsBindingUnexportA
+
+¡ÒRpcNsBindingUnexportPnPA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsBindingUnexportPnP  RpcNsBindingUnexportPnPA
+
+¡ÒRpcNsBindingUnexportPnPW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsBindingUnexportW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsEntryExpandNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsEntryExpandName  RpcNsEntryExpandNameA
+
+¡ÒRpcNsEntryExpandNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsEntryObjectInqBeginA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsEntryObjectInqBegin  RpcNsEntryObjectInqBeginA
+
+¡ÒRpcNsEntryObjectInqBeginW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsEntryObjectInqDone(Ë«×Ö)
+¡ÒRpcNsEntryObjectInqNext(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsGroupDeleteA(Ë«×Ö,Ë«×Ö)
+¡ßRpcNsGroupDelete  RpcNsGroupDeleteA
+
+¡ÒRpcNsGroupDeleteW(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsGroupMbrAddA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsGroupMbrAdd  RpcNsGroupMbrAddA
+
+¡ÒRpcNsGroupMbrAddW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsGroupMbrInqBeginA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsGroupMbrInqBegin  RpcNsGroupMbrInqBeginA
+
+¡ÒRpcNsGroupMbrInqBeginW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsGroupMbrInqDone(Ë«×Ö)
+¡ÒRpcNsGroupMbrInqNextA(Ë«×Ö,Ë«×Ö)
+¡ßRpcNsGroupMbrInqNext  RpcNsGroupMbrInqNextA
+
+¡ÒRpcNsGroupMbrInqNextW(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsGroupMbrRemoveA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsGroupMbrRemove  RpcNsGroupMbrRemoveA
+
+¡ÒRpcNsGroupMbrRemoveW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsMgmtBindingUnexportA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsMgmtBindingUnexport  RpcNsMgmtBindingUnexportA
+
+¡ÒRpcNsMgmtBindingUnexportW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsMgmtEntryCreateA(Ë«×Ö,Ë«×Ö)
+¡ßRpcNsMgmtEntryCreate  RpcNsMgmtEntryCreateA
+
+¡ÒRpcNsMgmtEntryCreateW(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsMgmtEntryDeleteA(Ë«×Ö,Ë«×Ö)
+¡ßRpcNsMgmtEntryDelete  RpcNsMgmtEntryDeleteA
+
+¡ÒRpcNsMgmtEntryDeleteW(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsMgmtEntryInqIfIdsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsMgmtEntryInqIfIds  RpcNsMgmtEntryInqIfIdsA
+
+¡ÒRpcNsMgmtEntryInqIfIdsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsMgmtHandleSetExpAge(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsMgmtInqExpAge(Ë«×Ö)
+¡ÒRpcNsMgmtSetExpAge(Ë«×Ö)
+¡ÒRpcNsProfileDeleteA(Ë«×Ö,Ë«×Ö)
+¡ßRpcNsProfileDelete  RpcNsProfileDeleteA
+
+¡ÒRpcNsProfileDeleteW(Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsProfileEltAddA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsProfileEltAdd  RpcNsProfileEltAddA
+
+¡ÒRpcNsProfileEltAddW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsProfileEltInqBeginA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsProfileEltInqBegin  RpcNsProfileEltInqBeginA
+
+¡ÒRpcNsProfileEltInqBeginW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsProfileEltInqDone(Ë«×Ö)
+¡ÒRpcNsProfileEltInqNextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsProfileEltInqNext  RpcNsProfileEltInqNextA
+
+¡ÒRpcNsProfileEltInqNextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRpcNsProfileEltRemoveA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRpcNsProfileEltRemove  RpcNsProfileEltRemoveA
+
+¡ÒRpcNsProfileEltRemoveW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

@@ -1,0 +1,527 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒDllGetVersion(Ë«×Ö)
+¡ÒMigrate10CachedPackagesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMigrate10CachedPackages  Migrate10CachedPackagesA
+
+¡ÒMigrate10CachedPackagesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiAdvertiseProductA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiAdvertiseProduct  MsiAdvertiseProductA
+
+¡ÒMsiAdvertiseProductExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiAdvertiseProductEx  MsiAdvertiseProductExA
+
+¡ÒMsiAdvertiseProductExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiAdvertiseProductW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiAdvertiseScriptA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiAdvertiseScript  MsiAdvertiseScriptA
+
+¡ÒMsiAdvertiseScriptW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiApplyMultiplePatchesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiApplyMultiplePatches  MsiApplyMultiplePatchesA
+
+¡ÒMsiApplyMultiplePatchesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiApplyPatchA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiApplyPatch  MsiApplyPatchA
+
+¡ÒMsiApplyPatchW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiCloseAllHandles()
+¡ÒMsiCloseHandle(Ë«×Ö)
+¡ÒMsiCollectUserInfoA(Ë«×Ö)
+¡ßMsiCollectUserInfo  MsiCollectUserInfoA
+
+¡ÒMsiCollectUserInfoW(Ë«×Ö)
+¡ÒMsiConfigureFeatureA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiConfigureFeature  MsiConfigureFeatureA
+
+¡ÒMsiConfigureFeatureFromDescriptorA(Ë«×Ö,Ë«×Ö)
+¡ßMsiConfigureFeatureFromDescriptor  MsiConfigureFeatureFromDescriptorA
+
+¡ÒMsiConfigureFeatureFromDescriptorW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiConfigureFeatureW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiConfigureProductA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiConfigureProduct  MsiConfigureProductA
+
+¡ÒMsiConfigureProductExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiConfigureProductEx  MsiConfigureProductExA
+
+¡ÒMsiConfigureProductExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiConfigureProductW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiCreateAndVerifyInstallerDirectory(Ë«×Ö)
+¡ÒMsiCreateRecord(Ë«×Ö)
+¡ÒMsiCreateTransformSummaryInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiCreateTransformSummaryInfo  MsiCreateTransformSummaryInfoA
+
+¡ÒMsiCreateTransformSummaryInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseApplyTransformA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseApplyTransform  MsiDatabaseApplyTransformA
+
+¡ÒMsiDatabaseApplyTransformW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseCommit(Ë«×Ö)
+¡ÒMsiDatabaseExportA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseExport  MsiDatabaseExportA
+
+¡ÒMsiDatabaseExportW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseGenerateTransformA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseGenerateTransform  MsiDatabaseGenerateTransformA
+
+¡ÒMsiDatabaseGenerateTransformW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseGetPrimaryKeysA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseGetPrimaryKeys  MsiDatabaseGetPrimaryKeysA
+
+¡ÒMsiDatabaseGetPrimaryKeysW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseImportA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseImport  MsiDatabaseImportA
+
+¡ÒMsiDatabaseImportW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseIsTablePersistentA(Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseIsTablePersistent  MsiDatabaseIsTablePersistentA
+
+¡ÒMsiDatabaseIsTablePersistentW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseMergeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseMerge  MsiDatabaseMergeA
+
+¡ÒMsiDatabaseMergeW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDatabaseOpenViewA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDatabaseOpenView  MsiDatabaseOpenViewA
+
+¡ÒMsiDatabaseOpenViewW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDecomposeDescriptorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDecomposeDescriptor  MsiDecomposeDescriptorA
+
+¡ÒMsiDecomposeDescriptorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDeleteUserDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDeleteUserData  MsiDeleteUserDataA
+
+¡ÒMsiDeleteUserDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDetermineApplicablePatchesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDetermineApplicablePatches  MsiDetermineApplicablePatchesA
+
+¡ÒMsiDetermineApplicablePatchesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDeterminePatchSequenceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiDeterminePatchSequence  MsiDeterminePatchSequenceA
+
+¡ÒMsiDeterminePatchSequenceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiDoActionA(Ë«×Ö,Ë«×Ö)
+¡ßMsiDoAction  MsiDoActionA
+
+¡ÒMsiDoActionW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnableLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnableLog  MsiEnableLogA
+
+¡ÒMsiEnableLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnableUIPreview(Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumClientsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumClients  MsiEnumClientsA
+
+¡ÒMsiEnumClientsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumComponentCostsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumComponentCosts  MsiEnumComponentCostsA
+
+¡ÒMsiEnumComponentCostsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumComponentQualifiersA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumComponentQualifiers  MsiEnumComponentQualifiersA
+
+¡ÒMsiEnumComponentQualifiersW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumComponentsA(Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumComponents  MsiEnumComponentsA
+
+¡ÒMsiEnumComponentsW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumFeaturesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumFeatures  MsiEnumFeaturesA
+
+¡ÒMsiEnumFeaturesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumPatchesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumPatches  MsiEnumPatchesA
+
+¡ÒMsiEnumPatchesExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumPatchesEx  MsiEnumPatchesExA
+
+¡ÒMsiEnumPatchesExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumPatchesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumProductsA(Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumProducts  MsiEnumProductsA
+
+¡ÒMsiEnumProductsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumProductsEx  MsiEnumProductsExA
+
+¡ÒMsiEnumProductsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumProductsW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiEnumRelatedProductsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiEnumRelatedProducts  MsiEnumRelatedProductsA
+
+¡ÒMsiEnumRelatedProductsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiEvaluateConditionA(Ë«×Ö,Ë«×Ö)
+¡ßMsiEvaluateCondition  MsiEvaluateConditionA
+
+¡ÒMsiEvaluateConditionW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiExtractPatchXMLDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiExtractPatchXMLData  MsiExtractPatchXMLDataA
+
+¡ÒMsiExtractPatchXMLDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiFormatRecordA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiFormatRecord  MsiFormatRecordA
+
+¡ÒMsiFormatRecordW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetActiveDatabase(Ë«×Ö)
+¡ÒMsiGetComponentPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetComponentPath  MsiGetComponentPathA
+
+¡ÒMsiGetComponentPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetComponentStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetComponentState  MsiGetComponentStateA
+
+¡ÒMsiGetComponentStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetDatabaseState(Ë«×Ö)
+¡ÒMsiGetFeatureCostA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFeatureCost  MsiGetFeatureCostA
+
+¡ÒMsiGetFeatureCostW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFeatureInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFeatureInfo  MsiGetFeatureInfoA
+
+¡ÒMsiGetFeatureInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFeatureStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFeatureState  MsiGetFeatureStateA
+
+¡ÒMsiGetFeatureStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFeatureUsageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFeatureUsage  MsiGetFeatureUsageA
+
+¡ÒMsiGetFeatureUsageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFeatureValidStatesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFeatureValidStates  MsiGetFeatureValidStatesA
+
+¡ÒMsiGetFeatureValidStatesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFileHashA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFileHash  MsiGetFileHashA
+
+¡ÒMsiGetFileHashW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFileSignatureInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFileSignatureInformation  MsiGetFileSignatureInformationA
+
+¡ÒMsiGetFileSignatureInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetFileVersionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetFileVersion  MsiGetFileVersionA
+
+¡ÒMsiGetFileVersionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetLanguage(Ë«×Ö)
+¡ÒMsiGetLastErrorRecord()
+¡ÒMsiGetMode(Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetPatchInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetPatchInfo  MsiGetPatchInfoA
+
+¡ÒMsiGetPatchInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetPatchInfoEx  MsiGetPatchInfoExA
+
+¡ÒMsiGetPatchInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetPatchInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetProductCodeA(Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProductCode  MsiGetProductCodeA
+
+¡ÒMsiGetProductCodeFromPackageCodeA(Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProductCodeFromPackageCode  MsiGetProductCodeFromPackageCodeA
+
+¡ÒMsiGetProductCodeFromPackageCodeW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetProductCodeW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetProductInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProductInfo  MsiGetProductInfoA
+
+¡ÒMsiGetProductInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProductInfoEx  MsiGetProductInfoExA
+
+¡ÒMsiGetProductInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetProductInfoFromScriptA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProductInfoFromScript  MsiGetProductInfoFromScriptA
+
+¡ÒMsiGetProductInfoFromScriptW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetProductInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetProductPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProductProperty  MsiGetProductPropertyA
+
+¡ÒMsiGetProductPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetProperty  MsiGetPropertyA
+
+¡ÒMsiGetPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetShortcutTargetA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetShortcutTarget  MsiGetShortcutTargetA
+
+¡ÒMsiGetShortcutTargetW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetSourcePathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetSourcePath  MsiGetSourcePathA
+
+¡ÒMsiGetSourcePathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetSummaryInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetSummaryInformation  MsiGetSummaryInformationA
+
+¡ÒMsiGetSummaryInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetTargetPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetTargetPath  MsiGetTargetPathA
+
+¡ÒMsiGetTargetPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiGetUserInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiGetUserInfo  MsiGetUserInfoA
+
+¡ÒMsiGetUserInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiInstallMissingComponentA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiInstallMissingComponent  MsiInstallMissingComponentA
+
+¡ÒMsiInstallMissingComponentW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiInstallMissingFileA(Ë«×Ö,Ë«×Ö)
+¡ßMsiInstallMissingFile  MsiInstallMissingFileA
+
+¡ÒMsiInstallMissingFileW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiInstallProductA(Ë«×Ö,Ë«×Ö)
+¡ßMsiInstallProduct  MsiInstallProductA
+
+¡ÒMsiInstallProductW(Ë«×Ö,Ë«×Ö)
+¡Ò:C MsiInvalidateFeatureCache(Ë«×Ö, ..)
+¡ÒMsiIsProductElevatedA(Ë«×Ö,Ë«×Ö)
+¡ßMsiIsProductElevated  MsiIsProductElevatedA
+
+¡ÒMsiIsProductElevatedW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiLoadStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiLoadString  MsiLoadStringA
+
+¡ÒMsiLoadStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiLocateComponentA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiLocateComponent  MsiLocateComponentA
+
+¡ÒMsiLocateComponentW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiMessageBoxA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiMessageBox  MsiMessageBoxA
+
+¡ÒMsiMessageBoxExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiMessageBoxEx  MsiMessageBoxExA
+
+¡ÒMsiMessageBoxExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiMessageBoxW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiNotifySidChangeA(Ë«×Ö,Ë«×Ö)
+¡ßMsiNotifySidChange  MsiNotifySidChangeA
+
+¡ÒMsiNotifySidChangeW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiOpenDatabaseA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiOpenDatabase  MsiOpenDatabaseA
+
+¡ÒMsiOpenDatabaseW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiOpenPackageA(Ë«×Ö,Ë«×Ö)
+¡ßMsiOpenPackage  MsiOpenPackageA
+
+¡ÒMsiOpenPackageExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiOpenPackageEx  MsiOpenPackageExA
+
+¡ÒMsiOpenPackageExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiOpenPackageW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiOpenProductA(Ë«×Ö,Ë«×Ö)
+¡ßMsiOpenProduct  MsiOpenProductA
+
+¡ÒMsiOpenProductW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiPreviewBillboardA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiPreviewBillboard  MsiPreviewBillboardA
+
+¡ÒMsiPreviewBillboardW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiPreviewDialogA(Ë«×Ö,Ë«×Ö)
+¡ßMsiPreviewDialog  MsiPreviewDialogA
+
+¡ÒMsiPreviewDialogW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiProcessAdvertiseScriptA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiProcessAdvertiseScript  MsiProcessAdvertiseScriptA
+
+¡ÒMsiProcessAdvertiseScriptW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiProcessMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiProvideAssemblyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiProvideAssembly  MsiProvideAssemblyA
+
+¡ÒMsiProvideAssemblyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiProvideComponentA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiProvideComponent  MsiProvideComponentA
+
+¡ÒMsiProvideComponentFromDescriptorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiProvideComponentFromDescriptor  MsiProvideComponentFromDescriptorA
+
+¡ÒMsiProvideComponentFromDescriptorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiProvideComponentW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiProvideQualifiedComponentA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiProvideQualifiedComponent  MsiProvideQualifiedComponentA
+
+¡ÒMsiProvideQualifiedComponentExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiProvideQualifiedComponentEx  MsiProvideQualifiedComponentExA
+
+¡ÒMsiProvideQualifiedComponentExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiProvideQualifiedComponentW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiQueryComponentStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiQueryComponentState  MsiQueryComponentStateA
+
+¡ÒMsiQueryComponentStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiQueryFeatureStateA(Ë«×Ö,Ë«×Ö)
+¡ßMsiQueryFeatureState  MsiQueryFeatureStateA
+
+¡ÒMsiQueryFeatureStateExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiQueryFeatureStateEx  MsiQueryFeatureStateExA
+
+¡ÒMsiQueryFeatureStateExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiQueryFeatureStateFromDescriptorA(Ë«×Ö)
+¡ßMsiQueryFeatureStateFromDescriptor  MsiQueryFeatureStateFromDescriptorA
+
+¡ÒMsiQueryFeatureStateFromDescriptorW(Ë«×Ö)
+¡ÒMsiQueryFeatureStateW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiQueryProductStateA(Ë«×Ö)
+¡ßMsiQueryProductState  MsiQueryProductStateA
+
+¡ÒMsiQueryProductStateW(Ë«×Ö)
+¡ÒMsiRecordClearData(Ë«×Ö)
+¡ÒMsiRecordDataSize(Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordGetFieldCount(Ë«×Ö)
+¡ÒMsiRecordGetInteger(Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordGetStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiRecordGetString  MsiRecordGetStringA
+
+¡ÒMsiRecordGetStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordIsNull(Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordReadStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordSetInteger(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordSetStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiRecordSetStream  MsiRecordSetStreamA
+
+¡ÒMsiRecordSetStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiRecordSetStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiRecordSetString  MsiRecordSetStringA
+
+¡ÒMsiRecordSetStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiReinstallFeatureA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiReinstallFeature  MsiReinstallFeatureA
+
+¡ÒMsiReinstallFeatureFromDescriptorA(Ë«×Ö,Ë«×Ö)
+¡ßMsiReinstallFeatureFromDescriptor  MsiReinstallFeatureFromDescriptorA
+
+¡ÒMsiReinstallFeatureFromDescriptorW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiReinstallFeatureW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiReinstallProductA(Ë«×Ö,Ë«×Ö)
+¡ßMsiReinstallProduct  MsiReinstallProductA
+
+¡ÒMsiReinstallProductW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiRemovePatchesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiRemovePatches  MsiRemovePatchesA
+
+¡ÒMsiRemovePatchesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSequenceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSequence  MsiSequenceA
+
+¡ÒMsiSequenceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetComponentStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSetComponentState  MsiSetComponentStateA
+
+¡ÒMsiSetComponentStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetExternalUIA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSetExternalUI  MsiSetExternalUIA
+
+¡ÒMsiSetExternalUIRecord(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetExternalUIW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetFeatureAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSetFeatureAttributes  MsiSetFeatureAttributesA
+
+¡ÒMsiSetFeatureAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetFeatureStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSetFeatureState  MsiSetFeatureStateA
+
+¡ÒMsiSetFeatureStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetInstallLevel(Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetInternalUI(Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetMode(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSetProperty  MsiSetPropertyA
+
+¡ÒMsiSetPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSetTargetPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSetTargetPath  MsiSetTargetPathA
+
+¡ÒMsiSetTargetPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListAddMediaDiskA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListAddMediaDisk  MsiSourceListAddMediaDiskA
+
+¡ÒMsiSourceListAddMediaDiskW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListAddSourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListAddSource  MsiSourceListAddSourceA
+
+¡ÒMsiSourceListAddSourceExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListAddSourceEx  MsiSourceListAddSourceExA
+
+¡ÒMsiSourceListAddSourceExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListAddSourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListClearAllA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListClearAll  MsiSourceListClearAllA
+
+¡ÒMsiSourceListClearAllExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListClearAllEx  MsiSourceListClearAllExA
+
+¡ÒMsiSourceListClearAllExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListClearAllW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListClearMediaDiskA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListClearMediaDisk  MsiSourceListClearMediaDiskA
+
+¡ÒMsiSourceListClearMediaDiskW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListClearSourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListClearSource  MsiSourceListClearSourceA
+
+¡ÒMsiSourceListClearSourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListEnumMediaDisksA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListEnumMediaDisks  MsiSourceListEnumMediaDisksA
+
+¡ÒMsiSourceListEnumMediaDisksW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListEnumSourcesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListEnumSources  MsiSourceListEnumSourcesA
+
+¡ÒMsiSourceListEnumSourcesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListForceResolutionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListForceResolution  MsiSourceListForceResolutionA
+
+¡ÒMsiSourceListForceResolutionExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListForceResolutionEx  MsiSourceListForceResolutionExA
+
+¡ÒMsiSourceListForceResolutionExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListForceResolutionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListGetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListGetInfo  MsiSourceListGetInfoA
+
+¡ÒMsiSourceListGetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSourceListSetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSourceListSetInfo  MsiSourceListSetInfoA
+
+¡ÒMsiSourceListSetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSummaryInfoGetPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSummaryInfoGetProperty  MsiSummaryInfoGetPropertyA
+
+¡ÒMsiSummaryInfoGetPropertyCount(Ë«×Ö,Ë«×Ö)
+¡ÒMsiSummaryInfoGetPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiSummaryInfoPersist(Ë«×Ö)
+¡ÒMsiSummaryInfoSetPropertyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiSummaryInfoSetProperty  MsiSummaryInfoSetPropertyA
+
+¡ÒMsiSummaryInfoSetPropertyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiUseFeatureA(Ë«×Ö,Ë«×Ö)
+¡ßMsiUseFeature  MsiUseFeatureA
+
+¡ÒMsiUseFeatureExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiUseFeatureEx  MsiUseFeatureExA
+
+¡ÒMsiUseFeatureExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiUseFeatureW(Ë«×Ö,Ë«×Ö)
+¡ÒMsiVerifyDiskSpace(Ë«×Ö)
+¡ÒMsiVerifyPackageA(Ë«×Ö)
+¡ßMsiVerifyPackage  MsiVerifyPackageA
+
+¡ÒMsiVerifyPackageW(Ë«×Ö)
+¡ÒMsiViewClose(Ë«×Ö)
+¡ÒMsiViewExecute(Ë«×Ö,Ë«×Ö)
+¡ÒMsiViewFetch(Ë«×Ö,Ë«×Ö)
+¡ÒMsiViewGetColumnInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiViewGetErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMsiViewGetError  MsiViewGetErrorA
+
+¡ÒMsiViewGetErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsiViewModify(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

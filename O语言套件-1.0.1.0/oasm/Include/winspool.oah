@@ -1,0 +1,328 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒADVANCEDSETUPDIALOG(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAbortPrinter(Ë«×Ö)
+¡ÒAddDriverCatalog(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddFormA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddForm  AddFormA
+
+¡ÒAddFormW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddJobA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddJob  AddJobA
+
+¡ÒAddJobW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddMonitorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddMonitor  AddMonitorA
+
+¡ÒAddMonitorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPerMachineConnectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPerMachineConnection  AddPerMachineConnectionA
+
+¡ÒAddPerMachineConnectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPortA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPort  AddPortA
+
+¡ÒAddPortExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPortEx  AddPortExA
+
+¡ÒAddPortExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPortW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPrintProcessorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPrintProcessor  AddPrintProcessorA
+
+¡ÒAddPrintProcessorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPrintProvidorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPrintProvidor  AddPrintProvidorA
+
+¡ÒAddPrintProvidorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPrinterA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPrinter  AddPrinterA
+
+¡ÒAddPrinterConnectionA(Ë«×Ö)
+¡ßAddPrinterConnection  AddPrinterConnectionA
+
+¡ÒAddPrinterConnectionW(Ë«×Ö)
+¡ÒAddPrinterDriverA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPrinterDriver  AddPrinterDriverA
+
+¡ÒAddPrinterDriverExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddPrinterDriverEx  AddPrinterDriverExA
+
+¡ÒAddPrinterDriverExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPrinterDriverW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddPrinterW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAdvancedDocumentPropertiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAdvancedDocumentProperties  AdvancedDocumentPropertiesA
+
+¡ÒAdvancedDocumentPropertiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAdvancedSetupDialog(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCallCommonPropertySheetUI(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒClosePrinter(Ë«×Ö)
+¡ÒCloseSpoolFileHandle(Ë«×Ö,Ë«×Ö)
+¡ÒClusterSplClose(Ë«×Ö)
+¡ÒClusterSplIsAlive(Ë«×Ö)
+¡ÒClusterSplOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCommitSpoolData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConfigurePortA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConfigurePort  ConfigurePortA
+
+¡ÒConfigurePortW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConnectToPrinterDlg(Ë«×Ö,Ë«×Ö)
+¡ÒConvertAnsiDevModeToUnicodeDevmode(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertUnicodeDevModeToAnsiDevmode(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePrinterIC(Ë«×Ö,Ë«×Ö)
+¡ÒDEVICECAPABILITIES(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDEVICEMODE(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteFormA(Ë«×Ö,Ë«×Ö)
+¡ßDeleteForm  DeleteFormA
+
+¡ÒDeleteFormW(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteMonitorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeleteMonitor  DeleteMonitorA
+
+¡ÒDeleteMonitorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePerMachineConnectionA(Ë«×Ö,Ë«×Ö)
+¡ßDeletePerMachineConnection  DeletePerMachineConnectionA
+
+¡ÒDeletePerMachineConnectionW(Ë«×Ö,Ë«×Ö)
+¡ÒDeletePortA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeletePort  DeletePortA
+
+¡ÒDeletePortW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrintProcessorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeletePrintProcessor  DeletePrintProcessorA
+
+¡ÒDeletePrintProcessorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrintProvidorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeletePrintProvidor  DeletePrintProvidorA
+
+¡ÒDeletePrintProvidorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrinter(Ë«×Ö)
+¡ÒDeletePrinterConnectionA(Ë«×Ö)
+¡ßDeletePrinterConnection  DeletePrinterConnectionA
+
+¡ÒDeletePrinterConnectionW(Ë«×Ö)
+¡ÒDeletePrinterDataA(Ë«×Ö,Ë«×Ö)
+¡ßDeletePrinterData  DeletePrinterDataA
+
+¡ÒDeletePrinterDataExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeletePrinterDataEx  DeletePrinterDataExA
+
+¡ÒDeletePrinterDataExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrinterDataW(Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrinterDriverA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeletePrinterDriver  DeletePrinterDriverA
+
+¡ÒDeletePrinterDriverExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeletePrinterDriverEx  DeletePrinterDriverExA
+
+¡ÒDeletePrinterDriverExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrinterDriverW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeletePrinterIC(Ë«×Ö)
+¡ÒDeletePrinterKeyA(Ë«×Ö,Ë«×Ö)
+¡ßDeletePrinterKey  DeletePrinterKeyA
+
+¡ÒDeletePrinterKeyW(Ë«×Ö,Ë«×Ö)
+¡ÒDevQueryPrint(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDevQueryPrintEx(Ë«×Ö)
+¡ÒDeviceCapabilitiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDeviceCapabilities  DeviceCapabilitiesA
+
+¡ÒDeviceCapabilitiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeviceMode(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDevicePropertySheets(Ë«×Ö,Ë«×Ö)
+¡ÒDocumentEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDocumentPropertiesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDocumentProperties  DocumentPropertiesA
+
+¡ÒDocumentPropertiesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDocumentPropertySheets(Ë«×Ö,Ë«×Ö)
+¡ÒEXTDEVICEMODE(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEndDocPrinter(Ë«×Ö)
+¡ÒEndPagePrinter(Ë«×Ö)
+¡ÒEnumFormsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumForms  EnumFormsA
+
+¡ÒEnumFormsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumJobsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumJobs  EnumJobsA
+
+¡ÒEnumJobsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumMonitorsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumMonitors  EnumMonitorsA
+
+¡ÒEnumMonitorsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPerMachineConnectionsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPerMachineConnections  EnumPerMachineConnectionsA
+
+¡ÒEnumPerMachineConnectionsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPortsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPorts  EnumPortsA
+
+¡ÒEnumPortsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrintProcessorDatatypesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrintProcessorDatatypes  EnumPrintProcessorDatatypesA
+
+¡ÒEnumPrintProcessorDatatypesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrintProcessorsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrintProcessors  EnumPrintProcessorsA
+
+¡ÒEnumPrintProcessorsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrinterDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrinterData  EnumPrinterDataA
+
+¡ÒEnumPrinterDataExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrinterDataEx  EnumPrinterDataExA
+
+¡ÒEnumPrinterDataExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrinterDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrinterDriversA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrinterDrivers  EnumPrinterDriversA
+
+¡ÒEnumPrinterDriversW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrinterKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrinterKey  EnumPrinterKeyA
+
+¡ÒEnumPrinterKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrinterPropertySheets(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPrintersA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPrinters  EnumPrintersA
+
+¡ÒEnumPrintersW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtDeviceMode(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExternalConnectToLd64In32Server(Ë«×Ö)
+¡ÒFindClosePrinterChangeNotification(Ë«×Ö)
+¡ÒFindFirstPrinterChangeNotification(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindNextPrinterChangeNotification(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFlushPrinter(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒForceUnloadDriver(Ë«×Ö)
+¡ÒFreePrinterNotifyInfo(Ë«×Ö)
+¡ÒGetDefaultPrinterA(Ë«×Ö,Ë«×Ö)
+¡ßGetDefaultPrinter  GetDefaultPrinterA
+
+¡ÒGetDefaultPrinterW(Ë«×Ö,Ë«×Ö)
+¡ÒGetFormA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetForm  GetFormA
+
+¡ÒGetFormW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetJobA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetJob  GetJobA
+
+¡ÒGetJobW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrintProcessorDirectoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrintProcessorDirectory  GetPrintProcessorDirectoryA
+
+¡ÒGetPrintProcessorDirectoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrinterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrinter  GetPrinterA
+
+¡ÒGetPrinterDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrinterData  GetPrinterDataA
+
+¡ÒGetPrinterDataExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrinterDataEx  GetPrinterDataExA
+
+¡ÒGetPrinterDataExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrinterDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrinterDriverA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrinterDriver  GetPrinterDriverA
+
+¡ÒGetPrinterDriverDirectoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetPrinterDriverDirectory  GetPrinterDriverDirectoryA
+
+¡ÒGetPrinterDriverDirectoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrinterDriverW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrinterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSpoolFileHandle(Ë«×Ö)
+¡ÒIsValidDevmodeA(Ë«×Ö,Ë«×Ö)
+¡ßIsValidDevmode  IsValidDevmodeA
+
+¡ÒIsValidDevmodeW(Ë«×Ö,Ë«×Ö)
+¡ÒLoadPrinterDriver(Ë«×Ö)
+¡ÒOpenPrinterA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenPrinter  OpenPrinterA
+
+¡ÒOpenPrinterW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPlayGdiScriptOnPrinterIC(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUICreateInstance(Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIDocumentDefaults(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIDocumentPropertiesWrap(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIPrinterPropPages(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIPrinterSetup(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIQueueCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIServerPropPages(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintUIWebPnpEntry(Ë«×Ö)
+¡ÒPrintUIWebPnpPostEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrinterMessageBoxA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPrinterMessageBox  PrinterMessageBoxA
+
+¡ÒPrinterMessageBoxW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrinterProperties(Ë«×Ö,Ë«×Ö)
+¡ÒPublishPrinterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPublishPrinter  PublishPrinterA
+
+¡ÒPublishPrinterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryColorProfile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryRemoteFonts(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQuerySpoolMode(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadPrinter(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRefCntLoadDriver(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRefCntUnloadDriver(Ë«×Ö,Ë«×Ö)
+¡ÒResetPrinterA(Ë«×Ö,Ë«×Ö)
+¡ßResetPrinter  ResetPrinterA
+
+¡ÒResetPrinterW(Ë«×Ö,Ë«×Ö)
+¡ÒRouterFreeBidiResponseContainer(Ë«×Ö)
+¡ÒScheduleJob(Ë«×Ö,Ë«×Ö)
+¡ÒSeekPrinter(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSendRecvBidiData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetAllocFailCount(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetDefaultPrinterA(Ë«×Ö)
+¡ßSetDefaultPrinter  SetDefaultPrinterA
+
+¡ÒSetDefaultPrinterW(Ë«×Ö)
+¡ÒSetFormA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetForm  SetFormA
+
+¡ÒSetFormW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetJobA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetJob  SetJobA
+
+¡ÒSetJobW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPortA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetPort  SetPortA
+
+¡ÒSetPortW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPrinterA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetPrinter  SetPrinterA
+
+¡ÒSetPrinterDataA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetPrinterData  SetPrinterDataA
+
+¡ÒSetPrinterDataExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetPrinterDataEx  SetPrinterDataExA
+
+¡ÒSetPrinterDataExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPrinterDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPrinterW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSplDriverUnloadComplete(Ë«×Ö)
+¡ÒSplReadPrinter(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSpoolerDevQueryPrintW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSpoolerInit()
+¡ÒSpoolerPrinterEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStartDocDlgA(Ë«×Ö,Ë«×Ö)
+¡ßStartDocDlg  StartDocDlgA
+
+¡ÒStartDocDlgW(Ë«×Ö,Ë«×Ö)
+¡ÒStartDocPrinterA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStartDocPrinter  StartDocPrinterA
+
+¡ÒStartDocPrinterW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStartPagePrinter(Ë«×Ö)
+¡ÒWaitForPrinterChange(Ë«×Ö,Ë«×Ö)
+¡ÒWritePrinter(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒXcvDataW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

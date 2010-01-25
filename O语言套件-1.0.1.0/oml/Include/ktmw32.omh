@@ -1,0 +1,54 @@
+引用段
+{
+函数 ClearAllSavepointsTransaction(整数32)=>整数32;
+函数 ClearSavepointTransaction(整数32,整数32)=>整数32;
+函数 CommitComplete(整数32,整数32)=>整数32;
+函数 CommitEnlistment(整数32,整数32)=>整数32;
+函数 CommitTransaction(整数32)=>整数32;
+函数 CommitTransactionAsync(整数32)=>整数32;
+函数 CreateEnlistment(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateResourceManager(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateTransaction(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateTransactionManager(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCurrentClockTransactionManager(整数32,整数32)=>整数32;
+函数 GetEnlistmentId(整数32,整数32)=>整数32;
+函数 GetEnlistmentRecoveryInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNotificationResourceManager(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNotificationResourceManagerAsync(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTransactionId(整数32,整数32)=>整数32;
+函数 GetTransactionInformation(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTransactionManagerId(整数32,整数32)=>整数32;
+函数 IsLogWritableTransactionManager(整数32)=>整数32;
+函数 MarshalTransaction(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenEnlistment(整数32,整数32,整数32)=>整数32;
+函数 OpenResourceManager(整数32,整数32,整数32)=>整数32;
+函数 OpenTransaction(整数32,整数32)=>整数32;
+函数 OpenTransactionManager(整数32,整数32,整数32)=>整数32;
+函数 OpenTransactionManagerById(整数32,整数32,整数32)=>整数32;
+函数 PrePrepareComplete(整数32,整数32)=>整数32;
+函数 PrePrepareEnlistment(整数32,整数32)=>整数32;
+函数 PrepareComplete(整数32,整数32)=>整数32;
+函数 PrepareEnlistment(整数32,整数32)=>整数32;
+函数 PrivCreateTransaction(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PropagationComplete(整数32,整数32,整数32,整数32)=>整数32;
+函数 PropagationFailed(整数32,整数32)=>整数32;
+函数 PullTransaction(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadOnlyEnlistment(整数32,整数32)=>整数32;
+函数 RecoverEnlistment(整数32,整数32)=>整数32;
+函数 RecoverResourceManager(整数32)=>整数32;
+函数 RecoverTransactionManager(整数32)=>整数32;
+函数 RegisterProtocolAddressInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RollbackComplete(整数32,整数32)=>整数32;
+函数 RollbackEnlistment(整数32,整数32)=>整数32;
+函数 RollbackSavepoint(整数32,整数32)=>整数32;
+函数 RollbackTransaction(整数32)=>整数32;
+函数 RollbackTransactionAsync(整数32)=>整数32;
+函数 RollforwardTransactionManager(整数32,整数32)=>整数32;
+函数 SavepointComplete(整数32,整数32)=>整数32;
+函数 SavepointTransaction(整数32,整数32)=>整数32;
+函数 SetEnlistmentRecoveryInformation(整数32,整数32,整数32)=>整数32;
+函数 SetResourceManagerCompletionPort(整数32,整数32,整数32)=>整数32;
+函数 SetTransactionInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SinglePhaseReject(整数32,整数32)=>整数32;
+
+}

@@ -1,0 +1,26 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCreatePatchFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreatePatchFile  CreatePatchFileA
+
+¡ÒCreatePatchFileByHandles(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePatchFileByHandlesEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePatchFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreatePatchFileEx  CreatePatchFileExA
+
+¡ÒCreatePatchFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePatchFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtractPatchHeaderToFileA(Ë«×Ö,Ë«×Ö)
+¡ßExtractPatchHeaderToFile  ExtractPatchHeaderToFileA
+
+¡ÒExtractPatchHeaderToFileByHandles(Ë«×Ö,Ë«×Ö)
+¡ÒExtractPatchHeaderToFileW(Ë«×Ö,Ë«×Ö)
+¡ÒGetFilePatchSignatureA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFilePatchSignature  GetFilePatchSignatureA
+
+¡ÒGetFilePatchSignatureByHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFilePatchSignatureW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

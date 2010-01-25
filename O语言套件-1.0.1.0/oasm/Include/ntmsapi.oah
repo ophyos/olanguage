@@ -1,0 +1,107 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAccessNtmsLibraryDoor(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddNtmsMediaType(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAllocateNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBeginNtmsDeviceChangeDetection(Ë«×Ö,Ë«×Ö)
+¡ÒCancelNtmsLibraryRequest(Ë«×Ö,Ë«×Ö)
+¡ÒCancelNtmsOperatorRequest(Ë«×Ö,Ë«×Ö)
+¡ÒChangeNtmsMediaType(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCleanNtmsDrive(Ë«×Ö,Ë«×Ö)
+¡ÒCloseNtmsNotification(Ë«×Ö)
+¡ÒCloseNtmsSession(Ë«×Ö)
+¡ÒCreateNtmsMediaA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateNtmsMedia  CreateNtmsMediaA
+
+¡ÒCreateNtmsMediaPoolA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateNtmsMediaPool  CreateNtmsMediaPoolA
+
+¡ÒCreateNtmsMediaPoolW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateNtmsMediaW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeallocateNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDecommissionNtmsMedia(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteNtmsDrive(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteNtmsLibrary(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteNtmsMedia(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteNtmsMediaPool(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteNtmsMediaType(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteNtmsRequests(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDisableNtmsObject(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDismountNtmsDrive(Ë«×Ö,Ë«×Ö)
+¡ÒDismountNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDoEjectFromSADriveW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEjectDiskFromSADriveA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEjectDiskFromSADrive  EjectDiskFromSADriveA
+
+¡ÒEjectDiskFromSADriveW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEjectNtmsCleaner(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEjectNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnableNtmsObject(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEndNtmsDeviceChangeDetection(Ë«×Ö,Ë«×Ö)
+¡ÒEnumerateNtmsObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExportNtmsDatabase(Ë«×Ö)
+¡ÒGetNtmsMediaPoolNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNtmsMediaPoolName  GetNtmsMediaPoolNameA
+
+¡ÒGetNtmsMediaPoolNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNtmsObjectAttributeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNtmsObjectAttribute  GetNtmsObjectAttributeA
+
+¡ÒGetNtmsObjectAttributeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNtmsObjectInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNtmsObjectInformation  GetNtmsObjectInformationA
+
+¡ÒGetNtmsObjectInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNtmsObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNtmsRequestOrder(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNtmsUIOptionsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNtmsUIOptions  GetNtmsUIOptionsA
+
+¡ÒGetNtmsUIOptionsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetVolumesFromDriveA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetVolumesFromDrive  GetVolumesFromDriveA
+
+¡ÒGetVolumesFromDriveW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIdentifyNtmsSlot(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImportNtmsDatabase(Ë«×Ö)
+¡ÒInjectNtmsCleaner(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInjectNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInventoryNtmsLibrary(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMountNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMoveToNtmsMediaPool(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenNtmsNotification(Ë«×Ö,Ë«×Ö)
+¡ÒOpenNtmsSessionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenNtmsSession  OpenNtmsSessionA
+
+¡ÒOpenNtmsSessionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReleaseNtmsCleanerSlot(Ë«×Ö,Ë«×Ö)
+¡ÒReserveNtmsCleanerSlot(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSatisfyNtmsOperatorRequest(Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsDeviceChangeDetection(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsMediaComplete(Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsObjectAttributeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetNtmsObjectAttribute  SetNtmsObjectAttributeA
+
+¡ÒSetNtmsObjectAttributeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsObjectInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetNtmsObjectInformation  SetNtmsObjectInformationA
+
+¡ÒSetNtmsObjectInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsRequestOrder(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNtmsUIOptionsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetNtmsUIOptions  SetNtmsUIOptionsA
+
+¡ÒSetNtmsUIOptionsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSubmitNtmsOperatorRequestA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSubmitNtmsOperatorRequest  SubmitNtmsOperatorRequestA
+
+¡ÒSubmitNtmsOperatorRequestW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSwapNtmsMedia(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUpdateNtmsOmidInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWaitForNtmsNotification(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWaitForNtmsOperatorRequest(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

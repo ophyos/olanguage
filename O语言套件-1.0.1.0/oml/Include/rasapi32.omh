@@ -1,0 +1,185 @@
+引用段
+{
+函数 DDMFreePhonebookContext(整数32)=>整数32;
+函数 DDMGetPhonebookInfo(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DwCloneEntry(整数32,整数32,整数32)=>整数32;
+函数 DwDeleteSubEntry(整数32,整数32,整数32)=>整数32;
+函数 DwEnumEntriesForAllUsers(整数32,整数32,整数32)=>整数32;
+函数 DwEnumEntryDetails(整数32,整数32,整数32,整数32)=>整数32;
+函数 DwRasUninitialize()=>整数32;
+函数 RasAutoDialSharedConnection()=>整数32;
+函数 RasAutodialAddressToNetwork(整数32,整数32,整数32)=>整数32;
+函数 RasAutodialEntryToNetwork(整数32,整数32,整数32)=>整数32;
+函数 RasClearConnectionStatistics(整数32)=>整数32;
+函数 RasClearLinkStatistics(整数32,整数32)=>整数32;
+函数 RasConnectionNotificationA(整数32,整数32,整数32)=>整数32;
+函数 RasConnectionNotificationW(整数32,整数32,整数32)=>整数32;
+函数 RasCreatePhonebookEntryA(整数32,整数32)=>整数32;
+函数 RasCreatePhonebookEntryW(整数32,整数32)=>整数32;
+函数 RasDeleteEntryA(整数32,整数32)=>整数32;
+函数 RasDeleteEntryW(整数32,整数32)=>整数32;
+函数 RasDeleteSubEntryA(整数32,整数32,整数32)=>整数32;
+函数 RasDeleteSubEntryW(整数32,整数32,整数32)=>整数32;
+函数 RasDialA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasDialW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasDialWow(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasEditPhonebookEntryA(整数32,整数32,整数32)=>整数32;
+函数 RasEditPhonebookEntryW(整数32,整数32,整数32)=>整数32;
+函数 RasEnumAutodialAddressesA(整数32,整数32,整数32)=>整数32;
+函数 RasEnumAutodialAddressesW(整数32,整数32,整数32)=>整数32;
+函数 RasEnumConnectionsA(整数32,整数32,整数32)=>整数32;
+函数 RasEnumConnectionsW(整数32,整数32,整数32)=>整数32;
+函数 RasEnumConnectionsWow(整数32,整数32,整数32)=>整数32;
+函数 RasEnumDevicesA(整数32,整数32,整数32)=>整数32;
+函数 RasEnumDevicesW(整数32,整数32,整数32)=>整数32;
+函数 RasEnumEntriesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasEnumEntriesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasEnumEntriesWow(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasFreeEapUserIdentityA(整数32)=>整数32;
+函数 RasFreeEapUserIdentityW(整数32)=>整数32;
+函数 RasGetAutodialAddressA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetAutodialAddressW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetAutodialEnableA(整数32,整数32)=>整数32;
+函数 RasGetAutodialEnableW(整数32,整数32)=>整数32;
+函数 RasGetAutodialParamA(整数32,整数32,整数32)=>整数32;
+函数 RasGetAutodialParamW(整数32,整数32,整数32)=>整数32;
+函数 RasGetConnectResponse(整数32,整数32)=>整数32;
+函数 RasGetConnectStatusA(整数32,整数32)=>整数32;
+函数 RasGetConnectStatusW(整数32,整数32)=>整数32;
+函数 RasGetConnectStatusWow(整数32,整数32)=>整数32;
+函数 RasGetConnectionStatistics(整数32,整数32)=>整数32;
+函数 RasGetCountryInfoA(整数32,整数32)=>整数32;
+函数 RasGetCountryInfoW(整数32,整数32)=>整数32;
+函数 RasGetCredentialsA(整数32,整数32,整数32)=>整数32;
+函数 RasGetCredentialsW(整数32,整数32,整数32)=>整数32;
+函数 RasGetCustomAuthDataA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetCustomAuthDataW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetEapUserDataA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetEapUserDataW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetEapUserIdentityA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetEapUserIdentityW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetEntryDialParamsA(整数32,整数32,整数32)=>整数32;
+函数 RasGetEntryDialParamsW(整数32,整数32,整数32)=>整数32;
+函数 RasGetEntryHrasconnA(整数32,整数32,整数32)=>整数32;
+函数 RasGetEntryHrasconnW(整数32,整数32,整数32)=>整数32;
+函数 RasGetEntryPropertiesA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetEntryPropertiesW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetErrorStringA(整数32,整数32,整数32)=>整数32;
+函数 RasGetErrorStringW(整数32,整数32,整数32)=>整数32;
+函数 RasGetErrorStringWow(整数32,整数32,整数32)=>整数32;
+函数 RasGetHport(整数32)=>整数32;
+函数 RasGetLinkStatistics(整数32,整数32,整数32)=>整数32;
+函数 RasGetProjectionInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetProjectionInfoW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetSubEntryHandleA(整数32,整数32,整数32)=>整数32;
+函数 RasGetSubEntryHandleW(整数32,整数32,整数32)=>整数32;
+函数 RasGetSubEntryPropertiesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasGetSubEntryPropertiesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasHangUpA(整数32)=>整数32;
+函数 RasHangUpW(整数32)=>整数32;
+函数 RasHangUpWow(整数32)=>整数32;
+函数 RasInvokeEapUI(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasIsRouterConnection(整数32)=>整数32;
+函数 RasIsSharedConnection(整数32,整数32)=>整数32;
+函数 RasQueryRedialOnLinkFailure(整数32,整数32,整数32)=>整数32;
+函数 RasQuerySharedAutoDial(整数32)=>整数32;
+函数 RasQuerySharedConnection(整数32)=>整数32;
+函数 RasRenameEntryA(整数32,整数32,整数32)=>整数32;
+函数 RasRenameEntryW(整数32,整数32,整数32)=>整数32;
+函数 RasScriptExecute(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasScriptGetEventCode(整数32)=>整数32;
+函数 RasScriptGetIpAddress(整数32,整数32)=>整数32;
+函数 RasScriptInit(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasScriptReceive(整数32,整数32,整数32)=>整数32;
+函数 RasScriptSend(整数32,整数32,整数32)=>整数32;
+函数 RasScriptTerm(整数32)=>整数32;
+函数 RasSetAutodialAddressA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetAutodialAddressW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetAutodialEnableA(整数32,整数32)=>整数32;
+函数 RasSetAutodialEnableW(整数32,整数32)=>整数32;
+函数 RasSetAutodialParamA(整数32,整数32,整数32)=>整数32;
+函数 RasSetAutodialParamW(整数32,整数32,整数32)=>整数32;
+函数 RasSetCredentialsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetCredentialsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetCustomAuthDataA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetCustomAuthDataW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetEapUserDataA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetEapUserDataW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetEntryDialParamsA(整数32,整数32,整数32)=>整数32;
+函数 RasSetEntryDialParamsW(整数32,整数32,整数32)=>整数32;
+函数 RasSetEntryPropertiesA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetEntryPropertiesW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetOldPassword(整数32,整数32)=>整数32;
+函数 RasSetSharedAutoDial(整数32)=>整数32;
+函数 RasSetSubEntryPropertiesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasSetSubEntryPropertiesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasValidateEntryNameA(整数32,整数32)=>整数32;
+函数 RasValidateEntryNameW(整数32,整数32)=>整数32;
+函数 RasfileClose(整数32)=>整数32;
+函数 RasfileDeleteLine(整数32)=>整数32;
+函数 RasfileFindFirstLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileFindLastLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileFindMarkedLine(整数32,整数32)=>整数32;
+函数 RasfileFindNextKeyLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileFindNextLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileFindPrevLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileFindSectionLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileGetKeyValueFields(整数32,整数32,整数32)=>整数32;
+函数 RasfileGetLine(整数32)=>整数32;
+函数 RasfileGetLineMark(整数32)=>整数32;
+函数 RasfileGetLineText(整数32,整数32)=>整数32;
+函数 RasfileGetLineType(整数32)=>整数32;
+函数 RasfileGetSectionName(整数32,整数32)=>整数32;
+函数 RasfileInsertLine(整数32,整数32,整数32)=>整数32;
+函数 RasfileLoad(整数32,整数32,整数32,整数32)=>整数32;
+函数 RasfileLoadEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RasfileLoadInfo(整数32,整数32)=>整数32;
+函数 RasfilePutKeyValueFields(整数32,整数32,整数32)=>整数32;
+函数 RasfilePutLineMark(整数32,整数32)=>整数32;
+函数 RasfilePutLineText(整数32,整数32)=>整数32;
+函数 RasfilePutSectionName(整数32,整数32)=>整数32;
+函数 RasfileWrite(整数32,整数32)=>整数32;
+函数 SharedAccessResponseListToString(整数32,整数32)=>整数32;
+函数 SharedAccessResponseStringToList(整数32,整数32,整数32)=>整数32;
+函数 UnInitializeRAS()=>整数32;
+
+宏定义 RasConnectionNotification  RasConnectionNotificationA
+宏定义 RasCreatePhonebookEntry  RasCreatePhonebookEntryA
+宏定义 RasDeleteEntry  RasDeleteEntryA
+宏定义 RasDeleteSubEntry  RasDeleteSubEntryA
+宏定义 RasDial  RasDialA
+宏定义 RasEditPhonebookEntry  RasEditPhonebookEntryA
+宏定义 RasEnumAutodialAddresses  RasEnumAutodialAddressesA
+宏定义 RasEnumConnections  RasEnumConnectionsA
+宏定义 RasEnumDevices  RasEnumDevicesA
+宏定义 RasEnumEntries  RasEnumEntriesA
+宏定义 RasFreeEapUserIdentity  RasFreeEapUserIdentityA
+宏定义 RasGetAutodialAddress  RasGetAutodialAddressA
+宏定义 RasGetAutodialEnable  RasGetAutodialEnableA
+宏定义 RasGetAutodialParam  RasGetAutodialParamA
+宏定义 RasGetConnectStatus  RasGetConnectStatusA
+宏定义 RasGetCountryInfo  RasGetCountryInfoA
+宏定义 RasGetCredentials  RasGetCredentialsA
+宏定义 RasGetCustomAuthData  RasGetCustomAuthDataA
+宏定义 RasGetEapUserData  RasGetEapUserDataA
+宏定义 RasGetEapUserIdentity  RasGetEapUserIdentityA
+宏定义 RasGetEntryDialParams  RasGetEntryDialParamsA
+宏定义 RasGetEntryHrasconn  RasGetEntryHrasconnA
+宏定义 RasGetEntryProperties  RasGetEntryPropertiesA
+宏定义 RasGetErrorString  RasGetErrorStringA
+宏定义 RasGetProjectionInfo  RasGetProjectionInfoA
+宏定义 RasGetSubEntryHandle  RasGetSubEntryHandleA
+宏定义 RasGetSubEntryProperties  RasGetSubEntryPropertiesA
+宏定义 RasHangUp  RasHangUpA
+宏定义 RasRenameEntry  RasRenameEntryA
+宏定义 RasSetAutodialAddress  RasSetAutodialAddressA
+宏定义 RasSetAutodialEnable  RasSetAutodialEnableA
+宏定义 RasSetAutodialParam  RasSetAutodialParamA
+宏定义 RasSetCredentials  RasSetCredentialsA
+宏定义 RasSetCustomAuthData  RasSetCustomAuthDataA
+宏定义 RasSetEapUserData  RasSetEapUserDataA
+宏定义 RasSetEntryDialParams  RasSetEntryDialParamsA
+宏定义 RasSetEntryProperties  RasSetEntryPropertiesA
+宏定义 RasSetSubEntryProperties  RasSetSubEntryPropertiesA
+宏定义 RasValidateEntryName  RasValidateEntryNameA
+}

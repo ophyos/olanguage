@@ -1,0 +1,63 @@
+
+
+《*oasm32.oah》
+《*windows.oah》
+
+〈*user32.lib〉
+〈*kernel32.lib〉
+〈*comctl32.lib〉
+
+
+∥预留段
+﹁
+HINSTANCE h实例句柄
+﹂
+
+︽
+∫获取模块:GetModuleHandleA(双字)
+∫退出进程:ExitProcess(双字)
+∫创建模式对话框:DialogBoxParamA(双字,双字,双字,双字,双字)
+∫结束对话框:EndDialog(双字,双字)
+∫特效窗口:AnimateWindow(双字,双字,双字)
+∫重绘无效区域:InvalidateRect(双字,双字,双字)
+∫初始化通用控件:InitCommonControls()
+︾
+
+∵IDD_对话框资源   1000
+
+∥代码段开始
+︷
+
+∥开始函数定义
+∏主函数()
+{
+∥这里添加代码
+
+   获取模块(NULL)
+   h实例句柄 = 累加32
+   创建模式对话框(h实例句柄, IDD_对话框资源, NULL, 对话框过程, NULL)
+   退出进程(NULL)
+   初始化通用控件()
+}
+
+∫对话框过程(HWND h窗口句柄, 双字 w消息, LPARAM lParam, WPARAM wParam)
+{	
+    ∮(w消息 == WM_INITDIALOG)
+    {         
+         特效窗口(h窗口句柄,0x400,AW_BLEND + AW_ACTIVATE)  ∥淡入效果
+         重绘无效区域(h窗口句柄, 0, TRUE)
+    }      
+    ∝∮(w消息 == WM_CLOSE)
+    {
+       特效窗口(h窗口句柄,0x400,AW_BLEND + AW_HIDE)		∥淡出效果
+       结束对话框(h窗口句柄, NULL)
+    }
+    ∝
+    {		
+	  ← FALSE
+    }
+	
+    累加32 ^= 累加32
+}
+
+︸ ∥代码段结束

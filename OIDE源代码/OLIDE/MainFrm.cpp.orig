@@ -1,0 +1,1435 @@
+
+// MainFrm.cpp : CMainFrame 类的实现
+//
+
+#include "stdafx.h"
+#include "OLIDE.h"
+
+#include "MainFrm.h"
+#include "OLIDEView.h"
+#include "./Common/Common.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+// CMainFrame
+
+IMPLEMENT_DYNAMIC(CMainFrame, CMDIFrameWndEx)
+
+const int  iMaxUserToolbars = 10;
+const UINT uiFirstUserToolBarId = AFX_IDW_CONTROLBAR_FIRST + 40;
+const UINT uiLastUserToolBarId = uiFirstUserToolBarId + iMaxUserToolbars - 1;
+
+BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWndEx)
+    ON_WM_CREATE()
+    ON_COMMAND(ID_WINDOW_MANAGER, &CMainFrame::OnWindowManager)
+    ON_COMMAND(ID_VIEW_CUSTOMIZE, &CMainFrame::OnViewCustomize)
+    ON_REGISTERED_MESSAGE(AFX_WM_CREATETOOLBAR, &CMainFrame::OnToolbarCreateNew)
+    ON_COMMAND_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_OFF_2007_AQUA, &CMainFrame::OnApplicationLook)
+    ON_UPDATE_COMMAND_UI_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_OFF_2007_AQUA, &CMainFrame::OnUpdateApplicationLook)
+    ON_COMMAND(ID_CLOSE_CUR_CHILD_FRAME, &CMainFrame::OnCloseCurChildFrame)
+    ON_UPDATE_COMMAND_UI(ID_CLOSE_ALL_CHILD_FRAME, &CMainFrame::OnUpdateCloseAllChildFrame)
+    ON_COMMAND(ID_FILE_SAVE_ALL, &CMainFrame::OnSaveAllDocument)
+    ON_COMMAND(ID_CLOSE_ALL_CHILD_FRAME, &CMainFrame::OnCloseAllChildFrame)
+    ON_UPDATE_COMMAND_UI(ID_CLOSE_CUR_CHILD_FRAME, &CMainFrame::OnUpdateCloseCurChildFrame)
+    ON_COMMAND(ID_OPEN_OWNER_FLODER, &CMainFrame::OnOpenOwnerFloder)
+    ON_UPDATE_COMMAND_UI(ID_OPEN_OWNER_FLODER, &CMainFrame::OnUpdateOpenOwnerFloder)
+    ON_UPDATE_COMMAND_UI(ID_INDICATOR_DOC, OnUpdateDocPath)
+    ON_UPDATE_COMMAND_UI(ID_INDICATOR_LINE, OnUpdateLine)
+    ON_UPDATE_COMMAND_UI(ID_INDICATOR_OVR, OnUpdateInsert)
+    ON_WM_SIZE()
+    ON_COMMAND(ID_SYSTEM_OPTIONS, OnSystemOptions)
+    ON_COMMAND(ID_RESEDITOR, OnResEditor)
+
+    ON_COMMAND(ID_BUILD_PROJECT, &CMainFrame::OnBuildProject)
+    ON_COMMAND(ID_BUILD_ALL, &CMainFrame::OnBuildAll)
+    ON_COMMAND(ID_LINK_PROJECT, &CMainFrame::OnLinkProject)
+    ON_COMMAND(ID_BUILD_AND_LINK, &CMainFrame::OnBuildAndLink)
+    ON_COMMAND(ID_BUILD_AND_RUN, &CMainFrame::OnBuildAndRun)
+    ON_UPDATE_COMMAND_UI(ID_BUILD_PROJECT, &CMainFrame::OnUpdateBuildProject)
+    ON_UPDATE_COMMAND_UI(ID_BUILD_ALL, &CMainFrame::OnUpdateBuildAll)
+    ON_UPDATE_COMMAND_UI(ID_LINK_PROJECT, &CMainFrame::OnUpdateLinkProject)
+    ON_UPDATE_COMMAND_UI(ID_BUILD_AND_LINK, &CMainFrame::OnUpdateBuildAndLink)
+    ON_UPDATE_COMMAND_UI(ID_BUILD_AND_RUN, &CMainFrame::OnUpdateBuildAndRun)
+
+    ON_COMMAND(ID_OASM_HELP, &CMainFrame::OnOASMHelp)
+    ON_COMMAND(ID_CHECK_NEW_VERSION, &CMainFrame::OnCheckNewVersion)
+    ON_COMMAND(ID_NEW_SOLUTION, &CMainFrame::OnNewSolution)
+    ON_COMMAND(ID_OPEN_SOLUTION, &CMainFrame::OnOpenSolution)
+    ON_UPDATE_COMMAND_UI(ID_OPEN_SOLUTION, &CMainFrame::OnUpdateOpenSolution)
+    ON_UPDATE_COMMAND_UI(ID_NEW_SOLUTION, &CMainFrame::OnUpdateNewSolution)
+    ON_WM_DROPFILES()
+END_MESSAGE_MAP()
+
+static UINT indicators[] =
+{
+    ID_SEPARATOR,    // 状态行指示器
+    ID_INDICATOR_DOC,
+    ID_INDICATOR_LINE,
+    ID_INDICATOR_CAPS,
+    ID_INDICATOR_NUM,
+    ID_INDICATOR_OVR,
+};
+
+// CMainFrame 构造/析构
+
+CMainFrame::CMainFrame()
+{
+    // TODO: 在此添加成员初始化代码
+
+    theApp.m_nAppLook = theApp.GetInt(_T("ApplicationLook"), ID_VIEW_APPLOOK_VS_2005);
+
+    //得到当前程序路径
+    TCHAR szBuff[_MAX_PATH];
+    VERIFY(::GetModuleFileName(AfxGetInstanceHandle(), szBuff, _MAX_PATH));
+    m_strAppPath = szBuff;
+}
+
+CMainFrame::~CMainFrame()
+{
+}
+
+int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+    if (CMDIFrameWndEx::OnCreate(lpCreateStruct) == -1)
+        return -1;
+
+    BOOL bNameValid;
+    // 基于持久值设置视觉管理器和样式
+    OnApplicationLook(theApp.m_nAppLook);
+
+    CMDITabInfo mdiTabParams;
+    mdiTabParams.m_style = CMFCTabCtrl::STYLE_3D_ONENOTE; // 其他可用样式...
+    mdiTabParams.m_bActiveTabCloseButton = TRUE;      // 设置为 FALSE 会将关闭按钮放置在选项卡区域的右侧
+    mdiTabParams.m_bTabIcons = FALSE;    // 设置为 TRUE 将在 MDI 选项卡上启用文档图标
+    mdiTabParams.m_bAutoColor = TRUE;    // 设置为 FALSE 将禁用 MDI 选项卡的自动着色
+    mdiTabParams.m_bDocumentMenu = TRUE; // 在选项卡区域的右边缘启用文档菜单
+    EnableMDITabbedGroups(TRUE, mdiTabParams);
+
+    if (!m_wndMenuBar.Create(this))
+    {
+        TRACE0("未能创建菜单栏\n");
+        return -1;      // 未能创建
+    }
+    m_wndMenuBar.SetPaneStyle(m_wndMenuBar.GetPaneStyle() | CBRS_SIZE_DYNAMIC | CBRS_TOOLTIPS | CBRS_FLYBY);
+
+    // 防止菜单栏在激活时获得焦点
+    CMFCPopupMenu::SetForceMenuFocus(FALSE);
+
+    if (!m_wndToolBar.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC) ||
+            !m_wndToolBar.LoadToolBar(theApp.m_bHiColorIcons ? IDR_MAINFRAME_256 : IDR_MAINFRAME))
+    {
+        TRACE0("未能创建工具栏\n");
+        return -1;      // 未能创建
+    }
+
+    if (!m_wndToolBarBuild.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC,CRect(1,1,1,1),AFX_IDW_CONTROLBAR_FIRST+5) ||
+            !m_wndToolBarBuild.LoadToolBar(IDR_BUILD_CODE))
+    {
+        TRACE0("未能创建生成工具栏\n");
+        return -1;      // 未能创建
+    }
+
+    if (!m_wndToolBarSyntaxWord.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC,CRect(1,1,1,1),AFX_IDW_CONTROLBAR_FIRST+6) ||
+            !m_wndToolBarSyntaxWord.LoadToolBar(IDR_SYNTAX_WORD))
+    {
+        TRACE0("未能创建生成工具栏\n");
+        return -1;      // 未能创建
+    }
+
+    if (!m_wndToolBarOperator.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | CBRS_TOP | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC,CRect(1,1,1,1),AFX_IDW_CONTROLBAR_FIRST+7) ||
+            !m_wndToolBarOperator.LoadToolBar(IDR_OPERATOR))
+    {
+        TRACE0("未能创建生成工具栏\n");
+        return -1;      // 未能创建
+    }
+
+    CString strToolBarName;
+    bNameValid = strToolBarName.LoadString(IDS_TOOLBAR_STANDARD);
+    ASSERT(bNameValid);
+    m_wndToolBar.SetWindowText(strToolBarName);
+    strToolBarName = _T("生成");
+    m_wndToolBarBuild.SetWindowText(strToolBarName);
+    strToolBarName = _T("语法字");
+    m_wndToolBarSyntaxWord.SetWindowText(strToolBarName);
+    strToolBarName = _T("操作符");
+    m_wndToolBarOperator.SetWindowText(strToolBarName);
+
+    CString strCustomize;
+    bNameValid = strCustomize.LoadString(IDS_TOOLBAR_CUSTOMIZE);
+    ASSERT(bNameValid);
+    m_wndToolBar.EnableCustomizeButton(TRUE, ID_VIEW_CUSTOMIZE, strCustomize);
+    m_wndToolBarBuild.EnableCustomizeButton(TRUE, ID_VIEW_CUSTOMIZE, strCustomize);
+    m_wndToolBarSyntaxWord.EnableCustomizeButton(TRUE, ID_VIEW_CUSTOMIZE, strCustomize);
+    m_wndToolBarOperator.EnableCustomizeButton(TRUE, ID_VIEW_CUSTOMIZE, strCustomize);
+
+    // 允许用户定义的工具栏操作:
+    InitUserToolbars(NULL, uiFirstUserToolBarId, uiLastUserToolBarId);
+
+    if (!m_wndStatusBar.Create(this))
+    {
+        TRACE0("未能创建状态栏\n");
+        return -1;      // 未能创建
+    }
+    m_wndStatusBar.SetIndicators(indicators, sizeof(indicators)/sizeof(UINT));
+
+    // TODO: 如果您不希望工具栏和菜单栏可停靠，请删除下面行
+    m_wndMenuBar.EnableDocking(CBRS_ALIGN_ANY);
+    m_wndToolBar.EnableDocking(CBRS_ALIGN_ANY);
+    m_wndToolBarBuild.EnableDocking(CBRS_ALIGN_ANY);
+    m_wndToolBarSyntaxWord.EnableDocking(CBRS_ALIGN_ANY);
+    m_wndToolBarOperator.EnableDocking(CBRS_ALIGN_ANY);
+    EnableDocking(CBRS_ALIGN_ANY);
+    DockPane(&m_wndMenuBar);
+    DockPane(&m_wndToolBar);
+    DockPane(&m_wndToolBarBuild);
+    DockPane(&m_wndToolBarSyntaxWord);
+    DockPane(&m_wndToolBarOperator);
+
+    // 启用 Visual Studio 2005 样式停靠窗口行为
+    CDockingManager::SetDockingMode(DT_SMART);
+    // 启用 Visual Studio 2005 样式停靠窗口自动隐藏行为
+    EnableAutoHidePanes(CBRS_ALIGN_ANY);
+
+    // 加载菜单项图像(不在任何标准工具栏上):
+    //CMFCToolBar::AddToolBarForImageCollection(IDR_MENU_IMAGES, theApp.m_bHiColorIcons ? IDB_MENU_IMAGES_24 : 0);
+
+    // 创建停靠窗口
+    if (!CreateDockingWindows())
+    {
+        TRACE0("未能创建停靠窗口\n");
+        return -1;
+    }
+
+    m_wndSolutionPane.EnableDocking(CBRS_ALIGN_ANY);
+    DockPane(&m_wndSolutionPane);
+    //m_wndClassView.EnableDocking(CBRS_ALIGN_ANY);
+    CDockablePane* pTabbedBar = NULL;
+    //m_wndClassView.AttachToTabWnd(&m_wndSolutionPane, DM_SHOW, TRUE, &pTabbedBar);
+    //m_wndProperties.EnableDocking(CBRS_ALIGN_ANY);
+    //DockPane(&m_wndProperties);
+
+    m_wndOutput.EnableDocking(CBRS_ALIGN_ANY);
+    DockPane(&m_wndOutput);
+
+    // 启用增强的窗口管理对话框
+    EnableWindowsDialog(ID_WINDOW_MANAGER, IDS_WINDOWS_MANAGER, TRUE);
+
+    // 启用工具栏和停靠窗口菜单替换
+    EnablePaneMenu(TRUE, ID_VIEW_CUSTOMIZE, strCustomize, ID_VIEW_TOOLBAR);
+
+    // 启用快速(按住 Alt 拖动)工具栏自定义
+    CMFCToolBar::EnableQuickCustomization();
+
+    //if (CMFCToolBar::GetUserImages() == NULL)
+    //{
+    //	// 加载用户定义的工具栏图像
+    //	if (m_UserImages.Load(_T(".\\UserImages.bmp")))
+    //	{
+    //		m_UserImages.SetImageSize(CSize(16, 16), FALSE);
+    //		CMFCToolBar::SetUserImages(&m_UserImages);
+    //	}
+    //}
+
+    // 启用菜单个性化(最近使用的命令)
+    // TODO: 定义您自己的基本命令，确保每个下拉菜单至少有一个基本命令。
+    CList<UINT, UINT> lstBasicCommands;
+
+    lstBasicCommands.AddTail(ID_NEW_SOLUTION);
+    lstBasicCommands.AddTail(ID_OPEN_SOLUTION);
+    lstBasicCommands.AddTail(ID_CLOSE_SOLUTION);
+    lstBasicCommands.AddTail(ID_FILE_SAVE);
+    lstBasicCommands.AddTail(ID_FILE_SAVE_ALL);
+    lstBasicCommands.AddTail(ID_FILE_SAVE_AS);
+    lstBasicCommands.AddTail(ID_FILE_PRINT);
+    lstBasicCommands.AddTail(ID_APP_EXIT);
+    lstBasicCommands.AddTail(ID_EDIT_UNDO);
+    lstBasicCommands.AddTail(ID_EDIT_REDO);
+    lstBasicCommands.AddTail(ID_EDIT_CUT);
+    lstBasicCommands.AddTail(ID_EDIT_COPY);
+    lstBasicCommands.AddTail(ID_EDIT_PASTE);
+    lstBasicCommands.AddTail(ID_EDIT_SELECT_ALL);
+    lstBasicCommands.AddTail(ID_EDIT_FIND);
+    lstBasicCommands.AddTail(ID_EDIT_REPEAT);
+    lstBasicCommands.AddTail(ID_EDIT_REPLACE);
+    lstBasicCommands.AddTail(ID_BUILD_PROJECT);
+    lstBasicCommands.AddTail(ID_BUILD_ALL);
+    lstBasicCommands.AddTail(ID_LINK_PROJECT);
+    lstBasicCommands.AddTail(ID_BUILD_AND_LINK);
+    lstBasicCommands.AddTail(ID_BUILD_AND_RUN);
+    lstBasicCommands.AddTail(ID_RESEDITOR);
+    lstBasicCommands.AddTail(ID_SYSTEM_OPTIONS);
+    lstBasicCommands.AddTail(ID_OASM_HELP);
+    lstBasicCommands.AddTail(ID_APP_ABOUT);
+    lstBasicCommands.AddTail(ID_VIEW_STATUS_BAR);
+    lstBasicCommands.AddTail(ID_VIEW_TOOLBAR);
+    lstBasicCommands.AddTail(ID_VIEW_APPLOOK_OFF_2003);
+    lstBasicCommands.AddTail(ID_VIEW_APPLOOK_VS_2005);
+    lstBasicCommands.AddTail(ID_VIEW_APPLOOK_OFF_2007_BLUE);
+    lstBasicCommands.AddTail(ID_VIEW_APPLOOK_OFF_2007_SILVER);
+    lstBasicCommands.AddTail(ID_VIEW_APPLOOK_OFF_2007_BLACK);
+    lstBasicCommands.AddTail(ID_VIEW_APPLOOK_OFF_2007_AQUA);
+    lstBasicCommands.AddTail(ID_SORTING_SORTALPHABETIC);
+    lstBasicCommands.AddTail(ID_SORTING_SORTBYTYPE);
+    lstBasicCommands.AddTail(ID_SORTING_SORTBYACCESS);
+    lstBasicCommands.AddTail(ID_SORTING_GROUPBYTYPE);
+    lstBasicCommands.AddTail(ID_CHECK_NEW_VERSION);
+
+    CMFCToolBar::SetBasicCommands(lstBasicCommands);
+
+    CString strAppPath = GetAppDirectory();
+    m_strSystemOptionFileName = strAppPath + _T("\\oasm\\config\\option.xml");
+    m_systemOption.Load(m_strSystemOptionFileName);
+
+    //加载自动完成列表数据
+    LoadConfigData();
+
+    //关联程序，设置文档图标
+    SetAssociate(_T("oam"),IDI_OAM_FILE);
+    SetAssociate(_T("oah"),IDI_OAH_FILE);
+
+    //设置输出窗口背景色
+    m_wndOutput.SetBackgroundColor(m_systemOption.m_colorBackGround);
+
+    return 0;
+}
+
+BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
+{
+    if ( !CMDIFrameWndEx::PreCreateWindow(cs) )
+        return FALSE;
+    // TODO: 在此处通过修改
+    //  CREATESTRUCT cs 来修改窗口类或样式
+
+    return TRUE;
+}
+
+BOOL CMainFrame::CreateDockingWindows()
+{
+    BOOL bNameValid;
+
+    //// 创建类视图
+    //CString strClassView;
+    //bNameValid = strClassView.LoadString(IDS_CLASS_VIEW);
+    //ASSERT(bNameValid);
+    //if (!m_wndClassView.Create(strClassView, this, CRect(0, 0, 200, 200), TRUE, ID_VIEW_CLASSVIEW, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_LEFT | CBRS_FLOAT_MULTI))
+    //{
+    //	TRACE0("未能创建“类视图”窗口\n");
+    //	return FALSE; // 未能创建
+    //}
+
+    // 创建文件视图
+    CString strFileView;
+    bNameValid = strFileView.LoadString(IDS_FILE_VIEW);
+    ASSERT(bNameValid);
+    if (!m_wndSolutionPane.Create(strFileView, this, CRect(0, 0, 200, 200), TRUE, ID_VIEW_FILEVIEW, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_LEFT| CBRS_FLOAT_MULTI))
+    {
+        TRACE0("未能创建“文件视图”窗口\n");
+        return FALSE; // 未能创建
+    }
+
+    // 创建输出窗口
+    CString strOutputWnd;
+    bNameValid = strOutputWnd.LoadString(IDS_OUTPUT_WND);
+    ASSERT(bNameValid);
+    if (!m_wndOutput.Create(strOutputWnd, this, CRect(0, 0, 100, 100), TRUE, ID_VIEW_OUTPUTWND, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_BOTTOM | CBRS_FLOAT_MULTI))
+    {
+        TRACE0("未能创建输出窗口\n");
+        return FALSE; // 未能创建
+    }
+
+    //// 创建属性窗口
+    //CString strPropertiesWnd;
+    //bNameValid = strPropertiesWnd.LoadString(IDS_PROPERTIES_WND);
+    //ASSERT(bNameValid);
+    //if (!m_wndProperties.Create(strPropertiesWnd, this, CRect(0, 0, 200, 200), TRUE, ID_VIEW_PROPERTIESWND, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | CBRS_RIGHT | CBRS_FLOAT_MULTI))
+    //{
+    //	TRACE0("未能创建“属性”窗口\n");
+    //	return FALSE; // 未能创建
+    //}
+
+    SetDockingWindowIcons(theApp.m_bHiColorIcons);
+    return TRUE;
+}
+
+void CMainFrame::SetDockingWindowIcons(BOOL bHiColorIcons)
+{
+    HICON hFileViewIcon = (HICON) ::LoadImage(::AfxGetResourceHandle(), MAKEINTRESOURCE(bHiColorIcons ? IDI_SOLUTION : IDI_SOLUTION), IMAGE_ICON, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON), 0);
+    m_wndSolutionPane.SetIcon(hFileViewIcon, FALSE);
+
+    /*HICON hClassViewIcon = (HICON) ::LoadImage(::AfxGetResourceHandle(), MAKEINTRESOURCE(bHiColorIcons ? IDI_CLASS_VIEW_HC : IDI_CLASS_VIEW), IMAGE_ICON, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON), 0);
+    m_wndClassView.SetIcon(hClassViewIcon, FALSE);*/
+
+    /*HICON hPropertiesBarIcon = (HICON) ::LoadImage(::AfxGetResourceHandle(), MAKEINTRESOURCE(bHiColorIcons ? IDI_PROPERTIES_WND_HC : IDI_PROPERTIES_WND), IMAGE_ICON, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON), 0);
+    m_wndProperties.SetIcon(hPropertiesBarIcon, FALSE);*/
+
+
+    HICON hOutputBarIcon = (HICON) ::LoadImage(::AfxGetResourceHandle(), MAKEINTRESOURCE(bHiColorIcons ? IDI_OUTPUT_WND_HC : IDI_OUTPUT_WND), IMAGE_ICON, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON), 0);
+    m_wndOutput.SetIcon(hOutputBarIcon, FALSE);
+
+    UpdateMDITabbedBarsIcons();
+}
+
+// CMainFrame 诊断
+
+#ifdef _DEBUG
+void CMainFrame::AssertValid() const
+{
+    CMDIFrameWndEx::AssertValid();
+}
+
+void CMainFrame::Dump(CDumpContext& dc) const
+{
+    CMDIFrameWndEx::Dump(dc);
+}
+#endif //_DEBUG
+
+
+// CMainFrame 消息处理程序
+
+void CMainFrame::OnWindowManager()
+{
+    ShowWindowsDialog();
+}
+
+void CMainFrame::OnViewCustomize()
+{
+    CMFCToolBarsCustomizeDialog* pDlgCust = new CMFCToolBarsCustomizeDialog(this, TRUE /* 扫描菜单*/);
+    pDlgCust->EnableUserDefinedToolbars();
+    pDlgCust->Create();
+}
+
+LRESULT CMainFrame::OnToolbarCreateNew(WPARAM wp,LPARAM lp)
+{
+    LRESULT lres = CMDIFrameWndEx::OnToolbarCreateNew(wp,lp);
+    if (lres == 0)
+    {
+        return 0;
+    }
+
+    CMFCToolBar* pUserToolbar = (CMFCToolBar*)lres;
+    ASSERT_VALID(pUserToolbar);
+
+    BOOL bNameValid;
+    CString strCustomize;
+    bNameValid = strCustomize.LoadString(IDS_TOOLBAR_CUSTOMIZE);
+    ASSERT(bNameValid);
+
+    pUserToolbar->EnableCustomizeButton(TRUE, ID_VIEW_CUSTOMIZE, strCustomize);
+    return lres;
+}
+
+void CMainFrame::OnApplicationLook(UINT id)
+{
+    CWaitCursor wait;
+
+    theApp.m_nAppLook = id;
+
+    switch (theApp.m_nAppLook)
+    {
+    case ID_VIEW_APPLOOK_WIN_2000:
+        CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManager));
+        break;
+
+    case ID_VIEW_APPLOOK_OFF_XP:
+        CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerOfficeXP));
+        break;
+
+    case ID_VIEW_APPLOOK_WIN_XP:
+        CMFCVisualManagerWindows::m_b3DTabsXPTheme = TRUE;
+        CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerWindows));
+        break;
+
+    case ID_VIEW_APPLOOK_OFF_2003:
+        CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerOffice2003));
+        CDockingManager::SetDockingMode(DT_SMART);
+        break;
+
+    case ID_VIEW_APPLOOK_VS_2005:
+        CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerVS2005));
+        CDockingManager::SetDockingMode(DT_SMART);
+        break;
+
+    default:
+        switch (theApp.m_nAppLook)
+        {
+        case ID_VIEW_APPLOOK_OFF_2007_BLUE:
+            CMFCVisualManagerOffice2007::SetStyle(CMFCVisualManagerOffice2007::Office2007_LunaBlue);
+            break;
+
+        case ID_VIEW_APPLOOK_OFF_2007_BLACK:
+            CMFCVisualManagerOffice2007::SetStyle(CMFCVisualManagerOffice2007::Office2007_ObsidianBlack);
+            break;
+
+        case ID_VIEW_APPLOOK_OFF_2007_SILVER:
+            CMFCVisualManagerOffice2007::SetStyle(CMFCVisualManagerOffice2007::Office2007_Silver);
+            break;
+
+        case ID_VIEW_APPLOOK_OFF_2007_AQUA:
+            CMFCVisualManagerOffice2007::SetStyle(CMFCVisualManagerOffice2007::Office2007_Aqua);
+            break;
+        }
+
+        CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerOffice2007));
+        CDockingManager::SetDockingMode(DT_SMART);
+    }
+
+    RedrawWindow(NULL, NULL, RDW_ALLCHILDREN | RDW_INVALIDATE | RDW_UPDATENOW | RDW_FRAME | RDW_ERASE);
+
+    theApp.WriteInt(_T("ApplicationLook"), theApp.m_nAppLook);
+}
+
+void CMainFrame::OnUpdateApplicationLook(CCmdUI* pCmdUI)
+{
+    pCmdUI->SetRadio(theApp.m_nAppLook == pCmdUI->m_nID);
+}
+
+BOOL CMainFrame::LoadFrame(UINT nIDResource, DWORD dwDefaultStyle, CWnd* pParentWnd, CCreateContext* pContext)
+{
+    // 基类将执行真正的工作
+
+    if (!CMDIFrameWndEx::LoadFrame(nIDResource, dwDefaultStyle, pParentWnd, pContext))
+    {
+        return FALSE;
+    }
+
+    // 为所有用户工具栏启用自定义按钮
+    BOOL bNameValid;
+    CString strCustomize;
+    bNameValid = strCustomize.LoadString(IDS_TOOLBAR_CUSTOMIZE);
+    ASSERT(bNameValid);
+
+    for (int i = 0; i < iMaxUserToolbars; i ++)
+    {
+        CMFCToolBar* pUserToolbar = GetUserToolBarByIndex(i);
+        if (pUserToolbar != NULL)
+        {
+            pUserToolbar->EnableCustomizeButton(TRUE, ID_VIEW_CUSTOMIZE, strCustomize);
+        }
+    }
+
+    return TRUE;
+}
+
+BOOL CMainFrame::OnShowMDITabContextMenu(CPoint point, DWORD dwAllowedItems, BOOL bTabDrop)
+{
+    //不是拖动时显示菜单
+    if (!bTabDrop)
+    {
+        CMenu menu;
+        menu.LoadMenu(IDR_POPUP_TAB);
+
+        CMenu* pSumMenu = menu.GetSubMenu(0);
+
+        CMFCPopupMenu* pPopupMenu = new CMFCPopupMenu;
+        if (!pPopupMenu->Create(this, point.x, point.y, (HMENU)pSumMenu->m_hMenu, FALSE, TRUE))
+        {
+            delete pPopupMenu;
+            return FALSE;
+        }
+
+        OnShowPopupMenu(pPopupMenu);
+    }
+
+    return TRUE;
+}
+
+void CMainFrame::OnCloseCurChildFrame()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    SendMessage(WM_COMMAND,ID_FILE_CLOSE,0);
+}
+
+void CMainFrame::OnUpdateCloseCurChildFrame(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+}
+
+void CMainFrame::OnSaveAllDocument()
+{
+    CWinApp *pWinApp = AfxGetApp(); //得到应用程序指针
+    POSITION p = pWinApp->GetFirstDocTemplatePosition();//得到第1个文档模板
+    while (p != NULL) //遍历文档模板
+    {
+        CDocTemplate* pDocTemplate = pWinApp->GetNextDocTemplate(p);
+        POSITION p1 = pDocTemplate->GetFirstDocPosition();//得到文档模板对应的第1个文档
+        while (p1 != NULL) //遍历文档模板对应的文档
+        {
+            CDocument *pDocument = pDocTemplate->GetNextDoc(p1);
+            if (!pDocument->GetPathName().IsEmpty())
+            {
+                pDocument->DoFileSave();
+            }
+        }
+    }
+}
+
+void CMainFrame::OnCloseAllChildFrame()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    int nSaveType = AfxMessageBox(_T("关闭所有文档,保存所有修改过的文件?"), MB_YESNOCANCEL);
+    if (nSaveType == IDCANCEL)
+        return;
+
+    CWinApp *pWinApp = AfxGetApp(); //得到应用程序指针
+    POSITION p = pWinApp->GetFirstDocTemplatePosition();//得到第1个文档模板
+    while (p != NULL) //遍历文档模板
+    {
+        CDocTemplate* pDocTemplate = pWinApp->GetNextDocTemplate(p);
+        POSITION p1 = pDocTemplate->GetFirstDocPosition();//得到文档模板对应的第1个文档
+        while (p1 != NULL) //遍历文档模板对应的文档
+        {
+            CDocument *pDocument = pDocTemplate->GetNextDoc(p1);
+            //POSITION p2 = pDocument->GetFirstViewPosition(); //得到文档对应的第1个视图
+            //while (p2 != NULL) //遍历文档对应的视图
+            //{
+            //CView *pView = pDocument->GetNextView(p2);
+            //}
+
+            if (nSaveType == IDYES)
+            {
+                pDocument->DoFileSave();
+            }
+
+            pDocument->OnCloseDocument();
+        }
+    }
+}
+
+void CMainFrame::OnUpdateCloseAllChildFrame(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+}
+
+void CMainFrame::OnOpenOwnerFloder()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    CDocument* pDocument = GetActiveFrame()->GetActiveDocument();
+    if (pDocument)
+    {
+        CString strPath = pDocument->GetPathName();
+        strPath = strPath.Left(strPath.ReverseFind(_T('\\')));
+        ShellExecute(NULL,NULL,strPath,NULL,NULL,SW_SHOW);
+    }
+}
+
+void CMainFrame::OnUpdateOpenOwnerFloder(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    CString strPath;
+    CDocument* pDocument = GetActiveFrame()->GetActiveDocument();
+    if (pDocument)
+    {
+        strPath = pDocument->GetPathName();
+    }
+    pCmdUI->Enable(!strPath.IsEmpty());
+}
+
+void CMainFrame::ClearOutPut(int nWndIndex)
+{
+    if (m_wndOutput.GetSafeHwnd())
+    {
+        m_wndOutput.Clear(nWndIndex);
+
+        //延迟50毫秒
+        DelayNop(50);
+    }
+}
+
+void CMainFrame::OutPutMsg(TCHAR* format, ...)
+{
+    if (m_wndOutput.GetSafeHwnd())
+    {
+        CString strMessage;
+
+        va_list arglist;
+        va_start(arglist,format);
+        strMessage.FormatV(format, arglist);
+        va_end(arglist);
+
+        m_wndOutput.InsertText(strMessage);
+    }
+}
+
+void CMainFrame::OnUpdateDocPath(CCmdUI* pCmdUI)
+{
+    pCmdUI->Enable(FALSE);
+    pCmdUI->SetText(_T(""));
+}
+
+void CMainFrame::OnUpdateLine(CCmdUI* pCmdUI)
+{
+    pCmdUI->Enable(FALSE);
+    pCmdUI->SetText(_T(""));
+}
+
+void CMainFrame::OnUpdateInsert(CCmdUI* pCmdUI)
+{
+    pCmdUI->Enable(FALSE);
+    pCmdUI->SetText(_T(""));
+}
+
+void CMainFrame::OnSize(UINT nType, int cx, int cy)
+{
+    CMDIFrameWndEx::OnSize(nType, cx, cy);
+
+    // TODO: 在此处添加消息处理程序代码
+
+    if (m_wndStatusBar.GetSafeHwnd())
+    {
+        int nWidth = 0;
+        for (int i=sizeof(indicators)/sizeof(UINT)-1;i>1;--i)
+        {
+            nWidth += m_wndStatusBar.GetPaneWidth(i);
+        }
+        m_wndStatusBar.SetPaneWidth(1,cx-nWidth-300);
+    }
+}
+
+void CMainFrame::LoadConfigData()
+{
+    CString strAppDir = GetAppDirectory();
+
+    //加载语法字
+    CString strSyntaxWordFileName = m_systemOption.m_strSyntaxWordFileName;
+    if (!strSyntaxWordFileName.IsEmpty() && strSyntaxWordFileName[0] == _T('.'))
+    {
+        GetAbsolutePathByRelativePath(strSyntaxWordFileName,strAppDir);
+    }
+    m_syntaxWordList.LoadSyntaxWord(strSyntaxWordFileName);
+
+    //添加选择框内容
+    CString strSelectionListFileName = m_systemOption.m_strSelectionListFileName;
+    if (!strSelectionListFileName.IsEmpty() && strSelectionListFileName[0] == _T('.'))
+    {
+        GetAbsolutePathByRelativePath(strSelectionListFileName,strAppDir);
+    }
+    m_autoCompleteString.RefreshSystemAutoCompleteGroup(strSelectionListFileName);
+
+    //添加文件模板组
+    CString strTempletDir = m_systemOption.m_strTempletDir;
+    if (!strTempletDir.IsEmpty() && strTempletDir[0] == _T('.'))
+    {
+        GetAbsolutePathByRelativePath(strTempletDir,strAppDir);
+    }
+    m_autoCompleteString.RefreshTempleteFileList(strTempletDir);
+
+    //加载提示数据
+    m_hintString.LoadHintData();
+}
+
+void CMainFrame::OnResEditor()
+{
+    CString strResEditFileName = GetAppDirectory();
+    strResEditFileName += _T("\\ResEdit\\ResEdit.exe");
+    ShellExecute(NULL,NULL,strResEditFileName,NULL,NULL,SW_SHOW);
+}
+
+#include "DlgSystemOption.h"
+void CMainFrame::OnSystemOptions()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    CDlgSystemOption dlgSystemOption;
+    dlgSystemOption.m_dlgCommonOption.m_bUpdateEveryTime = m_systemOption.m_bUpdateEveryTime;
+
+    dlgSystemOption.m_dlgOasmOption.m_strOasmPath = m_systemOption.m_strOasmPath;
+    dlgSystemOption.m_dlgOasmOption.m_strLanguagePath = m_systemOption.m_strLanguagePath;
+
+    dlgSystemOption.m_dlgLinkOption.m_strLinkerFileName = m_systemOption.m_strLinkerFileName;
+
+    dlgSystemOption.m_dlgEditOption.m_strSyntaxWordFileName = m_systemOption.m_strSyntaxWordFileName;
+    dlgSystemOption.m_dlgEditOption.m_strSelectionListFileName = m_systemOption.m_strSelectionListFileName;
+    dlgSystemOption.m_dlgEditOption.m_strTempletDir = m_systemOption.m_strTempletDir;
+    dlgSystemOption.m_dlgEditOption.m_strFastInputFileName = m_systemOption.m_strFastInputFileName;
+    dlgSystemOption.m_dlgEditOption.m_strAutoCompleteFileName = m_systemOption.m_strAutoCompleteFileName;
+    dlgSystemOption.m_dlgEditOption.m_strTipFileName = m_systemOption.m_strTipFileName;
+    dlgSystemOption.m_dlgEditOption.m_colorBackGround = m_systemOption.m_colorBackGround;
+    dlgSystemOption.m_dlgEditOption.m_colorText = m_systemOption.m_colorText;
+    dlgSystemOption.m_dlgEditOption.m_colorCommentLine = m_systemOption.m_colorCommentLine;
+    dlgSystemOption.m_dlgEditOption.m_colorCommentBlock = m_systemOption.m_colorCommentBlock;
+    dlgSystemOption.m_dlgEditOption.m_colorIncludeText = m_systemOption.m_colorIncludeText;
+    dlgSystemOption.m_dlgEditOption.m_colorIncludeLib = m_systemOption.m_colorIncludeLib;
+    dlgSystemOption.m_dlgEditOption.m_colorSegmentData = m_systemOption.m_colorSegmentData;
+    dlgSystemOption.m_dlgEditOption.m_colorSegmentRData = m_systemOption.m_colorSegmentRData;
+    dlgSystemOption.m_dlgEditOption.m_colorSegmentBSS = m_systemOption.m_colorSegmentBSS;
+    dlgSystemOption.m_dlgEditOption.m_colorSegmentExtern = m_systemOption.m_colorSegmentExtern;
+    dlgSystemOption.m_dlgEditOption.m_colorSegmentCode = m_systemOption.m_colorSegmentCode;
+    dlgSystemOption.m_dlgEditOption.m_colorDigital = m_systemOption.m_colorDigital;
+    dlgSystemOption.m_dlgEditOption.m_colorInstruction = m_systemOption.m_colorInstruction;
+    dlgSystemOption.m_dlgEditOption.m_colorFInstruction = m_systemOption.m_colorFInstruction;
+    dlgSystemOption.m_dlgEditOption.m_colorRegister = m_systemOption.m_colorRegister;
+    dlgSystemOption.m_dlgEditOption.m_colorChar = m_systemOption.m_colorChar;
+    dlgSystemOption.m_dlgEditOption.m_colorString = m_systemOption.m_colorString;
+    dlgSystemOption.m_dlgEditOption.m_colorDefineWord = m_systemOption.m_colorDefineWord;
+    dlgSystemOption.m_dlgEditOption.m_colorMacro = m_systemOption.m_colorMacro;
+    dlgSystemOption.m_dlgEditOption.m_colorOperatorTxt = m_systemOption.m_colorOperatorTxt;
+    dlgSystemOption.m_dlgEditOption.m_colorOperator = m_systemOption.m_colorOperator;
+    dlgSystemOption.m_dlgEditOption.m_lfTextFont = m_systemOption.m_lfTextFont;
+    dlgSystemOption.m_dlgEditOption.m_bShowLineNumber = m_systemOption.m_bShowLineNumber;
+    dlgSystemOption.m_dlgEditOption.m_bShowBookMarker = m_systemOption.m_bShowBookMarker;
+    dlgSystemOption.m_dlgEditOption.m_bShowFold = m_systemOption.m_bShowFold;
+
+    if (dlgSystemOption.DoModal() == IDOK)
+    {
+        //没有修改直接返回
+        if (!dlgSystemOption.IsModify())
+            return;
+
+        m_systemOption.m_bUpdateEveryTime = dlgSystemOption.m_dlgCommonOption.m_bUpdateEveryTime;
+
+        m_systemOption.m_strOasmPath = dlgSystemOption.m_dlgOasmOption.m_strOasmPath;
+        m_systemOption.m_strLanguagePath = dlgSystemOption.m_dlgOasmOption.m_strLanguagePath;
+
+        m_systemOption.m_strLinkerFileName = dlgSystemOption.m_dlgLinkOption.m_strLinkerFileName;
+
+        m_systemOption.m_strSyntaxWordFileName = dlgSystemOption.m_dlgEditOption.m_strSyntaxWordFileName;
+        m_systemOption.m_strSelectionListFileName = dlgSystemOption.m_dlgEditOption.m_strSelectionListFileName;
+        m_systemOption.m_strTempletDir = dlgSystemOption.m_dlgEditOption.m_strTempletDir;
+        m_systemOption.m_strFastInputFileName = dlgSystemOption.m_dlgEditOption.m_strFastInputFileName;
+        m_systemOption.m_strAutoCompleteFileName = dlgSystemOption.m_dlgEditOption.m_strAutoCompleteFileName;
+        m_systemOption.m_strTipFileName = dlgSystemOption.m_dlgEditOption.m_strTipFileName;
+        m_systemOption.m_colorBackGround = dlgSystemOption.m_dlgEditOption.m_colorBackGround;
+        m_systemOption.m_colorText = dlgSystemOption.m_dlgEditOption.m_colorText;
+        m_systemOption.m_colorCommentLine = dlgSystemOption.m_dlgEditOption.m_colorCommentLine;
+        m_systemOption.m_colorCommentBlock = dlgSystemOption.m_dlgEditOption.m_colorCommentBlock;
+        m_systemOption.m_colorIncludeText = dlgSystemOption.m_dlgEditOption.m_colorIncludeText;
+        m_systemOption.m_colorIncludeLib = dlgSystemOption.m_dlgEditOption.m_colorIncludeLib;
+        m_systemOption.m_colorSegmentData = dlgSystemOption.m_dlgEditOption.m_colorSegmentData;
+        m_systemOption.m_colorSegmentRData = dlgSystemOption.m_dlgEditOption.m_colorSegmentRData;
+        m_systemOption.m_colorSegmentBSS = dlgSystemOption.m_dlgEditOption.m_colorSegmentBSS;
+        m_systemOption.m_colorSegmentExtern = dlgSystemOption.m_dlgEditOption.m_colorSegmentExtern;
+        m_systemOption.m_colorSegmentCode = dlgSystemOption.m_dlgEditOption.m_colorSegmentCode;
+        m_systemOption.m_colorDigital = dlgSystemOption.m_dlgEditOption.m_colorDigital;
+        m_systemOption.m_colorInstruction = dlgSystemOption.m_dlgEditOption.m_colorInstruction;
+        m_systemOption.m_colorFInstruction = dlgSystemOption.m_dlgEditOption.m_colorFInstruction;
+        m_systemOption.m_colorRegister = dlgSystemOption.m_dlgEditOption.m_colorRegister;
+        m_systemOption.m_colorChar = dlgSystemOption.m_dlgEditOption.m_colorChar;
+        m_systemOption.m_colorString = dlgSystemOption.m_dlgEditOption.m_colorString;
+        m_systemOption.m_colorDefineWord = dlgSystemOption.m_dlgEditOption.m_colorDefineWord;
+        m_systemOption.m_colorMacro = dlgSystemOption.m_dlgEditOption.m_colorMacro;
+        m_systemOption.m_colorOperatorTxt = dlgSystemOption.m_dlgEditOption.m_colorOperatorTxt;
+        m_systemOption.m_colorOperator = dlgSystemOption.m_dlgEditOption.m_colorOperator;
+        m_systemOption.m_lfTextFont = dlgSystemOption.m_dlgEditOption.m_lfTextFont;
+        m_systemOption.m_bShowLineNumber = dlgSystemOption.m_dlgEditOption.m_bShowLineNumber;
+        m_systemOption.m_bShowBookMarker = dlgSystemOption.m_dlgEditOption.m_bShowBookMarker;
+        m_systemOption.m_bShowFold = dlgSystemOption.m_dlgEditOption.m_bShowFold;
+
+        m_systemOption.Save(m_strSystemOptionFileName);
+
+        //设置输出窗口背景色
+        m_wndOutput.SetBackgroundColor(m_systemOption.m_colorBackGround);
+
+        //更新所有源代码编辑视图风格
+        CWinApp *pWinApp = AfxGetApp(); //得到应用程序指针
+        POSITION p = pWinApp->GetFirstDocTemplatePosition();//得到第1个文档模板
+        while (p != NULL) //遍历文档模板
+        {
+            CDocTemplate* pDocTemplate = pWinApp->GetNextDocTemplate(p);
+            POSITION p1 = pDocTemplate->GetFirstDocPosition();//得到文档模板对应的第1个文档
+            while (p1 != NULL) //遍历文档模板对应的文档
+            {
+                CDocument *pDocument = pDocTemplate->GetNextDoc(p1);
+                POSITION p2 = pDocument->GetFirstViewPosition(); //得到文档对应的第1个视图
+                while (p2 != NULL) //遍历文档对应的视图
+                {
+                    CView *pView = pDocument->GetNextView(p2);
+                    if (pView->IsKindOf(RUNTIME_CLASS(COLIDEView)))
+                    {
+                        ((COLIDEView*)pView)->UpdateAllStyle();
+                    }
+                }
+            }
+        }
+    }
+}
+BOOL CMainFrame::PreTranslateMessage(MSG* pMsg)
+{
+    // TODO: 在此添加专用代码和/或调用基类
+
+    if ( pMsg->message == WM_KEYDOWN  )
+    {
+        char nchar = pMsg->wParam;
+
+        switch (nchar)
+        {
+        case VK_F1:
+            SendMessage(WM_COMMAND,ID_OASM_HELP);
+            break;
+        case VK_F3:
+            SendMessage(WM_COMMAND,ID_EDIT_REPEAT);
+            break;
+        case VK_F5:
+            SendMessage(WM_COMMAND,ID_BUILD_AND_RUN);
+            break;
+        case VK_F7:
+            SendMessage(WM_COMMAND,ID_BUILD_PROJECT);
+            break;
+        case VK_F8:
+            SendMessage(WM_COMMAND,ID_LINK_PROJECT);
+            break;
+        case VK_F11:
+            SendMessage(WM_COMMAND,ID_BUILD_AND_LINK);
+            break;
+            //屏蔽下列快捷键
+        case _T('B'):
+        case _T('Q'):
+        case _T('W'):
+        case _T('E'):
+        case _T('R'):
+        case _T('T'):
+        {
+            if (GetKeyState(VK_CONTROL)&0x80)
+                return TRUE;
+            break;
+        }
+
+        case _T('C'):
+        {
+            //Ctrl+C
+            if (GetKeyState(VK_CONTROL)&0x80)
+            {
+                //输出生成窗口
+                if (pMsg->hwnd == m_wndOutput.GetOutputBuildWnd()->GetSafeHwnd())
+                {
+                    ::SendMessage(pMsg->hwnd,WM_COMMAND,ID_EDIT_COPY,0);
+                }
+            }
+            break;
+        }
+        case _T('S'):
+        {
+            //Ctrl+Shift+S
+            if ((GetKeyState(VK_CONTROL)&0x80) && (GetKeyState(VK_SHIFT)&0x8000))
+            {
+
+            }
+
+            break;
+        }
+        }
+    }
+
+    return CMDIFrameWndEx::PreTranslateMessage(pMsg);
+}
+
+#include "OASMBuild.h"
+#include "./Common/Common.h"
+
+bool CMainFrame::BuildCode(CProjectProperty* pProjectProperty,const CString& strPathName)
+{
+    ASSERT(pProjectProperty);
+
+    if (strPathName.IsEmpty())return false;
+
+    CString strOASMPath = m_systemOption.m_strOasmPath;
+    CString strLanguagePath = m_systemOption.m_strLanguagePath;
+    if (pProjectProperty == NULL || strOASMPath.IsEmpty() || strLanguagePath.IsEmpty())
+    {
+        return false;
+    }
+
+    //如果是相对路径
+    if (strOASMPath[0] == _T('.'))
+    {
+        GetAbsolutePathByRelativePath(strOASMPath,GetAppDirectory());
+    }
+    if (strLanguagePath[0] == _T('.'))
+    {
+        GetAbsolutePathByRelativePath(strLanguagePath,GetAppDirectory());
+    }
+
+    CString strObjPath;
+    strObjPath = pProjectProperty->GetProjectAbsolutePathMiddleOutPut();
+    strObjPath += strPathName.Right(strPathName.GetLength()-strPathName.ReverseFind(_T('\\'))-1);
+    strObjPath = strObjPath.Left(strObjPath.ReverseFind(_T('.')));
+    strObjPath += _T(".obj");
+
+    COASMBuild OASMBuild;
+    //编译代码文件
+    if (!OASMBuild.BuildCode(strOASMPath,strPathName,strLanguagePath,strObjPath))
+    {
+        return false;
+    }
+
+    return true;
+}
+
+void CMainFrame::LinkProject(CProjectProperty* pProjectProperty,BOOL bRunExeFile)
+{
+    ASSERT(pProjectProperty);
+
+    if (m_systemOption.m_strLinkerFileName.IsEmpty())
+        return;
+
+    CString strObjPath = pProjectProperty->GetProjectAbsolutePathMiddleOutPut();
+    if (strObjPath.IsEmpty())
+        return;
+
+    CString strExeFileName = pProjectProperty->GetProjectAbsolutePathOutPutFileName();
+    if (strExeFileName.IsEmpty())
+        return;
+
+    CString strDefFileName = pProjectProperty->m_strDefFileName;
+
+    CString strLinkerPath = m_systemOption.m_strLinkerFileName;
+    //如果是相对路径
+    if (strLinkerPath[0] == _T('.'))
+    {
+        GetAbsolutePathByRelativePath(strLinkerPath,GetAppDirectory());
+    }
+
+    //设置链接参数
+    CString strOtherLinkParam;
+    strOtherLinkParam += (pProjectProperty->m_nLinkSubSystem == 0)?_T(" /SUBSYSTEM:CONSOLE"):_T(" /SUBSYSTEM:WINDOWS");
+
+    strExeFileName = pProjectProperty->GetProjectAbsolutePathOutPutFileName();
+    bool bHasResFile = HasResFile(pProjectProperty->GetProjectAbsolutePathMiddleOutPut()); //判断是否有资源文件
+    COASMBuild OASMBuild;
+    if (!OASMBuild.LinkObjPath(strLinkerPath,strObjPath,bHasResFile,strExeFileName,strOtherLinkParam,pProjectProperty->m_nProgramType == CProjectProperty::PT_DLL,strDefFileName))
+    {
+        strExeFileName.Empty();
+        return;
+    }
+
+    if (bRunExeFile)
+    {
+        COASMBuild::RunProgramme(strExeFileName);
+    }
+}
+
+BOOL CMainFrame::BuildProject(CProjectProperty* pProjectProperty)
+{
+    ASSERT(pProjectProperty);
+
+    CString strCodeDir = pProjectProperty->GetProjectAbsolutePathCodeDir();
+    if (strCodeDir.IsEmpty())
+    {
+        OutPutMsg(_T("未设置工程代码目录\n"));
+        return FALSE;
+    }
+
+    //保存工程文件夹下的文件
+    CString strProjectFilePath = pProjectProperty->m_strProjectFilePath;
+    strProjectFilePath = strProjectFilePath.Left(strProjectFilePath.ReverseFind(_T('\\')));
+    theApp.SaveDocument(strProjectFilePath,TRUE);
+
+    OutPutMsg(_T("正在编译工程 %s...\n"),pProjectProperty->m_strProjectName);
+
+    int nCodeFileCount = 0;
+    pProjectProperty->m_strDefFileName.Empty();
+    BOOL bResult = BrowseBuildFile(strCodeDir,pProjectProperty,nCodeFileCount);
+    if (bResult == FALSE)return FALSE;
+
+    //如果没有代码文件
+    if (nCodeFileCount == 0)
+    {
+        OutPutMsg(_T("没有代码文件\n"));
+
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
+BOOL CMainFrame::BrowseBuildFile(const CString& strDir,CProjectProperty* pProjectProperty,int& nCodeFileCount)
+{
+    CFileFind ff;
+    CString szDir = strDir;
+
+    if (szDir.Right(1) != _T("\\"))
+    {
+        szDir += _T("\\");
+    }
+    szDir += _T("*.*");
+
+    BOOL bResult = TRUE;
+    BOOL res = ff.FindFile(szDir);
+    while (res)
+    {
+        res = ff.FindNextFile();
+        if (ff.IsDots())continue;
+
+        if (ff.IsDirectory())
+        {
+            if (!BrowseBuildFile(ff.GetFilePath(),pProjectProperty,nCodeFileCount))
+            {
+                bResult = FALSE;
+                break;
+            }
+
+            continue;
+        }
+
+        //否则是文件
+        CString strFilePath = ff.GetFilePath();
+        CString strExternName = ff.GetFileName();
+        int nPos = strExternName.ReverseFind(_T('.'));
+        if (nPos < 0)continue;
+
+        strExternName = strExternName.Right(strExternName.GetLength()-nPos-1);
+        strExternName.MakeLower();
+        //代码文件
+        if (strExternName == _T("oam"))
+        {
+            OutPutMsg(_T("%s\n"),ff.GetFileName());
+            if (!BuildCode(pProjectProperty,strFilePath))
+            {
+                bResult = FALSE;
+                break;
+            }
+
+            ++nCodeFileCount;
+        }
+        //定义文件
+        else if (strExternName == _T("def"))
+        {
+            pProjectProperty->m_strDefFileName = strFilePath;
+        }
+    }
+    ff.Close();
+
+    return TRUE;
+}
+
+//判断某个目录下面是否有res文件
+bool CMainFrame::HasResFile(const CString& strDir)
+{
+    CFileFind ff;
+    CString szDir = strDir;
+
+    if (szDir.Right(1) != _T("\\"))
+    {
+        szDir += _T("\\");
+    }
+    szDir += _T("*.*");
+
+    bool bResult = false;
+    BOOL res = ff.FindFile(szDir);
+    while (res)
+    {
+        res = ff.FindNextFile();
+        if (ff.IsDots() || ff.IsDirectory())continue;
+
+        //否则是文件
+        CString strFilePath = ff.GetFilePath();
+        CString strExternName = ff.GetFileName();
+        int nPos = strExternName.ReverseFind(_T('.'));
+        if (nPos < 0)continue;
+
+        strExternName = strExternName.Right(strExternName.GetLength()-nPos-1);
+        strExternName.MakeLower();
+        //资源文件
+        if (strExternName == _T("res"))
+        {
+            bResult = true;
+            break;
+        }
+    }
+    ff.Close();
+
+    return bResult;
+}
+
+void CMainFrame::OnBuildProject()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    ClearOutPut();
+
+    CProjectProperty* pProjectPropertyCur = GetCurProjectProperty();
+    if (pProjectPropertyCur)
+    {
+        BuildProject(pProjectPropertyCur);
+    }
+
+    CommandFinish();
+}
+
+void CMainFrame::OnLinkProject()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    ClearOutPut();
+
+    CProjectProperty* pProjectPropertyCur = GetCurProjectProperty();
+    if (pProjectPropertyCur)
+    {
+        LinkProject(pProjectPropertyCur);
+    }
+
+    CommandFinish();
+}
+
+void CMainFrame::OnBuildAndLink()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    ClearOutPut();
+
+    CProjectProperty* pProjectPropertyCur = GetCurProjectProperty();
+    if (pProjectPropertyCur)
+    {
+        if (BuildProject(pProjectPropertyCur))
+        {
+            LinkProject(pProjectPropertyCur);
+        }
+    }
+
+    CommandFinish();
+}
+
+void CMainFrame::OnBuildAll()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    ClearOutPut();
+
+    HTREEITEM hItemProject =  m_wndSolutionPane.GetFirstProject();
+    while (hItemProject)
+    {
+        CProjectProperty* pProjectProperty = m_wndSolutionPane.GetProjectProperty(hItemProject);
+        if (pProjectProperty)
+        {
+            if (BuildProject(pProjectProperty))
+            {
+                LinkProject(pProjectProperty);
+            }
+
+            OutPutMsg(_T("\n"));
+        }
+
+        hItemProject = m_wndSolutionPane.GetNextItem(hItemProject);
+    }
+
+    CommandFinish();
+}
+
+void CMainFrame::OnBuildAndRun()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    ClearOutPut();
+
+    CProjectProperty* pProjectPropertyCur = GetCurProjectProperty();
+    if (pProjectPropertyCur)
+    {
+        if (BuildProject(pProjectPropertyCur))
+        {
+            LinkProject(pProjectPropertyCur,TRUE);
+        }
+    }
+
+    CommandFinish();
+}
+
+void CMainFrame::CommandFinish()
+{
+    OutPutMsg(_T("\n---------完成---------\n"));
+}
+
+void CMainFrame::OnUpdateBuildProject(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(m_wndSolutionPane.HasProject());
+}
+
+void CMainFrame::OnUpdateLinkProject(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(m_wndSolutionPane.HasProject());
+}
+
+void CMainFrame::OnUpdateBuildAndLink(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(m_wndSolutionPane.HasProject());
+}
+
+void CMainFrame::OnUpdateBuildAndRun(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(m_wndSolutionPane.HasProject());
+}
+
+void CMainFrame::OnUpdateBuildAll(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(m_wndSolutionPane.HasProject());
+}
+
+
+void CMainFrame::OnOASMHelp()
+{
+    CString strOasmHelpFileName = GetAppDirectory();
+    strOasmHelpFileName += _T("\\oasm.chm");
+    ShellExecute(NULL,NULL,strOasmHelpFileName,NULL,NULL,SW_SHOW);
+}
+
+void CMainFrame::OpenDocument(LPCTSTR lpFileName,int nGotoLine,int nGotoRow)
+{
+    CWinApp *pWinApp = AfxGetApp(); //得到应用程序指针
+    POSITION p = pWinApp->GetFirstDocTemplatePosition();//得到第1个文档模板
+    if (p != NULL)
+    {
+        CDocument *pDocument = 0;
+        CDocument *pDocumentTemp = 0;
+        //得到第一个文档模板
+        CDocTemplate* pDocTemplate = pWinApp->GetNextDocTemplate(p);
+        POSITION p1 = pDocTemplate->GetFirstDocPosition();//得到文档模板对应的第1个文档
+        while (p1 != NULL) //遍历文档模板对应的文档
+        {
+            pDocumentTemp = pDocTemplate->GetNextDoc(p1);
+            if (pDocumentTemp->GetPathName() == lpFileName)
+            {
+                pDocument = pDocumentTemp;
+                break;
+            }
+        }
+        if (pDocument == NULL)
+        {
+            pDocument = pDocTemplate->OpenDocumentFile(lpFileName);
+        }
+
+        POSITION p2 = pDocument->GetFirstViewPosition(); //得到文档对应的第1个视图
+        while (p2 != NULL) //遍历文档对应的视图
+        {
+            CView *pView = pDocument->GetNextView(p2);
+            if (pView->IsKindOf(RUNTIME_CLASS(COLIDEView)))
+            {
+                CMDIChildWndEx   *pChild   =   (CMDIChildWndEx*)pView->GetParentFrame();//获得该view的父窗口
+                pChild->MDIActivate();//激活该父窗口
+
+                ((COLIDEView*)pView)->GotoPos(nGotoLine,nGotoRow);
+                pView->SetFocus();
+
+                return ;
+            }
+        }
+    }
+}
+
+//设置文件关联
+void CMainFrame::SetAssociate(TCHAR* szKeyExt,int nIconID)
+{
+    CGCFileTypeAccess TheFTA;
+    TheFTA.SetExtension(szKeyExt);
+
+    if (TheFTA.IsAssociate())
+        return;
+
+    TCHAR szProgPath[MAX_PATH * 2];
+    ::GetModuleFileName(NULL, szProgPath, sizeof(szProgPath)/sizeof(TCHAR));
+
+    CString csTempText;
+
+    // just pass file path in quotes on command line
+    csTempText  = szProgPath;
+    csTempText += _T(" \"%1\"");
+    TheFTA.SetShellOpenCommand(csTempText);
+    TheFTA.SetDocumentShellOpenCommand(csTempText);
+
+    csTempText = szKeyExt;
+    csTempText += _T("file.Document");
+    TheFTA.SetDocumentClassName(csTempText);
+
+    // use first icon in program
+    csTempText.Format(_T("%s,-%d"),szProgPath,nIconID);
+    TheFTA.SetDocumentDefaultIcon(csTempText);
+
+    TheFTA.RegSetAllInfo();
+}
+
+//删除文件关联
+void CMainFrame::DelAssociate()
+{
+
+}
+
+void CMainFrame::OnCheckNewVersion()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    theApp.UpdateNewVersion(TRUE);
+}
+
+void CMainFrame::OnNewSolution()
+{
+    // TODO: 在此添加命令处理程序代码
+
+    m_wndSolutionPane.SendMessage(WM_COMMAND,ID_NEW_SOLUTION);
+}
+
+void CMainFrame::OnOpenSolution()
+{
+    if (m_wndSolutionPane.HasSolution())
+        return;
+
+    TCHAR szFilters[]= _T("O语言方案 (*.osl)|*.osl|");
+
+    CFileDialog fileDlg (TRUE, _T("my"), _T("*.osl"),
+                         OFN_FILEMUSTEXIST| OFN_HIDEREADONLY, szFilters, NULL);
+
+    if ( fileDlg.DoModal ()!=IDOK )
+        return ;
+
+    OpenSolution(fileDlg.GetPathName());
+}
+
+void CMainFrame::OnUpdateOpenSolution(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(!m_wndSolutionPane.HasSolution());
+}
+
+void CMainFrame::OnUpdateNewSolution(CCmdUI *pCmdUI)
+{
+    // TODO: 在此添加命令更新用户界面处理程序代码
+
+    pCmdUI->Enable(!m_wndSolutionPane.HasSolution());
+}
+
+void CMainFrame::OnDropFiles(HDROP hDropInfo)
+{
+    // TODO: 在此添加消息处理程序代码和/或调用默认值
+
+int DropCount=DragQueryFile(hDropInfo,-1,NULL,0);
+//取得被拖动文件的数目
+for (int i=0;i< DropCount;i++)
+
+{
+int NameSize=DragQueryFile(hDropInfo,i,NULL,0);
+//取得第i个拖动文件名所占字节数
+HANDLE hHeap=GetProcessHeap();
+char *pName=(LPSTR)HeapAlloc
+(hHeap,HEAP_ZERO_MEMORY,
+NameSize++);//根据字节数分配缓冲区
+if (pName==NULL)
+{
+MessageBox("给文件名分配暂存空间时出错!",
+"错误信息",MB_ICONERROR);
+return;
+}
+DragQueryFile(hDropInfo,i,pName,NameSize);
+//把文件名拷贝到缓冲区
+m_View_List.AddString(pName);
+//文件名加入listbox中显示
+
+HeapFree(hHeap,HEAP_ZERO_MEMORY,pName);
+//释放缓冲区
+
+}
+
+CMDIFrameWndEx::OnDropFiles(hDropInfo);
+}

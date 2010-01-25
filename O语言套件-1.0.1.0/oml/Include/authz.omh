@@ -1,0 +1,27 @@
+引用段
+{
+函数 AuthzAccessCheck(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzAddSidsToContext(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzCachedAccessCheck(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzEnumerateSecurityEventSources(整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzFreeAuditEvent(整数32)=>整数32;
+函数 AuthzFreeContext(整数32)=>整数32;
+函数 AuthzFreeHandle(整数32)=>整数32;
+函数 AuthzFreeResourceManager(整数32)=>整数32;
+函数 AuthzGetInformationFromContext(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzInitializeContextFromAuthzContext(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzInitializeContextFromSid(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzInitializeContextFromToken(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 AuthzInitializeObjectAccessAuditEvent(整数32, ..)=>整数32;
+函数 C调用 AuthzInitializeObjectAccessAuditEvent2(整数32, ..)=>整数32;
+函数 AuthzInitializeResourceManager(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzInstallSecurityEventSource(整数32,整数32)=>整数32;
+函数 AuthzOpenObjectAudit(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzRegisterSecurityEventSource(整数32,整数32,整数32)=>整数32;
+函数 C调用 AuthzReportSecurityEvent(整数32, ..)=>整数32;
+函数 AuthzReportSecurityEventFromParams(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AuthzUninstallSecurityEventSource(整数32,整数32)=>整数32;
+函数 AuthzUnregisterSecurityEventSource(整数32,整数32)=>整数32;
+函数 AuthziLogAuditEvent(整数32,整数32,整数32)=>整数32;
+
+}

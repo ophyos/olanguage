@@ -1,0 +1,96 @@
+
+引用段
+{
+
+//////////////////////////////////////////////////////////////////////////
+//ToolbarButton
+
+函数 ToolbarButton_GetIndex(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_GetId(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetImage(地址 pToolbarButton,整数32 image);
+函数 ToolbarButton_GetImage(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetText(地址 pToolbarButton,地址 text);
+函数 ToolbarButton_GetText(地址 pToolbarButton)=>地址;
+函数 ToolbarButton_SetEnabled(地址 pToolbarButton,整数32 enable);
+函数 ToolbarButton_GetEnabled(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetVisible(地址 pToolbarButton,整数32 visible);
+函数 ToolbarButton_GetVisible(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetChecked(地址 pToolbarButton,整数32 check);
+函数 ToolbarButton_GetChecked(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetPressed(地址 pToolbarButton,整数32 press);
+函数 ToolbarButton_GetPressed(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetHilited(地址 pToolbarButton,整数32 high);
+函数 ToolbarButton_GetHilited(地址 pToolbarButton)=>整数32;
+函数 ToolbarButton_SetTipText(地址 pToolbarButton,地址 text);	
+函数 ToolbarButton_GetTipText(地址 pToolbarButton)=>地址;
+函数 ToolbarButton_SetMenu(地址 pToolbarButton,地址 menu); 
+函数 ToolbarButton_SetData(地址 pToolbarButton,地址 data);
+函数 ToolbarButton_GetRect(地址 pToolbarButton,地址 rc);
+函数 ToolbarButton_GetData(地址 pToolbarButton)=>地址; 
+函数 ToolbarButton_GetMenu(地址 pToolbarButton)=>地址;
+函数 ToolbarButton_GetOwner(地址 pToolbarButton)=>地址;
+
+//////////////////////////////////////////////////////////////////////////
+//Toolbar
+
+函数 Toolbar_GetButtonCount(地址 pToolbar)=>整数32;
+函数 Toolbar_SetButtonSize(地址 pToolbar,地址 size);
+函数 Toolbar_SetBitmapSize(地址 pToolbar,地址 size);
+函数 Toolbar_SetHotItem(地址 pToolbar,整数32 index);
+函数 Toolbar_GetHotItem(地址 pToolbar)=>整数32;			 
+函数 Toolbar_SetPadding(地址 pToolbar,地址 size);
+函数 Toolbar_SetRowCount(地址 pToolbar,整数32 rows);
+函数 Toolbar_GetRowCount(地址 pToolbar)=>整数32;
+函数 Toolbar_SetToolTip(地址 pToolbar,HWND tips);
+函数 Toolbar_SetIndent(地址 pToolbar,整数32 indent);
+函数 Toolbar_GetButtonSize(地址 pToolbar,地址 size);
+函数 Toolbar_GetBitmapSize(地址 pToolbar,地址 size);
+函数 Toolbar_GetPadding(地址 pToolbar,地址 size);
+函数 Toolbar_GetToolTip(地址 pToolbar)=>HWND;	
+函数 Toolbar_SetImageList(地址 pToolbar,地址 imageList);	    
+函数 Toolbar_SetHotImageList(地址 pToolbar,地址 imageList);   
+函数 Toolbar_SetDisabledImageList(地址 pToolbar,地址 imageList);
+函数 Toolbar_GetImageList(地址 pToolbar)=>地址;
+函数 Toolbar_GetHotImageList(地址 pToolbar)=>地址;
+函数 Toolbar_GetDisabledImageList(地址 pToolbar)=>地址;  
+函数 Toolbar_GetButton(地址 pToolbar,整数32 index)=>地址;	
+
+//以下4个函数为按钮插入函数，注意待插入按钮的id不能与本工具栏中的其他按钮id重复，也不要与其他工具栏中按钮id重复。
+//在位置index之前插入一个普通按钮，用户必须指定按钮的id；showText指明是否显示文本，但此参数对于文字显示在图片下方
+//的工具栏无效。
+函数 Toolbar_InsertButton(地址 pToolbar,整数32 index, 整数32 id, 整数32 showText)=>地址;//
+//在位置index之前插入一个Check式按钮，用户按下这种按钮，它保持按下状态；再按一下，又恢复原状。
+//如果group参数为true，则相邻的Check式按钮共属一组，其状态互斥，即其中只有一个能保持压下状态。
+函数 Toolbar_InsertCheck(地址 pToolbar,整数32 group, 整数32 index, 整数32 id, 整数32 showText)=>地址;
+//在位置index之前插入一个下拉式按钮，这种按钮右侧有一个小箭头。如果whole为false，则按钮本身与小箭头
+//焊接在一起，否则是分开的。
+函数 Toolbar_InsertDropdown(地址 pToolbar,整数32 whole, 整数32 index, 整数32 id, 整数32 showText)=>地址;
+//在位置index之前插入一个分割按钮(这种分割按钮实际上是一种比较窄的豁口)
+函数 Toolbar_InsertSeperator(地址 pToolbar,整数32 index)=>地址;		
+//在工具栏尾部追加一个Button按钮，参数含义请参考InsertButton()的注释
+函数 Toolbar_AddButton(地址 pToolbar,整数32 id, 整数32 showText)=>地址;
+//在工具栏尾部追加一个Check按钮，参数含义请参考InsertCheck()的注释
+函数 Toolbar_AddCheck(地址 pToolbar,整数32 group, 整数32 id, 整数32 showText)=>地址;
+//在工具栏尾部追加一个Dropdown按钮，参数含义请参考InsertDropdown()的注释
+函数 Toolbar_AddDropdown(地址 pToolbar,整数32 whole, 整数32 id, 整数32 showText)=>地址;
+//在工具栏尾部追加一个Seperator按钮
+函数 Toolbar_AddSeperator(地址 pToolbar)=>地址;
+//删除指定索引的按钮
+函数 Toolbar_DeleteButton(地址 pToolbar,整数32 index);
+//删除所有按钮
+函数 Toolbar_DeleteAllButtons(地址 pToolbar);
+//将一个按钮从iFrom位置移动到iTo位置
+函数 Toolbar_MoveButton(地址 pToolbar,整数32 iFrom,整数32 iTo);
+//重新调整工具栏的尺寸(通常是用户改变了按钮大小或按钮图标大小时需要调用此函数)
+函数 Toolbar_Resize(地址 pToolbar);
+//测试一个坐标为p(相对于工具客户区原点)的点是否在一个非Separator的按钮之上
+函数 Toolbar_IsOnButton(地址 pToolbar,地址 p)=>地址;
+//找到指定id的按钮，若找不到，返回NULL
+函数 Toolbar_FindButton(地址 pToolbar,整数32 id)=>地址;
+
+函数 Toolbar_DestroyControl(地址 pToolbar);	   
+函数 Toolbar_GetClass(地址 pToolbar)=>地址;
+函数 Toolbar_SetCaption(地址 pToolbar,地址 string);
+函数 Toolbar_GetCaption(地址 pToolbar)=>地址;
+
+}

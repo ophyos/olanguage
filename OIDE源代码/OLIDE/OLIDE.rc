@@ -1,0 +1,1528 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\OLIDE.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OLIDE.ico"
+IDR_OLIDETYPE           ICON                    "res\\OLIDEDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+IDI_OPTION_EDITOR       ICON                    "res\\option_editor.ico"
+IDI_OPTION_LINK         ICON                    "res\\option_link.ico"
+IDI_OPTION_OASM         ICON                    "res\\option_oasm.ico"
+IDI_OAM_FILE            ICON                    "res\\oam.ico"
+IDI_OAH_FILE            ICON                    "res\\oah.ico"
+IDI_SOLUTION            ICON                    "res\\solution.ico"
+IDI_FILE                ICON                    "res\\text.ico"
+IDI_PROJECT             ICON                    "res\\project.ico"
+IDI_OPTION_COMMON       ICON                    "res\\option_common.ico"
+IDI_OMH_FILE            ICON                    "res\\source_omh.ico"
+IDI_OMP_FILE            ICON                    "res\\source_omp.ico"
+IDI_OPR_FILE            ICON                    "res\\source_opr.ico"
+IDI_OSL_FILE            ICON                    "res\\source_osl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+IDB_HDRDOWN             BITMAP                  "res\\hdrdown.bmp"
+IDB_HDRUP               BITMAP                  "res\\hdrup.bmp"
+IDR_BUILD_CODE          BITMAP                  "res\\Toolbar_Build.bmp"
+IDR_SYNTAX_WORD         BITMAP                  "res\\toolbar2.bmp"
+IDR_OPERATOR            BITMAP                  "res\\bmp00001.bmp"
+IDB_SOLUTION_TREE       BITMAP                  "res\\solution.bmp"
+IDB_BITMAP_ADD_NEW_ITEM BITMAP                  "res\\add new item.bmp"
+IDR_BUILD_CODE1         BITMAP                  "res\\build_co.bmp"
+IDR_EDIT_VIEW           BITMAP                  "res\\edit_view.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_NEW_SOLUTION
+    BUTTON      ID_OPEN_SOLUTION
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVE_ALL
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_SYSTEM_OPTIONS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_NEW_SOLUTION
+    BUTTON      ID_OPEN_SOLUTION
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVE_ALL
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_RESEDITOR
+    BUTTON      ID_SYSTEM_OPTIONS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_SORT TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+IDR_BUILD_CODE TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_BUILD_AND_LINK
+    BUTTON      ID_BUILD_ALL
+    BUTTON      ID_BUILD_PROJECT
+    BUTTON      ID_LINK_PROJECT
+    BUTTON      ID_BUILD_AND_RUN
+END
+
+IDR_SYNTAX_WORD TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SYNTAX_WORD_COMMENT_LINE
+    BUTTON      ID_SYNTAX_WORD_COMMENT_BLOCK
+    BUTTON      ID_SYNTAX_WORD_INCLUDE_TEXT
+    BUTTON      ID_SYNTAX_WORD_INCLUDE_LIB
+    BUTTON      ID_SYNTAX_WORD_SEGMENT_EXTERN
+    BUTTON      ID_SYNTAX_WORD_SEGMENT_DATA
+    BUTTON      ID_SYNTAX_WORD_SEGMENT_RDATA
+    BUTTON      ID_SYNTAX_WORD_SEGMENT_BSS
+    BUTTON      ID_SYNTAX_WORD_SEGMENT_CODE
+    SEPARATOR
+    BUTTON      ID_SYNTAX_WORD_STRUCT
+    BUTTON      ID_SYNTAX_WORD_UNION
+    BUTTON      ID_SYNTAX_WORD_ENUM
+    SEPARATOR
+    BUTTON      ID_SYNTAX_WORD_TYPE_DEFINE
+    BUTTON      ID_SYNTAX_WORD_MACRO_DEFINE
+    BUTTON      ID_SYNTAX_WORD_DEGREE
+    BUTTON      ID_SYNTAX_WORD_HDOB
+    BUTTON      ID_SYNTAX_WORD_LABLE
+    BUTTON      ID_SYNTAX_WORD_ADDR
+    SEPARATOR
+    BUTTON      ID_SYNTAX_WORD_START
+    BUTTON      ID_SYNTAX_WORD_FUNCTION
+    SEPARATOR
+    BUTTON      ID_SYNTAX_WORD_ARRAY_DEFINE
+    BUTTON      ID_SYNTAX_WORD_ARRAY_MEMBER
+    SEPARATOR
+    BUTTON      ID_SYNTAX_WORD_WCHAR
+    BUTTON      ID_SYNTAX_WORD_WSTRING
+    SEPARATOR
+    BUTTON      ID_SYNTAX_WORD_BLOCK_CONNECT
+    BUTTON      ID_SYNTAX_WORD_LINE_CONNECT
+    BUTTON      ID_SYNTAX_WORD_INSN_JOIN
+END
+
+IDR_OPERATOR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_OPERATOR_IF
+    BUTTON      ID_OPERATOR_ELSE
+    BUTTON      ID_OPERATOR_OR
+    BUTTON      ID_OPERATOR_ALSO
+    SEPARATOR
+    BUTTON      ID_OPERATOR_NEG
+    BUTTON      ID_OPERATOR_CALL
+    BUTTON      ID_OPERATOR_RET
+    BUTTON      ID_OPERATOR_JMP
+    BUTTON      ID_OPERATOR_EXIT
+    BUTTON      ID_OPERATOR_BREAK
+    BUTTON      ID_OPERATOR_CONTINUE
+    BUTTON      ID_OPERATOR_INTERRUPT
+    BUTTON      ID_OPERATOR_HLT
+    BUTTON      ID_OPERATOR_PUSH
+    BUTTON      ID_OPERATOR_POP
+    BUTTON      ID_OPERATOR_FLAGR
+    BUTTON      ID_OPERATOR_SET
+    BUTTON      ID_OPERATOR_CMP
+    BUTTON      ID_OPERATOR_XCHG
+    BUTTON      ID_OPERATOR_STRING
+    BUTTON      ID_OPERATOR_WAIT
+    BUTTON      ID_OPERATOR_NOP
+    BUTTON      ID_OPERATOR_ENTER
+    BUTTON      ID_OPERATOR_LEAVE
+    SEPARATOR
+    BUTTON      ID_OPERATOR_MUL
+    BUTTON      ID_OPERATOR_DIV
+    BUTTON      ID_OPERATOR_SIGN
+    SEPARATOR
+    BUTTON      ID_OPERATOR_ABOVE
+    BUTTON      ID_OPERATOR_BELOW
+    BUTTON      ID_OPERATOR_GT_ASSIGN
+    BUTTON      ID_OPERATOR_LT_ASSIGN
+    BUTTON      ID_OPERATOR_OVERFLOW
+    BUTTON      ID_OPERATOR_ODD
+    BUTTON      ID_OPERATOR_ZERO
+    SEPARATOR
+    BUTTON      ID_OPERATOR_FWAIT
+    BUTTON      ID_OPERATOR_FNOP
+    BUTTON      ID_OPERATOR_DIVISOR
+    BUTTON      ID_OPERATOR_SQUARE_ROOT
+    BUTTON      ID_OPERATOR_PI
+    BUTTON      ID_OPERATOR_LOG
+    BUTTON      ID_OPERATOR_LN
+    BUTTON      ID_OPERATOR_POWER
+END
+
+IDR_BUILD_CODE1 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_BUILD_AND_LINK
+    BUTTON      ID_BUILD_ALL
+    BUTTON      ID_BUILD_PROJECT
+    BUTTON      ID_LINK_PROJECT
+    BUTTON      ID_BUILD_AND_RUN
+    BUTTON      ID_DUMMY_SELECT_ACTIVE_CONFIGURATION
+END
+
+IDR_EDIT_VIEW TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TAB_ADD
+    BUTTON      ID_TAB_SUB
+    SEPARATOR
+    BUTTON      ID_COMMENT_ADD
+    BUTTON      ID_COMMENT_SUB
+    SEPARATOR
+    BUTTON      ID_GOTO_LINE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建方案(&N)",                    ID_NEW_SOLUTION
+        MENUITEM "打开方案(&O)",                    ID_OPEN_SOLUTION
+        MENUITEM "关闭方案(&C)",                    ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "全部保存(&L)\tCtrl+Shift+S",      ID_FILE_SAVE_ALL
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "生成(&B)"
+    BEGIN
+        MENUITEM "生成(&U)\tF7",                  ID_BUILD_AND_LINK
+        MENUITEM "全部生成(&A)",                    ID_BUILD_ALL
+        MENUITEM "编译代码(&B)",                    ID_BUILD_PROJECT
+        MENUITEM "链接程序(&L)",                    ID_LINK_PROJECT
+        MENUITEM "编译并执行(&R)\tF8",               ID_BUILD_AND_RUN
+    END
+    POPUP "反汇编(&D)"
+    BEGIN
+        MENUITEM "打开PE文件(&P)",                  ID_DASM_PE_FILE
+    END
+    POPUP "调试(&D)"
+    BEGIN
+        MENUITEM "开始调试(&S)\tF5",                ID_BEGIN_DEBUGGER
+        MENUITEM "停止调试(&T)",                    ID_STOP_DEBUGGER
+        MENUITEM SEPARATOR
+        MENUITEM "逐行调试(&O)\tF10",               ID_DEBUG_SINGLE_LINE
+        MENUITEM SEPARATOR
+        MENUITEM "切换断点(&B)\tF9",                ID_SET_BREAK_POINT
+        MENUITEM "清除所有断点(&D)",                  33097
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "关联O文件(&A)",                   ID_ASSOCIATE_O_FILE
+        MENUITEM "资源编辑器(&R)",                   ID_RESEDITOR
+        MENUITEM "选项(&O)",                      ID_SYSTEM_OPTIONS
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "O汇编教程(&H)",                   ID_OASM_HELP
+        MENUITEM "检查新版本(&V)",                   ID_CHECK_NEW_VERSION
+        MENUITEM "访问O语言主页",                     ID_OPEN_OLANGUAGE_WEB
+        MENUITEM "关于 O语言开发环境(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_OLIDETYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建方案(&N)",                    ID_NEW_SOLUTION
+        MENUITEM "打开方案(&O)",                    ID_OPEN_SOLUTION
+        MENUITEM "关闭方案(&C)",                    ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "全部保存(&L)\tCtrl+Shift+S",      ID_FILE_SAVE_ALL
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\t Ctrl+Z",             ID_EDIT_UNDO
+        MENUITEM "重做(&R)\tCtrl+Y",              ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\t Ctrl+X",             ID_EDIT_CUT
+        MENUITEM "复制(&C)\t Ctrl+C",             ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\t Ctrl+V",             ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "全选(&A)\t Ctrl+A",             ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        POPUP "查找与替换"
+        BEGIN
+            MENUITEM "查找(&F)\t Ctrl+F",             ID_EDIT_FIND
+            MENUITEM "查找下一个\t F3",                  ID_EDIT_REPEAT
+            MENUITEM "替换(&R)\t Ctrl+H",             ID_EDIT_REPLACE
+        END
+        POPUP "文本块"
+        BEGIN
+            MENUITEM "增加缩进",                        ID_TAB_ADD
+            MENUITEM "减小缩进",                        ID_TAB_SUB
+            MENUITEM "增加注释",                        ID_COMMENT_ADD
+            MENUITEM "减少注释",                        ID_COMMENT_SUB
+        END
+        POPUP "快捷输入"
+        BEGIN
+            MENUITEM "快捷输入列表",                      33140
+            MENUITEM "文件模板列表",                      ID_FILE_TEMPLATE_LIST
+        END
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        POPUP "语法加亮方案"
+        BEGIN
+            MENUITEM "O汇编方案",                       ID_HIGH_LIGHT_OASM
+            MENUITEM "O中间语言方案",                     ID_HIGH_LIGHT_OML
+        END
+    END
+    POPUP "生成(&B)"
+    BEGIN
+        MENUITEM "生成(&U)\tF7",                  ID_BUILD_AND_LINK
+        MENUITEM "重新生成(&E)",                    ID_REBUILD_AND_LINK
+        MENUITEM "全部生成(&A)",                    ID_BUILD_ALL
+        MENUITEM "编译代码(&B)",                    ID_BUILD_PROJECT
+        MENUITEM "链接程序(&L)",                    ID_LINK_PROJECT
+        MENUITEM "编译并执行(&R)\tF8",               ID_BUILD_AND_RUN
+    END
+    POPUP "调试(&D)"
+    BEGIN
+        MENUITEM "开始调试(&S)\tF5",                ID_BEGIN_DEBUGGER
+        MENUITEM "停止调试(&T)",                    ID_STOP_DEBUGGER
+        MENUITEM SEPARATOR
+        MENUITEM "逐行调试(&O)\tF10",               33098
+        MENUITEM SEPARATOR
+        MENUITEM "切换断点(&B)\tF9",                ID_SET_BREAK_POINT
+        MENUITEM "清除所有断点(&D)",                  33097
+    END
+    POPUP "反汇编(&D)"
+    BEGIN
+        MENUITEM "打开PE文件(&P)",                  ID_DASM_PE_FILE
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "关联O文件(&A)",                   ID_ASSOCIATE_O_FILE
+        MENUITEM "资源编辑器(&R)",                   ID_RESEDITOR
+        MENUITEM "选项(&O)",                      ID_SYSTEM_OPTIONS
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "O中间语言教程(&M)",                 ID_OML_HELP
+        MENUITEM "O汇编教程(&A)",                   ID_OASM_HELP
+        MENUITEM "检查新版本(&V)",                   ID_CHECK_NEW_VERSION
+        MENUITEM "访问O语言主页",                     ID_OPEN_OLANGUAGE_WEB
+        MENUITEM "关于 O语言开发环境(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_OASM_EDIT MENU 
+BEGIN
+    POPUP "O汇编编辑菜单"
+    BEGIN
+        POPUP "添加寄存器"
+        BEGIN
+            POPUP "8位寄存器"
+            BEGIN
+                MENUITEM "累加低",                         ID_INSERT_REG_AL
+                MENUITEM "累加高",                         ID_INSERT_REG_AH
+                MENUITEM "基数低",                         ID_INSERT_REG_BL
+                MENUITEM "基数高",                         ID_INSERT_REG_BH
+                MENUITEM "计数低",                         ID_INSERT_REG_CL
+                MENUITEM "计数高",                         ID_INSERT_REG_CH
+                MENUITEM "数据低",                         ID_INSERT_REG_DL
+                MENUITEM "数据高",                         32993
+            END
+            POPUP "16位寄存器"
+            BEGIN
+                MENUITEM "累加16",                        ID_INSERT_REG_AX
+                MENUITEM "基数16",                        ID_INSERT_REG_BX
+                MENUITEM "计数16",                        ID_INSERT_REG_CX
+                MENUITEM "数据16",                        ID_INSERT_REG_DX
+                MENUITEM "基址16",                        ID_INSERT_REG_BP
+                MENUITEM "栈址16",                        ID_INSERT_REG_SP
+                MENUITEM "源址16",                        ID_INSERT_REG_SI
+                MENUITEM "的址16",                        ID_INSERT_REG_DI
+            END
+            POPUP "32位寄存器"
+            BEGIN
+                MENUITEM "累加32",                        ID_INSERT_REG_EAX
+                MENUITEM "基数32",                        ID_INSERT_REG_EBX
+                MENUITEM "计数32",                        ID_INSERT_REG_ECX
+                MENUITEM "数据32",                        ID_INSERT_REG_EDX
+                MENUITEM "基址32",                        ID_INSERT_REG_EBP
+                MENUITEM "栈址32",                        ID_INSERT_REG_ESP
+                MENUITEM "源址32",                        ID_INSERT_REG_ESI
+                MENUITEM "的址32",                        ID_INSERT_REG_EDI
+            END
+            POPUP "段寄存器"
+            BEGIN
+                MENUITEM "码段",                          ID_INSERT_REG_CS
+                MENUITEM "数段",                          ID_INSERT_REG_DS
+                MENUITEM "附段",                          ID_INSERT_REG_ES
+                MENUITEM "栈段",                          ID_INSERT_REG_SS
+                MENUITEM "志段",                          ID_INSERT_REG_FS
+                MENUITEM "全段",                          ID_INSERT_REG_GS
+            END
+            POPUP "控制寄存器"
+            BEGIN
+                MENUITEM "控0",                          ID_INSERT_REG_CR0
+                MENUITEM "控2",                          ID_INSERT_REG_CR2
+                MENUITEM "控3",                          ID_INSERT_REG_CR3
+                MENUITEM "控4",                          ID_INSERT_REG_CR4
+            END
+            POPUP "调试寄存器"
+            BEGIN
+                MENUITEM "调0",                          ID_INSERT_REG_DR0
+                MENUITEM "调1",                          ID_INSERT_REG_DR1
+                MENUITEM "调2",                          ID_INSERT_REG_DR2
+                MENUITEM "调3",                          ID_INSERT_REG_DR3
+                MENUITEM "调6",                          ID_INSERT_REG_DR6
+                MENUITEM "调7",                          ID_INSERT_REG_DR7
+            END
+            POPUP "任务寄存器"
+            BEGIN
+                MENUITEM "任0",                          ID_INSERT_REG_TR0
+                MENUITEM "任1",                          ID_INSERT_REG_TR1
+                MENUITEM "任2",                          ID_INSERT_REG_TR2
+                MENUITEM "任3",                          ID_INSERT_REG_TR3
+                MENUITEM "任4",                          ID_INSERT_REG_TR4
+                MENUITEM "任5",                          ID_INSERT_REG_TR5
+                MENUITEM "任6",                          ID_INSERT_REG_TR6
+                MENUITEM "任7",                          ID_INSERT_REG_TR7
+            END
+            POPUP "浮点寄存器"
+            BEGIN
+                MENUITEM "浮0",                          ID_INSERT_REG_ST0
+                MENUITEM "浮1",                          ID_INSERT_REG_ST1
+                MENUITEM "浮2",                          ID_INSERT_REG_ST2
+                MENUITEM "浮3",                          ID_INSERT_REG_ST3
+                MENUITEM "浮4",                          ID_INSERT_REG_ST4
+                MENUITEM "浮5",                          ID_INSERT_REG_ST5
+                MENUITEM "浮6",                          ID_INSERT_REG_ST6
+                MENUITEM "浮7",                          ID_INSERT_REG_ST7
+            END
+            POPUP "多媒体寄存器"
+            BEGIN
+                MENUITEM "媒0",                          ID_INSERT_REG_MM0
+                MENUITEM "媒1",                          ID_INSERT_REG_MM1
+                MENUITEM "媒2",                          ID_INSERT_REG_MM2
+                MENUITEM "媒3",                          ID_INSERT_REG_MM3
+                MENUITEM "媒4",                          ID_INSERT_REG_MM4
+                MENUITEM "媒5",                          ID_INSERT_REG_MM5
+                MENUITEM "媒6",                          ID_INSERT_REG_MM6
+                MENUITEM "媒7",                          ID_INSERT_REG_MM7
+            END
+            POPUP "数据流寄存器"
+            BEGIN
+                MENUITEM "流0",                          ID_INSERT_REG_XMM0
+                MENUITEM "流1",                          ID_INSERT_REG_XMM1
+                MENUITEM "流2",                          ID_INSERT_REG_XMM2
+                MENUITEM "流3",                          ID_INSERT_REG_XMM3
+                MENUITEM "流4",                          ID_INSERT_REG_XMM4
+                MENUITEM "流5",                          ID_INSERT_REG_XMM5
+                MENUITEM "流6",                          ID_INSERT_REG_XMM6
+                MENUITEM "流7",                          ID_INSERT_REG_XMM7
+            END
+        END
+        POPUP "引用文件"
+        BEGIN
+            MENUITEM "包含O汇编头",                      ID_INCLUDE_OASM_HEAD
+            MENUITEM "包含常用项",                       ID_INCLUDE_GENERAL
+            MENUITEM "包含本地文件",                      ID_INCLUDE_CUR_TEXT
+            MENUITEM "包含系统文件",                      ID_INCLUDE_SYS_TEXT
+            MENUITEM "引用本地库",                       ID_INCLUDE_CUR_LIB
+            MENUITEM "引用系统库",                       ID_INCLUDE_SYS_LIB
+        END
+        POPUP "添加语句"
+        BEGIN
+            MENUITEM "数据段",                         ID_SENTENCE_SEGMENT_DATA
+            MENUITEM "只读段",                         ID_SENTENCE_SEGMENT_RDATA
+            MENUITEM "预留段",                         ID_SENTENCE_SEGMENT_BSS
+            MENUITEM "引用段",                         ID_SENTENCE_SEGMENT_EXTERN
+            MENUITEM "代码段",                         ID_SENTENCE_SEGMENT_CODE
+            MENUITEM "函数",                          ID_SENTENCE_FUNCTION
+            MENUITEM "如果",                          ID_SENTENCE_IF
+            MENUITEM "如果 否则",                       ID_SENTENCE_IF_ELSE
+            MENUITEM "如果  否则如果 否则",                 ID_SENTENCE_IF_ELSEIF_ELSE
+            MENUITEM "循环",                          ID_SENTENCE_WHILE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "全选(&A)\tCtrl+A",              ID_EDIT_SELECT_ALL
+    END
+END
+
+IDR_POPUP_SORT MENU 
+BEGIN
+    POPUP "排序"
+    BEGIN
+        MENUITEM "按字母顺序排序(&S)",                 ID_SORTING_SORTALPHABETIC
+        MENUITEM "按类型排序(&T)",                   ID_SORTING_SORTBYTYPE
+        MENUITEM "按访问排序(&E)",                   ID_SORTING_SORTBYACCESS
+        MENUITEM "按类型分组(&Y)",                   ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_SOLUTION MENU 
+BEGIN
+    POPUP "解决方案"
+    BEGIN
+        MENUITEM "新建工程(&P)",                    ID_NEW_PROJECT
+        MENUITEM "添加工程(&A)",                    ID_ADD_PROJECT
+        MENUITEM "关闭方案(&C)",                    ID_CLOSE_SOLUTION
+        MENUITEM SEPARATOR
+        MENUITEM "生成所有工程(&B)",                  ID_BUILD_ALL_PROJECT
+        MENUITEM "重命名(&M)",                     ID_RENAME
+    END
+END
+
+IDR_OUTPUT_POPUP MENU 
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_POPUP_TAB MENU 
+BEGIN
+    POPUP "标签菜单"
+    BEGIN
+        MENUITEM "关闭(&C)",                      ID_CLOSE_CUR_CHILD_FRAME
+        MENUITEM "关闭所有(&A)",                    ID_CLOSE_ALL_CHILD_FRAME
+        MENUITEM SEPARATOR
+        MENUITEM "打开所在文件夹(&O)",                 ID_OPEN_OWNER_FLODER
+    END
+END
+
+IDR_POPUP_PROJECT MENU 
+BEGIN
+    POPUP "工程"
+    BEGIN
+        MENUITEM "生成(&B)",                      ID_BUILD_CUR_PROJECT
+        MENUITEM "重新生成(&E)",                    ID_REBUILD_CUR_PROJECT
+        MENUITEM "新建文件夹(&L)",                   ID_ADD_FLODER
+        MENUITEM "新建文件(&F)",                    ID_NEW_IN_PROJECT_FILE
+        MENUITEM "移除工程(&V)",                    ID_REMOVE_PROJECT
+        MENUITEM "刷新(&F)",                      ID_REFRESH
+        MENUITEM "重命名(&M)",                     ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "设为启动项目(&A)",                  ID_SET_START_PROJECT
+        MENUITEM "属性(&P)...",                   ID_PROPERTIES
+    END
+END
+
+IDR_POPUP_FLODER MENU 
+BEGIN
+    POPUP "文件夹"
+    BEGIN
+        MENUITEM "打开文件夹(&O)",                   ID_OPEN_CUR_FLODER
+        MENUITEM "新建文件夹(&L)",                   ID_ADD_FLODER
+        MENUITEM "新建文件(&F)",                    ID_NEW_IN_PROJECT_FILE
+        MENUITEM "删除(&D)",                      ID_DELETE_FILE
+        MENUITEM "刷新(&F)",                      ID_REFRESH
+        MENUITEM "重命名(&R)",                     ID_RENAME
+    END
+END
+
+IDR_POPUP_FILE MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN_IN_PROJECT_FILE
+        MENUITEM "编译(&C)",                      ID_DUMMY_COMPILE
+        MENUITEM "删除(&D)",                      ID_DELETE_FILE
+        MENUITEM "重命名(&M)",                     ID_RENAME
+    END
+END
+
+IDR_POPUP_OML_EDIT MENU 
+BEGIN
+    POPUP "O中间语言编辑菜单"
+    BEGIN
+        POPUP "引用文件"
+        BEGIN
+            MENUITEM "包含本地文件",                      ID_OML_INCLUDE_CUR_TEXT
+            MENUITEM "包含系统文件",                      ID_OML_INCLUDE_SYS_TEXT
+            MENUITEM "引用本地库",                       ID_OML_INCLUDE_CUR_LIB
+            MENUITEM "引用系统库",                       ID_OML_INCLUDE_SYS_LIB
+        END
+        POPUP "添加语句"
+        BEGIN
+            MENUITEM "函数",                          ID_OML_SENTENCE_FUNCTION
+            MENUITEM "如果",                          ID_OML_SENTENCE_IF
+            MENUITEM "如果 否则",                       ID_OML_SENTENCE_IF_ELSE
+            MENUITEM "如果  否则如果 否则",                 ID_OML_SENTENCE_IF_ELSEIF_ELSE
+            MENUITEM "循环",                          ID_OML_SENTENCE_WHILE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "全选(&A)\tCtrl+A",              ID_EDIT_SELECT_ALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F7,          ID_BUILD_PROJECT,       VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_SET_BREAK_POINT,     VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 293, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 OLIDE"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    DEFPUSHBUTTON   "确定",IDOK,122,170,39,14,WS_GROUP
+    EDITTEXT        IDC_EDIT_TEXT,42,18,241,131,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER
+END
+
+IDD_DLG_SYSTEM_OPTION DIALOGEX 0, 0, 424, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,301,236,50,14
+    PUSHBUTTON      "取消",IDCANCEL,367,236,50,14
+    CONTROL         "",IDC_PROJCET_PROPERTY_ITEM_RECT,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,7,7,410,222
+END
+
+IDD_DLG_LINK_OPTION DIALOGEX 0, 0, 159, 74
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "链接器"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DLG_OASM_OPTION DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "汇编器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_OASM_EDIT_OPTION DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "汇编编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_NEW_PROJECT DIALOGEX 0, 0, 214, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "添加工程"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,52,23,34,29
+    CONTROL         "",IDC_LIST_PROJECT,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,200,125
+END
+
+IDD_DLG_NEW_SOLUTION DIALOGEX 0, 0, 214, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "添加方案"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,28,17,27,27
+    CONTROL         "",IDC_LIST_SOLUTION,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,200,125
+END
+
+IDD_DLG_NEW_FILE DIALOGEX 0, 0, 214, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "添加文件"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,52,23,34,29
+    CONTROL         "",IDC_LIST_FILE,"SysListView32",LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,200,125
+END
+
+IDD_DLG_NEW_ITEM_MANAGER DIALOGEX 0, 0, 381, 299
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "添加新项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "添 加",IDOK,230,278,50,14
+    PUSHBUTTON      "取 消",IDCANCEL,299,278,50,14
+    CONTROL         "",IDC_TREE_PROP_ADD_ITEM_RECT,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,7,7,367,214
+    EDITTEXT        IDC_EDIT_ITEM_NAME,63,224,227,14,ES_AUTOHSCROLL
+    LTEXT           "名称：",IDC_STATIC_ITEM_NAME,25,225,25,8
+    LTEXT           "路径：",IDC_STATIC_ITEM_PATH,25,247,25,8
+    PUSHBUTTON      "浏 览",IDC_BUTTON_GET_PATH,296,243,50,14
+    COMBOBOX        IDC_COMBO_ITEM_PATH,63,244,227,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_LINK_PROPERTY DIALOGEX 0, 0, 159, 74
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "链接器"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DLG_COMMON_OPTION DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "常规项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_DOASM_OPTION DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "反汇编"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_CPU_WATCH_WND DIALOGEX 0, 0, 410, 385
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "累加32：",IDC_STATIC,8,13,33,8
+    LTEXT           "基数32：",IDC_STATIC,8,31,33,8
+    EDITTEXT        IDC_EDIT_EAX,42,10,52,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_EBX,42,28,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "计数32：",IDC_STATIC,8,49,33,8
+    LTEXT           "数据32：",IDC_STATIC,8,67,33,8
+    EDITTEXT        IDC_EDIT_ECX,42,46,52,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_EDX,42,64,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "基址32：",IDC_STATIC,8,85,33,8
+    LTEXT           "栈址32：",IDC_STATIC,8,103,33,8
+    EDITTEXT        IDC_EDIT_EBP,42,82,52,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ESP,42,100,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "源址32：",IDC_STATIC,8,121,33,8
+    LTEXT           "的址32：",IDC_STATIC,8,139,33,8
+    EDITTEXT        IDC_EDIT_ESI,42,118,52,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_EDI,42,136,52,15,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST_EFLAG32,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,42,174,270,51
+    LTEXT           "令指32：",IDC_STATIC,8,157,33,8
+    EDITTEXT        IDC_EDIT_EIP,42,154,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "标志32：",IDC_STATIC,8,176,33,8
+    LTEXT           "浮/媒0：",IDC_STATIC,111,14,32,8
+    LTEXT           "浮/媒1：",IDC_STATIC,111,31,32,8
+    EDITTEXT        IDC_EDIT_ST0_MMX0,145,10,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ST1_MMX1,145,28,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "浮/媒2：",IDC_STATIC,111,50,32,8
+    LTEXT           "浮/媒3：",IDC_STATIC,111,68,32,8
+    EDITTEXT        IDC_EDIT_ST2_MMX2,145,46,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ST3_MMX3,145,64,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "浮/媒4：",IDC_STATIC,111,86,32,8
+    LTEXT           "浮/媒5：",IDC_STATIC,111,103,32,8
+    EDITTEXT        IDC_EDIT_ST4_MMX4,145,82,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ST5_MMX5,145,100,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "浮/媒6：",IDC_STATIC,111,122,32,8
+    LTEXT           "浮/媒7：",IDC_STATIC,111,140,32,8
+    EDITTEXT        IDC_EDIT_ST6_MMX6,145,118,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ST7_MMX7,145,136,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "流0：",IDC_STATIC,260,13,21,8
+    LTEXT           "流1：",IDC_STATIC,260,31,21,8
+    EDITTEXT        IDC_EDIT_XMM0,284,10,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_XMM1,284,28,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "流2：",IDC_STATIC,260,50,21,8
+    LTEXT           "流3：",IDC_STATIC,260,66,21,8
+    EDITTEXT        IDC_EDIT_XMM2,284,46,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_XMM3,284,64,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "流4：",IDC_STATIC,260,85,21,8
+    LTEXT           "流5：",IDC_STATIC,260,103,21,8
+    EDITTEXT        IDC_EDIT_XMM4,284,82,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_XMM5,284,100,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "流6：",IDC_STATIC,260,122,21,8
+    LTEXT           "流7：",IDC_STATIC,260,140,21,8
+    EDITTEXT        IDC_EDIT_XMM6,284,118,97,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_XMM7,284,136,97,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "码段：",IDC_STATIC,8,272,25,8
+    EDITTEXT        IDC_EDIT_CS,42,268,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "数段：",IDC_STATIC,8,290,25,8
+    EDITTEXT        IDC_EDIT_DS,42,286,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "附段：",IDC_STATIC,8,308,25,8
+    EDITTEXT        IDC_EDIT_ES,42,304,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "栈段：",IDC_STATIC,111,272,25,8
+    EDITTEXT        IDC_EDIT_SS,145,268,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "志段：",IDC_STATIC,111,290,25,8
+    EDITTEXT        IDC_EDIT_FS,145,286,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "全段：",IDC_STATIC,111,308,25,8
+    EDITTEXT        IDC_EDIT_GS,145,304,52,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "00:CF-进位  02:PF-奇偶  04:AF-辅助  06:ZF-零  07:SF-负号  08:TF-跟踪  09:IF-中断",IDC_STATIC,42,230,278,8
+    LTEXT           "10:DF-方向  11:OF-溢出  12-13:IOPL-特权域     14:NT-嵌套任务  16:RF-恢复",IDC_STATIC,42,241,255,8
+    LTEXT           "17:VM-虚拟8086  18:AC-对齐检查  19:VIF-虚拟中断  20:VIP-虚拟中断等待  21:ID-识别",IDC_STATIC,42,252,291,8
+END
+
+IDD_MEM_WATCH_WND DIALOGEX 0, 0, 587, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MEM_ADDR,49,7,80,15,ES_AUTOHSCROLL
+    LTEXT           "内存地址：",IDC_STATIC,4,10,41,8
+    EDITTEXT        IDC_EDIT_MEM_LENGTH,189,7,80,15,ES_AUTOHSCROLL
+    LTEXT           "数据长度：",IDC_STATIC,144,10,41,8
+    EDITTEXT        IDC_EDIT_HEX_VIEW_CODE_SEGMENT,0,92,135,100,ES_MULTILINE | ES_NUMBER
+    DEFPUSHBUTTON   "获取指定地址数据在数据段窗口显示",IDC_BUTTON_GET_DATA,284,5,148,17
+    EDITTEXT        IDC_EDIT_DATA_UCHAR,175,36,49,14,ES_AUTOHSCROLL
+    LTEXT           "无符号字节整数：",IDC_STATIC,109,40,65,8
+    EDITTEXT        IDC_EDIT_DATA_CHAR,175,54,49,14,ES_AUTOHSCROLL
+    LTEXT           "符号字节整数：",IDC_STATIC,109,57,57,8
+    EDITTEXT        IDC_EDIT_DATA_USHORT,300,36,49,14,ES_AUTOHSCROLL
+    LTEXT           "16位无符号整数：",IDC_STATIC,234,40,65,8
+    EDITTEXT        IDC_EDIT_DATA_SHORT,300,54,49,14,ES_AUTOHSCROLL
+    LTEXT           "16位符号整数：",IDC_STATIC,234,57,57,8
+    EDITTEXT        IDC_EDIT_DATA_UINT,422,36,49,14,ES_AUTOHSCROLL
+    LTEXT           "32位无符号整数：",IDC_STATIC,356,40,65,8
+    EDITTEXT        IDC_EDIT_DATA_INT,422,54,49,14,ES_AUTOHSCROLL
+    LTEXT           "32位符号整数：",IDC_STATIC,356,57,57,8
+    EDITTEXT        IDC_EDIT_DATA_ADDR,49,36,49,14,ES_AUTOHSCROLL
+    LTEXT           "当前地址：",IDC_STATIC,4,40,41,8
+    EDITTEXT        IDC_EDIT_DATA_STRING,49,54,49,14,ES_AUTOHSCROLL
+    LTEXT           "对应字符：",IDC_STATIC,4,57,41,8
+    LTEXT           "读取代码长度：",IDC_STATIC_CS,4,78,57,8
+    EDITTEXT        IDC_EDIT_HEX_VIEW_DATA_SEGMENT,417,91,162,100,ES_MULTILINE | ES_NUMBER
+    LTEXT           "数据段：",IDC_STATIC_DS,423,77,33,8
+    EDITTEXT        IDC_EDIT_HEX_VIEW_STACK_SEGMENT,283,91,130,100,ES_MULTILINE | ES_NUMBER
+    LTEXT           "堆栈段：",IDC_STATIC_SS,288,77,33,8
+    PUSHBUTTON      "保存",IDC_BTN_SAVE_CODE_SEGMENT,110,75,25,14,WS_DISABLED
+    PUSHBUTTON      "保存",IDC_BTN_SAVE_DATA_SEGMENT,484,74,25,14,WS_DISABLED
+    PUSHBUTTON      "保存",IDC_BTN_SAVE_STACK_SEGMENT,332,74,25,14,WS_DISABLED
+    LTEXT           "代码反汇编：",IDC_STATIC_CS_DOASM,143,78,49,8
+    EDITTEXT        IDC_EDIT_CODE_DOASM,139,92,140,100,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "刷新数据段",IDC_BTN_GET_DATA_SEGMENT,520,74,50,14,WS_DISABLED
+    CONTROL         "只显示数据段窗口",IDC_CHECK_SHOW_DS_VIEW_ONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,444,9,80,10
+    EDITTEXT        IDC_EDIT_READ_CODE_LENGTH,59,75,48,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "代码反汇编",IDC_BTN_CODE_DOASM,204,75,50,14,WS_DISABLED
+END
+
+IDD_DLG_OML_EDIT_OPTION DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "中间语言编辑器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_OML_OPTION DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "中间语言编译器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 1,0,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "O语言开发组"
+            VALUE "FileDescription", "O语言开发环境应用程序"
+            VALUE "FileVersion", "1.0.0.3"
+            VALUE "InternalName", "OLIDE.exe"
+            VALUE "LegalCopyright", "O语言开发组 (C)保留所有权利。"
+            VALUE "OriginalFilename", "OLIDE.exe"
+            VALUE "ProductName", "O语言"
+            VALUE "ProductVersion", "1.0.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DLG_LINK_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_OASM_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_OASM_EDIT_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_NEW_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_NEW_SOLUTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_NEW_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_NEW_ITEM_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_DLG_LINK_PROPERTY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_COMMON_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_DOASM_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_CPU_WATCH_WND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 403
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 378
+    END
+
+    IDD_MEM_WATCH_WND, DIALOG
+    BEGIN
+        RIGHTMARGIN, 584
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_DLG_OML_EDIT_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DLG_OML_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_CPUWATCH_WND        "CPU监视"
+    IDS_MEM_WATCH_WND       "内存监视"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "O语言开发环境"
+    IDR_OLIDETYPE           "\nO语言代码\nO语言代码\nO语言代码文件(*.omp *.omh *.oam; *.oah; *.oat)\n.omp;.omh.oam;.oah;.oat;\nO语言.Document\nO语言.Document"
+    IDS_WINDOWS_MANAGER     "窗口(&W)..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "OLIDE"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "覆盖"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_LINE       "行:%d 列:%d"
+    ID_INDICATOR_DOC        "      "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭当前方案\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_VIEW           "文件视图"
+    IDS_CLASS_VIEW          "类视图"
+    IDS_OUTPUT_WND          "输出"
+    IDS_PROPERTIES_WND      "属性"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BUILD_TAB           "生成"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+    IDS_OASM_EDIT_MENU      "O汇编编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SOLUTION            "解决方案"
+    IDS_PROJECT             "工程"
+    IDS_FLODER              "文件夹"
+    IDS_FILE                "文件"
+    IDS_OML_EDIT_MENU       "O中间语言编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUILD_PROJECT        "仅编译当前工程\n编译"
+    ID_BUILD_ALL            "生成所有工程\n全部生成"
+    ID_LINK_PROJECT         "仅链接当前工程\n链接"
+    ID_BUILD_AND_LINK       "编译当前工程并链接生成执行程序\n生成"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUILD_AND_RUN        "编译当前工程并执行生成的程序\n编译并执行"
+    ID_DUMMY_SELECT_ACTIVE_CONFIGURATION "设置编译成调试或纯净版选项\n编译选项"
+    ID_SYSTEM_OPTIONS       "设置系统选项\n设置"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SYNTAX_WORD_COMMENT_LINE "添加行注释符\n行注释"
+    ID_SYNTAX_WORD_COMMENT_BLOCK "添加块注释符\n块注释"
+    ID_SYNTAX_WORD_INCLUDE_TEXT "添加包含文件符号\n包含文本"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SYNTAX_WORD_INCLUDE_LIB "添加引用库符号\n引用库"
+    ID_SYNTAX_WORD_SEGMENT_DATA "添加数据段符号\n数据段"
+    ID_SYNTAX_WORD_SEGMENT_RDATA "添加只读段符号\n只读段"
+    ID_SYNTAX_WORD_SEGMENT_BSS "添加预留段符号\n预留段"
+    ID_SYNTAX_WORD_SEGMENT_CODE "添加代码段符号\n代码段"
+    ID_SYNTAX_WORD_STRUCT   "定义一个结构体\n结构体"
+    ID_SYNTAX_WORD_UNION    "定义一个联合体\n联合体"
+    ID_SYNTAX_WORD_ENUM     "定义一个枚举体\n枚举"
+    ID_SYNTAX_WORD_TYPE_DEFINE "重新定义类型名称\n类型重定义"
+    ID_SYNTAX_WORD_MACRO_DEFINE "定义一个宏\n宏定义"
+    ID_SYNTAX_WORD_DEGREE   "内存分配粒度\n内存粒度"
+    ID_SYNTAX_WORD_HDOB     "立即数进制修饰符\n进制修饰符"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SYNTAX_WORD_START    "定义一个入口函数\n入口"
+    ID_SYNTAX_WORD_FUNCTION "定义一个函数\n函数"
+    ID_SYNTAX_WORD_LABLE    "定义一个标签\n标签"
+    ID_SYNTAX_WORD_ADDR     "取全局变量地址\n取地址"
+    ID_SYNTAX_WORD_ARRAY_DEFINE "定义一个数组\n数组"
+    ID_SYNTAX_WORD_ARRAY_MEMBER "引用一个数组成员\n数组成员"
+    ID_SYNTAX_WORD_BLOCK_CONNECT "连接多行为一行的符号\n块连接"
+    ID_SYNTAX_WORD_LINE_CONNECT "连接下一行\n行连接"
+    ID_SYNTAX_WORD_INSN_JOIN "指令内部的联接\n联接"
+    ID_OPERATOR_IF          "定义如果语句\n如果"
+    ID_OPERATOR_ELSE        "定义否则语句\n否则"
+    ID_OPERATOR_OR          "布尔或者关系\n或者"
+    ID_OPERATOR_ALSO        "布尔并且关系\n并且"
+    ID_OPERATOR_NEG         "求补指令\n求补"
+    ID_OPERATOR_CALL        "函数调用指令\n调用"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPERATOR_RET         "函数返回指令\n返回"
+    ID_OPERATOR_JMP         "跳转指令\n跳转"
+    ID_OPERATOR_EXIT        "退出函数\n退出"
+    ID_OPERATOR_BREAK       "跳出当前循环\n跳出"
+    ID_OPERATOR_CONTINUE    "继续下一循环\n继续"
+    ID_OPERATOR_INTERRUPT   "中断指令\n中断"
+    ID_OPERATOR_HLT         "停止指令\n停止"
+    ID_OPERATOR_PUSH        "压栈指令\n压栈"
+    ID_OPERATOR_POP         "出栈指令\n出栈"
+    ID_OPERATOR_FLAGR       "标志寄存器\n标志寄存器"
+    ID_OPERATOR_SET         "置0或1\n设置"
+    ID_OPERATOR_ENTER       "(进入函数时)建立堆栈\n建立堆栈"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPERATOR_SQUARE_ROOT "浮点求平方根指令\n平方根"
+    ID_OPERATOR_PI          "浮点圆周率π\n圆周率π"
+    ID_OPERATOR_LOG         "浮点log操作\nlog操作"
+    ID_OPERATOR_LN          "浮点ln操作\nln操作"
+    ID_OPERATOR_POWER       "浮点乘方操作\n乘方"
+    ID_OPERATOR_MUL         "乘法运算\n乘法"
+    ID_OPERATOR_DIV         "除法运算\n除法"
+    ID_OPERATOR_SIGN        "带正负号操作\n正负号"
+    ID_SYNTAX_WORD_WCHAR    "定义宽字符\n宽字符"
+    ID_SYNTAX_WORD_WSTRING  "定义宽字符串\n宽字符串"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPERATOR_LEAVE       "(退出函数时)清除堆栈\n清除堆栈"
+    ID_OPERATOR_CMP         "比较指令\n比较"
+    ID_OPERATOR_XCHG        "交换或者循环\n交换或循环"
+    ID_OPERATOR_STRING      "字符串操作\n字符串"
+    ID_OPERATOR_WAIT        "等待指令\n等待"
+    ID_OPERATOR_NOP         "空指令\n空"
+    ID_OPERATOR_ABOVE       "条件高于\n高于"
+    ID_OPERATOR_BELOW       "条件低于\n低于"
+    ID_OPERATOR_GT_ASSIGN   "条件大于等于\n大于等于"
+    ID_OPERATOR_LT_ASSIGN   "条件小于等于\n小于等于"
+    ID_OPERATOR_OVERFLOW    "条件溢出\n溢出"
+    ID_OPERATOR_ODD         "条件为奇数\n奇数"
+    ID_OPERATOR_ZERO        "条件为零\n为零"
+    ID_OPERATOR_FWAIT       "浮点等待指令\n浮点等待"
+    ID_OPERATOR_FNOP        "浮点空指令\n浮点空"
+    ID_OPERATOR_DIVISOR     "浮点取整指令\n取整"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEW_SOLUTION         "新建O语言方案\n新建"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPEN_SOLUTION        "打开现有O语言方案\n打开"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RESEDITOR            "打开资源编辑器编辑资源\n资源编辑器"
+    ID_FILE_SAVE_ALL        "保存所有活动文档\n全部保存"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON33105          "添加引用段符号\n引用段"
+    ID_SYNTAX_WORD_SEGMENT_EXTERN "添加引用段符号\n引用段"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ASSOCIATE_O_FILE     "将O语言相关文件与程序进行关联\n关联O文件"
+    ID_GOTO_LINE            "跳转到指定行\n跳到行"
+    ID_TAB_ADD              "选中行增加缩进\n增加缩进"
+    ID_TAB_SUB              "选中行减少缩进\n减少缩进"
+    ID_COMMENT_ADD          "注释选中行\n注释"
+    ID_COMMENT_SUB          "取消对选中行的注释\n取消注释"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\OLIDE.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,20 @@
+引用段
+{
+函数 CopyLZFile(整数32,整数32)=>整数32;
+函数 GetExpandedNameA(整数32,整数32)=>整数32;
+函数 GetExpandedNameW(整数32,整数32)=>整数32;
+函数 LZClose(整数32)=>整数32;
+函数 LZCloseFile(整数32)=>整数32;
+函数 LZCopy(整数32,整数32)=>整数32;
+函数 LZCreateFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LZDone()=>整数32;
+函数 LZInit(整数32)=>整数32;
+函数 LZOpenFileA(整数32,整数32,整数32)=>整数32;
+函数 LZOpenFileW(整数32,整数32,整数32)=>整数32;
+函数 LZRead(整数32,整数32,整数32)=>整数32;
+函数 LZSeek(整数32,整数32,整数32)=>整数32;
+函数 LZStart()=>整数32;
+
+宏定义 GetExpandedName  GetExpandedNameA
+宏定义 LZOpenFile  LZOpenFileA
+}

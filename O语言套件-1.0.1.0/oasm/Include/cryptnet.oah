@@ -1,0 +1,13 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCryptGetObjectUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptInstallCancelRetrieval(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptRetrieveObjectByUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptRetrieveObjectByUrl  CryptRetrieveObjectByUrlA
+
+¡ÒCryptRetrieveObjectByUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUninstallCancelRetrieval(Ë«×Ö,Ë«×Ö)
+
+¦ç

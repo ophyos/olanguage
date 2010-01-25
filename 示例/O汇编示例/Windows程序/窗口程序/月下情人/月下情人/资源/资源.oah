@@ -1,0 +1,28 @@
+
+∫Í∂®“Â
+{
+ICO_MAIN                                1000
+BMP_GROUND                              2000
+BMP_MOON                                2001
+BMP_PIG                                 2002
+BMP_STAR1                               2003
+BMP_STAR2                               2004
+BMP_STAR3                               2005
+BMP_ABOUT                               2006
+DLG_SETUP                               3000
+IDC_STAR1                               3001
+IDC_STAR2                               3002
+IDC_STAR3                               3003
+IDC_TIME1                               3004
+IDC_TIME2                               3005
+IDC_PLAYMUSIC                           3006
+ID_ABOUT                                3007
+IDM_MAIN                                4000
+IDM_SETUP                               4001
+IDM_ABOUT                               4002
+IDM_EXIT                                4003
+DLG_ABOUT                               9000
+ID_HOMEPAGE                             9001
+ID_EMAIL                                9002
+IDC_HANDLE                              9003
+}

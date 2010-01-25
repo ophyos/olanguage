@@ -1,0 +1,10 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫SetupColorMatchingA(双字)
+∵SetupColorMatching  SetupColorMatchingA
+
+∫SetupColorMatchingW(双字)
+
+︾

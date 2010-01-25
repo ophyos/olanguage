@@ -1,0 +1,15 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒSnmpMgrClose(Ë«×Ö)
+¡ÒSnmpMgrCtl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrGetTrap(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrGetTrapEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrOidToStr(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrRequest(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrStrToOid(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpMgrTrapListen(Ë«×Ö)
+
+¦ç

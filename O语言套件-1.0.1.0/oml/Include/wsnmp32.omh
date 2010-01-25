@@ -1,0 +1,54 @@
+引用段
+{
+函数 SnmpCancelMsg(整数32,整数32)=>整数32;
+函数 SnmpCleanup()=>整数32;
+函数 SnmpCleanupEx()=>整数32;
+函数 SnmpClose(整数32)=>整数32;
+函数 SnmpContextToStr(整数32,整数32)=>整数32;
+函数 SnmpConveyAgentAddress(整数32)=>整数32;
+函数 SnmpCountVbl(整数32)=>整数32;
+函数 SnmpCreatePdu(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpCreateSession(整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpCreateVbl(整数32,整数32,整数32)=>整数32;
+函数 SnmpDecodeMsg(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpDeleteVb(整数32,整数32)=>整数32;
+函数 SnmpDuplicatePdu(整数32,整数32)=>整数32;
+函数 SnmpDuplicateVbl(整数32,整数32)=>整数32;
+函数 SnmpEncodeMsg(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpEntityToStr(整数32,整数32,整数32)=>整数32;
+函数 SnmpFreeContext(整数32)=>整数32;
+函数 SnmpFreeDescriptor(整数32,整数32)=>整数32;
+函数 SnmpFreeEntity(整数32)=>整数32;
+函数 SnmpFreePdu(整数32)=>整数32;
+函数 SnmpFreeVbl(整数32)=>整数32;
+函数 SnmpGetLastError(整数32)=>整数32;
+函数 SnmpGetPduData(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpGetRetransmitMode(整数32)=>整数32;
+函数 SnmpGetRetry(整数32,整数32,整数32)=>整数32;
+函数 SnmpGetTimeout(整数32,整数32,整数32)=>整数32;
+函数 SnmpGetTranslateMode(整数32)=>整数32;
+函数 SnmpGetVb(整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpGetVendorInfo(整数32)=>整数32;
+函数 SnmpListen(整数32,整数32)=>整数32;
+函数 SnmpOidCompare(整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpOidCopy(整数32,整数32)=>整数32;
+函数 SnmpOidToStr(整数32,整数32,整数32)=>整数32;
+函数 SnmpOpen(整数32,整数32)=>整数32;
+函数 SnmpRecvMsg(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpRegister(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpSendMsg(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpSetAgentAddress(整数32)=>整数32;
+函数 SnmpSetPduData(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpSetPort(整数32,整数32)=>整数32;
+函数 SnmpSetRetransmitMode(整数32)=>整数32;
+函数 SnmpSetRetry(整数32,整数32)=>整数32;
+函数 SnmpSetTimeout(整数32,整数32)=>整数32;
+函数 SnmpSetTranslateMode(整数32)=>整数32;
+函数 SnmpSetVb(整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpStartup(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpStartupEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpStrToContext(整数32,整数32)=>整数32;
+函数 SnmpStrToEntity(整数32,整数32)=>整数32;
+函数 SnmpStrToOid(整数32,整数32)=>整数32;
+
+}

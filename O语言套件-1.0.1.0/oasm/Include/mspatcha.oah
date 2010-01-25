@@ -1,0 +1,26 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒApplyPatchToFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßApplyPatchToFile  ApplyPatchToFileA
+
+¡ÒApplyPatchToFileByHandles(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒApplyPatchToFileByHandlesEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒApplyPatchToFileExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßApplyPatchToFileEx  ApplyPatchToFileExA
+
+¡ÒApplyPatchToFileExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒApplyPatchToFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFilePatchSignatureA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFilePatchSignature  GetFilePatchSignatureA
+
+¡ÒGetFilePatchSignatureByHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFilePatchSignatureW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTestApplyPatchToFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTestApplyPatchToFile  TestApplyPatchToFileA
+
+¡ÒTestApplyPatchToFileByHandles(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTestApplyPatchToFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

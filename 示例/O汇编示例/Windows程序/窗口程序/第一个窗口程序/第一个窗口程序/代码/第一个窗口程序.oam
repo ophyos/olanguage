@@ -1,0 +1,129 @@
+
+∥本实例不需要资源文件
+
+.包含文<*oasm32.oah>
+.包含文<*windows.oah>
+.包含文<*kernel32.oah>
+.包含文<*user32.oah>
+
+.引用库<*kernel32.lib>
+.引用库<*user32.lib>
+
+∥只读段
+.只读段
+{
+   字节 窗口类名‥ = "MyClass"
+   字节 窗口标题‥ = "我的第一个程序窗口!"
+   字节 窗口文本‥ = "祝贺你，成功啦!"
+}
+
+∥预留段
+.预留段
+{
+   双字 主程序句柄
+   双字 主窗口句柄
+}
+
+
+∥代码段
+.代码段
+{
+
+入口 主函数()
+{
+  主窗口()
+  ExitProcess(0)
+}
+
+函数 主窗口()
+{
+   
+  累加32 = 0x1110
+  如果(累加32 != 0x1234)
+  {
+      MessageBox(0,取地址 "注册失败!",取地址 "注册提示",MB_OK)
+      返回
+  }
+  
+  
+  获取模块句柄(0)
+  主程序句柄 = 累加32
+
+  WNDCLASSEX 主窗口类
+  累加32 @= 主窗口类
+  RtlZeroMemory(累加32,取大小  主窗口类)
+
+  ∥注册窗口类
+  LoadCursor(0,IDC_ARROW)
+  主窗口类.hCursor = 累加32
+  压栈 主程序句柄
+  出栈 主窗口类.hInstance
+  主窗口类.cbSize= 取大小 主窗口类
+  主窗口类.style = CS_HREDRAW | CS_VREDRAW
+  主窗口类.lpfnWndProc = 主窗口程序
+  主窗口类.hbrBackground = COLOR_WINDOW + 1
+  主窗口类.lpszClassName = 取地址 窗口类名
+  累加32 @= 主窗口类
+  RegisterClassEx(累加32)
+
+  ∥建立并显示窗口
+  CreateWindowEx(WS_EX_CLIENTEDGE,取地址 窗口类名,取地址 窗口标题,WS_OVERLAPPEDWINDOW,100,100,600,400,0,0,主程序句柄,0)
+  主窗口句柄 = 累加32
+  ShowWindow(主窗口句柄,SW_SHOWNORMAL)
+  UpdateWindow(主窗口句柄)
+
+  MSG 消息
+  
+  循环(TRUE)
+  {
+    累加32 @= 消息
+    GetMessage(累加32 ,0,0,0)
+    如果(累加32 == 0)
+    {
+       跳出
+    }
+    累加32 @= 消息
+    TranslateMessage(累加32)
+    累加32 @= 消息
+    DispatchMessage(累加32)
+  }
+}
+
+函数 主窗口程序(双字 窗口句柄,双字 窗口消息,双字 参数一,双字 参数二)
+{ <基数32,的址32,源址32>
+
+  PAINTSTRUCT 窗口作图结构
+  RECT 窗口区域
+  双字     窗口作图句柄
+
+  累加32 = 窗口消息
+
+  如果(累加32 == WM_PAINT)
+  {
+    累加32 @= 窗口作图结构
+    BeginPaint(窗口句柄,累加32)
+    窗口作图句柄 = 累加32
+
+    累加32 @= 窗口区域
+    GetClientRect(窗口句柄,累加32)    
+    累加32 @= 窗口区域
+    DrawText(窗口作图句柄,取地址 窗口文本,-1,累加32,DT_SINGLELINE)
+
+    累加32 @= 窗口作图结构
+    EndPaint(窗口句柄,累加32)
+  }
+  否则如果(累加32 == WM_CLOSE)
+  {
+    DestroyWindow(主窗口句柄)
+    PostQuitMessage(0)
+  }
+  否则
+  {
+    DefWindowProc(窗口句柄,窗口消息,参数一,参数二)
+    返回
+  }
+
+  累加32 ^= 累加32
+}
+
+}

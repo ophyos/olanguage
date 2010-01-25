@@ -1,0 +1,511 @@
+
+.包含文<*oasm32.oah>
+.包含文<*.\中文视窗.oah>
+.包含文<*.\user32.oah>
+.包含文<*.\odbc32.oah>
+.包含文<..\资源\资源.oah>
+.包含文<*.\Kernel32.oah>
+
+.引用库<*.\odbc32.lib>
+
+.只读段
+{
+    字节 提示框标题..     = "ODBC数据库实例"
+    字节 男..             = "男"
+    字节 女..             = "女"    
+    字节 环境错误..       = "建立环境句柄错误!"
+    字节 版本错误..       = "ODBC非3.0版本!"
+    字节 连接错误..       = "建立连接句柄错误!"
+    字节 连接数据库错误.. = "数据库连接失败!"    
+    字节 语句错误..       = "SQL语句错误,请仔细检查!"
+    字节 修改错误提示..   = "修改记录失败!"
+    字节 删除错误提示..   = "删除记录失败!"
+    字节 空记录提示..     = "空记录，请追加!"    
+    字节 游标指针名..     = "cust"
+    字节 连接学生库..     = "DRIVER={Microsoft Access Driver (*.mdb)};DBQ=.\\学生.mdb"
+    字节 SQLStmt..        = "select * from 人员"
+    字节 sql增加语句..     = "insert into 人员 (Name,Sex,Age) values (?,?,?)"
+    字节 sql修改语句..     = "update info set Name=?,Sex=?,Age=?  WHERE CURRENT OF cust"
+    字节 sql删除语句..     = "DELETE FROM 人员  where current of cust"
+    字节 Pos_Update_Del.. = "select * from 人员" // FOR UPDATE of Name,Sex,Age",0
+    字节 格式化整数..     = "%ld"
+}
+
+宏定义
+{
+    行集数 1000 //指定行集数
+}
+
+.预留段
+{   
+    HANDLE h环境句柄
+    HANDLE h连接句柄
+    HANDLE h语句句柄
+    HANDLE h增加语句句柄
+    HANDLE hCust语句
+    双字 姓名长度
+    字节 性别缓冲区
+    双字 性别长度
+    双字 年龄缓冲区
+    双字 年龄长度
+    字节 姓名缓冲区..20
+    字节 临时缓冲区..20
+    字节 连接缓冲区..1024
+    字   行状态数组..行集数
+    字节 U_D_姓名..行集数*11
+    字节 U_D_性别..行集数
+    双字 U_D_年龄..行集数
+    双字 U_D_姓名长度..行集数
+    双字 U_D_性别长度..行集数
+    双字 U_D_年龄长度..行集数    
+}
+
+.代码段
+{
+    函数 加载学生数据库(双字 h对话框句柄)
+    {        
+        初始化ODBC(h对话框句柄) //初始化数据库
+        如果(累加32 == 0)
+        {
+            返回
+        }
+        
+        建立语句句柄() //通用语句句柄、追加、修改、删除和自定义句柄属性的设置
+        SQL设置指针名(h语句句柄,取地址 游标指针名,取大小 游标指针名) //SetCursorName
+        打开记录集(h对话框句柄)
+        如果(累加32 == 0)
+        {
+            返回
+        }
+        绑定列变量(h语句句柄)
+        字 返回代码
+        SQL取得卷(h语句句柄,SQL_FETCH_FIRST,0) //SQLFetchScroll
+        返回代码 = 累加16
+        如果(返回代码 != SQL_错误)
+        {
+            如果(返回代码 != SQL_无数据)
+            {
+                双字 h列表句柄
+                获取对话框子项(h对话框句柄,IDC_LIST1)
+                h列表句柄 = 累加32
+        
+                发送消息(h列表句柄,LVM_DELETEALLITEMS,0,0)
+                循环((返回代码 !=SQL_错误) && (返回代码 != SQL_无数据))
+                {
+                    在列表上显示记录(h列表句柄)
+                    SQL取得卷(h语句句柄,SQL_FETCH_NEXT,0)
+                    返回代码 = 累加16
+                }                 
+                SQL取得卷(h语句句柄,SQL_FETCH_FIRST,0)                
+                跳到第一条记录(h对话框句柄)
+                
+                //EnableWindow(hPre,FALSE)
+            }              
+            否则
+            {
+                 提示框(h对话框句柄,取地址 空记录提示,取地址 提示框标题,信息框_OK)                 
+            }
+        }
+    }
+    
+    函数 初始化ODBC:InitOdbc(双字 h对话框句柄)
+    {        
+       //分配环境句柄
+       SQL分配句柄(SQL_HANDLE_ENV, SQL_NULL_HANDLE, 取地址 h环境句柄) //SQLAllocHandle
+       如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+       {   
+           提示框(h对话框句柄,取地址 环境错误,取地址 提示框标题,信息框_OK)
+           累加32 ^= 累加32
+           返回
+       }        
+       //确定ODBC版本
+       SQL设置环境属性(h环境句柄,SQL_ATTR_ODBC_VERSION, SQL_OV_ODBC3,0) //SQLSetEnvAttr
+       如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+       {
+           提示框(h对话框句柄,取地址 版本错误,取地址 提示框标题,信息框_OK)
+           SQL释放句柄(SQL_HANDLE_ENV, h环境句柄) //SQLFreeHandle
+           累加32 ^= 累加32
+           返回
+       }
+       //分配连接句柄
+       SQL分配句柄(SQL_HANDLE_DBC, h环境句柄, 取地址 h连接句柄) //SQLAllocHandle
+       如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+       {           
+           提示框(h对话框句柄,取地址 连接错误,取地址 提示框标题,信息框_OK)
+           SQL释放句柄(SQL_HANDLE_ENV, h环境句柄) //SQLFreeHandle
+           累加32 ^= 累加32
+           返回
+       }     
+       //连接到数据库
+       双字 临时长度
+       SQL设置连接属性(h连接句柄,SQL_ATTR_ODBC_CURSORS,SQL_CUR_USE_ODBC,0) //SQLSetConnectAttr
+       SQL驱动器连接(h连接句柄, h对话框句柄, 取地址 连接学生库, 取大小 连接学生库,...
+           取地址 连接缓冲区, 取大小 连接缓冲区,取地址 临时长度, SQL_DRIVER_COMPLETE) //SQLDriverConnect
+       如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+       {
+           提示框(h对话框句柄,取地址 连接数据库错误,取地址 提示框标题,信息框_OK)
+           SQL释放句柄(SQL_HANDLE_DBC, h连接句柄)  //SQLFreeHandle     
+           SQL释放句柄(SQL_HANDLE_ENV, h环境句柄)  //SQLFreeHandle
+           h连接句柄 = 0
+           h环境句柄 = 0
+           
+           累加32 ^= 累加32
+           返回
+       }
+      
+       累加32 = 真
+    }   
+    
+    函数 关闭ODBC:CloseOdbc()
+    {
+        如果(h连接句柄 != 0)
+        {
+            SQL断开连接(h连接句柄) //SQLDisconnect
+            SQL释放句柄(SQL_HANDLE_DBC, h连接句柄) //SQLFreeHandle
+            h连接句柄 = 0
+        }
+        
+        如果(h环境句柄 != 0)
+        {
+            SQL释放句柄(SQL_HANDLE_ENV, h环境句柄) //SQLFreeHandle
+            h环境句柄 = 0
+        }        
+    }
+
+    函数 建立语句句柄:CreateStatementHandle()
+    {
+        SQL分配句柄(SQL_HANDLE_STMT, h连接句柄, 取地址 h语句句柄) //SQLAllocHandle
+        SQL分配句柄(SQL_HANDLE_STMT, h连接句柄, 取地址 h增加语句句柄)//SQLAllocHandle
+        SQL分配句柄(SQL_HANDLE_STMT, h连接句柄, 取地址 hCust语句)//SQLAllocHandle
+        SQL设置语句属性(h语句句柄,SQL_ATTR_CONCURRENCY,SQL_CONCUR_ROWVER,0) //SQLSetStmtAttr
+        SQL设置语句属性(h语句句柄,SQL_ATTR_CURSOR_TYPE,SQL_CURSOR_KEYSET_DRIVEN,0)//SQLSetStmtAttr
+        SQL设置语句属性(h语句句柄,SQL_ATTR_ROW_ARRAY_SIZE,行集数,0)//SQLSetStmtAttr
+        SQL设置语句属性(h语句句柄,SQL_ATTR_ROW_STATUS_PTR,取地址 行状态数组,0)  //SQLSetStmtAttr
+    }
+
+    函数 打开记录集:OpenRecordset(双字 h对话框句柄)
+    {
+        SQL直接执行(h语句句柄,取地址 SQLStmt,取大小 SQLStmt) //SQLExecDirect
+        如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+        {
+            提示框(h对话框句柄,取地址 语句错误,取地址 提示框标题,信息框_OK)
+            SQL释放句柄(SQL_HANDLE_STMT, h语句句柄) //SQLFreeHandle
+            SQL释放句柄(SQL_HANDLE_DBC, h连接句柄) //SQLFreeHandle
+            SQL释放句柄(SQL_HANDLE_ENV, h环境句柄) //SQLFreeHandle
+            累加32 ^= 累加32 //xor eax,eax
+            返回 //ret
+        }
+                 
+        累加32 = 真
+    }
+
+    函数 绑定列变量:BindColVariable(双字 h语句)
+    {
+        SQL绑定列(h语句,1,SQL_C_CHAR,取地址 U_D_姓名,11,取地址 U_D_姓名长度) //SQLBindCol
+        SQL绑定列(h语句,2,SQL_C_STINYINT,取地址 U_D_性别,0,取地址 U_D_性别长度) //SQLBindCol
+        SQL绑定列(h语句,3,SQL_C_SLONG,取地址 U_D_年龄,0,取地址 U_D_年龄长度) //SQLBindCol
+    }
+    
+    函数 绑定参数变量:BindParamVariable(双字 h语句)
+    {
+        SQL绑定参数(h语句, 1, SQL_PARAM_INPUT, SQL_C_CHAR,SQL_CHAR, 10, 0, ...
+            取地址 姓名缓冲区, 取大小 姓名缓冲区, 取地址 姓名长度) //SQLBindParameter
+        SQL绑定参数(h语句, 2, SQL_PARAM_INPUT, SQL_C_STINYINT,SQL_TINYINT, 1, 0, ...
+            取地址 性别缓冲区, 取大小 性别缓冲区, 取地址 性别长度) //SQLBindParameter
+        SQL绑定参数(h语句, 3, SQL_PARAM_INPUT, SQL_C_SLONG,SQL_INTEGER ,4, 0, ...
+            取地址 年龄缓冲区, 取大小 年龄缓冲区,0) //或者 取地址 年龄长度
+    }
+    
+    函数 在列表上显示记录:ListBoxDisplayRec(双字 h列表句柄)
+    {<源址32,的址32>
+        
+        列表视图_项 l列表项
+        双字 姓名_地址
+        双字 性别_地址
+        双字 年龄_地址
+        双字 记录数
+        双字 n列表行
+        
+        n列表行 = 0 //mov n列表行,0
+        记录数 = 0 //mov 记录数,0
+        姓名_地址 = 取地址 U_D_姓名 //mov 姓名_地址,offset U_D_姓名
+        性别_地址 = 取地址 U_D_性别 //mov 性别_地址,offset U_D_性别
+        年龄_地址 = 取地址 U_D_年龄 //mov 年龄_地址,offset U_D_年龄
+        源址32 @= 行状态数组 //lea 源址32,行状态数组
+        循环(记录数<行集数)
+        {
+            如果(([字|源址32]==SQL_ROW_SUCCESS) || ([字|源址32]==SQL_ROW_ADDED) || ([字|源址32]==SQL_ROW_UPDATED))
+            {
+                l列表项.掩码 = LVIF_TEXT+LVIF_PARAM
+                压栈 n列表行
+                出栈 l列表项.项序号	
+                l列表项.子项序号 = 0
+                压栈  姓名_地址
+                出栈 l列表项.文本指针
+                发送消息(h列表句柄, LVM_INSERTITEM,0, &l列表项)
+                
+                l列表项.掩码 = LVIF_TEXT
+                l列表项.子项序号 ++ //inc l列表项.子项序号
+                的址32 = 性别_地址
+                如果([字节|的址32] != 0)
+                {
+                    l列表项.文本指针 = 取地址 男 //mov l列表项.文本指针,offset 男
+                }
+                否则
+                {
+                    l列表项.文本指针 = 取地址 女 //mov l列表项.文本指针,offset 女
+                }
+                发送消息(h列表句柄,LVM_SETITEM, 0,&l列表项)
+                
+                l列表项.子项序号 ++
+                的址32 = 年龄_地址
+                字符串格式化(取地址 临时缓冲区,取地址 格式化整数,[双字|的址32])
+                l列表项.文本指针 = 取地址 临时缓冲区
+                发送消息(h列表句柄,LVM_SETITEM, 0,&l列表项)
+                
+                源址32 += 2 //add 源址32,2
+                姓名_地址 += 11
+                性别_地址 += 1
+                年龄_地址 +=4
+                n列表行 ++ //inc n列表行
+            }
+             
+           记录数 ++
+        }
+    } 
+        
+    函数 在编辑控件上显示记录:DisplayRecordAtControl(双字 h对话框句柄,双字 n序号)
+    {<源址32>
+     
+        n序号 -- //dec n序号
+        
+        源址32 @= U_D_姓名
+        累加32 ^= 累加32 //xor eax,eax
+        累加低 = 11
+        数据32 = n序号
+        累加16 = 累加低 * 数据低 // mul 数据低
+        源址32 += 累加32
+        设置对话框子项文本(h对话框句柄,IDC_EDIT1,源址32)
+        
+        源址32 @= U_D_性别
+        累加低 = 1
+        数据32 = n序号
+        累加16 = 累加低 * 数据低 // mul 数据低
+        源址32 += 累加32
+        如果([字节|源址32] != 0)
+        {
+            发送对话框子项消息(h对话框句柄,IDC_COMBO1,组合框_SETCURSEL,0,0)
+        }
+        否则
+        {
+            发送对话框子项消息(h对话框句柄,IDC_COMBO1,组合框_SETCURSEL,1,0)
+        }
+              
+        源址32 @= U_D_年龄
+        累加低 = 4
+        数据32 = n序号
+        累加16 = 累加低 * 数据低 // mul 数据低
+        源址32 += 累加32
+        设置对话框子项整数值(h对话框句柄,IDC_EDIT_AGE,[双字|源址32],假)
+    }   
+    
+    函数 增加记录(双字 h对话框句柄)
+    {
+        SQL准备(h增加语句句柄,取地址 sql增加语句,取大小 sql增加语句)//SQLPrepare
+        绑定参数变量(h增加语句句柄)
+        获取参数(h对话框句柄)
+        SQL执行(h增加语句句柄)//SQLExecute
+        刷新列表(h对话框句柄)
+    }
+    
+    函数 修改记录(双字 h对话框句柄)
+    {
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETSELECTIONMARK,0,0) //SendDlgItemMessage
+        如果(累加32 < 0)
+        {
+            返回 假
+        }
+        累加32 ++
+        SQL设置位置(h语句句柄,累加32,SQL_POSITION,SQL_LOCK_NO_CHANGE) //SQLSetPos
+        SQL准备(hCust语句,取地址 sql修改语句,取大小 sql修改语句) //SQLPrepare
+        绑定参数变量(hCust语句)
+        获取参数(h对话框句柄)
+        SQL执行(hCust语句) //SQLExecute
+        如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+        {
+            提示框(h对话框句柄,取地址 修改错误提示,取地址 提示框标题,信息框_OK)
+            SQL释放句柄(SQL_HANDLE_STMT, h语句句柄)
+        }
+
+        刷新列表(h对话框句柄)
+    }
+    
+    函数 删除记录(双字 h对话框句柄)
+    {
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETSELECTIONMARK,0,0) //SendDlgItemMessage
+        如果(累加32 < 0)
+        {
+            返回 假  // mov eax,假  ret
+        }
+        累加32 ++
+        SQL设置位置(h语句句柄,累加32,SQL_POSITION,SQL_LOCK_NO_CHANGE) //SQLSetPos
+        SQL准备(hCust语句,取地址 sql删除语句,取大小 sql删除语句) //SQLPrepare
+        SQL执行(hCust语句)//SQLExecute
+        如果((累加16 != SQL_成功) && (累加16 != SQL_成功_并带回信息))
+        {
+             提示框(h对话框句柄,取地址 删除错误提示,取地址 提示框标题,信息框_OK)
+             SQL释放句柄(SQL_HANDLE_STMT, h语句句柄)
+        }
+        刷新列表(h对话框句柄)                          
+    }
+    
+    函数 选择学生列表项(双字 h对话框句柄,双字 n项序号)
+    {
+        列表视图_项 l列表项
+        
+        //清除所有项的选中状态
+        双字 n记录序号
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETITEMCOUNT,0,0)//SendDlgItemMessage 
+        n记录序号 = 累加32
+        n记录序号 --
+        循环(n记录序号 >= 0)
+        {
+            压栈 n记录序号
+            出栈 l列表项.项序号
+            l列表项.子项序号 = 0
+            l列表项.掩码 = LVIF_STATE
+            l列表项.状态 =  0
+            l列表项.状态掩码 = LVIS_SELECTED                
+            累加32 @= l列表项
+            发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_SETITEM, 0,累加32)
+        
+            n记录序号 --
+        }
+        
+        //只选中指定项        
+        压栈 n项序号
+        出栈 l列表项.项序号
+        l列表项.子项序号 = 0
+        l列表项.掩码 = LVIF_STATE
+        l列表项.状态 =  LVIS_SELECTED
+        l列表项.状态掩码 = LVIS_SELECTED                
+        累加32 @= l列表项
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_SETITEM, 0,累加32)
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_SETSELECTIONMARK,0,n项序号) //SendDlgItemMessage
+        
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,消息_SETFOCUS,0,0)
+    }
+    
+    函数 跳到第一条记录(双字 h对话框句柄)
+    {
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETITEMCOUNT,0,0)//SendDlgItemMessage        
+        如果(累加32 == 0)
+        {
+            返回
+        }        
+        选择学生列表项(h对话框句柄,0)
+        
+        在编辑控件上显示记录(h对话框句柄,1)
+    }
+    
+    函数 跳到下一条记录(双字 h对话框句柄)
+    {
+        双字 n当前记录序号
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETSELECTIONMARK,0,0) //SendDlgItemMessage
+        如果(累加32 < 0)
+        {
+            返回 假
+        }
+        n当前记录序号 = 累加32
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETITEMCOUNT,0,0)//SendDlgItemMessage 
+        累加32 --
+        如果(n当前记录序号 == 累加32)
+        {
+            返回 假
+        }
+        
+        n当前记录序号 ++        
+        选择学生列表项(h对话框句柄,n当前记录序号)
+        n当前记录序号 ++
+                
+        在编辑控件上显示记录(h对话框句柄,n当前记录序号)
+    }
+    
+    函数 跳到上一条记录(双字 h对话框句柄)
+    {
+        双字 n当前记录序号
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETSELECTIONMARK,0,0) //SendDlgItemMessage
+        如果(累加32 <= 0)
+        {
+            返回 假
+        }
+        
+        n当前记录序号 = 累加32                
+        n当前记录序号 --        
+        选择学生列表项(h对话框句柄,n当前记录序号)
+        n当前记录序号 ++
+                
+        在编辑控件上显示记录(h对话框句柄,n当前记录序号)
+    }
+    
+    函数 跳到最末条记录(双字 h对话框句柄)
+    {        
+        发送对话框子项消息(h对话框句柄,IDC_LIST1,LVM_GETITEMCOUNT,0,0)//SendDlgItemMessage 
+        如果(累加32 == 0)
+        {
+            返回 假
+        }
+        
+        累加32 --
+        双字 n当前记录序号 
+        n当前记录序号 = 累加32
+               
+        选择学生列表项(h对话框句柄,n当前记录序号)
+        n当前记录序号 ++
+                
+        在编辑控件上显示记录(h对话框句柄,n当前记录序号)
+    }
+        
+    函数 获取参数:GetParam(双字 h对话框句柄)
+    {
+        获取对话框子项文本(h对话框句柄,IDC_EDIT1,取地址 姓名缓冲区,10) //GetDlgItemText
+        字符串长度(取地址 姓名缓冲区) //lstrlen
+        姓名长度 = 累加32
+        发送对话框子项消息(h对话框句柄,IDC_COMBO1,组合框_GETCURSEL,0,0) //SendDlgItemMessage
+        如果(累加32 == 0)
+        {
+            性别缓冲区 = 真
+        }
+        否则
+        {
+            性别缓冲区 = 假
+        }
+        性别长度 = 1
+        获取对话框子项整数值(h对话框句柄,IDC_EDIT_AGE,0, 假)//GetDlgItemInt
+        年龄缓冲区 = 累加32
+    }
+
+    函数 刷新列表:RefreshList(双字 h对话框句柄)
+    {
+        字 返回代码   
+             
+        双字 h列表句柄
+        获取对话框子项(h对话框句柄,IDC_LIST1)                            
+        h列表句柄 = 累加32
+        
+        SQL关闭指针(h语句句柄) //SQLCloseCursor
+        打开记录集(h对话框句柄)
+        发送消息(h列表句柄,LVM_DELETEALLITEMS,0,0)        
+        SQL取得卷(h语句句柄,SQL_FETCH_FIRST,0) //SQLFetchScroll        
+        返回代码 = 累加16        
+        循环((返回代码 != SQL_错误) && (返回代码 != SQL_无数据))
+        {
+            在列表上显示记录(h列表句柄)
+            SQL取得卷(h语句句柄,SQL_FETCH_NEXT,0)//SQLFetchScroll
+            返回代码 = 累加16
+        }
+        
+        SQL取得卷(h语句句柄,SQL_FETCH_FIRST,0)//SQLFetchScroll
+    }    
+}
+

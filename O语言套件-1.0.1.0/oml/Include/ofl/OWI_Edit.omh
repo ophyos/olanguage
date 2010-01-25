@@ -1,0 +1,89 @@
+
+引用段
+{
+
+函数 编辑框_设置文本:Edit_SetText(地址 pEdit,地址 string);
+函数 编辑框_获取文本:Edit_GetText(地址 pEdit)=>地址;
+函数 编辑框_设置文本颜色:Edit_SetTextColor(地址 pEdit,正数32 color);
+函数 编辑框_获取文本颜色:Edit_GetTextColor(地址 pEdit)=>正数32;
+函数 编辑框_获取字符数:Edit_GetCharCount(地址 pEdit)=>整数32;
+函数 编辑框_获取行数:Edit_GetLineCount(地址 pEdit)=>整数32;
+函数 编辑框_获取顶行:Edit_GetTopLine(地址 pEdit)=>整数32;
+函数 编辑框_设置文本界限:Edit_SetLimitText(地址 pEdit,整数32 limit);
+函数 编辑框_获取文本界限:Edit_GetLimitText(地址 pEdit)=>整数32;			
+函数 编辑框_设置左边边缘:Edit_SetLeftMargin(地址 pEdit,整数32 margin);
+函数 编辑框_获取左边边缘:Edit_GetLeftMargin(地址 pEdit)=>整数32;
+函数 编辑框_设置右边边缘:Edit_SetRightMargin(地址 pEdit,整数32 margin);
+函数 编辑框_获取右边边缘:Edit_GetRightMargin(地址 pEdit)=>整数32;
+函数 编辑框_设置修改标志:Edit_SetModifyFlag(地址 pEdit,整数32 modify);							  
+函数 编辑框_获取修改标志:Edit_GetModifyFlag(地址 pEdit)=>整数32;	
+函数 编辑框_设置密码文本:Edit_SetPassword(地址 pEdit,字符 pw);
+函数 编辑框_获取密码文本:Edit_GetPassword(地址 pEdit)=>字符;
+函数 编辑框_设置选择开始:Edit_SetSelectStart(地址 pEdit,整数32 start); 
+函数 编辑框_获取选择开始:Edit_GetSelectStart(地址 pEdit)=>整数32;
+函数 编辑框_设置选择结束:Edit_SetSelectEnd(地址 pEdit,整数32 end); 
+函数 编辑框_获取选择结束:Edit_GetSelectEnd(地址 pEdit)=>整数32;
+函数 编辑框_设置只读状态:Edit_SetReadOnly(地址 pEdit,整数32 readonly);
+函数 编辑框_获取只读状态:Edit_GetReadOnly(地址 pEdit)=>整数32;	
+函数 编辑框_设置格式矩形:Edit_SetFormatRect(地址 pEdit,地址 rc);
+函数 编辑框_获取格式矩形:Edit_GetFormatRect(地址 pEdit,地址 rc);
+
+//检索操作队列中是否存在可以撤销的动作，返回值指明撤销队列中是否存在可以撤销的动作
+函数 编辑框_可否撤销:Edit_CanUndo(地址 pEdit)=>整数32;
+//撤销上一次操作
+函数 编辑框_撤销:Edit_Undo(地址 pEdit)=>整数32;
+//清空撤销队列(当用户调用SetCaption()和SetMemHandle()也会自动清除撤销队列)
+函数 编辑框_清空撤销队列:Edit_ResetUndoBuffer(地址 pEdit);
+//拷贝当前被选择的文本到剪贴板
+函数 编辑框_复制:Edit_Copy(地址 pEdit);
+//剪切当前被选择的文本到剪贴板
+函数 编辑框_剪切:Edit_Cut(地址 pEdit);
+//清除当前被选择的文本，但并不把内容复制到剪贴板中
+函数 编辑框_清除:Edit_Clear(地址 pEdit);
+//粘贴剪贴板中的内容到控件的当前光标位置
+函数 编辑框_粘贴:Edit_Paste(地址 pEdit);
+//获取最接近指定坐标(相对于控件客户区)的字符索引, line保存返回字符索引所在的行索引
+函数 编辑框_从坐标获取字符:Edit_GetCharFromPoint(地址 pEdit,地址 p, /*Out*/地址 line)=>整数32;
+//获取指定字符索引在控件客户区的位置坐标(如果要获取的字符为分界符，则返回此行尾字符之后的"虚字符"坐标)
+函数 编辑框_从字符获取坐标:Edit_GetPointFromChar(地址 pEdit,整数32 index,地址 p); 
+//检索指定行第一个字符索引，如果行编号超出了有效范围则函数返回-1；如果传入-1，则获取当前行的首字符索引
+函数 编辑框_从行获取首字符:Edit_GetFirstCharFromLine(地址 pEdit,整数32 index)=>整数32;   
+//检索指定的字符索引所在的行
+函数 编辑框_从字符获取行:Edit_GetLineFromChar(地址 pEdit,整数32 index)=>整数32;
+//获取当前行(当没有选择文本，当前行指光标所在行，否则是指选择文本一个字符所在行)
+函数 编辑框_获取当前行:Edit_GetCurrentLine(地址 pEdit)=>整数32;
+//检索指定字符索引所在行的字符数(注意：不包含回车符和行尾符;如果传入索引超出有效范围，函数返回0)
+函数 编辑框_从字符获取行长度:Edit_GetLineLengthFromChar(地址 pEdit,整数32 index)=>整数32;
+//把指定的某一个行拷贝到buffer所指定的缓冲中(不包含空终止符)，bufferSize指明了buffer的大小，返回实际拷贝的字节数
+函数 编辑框_复制行:Edit_CopyLine(地址 pEdit,整数32 line, 地址 buffer, 正数16 bufferSize)=>整数32;
+//选择指定范围的文本，两个参数分别指定选择位置的起始点与结束点
+函数 编辑框_选择文本:Edit_SelectText(地址 pEdit,整数32 start,整数32 end);
+//获取当前被选择文本的起止范围(两参数都可为NULL),start保存被选文本首字符索引，end保存被选文本尾字符之后第一个字符的索引
+函数 编辑框_获取选择范围:Edit_GetSelectRange(地址 pEdit,地址 start, 地址 end);
+//选择所有文本
+函数 编辑框_全选:Edit_SelectAllText(地址 pEdit);
+//取消选择
+函数 编辑框_取消选择:Edit_CancelSelect(地址 pEdit);
+//用指定的文本替换高亮选择的文本,undo指明是否以后可以撤销(如果不存在被选择的文本，函数返回false)
+函数 编辑框_替换文本:Edit_ReplaceText(地址 pEdit,地址 string, 整数32 undo)=>整数32;
+//删除被选择的文本
+函数 编辑框_删除选择文本:Edit_DeleteSelect(地址 pEdit,整数32 undo)=>整数32;
+//如果控件没有文本被选择，执行此函数在光标处插入指定的文本
+函数 编辑框_插入文本:Edit_InsertText(地址 pEdit,地址 string, 整数32 undo)=>整数32; 
+//对于多行编辑控件，获取垂直滚动条的抓取器(Thumb)在滚动条中的位置
+函数 编辑框_获取垂直抓取器位置:Edit_GetVertThumb(地址 pEdit)=>整数32;	
+//滚动控件，使得闪烁Caret光标可见
+函数 编辑框_滚动Caret:Edit_ScrollCaret(地址 pEdit);
+//对于多行编辑控件，在水平方向和垂直方向分别滚动horz和vert
+函数 编辑框_滚动文本:Edit_ScrollText(地址 pEdit,整数32 horz,整数32 vert);
+//对于多行编辑控件，在垂直方向滚动文本
+函数 编辑框_垂直滚动:Edit_VertScroll(地址 pEdit,整数32 param);
+//对于多行编辑控件，设置Tab字符在控件中占据的字符间距(默认8字符宽),redraw表明此操作是否使控件重新显示文本(默认不更新显示)
+函数 编辑框_设置TAB键空格数:Edit_SetTabSpace(地址 pEdit,正数32 space, 整数32 redraw);
+
+函数 编辑框_销毁控件:Edit_DestroyControl(地址 pEdit);
+函数 编辑框_获取类:Edit_GetClass(地址 pEdit)=>地址;
+函数 编辑框_设置标题:Edit_SetCaption(地址 pEdit,地址 string);
+函数 编辑框_获取标题:Edit_GetCaption(地址 pEdit)=>地址;  
+
+}

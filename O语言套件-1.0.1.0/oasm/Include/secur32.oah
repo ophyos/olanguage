@@ -1,0 +1,116 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAcceptSecurityContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAcquireCredentialsHandleA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAcquireCredentialsHandle  AcquireCredentialsHandleA
+
+¡ÒAcquireCredentialsHandleW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAddCredentials  AddCredentialsA
+
+¡ÒAddCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddSecurityPackageA(Ë«×Ö,Ë«×Ö)
+¡ßAddSecurityPackage  AddSecurityPackageA
+
+¡ÒAddSecurityPackageW(Ë«×Ö,Ë«×Ö)
+¡ÒApplyControlToken(Ë«×Ö,Ë«×Ö)
+¡ÒCompleteAuthToken(Ë«×Ö,Ë«×Ö)
+¡ÒDecryptMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeleteSecurityContext(Ë«×Ö)
+¡ÒDeleteSecurityPackageA(Ë«×Ö)
+¡ßDeleteSecurityPackage  DeleteSecurityPackageA
+
+¡ÒDeleteSecurityPackageW(Ë«×Ö)
+¡ÒEncryptMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumerateSecurityPackagesA(Ë«×Ö,Ë«×Ö)
+¡ßEnumerateSecurityPackages  EnumerateSecurityPackagesA
+
+¡ÒEnumerateSecurityPackagesW(Ë«×Ö,Ë«×Ö)
+¡ÒExportSecurityContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeContextBuffer(Ë«×Ö)
+¡ÒFreeCredentialsHandle(Ë«×Ö)
+¡ÒGetComputerObjectNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetComputerObjectName  GetComputerObjectNameA
+
+¡ÒGetComputerObjectNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUserNameExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUserNameEx  GetUserNameExA
+
+¡ÒGetUserNameExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImpersonateSecurityContext(Ë«×Ö)
+¡ÒImportSecurityContextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImportSecurityContext  ImportSecurityContextA
+
+¡ÒImportSecurityContextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInitSecurityInterfaceA()
+¡ßInitSecurityInterface  InitSecurityInterfaceA
+
+¡ÒInitSecurityInterfaceW()
+¡ÒInitializeSecurityContextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInitializeSecurityContext  InitializeSecurityContextA
+
+¡ÒInitializeSecurityContextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaCallAuthenticationPackage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaConnectUntrusted(Ë«×Ö)
+¡ÒLsaDeregisterLogonProcess(Ë«×Ö)
+¡ÒLsaEnumerateLogonSessions(Ë«×Ö,Ë«×Ö)
+¡ÒLsaFreeReturnBuffer(Ë«×Ö)
+¡ÒLsaGetLogonSessionData(Ë«×Ö,Ë«×Ö)
+¡ÒLsaLogonUser(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupAuthenticationPackage(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaRegisterLogonProcess(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaRegisterPolicyChangeNotification(Ë«×Ö,Ë«×Ö)
+¡ÒLsaUnregisterPolicyChangeNotification(Ë«×Ö,Ë«×Ö)
+¡ÒMakeSignature(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryContextAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryContextAttributes  QueryContextAttributesA
+
+¡ÒQueryContextAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryCredentialsAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryCredentialsAttributes  QueryCredentialsAttributesA
+
+¡ÒQueryCredentialsAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQuerySecurityContextToken(Ë«×Ö,Ë«×Ö)
+¡ÒQuerySecurityPackageInfoA(Ë«×Ö,Ë«×Ö)
+¡ßQuerySecurityPackageInfo  QuerySecurityPackageInfoA
+
+¡ÒQuerySecurityPackageInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒRevertSecurityContext(Ë«×Ö)
+¡ÒSaslAcceptSecurityContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaslEnumerateProfilesA(Ë«×Ö,Ë«×Ö)
+¡ßSaslEnumerateProfiles  SaslEnumerateProfilesA
+
+¡ÒSaslEnumerateProfilesW(Ë«×Ö,Ë«×Ö)
+¡ÒSaslGetContextOption(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaslGetProfilePackageA(Ë«×Ö,Ë«×Ö)
+¡ßSaslGetProfilePackage  SaslGetProfilePackageA
+
+¡ÒSaslGetProfilePackageW(Ë«×Ö,Ë«×Ö)
+¡ÒSaslIdentifyPackageA(Ë«×Ö,Ë«×Ö)
+¡ßSaslIdentifyPackage  SaslIdentifyPackageA
+
+¡ÒSaslIdentifyPackageW(Ë«×Ö,Ë«×Ö)
+¡ÒSaslInitializeSecurityContextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSaslInitializeSecurityContext  SaslInitializeSecurityContextA
+
+¡ÒSaslInitializeSecurityContextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaslSetContextOption(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSealMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetContextAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetContextAttributes  SetContextAttributesA
+
+¡ÒSetContextAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetCredentialsAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetCredentialsAttributes  SetCredentialsAttributesA
+
+¡ÒSetCredentialsAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTranslateNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTranslateName  TranslateNameA
+
+¡ÒTranslateNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnsealMessage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerifySignature(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

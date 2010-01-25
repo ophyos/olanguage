@@ -1,0 +1,637 @@
+∥ #########################################################################
+∥
+∥     快速记事本是根据MASM的QikPad 使用O汇编代码重新编写的小巧文本编辑器
+∥     这个文件编辑器打开的文件不能超过32K大小
+∥     这个编辑器使用了一个工具条和状态栏，使用了分块的代码编写方法
+∥     是一个不错的学习O汇编的示例
+∥
+∥ #########################################################################
+
+
+ 《../包含/记事本.oah》
+
+
+
+∥只读段
+
+.只读段
+{
+
+字节 szClassName‥ = "QikPad_Class"
+
+字节 szTitleO‥   = "打开一个文件"
+字节 szFilterO‥  = "所有文件","*.*","文本文件","*.txt",0
+字节 OFFWrap‥    = " Wrap 关"
+字节 CtlStyle‥   = "EDIT"
+字节 tooBig‥     = "对不起，对快速记事本来说文件超过32K太大了"
+字节 ConfirmMsg‥ = "文件没有保存, 要保存它吗?"
+字节 szTitleS‥   = "文件另存为"
+字节 szFilterS‥  = "所有文件","*.*","文本文件","*.txt",0
+字节 WrapON‥     = " Wrap 开"
+字节 WrapOFF‥    = " Wrap 关"
+字节 AboutMsg‥   = "快速记事本 版权所有 O汇编语言 2008"
+
+}
+∥ #########################################################################
+
+.代码段
+{
+
+入口 主函数()
+{
+    获取模块句柄(NULL)
+    hInstance = 累加32
+
+    获取命令行()
+    CommandLine = 累加32
+
+    //初始化通用控件()
+
+    主窗口(hInstance,NULL,CommandLine,SW_SHOWDEFAULT)
+    
+    退出进程(累加32)
+}
+
+∥ #########################################################################
+
+函数 主窗口(双字 hInst,双字 hPrevInst,双字 CmdLine,双字 CmdShow)
+{
+      WNDCLASSEX wc      
+      双字 Wwd,Wht,Wtx,Wty
+      字节 clBuffer‥128
+
+      ∥==================================================
+      ∥ 为创建主窗口,填充 WNDCLASSEX 结构变量
+      ∥==================================================
+
+      LoadIcon(hInst,500)    ∥ icon ID
+      hIcon = 累加32
+
+      wc.cbSize =         取大小 WNDCLASSEX
+      wc.style =          CS_HREDRAW | CS_VREDRAW | CS_BYTEALIGNWINDOW
+      wc.lpfnWndProc =    主窗口过程
+      wc.cbClsExtra =     NULL
+      wc.cbWndExtra =     NULL
+      压栈 hInst
+      出栈 wc.hInstance
+      获取固有对象(HOLLOW_BRUSH)
+      wc.hbrBackground =  累加32
+      wc.lpszMenuName =   NULL
+      wc.lpszClassName =  取地址 szClassName
+      压栈 hIcon
+      出栈 wc.hIcon          
+      LoadCursor(NULL,IDC_ARROW)
+      wc.hCursor =         累加32
+      压栈 hIcon
+      出栈 wc.hIconSm 
+
+      累加32 @= wc
+      RegisterClassEx(累加32)
+
+      ∥================================
+      ∥ 计算窗口位置
+      ∥================================
+
+      Wwd = 500
+      Wht = 350
+
+      获取系统度量(SM_CXSCREEN)
+      TopXY(Wwd,累加32)
+      Wtx = 累加32
+
+      获取系统度量(SM_CYSCREEN)
+      TopXY(Wht,累加32)
+      Wty = 累加32
+
+     
+      高级创建窗体(WS_EX_LEFT,取地址 szClassName,取地址 szUntitled,WS_OVERLAPPEDWINDOW,Wtx,Wty,Wwd,Wht,NULL,NULL,hInst,NULL)
+      hWnd = 累加32
+
+      加载菜单(hInst,600)  ∥ 菜单 ID
+      设置菜单(hWnd,累加32)
+
+      GetAppPath(取地址 PthBuffer)
+
+      累加32 @= clBuffer
+      GetCL(1, 累加32) ∥如果函数操作成功返回值为1       
+      如果(累加32 == 1)
+      {
+         累加32 @= clBuffer
+         读入文件(累加32,hEdit)
+      }
+
+      显示窗体(hWnd,SW_SHOWNORMAL)
+      更新窗体(hWnd)
+
+      ∥===================================
+      ∥ 消息循环
+      ∥===================================
+      MSG 消息
+      循环(TRUE)
+      {         
+         累加32 @= 消息
+         获取消息(累加32 ,0,0,0)
+        如果(累加32 == 0)
+        {
+          跳出
+        }
+        累加32 @= 消息
+        消息翻译(累加32)
+        累加32 @= 消息
+        消息调度(累加32)
+      }
+
+      返回 消息.wParam
+}
+
+∥ #########################################################################
+
+函数 主窗口过程(双字 hWin,双字 uMsg,双字 wParam,双字 lParam)
+{
+    双字  var
+    双字  caW
+    双字  caH
+    双字  tbh
+    双字  sbh
+    双字  wWid
+    双字  wHgt
+    双字  hDC
+    RECT Rct
+    TBADDBITMAP tbab
+    TBBUTTON tbb
+    字节 buffer1‥128  ∥ 分配两块分别为128字节的内存缓冲区
+    字节 buffer2‥128  
+
+    如果(uMsg == WM_COMMAND)
+    {
+        ∥======== 工具条命令 ========
+
+        如果(wParam == 50)
+        {
+            跳转到 New_File
+        }
+        否则如果(wParam == 51)
+        {
+            跳转到 Open_File
+        }
+        否则如果(wParam == 52)
+        {
+            保存文件()
+        }
+        否则如果(wParam == 53)
+        {
+            跳转到 Edit_Cut
+        }
+        否则如果(wParam == 54)
+        {
+            跳转到 Edit_Copy
+        }
+        否则如果(wParam == 55)
+        {
+            跳转到 Edit_Paste
+        }
+        否则如果(wParam == 56)
+        {
+            跳转到 Edit_Undo
+        }
+
+        ∥======== 菜单命令 ========
+        如果(wParam == 1000)
+        {
+           标签 New_File:
+           发送消息(hEdit,EM_GETMODIFY,0,0)
+           如果(累加32 == TRUE)
+           {
+               验证对话框(hWin)
+               如果(累加32 == IDYES)
+               {
+                   保存文件()
+               }
+               否则如果(累加32 == IDCANCEL)
+               {
+                  累加32 = 0
+                  返回
+               }
+           }
+
+           SetWindowText(hEdit,NULL)
+           SetWindowText(hWin,取地址 szUntitled)
+           发送消息(h状态栏句柄,SB_SETTEXT,2,NULL)
+        }
+        否则如果(wParam == 1001)
+        {
+           标签 Open_File:
+           发送消息(hEdit,EM_GETMODIFY,0,0)
+           如果(累加32 == TRUE)
+           {
+                验证对话框(hWin)
+                如果(累加32 == IDYES)
+                {
+                   保存文件()
+                }
+                否则如果(累加32 == IDCANCEL)
+                {
+                  返回 0
+                }
+            }           
+    
+           填充缓冲区(取地址 szFileName,取大小 szFileName,0)
+           获得要打开的文件名(hWin,取地址 szTitleO,取地址 szFilterO)
+    
+           如果(szFileName：0 != 0)   ∥<< zero if cancel pressed in dlgbox
+           {           
+              读入文件(取地址 szFileName,hEdit)
+              SetWindowText(hWin,取地址 szFileName)
+           }
+        }
+        否则如果(wParam == 1002)
+        { 
+            保存文件()
+        }
+        否则如果(wParam == 1003)
+        {
+            文件另存为()
+        }
+
+        如果(wParam == 1010)
+        {
+            发送消息(hWin,WM_SYSCOMMAND,SC_CLOSE,NULL)
+        }
+        否则如果(wParam == 1900)
+        {
+           关于对话框()
+        }
+
+        如果(wParam == 1100)
+        {
+           标签 Edit_Undo:
+           发送消息(hEdit,WM_UNDO,0,0)
+        }
+        否则如果(wParam == 1101)
+        {
+           标签 Edit_Cut:
+           发送消息(hEdit,WM_CUT,0,0)
+        }
+        否则如果(wParam == 1102)
+        {
+           标签 Edit_Copy:
+           发送消息(hEdit,WM_COPY,0,0)
+        }
+        否则如果(wParam == 1103)
+        {
+           标签 Edit_Paste:
+           发送消息(hEdit,WM_PASTE,0,0)
+        }
+        否则如果(wParam == 1104)
+        {
+           发送消息(hEdit,WM_CLEAR,0,0)
+        }
+        否则如果(wParam == 1105)
+        {
+           WordWrap()
+        }
+
+    ∥====== 菜单命令结束 ======
+    }
+    否则如果(uMsg == WM_SETFOCUS)
+    {
+        SetFocus(hEdit)
+    }
+    否则如果(uMsg == WM_SYSCOLORCHANGE)
+    {
+        构建工具条(hWin,750)
+    }
+    否则如果(uMsg == WM_CREATE)
+    {
+        构建工具条(hWin,750)
+        构建状态栏(hWin)
+
+        WrapFlag = 0
+
+        构建编辑控件(NULL,0,30,300,200,hWin,700,WrapFlag)
+        hEdit = 累加32
+
+        SetWindowLong(hEdit,GWL_WNDPROC,EditProc)
+        lpEditProc = 累加32
+        
+        发送消息(h状态栏句柄,SB_SETTEXT,1,取地址 OFFWrap)
+    }
+    否则如果(uMsg == WM_SIZE)
+    {
+        发送消息(h工具条句柄,TB_AUTOSIZE,0,0)
+        移动窗体(h状态栏句柄,0,0,0,0,TRUE)
+
+        累加32 @= Rct
+        获取客户区矩形(h工具条句柄,累加32)
+        压栈 Rct.bottom
+        出栈 tbh     ∥ 工具条高度
+
+        累加32 @= Rct
+        获取客户区矩形(h状态栏句柄,累加32)
+        压栈 Rct.bottom
+        出栈 sbh     ∥ 状态栏高度
+
+        累加32 @= Rct
+        获取客户区矩形(hWin,累加32)
+        压栈 Rct.right
+        出栈 wWid
+        压栈 Rct.bottom
+        出栈 wHgt
+
+        累加32 =  tbh
+        wHgt -= 累加32
+        累加32 =  sbh
+        wHgt -= 累加32
+
+        tbh += 2
+        wHgt -= 2
+
+        移动窗体(hEdit,0,tbh,wWid,wHgt,TRUE)
+    }
+    否则如果(uMsg == WM_CLOSE)
+    {
+          发送消息(hEdit,EM_GETMODIFY,0,0)
+          如果(累加32 == TRUE)
+          {
+              验证对话框(hWin)
+              如果(累加32 == IDYES)
+              {
+                  保存文件()
+              }
+              否则如果(累加32 == IDCANCEL)
+              {
+                  返回 0
+              }
+          }
+    }
+    否则如果(uMsg == WM_DESTROY)
+    {
+        邮送退出消息(NULL)
+        返回 0 
+    }
+
+    默认窗体过程(hWin,uMsg,wParam,lParam)
+}
+
+∥ ########################################################################
+
+函数 TopXY(双字 wDim,双字 sDim)
+{
+    sDim 逻辑右移 1      ∥ divide screen dimension by 2
+    wDim 逻辑右移 1      ∥ divide window dimension by 2
+    累加32 = wDim        ∥ copy window dimension into 累加32
+    sDim -= 累加32       ∥ sub half win dimension from half screen dimension
+
+    返回 sDim
+}
+
+∥ ########################################################################
+
+函数 构建编辑控件(双字 szMsg,双字 tx,双字 ty,双字 wd,双字 ht,双字 hParent,双字 ID,双字 Wrap)
+{
+
+    双字 hCtl
+    双字 hFnt
+    双字 eStyle 
+
+    eStyle = WS_VISIBLE | WS_CHILDWINDOW | WS_VSCROLL | ES_NOHIDESEL | ES_AUTOVSCROLL | ES_MULTILINE
+
+    如果(Wrap == 0)
+    {
+      eStyle |= WS_HSCROLL | ES_AUTOHSCROLL
+    }
+
+    高级创建窗体(WS_EX_CLIENTEDGE,取地址 CtlStyle,szMsg,eStyle,tx,ty,wd,ht,hParent,ID,hInstance,NULL)
+    hCtl = 累加32
+
+    获取固有对象(SYSTEM_FIXED_FONT)
+    hFnt = 累加32
+    发送消息(hCtl,WM_SETFONT,hFnt,TRUE)
+
+    累加32 = hCtl
+}
+
+∥ ########################################################################
+
+函数 读入文件(双字 lpszDiskFile,双字 hEditControl)
+{
+    双字 hFile
+    双字 hMem
+    双字 ln
+    双字 br
+    字节 txtBuffer‥64
+
+    CreateFile(lpszDiskFile,GENERIC_READ,FILE_SHARE_READ,NULL,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,NULL)
+    hFile = 累加32
+
+    GetFileSize(hFile,NULL)
+    ln = 累加32
+
+    如果(ln > 32767)
+    {
+        CloseHandle(hFile)        
+        提示框(hWnd,取地址 tooBig,取地址 szDisplayName,MB_OK)
+        累加32 ^= 累加32
+        返回
+    }
+
+    SysAllocStringByteLen(0,ln)
+    hMem = 累加32
+
+    累加32 @= br
+    ReadFile(hFile,hMem,ln,累加32,NULL)
+    SetWindowText(hEditControl,hMem)
+
+    SysFreeString(hMem)
+    CloseHandle(hFile)
+
+    lnstr(取地址 szOpenedAt)
+    累加32 ++
+    数据32 @= txtBuffer
+    MemCopy(取地址 szOpenedAt,数据32,累加32)
+
+    dwtoa(ln,取地址 sizeBuffer)
+    数据32 @= txtBuffer
+    lstrcat(数据32,取地址 sizeBuffer)
+    数据32 @= txtBuffer
+    lstrcat(数据32,取地址 bytes)
+
+    数据32 @= txtBuffer
+    发送消息(h状态栏句柄,SB_SETTEXT,2,数据32)
+}
+
+∥ ########################################################################
+
+函数 验证对话框 (双字 hMain)
+{    
+    提示框(hMain,取地址 ConfirmMsg,取地址 szDisplayName,MB_YESNOCANCEL | MB_ICONQUESTION)
+}
+
+∥ ######################################################################## 
+
+函数 数据保存成文件(双字 lpszFile_Name)
+{
+    双字 ln
+    双字 hMem
+    双字 hFile
+    双字 bw
+    双字 txtBuffer‥64
+
+    ∥ -----------------------------------------
+    ∥ 打开文件,如果文件存在设置文件长度为0
+    ∥ -----------------------------------------
+    CreateFile(lpszFile_Name,GENERIC_WRITE,NULL,NULL,CREATE_ALWAYS,FILE_ATTRIBUTE_NORMAL,NULL)
+    hFile = 累加32
+
+    GetWindowTextLength(hEdit)
+    ln = 累加32
+    ln ++
+
+    SysAllocStringByteLen(0,ln)
+    hMem = 累加32
+
+    GetWindowText(hEdit,hMem,ln)
+
+    累加32 @= bw
+    WriteFile(hFile,hMem,ln,累加32,NULL)
+
+    SysFreeString(hMem)
+    CloseHandle(hFile)
+
+    发送消息(hEdit,EM_SETMODIFY,FALSE,0)
+
+    lnstr(取地址 szSavedAt)
+    累加32 ++
+    数据32 @= txtBuffer
+    MemCopy(取地址 szSavedAt,数据32,累加32)
+
+    dwtoa(ln,取地址 sizeBuffer)
+    数据32 @= txtBuffer
+    lstrcat(数据32,取地址 sizeBuffer)
+    数据32 @= txtBuffer
+    lstrcat(数据32,取地址 bytes)
+
+    数据32 @= txtBuffer
+    发送消息(h状态栏句柄,SB_SETTEXT,2,数据32)
+}
+
+∥ ########################################################################
+
+函数 文件另存为()
+{
+    填充缓冲区(取地址 szFileName,取大小 szFileName,0)
+    获取要保存的文件名(hWnd,取地址 szTitleS,取地址 szFilterS)
+
+    如果(szFileName：0 != 0)   ∥<< zero if cancel pressed in dlgbox
+    {
+        数据保存成文件(取地址 szFileName)
+        SetWindowText(hWnd,取地址 szFileName)
+    }
+}
+
+∥ #########################################################################
+
+函数 保存文件()
+{
+    字节 buffer‥128
+
+    ∥ ---------------------------
+    ∥ 测试标题是否为 "无标题"
+    ∥ ---------------------------
+    累加32 @= buffer
+    GetWindowText(hWnd,累加32,128)
+
+    累加32 @= buffer
+    lstrcmp(累加32,取地址 szUntitled)
+    如果(累加32 == 0)
+    {
+        文件另存为()
+        返回
+    }
+
+    累加32 @= buffer
+    数据保存成文件(累加32)
+}
+
+∥ #########################################################################
+
+函数 WordWrap()
+{
+    双字 mFlag
+    双字 ln
+    双字 hMem
+
+    发送消息(hEdit,EM_GETMODIFY,0,0)
+    mFlag = 累加32
+
+    GetWindowTextLength(hEdit)
+    ln = 累加32
+    ln ++
+
+    SysAllocStringByteLen(0,ln)
+    hMem = 累加32
+    GetWindowText(hEdit,hMem,ln)
+
+    销毁窗体(hEdit)
+
+    如果(WrapFlag == 0)
+    {
+        WrapFlag = 1        
+        发送消息(h状态栏句柄,SB_SETTEXT,1,取地址 WrapON)
+    }
+    否则如果(WrapFlag == 1)
+    {
+        WrapFlag = 0        
+        发送消息(h状态栏句柄,SB_SETTEXT,1,取地址 WrapOFF)
+    }
+
+    构建编辑控件(NULL,0,30,300,200,hWnd,700,WrapFlag)
+    hEdit = 累加32
+
+    SetWindowLong(hEdit,GWL_WNDPROC,EditProc)
+    lpEditProc = 累加32
+
+    发送消息(hWnd,WM_SIZE,0,0)
+
+    SetWindowText(hEdit,hMem)
+    SysFreeString(hMem)
+
+    发送消息(hEdit,EM_SETMODIFY,mFlag,0)
+
+    SetFocus(hEdit)
+}
+
+∥ #########################################################################
+
+函数 EditProc(双字 hCtl,双字 uMsg,双字 wParam,双字 lParam)
+{
+    如果(uMsg == WM_KEYUP)
+    {
+       如果(wParam == VK_F1)
+       {
+          关于对话框()
+       }
+       否则如果(wParam == VK_F9)
+       {
+          WordWrap()
+       }
+       否则如果(wParam == VK_ESCAPE)
+       {
+           发送消息(hWnd,WM_SYSCOMMAND,SC_CLOSE,NULL)
+           返回 0
+       }
+    }
+
+    CallWindowProc(lpEditProc,hCtl,uMsg,wParam,lParam)
+}
+
+∥ #########################################################################
+
+函数 关于对话框()
+{    
+    ShellAbout(hWnd,取地址 szDisplayName,取地址 AboutMsg,hIcon)
+}
+
+∥ #########################################################################
+
+}

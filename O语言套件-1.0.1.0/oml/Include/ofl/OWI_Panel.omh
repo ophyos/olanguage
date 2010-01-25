@@ -1,0 +1,10 @@
+
+引用段
+{
+
+函数 面板_销毁控件:Panel_DestroyControl(地址 pPanel);
+函数 面板_获取类:Panel_GetClass(地址 pPanel)=>地址;
+函数 面板_获取标题:Panel_GetCaption(地址 pPanel)=>地址;
+函数 面板_设置标题:Panel_SetCaption(地址 pPanel,地址 string);
+
+} 

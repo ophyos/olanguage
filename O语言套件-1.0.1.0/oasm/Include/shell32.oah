@@ -1,0 +1,329 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCDefFolderMenu_Create2(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCDefFolderMenu_Create(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCallCPLEntry16(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckEscapesA(Ë«×Ö,Ë«×Ö)
+¡ßCheckEscapes  CheckEscapesA
+
+¡ÒCheckEscapesW(Ë«×Ö,Ë«×Ö)
+¡ÒCommandLineToArgvW(Ë«×Ö,Ë«×Ö)
+¡ÒDAD_AutoScroll(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDAD_DragEnterEx2(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDAD_DragEnterEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDAD_DragLeave()
+¡ÒDAD_DragMove(Ë«×Ö,Ë«×Ö)
+¡ÒDAD_SetDragImage(Ë«×Ö,Ë«×Ö)
+¡ÒDAD_ShowDragImage(Ë«×Ö)
+¡ÒDoEnvironmentSubstA(Ë«×Ö,Ë«×Ö)
+¡ßDoEnvironmentSubst  DoEnvironmentSubstA
+
+¡ÒDoEnvironmentSubstW(Ë«×Ö,Ë«×Ö)
+¡ÒDragAcceptFiles(Ë«×Ö,Ë«×Ö)
+¡ÒDragFinish(Ë«×Ö)
+¡ÒDragQueryFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDragQueryFile  DragQueryFileA
+
+¡ÒDragQueryFileAorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDragQueryFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDragQueryPoint(Ë«×Ö,Ë«×Ö)
+¡ÒDriveType(Ë«×Ö)
+¡ÒDuplicateIcon(Ë«×Ö,Ë«×Ö)
+¡ÒExtractAssociatedIconA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExtractAssociatedIcon  ExtractAssociatedIconA
+
+¡ÒExtractAssociatedIconExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExtractAssociatedIconEx  ExtractAssociatedIconExA
+
+¡ÒExtractAssociatedIconExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtractAssociatedIconW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtractIconA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExtractIcon  ExtractIconA
+
+¡ÒExtractIconExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExtractIconEx  ExtractIconExA
+
+¡ÒExtractIconExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtractIconResInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßExtractIconResInfo  ExtractIconResInfoA
+
+¡ÒExtractIconResInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtractIconW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtractVersionResource16W(Ë«×Ö,Ë«×Ö)
+¡ÒFindExeDlgProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindExecutableA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindExecutable  FindExecutableA
+
+¡ÒFindExecutableW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeIconList(Ë«×Ö,Ë«×Ö)
+¡ÒGetFileNameFromBrowse(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒILAppendID(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒILClone(Ë«×Ö)
+¡ÒILCloneFirst(Ë«×Ö)
+¡ÒILCombine(Ë«×Ö,Ë«×Ö)
+¡ÒILCreateFromPathA(Ë«×Ö)
+¡ßILCreateFromPath  ILCreateFromPathA
+
+¡ÒILCreateFromPathW(Ë«×Ö)
+¡ÒILFindChild(Ë«×Ö,Ë«×Ö)
+¡ÒILFindLastID(Ë«×Ö)
+¡ÒILFree(Ë«×Ö)
+¡ÒILGetNext(Ë«×Ö)
+¡ÒILGetSize(Ë«×Ö)
+¡ÒILIsEqual(Ë«×Ö,Ë«×Ö)
+¡ÒILIsParent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒILLoadFromStream(Ë«×Ö,Ë«×Ö)
+¡ÒILRemoveLastID(Ë«×Ö)
+¡ÒILSaveToStream(Ë«×Ö,Ë«×Ö)
+¡ÒInternalExtractIconListA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInternalExtractIconList  InternalExtractIconListA
+
+¡ÒInternalExtractIconListW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsLFNDriveA(Ë«×Ö)
+¡ßIsLFNDrive  IsLFNDriveA
+
+¡ÒIsLFNDriveW(Ë«×Ö)
+¡ÒIsNetDrive(Ë«×Ö)
+¡ÒIsUserAnAdmin()
+¡ÒOpenRegStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathCleanupSpec(Ë«×Ö,Ë«×Ö)
+¡ÒPathGetShortPath(Ë«×Ö)
+¡ÒPathIsExe(Ë«×Ö)
+¡ÒPathIsSlowA(Ë«×Ö,Ë«×Ö)
+¡ßPathIsSlow  PathIsSlowA
+
+¡ÒPathIsSlowW(Ë«×Ö,Ë«×Ö)
+¡ÒPathMakeUniqueName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathProcessCommand(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathQualify(Ë«×Ö)
+¡ÒPathResolve(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathYetAnotherMakeUniqueName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPickIconDlg(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPifMgr_CloseProperties(Ë«×Ö,Ë«×Ö)
+¡ÒPifMgr_GetProperties(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPifMgr_OpenProperties(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPifMgr_SetProperties(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadCabinetState(Ë«×Ö,Ë«×Ö)
+¡ÒRealDriveType(Ë«×Ö,Ë«×Ö)
+¡ÒRealShellExecuteA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRealShellExecute  RealShellExecuteA
+
+¡ÒRealShellExecuteExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRealShellExecuteEx  RealShellExecuteExA
+
+¡ÒRealShellExecuteExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRealShellExecuteW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegenerateUserEnvironment(Ë«×Ö,Ë«×Ö)
+¡ÒRestartDialog(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRestartDialogEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHAddFromPropSheetExtArray(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHAddToRecentDocs(Ë«×Ö,Ë«×Ö)
+¡ÒSHAlloc(Ë«×Ö)
+¡ÒSHAppBarMessage(Ë«×Ö,Ë«×Ö)
+¡ÒSHBindToParent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHBrowseForFolderA(Ë«×Ö)
+¡ßSHBrowseForFolder  SHBrowseForFolderA
+
+¡ÒSHBrowseForFolderW(Ë«×Ö)
+¡ÒSHCLSIDFromString(Ë«×Ö,Ë«×Ö)
+¡ÒSHChangeNotification_Lock(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHChangeNotification_Unlock(Ë«×Ö)
+¡ÒSHChangeNotify(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHChangeNotifyDeregister(Ë«×Ö)
+¡ÒSHChangeNotifyRegister(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCloneSpecialIDList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCoCreateInstance(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateDirectory(Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateDirectoryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHCreateDirectoryEx  SHCreateDirectoryExA
+
+¡ÒSHCreateDirectoryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateFileExtractIconW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateProcessAsUserW(Ë«×Ö)
+¡ÒSHCreatePropSheetExtArray(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateQueryCancelAutoPlayMoniker(Ë«×Ö)
+¡ÒSHCreateShellFolderView(Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateShellFolderViewEx(Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateShellItem(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateStdEnumFmtEtc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHDefExtractIconA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHDefExtractIcon  SHDefExtractIconA
+
+¡ÒSHDefExtractIconW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHDestroyPropSheetExtArray(Ë«×Ö)
+¡ÒSHDoDragDrop(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHEmptyRecycleBinA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHEmptyRecycleBin  SHEmptyRecycleBinA
+
+¡ÒSHEmptyRecycleBinW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHEnumerateUnreadMailAccountsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHExtractIconsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHFileOperationA(Ë«×Ö)
+¡ßSHFileOperation  SHFileOperationA
+
+¡ÒSHFileOperationW(Ë«×Ö)
+¡ÒSHFindFiles(Ë«×Ö,Ë«×Ö)
+¡ÒSHFind_InitMenuPopup(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHFlushClipboard()
+¡ÒSHFlushSFCache()
+¡ÒSHFormatDrive(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHFree(Ë«×Ö)
+¡ÒSHFreeNameMappings(Ë«×Ö)
+¡ÒSHGetAttributesFromDataObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetDataFromIDListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetDataFromIDList  SHGetDataFromIDListA
+
+¡ÒSHGetDataFromIDListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetDesktopFolder(Ë«×Ö)
+¡ÒSHGetDiskFreeSpaceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetDiskFreeSpace  SHGetDiskFreeSpaceA
+
+¡ÒSHGetDiskFreeSpaceExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetDiskFreeSpaceEx  SHGetDiskFreeSpaceExA
+
+¡ÒSHGetDiskFreeSpaceExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetFileInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetFileInfo  SHGetFileInfoA
+
+¡ÒSHGetFileInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetFolderLocation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetFolderPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetFolderPath  SHGetFolderPathA
+
+¡ÒSHGetFolderPathAndSubDirA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetFolderPathAndSubDir  SHGetFolderPathAndSubDirA
+
+¡ÒSHGetFolderPathAndSubDirW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetFolderPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetIconOverlayIndexA(Ë«×Ö,Ë«×Ö)
+¡ßSHGetIconOverlayIndex  SHGetIconOverlayIndexA
+
+¡ÒSHGetIconOverlayIndexW(Ë«×Ö,Ë«×Ö)
+¡ÒSHGetImageList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetInstanceExplorer(Ë«×Ö)
+¡ÒSHGetMalloc(Ë«×Ö)
+¡ÒSHGetNewLinkInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetNewLinkInfo  SHGetNewLinkInfoA
+
+¡ÒSHGetNewLinkInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetPathFromIDListA(Ë«×Ö,Ë«×Ö)
+¡ßSHGetPathFromIDList  SHGetPathFromIDListA
+
+¡ÒSHGetPathFromIDListW(Ë«×Ö,Ë«×Ö)
+¡ÒSHGetRealIDL(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetSetFolderCustomSettingsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetSetSettings(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetSettings(Ë«×Ö,Ë«×Ö)
+¡ÒSHGetShellStyleHInstance()
+¡ÒSHGetSpecialFolderLocation(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetSpecialFolderPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetSpecialFolderPath  SHGetSpecialFolderPathA
+
+¡ÒSHGetSpecialFolderPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetUnreadMailCountW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHHandleUpdateImage(Ë«×Ö)
+¡ÒSHILCreateFromPath(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHInvokePrinterCommandA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHInvokePrinterCommand  SHInvokePrinterCommandA
+
+¡ÒSHInvokePrinterCommandW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHIsFileAvailableOffline(Ë«×Ö,Ë«×Ö)
+¡ÒSHLimitInputEdit(Ë«×Ö,Ë«×Ö)
+¡ÒSHLoadInProc(Ë«×Ö)
+¡ÒSHLoadNonloadedIconOverlayIdentifiers()
+¡ÒSHLoadOLE(Ë«×Ö)
+¡ÒSHMapIDListToImageListIndexAsync(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHMapPIDLToSystemImageListIndex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHMultiFileProperties(Ë«×Ö,Ë«×Ö)
+¡ÒSHObjectProperties(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHOpenFolderAndSelectItems(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHOpenPropSheetW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHParseDisplayName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHPathPrepareForWriteA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHPathPrepareForWrite  SHPathPrepareForWriteA
+
+¡ÒSHPathPrepareForWriteW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHPropStgCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHPropStgReadMultiple(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHPropStgWriteMultiple(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHQueryRecycleBinA(Ë«×Ö,Ë«×Ö)
+¡ßSHQueryRecycleBin  SHQueryRecycleBinA
+
+¡ÒSHQueryRecycleBinW(Ë«×Ö,Ë«×Ö)
+¡ÒSHReplaceFromPropSheetExtArray(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRestricted(Ë«×Ö)
+¡ÒSHRunControlPanel(Ë«×Ö,Ë«×Ö)
+¡ÒSHSetInstanceExplorer(Ë«×Ö)
+¡ÒSHSetLocalizedName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHSetUnreadMailCountW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHShellFolderView_Message(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHSimpleIDListFromPath(Ë«×Ö)
+¡ÒSHStartNetConnectionDialogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHTestTokenMembership(Ë«×Ö,Ë«×Ö)
+¡ÒSHUpdateImageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHUpdateImage  SHUpdateImageA
+
+¡ÒSHUpdateImageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHUpdateRecycleBinIcon()
+¡ÒSHValidateUNC(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSheChangeDirA(Ë«×Ö)
+¡ßSheChangeDir  SheChangeDirA
+
+¡ÒSheChangeDirExA(Ë«×Ö)
+¡ßSheChangeDirEx  SheChangeDirExA
+
+¡ÒSheChangeDirExW(Ë«×Ö)
+¡ÒSheChangeDirW(Ë«×Ö)
+¡ÒSheConvertPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSheFullPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSheFullPath  SheFullPathA
+
+¡ÒSheFullPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSheGetCurDrive()
+¡ÒSheGetDirA(Ë«×Ö,Ë«×Ö)
+¡ßSheGetDir  SheGetDirA
+
+¡ÒSheGetDirExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSheGetDirW(Ë«×Ö,Ë«×Ö)
+¡ÒSheGetPathOffsetW(Ë«×Ö)
+¡ÒSheRemoveQuotesA(Ë«×Ö)
+¡ßSheRemoveQuotes  SheRemoveQuotesA
+
+¡ÒSheRemoveQuotesW(Ë«×Ö)
+¡ÒSheSetCurDrive(Ë«×Ö)
+¡ÒSheShortenPathA(Ë«×Ö,Ë«×Ö)
+¡ßSheShortenPath  SheShortenPathA
+
+¡ÒSheShortenPathW(Ë«×Ö,Ë«×Ö)
+¡ÒShellAboutA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßShellAbout  ShellAboutA
+
+¡ÒShellAboutW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒShellExecuteA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßShellExecute  ShellExecuteA
+
+¡ÒShellExecuteExA(Ë«×Ö)
+¡ßShellExecuteEx  ShellExecuteExA
+
+¡ÒShellExecuteExW(Ë«×Ö)
+¡ÒShellExecuteW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒShellHookProc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C ShellMessageBoxA(Ë«×Ö, ..)
+¡ßShellMessageBox  ShellMessageBoxA
+
+¡Ò:C ShellMessageBoxW(Ë«×Ö, ..)
+¡ÒShell_GetCachedImageIndex(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒShell_GetImageLists(Ë«×Ö,Ë«×Ö)
+¡ÒShell_MergeMenus(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒShell_NotifyIconA(Ë«×Ö,Ë«×Ö)
+¡ßShell_NotifyIcon  Shell_NotifyIconA
+
+¡ÒShell_NotifyIconW(Ë«×Ö,Ë«×Ö)
+¡ÒSignalFileOpen(Ë«×Ö)
+¡ÒWOWShellExecute(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWin32DeleteFile(Ë«×Ö)
+¡ÒWriteCabinetState(Ë«×Ö)
+
+¦ç

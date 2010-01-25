@@ -1,0 +1,53 @@
+引用段
+{
+函数 CloseThemeData(整数32)=>整数32;
+函数 DrawThemeBackground(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawThemeBackgroundEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawThemeEdge(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawThemeIcon(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DrawThemeParentBackground(整数32,整数32,整数32)=>整数32;
+函数 DrawThemeText(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnableThemeDialogTexture(整数32,整数32)=>整数32;
+函数 EnableTheming(整数32)=>整数32;
+函数 GetCurrentThemeName(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeAppProperties()=>整数32;
+函数 GetThemeBackgroundContentRect(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeBackgroundExtent(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeBackgroundRegion(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeBool(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeColor(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeDocumentationProperty(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeEnumValue(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeFilename(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeFont(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeInt(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeIntList(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeMargins(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeMetric(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemePartSize(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemePosition(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemePropertyOrigin(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeRect(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeString(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeSysBool(整数32,整数32)=>整数32;
+函数 GetThemeSysColor(整数32,整数32)=>整数32;
+函数 GetThemeSysColorBrush(整数32,整数32)=>整数32;
+函数 GetThemeSysFont(整数32,整数32,整数32)=>整数32;
+函数 GetThemeSysInt(整数32,整数32,整数32)=>整数32;
+函数 GetThemeSysSize(整数32,整数32)=>整数32;
+函数 GetThemeSysString(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeTextExtent(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetThemeTextMetrics(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetWindowTheme(整数32)=>整数32;
+函数 HitTestThemeBackground(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IsAppThemed()=>整数32;
+函数 IsThemeActive()=>整数32;
+函数 IsThemeBackgroundPartiallyTransparent(整数32,整数32,整数32)=>整数32;
+函数 IsThemeDialogTextureEnabled(整数32)=>整数32;
+函数 IsThemePartDefined(整数32,整数32,整数32)=>整数32;
+函数 OpenThemeData(整数32,整数32)=>整数32;
+函数 SetThemeAppProperties(整数32);
+函数 SetWindowTheme(整数32,整数32,整数32)=>整数32;
+函数 ThemeInitApiHook(整数32,整数32)=>整数32;
+
+}

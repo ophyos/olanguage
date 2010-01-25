@@ -1,0 +1,35 @@
+引用段
+{
+函数 ScriptApplyDigitSubstitution(整数32,整数32,整数32)=>整数32;
+函数 ScriptApplyLogicalWidth(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptBreak(整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptCPtoX(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptCacheGetHeight(整数32,整数32,整数32)=>整数32;
+函数 ScriptFreeCache(整数32)=>整数32;
+函数 ScriptGetCMap(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptGetFontProperties(整数32,整数32,整数32)=>整数32;
+函数 ScriptGetGlyphABCWidth(整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptGetLogicalWidths(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptGetProperties(整数32,整数32)=>整数32;
+函数 ScriptIsComplex(整数32,整数32,整数32)=>整数32;
+函数 ScriptItemize(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptJustify(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptLayout(整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptPlace(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptRecordDigitSubstitution(整数32,整数32)=>整数32;
+函数 ScriptShape(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptStringAnalyse(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptStringCPtoX(整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptStringFree(整数32)=>整数32;
+函数 ScriptStringGetLogicalWidths(整数32,整数32)=>整数32;
+函数 ScriptStringGetOrder(整数32,整数32)=>整数32;
+函数 ScriptStringOut(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptStringValidate(整数32)=>整数32;
+函数 ScriptStringXtoCP(整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptString_pLogAttr(整数32)=>整数32;
+函数 ScriptString_pSize(整数32)=>整数32;
+函数 ScriptString_pcOutChars(整数32)=>整数32;
+函数 ScriptTextOut(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ScriptXtoCP(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+}

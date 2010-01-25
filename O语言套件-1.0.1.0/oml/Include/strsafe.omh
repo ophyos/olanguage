@@ -1,0 +1,115 @@
+引用段
+{
+函数 StringCatExWorkerA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCatExWorkerW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCatNExWorkerA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCatNExWorkerW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCatNWorkerA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCatNWorkerW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCatWorkerA(整数32,整数32,整数32)=>整数32;
+函数 StringCatWorkerW(整数32,整数32,整数32)=>整数32;
+函数 StringCbCatA(整数32,整数32,整数32)=>整数32;
+函数 StringCbCatExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCatExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCatNA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCatNExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCatNExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCatNW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCatW(整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyA(整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyNA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyNExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyNExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyNW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbCopyW(整数32,整数32,整数32)=>整数32;
+函数 StringCbLengthA(整数32,整数32,整数32)=>整数32;
+函数 StringCbLengthW(整数32,整数32,整数32)=>整数32;
+函数 C调用 StringCbPrintfA(整数32, ..)=>整数32;
+函数 C调用 StringCbPrintfExA(整数32, ..)=>整数32;
+函数 C调用 StringCbPrintfExW(整数32, ..)=>整数32;
+函数 C调用 StringCbPrintfW(整数32, ..)=>整数32;
+函数 StringCbVPrintfA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbVPrintfExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbVPrintfExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCbVPrintfW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatA(整数32,整数32,整数32)=>整数32;
+函数 StringCchCatExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatNA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatNExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatNExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatNW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCatW(整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyA(整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyNA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyNExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyNExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyNW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchCopyW(整数32,整数32,整数32)=>整数32;
+函数 StringCchLengthA(整数32,整数32,整数32)=>整数32;
+函数 StringCchLengthW(整数32,整数32,整数32)=>整数32;
+函数 C调用 StringCchPrintfA(整数32, ..)=>整数32;
+函数 C调用 StringCchPrintfExA(整数32, ..)=>整数32;
+函数 C调用 StringCchPrintfExW(整数32, ..)=>整数32;
+函数 C调用 StringCchPrintfW(整数32, ..)=>整数32;
+函数 StringCchVPrintfA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchVPrintfExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchVPrintfExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCchVPrintfW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyExWorkerA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyExWorkerW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyNExWorkerA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyNExWorkerW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyNWorkerA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyNWorkerW(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringCopyWorkerA(整数32,整数32,整数32)=>整数32;
+函数 StringCopyWorkerW(整数32,整数32,整数32)=>整数32;
+函数 StringLengthWorkerA(整数32,整数32,整数32)=>整数32;
+函数 StringLengthWorkerW(整数32,整数32,整数32)=>整数32;
+函数 StringVPrintfExWorkerA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringVPrintfExWorkerW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StringVPrintfWorkerA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StringVPrintfWorkerW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 StringCatExWorker  StringCatExWorkerA
+宏定义 StringCatNExWorker  StringCatNExWorkerA
+宏定义 StringCatNWorker  StringCatNWorkerA
+宏定义 StringCatWorker  StringCatWorkerA
+宏定义 StringCbCat  StringCbCatA
+宏定义 StringCbCatEx  StringCbCatExA
+宏定义 StringCbCatN  StringCbCatNA
+宏定义 StringCbCatNEx  StringCbCatNExA
+宏定义 StringCbCopy  StringCbCopyA
+宏定义 StringCbCopyEx  StringCbCopyExA
+宏定义 StringCbCopyN  StringCbCopyNA
+宏定义 StringCbCopyNEx  StringCbCopyNExA
+宏定义 StringCbLength  StringCbLengthA
+宏定义 StringCbPrintf  StringCbPrintfA
+宏定义 StringCbPrintfEx  StringCbPrintfExA
+宏定义 StringCbVPrintf  StringCbVPrintfA
+宏定义 StringCbVPrintfEx  StringCbVPrintfExA
+宏定义 StringCchCat  StringCchCatA
+宏定义 StringCchCatEx  StringCchCatExA
+宏定义 StringCchCatN  StringCchCatNA
+宏定义 StringCchCatNEx  StringCchCatNExA
+宏定义 StringCchCopy  StringCchCopyA
+宏定义 StringCchCopyEx  StringCchCopyExA
+宏定义 StringCchCopyN  StringCchCopyNA
+宏定义 StringCchCopyNEx  StringCchCopyNExA
+宏定义 StringCchLength  StringCchLengthA
+宏定义 StringCchPrintf  StringCchPrintfA
+宏定义 StringCchPrintfEx  StringCchPrintfExA
+宏定义 StringCchVPrintf  StringCchVPrintfA
+宏定义 StringCchVPrintfEx  StringCchVPrintfExA
+宏定义 StringCopyExWorker  StringCopyExWorkerA
+宏定义 StringCopyNExWorker  StringCopyNExWorkerA
+宏定义 StringCopyNWorker  StringCopyNWorkerA
+宏定义 StringCopyWorker  StringCopyWorkerA
+宏定义 StringLengthWorker  StringLengthWorkerA
+宏定义 StringVPrintfExWorker  StringVPrintfExWorkerA
+宏定义 StringVPrintfWorker  StringVPrintfWorkerA
+}

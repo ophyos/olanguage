@@ -1,0 +1,53 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒChooseColorA(Ë«×Ö)
+¡ßChooseColor  ChooseColorA
+
+¡ÒChooseColorW(Ë«×Ö)
+¡ÒChooseFontA(Ë«×Ö)
+¡ßChooseFont  ChooseFontA
+
+¡ÒChooseFontW(Ë«×Ö)
+¡ÒCommDlgExtendedError()
+¡ÒFindTextA(Ë«×Ö)
+¡ßFindText  FindTextA
+
+¡ÒFindTextW(Ë«×Ö)
+¡ÒFormatCharDlgProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFileTitleA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFileTitle  GetFileTitleA
+
+¡ÒGetFileTitleW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡´ò¿ªÎÄ¼þÃû:GetOpenFileNameA(Ë«×Ö)
+¡ßGetOpenFileName  GetOpenFileNameA
+
+¡ÒGetOpenFileNameW(Ë«×Ö)
+¡Ò»ñÈ¡±£´æÎÄ¼þÃû:GetSaveFileNameA(Ë«×Ö)
+¡ßGetSaveFileName  GetSaveFileNameA
+
+¡ÒGetSaveFileNameW(Ë«×Ö)
+¡ÒLoadAlterBitmap(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPageSetupDlgA(Ë«×Ö)
+¡ßPageSetupDlg  PageSetupDlgA
+
+¡ÒPageSetupDlgW(Ë«×Ö)
+¡ÒPrintDlgA(Ë«×Ö)
+¡ßPrintDlg  PrintDlgA
+
+¡ÒPrintDlgExA(Ë«×Ö)
+¡ßPrintDlgEx  PrintDlgExA
+
+¡ÒPrintDlgExW(Ë«×Ö)
+¡ÒPrintDlgW(Ë«×Ö)
+¡ÒReplaceTextA(Ë«×Ö)
+¡ßReplaceText  ReplaceTextA
+
+¡ÒReplaceTextW(Ë«×Ö)
+¡ÒSsync_ANSI_UNICODE_Struct_For_WOW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWantArrows(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒdwLBSubclass(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒdwOKSubclass(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

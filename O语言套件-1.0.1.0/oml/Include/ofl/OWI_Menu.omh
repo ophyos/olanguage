@@ -1,0 +1,113 @@
+
+引用段
+{
+
+//////////////////////////////////////////////////////////////////////////
+//MenuItem
+函数 菜单项_获取ID:MenuItem_GetId(地址 pMenuItem)=>正数16;
+函数 菜单项_设置文本:MenuItem_SetText(地址 pMenuItem,地址 text);
+函数 菜单项_获取文本:MenuItem_GetText(地址 pMenuItem)=>地址;
+函数 菜单项_设置选中状态:MenuItem_SetChecked(地址 pMenuItem,整数32 check);
+函数 菜单项_获取选中状态:MenuItem_GetChecked(地址 pMenuItem)=>整数32;
+函数 菜单项_获取单选:MenuItem_GetRadio(地址 pMenuItem)=>整数32;
+函数 菜单项_设置应用状态:MenuItem_SetEnabled(地址 pMenuItem,整数32 enable);
+函数 菜单项_获取应用状态:MenuItem_GetEnabled(地址 pMenuItem)=>整数32;
+函数 菜单项_设置默认:MenuItem_SetDefault(地址 pMenuItem,整数32 df);
+函数 菜单项_获取默认:MenuItem_GetDefault(地址 pMenuItem)=>整数32;
+函数 菜单项_设置选择状态:MenuItem_SetSelected(地址 pMenuItem,整数32 select);
+函数 菜单项_获取选择状态:MenuItem_GetSelected(地址 pMenuItem)=>整数32;
+函数 菜单项_设置分隔符:MenuItem_SetSeparator(地址 pMenuItem,整数32 sp);
+函数 菜单项_置为分隔符:MenuItem_IsSeparator(地址 pMenuItem)=>整数32;
+函数 菜单项_设置图像:MenuItem_SetImage(地址 pMenuItem,整数32 image);
+函数 菜单项_获取图像:MenuItem_GetImage(地址 pMenuItem)=>整数32;
+函数 菜单项_设置文本颜色:MenuItem_SetTextColor(地址 pMenuItem,正数32 color);
+函数 菜单项_获取文本颜色:MenuItem_GetTextColor(地址 pMenuItem)=>正数32;
+函数 菜单项_设置选择颜色:MenuItem_SetSelectColor(地址 pMenuItem,正数32 color);
+函数 菜单项_获取选择颜色:MenuItem_GetSelectColor(地址 pMenuItem)=>正数32; 
+函数 菜单项_设置单位:MenuItem_SetFlat(地址 pMenuItem,整数32 flat);
+函数 菜单项_获取单位:MenuItem_GetFlat(地址 pMenuItem)=>整数32;
+函数 菜单项_置为菜单条项目:MenuItem_IsMenuBarItem(地址 pMenuItem)=>整数32;
+函数 菜单项_获取拥有者:MenuItem_GetOwner(地址 pMenuItem)=>地址; 
+
+//////////////////////////////////////////////////////////////////////////
+//Menu
+函数 菜单_获取ID:Menu_GetId(地址 pMenu)=>正数16;
+函数 菜单_设置单位:Menu_SetFlat(地址 pMenu,整数32 flat);  
+函数 菜单_获取单位:Menu_GetFlat(地址 pMenu)=>整数32;
+函数 菜单_设置文本:Menu_SetText(地址 pMenu,地址 string);	 
+函数 菜单_获取文本:Menu_GetText(地址 pMenu)=>地址;	
+函数 菜单_设置图像:Menu_SetImage(地址 pMenu,整数32 image);
+函数 菜单_获取图像:Menu_GetImage(地址 pMenu)=>整数32;
+函数 菜单_获取子菜单计数:Menu_GetSubMenuCount(地址 pMenu)=>整数32;	
+函数 菜单_获取菜单项计数:Menu_GetMenuItemCount(地址 pMenu)=>整数32; 
+函数 菜单_设置被选择:Menu_SetSelected(地址 pMenu,整数32 select);
+函数 菜单_获取被选择:Menu_GetSelected(地址 pMenu)=>整数32;
+函数 菜单_设置文本颜色:Menu_SetTextColor(地址 pMenu,正数32 color);
+函数 菜单_获取文本颜色:Menu_GetTextColor(地址 pMenu)=>正数32;
+函数 菜单_设置选择颜色:Menu_SetSelectColor(地址 pMenu,正数32 color);
+函数 菜单_获取选择颜色:Menu_GetSelectColor(地址 pMenu)=>正数32;   	
+函数 菜单_设置主菜单:Menu_SetMainMenu(地址 pMenu,整数32 main);
+函数 菜单_置为主菜单:Menu_IsMainMenu(地址 pMenu)=>整数32;
+函数 菜单_置为菜单条项:Menu_IsMenuBarItem(地址 pMenu)=>整数32;
+函数 菜单_设置图像列表:Menu_SetImageList(地址 pMenu,地址 imagelist);
+函数 菜单_获取子菜单:Menu_GetSubMenu(地址 pMenu,整数32 submenu)=>地址;
+函数 菜单_获取被选择子菜单:Menu_GetSelectedSubMenu(地址 pMenu)=>地址;
+函数 菜单_获取根菜单:Menu_GetRootMenu(地址 pMenu)=>地址;	
+函数 菜单_获取父菜单:Menu_GetParentMenu(地址 pMenu)=>地址;
+函数 菜单_获取被选择菜单项:Menu_GetSelectedMenuItem(地址 pMenu)=>地址;
+函数 菜单_获取菜单项:Menu_GetMenuItem(地址 pMenu,整数32 item)=>地址;  
+函数 菜单_获取图像列表:Menu_GetImageList(地址 pMenu)=>地址;  
+
+//在屏幕坐标(x,y)位置弹出这个菜单。若notify为false，返回值为用户选择的菜单命令；若notify设为true，则菜单命令通过消息通知用户
+函数 菜单_弹出菜单:Menu_PopupMenu(地址 pMenu,整数32 x,整数32 y,整数32 notify)=>正数32; 
+//添加一个标识为id的菜单项，新加项是否为自绘风格取决于包含菜单是否为自绘风格
+函数 菜单_添加菜单项:Menu_AddMenuItem(地址 pMenu,正数16 id)=>地址;	
+//在此菜单中追加一个分割条
+函数 菜单_添加分隔符:Menu_AddSeparator(地址 pMenu)=>地址;
+//在item前添加一个标识为id的菜单项，新加项是否为自绘风格取决于包含菜单是否为自绘风格
+函数 菜单_插入菜单项:Menu_InsertMenuItem(地址 pMenu,正数16 id,地址 item)=>地址;
+//在item前添加一个分割条
+函数 菜单_插入分隔符:Menu_InsertSeparator(地址 pMenu,地址 item)=>地址;
+//在menu前添加一个标识为id的菜单项，新加项是否为自绘风格取决于包含菜单是否为自绘风格
+函数 菜单_于前面插入菜单项:Menu_InsertMenuItemBeforeMenu(地址 pMenu,正数16 id,地址 menu)=>地址;
+//在menu前添加一个分割条
+函数 菜单_于前面插入分隔符:Menu_InsertSeparatorBeforeMenu(地址 pMenu,地址 menu)=>地址;
+//追加一个子菜单
+函数 菜单_添加子菜单:Menu_AddSubMenu(地址 pMenu)=>地址;
+//在item前插入一个子菜单，若item为NULL则追加子菜单
+函数 菜单_插入子菜单:Menu_InsertSubMenu(地址 pMenu,地址 item)=>地址;
+//在menu前插入一个子菜单，若menu为NULL则追加子菜单
+函数 菜单_于前面插入子菜单:Menu_InsertSubMenuBeforeMenu(地址 pMenu,地址 menu)=>地址;
+//销毁其指针为item的菜单项
+函数 菜单_销毁菜单项:Menu_DestroyMenuItem(地址 pMenu,地址 item);
+//销毁其Id为index的菜单项
+函数 菜单_索引销毁菜单项:Menu_DestroyMenuItemIndex(地址 pMenu,整数32 index);
+//销毁其指针为Menu的子菜单
+函数 菜单_销毁子菜单:Menu_DestroySubMenu(地址 pMenu,地址 menu);
+//销毁其Id为index的子菜单
+函数 菜单_索引销毁子菜单:Menu_DestroySubMenuIndex(地址 pMenu,整数32 index);
+//删空菜单中的所有内容，但本身并不销毁
+函数 菜单_销毁全部:Menu_DestroyAll(地址 pMenu);
+//根据其Id找到相应的子菜单
+函数 菜单_ID寻找子菜单:Menu_FindSubMenuID(地址 pMenu,正数16 id)=>地址;
+//根据其句柄找到相应的子菜单
+函数 菜单_寻找子菜单:Menu_FindSubMenu(地址 pMenu,HMENU menu)=>地址;
+//根据其Id找到相应的菜单项
+函数 菜单_寻找菜单项:Menu_FindMenuItem(地址 pMenu,正数16 id)=>地址;
+
+函数 菜单_销毁控件:Menu_DestroyControl(地址 pMenu);
+函数 菜单_获取类:Menu_GetClass(地址 pMenu)=>地址;
+函数 菜单_显示:Menu_Show(地址 pMenu);
+函数 菜单_隐藏:Menu_Hide(地址 pMenu);
+函数 菜单_应用状态:Menu_Enable(地址 pMenu,整数32 enable);
+函数 菜单_可用:Menu_IsEnabled(地址 pMenu)=>整数32;
+函数 菜单_可视:Menu_IsVisible(地址 pMenu)=>整数32;  
+函数 菜单_设置标题:Menu_SetCaption(地址 pMenu,地址 string);
+函数 菜单_获取标题:Menu_GetCaption(地址 pMenu)=>地址;
+函数 菜单_移动:Menu_Move(地址 pMenu,整数32 dx,整数32 dy);
+函数 菜单_设置大小:Menu_SetSize(地址 pMenu,整数32 width,整数32 height);
+函数 菜单_设置位置大小:Menu_SetPositionSize(地址 pMenu,整数32 left,整数32 top,整数32 width,整数32 height);
+函数 菜单_对齐:Menu_Align(地址 pMenu,正数32 align);
+函数 菜单_重绘控件:Menu_RedrawControl(地址 pMenu,整数32 redraw);
+
+} 

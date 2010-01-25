@@ -1,0 +1,1479 @@
+
+//O中间语言代码文件--俄罗斯方块游戏源代码
+//本代码是照Tetris实例写的代码
+//版权归原作者所有
+  
+.包含文<*.\视窗32.omh>
+.包含文<*.\comctl32.omh>
+.包含文<*.\shell32.omh>
+
+.引用库<*.\comctl32.lib>
+.引用库<*.\shell32.lib>
+
+.包含文<..\资源\资源.omh>
+.包含文<..\包含\随机数.omh>
+.包含文<..\包含\播放音乐.omh>
+
+字符[] 窗口类名 = "Tetris";
+整数 主程序句柄;
+整数 主窗口句柄;
+整数 主菜单句柄;
+整数 状态栏句柄;
+句柄 hLevel,hLayer,hSorce,hSorceMax; //计分器句柄
+工具条按钮结构[] tbButtons =  //工具栏数据结构
+	0,IDM_NEW,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1,
+	1,IDM_PAUSE,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1,
+	2,IDM_STOP,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1,
+	0,0,TBSTATE_ENABLED,TBSTYLE_SEP,0,0,-1,
+	3,IDM_MUSIC,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1,
+	4,IDM_HELP,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1,
+	0,0,TBSTATE_ENABLED,TBSTYLE_SEP,0,0,-1,
+	5,IDM_ABOUT,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1;
+
+句柄 音乐设备句柄;
+整数 背景音乐类型;
+枚举
+{
+    舒缓节奏;
+    紧张节奏;
+    关闭音乐;
+}  
+
+结构 Block{ POINT a; POINT b; POINT c; POINT d; }; //方块模型数据结构
+Block[7][4] Tetris =   //七种方块全部变形数据结构
+{
+
+	//□□
+	//□□(1)	
+	{
+	    {0,0, 0,1, 1,0, 1,1}, {0,0, 0,1, 1,0, 1,1},
+	    {0,0, 0,1, 1,0, 1,1}, {0,0, 0,1, 1,0, 1,1}
+	}, 
+	
+	//□□
+	//  □□(2)
+	{
+	    {0,0, 1,0, 1,1, 2,1}, {1,0, 1,1, 0,1, 0,2},
+	    {0,0, 1,0, 1,1, 2,1}, {1,0, 1,1, 0,1, 0,2}
+	},
+	
+	//  □□
+	//□□  (2)
+	{
+	    {1,0, 2,0, 0,1, 1,1}, {0,0, 0,1, 1,1, 1,2},
+	    {1,0, 2,0, 0,1, 1,1}, {0,0, 0,1, 1,1, 1,2}
+	},
+	
+	//□□□□(2)
+	{
+	    {0,0, 1,0, 2,0, 3,0}, {1,0, 1,1, 1,2, 1,3},
+	    {0,0, 1,0, 2,0, 3,0}, {1,0, 1,1, 1,2, 1,3}
+	},
+	
+	//  □
+	//□□□(4)
+	{
+	    {1,0, 0,1, 1,1, 2,1},   {0,0, 0,1, 1,1, 0,2},
+	    {0,0, 1,0, 2,0, 1,1},   {1,0, 0,1, 1,1, 1,2}
+	},
+	
+	//□
+	//□□□(4)
+	{
+	    {0,0, 0,1, 1,1, 2,1},   {0,0, 1,0, 0,1, 0,2},
+	    {0,0, 1,0, 2,0, 2,1},   {1,0, 1,1, 0,2, 1,2}
+	},
+	
+	//    □
+	//□□□(4)
+	{
+	    {2,0, 0,1, 1,1, 2,1},   {0,0, 0,1, 0,2, 1,2},
+	    {0,0, 1,0, 2,0, 0,1},   {0,0, 1,0, 1,1, 1,2}
+	}
+};
+	
+整数 i, j ,c;        //运动中的方块数据 Tetris[i][j]颜色值c
+整数 ii, jj, cc;     //下一个方块数据 同上
+整数 x, y;           //运动中的方块坐标值
+整数[19][10] Matrix; //游戏区矩阵
+逻辑 bStart;         //开始、暂停标志
+逻辑 bGOver;         //游戏结束标志
+句柄 hDcBitmap;      //装载方格位图用的DC
+句柄 hDcAlert;       //装载提示位图用的DC
+字符[50] 字符缓冲区; //缓冲字符串
+整数 iLevel,iSorce,iLayer,iSorceMax; //计分变量
+
+//程序从这里开始执行
+入口  主函数()
+{
+    主窗口();
+    退出进程(0);
+}
+
+函数  主窗口()
+{
+    主程序句柄 = 获取模块句柄(0);  //GetModuleHandle
+    
+    初始化通用控件();    
+   
+    随机产生方块数据(取地址 ii,取地址 jj,取地址 cc);
+    //x = 4; y = -1;
+    iLevel = 1; 
+    iSorce = 0;
+    iLayer = 0; 
+    iSorceMax = 读写INI文件最高分(0);
+    hDcAlert = CreateCompatibleDC(0);
+	
+    窗体结构 主窗口类;
+    RtlZeroMemory(取地址 主窗口类,取大小 主窗口类);
+      
+    //注册窗口类
+    主窗口类.光标句柄 = 加载指针(0,指针ID_ARROW);  //LoadCursor
+    主窗口类.图标句柄 = 加载图标(主程序句柄,IDI_ICON1);  //LoadIcon    
+    主窗口类.附加图标 = 主窗口类.图标句柄;
+    主窗口类.实例句柄 = 主程序句柄;
+    主窗口类.结构大小 = 取大小 主窗口类;
+    主窗口类.窗口风格 = 类风格_HREDRAW | 类风格_VREDRAW;
+    主窗口类.窗口过程 = 主窗口程序;
+    主窗口类.背景颜色 = 颜色_BTNFACE + 1;
+    主窗口类.类名指针 = 取地址 窗口类名;
+    高级注册窗体类(取地址 主窗口类);
+    
+    整数 窗口X位置,窗口Y位置;
+    窗口X位置 = GetSystemMetrics(SM_CXFULLSCREEN)/2 - 370/2;    
+    窗口Y位置 = GetSystemMetrics(SM_CYFULLSCREEN)/2 - 520/2;
+    
+    //建立并显示窗口
+    主窗口句柄 = 高级创建窗体(   //高级创建窗体
+    窗体风格_EX_CLIENTEDGE,
+    取地址 窗口类名,
+    取地址 "俄罗斯方块O中间语言版",    
+    窗体风格_MINIMIZEBOX|窗体风格_SYSMENU,
+    窗口X位置,
+    窗口Y位置,
+    370,
+    520,
+    0,
+    0,
+    主程序句柄,
+    0);    
+    
+    如果(主窗口句柄 == 0)
+    {
+        整数 错误代码;
+        错误代码 = 获取最后错误(); //GetLastError
+        提示框(0,取地址 "窗口创建失败",取地址 "俄罗斯方块",0); //MessageBox
+        返回;
+    }    
+        
+    主菜单句柄 = 加载菜单(主程序句柄,IDR_MENU_MAIN);  // 菜单 ID  LoadMenu
+    设置菜单(主窗口句柄,主菜单句柄);  //SetMenu
+        
+    //显示窗口并刷新客户区
+    显示窗体(主窗口句柄,显示窗体_SHOWNORMAL);  //ShowWindow
+    更新窗体(主窗口句柄);  //UpdateWindow
+
+    //处理消息循环
+    MSG 消息;
+    整数 结果状态;
+    循环(真)
+    {        
+        结果状态 = GetMessage(取地址 消息,0,0,0);
+        如果(结果状态 == 0)
+        {
+           跳出;
+        }        
+        
+        消息翻译(取地址 消息); //TranslateMessage
+        消息调度(取地址 消息); //DispatchMessage
+    }
+}
+
+函数 主窗口程序(整数 窗口句柄,整数 窗口消息,整数 参数一,整数 参数二)=>整数
+{ 
+    PAINTSTRUCT 窗口作图结构;
+    矩形结构  窗口区域;
+    句柄  作图句柄;
+    整数 返回值;
+    返回值 = 0;
+
+    如果(窗口消息 == 消息_CREATE)
+    {
+        游戏界面(窗口句柄); //创建界面控件        
+        游戏开始(窗口句柄); //数据初始化
+        //背景音乐初始化        
+        背景音乐类型 = 舒缓节奏;
+        音乐菜单设置(IDM_MUSIC1);
+        //背景音乐类型 = 关闭音乐;
+        //音乐菜单设置(IDM_MUSICOFF);
+    }    
+    否则如果(窗口消息 == 消息_PAINT)
+    {  
+       作图句柄 = BeginPaint(窗口句柄,取地址 窗口作图结构);
+       绘制游戏区(作图句柄); //绘制游戏区
+       绘制方块(作图句柄,0,0,0); //绘制方块
+       绘制预览区(作图句柄); //绘制预览区
+       BitBlt(作图句柄,40,200,160,50,hDcAlert,0,0,SRCCOPY);//绘制提示语
+       EndPaint(窗口句柄,取地址 窗口作图结构);       
+    }
+    否则如果(窗口消息 == 消息_TIMER)
+    {        
+        方块下落(窗口句柄);
+    }
+    否则如果(窗口消息 == 消息_DRAWITEM)
+    {        
+		自绘方向按钮(参数二); //绘制方向按钮
+    }
+    否则如果(窗口消息 == 消息_KEYDOWN)
+    {
+        如果(参数一 == VK_LEFT)
+        {
+            如果(bStart == 真)
+            {
+                整数 x位置,检测结果;
+                x位置 = x;
+                x位置 -= 1;
+                检测结果 = 方块检测(x位置,y);
+                如果(检测结果 == 真)
+			{
+				x --;
+				作图句柄 = GetDC(窗口句柄);
+				绘制方块(作图句柄,-1,0,0);
+				ReleaseDC(窗口句柄,作图句柄);
+			}
+            }
+        }
+        否则如果(参数一 == VK_RIGHT)
+        {
+            如果(bStart == 真)
+            {
+                整数 x位置,检测结果;
+                x位置 = x;
+                x位置 += 1;
+                检测结果 = 方块检测(x位置,y);
+                如果(检测结果 == 真)
+			{
+				x ++;
+				作图句柄 = GetDC(窗口句柄);
+				绘制方块(作图句柄,1,0,0);
+				ReleaseDC(窗口句柄,作图句柄);
+			}
+            }			
+        }
+        否则如果(参数一 == VK_UP)
+        {
+            如果((bStart == 真) && (y >= 0))
+            {
+                方块旋转(窗口句柄);
+            }			
+        }
+        否则如果(参数一 == VK_DOWN)
+        {
+            如果(bStart == 真)
+            {
+                方块下落(窗口句柄);
+            }			
+        }
+        否则如果(参数一 == VK_SPACE)
+        {
+            游戏暂停(窗口句柄);
+        }		
+    }
+    否则如果(窗口消息 == 消息_COMMAND)
+    {
+        短正整 控件ID; //16位正整数        
+        控件ID = 参数一;
+                	
+	   如果(控件ID == IDM_STOP)
+	   {
+	       如果( y != -1 )
+	       {
+	           游戏结束(窗口句柄);
+            }			
+        }
+        否则如果(控件ID == IDM_NEW)
+        {
+            游戏开始(窗口句柄);
+	       游戏暂停(窗口句柄);
+        }
+        否则如果(控件ID == IDM_PAUSE)
+        {
+            游戏暂停(窗口句柄);
+        }        
+        否则如果(控件ID == IDM_MUSIC1)
+        {
+            音乐菜单设置(IDM_MUSIC1);
+        }        
+        否则如果(控件ID == IDM_MUSIC2)
+        {
+            音乐菜单设置(IDM_MUSIC2);
+        }        
+        否则如果(控件ID == IDM_MUSICOFF)
+        {
+            音乐菜单设置(IDM_MUSICOFF);
+        }        
+        否则如果(控件ID == IDM_LEFT)
+        {
+             SendMessage(窗口句柄,消息_KEYDOWN,VK_LEFT,0);
+		  SetFocus(窗口句柄);
+        }
+        否则如果(控件ID == IDM_RIGHT)
+        {
+            SendMessage(窗口句柄,消息_KEYDOWN,VK_RIGHT,0);
+		  SetFocus(窗口句柄);
+        }
+        否则如果(控件ID == IDM_UP)
+        {
+            SendMessage(窗口句柄,消息_KEYDOWN,VK_UP,0);
+		 SetFocus(窗口句柄);
+        }        
+        否则如果(控件ID == IDM_DOWN)
+        {
+            SendMessage(窗口句柄,消息_KEYDOWN,VK_DOWN,0);
+		 SetFocus(窗口句柄);
+        }
+        否则如果(控件ID == IDM_ABOUT)
+        {
+            对话框参数(主程序句柄,IDD_DIALOG1,窗口句柄,关于对话框过程,0); //DialogBoxParam
+        }
+        否则如果(控件ID == IDM_HELP)
+        {
+            对话框参数(主程序句柄,IDD_DIALOG2,窗口句柄,帮助对话框过程,0); //DialogBoxParam
+        }       
+        否则如果(控件ID == IDM_MUSIC)
+        {
+            对话框参数(主程序句柄,IDD_DIALOG3,窗口句柄,背景音乐设置对话框过程,0); //DialogBoxParam
+        }
+        //退出菜单 
+        否则如果(控件ID == IDM_EXIT)
+        {
+            发送消息(窗口句柄,消息_CLOSE,0,0); //发送关闭消息
+        }
+    }
+    否则如果(窗口消息 == 消息_CLOSE)
+    {
+        如果(iSorce > iSorceMax )
+        {
+             iSorceMax = iSorce;
+        }
+        读写INI文件最高分(iSorceMax);
+		
+        //销毁窗体(主窗口句柄); //DestroyWindow
+        邮送退出消息(0); //PostQuitMessage
+    }
+    否则
+    {
+        返回值 = 默认窗体过程(窗口句柄,窗口消息,参数一,参数二); //DefWindowProc
+        返回 返回值;
+    }
+
+    返回 返回值;
+}
+
+
+//关于对话框窗口过程
+函数 关于对话框过程(整数 对话框句柄,整数 对话框消息,整数 消息参数一,整数 消息参数二)=>整数
+{
+    如果(对话框消息 == 消息_COMMAND)
+    {    
+        短整 控件ID;
+        控件ID = 消息参数一;
+        如果(控件ID == IDOK)
+        {
+            终止对话框(对话框句柄,0); //EndDialog
+        }
+    }    
+    否则
+    {    
+        返回 假;    
+    }
+
+    返回 真;
+}
+
+//帮助对话框窗口过程
+函数 帮助对话框过程(整数 对话框句柄,整数 对话框消息,整数 消息参数一,整数 消息参数二)=>整数
+{
+    如果(对话框消息 == 消息_COMMAND)
+    {    
+        短整 控件ID;
+        控件ID = 消息参数一;
+        如果(控件ID == IDOK)
+        {
+            终止对话框(对话框句柄,0); //EndDialog
+        }
+    }    
+    否则
+    {    
+        返回 假;    
+    }
+
+    返回 真;
+}
+
+
+//背景音乐对话框窗口过程
+函数 背景音乐设置对话框过程(整数 对话框句柄,整数 对话框消息,整数 消息参数一,整数 消息参数二)=>整数
+{
+    如果(对话框消息 == 消息_INITDIALOG)
+    {
+        如果(背景音乐类型 == 舒缓节奏)
+        {
+            CheckRadioButton(对话框句柄,IDC_RADIO1,IDC_RADIO3,IDC_RADIO1);
+        }
+        否则如果(背景音乐类型 == 紧张节奏)
+        {
+            CheckRadioButton(对话框句柄,IDC_RADIO1,IDC_RADIO3,IDC_RADIO2);
+        }
+        否则如果(背景音乐类型 == 关闭音乐)
+        {
+            CheckRadioButton(对话框句柄,IDC_RADIO1,IDC_RADIO3,IDC_RADIO3);
+        }
+    }
+    否则如果(对话框消息 == 消息_COMMAND)
+    {    
+        短整 控件ID;
+        控件ID = 消息参数一;
+        如果(控件ID == IDC_RADIO1)
+        {
+            CheckRadioButton(对话框句柄,IDC_RADIO1,IDC_RADIO3,IDC_RADIO1);            
+        }
+        否则如果(控件ID == IDC_RADIO2)
+        {
+            CheckRadioButton(对话框句柄,IDC_RADIO1,IDC_RADIO3,IDC_RADIO2);
+        }
+        否则如果(控件ID == IDC_RADIO3)
+        {
+            CheckRadioButton(对话框句柄,IDC_RADIO1,IDC_RADIO3,IDC_RADIO3);
+        }
+        否则如果(控件ID == IDOK)
+        {
+            整数 单选按钮状态;
+            单选按钮状态 = IsDlgButtonChecked(对话框句柄,IDC_RADIO1);
+            如果(单选按钮状态 == BST_CHECKED )
+            {
+                背景音乐类型 = 舒缓节奏;
+                音乐菜单设置(IDM_MUSIC1);
+                播放背景音乐(真);
+            }
+            
+            单选按钮状态 =  IsDlgButtonChecked(对话框句柄,IDC_RADIO2);
+            如果(单选按钮状态 == BST_CHECKED)
+            {
+                背景音乐类型 = 紧张节奏;
+                音乐菜单设置(IDM_MUSIC2);
+                播放背景音乐(真);
+            }
+            
+            单选按钮状态 =  IsDlgButtonChecked(对话框句柄,IDC_RADIO3);            
+            如果(单选按钮状态 == BST_CHECKED )
+            {
+                背景音乐类型 = 关闭音乐;
+                音乐菜单设置(IDM_MUSICOFF);
+                播放背景音乐(假);
+            }
+            
+            终止对话框(对话框句柄,0);
+        }
+        否则如果(控件ID == IDCANCEL)
+        {
+            终止对话框(对话框句柄,0);
+        }
+    }    
+    否则
+    {    
+        返回 假;    
+    }
+
+    返回 真;
+}
+
+//设置音乐菜单
+函数 音乐菜单设置(整数 音乐选项)
+{
+    CheckMenuRadioItem(主菜单句柄,IDM_MUSIC1,IDM_MUSICOFF,音乐选项,MF_BYCOMMAND);
+    如果(音乐选项 == IDM_MUSIC1)
+    {        
+        背景音乐类型 = 舒缓节奏;
+        播放背景音乐(真);
+    }
+    否则如果(音乐选项 == IDM_MUSIC2 )
+    {
+        背景音乐类型 = 紧张节奏;
+        播放背景音乐(真);
+    }
+    否则
+    {
+        背景音乐类型 = 关闭音乐;
+        播放背景音乐(假);
+    }
+}
+
+//背景音乐
+函数 播放背景音乐(逻辑 是否播放)
+{
+    如果(是否播放 == 真)
+    {
+        如果(音乐设备句柄 != 0)
+        {
+            停止播放MP3(主窗口句柄,音乐设备句柄);
+        }
+        
+        地址 MP3文件路径;
+        如果(背景音乐类型 == 舒缓节奏)
+        {
+            MP3文件路径 = 取地址 "Hawker'sSong1.wav";
+        }
+        否则如果(背景音乐类型 == 紧张节奏)
+        {
+            MP3文件路径 = 取地址 "Hawker'sSong2.wav";
+        }
+        否则
+        {
+            返回;
+        }              
+        
+        逻辑 播放状态;        
+        播放MP3(主窗口句柄,MP3文件路径)=>(播放状态,音乐设备句柄);
+    }
+    否则
+    {
+        停止播放MP3(主窗口句柄,音乐设备句柄);
+        音乐设备句柄 = 0;
+    }
+}
+
+//初始化游戏数据
+函数 游戏开始(句柄 窗口句柄)
+{
+    整数 m,n;
+    句柄 hdc;
+    hDcBitmap = CreateCompatibleDC(0);
+
+    //初始化Matrix矩阵
+    地址 Matrix矩阵地址;
+    整数 数组位移;
+            
+    设(m=0;m<=18;m++)
+    {        
+        设(n=0;n<=9;n++)
+        {           
+            Matrix[m,n] = -1;
+        }
+    }
+   
+    //初始化方块位置
+    x = 4; y = -1;
+    
+    //初始化标志变量
+    bStart = 假;
+    bGOver = 假;
+    
+    //初始化游戏区
+    hdc = GetDC(窗口句柄);
+    绘制游戏区(hdc);
+    ReleaseDC(窗口句柄,hdc);
+
+    //初始化计分器
+    iLevel = 1;
+    wsprintf(取地址 字符缓冲区,取地址 "%i",iLevel);
+    SetWindowText(hLevel,取地址 字符缓冲区); //级别
+
+    iLayer = 0;
+    wsprintf(取地址 字符缓冲区,取地址 "%i",iLayer);
+    SetWindowText(hLayer,取地址 字符缓冲区); //满行
+
+    如果( iSorce > iSorceMax ) 
+    {
+        iSorceMax = iSorce;
+    }
+    wsprintf(取地址 字符缓冲区,取地址 "%i",iSorceMax);
+    SetWindowText(hSorceMax,取地址 字符缓冲区); //最高分
+
+    iSorce = 0;
+    wsprintf(取地址 字符缓冲区,取地址 "%i",iSorce);
+    SetWindowText(hSorce,取地址 字符缓冲区); //得分
+
+    //状态栏提示
+    发送消息(状态栏句柄,状态条_SETTEXT,0,取地址 "空格键开始/暂停"); //SendMessage
+    发送消息(状态栏句柄,状态条_SETTEXT,1,取地址 "方向键上键控制变形，左、右、下键控制移动"); //SendMessage
+
+    //清除提示DC在的位图
+    hDcAlert = CreateCompatibleDC(0);
+}
+
+//暂停/继续游戏
+函数 游戏暂停(句柄 窗口句柄)
+{
+    如果( bGOver )
+    {
+        返回;
+    }
+    
+    如果(bStart)
+    {
+        KillTimer(窗口句柄, 1);
+        SendMessage(状态栏句柄,状态条_SETTEXT,0,取地址 "游戏暂停");
+        播放背景音乐(假);
+    }
+    否则
+    {
+        整数  临时变量1,临时变量2;
+        临时变量1 = 550;
+        临时变量2 = iLevel;
+        临时变量2 *= 55;
+        临时变量1 -= 临时变量2; //(550-55*iLevel)
+        
+        SetTimer(窗口句柄, 1, 临时变量1, 0);
+        SendMessage(状态栏句柄,状态条_SETTEXT,0,取地址 "游戏中 ^-^");
+        播放背景音乐(真);
+    }
+    
+    如果(bStart == 假)
+    {
+        bStart = 真;
+    }
+    否则
+    {
+        bStart = 假;
+    }
+}
+
+
+//游戏结束
+函数 游戏结束(句柄 窗口句柄)
+{
+    HDC    hdc;
+    句柄  位图9句柄;
+
+    KillTimer(窗口句柄, 1);
+    位图9句柄 = LoadBitmap(主程序句柄,IDB_BITMAP9);
+    SelectObject(hDcAlert,位图9句柄);
+    hdc = GetDC(窗口句柄);
+    BitBlt(hdc,40,200,160,50,hDcAlert,0,0,SRCCOPY);//绘制提示语
+    ReleaseDC(窗口句柄,hdc);
+    SendMessage(状态栏句柄,状态条_SETTEXT,0,取地址 "游戏结束");
+
+    bGOver = 真;
+    x = 4; 
+    y = -1;
+
+    播放背景音乐(假);
+}
+
+//从INI文件中读/写最高分
+函数 读写INI文件最高分(整数 分值)=>整数
+{
+    整数 i最高分值;
+    字符[10]  临时缓冲区;
+    字符[100] Ini文件路径;
+
+    i最高分值 = 0;
+
+    SHGetSpecialFolderPath(0,取地址 Ini文件路径,CSIDL_APPDATA,0);
+    lstrcat(取地址 Ini文件路径,取地址 "\\Win32Tetris");
+    CreateDirectory(取地址 Ini文件路径,0);
+    lstrcat(取地址 Ini文件路径,取地址 "\\Config.ini");
+
+    如果(分值 == 0)
+    {//读
+        i最高分值 = GetPrivateProfileInt(取地址 "Win32Tetris",取地址 "SorceMax",0,取地址 Ini文件路径);
+    }
+    否则
+    {//写
+        wsprintf(取地址 临时缓冲区,取地址 "%i",分值);
+        WritePrivateProfileString(取地址 "Win32Tetris",取地址 "Contact",取地址 "www.olanguage.org",取地址 Ini文件路径);
+        WritePrivateProfileString(取地址 "Win32Tetris",取地址 "SorceMax",取地址 临时缓冲区,取地址 Ini文件路径);
+    }
+    
+    返回 i最高分值;
+}
+
+//用Matrix中的数据绘制游戏区
+函数 绘制游戏区(句柄 hdc)
+{
+    整数  m,n;
+    //绘制Matrix矩阵    
+    设(m=0;m<=18;m++)
+    {        
+        设(n=0;n<=9;n++)
+        {
+            整数 m1,n1;
+            n1 = n*20 + 20;
+            m1 = m*20 + 40;
+
+            如果(Matrix[m,n] == -1)
+            {
+                PatBlt(hdc,n1,m1,20,20,BLACKNESS);
+            }
+            否则
+            {
+                句柄 位图句柄;
+                整数 位图ID;
+                位图ID = Matrix[m,n] + IDB_BITMAP2;                
+                位图句柄 = LoadBitmap(主程序句柄,位图ID);
+                SelectObject(hDcBitmap,位图句柄);
+                              
+                BitBlt(hdc,n1,m1,20,20,hDcBitmap,0,0,SRCCOPY);
+            }
+        }
+    }
+}
+
+
+//绘制方块
+函数 绘制方块(句柄 hdc, 整数 iOffsetX, 整数 iOffsetY, 整数 iRank)
+{
+    整数 iX, iY, iJ;
+
+    如果(y == -1)
+    {
+        返回;
+    }
+    
+    //如果方块平移过则擦除原来的方块位置
+    如果((iOffsetX != 0) || (iOffsetY != 0))
+    {
+        iX = x + Tetris[i][j].a.x - iOffsetX;
+        iY = y + Tetris[i][j].a.y - iOffsetY;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+        
+        iX = x + Tetris[i][j].b.x - iOffsetX;
+        iY = y + Tetris[i][j].b.y - iOffsetY;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+        
+        iX = x + Tetris[i][j].c.x - iOffsetX;
+        iY = y + Tetris[i][j].c.y - iOffsetY;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+        
+        iX = x + Tetris[i][j].d.x - iOffsetX;
+        iY = y + Tetris[i][j].d.y - iOffsetY;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+    }
+
+    //如果方块旋转过则擦除原来的方块位置
+    如果 ( iRank != 0 )
+    {
+        如果(j==0)
+        {
+            iJ = 3;
+        }
+        否则
+        {
+            iJ = j;
+            iJ -= 1;
+        }
+        
+        iX = x + Tetris[i][iJ].a.x;
+        iY = y + Tetris[i][iJ].a.y;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+        
+        iX = x + Tetris[i][iJ].b.x;
+        iY = y + Tetris[i][iJ].b.y;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+        
+        iX = x + Tetris[i][iJ].c.x;
+        iY = y + Tetris[i][iJ].c.y;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+        
+        iX = x + Tetris[i][iJ].d.x;
+        iY = y + Tetris[i][iJ].d.y;
+        PatBlt(hdc,20+iX*20,40+iY*20,20,20,BLACKNESS);
+    }
+
+    //绘制新位置方块
+    句柄 位图句柄;
+    整数 位图ID;
+    位图ID = c + IDB_BITMAP2;
+    位图句柄 = LoadBitmap(主程序句柄,位图ID);
+    SelectObject(hDcBitmap,位图句柄);
+
+    iX = x + Tetris[i][j].a.x;
+    iY = y + Tetris[i][j].a.y;
+    BitBlt(hdc,20+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+    
+    iX = x + Tetris[i][j].b.x;
+    iY = y + Tetris[i][j].b.y;
+    BitBlt(hdc,20+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+    
+    iX = x + Tetris[i][j].c.x;
+    iY = y + Tetris[i][j].c.y;
+    BitBlt(hdc,20+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+    
+    iX = x + Tetris[i][j].d.x;
+    iY = y + Tetris[i][j].d.y;
+    BitBlt(hdc,20+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+}
+
+函数 RGB(单正整 r,单正整 g,单正整 b)=>整数
+{
+    整数 颜色;
+    颜色 = b;
+    颜色 <<= 8;
+    颜色 |= g;
+    颜色 <<= 8;
+    颜色 |= r;
+    
+    返回 颜色;
+}
+
+//绘制预览区
+函数 绘制预览区(句柄 hdc)
+{
+    矩形结构   rc;
+    整数    iX, iY;
+
+    //预览区填充黑色
+    rc.左 = 240; rc.顶 = 40;
+    rc.右 = 340; rc.底 = 140;
+    句柄 画笔句柄;
+    整数 背景颜色;
+    背景颜色 = RGB(0,0,0);
+    画笔句柄 = CreateSolidBrush(背景颜色);
+    FillRect(hdc,取地址 rc,画笔句柄);
+
+    //绘制预览方块
+    句柄 位图句柄;
+    整数 位图ID;
+    位图ID = cc + IDB_BITMAP2;    
+    位图句柄 = LoadBitmap(主程序句柄,位图ID);
+    SelectObject(hDcBitmap,位图句柄);
+ 
+    iX = 1 + Tetris[ii][jj].a.x; 
+    iY = 1 + Tetris[ii][jj].a.y;
+    BitBlt(hdc,240+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+    
+    iX = 1 + Tetris[ii][jj].b.x; 
+    iY = 1 + Tetris[ii][jj].b.y;
+    BitBlt(hdc,240+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+    
+    iX = 1 + Tetris[ii][jj].c.x; 
+    iY = 1 + Tetris[ii][jj].c.y;
+    BitBlt(hdc,240+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+    
+    iX = 1 + Tetris[ii][jj].d.x; 
+    iY = 1 + Tetris[ii][jj].d.y;
+    BitBlt(hdc,240+iX*20,40+iY*20,20,20,hDcBitmap,0,0,SRCCOPY);
+}
+
+//随机产生新的方块数据
+函数 随机产生方块数据(地址 l, 地址 m, 地址 n)
+{
+    整数 随机数;
+    随机数 = 产生随机数(0,100);
+    随机数 %= 7;
+    取数值<整数>l = 随机数;
+    
+    随机数 = 产生随机数(0,100);
+    随机数 %= 4;
+    取数值<整数>m = 随机数;
+    
+    随机数 = 产生随机数(0,100);
+    随机数 %= 7;
+    取数值<整数>n = 随机数;
+}
+
+//方块越界检测
+函数 方块检测(整数 x位置, 整数 y位置)=>逻辑
+{
+    整数  m, n;
+
+    //初始位置不允许左右移动
+    如果(y位置 == -1)
+    {
+         返回 假;
+    }       
+    
+    //游戏区越界检测
+    若(Tetris[i][j].a.x+x位置<0 || Tetris[i][j].a.x+x位置>9 || Tetris[i][j].a.y+y位置>18 )
+    {
+        返回 假;
+    }
+    若( Tetris[i][j].b.x+x位置<0 || Tetris[i][j].b.x+x位置>9 || Tetris[i][j].b.y+y位置>18 )
+    {
+        返回 假;
+    }
+    若( Tetris[i][j].c.x+x位置<0 || Tetris[i][j].c.x+x位置>9 || Tetris[i][j].c.y+y位置>18 )
+    {
+        返回 假;
+    }
+    若( Tetris[i][j].d.x+x位置<0 || Tetris[i][j].d.x+x位置>9 || Tetris[i][j].d.y+y位置>18 )
+    {
+        返回 假;
+    }
+    
+    
+    //方块相遇检测    
+    设(m=0;m<=18;m++)
+    {        
+        设(n=0;n<=9;n++)
+        {   
+            若( m==Tetris[i][j].a.y+y位置 && n==Tetris[i][j].a.x+x位置 && Matrix[m][n]!=-1 )
+            {
+                返回 假;
+            }
+            若( m==Tetris[i][j].b.y+y位置 && n==Tetris[i][j].b.x+x位置 && Matrix[m][n]!=-1 )
+            {
+                返回 假;
+            }
+            若( m==Tetris[i][j].c.y+y位置 && n==Tetris[i][j].c.x+x位置 && Matrix[m][n]!=-1 )
+            {
+                返回 假;
+            }
+            若( m==Tetris[i][j].d.y+y位置 && n==Tetris[i][j].d.x+x位置 && Matrix[m][n]!=-1 )
+            {
+                返回 假;
+            }
+        }
+    }
+
+    返回 真;
+}
+
+//方块下落
+函数 方块下落(句柄 hwnd)
+{
+    逻辑   bReDraw;
+    整数   l, m, n;
+    句柄   hdc;
+
+    //检测下一个方块位
+    逻辑 检测结果;
+    整数 x位置,y位置;
+    x位置 = x;
+    y位置 = y;
+    y位置 += 1;    
+    检测结果 = 方块检测(x位置,y位置);
+    如果(检测结果 == 真)
+    { //可以下落
+
+        hdc = GetDC(hwnd);
+        如果(y == -1)
+        {
+            //传递方块并重绘预览区
+            i = ii; j = jj; c = cc;
+            随机产生方块数据(取地址 ii,取地址 jj,取地址 cc);
+            绘制预览区(hdc);
+
+            //绘制新方块
+            y ++;
+            绘制方块(hdc,0,0,0);
+        }
+        否则
+        {
+            //绘制新方块
+            y ++;
+            绘制方块(hdc,0,1,0);
+
+        }
+        ReleaseDC(hwnd,hdc);
+    }
+    否则
+    { //不能下落
+        
+        //在初始位置越界则结束游戏
+        如果( y == -1 )
+        {
+            游戏结束(hwnd);
+            返回;
+        }
+        
+        //保存当前方块
+        Matrix[ Tetris[i][j].a.y+y ][ Tetris[i][j].a.x+x ] = c;
+        Matrix[ Tetris[i][j].b.y+y ][ Tetris[i][j].b.x+x ] = c;
+        Matrix[ Tetris[i][j].c.y+y ][ Tetris[i][j].c.x+x ] = c;
+        Matrix[ Tetris[i][j].d.y+y ][ Tetris[i][j].d.x+x ] = c;
+        
+        //逐行扫描 检测满行
+        设(l=18;l>=0;l--)
+        {
+            bReDraw = 真;
+            
+            设(m=0;m<=9;m++)
+            {
+                若(Matrix[l][m] == -1)
+			{
+			    bReDraw = 假;
+			    //break;
+			}
+            }
+            
+            如果( bReDraw )//检测到第l行为满行
+            {               
+                //更新计分器
+                iLayer += 1;
+                wsprintf(取地址 字符缓冲区,取地址 "%i",iLayer);
+                SetWindowText(hLayer,取地址 字符缓冲区); //满行
+                iSorce += 10;
+                wsprintf(取地址 字符缓冲区,取地址 "%i",iSorce);
+                SetWindowText(hSorce,取地址 字符缓冲区); //得分                
+                整数 升级分数;
+                //(iLevel*50+50)*iLevel/2
+                升级分数 = (iLevel*50+50)*iLevel/2;
+                如果(iSorce >= 升级分数) //升级
+                {
+                    iLevel ++;
+                    wsprintf(取地址 字符缓冲区,取地址 "%i",iLevel);
+                    SetWindowText(hLevel,取地址 字符缓冲区);
+                    SendMessage(状态栏句柄,状态条_SETTEXT,1,取地址 "恭喜升级！");
+                }
+                否则
+                {
+                    //(iLevel*50+50)*iLevel/2-iSorce                    
+                    升级分数 = (iLevel*50+50)*iLevel/2-iSorce;                    
+                    wsprintf(取地址 字符缓冲区,取地址 "恭喜加分！距离下次升级还需 %i 分！",升级分数);
+                    SendMessage(状态栏句柄,状态条_SETTEXT,1,取地址 字符缓冲区);
+                }
+                 
+                //删除满行数据
+                设(m=0;m<=9;m++)                
+                {
+                    Matrix[l][m] = -1;
+                }
+                
+                //数据整体下移                
+                设(n=l;n>0;n--)
+                {                    
+                    设(m=0;m<=9;m++)
+                    {
+                        Matrix[n][m] = Matrix[n-1][m];
+                        Matrix[n-1][m] = -1;
+                    }
+                }
+                
+                //重绘游戏区
+                hdc = GetDC(hwnd);
+                绘制游戏区(hdc);
+                ReleaseDC(hwnd,hdc);
+                l ++; //重新检查当前行
+            }
+        }
+
+        //重置方块位置
+        x = 4; y = -1;
+    }
+}
+
+//方块旋转
+函数 方块旋转(句柄 hwnd)
+{
+    句柄  hdc;
+    整数 检测结果;
+    
+    如果(j == 3)
+    {
+        j = 0;        
+        检测结果 = 方块检测(x,y);
+        如果(检测结果 == 真)
+        {
+            hdc = GetDC(hwnd);
+            绘制方块(hdc,0,0,1);
+            ReleaseDC(hwnd,hdc);
+        }
+        否则
+        {
+            j = 3;
+        }
+    }
+    否则
+    {
+        j++;
+        检测结果 = 方块检测(x,y);
+        如果 (检测结果 == 真)
+        {
+            hdc = GetDC(hwnd);
+            绘制方块(hdc,0,0,1);
+            ReleaseDC(hwnd,hdc);
+        }
+        否则
+        {
+            j --;
+        }
+    }
+}
+
+//处理自绘消息
+函数 自绘方向按钮(整数 lParam)
+{
+    HDC    hdc;
+    地址   pdis,pdis地址DC,pdis地址DtlID,pdis地址hwndItem,pdis地址itemState;
+    HPEN   hpen;
+
+    pdis = lParam; //包含自绘信息的结构体
+            
+    pdis地址DC = pdis;
+    pdis地址DC += 取地址 DRAWITEMSTRUCT.hdc;
+    hdc = 取数值<整数> pdis地址DC;
+    
+    整数 画笔颜色;
+    画笔颜色 = RGB(0,0,128);
+    hpen = CreatePen(PS_SOLID,1,画笔颜色);
+    SelectObject(hdc,hpen);
+    
+    pdis地址DtlID = pdis;
+    pdis地址DtlID += 取地址 DRAWITEMSTRUCT.CtlID;
+    pdis地址hwndItem = pdis;
+    pdis地址hwndItem += 取地址 DRAWITEMSTRUCT.hwndItem;
+    pdis地址itemState = pdis;
+    pdis地址itemState += 取地址 DRAWITEMSTRUCT.itemState;
+    
+    整数 控件ID,hwndItem,itemState;
+    控件ID = 取数值<整数> pdis地址DtlID;
+    hwndItem = 取数值<整数> pdis地址hwndItem;
+    itemState = 取数值<整数> pdis地址itemState;
+    itemState &= ODS_SELECTED;
+    
+    如果(控件ID == IDM_UP)
+    {
+        //FillRect(pdis->hDC,&pdis->rcItem,(HBRUSH)(COLOR_BTNFACE+1));
+        SendMessage(hwndItem,消息_ERASEBKGND,hdc,0);
+        如果(itemState)
+        {
+            MoveToEx(hdc,13,1,0);
+            LineTo(hdc,1,25);
+            LineTo(hdc,25,25);
+            LineTo(hdc,13,1);
+            MoveToEx(hdc,12,3,0);
+            LineTo(hdc,2,24);
+        }
+        否则
+        {
+            MoveToEx(hdc,12,1,0);
+            LineTo(hdc,1,24);
+            LineTo(hdc,24,24);
+            LineTo(hdc,12,1);
+            MoveToEx(hdc,13,2,0);
+            LineTo(hdc,25,25);
+            LineTo(hdc,2,25);
+        }
+    }
+    否则如果(控件ID == IDM_DOWN)
+    {
+        //FillRect(pdis->hDC,&pdis->rcItem,(HBRUSH)(COLOR_BTNFACE+1));
+        SendMessage(hwndItem,消息_ERASEBKGND,hdc,0);
+        如果(itemState)
+        {
+            MoveToEx(hdc,1,1,0);
+            LineTo(hdc,13,25);
+            LineTo(hdc,25,1);
+            LineTo(hdc,1,1);
+            MoveToEx(hdc,1,2,0);
+            LineTo(hdc,24,2);
+        }
+        否则
+        {
+            MoveToEx(hdc,1,1,0);
+            LineTo(hdc,13,24);
+            LineTo(hdc,24,1);
+            LineTo(hdc,1,1);
+            MoveToEx(hdc,25,2,0);
+            LineTo(hdc,13,25);
+            LineTo(hdc,1,2);
+        }
+    }
+    否则如果(控件ID == IDM_LEFT)
+    {
+        //FillRect(pdis->hDC,&pdis->rcItem,(HBRUSH)(COLOR_BTNFACE+1));
+       SendMessage(hwndItem,消息_ERASEBKGND,hdc,0);
+        如果(itemState)
+        {
+            MoveToEx(hdc,1,13,0);
+            LineTo(hdc,25,25);
+            LineTo(hdc,25,1);
+            LineTo(hdc,1,13);
+            MoveToEx(hdc,2,13,0);
+            LineTo(hdc,24,2);
+        }
+        否则
+        {
+            MoveToEx(hdc,1,12,0);
+            LineTo(hdc,24,23);
+            LineTo(hdc,24,1);
+            LineTo(hdc,1,12);
+            MoveToEx(hdc,1,13,0);
+            LineTo(hdc,25,25);
+            LineTo(hdc,25,1);
+        }
+    }
+    否则如果(控件ID == IDM_RIGHT)
+    {
+        //FillRect(pdis->hDC,&pdis->rcItem,(HBRUSH)(COLOR_BTNFACE+1));
+        SendMessage(hwndItem,消息_ERASEBKGND,hdc,0);
+        如果(itemState)
+        {
+            MoveToEx(hdc,1,1,0);
+            LineTo(hdc,1,25);
+            LineTo(hdc,25,12);
+            LineTo(hdc,1,1);
+            MoveToEx(hdc,2,24,0);
+            LineTo(hdc,2,2);
+            LineTo(hdc,24,13);
+        }
+        否则
+        {
+            MoveToEx(hdc,1,1,0);
+            LineTo(hdc,1,24);
+            LineTo(hdc,24,12);
+            LineTo(hdc,1,1);
+            MoveToEx(hdc,1,25,0);
+            LineTo(hdc,25,13);    
+        }
+    }
+    
+    DeleteObject(hpen);
+}
+
+//在控件中显示默认设备字体
+函数 SetNormalText(句柄 hwnd,逻辑 redraw)
+{
+    HFONT    hFont;
+    LOGFONT  lfBuffer;
+    句柄     字体对象句柄;
+    
+    字体对象句柄 = GetStockObject(DEFAULT_GUI_FONT);
+    GetObject(字体对象句柄,取大小 lfBuffer,取地址 lfBuffer);
+    hFont = CreateFontIndirect(取地址 lfBuffer);  
+    SendMessage(hwnd,消息_SETFONT,hFont,redraw);
+}
+
+//游戏界面控件
+函数 游戏界面(HWND hwnd)
+{
+    整数[2] stWidth;
+    句柄    hTemp;
+
+    stWidth[0] = 100;
+    stWidth[1] = -1;    
+
+    //工具栏
+    高级创建工具条(
+        hwnd,  //hwnd 父窗口句柄
+        窗体风格_VISIBLE|窗体风格_CHILD|TBSTYLE_FLAT|TBSTYLE_TOOLTIPS|CCS_NODIVIDER,  //ws 工具栏风格
+        IDR_TOOLBAR1,  //wID 工具栏的子窗口ID
+        6,  //nBitmaps 位图中包含多少个按钮小图标
+        主程序句柄,  //hBMInst 包含位图资源的模块句柄
+        IDB_BITMAP1,  //wBMID 位图资源ID
+        取地址 tbButtons,  //lpButtons
+        8,  //iNumButtons 按钮总数
+        16,  //dxButton 单个按钮宽度
+        16,  //dyButton 单个按钮高度
+        16,  //dxBitmap 单个按钮小图标的宽度
+        16,  //dyBitmap 单个按钮小图标的高度
+        取大小 工具条按钮结构);  //uStructSize
+
+    //状态栏
+    状态栏句柄 = 创建状态窗口(
+        窗体风格_CHILD|窗体风格_VISIBLE,
+        0,
+        hwnd,
+        IDS_STATUSBAR);
+    SendMessage(状态栏句柄,状态条_SETPARTS,2,取地址 stWidth);
+
+    //工具栏下的黑线
+    高级创建窗体(
+        0,
+        取地址 "static",  //lpClassName 类名
+        0,  //lpWindowName 标题
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_BLACKFRAME,
+        1,24,
+        358,1,
+        hwnd,  //hWndParent
+        0,  //hMenu
+        主程序句柄,
+        0);  //lpParam  额外的参数
+
+    //游戏区的外框
+    高级创建窗体(
+        0,
+        取地址 "static",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_GRAYFRAME,
+        17,37,
+        206,386,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+
+    //预览区的外框
+    高级创建窗体(
+        0,
+        取地址 "static",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_GRAYFRAME,
+        237,37,
+        106,106,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+
+    //级别
+    hTemp = 高级创建窗体(
+        0,
+        取地址 "static",
+        取地址 "级别 :",
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_LEFT,
+        240,190,
+        48,12,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hTemp,假);
+    hLevel = 高级创建窗体(
+        窗体风格_EX_STATICEDGE,
+        取地址 "static",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|窗体风格_GROUP|SS_RIGHT|SS_CENTERIMAGE,
+        280,186,
+        60,18,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hLevel,假);
+
+    //满行
+    hTemp = 高级创建窗体(
+        0,
+        取地址 "static",
+        取地址 "满行 :",
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_LEFT,
+        240,220,
+        36,12,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hTemp,假);    
+    hLayer = 高级创建窗体(
+        窗体风格_EX_STATICEDGE,
+        取地址 "static",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|窗体风格_GROUP|SS_RIGHT|SS_CENTERIMAGE,
+        280,216,
+        60,18,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hLayer,假);
+
+    //得分
+    hTemp = 高级创建窗体(
+        0,
+        取地址 "static",
+        取地址 "得分 :",
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_LEFT,
+        240,250,
+        36,12,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hTemp,假);
+    hSorce = 高级创建窗体(
+        窗体风格_EX_STATICEDGE,
+        取地址 "static",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|窗体风格_GROUP|SS_RIGHT|SS_CENTERIMAGE,
+        280,246,
+        60,18,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hSorce,假);
+
+    //最高分
+    hTemp = 高级创建窗体(
+        0,
+        取地址 "static",
+        取地址 "最高分",
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_LEFT,
+        240,280,
+        36,12,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hTemp,假);
+    hSorceMax = 高级创建窗体(
+        窗体风格_EX_STATICEDGE,
+        取地址 "static",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|窗体风格_GROUP|SS_RIGHT|SS_CENTERIMAGE,
+        280,276,
+        60,18,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hSorceMax,假);
+
+    //方向键 上
+    高级创建窗体(
+        0,
+        取地址 "button",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|BS_OWNERDRAW,
+        280,340,
+        26,26,
+        hwnd,
+        IDM_UP,
+        主程序句柄,
+        0);
+
+    //方向键 下
+    高级创建窗体(
+        0,
+        取地址 "button",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|BS_OWNERDRAW,
+        280,370,
+        26,26,
+        hwnd,
+        IDM_DOWN,
+        主程序句柄,
+        0);
+
+    //方向键 左
+    高级创建窗体(
+        0,
+        取地址 "button",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|BS_OWNERDRAW,
+        253,355,
+        26,26,
+        hwnd,
+        IDM_LEFT,
+        主程序句柄,
+        0);
+
+    //方向键 右
+    高级创建窗体(
+        0,
+        取地址 "button",
+        0,
+        窗体风格_CHILD|窗体风格_VISIBLE|BS_OWNERDRAW,
+        307,355,
+        26,26,
+        hwnd,
+        IDM_RIGHT,
+        主程序句柄,
+        0);
+    
+    hTemp = 高级创建窗体(
+        0,
+        取地址 "static",
+        取地址 "下载本程序源代码请访问作者主页：http:\//www.olanguage.org", //这里字符串中包含有右双斜杠要在前面加一个左斜杠作为转义字符
+        窗体风格_CHILD|窗体风格_VISIBLE|SS_LEFT|窗体风格_DISABLED,
+        18,433,
+        500,12,
+        hwnd,
+        0,
+        主程序句柄,
+        0);
+    SetNormalText(hTemp,假);
+}

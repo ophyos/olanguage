@@ -1,0 +1,105 @@
+引用段
+{
+函数 ImmAssociateContext(整数32,整数32)=>整数32;
+函数 ImmAssociateContextEx(整数32,整数32,整数32)=>整数32;
+函数 ImmConfigureIMEA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmConfigureIMEW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmCreateContext()=>整数32;
+函数 ImmCreateIMCC(整数32)=>整数32;
+函数 ImmCreateSoftKeyboard(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmDestroyContext(整数32)=>整数32;
+函数 ImmDestroyIMCC(整数32)=>整数32;
+函数 ImmDestroySoftKeyboard(整数32)=>整数32;
+函数 ImmDisableIME(整数32)=>整数32;
+函数 ImmDisableTextFrameService(整数32)=>整数32;
+函数 ImmEnumInputContext(整数32,整数32,整数32)=>整数32;
+函数 ImmEnumRegisterWordA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmEnumRegisterWordW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmEscapeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmEscapeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGenerateMessage(整数32)=>整数32;
+函数 ImmGetCandidateListA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetCandidateListCountA(整数32,整数32)=>整数32;
+函数 ImmGetCandidateListCountW(整数32,整数32)=>整数32;
+函数 ImmGetCandidateListW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetCandidateWindow(整数32,整数32,整数32)=>整数32;
+函数 ImmGetCompositionFontA(整数32,整数32)=>整数32;
+函数 ImmGetCompositionFontW(整数32,整数32)=>整数32;
+函数 ImmGetCompositionStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetCompositionStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetCompositionWindow(整数32,整数32)=>整数32;
+函数 ImmGetContext(整数32)=>整数32;
+函数 ImmGetConversionListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetConversionListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetConversionStatus(整数32,整数32,整数32)=>整数32;
+函数 ImmGetDefaultIMEWnd(整数32)=>整数32;
+函数 ImmGetDescriptionA(整数32,整数32,整数32)=>整数32;
+函数 ImmGetDescriptionW(整数32,整数32,整数32)=>整数32;
+函数 ImmGetGuideLineA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetGuideLineW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetHotKey(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetIMCCLockCount(整数32)=>整数32;
+函数 ImmGetIMCCSize(整数32)=>整数32;
+函数 ImmGetIMCLockCount(整数32)=>整数32;
+函数 ImmGetIMEFileNameA(整数32,整数32,整数32)=>整数32;
+函数 ImmGetIMEFileNameW(整数32,整数32,整数32)=>整数32;
+函数 ImmGetImeMenuItemsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetImeMenuItemsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmGetOpenStatus(整数32)=>整数32;
+函数 ImmGetProperty(整数32,整数32)=>整数32;
+函数 ImmGetRegisterWordStyleA(整数32,整数32,整数32)=>整数32;
+函数 ImmGetRegisterWordStyleW(整数32,整数32,整数32)=>整数32;
+函数 ImmGetStatusWindowPos(整数32,整数32)=>整数32;
+函数 ImmGetVirtualKey(整数32)=>整数32;
+函数 ImmInstallIMEA(整数32,整数32)=>整数32;
+函数 ImmInstallIMEW(整数32,整数32)=>整数32;
+函数 ImmIsIME(整数32)=>整数32;
+函数 ImmIsUIMessageA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmIsUIMessageW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmLockIMC(整数32)=>整数32;
+函数 ImmLockIMCC(整数32)=>整数32;
+函数 ImmNotifyIME(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmReSizeIMCC(整数32,整数32)=>整数32;
+函数 ImmRegisterWordA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmRegisterWordW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmReleaseContext(整数32,整数32)=>整数32;
+函数 ImmRequestMessageA(整数32,整数32,整数32)=>整数32;
+函数 ImmRequestMessageW(整数32,整数32,整数32)=>整数32;
+函数 ImmSetCandidateWindow(整数32,整数32)=>整数32;
+函数 ImmSetCompositionFontA(整数32,整数32)=>整数32;
+函数 ImmSetCompositionFontW(整数32,整数32)=>整数32;
+函数 ImmSetCompositionStringA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmSetCompositionStringW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmSetCompositionWindow(整数32,整数32)=>整数32;
+函数 ImmSetConversionStatus(整数32,整数32,整数32)=>整数32;
+函数 ImmSetHotKey(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmSetOpenStatus(整数32,整数32)=>整数32;
+函数 ImmSetStatusWindowPos(整数32,整数32)=>整数32;
+函数 ImmShowSoftKeyboard(整数32,整数32)=>整数32;
+函数 ImmSimulateHotKey(整数32,整数32)=>整数32;
+函数 ImmUnlockIMC(整数32)=>整数32;
+函数 ImmUnlockIMCC(整数32)=>整数32;
+函数 ImmUnregisterWordA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImmUnregisterWordW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 ImmConfigureIME  ImmConfigureIMEA
+宏定义 ImmEnumRegisterWord  ImmEnumRegisterWordA
+宏定义 ImmEscape  ImmEscapeA
+宏定义 ImmGetCandidateList  ImmGetCandidateListA
+宏定义 ImmGetCandidateListCount  ImmGetCandidateListCountA
+宏定义 ImmGetCompositionFont  ImmGetCompositionFontA
+宏定义 ImmGetCompositionString  ImmGetCompositionStringA
+宏定义 ImmGetConversionList  ImmGetConversionListA
+宏定义 ImmGetDescription  ImmGetDescriptionA
+宏定义 ImmGetGuideLine  ImmGetGuideLineA
+宏定义 ImmGetIMEFileName  ImmGetIMEFileNameA
+宏定义 ImmGetImeMenuItems  ImmGetImeMenuItemsA
+宏定义 ImmGetRegisterWordStyle  ImmGetRegisterWordStyleA
+宏定义 ImmInstallIME  ImmInstallIMEA
+宏定义 ImmIsUIMessage  ImmIsUIMessageA
+宏定义 ImmRegisterWord  ImmRegisterWordA
+宏定义 ImmRequestMessage  ImmRequestMessageA
+宏定义 ImmSetCompositionFont  ImmSetCompositionFontA
+宏定义 ImmSetCompositionString  ImmSetCompositionStringA
+宏定义 ImmUnregisterWord  ImmUnregisterWordA
+}

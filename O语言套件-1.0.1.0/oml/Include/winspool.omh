@@ -1,0 +1,263 @@
+引用段
+{
+函数 ADVANCEDSETUPDIALOG(整数32,整数32,整数32,整数32)=>整数32;
+函数 AbortPrinter(整数32)=>整数32;
+函数 AddDriverCatalog(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddFormA(整数32,整数32,整数32)=>整数32;
+函数 AddFormW(整数32,整数32,整数32)=>整数32;
+函数 AddJobA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddJobW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddMonitorA(整数32,整数32,整数32)=>整数32;
+函数 AddMonitorW(整数32,整数32,整数32)=>整数32;
+函数 AddPerMachineConnectionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPerMachineConnectionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPortA(整数32,整数32,整数32)=>整数32;
+函数 AddPortExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPortExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPortW(整数32,整数32,整数32)=>整数32;
+函数 AddPrintProcessorA(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPrintProcessorW(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPrintProvidorA(整数32,整数32,整数32)=>整数32;
+函数 AddPrintProvidorW(整数32,整数32,整数32)=>整数32;
+函数 AddPrinterA(整数32,整数32,整数32)=>整数32;
+函数 AddPrinterConnectionA(整数32)=>整数32;
+函数 AddPrinterConnectionW(整数32)=>整数32;
+函数 AddPrinterDriverA(整数32,整数32,整数32)=>整数32;
+函数 AddPrinterDriverExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPrinterDriverExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddPrinterDriverW(整数32,整数32,整数32)=>整数32;
+函数 AddPrinterW(整数32,整数32,整数32)=>整数32;
+函数 AdvancedDocumentPropertiesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AdvancedDocumentPropertiesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AdvancedSetupDialog(整数32,整数32,整数32,整数32)=>整数32;
+函数 CallCommonPropertySheetUI(整数32,整数32,整数32,整数32)=>整数32;
+函数 ClosePrinter(整数32)=>整数32;
+函数 CloseSpoolFileHandle(整数32,整数32)=>整数32;
+函数 ClusterSplClose(整数32)=>整数32;
+函数 ClusterSplIsAlive(整数32)=>整数32;
+函数 ClusterSplOpen(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CommitSpoolData(整数32,整数32,整数32)=>整数32;
+函数 ConfigurePortA(整数32,整数32,整数32)=>整数32;
+函数 ConfigurePortW(整数32,整数32,整数32)=>整数32;
+函数 ConnectToPrinterDlg(整数32,整数32)=>整数32;
+函数 ConvertAnsiDevModeToUnicodeDevmode(整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertUnicodeDevModeToAnsiDevmode(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePrinterIC(整数32,整数32)=>整数32;
+函数 DEVICECAPABILITIES(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DEVICEMODE(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteFormA(整数32,整数32)=>整数32;
+函数 DeleteFormW(整数32,整数32)=>整数32;
+函数 DeleteMonitorA(整数32,整数32,整数32)=>整数32;
+函数 DeleteMonitorW(整数32,整数32,整数32)=>整数32;
+函数 DeletePerMachineConnectionA(整数32,整数32)=>整数32;
+函数 DeletePerMachineConnectionW(整数32,整数32)=>整数32;
+函数 DeletePortA(整数32,整数32,整数32)=>整数32;
+函数 DeletePortW(整数32,整数32,整数32)=>整数32;
+函数 DeletePrintProcessorA(整数32,整数32,整数32)=>整数32;
+函数 DeletePrintProcessorW(整数32,整数32,整数32)=>整数32;
+函数 DeletePrintProvidorA(整数32,整数32,整数32)=>整数32;
+函数 DeletePrintProvidorW(整数32,整数32,整数32)=>整数32;
+函数 DeletePrinter(整数32)=>整数32;
+函数 DeletePrinterConnectionA(整数32)=>整数32;
+函数 DeletePrinterConnectionW(整数32)=>整数32;
+函数 DeletePrinterDataA(整数32,整数32)=>整数32;
+函数 DeletePrinterDataExA(整数32,整数32,整数32)=>整数32;
+函数 DeletePrinterDataExW(整数32,整数32,整数32)=>整数32;
+函数 DeletePrinterDataW(整数32,整数32)=>整数32;
+函数 DeletePrinterDriverA(整数32,整数32,整数32)=>整数32;
+函数 DeletePrinterDriverExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DeletePrinterDriverExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DeletePrinterDriverW(整数32,整数32,整数32)=>整数32;
+函数 DeletePrinterIC(整数32)=>整数32;
+函数 DeletePrinterKeyA(整数32,整数32)=>整数32;
+函数 DeletePrinterKeyW(整数32,整数32)=>整数32;
+函数 DevQueryPrint(整数32,整数32,整数32)=>整数32;
+函数 DevQueryPrintEx(整数32)=>整数32;
+函数 DeviceCapabilitiesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DeviceCapabilitiesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DeviceMode(整数32,整数32,整数32,整数32)=>整数32;
+函数 DevicePropertySheets(整数32,整数32)=>整数32;
+函数 DocumentEvent(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DocumentPropertiesA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DocumentPropertiesW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DocumentPropertySheets(整数32,整数32)=>整数32;
+函数 EXTDEVICEMODE(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EndDocPrinter(整数32)=>整数32;
+函数 EndPagePrinter(整数32)=>整数32;
+函数 EnumFormsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumFormsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumJobsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumJobsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumMonitorsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumMonitorsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPerMachineConnectionsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPerMachineConnectionsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPortsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPortsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrintProcessorDatatypesA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrintProcessorDatatypesW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrintProcessorsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrintProcessorsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterDataA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterDataExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterDataExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterDataW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterDriversA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterDriversW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterKeyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterKeyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrinterPropertySheets(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrintersA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumPrintersW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExtDeviceMode(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExternalConnectToLd64In32Server(整数32)=>整数32;
+函数 FindClosePrinterChangeNotification(整数32)=>整数32;
+函数 FindFirstPrinterChangeNotification(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindNextPrinterChangeNotification(整数32,整数32,整数32,整数32)=>整数32;
+函数 FlushPrinter(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ForceUnloadDriver(整数32)=>整数32;
+函数 FreePrinterNotifyInfo(整数32)=>整数32;
+函数 GetDefaultPrinterA(整数32,整数32)=>整数32;
+函数 GetDefaultPrinterW(整数32,整数32)=>整数32;
+函数 GetFormA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFormW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetJobA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetJobW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrintProcessorDirectoryA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrintProcessorDirectoryW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDataA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDataExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDataExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDataW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDriverA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDriverDirectoryA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDriverDirectoryW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterDriverW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrinterW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSpoolFileHandle(整数32)=>整数32;
+函数 IsValidDevmodeA(整数32,整数32)=>整数32;
+函数 IsValidDevmodeW(整数32,整数32)=>整数32;
+函数 LoadPrinterDriver(整数32)=>整数32;
+函数 OpenPrinterA(整数32,整数32,整数32)=>整数32;
+函数 OpenPrinterW(整数32,整数32,整数32)=>整数32;
+函数 PlayGdiScriptOnPrinterIC(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUICreateInstance(整数32,整数32)=>整数32;
+函数 PrintUIDocumentDefaults(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUIDocumentPropertiesWrap(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUIPrinterPropPages(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUIPrinterSetup(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUIQueueCreate(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUIServerPropPages(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrintUIWebPnpEntry(整数32)=>整数32;
+函数 PrintUIWebPnpPostEntry(整数32,整数32,整数32,整数32)=>整数32;
+函数 PrinterMessageBoxA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrinterMessageBoxW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrinterProperties(整数32,整数32)=>整数32;
+函数 PublishPrinterA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PublishPrinterW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryColorProfile(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryRemoteFonts(整数32,整数32,整数32)=>整数32;
+函数 QuerySpoolMode(整数32,整数32,整数32)=>整数32;
+函数 ReadPrinter(整数32,整数32,整数32,整数32)=>整数32;
+函数 RefCntLoadDriver(整数32,整数32,整数32,整数32)=>整数32;
+函数 RefCntUnloadDriver(整数32,整数32)=>整数32;
+函数 ResetPrinterA(整数32,整数32)=>整数32;
+函数 ResetPrinterW(整数32,整数32)=>整数32;
+函数 RouterFreeBidiResponseContainer(整数32)=>整数32;
+函数 ScheduleJob(整数32,整数32)=>整数32;
+函数 SeekPrinter(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SendRecvBidiData(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetAllocFailCount(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetDefaultPrinterA(整数32)=>整数32;
+函数 SetDefaultPrinterW(整数32)=>整数32;
+函数 SetFormA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetFormW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetJobA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetJobW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPortA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPortW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrinterA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrinterDataA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrinterDataExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrinterDataExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrinterDataW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrinterW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SplDriverUnloadComplete(整数32)=>整数32;
+函数 SplReadPrinter(整数32,整数32,整数32)=>整数32;
+函数 SpoolerDevQueryPrintW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SpoolerInit()=>整数32;
+函数 SpoolerPrinterEvent(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 StartDocDlgA(整数32,整数32)=>整数32;
+函数 StartDocDlgW(整数32,整数32)=>整数32;
+函数 StartDocPrinterA(整数32,整数32,整数32)=>整数32;
+函数 StartDocPrinterW(整数32,整数32,整数32)=>整数32;
+函数 StartPagePrinter(整数32)=>整数32;
+函数 WaitForPrinterChange(整数32,整数32)=>整数32;
+函数 WritePrinter(整数32,整数32,整数32,整数32)=>整数32;
+函数 XcvDataW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 AddForm  AddFormA
+宏定义 AddJob  AddJobA
+宏定义 AddMonitor  AddMonitorA
+宏定义 AddPerMachineConnection  AddPerMachineConnectionA
+宏定义 AddPort  AddPortA
+宏定义 AddPortEx  AddPortExA
+宏定义 AddPrintProcessor  AddPrintProcessorA
+宏定义 AddPrintProvidor  AddPrintProvidorA
+宏定义 AddPrinter  AddPrinterA
+宏定义 AddPrinterConnection  AddPrinterConnectionA
+宏定义 AddPrinterDriver  AddPrinterDriverA
+宏定义 AddPrinterDriverEx  AddPrinterDriverExA
+宏定义 AdvancedDocumentProperties  AdvancedDocumentPropertiesA
+宏定义 ConfigurePort  ConfigurePortA
+宏定义 DeleteForm  DeleteFormA
+宏定义 DeleteMonitor  DeleteMonitorA
+宏定义 DeletePerMachineConnection  DeletePerMachineConnectionA
+宏定义 DeletePort  DeletePortA
+宏定义 DeletePrintProcessor  DeletePrintProcessorA
+宏定义 DeletePrintProvidor  DeletePrintProvidorA
+宏定义 DeletePrinterConnection  DeletePrinterConnectionA
+宏定义 DeletePrinterData  DeletePrinterDataA
+宏定义 DeletePrinterDataEx  DeletePrinterDataExA
+宏定义 DeletePrinterDriver  DeletePrinterDriverA
+宏定义 DeletePrinterDriverEx  DeletePrinterDriverExA
+宏定义 DeletePrinterKey  DeletePrinterKeyA
+宏定义 DeviceCapabilities  DeviceCapabilitiesA
+宏定义 DocumentProperties  DocumentPropertiesA
+宏定义 EnumForms  EnumFormsA
+宏定义 EnumJobs  EnumJobsA
+宏定义 EnumMonitors  EnumMonitorsA
+宏定义 EnumPerMachineConnections  EnumPerMachineConnectionsA
+宏定义 EnumPorts  EnumPortsA
+宏定义 EnumPrintProcessorDatatypes  EnumPrintProcessorDatatypesA
+宏定义 EnumPrintProcessors  EnumPrintProcessorsA
+宏定义 EnumPrinterData  EnumPrinterDataA
+宏定义 EnumPrinterDataEx  EnumPrinterDataExA
+宏定义 EnumPrinterDrivers  EnumPrinterDriversA
+宏定义 EnumPrinterKey  EnumPrinterKeyA
+宏定义 EnumPrinters  EnumPrintersA
+宏定义 GetDefaultPrinter  GetDefaultPrinterA
+宏定义 GetForm  GetFormA
+宏定义 GetJob  GetJobA
+宏定义 GetPrintProcessorDirectory  GetPrintProcessorDirectoryA
+宏定义 GetPrinter  GetPrinterA
+宏定义 GetPrinterData  GetPrinterDataA
+宏定义 GetPrinterDataEx  GetPrinterDataExA
+宏定义 GetPrinterDriver  GetPrinterDriverA
+宏定义 GetPrinterDriverDirectory  GetPrinterDriverDirectoryA
+宏定义 IsValidDevmode  IsValidDevmodeA
+宏定义 OpenPrinter  OpenPrinterA
+宏定义 PrinterMessageBox  PrinterMessageBoxA
+宏定义 PublishPrinter  PublishPrinterA
+宏定义 ResetPrinter  ResetPrinterA
+宏定义 SetDefaultPrinter  SetDefaultPrinterA
+宏定义 SetForm  SetFormA
+宏定义 SetJob  SetJobA
+宏定义 SetPort  SetPortA
+宏定义 SetPrinter  SetPrinterA
+宏定义 SetPrinterData  SetPrinterDataA
+宏定义 SetPrinterDataEx  SetPrinterDataExA
+宏定义 StartDocDlg  StartDocDlgA
+宏定义 StartDocPrinter  StartDocPrinterA
+}

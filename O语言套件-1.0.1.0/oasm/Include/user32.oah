@@ -1,0 +1,927 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒActivateKeyboardLayout(Ë«×Ö,Ë«×Ö)
+¡ÒAdjustWindowRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAdjustWindowRectEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAllowSetForegroundWindow(Ë«×Ö)
+¡Ò¶¯Ì¬´°Ìå:AnimateWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAnyPopup()
+¡ÒÔö¼Ó²Ëµ¥:AppendMenuA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAppendMenu  AppendMenuA
+
+¡ÒAppendMenuW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒArrangeIconicWindows(Ë«×Ö)
+¡ÒAttachThreadInput(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBeginDeferWindowPos(Ë«×Ö)
+¡Ò¿ªÊ¼»æÖÆ:BeginPaint(Ë«×Ö,Ë«×Ö)
+¡ÒBlockInput(Ë«×Ö)
+¡ÒBringWindowToTop(Ë«×Ö)
+¡ÒBroadcastSystemMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBroadcastSystemMessage  BroadcastSystemMessageA
+
+¡ÒBroadcastSystemMessageExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBroadcastSystemMessageEx  BroadcastSystemMessageExA
+
+¡ÒBroadcastSystemMessageExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBroadcastSystemMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCallMsgFilterA(Ë«×Ö,Ë«×Ö)
+¡ßCallMsgFilter  CallMsgFilterA
+
+¡ÒCallMsgFilterW(Ë«×Ö,Ë«×Ö)
+¡ÒCallNextHookEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òµ÷ÓÃ´°Ìå¹ý³Ì:CallWindowProcA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCallWindowProc  CallWindowProcA
+
+¡ÒCallWindowProcW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCascadeChildWindows(Ë«×Ö,Ë«×Ö)
+¡ÒCascadeWindows(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChangeClipboardChain(Ë«×Ö,Ë«×Ö)
+¡ÒChangeDisplaySettingsA(Ë«×Ö,Ë«×Ö)
+¡ßChangeDisplaySettings  ChangeDisplaySettingsA
+
+¡ÒChangeDisplaySettingsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßChangeDisplaySettingsEx  ChangeDisplaySettingsExA
+
+¡ÒChangeDisplaySettingsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChangeDisplaySettingsW(Ë«×Ö,Ë«×Ö)
+¡ÒChangeMenuA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßChangeMenu  ChangeMenuA
+
+¡ÒChangeMenuW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCharLowerA(Ë«×Ö)
+¡ßCharLower  CharLowerA
+
+¡ÒCharLowerBuffA(Ë«×Ö,Ë«×Ö)
+¡ßCharLowerBuff  CharLowerBuffA
+
+¡ÒCharLowerBuffW(Ë«×Ö,Ë«×Ö)
+¡ÒCharLowerW(Ë«×Ö)
+¡ÒCharNextA(Ë«×Ö)
+¡ßCharNext  CharNextA
+
+¡ÒCharNextExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCharNextEx  CharNextExA
+
+¡ÒCharNextW(Ë«×Ö)
+¡ÒCharPrevA(Ë«×Ö,Ë«×Ö)
+¡ßCharPrev  CharPrevA
+
+¡ÒCharPrevExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCharPrevEx  CharPrevExA
+
+¡ÒCharPrevW(Ë«×Ö,Ë«×Ö)
+¡ÒCharToOemA(Ë«×Ö,Ë«×Ö)
+¡ßCharToOem  CharToOemA
+
+¡ÒCharToOemBuffA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCharToOemBuff  CharToOemBuffA
+
+¡ÒCharToOemBuffW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCharToOemW(Ë«×Ö,Ë«×Ö)
+¡ÒCharUpperA(Ë«×Ö)
+¡ßCharUpper  CharUpperA
+
+¡ÒCharUpperBuffA(Ë«×Ö,Ë«×Ö)
+¡ßCharUpperBuff  CharUpperBuffA
+
+¡ÒCharUpperBuffW(Ë«×Ö,Ë«×Ö)
+¡ÒCharUpperW(Ë«×Ö)
+¡ÒCheckDlgButton(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¿ØÖÆ²Ëµ¥Ïî:CheckMenuItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckMenuRadioItem(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckRadioButton(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChildWindowFromPoint(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChildWindowFromPointEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¿Í»§Çøµ½ÆÁÄ»:ClientToScreen(Ë«×Ö,Ë«×Ö)
+¡ÒÏÞÖÆÊó±êÖ¸Õë:ClipCursor(Ë«×Ö)
+¡Ò¹Ø±Õ¼ôÌù°å:CloseClipboard()
+¡Ò¹Ø±Õ×ÀÃæ:CloseDesktop(Ë«×Ö)
+¡Ò¹Ø±Õ´°Ìå:CloseWindow(Ë«×Ö)
+¡ÒCloseWindowStation(Ë«×Ö)
+¡ÒCopyAcceleratorTableA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCopyAcceleratorTable  CopyAcceleratorTableA
+
+¡ÒCopyAcceleratorTableW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¸´ÖÆÍ¼±ê:CopyIcon(Ë«×Ö)
+¡Ò¸´ÖÆÍ¼Ïñ:CopyImage(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¸´ÖÆ¾ØÐÎ:CopyRect(Ë«×Ö,Ë«×Ö)
+¡ÒCountClipboardFormats()
+¡ÒCreateAcceleratorTableA(Ë«×Ö,Ë«×Ö)
+¡ßCreateAcceleratorTable  CreateAcceleratorTableA
+
+¡ÒCreateAcceleratorTableW(Ë«×Ö,Ë«×Ö)
+¡ÒCreateCaret(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateCursor(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨×ÀÃæ:CreateDesktopA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateDesktop  CreateDesktopA
+
+¡ÒCreateDesktopW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateDialogIndirectParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateDialogIndirectParam  CreateDialogIndirectParamA
+
+¡ÒCreateDialogIndirectParamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨¶Ô»°¿ò²ÎÊý:CreateDialogParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateDialogParam  CreateDialogParamA
+
+¡ÒCreateDialogParamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨Í¼±ê:CreateIcon(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateIconFromResource(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateIconFromResourceEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateIconIndirect(Ë«×Ö)
+¡Ò´´½¨¶àÎÄµµ´°Ìå:CreateMDIWindowA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateMDIWindow  CreateMDIWindowA
+
+¡ÒCreateMDIWindowW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´´½¨²Ëµ¥:CreateMenu()
+¡Ò´´½¨µ¯³ö²Ëµ¥:CreatePopupMenu()
+¡Ò¸ß¼¶´´½¨´°Ìå:CreateWindowExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateWindowEx  CreateWindowExA
+
+¡ÒCreateWindowExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateWindowStationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateWindowStation  CreateWindowStationA
+
+¡ÒCreateWindowStationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeAbandonTransaction(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeAccessData(Ë«×Ö,Ë«×Ö)
+¡ÒDdeAddData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeClientTransaction(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeCmpStringHandles(Ë«×Ö,Ë«×Ö)
+¡ÒDdeConnect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeConnectList(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeCreateDataHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeCreateStringHandleA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDdeCreateStringHandle  DdeCreateStringHandleA
+
+¡ÒDdeCreateStringHandleW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeDisconnect(Ë«×Ö)
+¡ÒDdeDisconnectList(Ë«×Ö)
+¡ÒDdeEnableCallback(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeFreeDataHandle(Ë«×Ö)
+¡ÒDdeFreeStringHandle(Ë«×Ö,Ë«×Ö)
+¡ÒDdeGetData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeGetLastError(Ë«×Ö)
+¡ÒDdeImpersonateClient(Ë«×Ö)
+¡ÒDdeInitializeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDdeInitialize  DdeInitializeA
+
+¡ÒDdeInitializeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeKeepStringHandle(Ë«×Ö,Ë«×Ö)
+¡ÒDdeNameService(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdePostAdvise(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeQueryConvInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeQueryNextServer(Ë«×Ö,Ë«×Ö)
+¡ÒDdeQueryStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDdeQueryString  DdeQueryStringA
+
+¡ÒDdeQueryStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeReconnect(Ë«×Ö)
+¡ÒDdeSetQualityOfService(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeSetUserHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDdeUnaccessData(Ë«×Ö)
+¡ÒDdeUninitialize(Ë«×Ö)
+¡ÒÄ¬ÈÏ¶Ô»°¿ò¹ý³Ì:DefDlgProcA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDefDlgProc  DefDlgProcA
+
+¡ÒDefDlgProcW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÄ¬ÈÏ¿ò¼Ü¹ý³Ì:DefFrameProcA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDefFrameProc  DefFrameProcA
+
+¡ÒDefFrameProcW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÄ¬ÈÏ¶àÎÄµµ×Ó¹ý³Ì:DefMDIChildProcA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDefMDIChildProc  DefMDIChildProcA
+
+¡ÒDefMDIChildProcW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDefRawInputProc(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÄ¬ÈÏ´°Ìå¹ý³Ì:DefWindowProcA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDefWindowProc  DefWindowProcA
+
+¡ÒDefWindowProcW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeferWindowPos(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÉ¾³ý²Ëµ¥:DeleteMenu(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDeregisterShellHookWindow(Ë«×Ö)
+¡ÒDestroyAcceleratorTable(Ë«×Ö)
+¡ÒDestroyCaret()
+¡ÒÏú»ÙÊó±êÖ¸Õë:DestroyCursor(Ë«×Ö)
+¡ÒÏú»ÙÍ¼±ê:DestroyIcon(Ë«×Ö)
+¡ÒÏú»Ù²Ëµ¥:DestroyMenu(Ë«×Ö)
+¡ÒÏú»Ù´°Ìå:DestroyWindow(Ë«×Ö)
+¡ÒDialogBoxIndirectParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDialogBoxIndirectParam  DialogBoxIndirectParamA
+
+¡ÒDialogBoxIndirectParamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¶Ô»°¿ò²ÎÊý:DialogBoxParamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDialogBoxParam  DialogBoxParamA
+
+¡ÒDialogBoxParamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDisableProcessWindowsGhosting()
+¡ÒÏûÏ¢µ÷¶È:DispatchMessageA(Ë«×Ö)
+¡ßDispatchMessage  DispatchMessageA
+
+¡ÒDispatchMessageW(Ë«×Ö)
+¡ÒDlgDirListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDlgDirList  DlgDirListA
+
+¡ÒDlgDirListComboBoxA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDlgDirListComboBox  DlgDirListComboBoxA
+
+¡ÒDlgDirListComboBoxW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDlgDirListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDlgDirSelectComboBoxExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDlgDirSelectComboBoxEx  DlgDirSelectComboBoxExA
+
+¡ÒDlgDirSelectComboBoxExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDlgDirSelectExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDlgDirSelectEx  DlgDirSelectExA
+
+¡ÒDlgDirSelectExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDragDetect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDragObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawAnimatedRects(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»æÖÆ±êÌâ:DrawCaption(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»æÖÆ±ßÔµ:DrawEdge(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawFocusRect(Ë«×Ö,Ë«×Ö)
+¡Ò»æÖÆ¿ò¼Ü:DrawFrame(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawFrameControl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»æÖÆÍ¼±ê:DrawIcon(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¸ß¼¶»æÖÆÍ¼±ê:DrawIconEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»æÖÆ²Ëµ¥Ìõ:DrawMenuBar(Ë«×Ö)
+¡ÒDrawStateA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDrawState  DrawStateA
+
+¡ÒDrawStateW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»æÖÆÎÄ±¾:DrawTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDrawText  DrawTextA
+
+¡Ò¸ß¼¶»æÖÆÎÄ±¾:DrawTextExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDrawTextEx  DrawTextExA
+
+¡ÒDrawTextExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDrawTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditWndProc(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÇå¿Õ¼ôÌù°å:EmptyClipboard()
+¡ÒÓÐÐ§²Ëµ¥Ïî:EnableMenuItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÓÐÐ§¹ö¶¯Ìõ:EnableScrollBar(Ë«×Ö,Ë«×Ö)
+¡ÒÓÐÐ§´°Ìå:EnableWindow(Ë«×Ö,Ë«×Ö)
+¡ÒEndDeferWindowPos(Ë«×Ö)
+¡ÒÖÕÖ¹¶Ô»°¿ò:EndDialog(Ë«×Ö,Ë«×Ö)
+¡ÒÖÕÖ¹²Ëµ¥:EndMenu()
+¡ÒÖÕÖ¹»æÖÆ:EndPaint(Ë«×Ö,Ë«×Ö)
+¡ÒÖÕÖ¹ÈÎÎñ:EndTask(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÃ¶¾Ù×Ó´°Ìå:EnumChildWindows(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumClipboardFormats(Ë«×Ö)
+¡ÒEnumDesktopWindows(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÃ¶¾Ù×ÀÃæ:EnumDesktopsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDesktops  EnumDesktopsA
+
+¡ÒEnumDesktopsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumDisplayDevicesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDisplayDevices  EnumDisplayDevicesA
+
+¡ÒEnumDisplayDevicesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumDisplayMonitors(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumDisplaySettingsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDisplaySettings  EnumDisplaySettingsA
+
+¡ÒEnumDisplaySettingsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDisplaySettingsEx  EnumDisplaySettingsExA
+
+¡ÒEnumDisplaySettingsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumDisplaySettingsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPropsA(Ë«×Ö,Ë«×Ö)
+¡ßEnumProps  EnumPropsA
+
+¡ÒEnumPropsExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumPropsEx  EnumPropsExA
+
+¡ÒEnumPropsExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPropsW(Ë«×Ö,Ë«×Ö)
+¡ÒEnumThreadWindows(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumWindowStationsA(Ë«×Ö,Ë«×Ö)
+¡ßEnumWindowStations  EnumWindowStationsA
+
+¡ÒEnumWindowStationsW(Ë«×Ö,Ë«×Ö)
+¡ÒÃ¶¾Ù´°Ìå:EnumWindows(Ë«×Ö,Ë«×Ö)
+¡ÒEqualRect(Ë«×Ö,Ë«×Ö)
+¡ÒExcludeUpdateRgn(Ë«×Ö,Ë«×Ö)
+¡ÒExitWindowsEx(Ë«×Ö,Ë«×Ö)
+¡ÒÌî³ä¾ØÐÎ:FillRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò²éÕÒ´°Ìå:FindWindowA(Ë«×Ö,Ë«×Ö)
+¡ßFindWindow  FindWindowA
+
+¡Ò¸ß¼¶²éÕÒ´°Ìå:FindWindowExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFindWindowEx  FindWindowExA
+
+¡ÒFindWindowExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindWindowW(Ë«×Ö,Ë«×Ö)
+¡ÒÉÁË¸´°Ìå:FlashWindow(Ë«×Ö,Ë«×Ö)
+¡Ò¸ß¼¶ÉÁË¸´°Ìå:FlashWindowEx(Ë«×Ö)
+¡Ò¿ò¼Ü¾ØÐÎ:FrameRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeDDElParam(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡»î¶¯´°Ìå:GetActiveWindow()
+¡ÒGetAltTabInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetAltTabInfo  GetAltTabInfoA
+
+¡ÒGetAltTabInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAncestor(Ë«×Ö,Ë«×Ö)
+¡ÒGetAsyncKeyState(Ë«×Ö)
+¡Ò»ñÈ¡²¶×½:GetCapture()
+¡ÒGetCaretBlinkTime()
+¡ÒGetCaretPos(Ë«×Ö)
+¡ÒGetClassInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetClassInfo  GetClassInfoA
+
+¡ÒGetClassInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetClassInfoEx  GetClassInfoExA
+
+¡ÒGetClassInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClassInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClassLongA(Ë«×Ö,Ë«×Ö)
+¡ßGetClassLong  GetClassLongA
+
+¡ÒGetClassLongW(Ë«×Ö,Ë«×Ö)
+¡ÒGetClassNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetClassName  GetClassNameA
+
+¡ÒGetClassNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClassWord(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡¿Í»§Çø¾ØÐÎ:GetClientRect(Ë«×Ö,Ë«×Ö)
+¡ÒGetClipCursor(Ë«×Ö)
+¡ÒGetClipboardData(Ë«×Ö)
+¡ÒGetClipboardFormatNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetClipboardFormatName  GetClipboardFormatNameA
+
+¡ÒGetClipboardFormatNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClipboardOwner()
+¡ÒGetClipboardSequenceNumber()
+¡ÒGetClipboardViewer()
+¡ÒGetComboBoxInfo(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡Êó±êÖ¸Õë:GetCursor()
+¡Ò»ñÈ¡Êó±êÖ¸ÕëÐÅÏ¢:GetCursorInfo(Ë«×Ö)
+¡Ò»ñÈ¡Êó±êÖ¸ÕëÎ»ÖÃ:GetCursorPos(Ë«×Ö)
+¡ÒGetDC(Ë«×Ö)
+¡ÒGetDCEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡×ÀÃæ´°Ìå:GetDesktopWindow()
+¡ÒGetDialogBaseUnits()
+¡ÒGetDlgCtrlID(Ë«×Ö)
+¡Ò»ñÈ¡¶Ô»°¿ò×ÓÏî:GetDlgItem(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡¶Ô»°¿ò×ÓÏîÕûÊýÖµ:GetDlgItemInt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡¶Ô»°¿ò×ÓÏîÎÄ±¾:GetDlgItemTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDlgItemText  GetDlgItemTextA
+
+¡ÒGetDlgItemTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDoubleClickTime()
+¡Ò»ñÈ¡½¹µã:GetFocus()
+¡ÒGetForegroundWindow()
+¡ÒGetGUIThreadInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetGuiResources(Ë«×Ö,Ë«×Ö)
+¡ÒGetIconInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetInputDesktop()
+¡ÒGetInputState()
+¡ÒGetKBCodePage()
+¡ÒGetKeyNameTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetKeyNameText  GetKeyNameTextA
+
+¡ÒGetKeyNameTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetKeyState(Ë«×Ö)
+¡ÒGetKeyboardLayout(Ë«×Ö)
+¡ÒGetKeyboardLayoutList(Ë«×Ö,Ë«×Ö)
+¡ÒGetKeyboardLayoutNameA(Ë«×Ö)
+¡ßGetKeyboardLayoutName  GetKeyboardLayoutNameA
+
+¡ÒGetKeyboardLayoutNameW(Ë«×Ö)
+¡ÒGetKeyboardState(Ë«×Ö)
+¡ÒGetKeyboardType(Ë«×Ö)
+¡ÒGetLastActivePopup(Ë«×Ö)
+¡ÒGetLastInputInfo(Ë«×Ö)
+¡ÒGetLayeredWindowAttributes(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetListBoxInfo(Ë«×Ö)
+¡Ò»ñÈ¡²Ëµ¥:GetMenu(Ë«×Ö)
+¡ÒGetMenuBarInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuCheckMarkDimensions()
+¡ÒGetMenuContextHelpId(Ë«×Ö)
+¡ÒGetMenuDefaultItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuItemCount(Ë«×Ö)
+¡ÒGetMenuItemID(Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuItemInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetMenuItemInfo  GetMenuItemInfoA
+
+¡ÒGetMenuItemInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡²Ëµ¥Ïî¾ØÐÎ:GetMenuItemRect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuState(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetMenuString  GetMenuStringA
+
+¡ÒGetMenuStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡ÏûÏ¢:GetMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetMessage  GetMessageA
+
+¡ÒGetMessageExtraInfo()
+¡ÒGetMessagePos()
+¡ÒGetMessageTime()
+¡ÒGetMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMonitorInfoA(Ë«×Ö,Ë«×Ö)
+¡ßGetMonitorInfo  GetMonitorInfoA
+
+¡ÒGetMonitorInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒGetMouseMovePointsEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNextDlgGroupItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNextDlgTabItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetOpenClipboardWindow()
+¡Ò»ñÈ¡¸¸´°Ìå:GetParent(Ë«×Ö)
+¡ÒGetPriorityClipboardFormat(Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessDefaultLayout(Ë«×Ö)
+¡ÒGetProcessWindowStation()
+¡ÒGetPropA(Ë«×Ö,Ë«×Ö)
+¡ßGetProp  GetPropA
+
+¡ÒGetPropW(Ë«×Ö,Ë«×Ö)
+¡ÒGetQueueStatus(Ë«×Ö)
+¡ÒGetRawInputBuffer(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRawInputData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRawInputDeviceInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetRawInputDeviceInfo  GetRawInputDeviceInfoA
+
+¡ÒGetRawInputDeviceInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRawInputDeviceList(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetRegisteredRawInputDevices(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetScrollBarInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetScrollInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetScrollPos(Ë«×Ö,Ë«×Ö)
+¡ÒGetScrollRange(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetShellWindow()
+¡Ò»ñÈ¡×Ó²Ëµ¥:GetSubMenu(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡ÏµÍ³ÑÕÉ«:GetSysColor(Ë«×Ö)
+¡Ò»ñÈ¡ÏµÍ³É«Ë¢:GetSysColorBrush(Ë«×Ö)
+¡Ò»ñÈ¡ÏµÍ³²Ëµ¥:GetSystemMenu(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡ÏµÍ³¶ÈÁ¿:GetSystemMetrics(Ë«×Ö)
+¡ÒGetTabbedTextExtentA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetTabbedTextExtent  GetTabbedTextExtentA
+
+¡ÒGetTabbedTextExtentW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetThreadDesktop(Ë«×Ö)
+¡ÒGetTitleBarInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetTopWindow(Ë«×Ö)
+¡ÒGetUpdateRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUpdateRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUserObjectInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetUserObjectInformation  GetUserObjectInformationA
+
+¡ÒGetUserObjectInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetUserObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetWindow(Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowContextHelpId(Ë«×Ö)
+¡Ò»ñÈ¡´°ÌåÉè±¸»·¾³:GetWindowDC(Ë«×Ö)
+¡Ò»ñÈ¡´°ÌåÐÅÏ¢:GetWindowInfo(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡´°ÌåÌØ¶¨Öµ:GetWindowLongA(Ë«×Ö,Ë«×Ö)
+¡ßGetWindowLong  GetWindowLongA
+
+¡ÒGetWindowLongW(Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowModuleFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetWindowModuleFileName  GetWindowModuleFileNameA
+
+¡ÒGetWindowModuleFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowPlacement(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡´°Ìå¾ØÐÎ:GetWindowRect(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡´°ÌåÇøÓò:GetWindowRgn(Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowRgnBox(Ë«×Ö,Ë«×Ö)
+¡Ò»ñÈ¡´°ÌåÎÄ±¾:GetWindowTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetWindowText  GetWindowTextA
+
+¡Ò»ñÈ¡´°ÌåÎÄ±¾³¤¶È:GetWindowTextLengthA(Ë«×Ö)
+¡ßGetWindowTextLength  GetWindowTextLengthA
+
+¡ÒGetWindowTextLengthW(Ë«×Ö)
+¡ÒGetWindowTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowThreadProcessId(Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowWord(Ë«×Ö,Ë«×Ö)
+¡ÒGrayStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGrayString  GrayStringA
+
+¡ÒGrayStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHideCaret(Ë«×Ö)
+¡ÒHiliteMenuItem(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIMPGetIMEA(Ë«×Ö,Ë«×Ö)
+¡ßIMPGetIME  IMPGetIMEA
+
+¡ÒIMPGetIMEW(Ë«×Ö,Ë«×Ö)
+¡ÒIMPQueryIMEA(Ë«×Ö)
+¡ßIMPQueryIME  IMPQueryIMEA
+
+¡ÒIMPQueryIMEW(Ë«×Ö)
+¡ÒIMPSetIMEA(Ë«×Ö,Ë«×Ö)
+¡ßIMPSetIME  IMPSetIMEA
+
+¡ÒIMPSetIMEW(Ë«×Ö,Ë«×Ö)
+¡ÒImpersonateDdeClientWindow(Ë«×Ö,Ë«×Ö)
+¡ÒInSendMessage()
+¡ÒInSendMessageEx(Ë«×Ö)
+¡ÒInflateRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò²åÈë²Ëµ¥:InsertMenuA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInsertMenu  InsertMenuA
+
+¡ÒInsertMenuItemA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInsertMenuItem  InsertMenuItemA
+
+¡ÒInsertMenuItemW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInsertMenuW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInternalGetWindowText(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIntersectRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÎÞÐ§¾ØÐÎ:InvalidateRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÎÞÐ§ÇøÓò:InvalidateRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò¾ØÐÎ·­×ª:InvertRect(Ë«×Ö,Ë«×Ö)
+¡ÒIsCharAlphaA(Ë«×Ö)
+¡ßIsCharAlpha  IsCharAlphaA
+
+¡ÒIsCharAlphaNumericA(Ë«×Ö)
+¡ßIsCharAlphaNumeric  IsCharAlphaNumericA
+
+¡ÒIsCharAlphaNumericW(Ë«×Ö)
+¡ÒIsCharAlphaW(Ë«×Ö)
+¡ÒIsCharLowerA(Ë«×Ö)
+¡ßIsCharLower  IsCharLowerA
+
+¡ÒIsCharLowerW(Ë«×Ö)
+¡ÒIsCharUpperA(Ë«×Ö)
+¡ßIsCharUpper  IsCharUpperA
+
+¡ÒIsCharUpperW(Ë«×Ö)
+¡ÒIsChild(Ë«×Ö,Ë«×Ö)
+¡ÒIsClipboardFormatAvailable(Ë«×Ö)
+¡ÒIsDialogMessageA(Ë«×Ö,Ë«×Ö)
+¡ßIsDialogMessage  IsDialogMessageA
+
+¡ÒIsDialogMessageW(Ë«×Ö,Ë«×Ö)
+¡Ò¶Ô»°¿ò°´Å¥±»Ñ¡ÖÐ:IsDlgButtonChecked(Ë«×Ö,Ë«×Ö)
+¡ÒIsGUIThread(Ë«×Ö)
+¡ÒIsHungAppWindow(Ë«×Ö)
+¡ÒIsIconic(Ë«×Ö)
+¡ÒIsMenu(Ë«×Ö)
+¡ÒIsRectEmpty(Ë«×Ö)
+¡ÒIsWinEventHookInstalled(Ë«×Ö)
+¡ÒIsWindow(Ë«×Ö)
+¡ÒIsWindowEnabled(Ë«×Ö)
+¡ÒIsWindowUnicode(Ë«×Ö)
+¡ÒIsWindowVisible(Ë«×Ö)
+¡ÒIsWow64Message()
+¡ÒIsZoomed(Ë«×Ö)
+¡ÒÖÕÖ¹¶¨Ê±Æ÷:KillTimer(Ë«×Ö,Ë«×Ö)
+¡ÒLoadAcceleratorsA(Ë«×Ö,Ë«×Ö)
+¡ßLoadAccelerators  LoadAcceleratorsA
+
+¡ÒLoadAcceleratorsW(Ë«×Ö,Ë«×Ö)
+¡Ò¼ÓÔØÎ»Í¼:LoadBitmapA(Ë«×Ö,Ë«×Ö)
+¡ßLoadBitmap  LoadBitmapA
+
+¡ÒLoadBitmapW(Ë«×Ö,Ë«×Ö)
+¡Ò¼ÓÔØÖ¸Õë:LoadCursorA(Ë«×Ö,Ë«×Ö) 
+¡ßLoadCursor  LoadCursorA
+
+¡ÒLoadCursorFromFileA(Ë«×Ö)
+¡ßLoadCursorFromFile  LoadCursorFromFileA
+
+¡ÒLoadCursorFromFileW(Ë«×Ö)
+¡ÒLoadCursorW(Ë«×Ö,Ë«×Ö)
+¡Ò¼ÓÔØÍ¼±ê:LoadIconA(Ë«×Ö,Ë«×Ö) 
+¡ßLoadIcon  LoadIconA
+
+¡ÒLoadIconW(Ë«×Ö,Ë«×Ö)
+¡Ò¼ÓÔØÍ¼Ïñ:LoadImageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLoadImage  LoadImageA
+
+¡ÒLoadImageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLoadKeyboardLayoutA(Ë«×Ö,Ë«×Ö)
+¡ßLoadKeyboardLayout  LoadKeyboardLayoutA
+
+¡ÒLoadKeyboardLayoutW(Ë«×Ö,Ë«×Ö)
+¡Ò¼ÓÔØ²Ëµ¥:LoadMenuA(Ë«×Ö,Ë«×Ö)
+¡ßLoadMenu  LoadMenuA
+
+¡ÒLoadMenuIndirectA(Ë«×Ö)
+¡ßLoadMenuIndirect  LoadMenuIndirectA
+
+¡ÒLoadMenuIndirectW(Ë«×Ö)
+¡ÒLoadMenuW(Ë«×Ö,Ë«×Ö)
+¡Ò¼ÓÔØ×Ö·û´®:LoadStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLoadString  LoadStringA
+
+¡ÒLoadStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLockSetForegroundWindow(Ë«×Ö)
+¡ÒLockWindowUpdate(Ë«×Ö)
+¡ÒLockWorkStation()
+¡ÒLookupIconIdFromDirectory(Ë«×Ö,Ë«×Ö)
+¡ÒLookupIconIdFromDirectoryEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMapDialogRect(Ë«×Ö,Ë«×Ö)
+¡ÒMapVirtualKeyA(Ë«×Ö,Ë«×Ö)
+¡ßMapVirtualKey  MapVirtualKeyA
+
+¡ÒMapVirtualKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMapVirtualKeyEx  MapVirtualKeyExA
+
+¡ÒMapVirtualKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMapVirtualKeyW(Ë«×Ö,Ë«×Ö)
+¡ÒMapWindowPoints(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMenuItemFromPoint(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò·äÃùÌáÊ¾:MessageBeep(Ë«×Ö)
+¡ÒÌáÊ¾¿ò:MessageBoxA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMessageBox  MessageBoxA
+
+¡Ò¸ß¼¶ÌáÊ¾¿ò:MessageBoxExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMessageBoxEx  MessageBoxExA
+
+¡ÒMessageBoxExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMessageBoxIndirectA(Ë«×Ö)
+¡ßMessageBoxIndirect  MessageBoxIndirectA
+
+¡ÒMessageBoxIndirectW(Ë«×Ö)
+¡ÒMessageBoxTimeoutA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßMessageBoxTimeout  MessageBoxTimeoutA
+
+¡ÒMessageBoxTimeoutW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMessageBoxW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÐÞ¸Ä²Ëµ¥:ModifyMenuA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßModifyMenu  ModifyMenuA
+
+¡ÒModifyMenuW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMonitorFromPoint(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMonitorFromRect(Ë«×Ö,Ë«×Ö)
+¡ÒMonitorFromWindow(Ë«×Ö,Ë«×Ö)
+¡ÒÒÆ¶¯´°Ìå:MoveWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsgWaitForMultipleObjects(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMsgWaitForMultipleObjectsEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNotifyWinEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOemKeyScan(Ë«×Ö)
+¡ÒOemToCharA(Ë«×Ö,Ë«×Ö)
+¡ßOemToChar  OemToCharA
+
+¡ÒOemToCharBuffA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOemToCharBuff  OemToCharBuffA
+
+¡ÒOemToCharBuffW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOemToCharW(Ë«×Ö,Ë«×Ö)
+¡ÒOffsetRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò´ò¿ª¼ôÌù°å:OpenClipboard(Ë«×Ö)
+¡ÒOpenDesktopA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenDesktop  OpenDesktopA
+
+¡ÒOpenDesktopW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenIcon(Ë«×Ö)
+¡ÒOpenInputDesktop(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenWindowStationA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenWindowStation  OpenWindowStationA
+
+¡ÒOpenWindowStationW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPackDDElParam(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPaintDesktop(Ë«×Ö)
+¡ÒÌ½ÊÓÏûÏ¢:PeekMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPeekMessage  PeekMessageA
+
+¡ÒPeekMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÓÊËÍÏûÏ¢:PostMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPostMessage  PostMessageA
+
+¡ÒPostMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÓÊËÍÍË³öÏûÏ¢:PostQuitMessage(Ë«×Ö)
+¡ÒPostThreadMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPostThreadMessage  PostThreadMessageA
+
+¡ÒPostThreadMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrivateExtractIconsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPrivateExtractIcons  PrivateExtractIconsA
+
+¡ÒPrivateExtractIconsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPtInRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRealChildWindowFromPoint(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRealGetWindowClassA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRealGetWindowClass  RealGetWindowClassA
+
+¡ÒRealGetWindowClassW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRedrawWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á´°ÌåÀà:RegisterClassA(Ë«×Ö)
+¡ßRegisterClass  RegisterClassA
+
+¡Ò¸ß¼¶×¢²á´°ÌåÀà:RegisterClassExA(Ë«×Ö)
+¡ßRegisterClassEx  RegisterClassExA
+
+¡ÒRegisterClassExW(Ë«×Ö)
+¡ÒRegisterClassW(Ë«×Ö)
+¡ÒRegisterClipboardFormatA(Ë«×Ö)
+¡ßRegisterClipboardFormat  RegisterClipboardFormatA
+
+¡ÒRegisterClipboardFormatW(Ë«×Ö)
+¡ÒRegisterDeviceNotificationA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegisterDeviceNotification  RegisterDeviceNotificationA
+
+¡ÒRegisterDeviceNotificationW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterHotKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterRawInputDevices(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterShellHookWindow(Ë«×Ö)
+¡ÒRegisterWindowMessageA(Ë«×Ö)
+¡ßRegisterWindowMessage  RegisterWindowMessageA
+
+¡ÒRegisterWindowMessageW(Ë«×Ö)
+¡ÒÊÍ·Å²¶×½:ReleaseCapture()
+¡ÒReleaseDC(Ë«×Ö,Ë«×Ö)
+¡ÒRemoveMenu(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRemovePropA(Ë«×Ö,Ë«×Ö)
+¡ßRemoveProp  RemovePropA
+
+¡ÒRemovePropW(Ë«×Ö,Ë«×Ö)
+¡ÒReplyMessage(Ë«×Ö)
+¡ÒReuseDDElParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒScreenToClient(Ë«×Ö,Ë«×Ö)
+¡ÒScrollDC(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒScrollWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒScrollWindowEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò·¢ËÍ¶Ô»°¿ò×ÓÏîÏûÏ¢:SendDlgItemMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSendDlgItemMessage  SendDlgItemMessageA
+
+¡ÒSendDlgItemMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSendIMEMessageExA(Ë«×Ö,Ë«×Ö)
+¡ßSendIMEMessageEx  SendIMEMessageExA
+
+¡ÒSendIMEMessageExW(Ë«×Ö,Ë«×Ö)
+¡ÒSendInput(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò·¢ËÍÏûÏ¢:SendMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSendMessage  SendMessageA
+
+¡ÒSendMessageCallbackA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSendMessageCallback  SendMessageCallbackA
+
+¡ÒSendMessageCallbackW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSendMessageTimeoutA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSendMessageTimeout  SendMessageTimeoutA
+
+¡ÒSendMessageTimeoutW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSendMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSendNotifyMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSendNotifyMessage  SendNotifyMessageA
+
+¡ÒSendNotifyMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetActiveWindow(Ë«×Ö)
+¡ÒÉèÖÃ²¶×½:SetCapture(Ë«×Ö)
+¡ÒSetCaretBlinkTime(Ë«×Ö)
+¡ÒSetCaretPos(Ë«×Ö,Ë«×Ö)
+¡ÒSetClassLongA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetClassLong  SetClassLongA
+
+¡ÒSetClassLongW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetClassWord(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetClipboardData(Ë«×Ö,Ë«×Ö)
+¡ÒSetClipboardViewer(Ë«×Ö)
+¡ÒSetCursor(Ë«×Ö)
+¡ÒSetCursorPos(Ë«×Ö,Ë«×Ö)
+¡ÒSetDebugErrorLevel(Ë«×Ö)
+¡ÒSetDeskWallpaper(Ë«×Ö)
+¡ÒÉèÖÃ¶Ô»°¿ò×ÓÏîÕûÊýÖµ:SetDlgItemInt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÉèÖÃ¶Ô»°¿ò×ÓÏîÎÄ±¾:SetDlgItemTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetDlgItemText  SetDlgItemTextA
+
+¡ÒSetDlgItemTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetDoubleClickTime(Ë«×Ö)
+¡ÒÉèÖÃ½¹µã:SetFocus(Ë«×Ö)
+¡ÒSetForegroundWindow(Ë«×Ö)
+¡ÒSetKeyboardState(Ë«×Ö)
+¡ÒSetLastErrorEx(Ë«×Ö,Ë«×Ö)
+¡ÒSetLayeredWindowAttributes(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÉèÖÃ²Ëµ¥:SetMenu(Ë«×Ö,Ë«×Ö)
+¡ÒSetMenuContextHelpId(Ë«×Ö,Ë«×Ö)
+¡ÒSetMenuDefaultItem(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetMenuInfo(Ë«×Ö,Ë«×Ö)
+¡ÒSetMenuItemBitmaps(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetMenuItemInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetMenuItemInfo  SetMenuItemInfoA
+
+¡ÒSetMenuItemInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetMessageExtraInfo(Ë«×Ö)
+¡ÒSetMessageQueue(Ë«×Ö)
+¡ÒSetParent(Ë«×Ö,Ë«×Ö)
+¡ÒSetProcessDefaultLayout(Ë«×Ö)
+¡ÒSetProcessWindowStation(Ë«×Ö)
+¡ÒSetPropA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetProp  SetPropA
+
+¡ÒSetPropW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetRect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetRectEmpty(Ë«×Ö)
+¡ÒSetScrollInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetScrollPos(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetScrollRange(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetShellWindow(Ë«×Ö)
+¡ÒSetSysColors(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSystemCursor(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadDesktop(Ë«×Ö)
+¡ÒÉèÖÃ¶¨Ê±Æ÷:SetTimer(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUserObjectInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetUserObjectInformation  SetUserObjectInformationA
+
+¡ÒSetUserObjectInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetUserObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWinEventHook(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowContextHelpId(Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowLongA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetWindowLong  SetWindowLongA
+
+¡ÒSetWindowLongW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowPlacement(Ë«×Ö,Ë«×Ö)
+¡ÒÉèÖÃ´°ÌåÎ»ÖÃ:SetWindowPos(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowRgn(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÉèÖÃ´°ÌåÎÄ±¾:SetWindowTextA(Ë«×Ö,Ë«×Ö)
+¡ßSetWindowText  SetWindowTextA
+
+¡ÒSetWindowTextW(Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowWord(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowsHookA(Ë«×Ö,Ë«×Ö)
+¡ßSetWindowsHook  SetWindowsHookA
+
+¡ÒSetWindowsHookExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetWindowsHookEx  SetWindowsHookExA
+
+¡ÒSetWindowsHookExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetWindowsHookW(Ë«×Ö,Ë«×Ö)
+¡ÒShowCaret(Ë«×Ö)
+¡ÒShowCursor(Ë«×Ö)
+¡ÒShowOwnedPopups(Ë«×Ö,Ë«×Ö)
+¡ÒShowScrollBar(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÏÔÊ¾´°Ìå:ShowWindow(Ë«×Ö,Ë«×Ö)
+¡ÒShowWindowAsync(Ë«×Ö,Ë«×Ö)
+¡ÒSubtractRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSwapMouseButton(Ë«×Ö)
+¡ÒÇÐ»»×ÀÃæ:SwitchDesktop(Ë«×Ö)
+¡ÒSwitchToThisWindow(Ë«×Ö,Ë«×Ö)
+¡ÒÏµÍ³²ÎÊýÐÅÏ¢:SystemParametersInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSystemParametersInfo  SystemParametersInfoA
+
+¡ÒSystemParametersInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTabbedTextOutA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTabbedTextOut  TabbedTextOutA
+
+¡ÒTabbedTextOutW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTileChildWindows(Ë«×Ö,Ë«×Ö)
+¡ÒTileWindows(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒToAscii(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒToAsciiEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒToUnicode(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒToUnicodeEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTrackMouseEvent(Ë«×Ö)
+¡ÒTrackPopupMenu(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTrackPopupMenuEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×ª»»¼ÓËÙ¼ü:TranslateAcceleratorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTranslateAccelerator  TranslateAcceleratorA
+
+¡ÒTranslateAcceleratorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTranslateMDISysAccel(Ë«×Ö,Ë«×Ö)
+¡ÒÏûÏ¢·­Òë:TranslateMessage(Ë«×Ö)
+¡ÒUnhookWinEvent(Ë«×Ö)
+¡ÒUnhookWindowsHook(Ë«×Ö,Ë«×Ö)
+¡ÒUnhookWindowsHookEx(Ë«×Ö)
+¡ÒUnionRect(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnloadKeyboardLayout(Ë«×Ö)
+¡ÒUnpackDDElParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUnregisterClassA(Ë«×Ö,Ë«×Ö)
+¡ßUnregisterClass  UnregisterClassA
+
+¡ÒUnregisterClassW(Ë«×Ö,Ë«×Ö)
+¡ÒUnregisterDeviceNotification(Ë«×Ö)
+¡ÒUnregisterHotKey(Ë«×Ö,Ë«×Ö)
+¡ÒUpdateLayeredWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUpdateLayeredWindowIndirect(Ë«×Ö,Ë«×Ö)
+¡Ò¸üÐÂ´°Ìå:UpdateWindow(Ë«×Ö)
+¡ÒUserHandleGrantAccess(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÓÐÐ§¾ØÐÎ:ValidateRect(Ë«×Ö,Ë«×Ö)
+¡ÒÓÐÐ§ÇøÓò:ValidateRgn(Ë«×Ö,Ë«×Ö)
+¡ÒÐéÄâ¼üÉ¨Ãè:VkKeyScanA(Ë«×Ö)
+¡ßVkKeyScan  VkKeyScanA
+
+¡ÒVkKeyScanExA(Ë«×Ö,Ë«×Ö)
+¡ßVkKeyScanEx  VkKeyScanExA
+
+¡ÒVkKeyScanExW(Ë«×Ö,Ë«×Ö)
+¡ÒVkKeyScanW(Ë«×Ö)
+¡ÒWINNLSEnableIME(Ë«×Ö,Ë«×Ö)
+¡ÒWINNLSGetEnableStatus(Ë«×Ö)
+¡ÒWINNLSGetIMEHotkey(Ë«×Ö)
+¡ÒWaitForInputIdle(Ë«×Ö,Ë«×Ö)
+¡ÒµÈ´ýÏûÏ¢:WaitMessage()
+¡ÒWinHelpA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWinHelp  WinHelpA
+
+¡ÒWinHelpW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWindowFromDC(Ë«×Ö)
+¡ÒWindowFromPoint(Ë«×Ö,Ë«×Ö)
+¡Ò¼üÅÌÊÂ¼þ:keybd_event(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒÊó±êÊÂ¼þ:mouse_event(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C ×Ö·û´®¸ñÊ½»¯:wsprintfA(Ë«×Ö, ..)
+¡ßwsprintf  wsprintfA
+
+¡Ò:C ×Ö·û´®¸ñÊ½»¯W:wsprintfW(Ë«×Ö, ..)
+¡ÒwvsprintfA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßwvsprintf  wvsprintfA
+
+¡ÒwvsprintfW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

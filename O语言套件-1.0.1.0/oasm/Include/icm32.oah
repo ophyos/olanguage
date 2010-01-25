@@ -1,0 +1,27 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCMCheckColors(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCheckColorsInGamut(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCheckRGBs(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMConvertColorNameToIndex(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMConvertIndexToColorName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateDeviceLinkProfile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateMultiProfileTransform(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateProfile(Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateProfileW(Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateTransform(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateTransformExt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateTransformExtW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMCreateTransformW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMDeleteTransform(Ë«×Ö)
+¡ÒCMGetInfo(Ë«×Ö)
+¡ÒCMGetNamedProfileInfo(Ë«×Ö,Ë«×Ö)
+¡ÒCMIsProfileValid(Ë«×Ö,Ë«×Ö)
+¡ÒCMTranslateColors(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMTranslateRGB(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMTranslateRGBs(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCMTranslateRGBsExt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

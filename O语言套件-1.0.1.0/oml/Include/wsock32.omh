@@ -1,0 +1,84 @@
+引用段
+{
+函数 AcceptEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumProtocolsA(整数32,整数32,整数32)=>整数32;
+函数 EnumProtocolsW(整数32,整数32,整数32)=>整数32;
+函数 GetAcceptExSockaddrs(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAddressByNameA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAddressByNameW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNameByTypeA(整数32,整数32,整数32)=>整数32;
+函数 GetNameByTypeW(整数32,整数32,整数32)=>整数32;
+函数 GetServiceA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetServiceW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTypeByNameA(整数32,整数32)=>整数32;
+函数 GetTypeByNameW(整数32,整数32)=>整数32;
+函数 MigrateWinsockConfiguration(整数32,整数32,整数32)=>整数32;
+函数 NPLoadNameSpaces(整数32,整数32,整数32)=>整数32;
+函数 SetServiceA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetServiceW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TransmitFile(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WEP()=>整数32;
+函数 WSAAsyncGetHostByAddr(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSA异步获取主机别名:WSAAsyncGetHostByName(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetProtoByName(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetProtoByNumber(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetServByName(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSAAsyncGetServByPort(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSA异步选择:WSAAsyncSelect(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSACancelAsyncRequest(整数32)=>整数32;
+函数 WSACancelBlockingCall()=>整数32;
+函数 WSA清除:WSACleanup()=>整数32;
+函数 WSA获取最后错误:WSAGetLastError()=>整数32;
+函数 WSAIsBlocking()=>整数32;
+函数 WSARecvEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 WSASetBlockingHook(整数32)=>整数32;
+函数 WSASetLastError(整数32)=>整数32;
+函数 WSA启动:WSAStartup(整数32,整数32)=>整数32;
+函数 WSAUnhookBlockingHook()=>整数32;
+函数 __WSAFDIsSet(整数32,整数32)=>整数32;
+函数 接受:accept(整数32,整数32,整数32)=>整数32;
+函数 绑定:bind(整数32,整数32,整数32)=>整数32;
+函数 关闭套接字:closesocket(整数32)=>整数32;
+函数 连接:connect(整数32,整数32,整数32)=>整数32;
+函数 dn_expand(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gethostbyaddr(整数32,整数32,整数32)=>整数32;
+函数 gethostbyname(整数32)=>整数32;
+函数 gethostname(整数32,整数32)=>整数32;
+函数 getnetbyname(整数32)=>整数32;
+函数 getpeername(整数32,整数32,整数32)=>整数32;
+函数 getprotobyname(整数32)=>整数32;
+函数 getprotobynumber(整数32)=>整数32;
+函数 getservbyname(整数32,整数32)=>整数32;
+函数 getservbyport(整数32,整数32)=>整数32;
+函数 getsockname(整数32,整数32,整数32)=>整数32;
+函数 getsockopt(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 主机到网络长整数:htonl(整数32)=>整数32;
+函数 主机到网络短整数:htons(整数32)=>整数32;
+函数 inet_地址:inet_addr(整数32)=>整数32;
+函数 inet_network(整数32)=>整数32;
+函数 inet_ntoa(整数32)=>整数32;
+函数 ioctlsocket(整数32,整数32,整数32)=>整数32;
+函数 监听:listen(整数32,整数32)=>整数32;
+函数 网络到主机长整数:ntohl(整数32)=>整数32;
+函数 网络到主机短整数ntohs(整数32)=>整数32;
+函数 rcmd(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 接收:recv(整数32,整数32,整数32,整数32)=>整数32;
+函数 接收自:recvfrom(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 rexec(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 rresvport(整数32)=>整数32;
+函数 s_perror(整数32,整数32)=>整数32;
+函数 select(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 发送:send(整数32,整数32,整数32,整数32)=>整数32;
+函数 发送到:sendto(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 sethostname(整数32,整数32)=>整数32;
+函数 setsockopt(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 shutdown(整数32,整数32)=>整数32;
+函数 套接字:socket(整数32,整数32,整数32)=>整数32;
+
+宏定义 EnumProtocols  EnumProtocolsA
+宏定义 GetAddressByName  GetAddressByNameA
+宏定义 GetNameByType  GetNameByTypeA
+宏定义 GetService  GetServiceA
+宏定义 GetTypeByName  GetTypeByNameA
+宏定义 SetService  SetServiceA
+}

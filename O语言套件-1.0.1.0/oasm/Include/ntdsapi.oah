@@ -1,0 +1,198 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒDsAddSidHistoryA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsAddSidHistory  DsAddSidHistoryA
+
+¡ÒDsAddSidHistoryW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBindA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBind  DsBindA
+
+¡ÒDsBindToISTGA(Ë«×Ö,Ë«×Ö)
+¡ßDsBindToISTG  DsBindToISTGA
+
+¡ÒDsBindToISTGW(Ë«×Ö,Ë«×Ö)
+¡ÒDsBindW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBindWithCredA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBindWithCred  DsBindWithCredA
+
+¡ÒDsBindWithCredW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBindWithSpnA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBindWithSpn  DsBindWithSpnA
+
+¡ÒDsBindWithSpnExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsBindWithSpnEx  DsBindWithSpnExA
+
+¡ÒDsBindWithSpnExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBindWithSpnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsBindingSetTimeout(Ë«×Ö,Ë«×Ö)
+¡ÒDsClientMakeSpnForTargetServerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsClientMakeSpnForTargetServer  DsClientMakeSpnForTargetServerA
+
+¡ÒDsClientMakeSpnForTargetServerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsCrackNamesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsCrackNames  DsCrackNamesA
+
+¡ÒDsCrackNamesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsCrackSpn2A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsCrackSpn2  DsCrackSpn2A
+
+¡ÒDsCrackSpn2W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsCrackSpn3W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsCrackSpnA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsCrackSpn  DsCrackSpnA
+
+¡ÒDsCrackSpnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsCrackUnquotedMangledRdnA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsCrackUnquotedMangledRdn  DsCrackUnquotedMangledRdnA
+
+¡ÒDsCrackUnquotedMangledRdnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsFreeDomainControllerInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsFreeDomainControllerInfo  DsFreeDomainControllerInfoA
+
+¡ÒDsFreeDomainControllerInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsFreeNameResultA(Ë«×Ö)
+¡ßDsFreeNameResult  DsFreeNameResultA
+
+¡ÒDsFreeNameResultW(Ë«×Ö)
+¡ÒDsFreePasswordCredentials(Ë«×Ö)
+¡ÒDsFreeSchemaGuidMapA(Ë«×Ö)
+¡ßDsFreeSchemaGuidMap  DsFreeSchemaGuidMapA
+
+¡ÒDsFreeSchemaGuidMapW(Ë«×Ö)
+¡ÒDsFreeSpnArrayA(Ë«×Ö,Ë«×Ö)
+¡ßDsFreeSpnArray  DsFreeSpnArrayA
+
+¡ÒDsFreeSpnArrayW(Ë«×Ö,Ë«×Ö)
+¡ÒDsGetDomainControllerInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsGetDomainControllerInfo  DsGetDomainControllerInfoA
+
+¡ÒDsGetDomainControllerInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsGetRdnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsGetSpnA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsGetSpn  DsGetSpnA
+
+¡ÒDsGetSpnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsInheritSecurityIdentityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsInheritSecurityIdentity  DsInheritSecurityIdentityA
+
+¡ÒDsInheritSecurityIdentityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsIsMangledDnA(Ë«×Ö,Ë«×Ö)
+¡ßDsIsMangledDn  DsIsMangledDnA
+
+¡ÒDsIsMangledDnW(Ë«×Ö,Ë«×Ö)
+¡ÒDsIsMangledRdnValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsIsMangledRdnValue  DsIsMangledRdnValueA
+
+¡ÒDsIsMangledRdnValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsListDomainsInSiteA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsListDomainsInSite  DsListDomainsInSiteA
+
+¡ÒDsListDomainsInSiteW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsListInfoForServerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsListInfoForServer  DsListInfoForServerA
+
+¡ÒDsListInfoForServerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsListRolesA(Ë«×Ö,Ë«×Ö)
+¡ßDsListRoles  DsListRolesA
+
+¡ÒDsListRolesW(Ë«×Ö,Ë«×Ö)
+¡ÒDsListServersForDomainInSiteA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsListServersForDomainInSite  DsListServersForDomainInSiteA
+
+¡ÒDsListServersForDomainInSiteW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsListServersInSiteA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsListServersInSite  DsListServersInSiteA
+
+¡ÒDsListServersInSiteW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsListSitesA(Ë«×Ö,Ë«×Ö)
+¡ßDsListSites  DsListSitesA
+
+¡ÒDsListSitesW(Ë«×Ö,Ë«×Ö)
+¡Ò:C DsLogEntry(Ë«×Ö, ..)
+¡ÒDsMakePasswordCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsMakePasswordCredentials  DsMakePasswordCredentialsA
+
+¡ÒDsMakePasswordCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsMakeSpnA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsMakeSpn  DsMakeSpnA
+
+¡ÒDsMakeSpnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsMapSchemaGuidsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsMapSchemaGuids  DsMapSchemaGuidsA
+
+¡ÒDsMapSchemaGuidsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsQuerySitesByCostA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsQuerySitesByCost  DsQuerySitesByCostA
+
+¡ÒDsQuerySitesByCostW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsQuerySitesFree(Ë«×Ö)
+¡ÒDsQuoteRdnValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsQuoteRdnValue  DsQuoteRdnValueA
+
+¡ÒDsQuoteRdnValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsRemoveDsDomainA(Ë«×Ö,Ë«×Ö)
+¡ßDsRemoveDsDomain  DsRemoveDsDomainA
+
+¡ÒDsRemoveDsDomainW(Ë«×Ö,Ë«×Ö)
+¡ÒDsRemoveDsServerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsRemoveDsServer  DsRemoveDsServerA
+
+¡ÒDsRemoveDsServerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaAddA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaAdd  DsReplicaAddA
+
+¡ÒDsReplicaAddW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaConsistencyCheck(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaDelA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaDel  DsReplicaDelA
+
+¡ÒDsReplicaDelW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaFreeInfo(Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaGetInfo2W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaGetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaModifyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaModify  DsReplicaModifyA
+
+¡ÒDsReplicaModifyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaSyncA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaSync  DsReplicaSyncA
+
+¡ÒDsReplicaSyncAllA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaSyncAll  DsReplicaSyncAllA
+
+¡ÒDsReplicaSyncAllW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaSyncW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaUpdateRefsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaUpdateRefs  DsReplicaUpdateRefsA
+
+¡ÒDsReplicaUpdateRefsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsReplicaVerifyObjectsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsReplicaVerifyObjects  DsReplicaVerifyObjectsA
+
+¡ÒDsReplicaVerifyObjectsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsServerRegisterSpnA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsServerRegisterSpn  DsServerRegisterSpnA
+
+¡ÒDsServerRegisterSpnW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsUnBindA(Ë«×Ö)
+¡ßDsUnBind  DsUnBindA
+
+¡ÒDsUnBindW(Ë«×Ö)
+¡ÒDsUnquoteRdnValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsUnquoteRdnValue  DsUnquoteRdnValueA
+
+¡ÒDsUnquoteRdnValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsWriteAccountSpnA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßDsWriteAccountSpn  DsWriteAccountSpnA
+
+¡ÒDsWriteAccountSpnW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsaopBind(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsaopBindWithCred(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsaopBindWithSpn(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsaopExecuteScript(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsaopPrepareScript(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsaopUnBind(Ë«×Ö)
+
+¦ç

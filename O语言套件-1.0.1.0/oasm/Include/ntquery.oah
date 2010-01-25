@@ -1,0 +1,15 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒBindIFilterFromStorage(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBindIFilterFromStream(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCIState(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLoadIFilter(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLocateCatalogsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLocateCatalogs  LocateCatalogsA
+
+¡ÒLocateCatalogsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetCatalogState(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

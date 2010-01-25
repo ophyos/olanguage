@@ -1,0 +1,20 @@
+引用段
+{
+函数 ApplyPatchToFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyPatchToFileByHandles(整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyPatchToFileByHandlesEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyPatchToFileExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyPatchToFileExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyPatchToFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFilePatchSignatureA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFilePatchSignatureByHandle(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFilePatchSignatureW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TestApplyPatchToFileA(整数32,整数32,整数32)=>整数32;
+函数 TestApplyPatchToFileByHandles(整数32,整数32,整数32)=>整数32;
+函数 TestApplyPatchToFileW(整数32,整数32,整数32)=>整数32;
+
+宏定义 ApplyPatchToFile  ApplyPatchToFileA
+宏定义 ApplyPatchToFileEx  ApplyPatchToFileExA
+宏定义 GetFilePatchSignature  GetFilePatchSignatureA
+宏定义 TestApplyPatchToFile  TestApplyPatchToFileA
+}

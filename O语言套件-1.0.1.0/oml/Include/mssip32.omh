@@ -1,0 +1,9 @@
+引用段
+{
+函数 CryptSIPCreateIndirectData(整数32,整数32,整数32)=>整数32;
+函数 CryptSIPGetSignedDataMsg(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSIPPutSignedDataMsg(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSIPRemoveSignedDataMsg(整数32,整数32)=>整数32;
+函数 CryptSIPVerifyIndirectData(整数32,整数32)=>整数32;
+
+}

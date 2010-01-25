@@ -1,0 +1,55 @@
+引用段
+{
+函数 SQLConfigDataSource(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLConfigDataSourceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLConfigDriver(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLConfigDriverW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLCreateDataSource(整数32,整数32)=>整数32;
+函数 SQLCreateDataSourceW(整数32,整数32)=>整数32;
+函数 SQLGetAvailableDrivers(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetAvailableDriversW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetConfigMode(整数32)=>整数32;
+函数 SQLGetInstalledDrivers(整数32,整数32,整数32)=>整数32;
+函数 SQLGetInstalledDriversW(整数32,整数32,整数32)=>整数32;
+函数 SQLGetPrivateProfileString(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetPrivateProfileStringW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetTranslator(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLGetTranslatorW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallDriver(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallDriverEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallDriverExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallDriverManager(整数32,整数32,整数32)=>整数32;
+函数 SQLInstallDriverManagerW(整数32,整数32,整数32)=>整数32;
+函数 SQLInstallDriverW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallODBC(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallODBCW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallTranslator(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallTranslatorEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallTranslatorExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallTranslatorW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallerError(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLInstallerErrorW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLManageDataSources(整数32)=>整数32;
+函数 SQLPostInstallerError(整数32,整数32)=>整数32;
+函数 SQLPostInstallerErrorW(整数32,整数32)=>整数32;
+函数 SQLReadFileDSN(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLReadFileDSNW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLRemoveDSNFromIni(整数32)=>整数32;
+函数 SQLRemoveDSNFromIniW(整数32)=>整数32;
+函数 SQLRemoveDefaultDataSource()=>整数32;
+函数 SQLRemoveDriver(整数32,整数32,整数32)=>整数32;
+函数 SQLRemoveDriverManager(整数32)=>整数32;
+函数 SQLRemoveDriverW(整数32,整数32,整数32)=>整数32;
+函数 SQLRemoveTranslator(整数32,整数32)=>整数32;
+函数 SQLRemoveTranslatorW(整数32,整数32)=>整数32;
+函数 SQLSetConfigMode(整数32)=>整数32;
+函数 SQLValidDSN(整数32)=>整数32;
+函数 SQLValidDSNW(整数32)=>整数32;
+函数 SQLWriteDSNToIni(整数32,整数32)=>整数32;
+函数 SQLWriteDSNToIniW(整数32,整数32)=>整数32;
+函数 SQLWriteFileDSN(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLWriteFileDSNW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLWritePrivateProfileString(整数32,整数32,整数32,整数32)=>整数32;
+函数 SQLWritePrivateProfileStringW(整数32,整数32,整数32,整数32)=>整数32;
+
+}

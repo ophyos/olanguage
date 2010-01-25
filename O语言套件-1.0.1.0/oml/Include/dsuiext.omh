@@ -1,0 +1,47 @@
+引用段
+{
+函数 CheckDsPolicy(整数32,整数32)=>整数32;
+函数 DsBrowseForContainerA(整数32)=>整数32;
+函数 DsBrowseForContainerW(整数32)=>整数32;
+函数 DsGetFriendlyClassName(整数32,整数32,整数32)=>整数32;
+函数 DsGetIcon(整数32,整数32,整数32,整数32)=>整数32;
+函数 FormatDirectoryName(整数32,整数32,整数32)=>整数32;
+函数 C调用 FormatMsgBox(整数32, ..)=>整数32;
+函数 C调用 FormatMsgResource(整数32, ..)=>整数32;
+函数 GetArrayContents(整数32,整数32,整数32)=>整数32;
+函数 GetDisplayNameFromADsPath(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStringElementA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetStringElementW(整数32,整数32,整数32,整数32)=>整数32;
+函数 LocalAllocStringA2W(整数32,整数32)=>整数32;
+函数 LocalAllocStringA(整数32,整数32)=>整数32;
+函数 LocalAllocStringLenA(整数32,整数32)=>整数32;
+函数 LocalAllocStringLenW(整数32,整数32)=>整数32;
+函数 LocalAllocStringW2A(整数32,整数32)=>整数32;
+函数 LocalAllocStringW(整数32,整数32)=>整数32;
+函数 LocalFreeStringA(整数32)=>整数32;
+函数 LocalFreeStringW(整数32)=>整数32;
+函数 LocalQueryStringA(整数32,整数32,整数32)=>整数32;
+函数 LocalQueryStringW(整数32,整数32,整数32)=>整数32;
+函数 ObjectClassFromSearchColumn(整数32,整数32)=>整数32;
+函数 PutStringElementA(整数32,整数32,整数32)=>整数32;
+函数 PutStringElementW(整数32,整数32,整数32)=>整数32;
+函数 ShowDirectoryUI()=>整数32;
+函数 StringDPA_AppendStringA(整数32,整数32,整数32)=>整数32;
+函数 StringDPA_AppendStringW(整数32,整数32,整数32)=>整数32;
+函数 StringDPA_DeleteString(整数32,整数32)=>整数32;
+函数 StringDPA_Destroy(整数32)=>整数32;
+函数 StringDPA_InsertStringA(整数32,整数32,整数32)=>整数32;
+函数 StringDPA_InsertStringW(整数32,整数32,整数32)=>整数32;
+函数 StringFromSearchColumn(整数32,整数32)=>整数32;
+
+宏定义 DsBrowseForContainer  DsBrowseForContainerA
+宏定义 GetStringElement  GetStringElementA
+宏定义 LocalAllocString  LocalAllocStringA
+宏定义 LocalAllocStringLen  LocalAllocStringLenA
+宏定义 LocalAllocStringW2  LocalAllocStringW2A
+宏定义 LocalFreeString  LocalFreeStringA
+宏定义 LocalQueryString  LocalQueryStringA
+宏定义 PutStringElement  PutStringElementA
+宏定义 StringDPA_AppendString  StringDPA_AppendStringA
+宏定义 StringDPA_InsertString  StringDPA_InsertStringA
+}

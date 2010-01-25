@@ -1,0 +1,59 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒWTSCloseServer(Ë«×Ö)
+¡ÒWTSDisconnectSession(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSEnumerateProcessesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSEnumerateProcesses  WTSEnumerateProcessesA
+
+¡ÒWTSEnumerateProcessesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSEnumerateServersA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSEnumerateServers  WTSEnumerateServersA
+
+¡ÒWTSEnumerateServersW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSEnumerateSessionsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSEnumerateSessions  WTSEnumerateSessionsA
+
+¡ÒWTSEnumerateSessionsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSFreeMemory(Ë«×Ö)
+¡ÒWTSLogoffSession(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSOpenServerA(Ë«×Ö)
+¡ßWTSOpenServer  WTSOpenServerA
+
+¡ÒWTSOpenServerW(Ë«×Ö)
+¡ÒWTSQuerySessionInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSQuerySessionInformation  WTSQuerySessionInformationA
+
+¡ÒWTSQuerySessionInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSQueryUserConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSQueryUserConfig  WTSQueryUserConfigA
+
+¡ÒWTSQueryUserConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSQueryUserToken(Ë«×Ö,Ë«×Ö)
+¡ÒWTSRegisterSessionNotification(Ë«×Ö,Ë«×Ö)
+¡ÒWTSSendMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSSendMessage  WTSSendMessageA
+
+¡ÒWTSSendMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSSetSessionInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSSetSessionInformation  WTSSetSessionInformationA
+
+¡ÒWTSSetSessionInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSSetUserConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWTSSetUserConfig  WTSSetUserConfigA
+
+¡ÒWTSSetUserConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSShutdownSystem(Ë«×Ö,Ë«×Ö)
+¡ÒWTSTerminateProcess(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSUnRegisterSessionNotification(Ë«×Ö)
+¡ÒWTSVirtualChannelClose(Ë«×Ö)
+¡ÒWTSVirtualChannelOpen(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSVirtualChannelPurgeInput(Ë«×Ö)
+¡ÒWTSVirtualChannelPurgeOutput(Ë«×Ö)
+¡ÒWTSVirtualChannelQuery(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSVirtualChannelRead(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSVirtualChannelWrite(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWTSWaitSystemEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

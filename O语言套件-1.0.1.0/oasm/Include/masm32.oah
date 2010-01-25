@@ -1,0 +1,240 @@
+
+¡ÎÕâ¸öÎÄ¼þÐÞ¸ÄÖÁ MASM32µÄ masm32.inc°üº¬ÎÄ¼þ
+
+¡ÎÕâ¸öÎÄ¼þÊÇÎªÁËÊ¹ÓÃ MASM32 µÄ masm32.lib¿â¶øÖÆ×÷µÄ
+
+¡Î for both --> arg num, buffer
+
+¦æ
+
+¡ÒArgCl(Ë«×Ö,Ë«×Ö)   ¡Î GUI mode version
+¡ÒArgClC(Ë«×Ö,Ë«×Ö)   ¡Î console mode version
+¡ÒGetCL(Ë«×Ö,Ë«×Ö)
+
+¡ÒAlloc(Ë«×Ö)
+¡ÒFree(Ë«×Ö)
+
+¡Î --------------------------
+¡Înumeric and text conversions
+¡Î----------------------------
+¡Òa2dw(Ë«×Ö)
+¡Òatodw(Ë«×Ö)          ¡Î return value in eax
+¡Òhtodw(Ë«×Ö)          ¡Î return value in eax
+¡Òdwtoa(Ë«×Ö,Ë«×Ö)   ¡Î value - buffer
+¡Òdw2a(Ë«×Ö,Ë«×Ö)
+¡Òdw2hex(Ë«×Ö,Ë«×Ö)
+¡Òdw2ah(Ë«×Ö,Ë«×Ö)
+
+¡ÒGetErrDescription(Ë«×Ö)
+
+¡Î-----------------------------------
+¡Îstring and floating point conversions
+¡Î-----------------------------------
+¡¸  
+¡ÒFloatToStr(ËÄ×Ö,Ë«×Ö)
+¡ÒFloatToStr2(ËÄ×Ö,Ë«×Ö)
+¡ÒStrToFloat(Ë«×Ö,Ë«×Ö)
+¡¹
+
+¡Î ---------------
+¡Îsearch algorithms
+¡Î ---------------
+¡ÒInString(Ë«×Ö,Ë«×Ö,Ë«×Ö) ¡Î StartPos - lpszString - lpszSubStr
+¡ÒBinSearch(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)      ¡Î classic scanner
+
+¡Î Boyer Moore based algorithms
+¡Î ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+¡ÒBMBinSearch(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)   ¡Î complete BM
+¡ÒBMHBinsearch(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)   ¡Î horspool variation
+¡ÒSBMBinSearch(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)   ¡Î simplified version
+¡ÒWordCount(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡Î---------------------------
+¡Îencryption algorithms for
+¡Î"one shot" or "one pass" pads
+¡Î-----------------------------
+¡ÒXorData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRolData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRorData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒStrLen(Ë«×Ö) ¡Î Agner Fog's high speed string length algo
+
+¡Î------------------------------------
+¡Îzero terminated string procedures have
+¡Îbeen renamed for consistency. Equates
+¡Îto the old names are below.
+¡Î--------------------------------------
+
+¡Òszappend(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒszCatStr(Ë«×Ö,Ë«×Ö)
+¡ÒszCmp(Ë«×Ö,Ë«×Ö)
+¡ÒszCmpi(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒszCopy(Ë«×Ö,Ë«×Ö)
+¡ÒszLeft(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒszLen(Ë«×Ö)
+¡ÒszLower(Ë«×Ö)
+¡ÒszLtrim(Ë«×Ö,Ë«×Ö)
+¡ÒszMid(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C szMultiCat(Ë«×Ö,Ë«×Ö,..)
+¡ÒszRemove(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒszRev(Ë«×Ö,Ë«×Ö)
+¡ÒszRight(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒszRtrim(Ë«×Ö,Ë«×Ö)
+¡ÒszTrim(Ë«×Ö)
+¡ÒszUpper(Ë«×Ö)
+
+¡Î ---------------------------------
+¡Î the equates for the old names must
+¡Î be put after the prototypes for the
+¡Î procedures they are mapped to.
+¡Î ----------------------------------
+
+¡ßlnstr   szLen
+¡ßcmpstr  szCmp
+¡ßcmpsi   szCmpi
+¡ßrevstr  szRev
+¡ßlcase   szLower
+¡ßucase   szUpper
+¡ßltrim   szLtrim
+¡ßrtrim   szRtrim
+¡ßtrim    szTrim
+¡ßlstr    szLeft
+¡ßrstr    szRight
+¡ßmidstr  szMid
+
+¡Î -----------------------------------------
+
+¡Òshell(Ë«×Ö)
+
+¡ÒStripRangeI(Ë«×Ö,Ë«×Ö,×Ö½Ú,×Ö½Ú)
+¡ÒStripRangeX(Ë«×Ö,Ë«×Ö,×Ö½Ú,×Ö½Ú)
+
+¡ÒMemCopy(Ë«×Ö,Ë«×Ö,Ë«×Ö)  ¡Î source - dest - length
+¡Òmemfill(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒGetAppPath(Ë«×Ö)     ¡Î buffer has app path
+¡ÒNameFromPath(Ë«×Ö,Ë«×Ö)
+¡ÒGetPathOnly(Ë«×Ö,Ë«×Ö)
+
+¡Òexist(Ë«×Ö)
+¡Òfilesize(Ë«×Ö)
+
+¡ÒFrameCtrl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFrameWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFrameGrp(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒFrame3D(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òline(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òcircle(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒDisplayBmp(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDisplayIcon(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒVerticalTile(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetBMcolor(Ë«×Ö,Ë«×Ö)
+
+¡ÒBmpButton(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒStdOut(Ë«×Ö)
+¡ÒStdIn(Ë«×Ö,Ë«×Ö)
+¡Òlocate(Ë«×Ö,Ë«×Ö)
+¡ÒClearScreen()
+¡ÒStripLF(Ë«×Ö)
+
+¡ÒBrowseForFolder(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFontDialog     (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒColorDialog    (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPageSetupDialog(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrintDialog    (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒRead_File_In   (Ë«×Ö,Ë«×Ö)
+¡ÒofCallBack     (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWrite_To_Disk  (Ë«×Ö,Ë«×Ö)
+¡ÒsfCallBack     (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRichEd1        (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRichEd2        (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡ÒGetPercent     (Ë«×Ö,Ë«×Ö)
+¡ÒIntMul         (Ë«×Ö,Ë«×Ö)
+¡ÒIntDiv         (Ë«×Ö,Ë«×Ö)
+¡ÒIntSqrt        (Ë«×Ö)
+
+¡Ònrandom        (Ë«×Ö)
+¡Ònseed          (Ë«×Ö)
+
+¡Î ---------------------------------
+¡Î prototypes for pre-built dialogs
+¡Î ---------------------------------
+¡ÒGetTextInput   (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAboutBox       (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFile        (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLoadList       (Ë«×Ö,Ë«×Ö)
+¡ÒIPtoString     (Ë«×Ö,Ë«×Ö)
+¡ÒGetIP          (Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+   
+
+¡Î ----------------------------------------
+¡Î Ernie Murphy's image loading procedures
+¡Î ----------------------------------------
+¡ÒBitmapFromFile     (Ë«×Ö)
+¡ÒBitmapFromMemory   (Ë«×Ö,Ë«×Ö)
+¡ÒBitmapFromResource (Ë«×Ö,Ë«×Ö)
+
+¡Î -------------------
+¡Î file IO procedures
+¡Î -------------------
+¡Òread_disk_file (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òwrite_disk_file(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡Î ------------------------------
+¡Î memory mapped file procedures
+¡Î ------------------------------
+¡ÒCloseMMF (Ë«×Ö,Ë«×Ö)
+¡ÒCreateMMF(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡Î ----------------
+¡Î sort procedures
+¡Î ----------------
+¡ÒnrQsortA(Ë«×Ö,Ë«×Ö)
+¡ÒnrQsortD(Ë«×Ö,Ë«×Ö)
+
+¡ÒCombSortA(Ë«×Ö,Ë«×Ö)
+¡ÒCombSortD(Ë«×Ö,Ë«×Ö)
+
+¡Òtestreg()
+
+¡ÒHexDump  (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAsciiDump(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡Î ------------------------------------------
+¡Î ascii and 32 bit long integer conversions
+¡Î ------------------------------------------
+¡Ò×Ö·ûµ½³¤ÕûÊý:atol(Ë«×Ö)
+¡Ò³¤ÕûÊýµ½×Ö·û:ltoa(Ë«×Ö,Ë«×Ö)
+
+¡Î ----------------------------
+¡Î File open and close dialogs
+¡Î ----------------------------
+¡ÒOpenFileDialog(Ë«×Ö, Ë«×Ö, Ë«×Ö, Ë«×Ö)
+¡ÒSaveFileDialog(Ë«×Ö, Ë«×Ö, Ë«×Ö, Ë«×Ö)
+
+¡Òa2wc       (Ë«×Ö)
+
+¡Î ----------------
+¡Î array procedures
+¡Î ----------------
+¡Òarr_add        (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òarr_mul        (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òarr_sub        (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òcreate_array   (Ë«×Ö,Ë«×Ö)
+
+¡Òbyte_count (Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¡Òload_drives(Ë«×Ö)
+
+¡Òudw2str(Ë«×Ö,Ë«×Ö)
+¡Òustr2dw(Ë«×Ö)
+
+¦ç
+
+
+

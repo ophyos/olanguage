@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<O语言文件 TYPE="5">
+    <文件名列表>
+        <文件名>F:\Myprogram\OL\OL\sample\OML\界面语言\界面语言\代码\代码文件.omp</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\视窗32.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\oml32.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\视窗.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\user32.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\kernel32.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\gdi32.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\owi.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Button.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Check.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_ComboBox.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Control.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Edit.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Group.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_ImageList.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_ListBox.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_ListView.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Menu.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Panel.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Progress.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Radio.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Rebar.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_ScrollBar.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Slider.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Spin.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Splitter.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_StatusBar.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Tab.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Text.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Toolbar.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_TreeView.omh</文件名>
+        <文件名>f:\Myprogram\OL\OL\debug\oml\Include\ofl\OWI_Window.omh</文件名>
+    </文件名列表>
+    <类型列表>
+        <类型 文件序号="-1" 类型序号="0" 类型种类="1" 类型空间大小="1">
+            <类型名>int8</类型名>
+        </类型>
+        <类型 文件序号="-1" 类型序号="13" 类型种类="1" 类型空间大小="4">
+            <类型名>addr</类型名>
+        </类型>
+    </类型列表>
+    <源文件列表>
+        <file0>
+            <全局变量列表>
+                <变量>
+                    <变量类型 文件序号="-1" 类型序号="0">int8</变量类型>
+                    <变量名>第一个界面</变量名>
+                    <变量数组>108</变量数组>
+                    <变量地址 文件序号="0" 变量序号="0" />
+                    <变量空间大小>108</变量空间大小>
+                </变量>
+            </全局变量列表>
+            <函数列表>
+                <函数 文件序号="0" 函数序号="0" 函数起始行="15" 函数结束行="19">
+                    <局部变量列表 />
+                </函数>
+                <函数 文件序号="0" 函数序号="1" 函数起始行="21" 函数结束行="44">
+                    <局部变量列表 />
+                </函数>
+                <函数 文件序号="0" 函数序号="2" 函数起始行="46" 函数结束行="51">
+                    <局部变量列表 />
+                </函数>
+                <函数 文件序号="0" 函数序号="3" 函数起始行="53" 函数结束行="59">
+                    <局部变量列表 />
+                </函数>
+                <函数 文件序号="0" 函数序号="4" 函数起始行="61" 函数结束行="70">
+                    <局部变量列表>
+                        <变量>
+                            <变量类型 文件序号="-1" 类型序号="13">地址</变量类型>
+                            <变量名>树控件地址</变量名>
+                            <变量数组></变量数组>
+                            <变量地址>0</变量地址>
+                            <变量空间大小>4</变量空间大小>
+                        </变量>
+                    </局部变量列表>
+                </函数>
+                <函数 文件序号="0" 函数序号="5" 函数起始行="72" 函数结束行="83">
+                    <局部变量列表>
+                        <变量>
+                            <变量类型 文件序号="-1" 类型序号="13">地址</变量类型>
+                            <变量名>菜单文本</变量名>
+                            <变量数组></变量数组>
+                            <变量地址>0</变量地址>
+                            <变量空间大小>4</变量空间大小>
+                        </变量>
+                        <变量>
+                            <变量类型 文件序号="-1" 类型序号="0">字符</变量类型>
+                            <变量名>文本缓冲区</变量名>
+                            <变量数组>256</变量数组>
+                            <变量地址>8</变量地址>
+                            <变量空间大小>256</变量空间大小>
+                        </变量>
+                    </局部变量列表>
+                </函数>
+            </函数列表>
+        </file0>
+    </源文件列表>
+</O语言文件>

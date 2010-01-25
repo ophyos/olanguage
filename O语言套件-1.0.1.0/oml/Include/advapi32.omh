@@ -1,0 +1,775 @@
+引用段
+{
+函数 AbortSystemShutdownA(整数32)=>整数32;
+函数 AbortSystemShutdownW(整数32)=>整数32;
+函数 AccessCheck(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckAndAuditAlarmA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckAndAuditAlarmW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByType(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeAndAuditAlarmA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeAndAuditAlarmW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeResultList(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeResultListAndAuditAlarmA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeResultListAndAuditAlarmByHandleA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeResultListAndAuditAlarmByHandleW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessCheckByTypeResultListAndAuditAlarmW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAccessAllowedAce(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAccessAllowedAceEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAccessAllowedObjectAce(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAccessDeniedAce(整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAccessDeniedAceEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAccessDeniedObjectAce(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAce(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAuditAccessAce(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAuditAccessAceEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddAuditAccessObjectAce(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddUsersToEncryptedFile(整数32,整数32)=>整数32;
+函数 AdjustTokenGroups(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AdjustTokenPrivileges(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AllocateAndInitializeSid(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AllocateLocallyUniqueId(整数32)=>整数32;
+函数 AreAllAccessesGranted(整数32,整数32)=>整数32;
+函数 AreAnyAccessesGranted(整数32,整数32)=>整数32;
+函数 BackupEventLogA(整数32,整数32)=>整数32;
+函数 BackupEventLogW(整数32,整数32)=>整数32;
+函数 BuildExplicitAccessWithNameA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildExplicitAccessWithNameW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildImpersonateExplicitAccessWithNameA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildImpersonateExplicitAccessWithNameW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildImpersonateTrusteeA(整数32,整数32)=>整数32;
+函数 BuildImpersonateTrusteeW(整数32,整数32)=>整数32;
+函数 BuildSecurityDescriptorA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildSecurityDescriptorW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildTrusteeWithNameA(整数32,整数32)=>整数32;
+函数 BuildTrusteeWithNameW(整数32,整数32)=>整数32;
+函数 BuildTrusteeWithObjectsAndNameA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildTrusteeWithObjectsAndNameW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildTrusteeWithObjectsAndSidA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildTrusteeWithObjectsAndSidW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BuildTrusteeWithSidA(整数32,整数32)=>整数32;
+函数 BuildTrusteeWithSidW(整数32,整数32)=>整数32;
+函数 CancelOverlappedAccess(整数32)=>整数32;
+函数 ChangeServiceConfig2A(整数32,整数32,整数32)=>整数32;
+函数 ChangeServiceConfig2W(整数32,整数32,整数32)=>整数32;
+函数 ChangeServiceConfigA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ChangeServiceConfigW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckTokenMembership(整数32,整数32,整数32)=>整数32;
+函数 ClearEventLogA(整数32,整数32)=>整数32;
+函数 ClearEventLogW(整数32,整数32)=>整数32;
+函数 CloseCodeAuthzLevel(整数32)=>整数32;
+函数 CloseEncryptedFileRaw(整数32)=>整数32;
+函数 CloseEventLog(整数32)=>整数32;
+函数 CloseServiceHandle(整数32)=>整数32;
+函数 CloseTrace(整数32,整数32)=>整数32;
+函数 CommandLineFromMsiDescriptor(整数32,整数32,整数32)=>整数32;
+函数 ComputeAccessTokenFromCodeAuthzLevel(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ControlService(整数32,整数32,整数32)=>整数32;
+函数 ControlTraceA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ControlTraceW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertAccessToSecurityDescriptorA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertAccessToSecurityDescriptorW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSDToStringSDRootDomainA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSDToStringSDRootDomainW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToAccessA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToAccessNamedA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToAccessNamedW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToAccessW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToStringSecurityDescriptorA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToStringSecurityDescriptorW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSidToStringSidA(整数32,整数32)=>整数32;
+函数 ConvertSidToStringSidW(整数32,整数32)=>整数32;
+函数 ConvertStringSDToSDDomainA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertStringSDToSDDomainW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertStringSDToSDRootDomainA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertStringSDToSDRootDomainW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertStringSecurityDescriptorToSecurityDescriptorA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertStringSecurityDescriptorToSecurityDescriptorW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertStringSidToSidA(整数32,整数32)=>整数32;
+函数 ConvertStringSidToSidW(整数32,整数32)=>整数32;
+函数 ConvertToAutoInheritPrivateObjectSecurity(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CopySid(整数32,整数32,整数32)=>整数32;
+函数 CreateCodeAuthzLevel(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePrivateObjectSecurity(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePrivateObjectSecurityEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreatePrivateObjectSecurityWithMultipleInheritance(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProcessAsUserA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProcessAsUserW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProcessWithLogonW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateProcessWithTokenW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateRestrictedToken(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateServiceA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateServiceW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateTraceInstanceId(整数32,整数32)=>整数32;
+函数 CreateWellKnownSid(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredDeleteA(整数32,整数32,整数32)=>整数32;
+函数 CredDeleteW(整数32,整数32,整数32)=>整数32;
+函数 CredEnumerateA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredEnumerateW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredFree(整数32)=>整数32;
+函数 CredGetSessionTypes(整数32,整数32)=>整数32;
+函数 CredGetTargetInfoA(整数32,整数32,整数32)=>整数32;
+函数 CredGetTargetInfoW(整数32,整数32,整数32)=>整数32;
+函数 CredIsMarshaledCredentialA(整数32)=>整数32;
+函数 CredIsMarshaledCredentialW(整数32)=>整数32;
+函数 CredMarshalCredentialA(整数32,整数32,整数32)=>整数32;
+函数 CredMarshalCredentialW(整数32,整数32,整数32)=>整数32;
+函数 CredReadA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredReadDomainCredentialsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredReadDomainCredentialsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredReadW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredRenameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredRenameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CredUnmarshalCredentialA(整数32,整数32,整数32)=>整数32;
+函数 CredUnmarshalCredentialW(整数32,整数32,整数32)=>整数32;
+函数 CredWriteA(整数32,整数32)=>整数32;
+函数 CredWriteDomainCredentialsA(整数32,整数32,整数32)=>整数32;
+函数 CredWriteDomainCredentialsW(整数32,整数32,整数32)=>整数32;
+函数 CredWriteW(整数32,整数32)=>整数32;
+函数 CryptAcquireContextA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptAcquireContextW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptContextAddRef(整数32,整数32,整数32)=>整数32;
+函数 CryptCreateHash(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptDecrypt(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptDeriveKey(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptDestroyHash(整数32)=>整数32;
+函数 CryptDestroyKey(整数32)=>整数32;
+函数 CryptDuplicateHash(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptDuplicateKey(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptEncrypt(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptEnumProviderTypesA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptEnumProviderTypesW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptEnumProvidersA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptEnumProvidersW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptExportKey(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGenKey(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGenRandom(整数32,整数32,整数32)=>整数32;
+函数 CryptGetDefaultProviderA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGetDefaultProviderW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGetHashParam(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGetKeyParam(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGetProvParam(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptGetUserKey(整数32,整数32,整数32)=>整数32;
+函数 CryptHashData(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptHashSessionKey(整数32,整数32,整数32)=>整数32;
+函数 CryptImportKey(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptReleaseContext(整数32,整数32)=>整数32;
+函数 CryptSetHashParam(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSetKeyParam(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSetProvParam(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSetProviderA(整数32,整数32)=>整数32;
+函数 CryptSetProviderExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSetProviderExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSetProviderW(整数32,整数32)=>整数32;
+函数 CryptSignHashA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptSignHashW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptVerifySignatureA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CryptVerifySignatureW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DecryptFileA(整数32,整数32)=>整数32;
+函数 DecryptFileW(整数32,整数32)=>整数32;
+函数 DeleteAce(整数32,整数32)=>整数32;
+函数 DeleteService(整数32)=>整数32;
+函数 DeregisterEventSource(整数32)=>整数32;
+函数 DestroyPrivateObjectSecurity(整数32)=>整数32;
+函数 DuplicateEncryptionInfoFile(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DuplicateToken(整数32,整数32,整数32)=>整数32;
+函数 DuplicateTokenEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ElfBackupEventLogFileA(整数32,整数32)=>整数32;
+函数 ElfBackupEventLogFileW(整数32,整数32)=>整数32;
+函数 ElfChangeNotify(整数32,整数32)=>整数32;
+函数 ElfClearEventLogFileA(整数32,整数32)=>整数32;
+函数 ElfClearEventLogFileW(整数32,整数32)=>整数32;
+函数 ElfCloseEventLog(整数32)=>整数32;
+函数 ElfDeregisterEventSource(整数32)=>整数32;
+函数 ElfFlushEventLog(整数32)=>整数32;
+函数 ElfNumberOfRecords(整数32,整数32)=>整数32;
+函数 ElfOldestRecord(整数32,整数32)=>整数32;
+函数 ElfOpenBackupEventLogA(整数32,整数32,整数32)=>整数32;
+函数 ElfOpenBackupEventLogW(整数32,整数32,整数32)=>整数32;
+函数 ElfOpenEventLogA(整数32,整数32,整数32)=>整数32;
+函数 ElfOpenEventLogW(整数32,整数32,整数32)=>整数32;
+函数 ElfReadEventLogA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ElfReadEventLogW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ElfRegisterEventSourceA(整数32,整数32,整数32)=>整数32;
+函数 ElfRegisterEventSourceW(整数32,整数32,整数32)=>整数32;
+函数 ElfReportEventA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ElfReportEventAndSourceW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ElfReportEventW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnableTrace(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EncryptFileA(整数32)=>整数32;
+函数 EncryptFileW(整数32)=>整数32;
+函数 EncryptedFileKeyInfo(整数32,整数32,整数32)=>整数32;
+函数 EncryptionDisable(整数32,整数32)=>整数32;
+函数 EnumDependentServicesA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumDependentServicesW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumServiceGroupW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumServicesStatusA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumServicesStatusExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumServicesStatusExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumServicesStatusW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumerateTraceGuids(整数32,整数32,整数32)=>整数32;
+函数 EqualDomainSid(整数32,整数32,整数32)=>整数32;
+函数 EqualPrefixSid(整数32,整数32)=>整数32;
+函数 EqualSid(整数32,整数32)=>整数32;
+函数 FileEncryptionStatusA(整数32,整数32)=>整数32;
+函数 FileEncryptionStatusW(整数32,整数32)=>整数32;
+函数 FindFirstFreeAce(整数32,整数32)=>整数32;
+函数 FlushTraceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FlushTraceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FreeEncryptedFileKeyInfo(整数32)=>整数32;
+函数 FreeEncryptionCertificateHashList(整数32)=>整数32;
+函数 FreeInheritedFromArray(整数32,整数32,整数32)=>整数32;
+函数 FreeSid(整数32)=>整数32;
+函数 GetAccessPermissionsForObjectA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAccessPermissionsForObjectW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAce(整数32,整数32,整数32)=>整数32;
+函数 GetAclInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAuditedPermissionsFromAclA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAuditedPermissionsFromAclW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetCurrentHwProfileA(整数32)=>整数32;
+函数 GetCurrentHwProfileW(整数32)=>整数32;
+函数 GetEffectiveRightsFromAclA(整数32,整数32,整数32)=>整数32;
+函数 GetEffectiveRightsFromAclW(整数32,整数32,整数32)=>整数32;
+函数 GetEventLogInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetExplicitEntriesFromAclA(整数32,整数32,整数32)=>整数32;
+函数 GetExplicitEntriesFromAclW(整数32,整数32,整数32)=>整数32;
+函数 GetFileSecurityA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetFileSecurityW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetInformationCodeAuthzLevelW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetInformationCodeAuthzPolicyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetInheritanceSourceA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetInheritanceSourceW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetKernelObjectSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetLengthSid(整数32)=>整数32;
+函数 GetLocalManagedApplicationData(整数32,整数32,整数32)=>整数32;
+函数 GetLocalManagedApplications(整数32,整数32,整数32)=>整数32;
+函数 GetManagedApplicationCategories(整数32,整数32)=>整数32;
+函数 GetManagedApplications(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMultipleTrusteeA(整数32)=>整数32;
+函数 GetMultipleTrusteeOperationA(整数32)=>整数32;
+函数 GetMultipleTrusteeOperationW(整数32)=>整数32;
+函数 GetMultipleTrusteeW(整数32)=>整数32;
+函数 GetNamedSecurityInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNamedSecurityInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNamedSecurityInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNamedSecurityInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNumberOfEventLogRecords(整数32,整数32)=>整数32;
+函数 GetOldestEventLogRecord(整数32,整数32)=>整数32;
+函数 GetOverlappedAccessResults(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPrivateObjectSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSecurityDescriptorControl(整数32,整数32,整数32)=>整数32;
+函数 GetSecurityDescriptorDacl(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSecurityDescriptorGroup(整数32,整数32,整数32)=>整数32;
+函数 GetSecurityDescriptorLength(整数32)=>整数32;
+函数 GetSecurityDescriptorOwner(整数32,整数32,整数32)=>整数32;
+函数 GetSecurityDescriptorRMControl(整数32,整数32)=>整数32;
+函数 GetSecurityDescriptorSacl(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSecurityInfo(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSecurityInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSecurityInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetServiceDisplayNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetServiceDisplayNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetServiceKeyNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetServiceKeyNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetSidIdentifierAuthority(整数32)=>整数32;
+函数 GetSidLengthRequired(整数32)=>整数32;
+函数 GetSidSubAuthority(整数32,整数32)=>整数32;
+函数 GetSidSubAuthorityCount(整数32)=>整数32;
+函数 GetTokenInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTraceEnableFlags(整数32,整数32)=>整数32;
+函数 GetTraceEnableLevel(整数32,整数32)=>整数32;
+函数 GetTraceLoggerHandle(整数32)=>整数32;
+函数 GetTrusteeFormA(整数32)=>整数32;
+函数 GetTrusteeFormW(整数32)=>整数32;
+函数 GetTrusteeNameA(整数32)=>整数32;
+函数 GetTrusteeNameW(整数32)=>整数32;
+函数 GetTrusteeTypeA(整数32)=>整数32;
+函数 GetTrusteeTypeW(整数32)=>整数32;
+函数 GetUserNameA(整数32,整数32)=>整数32;
+函数 GetUserNameW(整数32,整数32)=>整数32;
+函数 GetWindowsAccountDomainSid(整数32,整数32,整数32)=>整数32;
+函数 I_ScSetServiceBitsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 I_ScSetServiceBitsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 IdentifyCodeAuthzLevelW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ImpersonateAnonymousToken(整数32)=>整数32;
+函数 ImpersonateLoggedOnUser(整数32)=>整数32;
+函数 ImpersonateNamedPipeClient(整数32)=>整数32;
+函数 ImpersonateSelf(整数32)=>整数32;
+函数 InitializeAcl(整数32,整数32,整数32)=>整数32;
+函数 InitializeSecurityDescriptor(整数32,整数32)=>整数32;
+函数 InitializeSid(整数32,整数32,整数32)=>整数32;
+函数 InitiateSystemShutdownA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InitiateSystemShutdownExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InitiateSystemShutdownExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InitiateSystemShutdownW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InstallApplication(整数32)=>整数32;
+函数 IsTextUnicode(整数32,整数32,整数32)=>整数32;
+函数 IsTokenRestricted(整数32)=>整数32;
+函数 IsTokenUntrusted(整数32)=>整数32;
+函数 IsValidAcl(整数32)=>整数32;
+函数 IsValidSecurityDescriptor(整数32)=>整数32;
+函数 IsValidSid(整数32)=>整数32;
+函数 IsWellKnownSid(整数32,整数32)=>整数32;
+函数 LockServiceDatabase(整数32)=>整数32;
+函数 LogonUserA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LogonUserExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LogonUserExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LogonUserW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupAccountNameA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupAccountNameW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupAccountSidA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupAccountSidW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupPrivilegeDisplayNameA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupPrivilegeDisplayNameW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupPrivilegeNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupPrivilegeNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupPrivilegeValueA(整数32,整数32,整数32)=>整数32;
+函数 LookupPrivilegeValueW(整数32,整数32,整数32)=>整数32;
+函数 LookupSecurityDescriptorPartsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LookupSecurityDescriptorPartsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaAddAccountRights(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaAddPrivilegesToAccount(整数32,整数32)=>整数32;
+函数 LsaClearAuditLog(整数32)=>整数32;
+函数 LsaClose(整数32)=>整数32;
+函数 LsaCreateAccount(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaCreateSecret(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaCreateTrustedDomain(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaCreateTrustedDomainEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaDelete(整数32)=>整数32;
+函数 LsaDeleteTrustedDomain(整数32,整数32)=>整数32;
+函数 LsaEnumerateAccountRights(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaEnumerateAccounts(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaEnumerateAccountsWithUserRight(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaEnumeratePrivileges(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaEnumeratePrivilegesOfAccount(整数32,整数32)=>整数32;
+函数 LsaEnumerateTrustedDomains(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaEnumerateTrustedDomainsEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaFreeMemory(整数32)=>整数32;
+函数 LsaGetQuotasForAccount(整数32,整数32)=>整数32;
+函数 LsaGetRemoteUserName(整数32,整数32,整数32)=>整数32;
+函数 LsaGetSystemAccessAccount(整数32,整数32)=>整数32;
+函数 LsaGetUserName(整数32,整数32)=>整数32;
+函数 LsaICLookupNames(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaICLookupNamesWithCreds(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaICLookupSids(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaICLookupSidsWithCreds(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaLookupNames2(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaLookupNames(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaLookupPrivilegeDisplayName(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaLookupPrivilegeName(整数32,整数32,整数32)=>整数32;
+函数 LsaLookupPrivilegeValue(整数32,整数32,整数32)=>整数32;
+函数 LsaLookupSids(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaNtStatusToWinError(整数32)=>整数32;
+函数 LsaOpenAccount(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaOpenPolicy(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaOpenPolicySce(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaOpenSecret(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaOpenTrustedDomain(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaOpenTrustedDomainByName(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaQueryDomainInformationPolicy(整数32,整数32,整数32)=>整数32;
+函数 LsaQueryForestTrustInformation(整数32,整数32,整数32)=>整数32;
+函数 LsaQueryInfoTrustedDomain(整数32,整数32,整数32)=>整数32;
+函数 LsaQueryInformationPolicy(整数32,整数32,整数32)=>整数32;
+函数 LsaQuerySecret(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaQuerySecurityObject(整数32,整数32,整数32)=>整数32;
+函数 LsaQueryTrustedDomainInfo(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaQueryTrustedDomainInfoByName(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaRemoveAccountRights(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaRemovePrivilegesFromAccount(整数32,整数32,整数32)=>整数32;
+函数 LsaRetrievePrivateData(整数32,整数32,整数32)=>整数32;
+函数 LsaSetDomainInformationPolicy(整数32,整数32,整数32)=>整数32;
+函数 LsaSetForestTrustInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaSetInformationPolicy(整数32,整数32,整数32)=>整数32;
+函数 LsaSetInformationTrustedDomain(整数32,整数32,整数32)=>整数32;
+函数 LsaSetQuotasForAccount(整数32,整数32)=>整数32;
+函数 LsaSetSecret(整数32,整数32,整数32)=>整数32;
+函数 LsaSetSecurityObject(整数32,整数32,整数32)=>整数32;
+函数 LsaSetSystemAccessAccount(整数32,整数32)=>整数32;
+函数 LsaSetTrustedDomainInfoByName(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaSetTrustedDomainInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 LsaStorePrivateData(整数32,整数32,整数32)=>整数32;
+函数 MSChapSrvChangePassword2(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MSChapSrvChangePassword(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MakeAbsoluteSD2(整数32,整数32)=>整数32;
+函数 MakeAbsoluteSD(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MakeSelfRelativeSD(整数32,整数32,整数32)=>整数32;
+函数 MapGenericMask(整数32,整数32)=>整数32;
+函数 NotifyBootConfigStatus(整数32)=>整数32;
+函数 NotifyChangeEventLog(整数32,整数32)=>整数32;
+函数 ObjectCloseAuditAlarmA(整数32,整数32,整数32)=>整数32;
+函数 ObjectCloseAuditAlarmW(整数32,整数32,整数32)=>整数32;
+函数 ObjectDeleteAuditAlarmA(整数32,整数32,整数32)=>整数32;
+函数 ObjectDeleteAuditAlarmW(整数32,整数32,整数32)=>整数32;
+函数 ObjectOpenAuditAlarmA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ObjectOpenAuditAlarmW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ObjectPrivilegeAuditAlarmA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ObjectPrivilegeAuditAlarmW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenBackupEventLogA(整数32,整数32)=>整数32;
+函数 OpenBackupEventLogW(整数32,整数32)=>整数32;
+函数 OpenEncryptedFileRawA(整数32,整数32,整数32)=>整数32;
+函数 OpenEncryptedFileRawW(整数32,整数32,整数32)=>整数32;
+函数 OpenEventLogA(整数32,整数32)=>整数32;
+函数 OpenEventLogW(整数32,整数32)=>整数32;
+函数 OpenProcessToken(整数32,整数32,整数32)=>整数32;
+函数 OpenSCManagerA(整数32,整数32,整数32)=>整数32;
+函数 OpenSCManagerW(整数32,整数32,整数32)=>整数32;
+函数 OpenServiceA(整数32,整数32,整数32)=>整数32;
+函数 OpenServiceW(整数32,整数32,整数32)=>整数32;
+函数 OpenThreadToken(整数32,整数32,整数32,整数32)=>整数32;
+函数 OpenTraceA(整数32)=>整数32;
+函数 OpenTraceW(整数32)=>整数32;
+函数 PrivilegeCheck(整数32,整数32,整数32)=>整数32;
+函数 PrivilegedServiceAuditAlarmA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrivilegedServiceAuditAlarmW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ProcessTrace(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryAllTracesA(整数32,整数32,整数32)=>整数32;
+函数 QueryAllTracesW(整数32,整数32,整数32)=>整数32;
+函数 QueryRecoveryAgentsOnEncryptedFile(整数32,整数32)=>整数32;
+函数 QueryServiceConfig2A(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceConfig2W(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceConfigA(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceConfigW(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceLockStatusA(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceLockStatusW(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceObjectSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryServiceStatus(整数32,整数32)=>整数32;
+函数 QueryServiceStatusEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryTraceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryTraceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 QueryUsersOnEncryptedFile(整数32,整数32)=>整数32;
+函数 ReadEncryptedFileRaw(整数32,整数32,整数32)=>整数32;
+函数 ReadEventLogA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadEventLogW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 注册表关闭键:RegCloseKey(整数32)=>整数32;
+函数 RegConnectRegistryA(整数32,整数32,整数32)=>整数32;
+函数 RegConnectRegistryExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegConnectRegistryExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegConnectRegistryW(整数32,整数32,整数32)=>整数32;
+函数 注册表创建键:RegCreateKeyA(整数32,整数32,整数32)=>整数32;
+函数 高级注册表创建键:RegCreateKeyExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegCreateKeyExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegCreateKeyW(整数32,整数32,整数32)=>整数32;
+函数 注册表删除键:RegDeleteKeyA(整数32,整数32)=>整数32;
+函数 高级注册表删除键:RegDeleteKeyExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegDeleteKeyExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegDeleteKeyW(整数32,整数32)=>整数32;
+函数 注册表删除值:RegDeleteValueA(整数32,整数32)=>整数32;
+函数 RegDeleteValueW(整数32,整数32)=>整数32;
+函数 RegDisablePredefinedCache()=>整数32;
+函数 RegDisableReflectionKey(整数32)=>整数32;
+函数 RegEnableReflectionKey(整数32)=>整数32;
+函数 注册表枚举键:RegEnumKeyA(整数32,整数32,整数32,整数32)=>整数32;
+函数 高级注册表枚举键:RegEnumKeyExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegEnumKeyExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegEnumKeyW(整数32,整数32,整数32,整数32)=>整数32;
+函数 注册表枚举值:RegEnumValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegEnumValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegFlushKey(整数32)=>整数32;
+函数 RegGetKeySecurity(整数32,整数32,整数32,整数32)=>整数32;
+函数 注册表获取值:RegGetValueA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegGetValueW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegLoadKeyA(整数32,整数32,整数32)=>整数32;
+函数 RegLoadKeyW(整数32,整数32,整数32)=>整数32;
+函数 RegNotifyChangeKeyValue(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegOpenCurrentUser(整数32,整数32)=>整数32;
+函数 注册表打开键:RegOpenKeyA(整数32,整数32,整数32)=>整数32;
+函数 高级注册表打开键:RegOpenKeyExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegOpenKeyExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegOpenKeyW(整数32,整数32,整数32)=>整数32;
+函数 RegOpenUserClassesRoot(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegOverridePredefKey(整数32,整数32)=>整数32;
+函数 RegQueryInfoKeyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegQueryInfoKeyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegQueryMultipleValuesA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegQueryMultipleValuesW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegQueryReflectionKey(整数32,整数32)=>整数32;
+函数 注册表查询值:RegQueryValueA(整数32,整数32,整数32,整数32)=>整数32;
+函数 高级注册表查询值:RegQueryValueExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegQueryValueExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegQueryValueW(整数32,整数32,整数32,整数32)=>整数32;
+函数 注册表替换键:RegReplaceKeyA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegReplaceKeyW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegRestoreKeyA(整数32,整数32,整数32)=>整数32;
+函数 RegRestoreKeyW(整数32,整数32,整数32)=>整数32;
+函数 RegSaveKeyA(整数32,整数32,整数32)=>整数32;
+函数 RegSaveKeyExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegSaveKeyExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegSaveKeyW(整数32,整数32,整数32)=>整数32;
+函数 RegSetKeySecurity(整数32,整数32,整数32)=>整数32;
+函数 注册表设置值:RegSetValueA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 高级注册表设置值:RegSetValueExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegSetValueExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegSetValueW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegUnLoadKeyA(整数32,整数32)=>整数32;
+函数 RegUnLoadKeyW(整数32,整数32)=>整数32;
+函数 RegisterEventSourceA(整数32,整数32)=>整数32;
+函数 RegisterEventSourceW(整数32,整数32)=>整数32;
+函数 RegisterServiceCtrlHandlerA(整数32,整数32)=>整数32;
+函数 RegisterServiceCtrlHandlerExA(整数32,整数32,整数32)=>整数32;
+函数 RegisterServiceCtrlHandlerExW(整数32,整数32,整数32)=>整数32;
+函数 RegisterServiceCtrlHandlerW(整数32,整数32)=>整数32;
+函数 RegisterTraceGuidsA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterTraceGuidsW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RemoveTraceCallback(整数32)=>整数32;
+函数 RemoveUsersFromEncryptedFile(整数32,整数32)=>整数32;
+函数 ReportEventA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReportEventW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RevertToSelf()=>整数32;
+函数 SaferCloseLevel(整数32)=>整数32;
+函数 SaferComputeTokenFromLevel(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferCreateLevel(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferGetLevelInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferGetPolicyInformation(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferIdentifyLevel(整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferRecordEventLogEntry(整数32,整数32,整数32)=>整数32;
+函数 SaferSetLevelInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferSetPolicyInformation(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SaferiIsExecutableFileType(整数32,整数32)=>整数32;
+函数 SetAclInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetEntriesInAccessListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetEntriesInAccessListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetEntriesInAclA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetEntriesInAclW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetEntriesInAuditListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetEntriesInAuditListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetFileSecurityA(整数32,整数32,整数32)=>整数32;
+函数 SetFileSecurityW(整数32,整数32,整数32)=>整数32;
+函数 SetInformationCodeAuthzLevelW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetInformationCodeAuthzPolicyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetKernelObjectSecurity(整数32,整数32,整数32)=>整数32;
+函数 SetNamedSecurityInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNamedSecurityInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNamedSecurityInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNamedSecurityInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrivateObjectSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetPrivateObjectSecurityEx(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetSecurityDescriptorControl(整数32,整数32,整数32)=>整数32;
+函数 SetSecurityDescriptorDacl(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetSecurityDescriptorGroup(整数32,整数32,整数32)=>整数32;
+函数 SetSecurityDescriptorOwner(整数32,整数32,整数32)=>整数32;
+函数 SetSecurityDescriptorRMControl(整数32,整数32)=>整数32;
+函数 SetSecurityDescriptorSacl(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetSecurityInfo(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetSecurityInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetSecurityInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetServiceBits(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetServiceObjectSecurity(整数32,整数32,整数32)=>整数32;
+函数 SetServiceStatus(整数32,整数32)=>整数32;
+函数 SetThreadToken(整数32,整数32)=>整数32;
+函数 SetTokenInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetTraceCallback(整数32,整数32)=>整数32;
+函数 SetUserFileEncryptionKey(整数32)=>整数32;
+函数 StartServiceA(整数32,整数32,整数32)=>整数32;
+函数 StartServiceCtrlDispatcherA(整数32)=>整数32;
+函数 StartServiceCtrlDispatcherW(整数32)=>整数32;
+函数 StartServiceW(整数32,整数32,整数32)=>整数32;
+函数 StartTraceA(整数32,整数32,整数32)=>整数32;
+函数 StartTraceW(整数32,整数32,整数32)=>整数32;
+函数 StopTraceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StopTraceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SystemFunction001(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction002(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction003(整数32,整数32)=>整数32;
+函数 SystemFunction004(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction005(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction006(整数32,整数32)=>整数32;
+函数 SystemFunction007(整数32,整数32)=>整数32;
+函数 SystemFunction008(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction009(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction010(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction011(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction012(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction013(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction014(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction015(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction016(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction017(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction018(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction019(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction020(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction021(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction022(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction023(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction024(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction025(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction026(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction027(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction028(整数32,整数32)=>整数32;
+函数 SystemFunction029(整数32,整数32)=>整数32;
+函数 SystemFunction030(整数32,整数32)=>整数32;
+函数 SystemFunction031(整数32,整数32)=>整数32;
+函数 SystemFunction032(整数32,整数32)=>整数32;
+函数 SystemFunction033(整数32,整数32)=>整数32;
+函数 SystemFunction034(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction036(整数32,整数32)=>整数32;
+函数 SystemFunction040(整数32,整数32,整数32)=>整数32;
+函数 SystemFunction041(整数32,整数32,整数32)=>整数32;
+函数 TraceEvent(整数32,整数32,整数32)=>整数32;
+函数 TraceEventInstance(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 TraceMessage(整数32, ..)=>整数32;
+函数 TraceMessageVa(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TreeResetNamedSecurityInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TreeResetNamedSecurityInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TrusteeAccessToObjectA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TrusteeAccessToObjectW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UninstallApplication(整数32,整数32)=>整数32;
+函数 UnlockServiceDatabase(整数32)=>整数32;
+函数 UnregisterTraceGuids(整数32,整数32)=>整数32;
+函数 UpdateTraceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 UpdateTraceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 Wow64Win32ApiEntry(整数32,整数32,整数32)=>整数32;
+函数 WriteEncryptedFileRaw(整数32,整数32,整数32)=>整数32;
+
+宏定义 AbortSystemShutdown  AbortSystemShutdownA
+宏定义 AccessCheckAndAuditAlarm  AccessCheckAndAuditAlarmA
+宏定义 AccessCheckByTypeAndAuditAlarm  AccessCheckByTypeAndAuditAlarmA
+宏定义 AccessCheckByTypeResultListAndAuditAlarm  AccessCheckByTypeResultListAndAuditAlarmA
+宏定义 AccessCheckByTypeResultListAndAuditAlarmByHandle  AccessCheckByTypeResultListAndAuditAlarmByHandleA
+宏定义 BackupEventLog  BackupEventLogA
+宏定义 BuildExplicitAccessWithName  BuildExplicitAccessWithNameA
+宏定义 BuildImpersonateExplicitAccessWithName  BuildImpersonateExplicitAccessWithNameA
+宏定义 BuildImpersonateTrustee  BuildImpersonateTrusteeA
+宏定义 BuildSecurityDescriptor  BuildSecurityDescriptorA
+宏定义 BuildTrusteeWithName  BuildTrusteeWithNameA
+宏定义 BuildTrusteeWithObjectsAndName  BuildTrusteeWithObjectsAndNameA
+宏定义 BuildTrusteeWithObjectsAndSid  BuildTrusteeWithObjectsAndSidA
+宏定义 BuildTrusteeWithSid  BuildTrusteeWithSidA
+宏定义 ChangeServiceConfig2  ChangeServiceConfig2A
+宏定义 ChangeServiceConfig  ChangeServiceConfigA
+宏定义 ClearEventLog  ClearEventLogA
+宏定义 ControlTrace  ControlTraceA
+宏定义 ConvertAccessToSecurityDescriptor  ConvertAccessToSecurityDescriptorA
+宏定义 ConvertSDToStringSDRootDomain  ConvertSDToStringSDRootDomainA
+宏定义 ConvertSecurityDescriptorToAccess  ConvertSecurityDescriptorToAccessA
+宏定义 ConvertSecurityDescriptorToAccessNamed  ConvertSecurityDescriptorToAccessNamedA
+宏定义 ConvertSecurityDescriptorToStringSecurityDescriptor  ConvertSecurityDescriptorToStringSecurityDescriptorA
+宏定义 ConvertSidToStringSid  ConvertSidToStringSidA
+宏定义 ConvertStringSDToSDDomain  ConvertStringSDToSDDomainA
+宏定义 ConvertStringSDToSDRootDomain  ConvertStringSDToSDRootDomainA
+宏定义 ConvertStringSecurityDescriptorToSecurityDescriptor  ConvertStringSecurityDescriptorToSecurityDescriptorA
+宏定义 ConvertStringSidToSid  ConvertStringSidToSidA
+宏定义 CreateProcessAsUser  CreateProcessAsUserA
+宏定义 CreateService  CreateServiceA
+宏定义 CredDelete  CredDeleteA
+宏定义 CredEnumerate  CredEnumerateA
+宏定义 CredGetTargetInfo  CredGetTargetInfoA
+宏定义 CredIsMarshaledCredential  CredIsMarshaledCredentialA
+宏定义 CredMarshalCredential  CredMarshalCredentialA
+宏定义 CredRead  CredReadA
+宏定义 CredReadDomainCredentials  CredReadDomainCredentialsA
+宏定义 CredRename  CredRenameA
+宏定义 CredUnmarshalCredential  CredUnmarshalCredentialA
+宏定义 CredWrite  CredWriteA
+宏定义 CredWriteDomainCredentials  CredWriteDomainCredentialsA
+宏定义 CryptAcquireContext  CryptAcquireContextA
+宏定义 CryptEnumProviderTypes  CryptEnumProviderTypesA
+宏定义 CryptEnumProviders  CryptEnumProvidersA
+宏定义 CryptGetDefaultProvider  CryptGetDefaultProviderA
+宏定义 CryptSetProvider  CryptSetProviderA
+宏定义 CryptSetProviderEx  CryptSetProviderExA
+宏定义 CryptSignHash  CryptSignHashA
+宏定义 CryptVerifySignature  CryptVerifySignatureA
+宏定义 DecryptFile  DecryptFileA
+宏定义 ElfBackupEventLogFile  ElfBackupEventLogFileA
+宏定义 ElfClearEventLogFile  ElfClearEventLogFileA
+宏定义 ElfOpenBackupEventLog  ElfOpenBackupEventLogA
+宏定义 ElfOpenEventLog  ElfOpenEventLogA
+宏定义 ElfReadEventLog  ElfReadEventLogA
+宏定义 ElfRegisterEventSource  ElfRegisterEventSourceA
+宏定义 ElfReportEvent  ElfReportEventA
+宏定义 EncryptFile  EncryptFileA
+宏定义 EnumDependentServices  EnumDependentServicesA
+宏定义 EnumServicesStatus  EnumServicesStatusA
+宏定义 EnumServicesStatusEx  EnumServicesStatusExA
+宏定义 FileEncryptionStatus  FileEncryptionStatusA
+宏定义 FlushTrace  FlushTraceA
+宏定义 GetAccessPermissionsForObject  GetAccessPermissionsForObjectA
+宏定义 GetAuditedPermissionsFromAcl  GetAuditedPermissionsFromAclA
+宏定义 GetCurrentHwProfile  GetCurrentHwProfileA
+宏定义 GetEffectiveRightsFromAcl  GetEffectiveRightsFromAclA
+宏定义 GetExplicitEntriesFromAcl  GetExplicitEntriesFromAclA
+宏定义 GetFileSecurity  GetFileSecurityA
+宏定义 GetInheritanceSource  GetInheritanceSourceA
+宏定义 GetMultipleTrustee  GetMultipleTrusteeA
+宏定义 GetMultipleTrusteeOperation  GetMultipleTrusteeOperationA
+宏定义 GetNamedSecurityInfo  GetNamedSecurityInfoA
+宏定义 GetNamedSecurityInfoEx  GetNamedSecurityInfoExA
+宏定义 GetSecurityInfoEx  GetSecurityInfoExA
+宏定义 GetServiceDisplayName  GetServiceDisplayNameA
+宏定义 GetServiceKeyName  GetServiceKeyNameA
+宏定义 GetTrusteeForm  GetTrusteeFormA
+宏定义 GetTrusteeName  GetTrusteeNameA
+宏定义 GetTrusteeType  GetTrusteeTypeA
+宏定义 GetUserName  GetUserNameA
+宏定义 I_ScSetServiceBits  I_ScSetServiceBitsA
+宏定义 InitiateSystemShutdown  InitiateSystemShutdownA
+宏定义 InitiateSystemShutdownEx  InitiateSystemShutdownExA
+宏定义 LogonUser  LogonUserA
+宏定义 LogonUserEx  LogonUserExA
+宏定义 LookupAccountName  LookupAccountNameA
+宏定义 LookupAccountSid  LookupAccountSidA
+宏定义 LookupPrivilegeDisplayName  LookupPrivilegeDisplayNameA
+宏定义 LookupPrivilegeName  LookupPrivilegeNameA
+宏定义 LookupPrivilegeValue  LookupPrivilegeValueA
+宏定义 LookupSecurityDescriptorParts  LookupSecurityDescriptorPartsA
+宏定义 ObjectCloseAuditAlarm  ObjectCloseAuditAlarmA
+宏定义 ObjectDeleteAuditAlarm  ObjectDeleteAuditAlarmA
+宏定义 ObjectOpenAuditAlarm  ObjectOpenAuditAlarmA
+宏定义 ObjectPrivilegeAuditAlarm  ObjectPrivilegeAuditAlarmA
+宏定义 OpenBackupEventLog  OpenBackupEventLogA
+宏定义 OpenEncryptedFileRaw  OpenEncryptedFileRawA
+宏定义 OpenEventLog  OpenEventLogA
+宏定义 OpenSCManager  OpenSCManagerA
+宏定义 OpenService  OpenServiceA
+宏定义 OpenTrace  OpenTraceA
+宏定义 PrivilegedServiceAuditAlarm  PrivilegedServiceAuditAlarmA
+宏定义 QueryAllTraces  QueryAllTracesA
+宏定义 QueryServiceConfig2  QueryServiceConfig2A
+宏定义 QueryServiceConfig  QueryServiceConfigA
+宏定义 QueryServiceLockStatus  QueryServiceLockStatusA
+宏定义 QueryTrace  QueryTraceA
+宏定义 ReadEventLog  ReadEventLogA
+宏定义 RegConnectRegistry  RegConnectRegistryA
+宏定义 RegConnectRegistryEx  RegConnectRegistryExA
+宏定义 RegCreateKey  RegCreateKeyA
+宏定义 RegCreateKeyEx  RegCreateKeyExA
+宏定义 RegDeleteKey  RegDeleteKeyA
+宏定义 RegDeleteKeyEx  RegDeleteKeyExA
+宏定义 RegDeleteValue  RegDeleteValueA
+宏定义 RegEnumKey  RegEnumKeyA
+宏定义 RegEnumKeyEx  RegEnumKeyExA
+宏定义 RegEnumValue  RegEnumValueA
+宏定义 RegGetValue  RegGetValueA
+宏定义 RegLoadKey  RegLoadKeyA
+宏定义 RegOpenKey  RegOpenKeyA
+宏定义 RegOpenKeyEx  RegOpenKeyExA
+宏定义 RegQueryInfoKey  RegQueryInfoKeyA
+宏定义 RegQueryMultipleValues  RegQueryMultipleValuesA
+宏定义 RegQueryValue  RegQueryValueA
+宏定义 RegQueryValueEx  RegQueryValueExA
+宏定义 RegReplaceKey  RegReplaceKeyA
+宏定义 RegRestoreKey  RegRestoreKeyA
+宏定义 RegSaveKey  RegSaveKeyA
+宏定义 RegSaveKeyEx  RegSaveKeyExA
+宏定义 RegSetValue  RegSetValueA
+宏定义 RegSetValueEx  RegSetValueExA
+宏定义 RegUnLoadKey  RegUnLoadKeyA
+宏定义 RegisterEventSource  RegisterEventSourceA
+宏定义 RegisterServiceCtrlHandler  RegisterServiceCtrlHandlerA
+宏定义 RegisterServiceCtrlHandlerEx  RegisterServiceCtrlHandlerExA
+宏定义 RegisterTraceGuids  RegisterTraceGuidsA
+宏定义 ReportEvent  ReportEventA
+宏定义 SetEntriesInAccessList  SetEntriesInAccessListA
+宏定义 SetEntriesInAcl  SetEntriesInAclA
+宏定义 SetEntriesInAuditList  SetEntriesInAuditListA
+宏定义 SetFileSecurity  SetFileSecurityA
+宏定义 SetNamedSecurityInfo  SetNamedSecurityInfoA
+宏定义 SetNamedSecurityInfoEx  SetNamedSecurityInfoExA
+宏定义 SetSecurityInfoEx  SetSecurityInfoExA
+宏定义 StartService  StartServiceA
+宏定义 StartServiceCtrlDispatcher  StartServiceCtrlDispatcherA
+宏定义 StartTrace  StartTraceA
+宏定义 StopTrace  StopTraceA
+宏定义 TreeResetNamedSecurityInfo  TreeResetNamedSecurityInfoA
+宏定义 TrusteeAccessToObject  TrusteeAccessToObjectA
+宏定义 UpdateTrace  UpdateTraceA
+}

@@ -1,0 +1,930 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAbortSystemShutdownA(Ë«×Ö)
+¡ßAbortSystemShutdown  AbortSystemShutdownA
+
+¡ÒAbortSystemShutdownW(Ë«×Ö)
+¡ÒAccessCheck(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessCheckAndAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAccessCheckAndAuditAlarm  AccessCheckAndAuditAlarmA
+
+¡ÒAccessCheckAndAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessCheckByType(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessCheckByTypeAndAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAccessCheckByTypeAndAuditAlarm  AccessCheckByTypeAndAuditAlarmA
+
+¡ÒAccessCheckByTypeAndAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessCheckByTypeResultList(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessCheckByTypeResultListAndAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAccessCheckByTypeResultListAndAuditAlarm  AccessCheckByTypeResultListAndAuditAlarmA
+
+¡ÒAccessCheckByTypeResultListAndAuditAlarmByHandleA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAccessCheckByTypeResultListAndAuditAlarmByHandle  AccessCheckByTypeResultListAndAuditAlarmByHandleA
+
+¡ÒAccessCheckByTypeResultListAndAuditAlarmByHandleW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessCheckByTypeResultListAndAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAccessAllowedAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAccessAllowedAceEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAccessAllowedObjectAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAccessDeniedAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAccessDeniedAceEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAccessDeniedObjectAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAuditAccessAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAuditAccessAceEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddAuditAccessObjectAce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAddUsersToEncryptedFile(Ë«×Ö,Ë«×Ö)
+¡ÒAdjustTokenGroups(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAdjustTokenPrivileges(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAllocateAndInitializeSid(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAllocateLocallyUniqueId(Ë«×Ö)
+¡ÒAreAllAccessesGranted(Ë«×Ö,Ë«×Ö)
+¡ÒAreAnyAccessesGranted(Ë«×Ö,Ë«×Ö)
+¡ÒBackupEventLogA(Ë«×Ö,Ë«×Ö)
+¡ßBackupEventLog  BackupEventLogA
+
+¡ÒBackupEventLogW(Ë«×Ö,Ë«×Ö)
+¡ÒBuildExplicitAccessWithNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBuildExplicitAccessWithName  BuildExplicitAccessWithNameA
+
+¡ÒBuildExplicitAccessWithNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildImpersonateExplicitAccessWithNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBuildImpersonateExplicitAccessWithName  BuildImpersonateExplicitAccessWithNameA
+
+¡ÒBuildImpersonateExplicitAccessWithNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildImpersonateTrusteeA(Ë«×Ö,Ë«×Ö)
+¡ßBuildImpersonateTrustee  BuildImpersonateTrusteeA
+
+¡ÒBuildImpersonateTrusteeW(Ë«×Ö,Ë«×Ö)
+¡ÒBuildSecurityDescriptorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBuildSecurityDescriptor  BuildSecurityDescriptorA
+
+¡ÒBuildSecurityDescriptorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildTrusteeWithNameA(Ë«×Ö,Ë«×Ö)
+¡ßBuildTrusteeWithName  BuildTrusteeWithNameA
+
+¡ÒBuildTrusteeWithNameW(Ë«×Ö,Ë«×Ö)
+¡ÒBuildTrusteeWithObjectsAndNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBuildTrusteeWithObjectsAndName  BuildTrusteeWithObjectsAndNameA
+
+¡ÒBuildTrusteeWithObjectsAndNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildTrusteeWithObjectsAndSidA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßBuildTrusteeWithObjectsAndSid  BuildTrusteeWithObjectsAndSidA
+
+¡ÒBuildTrusteeWithObjectsAndSidW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒBuildTrusteeWithSidA(Ë«×Ö,Ë«×Ö)
+¡ßBuildTrusteeWithSid  BuildTrusteeWithSidA
+
+¡ÒBuildTrusteeWithSidW(Ë«×Ö,Ë«×Ö)
+¡ÒCancelOverlappedAccess(Ë«×Ö)
+¡ÒChangeServiceConfig2A(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßChangeServiceConfig2  ChangeServiceConfig2A
+
+¡ÒChangeServiceConfig2W(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChangeServiceConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßChangeServiceConfig  ChangeServiceConfigA
+
+¡ÒChangeServiceConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCheckTokenMembership(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒClearEventLogA(Ë«×Ö,Ë«×Ö)
+¡ßClearEventLog  ClearEventLogA
+
+¡ÒClearEventLogW(Ë«×Ö,Ë«×Ö)
+¡ÒCloseCodeAuthzLevel(Ë«×Ö)
+¡ÒCloseEncryptedFileRaw(Ë«×Ö)
+¡ÒCloseEventLog(Ë«×Ö)
+¡ÒCloseServiceHandle(Ë«×Ö)
+¡ÒCloseTrace(Ë«×Ö,Ë«×Ö)
+¡ÒCommandLineFromMsiDescriptor(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒComputeAccessTokenFromCodeAuthzLevel(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒControlService(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒControlTraceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßControlTrace  ControlTraceA
+
+¡ÒControlTraceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertAccessToSecurityDescriptorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertAccessToSecurityDescriptor  ConvertAccessToSecurityDescriptorA
+
+¡ÒConvertAccessToSecurityDescriptorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertSDToStringSDRootDomainA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertSDToStringSDRootDomain  ConvertSDToStringSDRootDomainA
+
+¡ÒConvertSDToStringSDRootDomainW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertSecurityDescriptorToAccessA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertSecurityDescriptorToAccess  ConvertSecurityDescriptorToAccessA
+
+¡ÒConvertSecurityDescriptorToAccessNamedA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertSecurityDescriptorToAccessNamed  ConvertSecurityDescriptorToAccessNamedA
+
+¡ÒConvertSecurityDescriptorToAccessNamedW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertSecurityDescriptorToAccessW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertSecurityDescriptorToStringSecurityDescriptorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertSecurityDescriptorToStringSecurityDescriptor  ConvertSecurityDescriptorToStringSecurityDescriptorA
+
+¡ÒConvertSecurityDescriptorToStringSecurityDescriptorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertSidToStringSidA(Ë«×Ö,Ë«×Ö)
+¡ßConvertSidToStringSid  ConvertSidToStringSidA
+
+¡ÒConvertSidToStringSidW(Ë«×Ö,Ë«×Ö)
+¡ÒConvertStringSDToSDDomainA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertStringSDToSDDomain  ConvertStringSDToSDDomainA
+
+¡ÒConvertStringSDToSDDomainW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertStringSDToSDRootDomainA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertStringSDToSDRootDomain  ConvertStringSDToSDRootDomainA
+
+¡ÒConvertStringSDToSDRootDomainW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertStringSecurityDescriptorToSecurityDescriptorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßConvertStringSecurityDescriptorToSecurityDescriptor  ConvertStringSecurityDescriptorToSecurityDescriptorA
+
+¡ÒConvertStringSecurityDescriptorToSecurityDescriptorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒConvertStringSidToSidA(Ë«×Ö,Ë«×Ö)
+¡ßConvertStringSidToSid  ConvertStringSidToSidA
+
+¡ÒConvertStringSidToSidW(Ë«×Ö,Ë«×Ö)
+¡ÒConvertToAutoInheritPrivateObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCopySid(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateCodeAuthzLevel(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePrivateObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePrivateObjectSecurityEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreatePrivateObjectSecurityWithMultipleInheritance(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateProcessAsUserA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateProcessAsUser  CreateProcessAsUserA
+
+¡ÒCreateProcessAsUserW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateProcessWithLogonW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateProcessWithTokenW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateRestrictedToken(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateServiceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateService  CreateServiceA
+
+¡ÒCreateServiceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateTraceInstanceId(Ë«×Ö,Ë«×Ö)
+¡ÒCreateWellKnownSid(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredDeleteA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredDelete  CredDeleteA
+
+¡ÒCredDeleteW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredEnumerateA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredEnumerate  CredEnumerateA
+
+¡ÒCredEnumerateW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredFree(Ë«×Ö)
+¡ÒCredGetSessionTypes(Ë«×Ö,Ë«×Ö)
+¡ÒCredGetTargetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredGetTargetInfo  CredGetTargetInfoA
+
+¡ÒCredGetTargetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredIsMarshaledCredentialA(Ë«×Ö)
+¡ßCredIsMarshaledCredential  CredIsMarshaledCredentialA
+
+¡ÒCredIsMarshaledCredentialW(Ë«×Ö)
+¡ÒCredMarshalCredentialA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredMarshalCredential  CredMarshalCredentialA
+
+¡ÒCredMarshalCredentialW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredReadA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredRead  CredReadA
+
+¡ÒCredReadDomainCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredReadDomainCredentials  CredReadDomainCredentialsA
+
+¡ÒCredReadDomainCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredReadW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredRenameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredRename  CredRenameA
+
+¡ÒCredRenameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredUnmarshalCredentialA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredUnmarshalCredential  CredUnmarshalCredentialA
+
+¡ÒCredUnmarshalCredentialW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredWriteA(Ë«×Ö,Ë«×Ö)
+¡ßCredWrite  CredWriteA
+
+¡ÒCredWriteDomainCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredWriteDomainCredentials  CredWriteDomainCredentialsA
+
+¡ÒCredWriteDomainCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredWriteW(Ë«×Ö,Ë«×Ö)
+¡ÒCryptAcquireContextA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptAcquireContext  CryptAcquireContextA
+
+¡ÒCryptAcquireContextW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptContextAddRef(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptCreateHash(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptDecrypt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptDeriveKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptDestroyHash(Ë«×Ö)
+¡ÒCryptDestroyKey(Ë«×Ö)
+¡ÒCryptDuplicateHash(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptDuplicateKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptEncrypt(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptEnumProviderTypesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptEnumProviderTypes  CryptEnumProviderTypesA
+
+¡ÒCryptEnumProviderTypesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptEnumProvidersA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptEnumProviders  CryptEnumProvidersA
+
+¡ÒCryptEnumProvidersW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptExportKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGenKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGenRandom(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGetDefaultProviderA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptGetDefaultProvider  CryptGetDefaultProviderA
+
+¡ÒCryptGetDefaultProviderW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGetHashParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGetKeyParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGetProvParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptGetUserKey(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptHashData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptHashSessionKey(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptImportKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptReleaseContext(Ë«×Ö,Ë«×Ö)
+¡ÒCryptSetHashParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptSetKeyParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptSetProvParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptSetProviderA(Ë«×Ö,Ë«×Ö)
+¡ßCryptSetProvider  CryptSetProviderA
+
+¡ÒCryptSetProviderExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptSetProviderEx  CryptSetProviderExA
+
+¡ÒCryptSetProviderExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptSetProviderW(Ë«×Ö,Ë«×Ö)
+¡ÒCryptSignHashA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptSignHash  CryptSignHashA
+
+¡ÒCryptSignHashW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptVerifySignatureA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptVerifySignature  CryptVerifySignatureA
+
+¡ÒCryptVerifySignatureW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDecryptFileA(Ë«×Ö,Ë«×Ö)
+¡ßDecryptFile  DecryptFileA
+
+¡ÒDecryptFileW(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteAce(Ë«×Ö,Ë«×Ö)
+¡ÒDeleteService(Ë«×Ö)
+¡ÒDeregisterEventSource(Ë«×Ö)
+¡ÒDestroyPrivateObjectSecurity(Ë«×Ö)
+¡ÒDuplicateEncryptionInfoFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDuplicateToken(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDuplicateTokenEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒElfBackupEventLogFileA(Ë«×Ö,Ë«×Ö)
+¡ßElfBackupEventLogFile  ElfBackupEventLogFileA
+
+¡ÒElfBackupEventLogFileW(Ë«×Ö,Ë«×Ö)
+¡ÒElfChangeNotify(Ë«×Ö,Ë«×Ö)
+¡ÒElfClearEventLogFileA(Ë«×Ö,Ë«×Ö)
+¡ßElfClearEventLogFile  ElfClearEventLogFileA
+
+¡ÒElfClearEventLogFileW(Ë«×Ö,Ë«×Ö)
+¡ÒElfCloseEventLog(Ë«×Ö)
+¡ÒElfDeregisterEventSource(Ë«×Ö)
+¡ÒElfFlushEventLog(Ë«×Ö)
+¡ÒElfNumberOfRecords(Ë«×Ö,Ë«×Ö)
+¡ÒElfOldestRecord(Ë«×Ö,Ë«×Ö)
+¡ÒElfOpenBackupEventLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßElfOpenBackupEventLog  ElfOpenBackupEventLogA
+
+¡ÒElfOpenBackupEventLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒElfOpenEventLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßElfOpenEventLog  ElfOpenEventLogA
+
+¡ÒElfOpenEventLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒElfReadEventLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßElfReadEventLog  ElfReadEventLogA
+
+¡ÒElfReadEventLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒElfRegisterEventSourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßElfRegisterEventSource  ElfRegisterEventSourceA
+
+¡ÒElfRegisterEventSourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒElfReportEventA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßElfReportEvent  ElfReportEventA
+
+¡ÒElfReportEventAndSourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒElfReportEventW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnableTrace(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEncryptFileA(Ë«×Ö)
+¡ßEncryptFile  EncryptFileA
+
+¡ÒEncryptFileW(Ë«×Ö)
+¡ÒEncryptedFileKeyInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEncryptionDisable(Ë«×Ö,Ë«×Ö)
+¡ÒEnumDependentServicesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumDependentServices  EnumDependentServicesA
+
+¡ÒEnumDependentServicesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumServiceGroupW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumServicesStatusA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumServicesStatus  EnumServicesStatusA
+
+¡ÒEnumServicesStatusExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumServicesStatusEx  EnumServicesStatusExA
+
+¡ÒEnumServicesStatusExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumServicesStatusW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumerateTraceGuids(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEqualDomainSid(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEqualPrefixSid(Ë«×Ö,Ë«×Ö)
+¡ÒEqualSid(Ë«×Ö,Ë«×Ö)
+¡ÒFileEncryptionStatusA(Ë«×Ö,Ë«×Ö)
+¡ßFileEncryptionStatus  FileEncryptionStatusA
+
+¡ÒFileEncryptionStatusW(Ë«×Ö,Ë«×Ö)
+¡ÒFindFirstFreeAce(Ë«×Ö,Ë«×Ö)
+¡ÒFlushTraceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßFlushTrace  FlushTraceA
+
+¡ÒFlushTraceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeEncryptedFileKeyInfo(Ë«×Ö)
+¡ÒFreeEncryptionCertificateHashList(Ë«×Ö)
+¡ÒFreeInheritedFromArray(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFreeSid(Ë«×Ö)
+¡ÒGetAccessPermissionsForObjectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetAccessPermissionsForObject  GetAccessPermissionsForObjectA
+
+¡ÒGetAccessPermissionsForObjectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAce(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAclInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAuditedPermissionsFromAclA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetAuditedPermissionsFromAcl  GetAuditedPermissionsFromAclA
+
+¡ÒGetAuditedPermissionsFromAclW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetCurrentHwProfileA(Ë«×Ö)
+¡ßGetCurrentHwProfile  GetCurrentHwProfileA
+
+¡ÒGetCurrentHwProfileW(Ë«×Ö)
+¡ÒGetEffectiveRightsFromAclA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetEffectiveRightsFromAcl  GetEffectiveRightsFromAclA
+
+¡ÒGetEffectiveRightsFromAclW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetEventLogInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetExplicitEntriesFromAclA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetExplicitEntriesFromAcl  GetExplicitEntriesFromAclA
+
+¡ÒGetExplicitEntriesFromAclW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetFileSecurityA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetFileSecurity  GetFileSecurityA
+
+¡ÒGetFileSecurityW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetInformationCodeAuthzLevelW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetInformationCodeAuthzPolicyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetInheritanceSourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetInheritanceSource  GetInheritanceSourceA
+
+¡ÒGetInheritanceSourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetKernelObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetLengthSid(Ë«×Ö)
+¡ÒGetLocalManagedApplicationData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetLocalManagedApplications(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetManagedApplicationCategories(Ë«×Ö,Ë«×Ö)
+¡ÒGetManagedApplications(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMultipleTrusteeA(Ë«×Ö)
+¡ßGetMultipleTrustee  GetMultipleTrusteeA
+
+¡ÒGetMultipleTrusteeOperationA(Ë«×Ö)
+¡ßGetMultipleTrusteeOperation  GetMultipleTrusteeOperationA
+
+¡ÒGetMultipleTrusteeOperationW(Ë«×Ö)
+¡ÒGetMultipleTrusteeW(Ë«×Ö)
+¡ÒGetNamedSecurityInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNamedSecurityInfo  GetNamedSecurityInfoA
+
+¡ÒGetNamedSecurityInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNamedSecurityInfoEx  GetNamedSecurityInfoExA
+
+¡ÒGetNamedSecurityInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNamedSecurityInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNumberOfEventLogRecords(Ë«×Ö,Ë«×Ö)
+¡ÒGetOldestEventLogRecord(Ë«×Ö,Ë«×Ö)
+¡ÒGetOverlappedAccessResults(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPrivateObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityDescriptorControl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityDescriptorDacl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityDescriptorGroup(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityDescriptorLength(Ë«×Ö)
+¡ÒGetSecurityDescriptorOwner(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityDescriptorRMControl(Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityDescriptorSacl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSecurityInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetSecurityInfoEx  GetSecurityInfoExA
+
+¡ÒGetSecurityInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetServiceDisplayNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetServiceDisplayName  GetServiceDisplayNameA
+
+¡ÒGetServiceDisplayNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetServiceKeyNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetServiceKeyName  GetServiceKeyNameA
+
+¡ÒGetServiceKeyNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetSidIdentifierAuthority(Ë«×Ö)
+¡ÒGetSidLengthRequired(Ë«×Ö)
+¡ÒGetSidSubAuthority(Ë«×Ö,Ë«×Ö)
+¡ÒGetSidSubAuthorityCount(Ë«×Ö)
+¡ÒGetTokenInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTraceEnableFlags(Ë«×Ö,Ë«×Ö)
+¡ÒGetTraceEnableLevel(Ë«×Ö,Ë«×Ö)
+¡ÒGetTraceLoggerHandle(Ë«×Ö)
+¡ÒGetTrusteeFormA(Ë«×Ö)
+¡ßGetTrusteeForm  GetTrusteeFormA
+
+¡ÒGetTrusteeFormW(Ë«×Ö)
+¡ÒGetTrusteeNameA(Ë«×Ö)
+¡ßGetTrusteeName  GetTrusteeNameA
+
+¡ÒGetTrusteeNameW(Ë«×Ö)
+¡ÒGetTrusteeTypeA(Ë«×Ö)
+¡ßGetTrusteeType  GetTrusteeTypeA
+
+¡ÒGetTrusteeTypeW(Ë«×Ö)
+¡ÒGetUserNameA(Ë«×Ö,Ë«×Ö)
+¡ßGetUserName  GetUserNameA
+
+¡ÒGetUserNameW(Ë«×Ö,Ë«×Ö)
+¡ÒGetWindowsAccountDomainSid(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒI_ScSetServiceBitsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßI_ScSetServiceBits  I_ScSetServiceBitsA
+
+¡ÒI_ScSetServiceBitsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIdentifyCodeAuthzLevelW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImpersonateAnonymousToken(Ë«×Ö)
+¡ÒImpersonateLoggedOnUser(Ë«×Ö)
+¡ÒImpersonateNamedPipeClient(Ë«×Ö)
+¡ÒImpersonateSelf(Ë«×Ö)
+¡ÒInitializeAcl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInitializeSecurityDescriptor(Ë«×Ö,Ë«×Ö)
+¡ÒInitializeSid(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInitiateSystemShutdownA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInitiateSystemShutdown  InitiateSystemShutdownA
+
+¡ÒInitiateSystemShutdownExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßInitiateSystemShutdownEx  InitiateSystemShutdownExA
+
+¡ÒInitiateSystemShutdownExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInitiateSystemShutdownW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInstallApplication(Ë«×Ö)
+¡ÒIsTextUnicode(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsTokenRestricted(Ë«×Ö)
+¡ÒIsTokenUntrusted(Ë«×Ö)
+¡ÒIsValidAcl(Ë«×Ö)
+¡ÒIsValidSecurityDescriptor(Ë«×Ö)
+¡ÒIsValidSid(Ë«×Ö)
+¡ÒIsWellKnownSid(Ë«×Ö,Ë«×Ö)
+¡ÒLockServiceDatabase(Ë«×Ö)
+¡ÒLogonUserA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLogonUser  LogonUserA
+
+¡ÒLogonUserExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLogonUserEx  LogonUserExA
+
+¡ÒLogonUserExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLogonUserW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLookupAccountNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLookupAccountName  LookupAccountNameA
+
+¡ÒLookupAccountNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLookupAccountSidA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLookupAccountSid  LookupAccountSidA
+
+¡ÒLookupAccountSidW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLookupPrivilegeDisplayNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLookupPrivilegeDisplayName  LookupPrivilegeDisplayNameA
+
+¡ÒLookupPrivilegeDisplayNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLookupPrivilegeNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLookupPrivilegeName  LookupPrivilegeNameA
+
+¡ÒLookupPrivilegeNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLookupPrivilegeValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLookupPrivilegeValue  LookupPrivilegeValueA
+
+¡ÒLookupPrivilegeValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLookupSecurityDescriptorPartsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLookupSecurityDescriptorParts  LookupSecurityDescriptorPartsA
+
+¡ÒLookupSecurityDescriptorPartsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaAddAccountRights(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaAddPrivilegesToAccount(Ë«×Ö,Ë«×Ö)
+¡ÒLsaClearAuditLog(Ë«×Ö)
+¡ÒLsaClose(Ë«×Ö)
+¡ÒLsaCreateAccount(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaCreateSecret(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaCreateTrustedDomain(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaCreateTrustedDomainEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaDelete(Ë«×Ö)
+¡ÒLsaDeleteTrustedDomain(Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumerateAccountRights(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumerateAccounts(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumerateAccountsWithUserRight(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumeratePrivileges(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumeratePrivilegesOfAccount(Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumerateTrustedDomains(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaEnumerateTrustedDomainsEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaFreeMemory(Ë«×Ö)
+¡ÒLsaGetQuotasForAccount(Ë«×Ö,Ë«×Ö)
+¡ÒLsaGetRemoteUserName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaGetSystemAccessAccount(Ë«×Ö,Ë«×Ö)
+¡ÒLsaGetUserName(Ë«×Ö,Ë«×Ö)
+¡ÒLsaICLookupNames(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaICLookupNamesWithCreds(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaICLookupSids(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaICLookupSidsWithCreds(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupNames2(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupNames(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupPrivilegeDisplayName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupPrivilegeName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupPrivilegeValue(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaLookupSids(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaNtStatusToWinError(Ë«×Ö)
+¡ÒLsaOpenAccount(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaOpenPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaOpenPolicySce(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaOpenSecret(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaOpenTrustedDomain(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaOpenTrustedDomainByName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQueryDomainInformationPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQueryForestTrustInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQueryInfoTrustedDomain(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQueryInformationPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQuerySecret(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQuerySecurityObject(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQueryTrustedDomainInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaQueryTrustedDomainInfoByName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaRemoveAccountRights(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaRemovePrivilegesFromAccount(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaRetrievePrivateData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetDomainInformationPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetForestTrustInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetInformationPolicy(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetInformationTrustedDomain(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetQuotasForAccount(Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetSecret(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetSecurityObject(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetSystemAccessAccount(Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetTrustedDomainInfoByName(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaSetTrustedDomainInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLsaStorePrivateData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMSChapSrvChangePassword2(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMSChapSrvChangePassword(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMakeAbsoluteSD2(Ë«×Ö,Ë«×Ö)
+¡ÒMakeAbsoluteSD(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMakeSelfRelativeSD(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMapGenericMask(Ë«×Ö,Ë«×Ö)
+¡ÒNotifyBootConfigStatus(Ë«×Ö)
+¡ÒNotifyChangeEventLog(Ë«×Ö,Ë«×Ö)
+¡ÒObjectCloseAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßObjectCloseAuditAlarm  ObjectCloseAuditAlarmA
+
+¡ÒObjectCloseAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒObjectDeleteAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßObjectDeleteAuditAlarm  ObjectDeleteAuditAlarmA
+
+¡ÒObjectDeleteAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒObjectOpenAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßObjectOpenAuditAlarm  ObjectOpenAuditAlarmA
+
+¡ÒObjectOpenAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒObjectPrivilegeAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßObjectPrivilegeAuditAlarm  ObjectPrivilegeAuditAlarmA
+
+¡ÒObjectPrivilegeAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenBackupEventLogA(Ë«×Ö,Ë«×Ö)
+¡ßOpenBackupEventLog  OpenBackupEventLogA
+
+¡ÒOpenBackupEventLogW(Ë«×Ö,Ë«×Ö)
+¡ÒOpenEncryptedFileRawA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenEncryptedFileRaw  OpenEncryptedFileRawA
+
+¡ÒOpenEncryptedFileRawW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenEventLogA(Ë«×Ö,Ë«×Ö)
+¡ßOpenEventLog  OpenEventLogA
+
+¡ÒOpenEventLogW(Ë«×Ö,Ë«×Ö)
+¡ÒOpenProcessToken(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenSCManagerA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenSCManager  OpenSCManagerA
+
+¡ÒOpenSCManagerW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenServiceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßOpenService  OpenServiceA
+
+¡ÒOpenServiceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenThreadToken(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒOpenTraceA(Ë«×Ö)
+¡ßOpenTrace  OpenTraceA
+
+¡ÒOpenTraceW(Ë«×Ö)
+¡ÒPrivilegeCheck(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPrivilegedServiceAuditAlarmA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPrivilegedServiceAuditAlarm  PrivilegedServiceAuditAlarmA
+
+¡ÒPrivilegedServiceAuditAlarmW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒProcessTrace(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryAllTracesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryAllTraces  QueryAllTracesA
+
+¡ÒQueryAllTracesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryRecoveryAgentsOnEncryptedFile(Ë«×Ö,Ë«×Ö)
+¡ÒQueryServiceConfig2A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryServiceConfig2  QueryServiceConfig2A
+
+¡ÒQueryServiceConfig2W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryServiceConfigA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryServiceConfig  QueryServiceConfigA
+
+¡ÒQueryServiceConfigW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryServiceLockStatusA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryServiceLockStatus  QueryServiceLockStatusA
+
+¡ÒQueryServiceLockStatusW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryServiceObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryServiceStatus(Ë«×Ö,Ë«×Ö)
+¡ÒQueryServiceStatusEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryTraceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßQueryTrace  QueryTraceA
+
+¡ÒQueryTraceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryUsersOnEncryptedFile(Ë«×Ö,Ë«×Ö)
+¡ÒReadEncryptedFileRaw(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReadEventLogA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReadEventLog  ReadEventLogA
+
+¡ÒReadEventLogW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±í¹Ø±Õ¼ü:RegCloseKey(Ë«×Ö)
+¡ÒRegConnectRegistryA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegConnectRegistry  RegConnectRegistryA
+
+¡ÒRegConnectRegistryExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegConnectRegistryEx  RegConnectRegistryExA
+
+¡ÒRegConnectRegistryExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegConnectRegistryW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±í´´½¨¼ü:RegCreateKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegCreateKey  RegCreateKeyA
+
+¡Ò¸ß¼¶×¢²á±í´´½¨¼ü:RegCreateKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegCreateKeyEx  RegCreateKeyExA
+
+¡ÒRegCreateKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegCreateKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±íÉ¾³ý¼ü:RegDeleteKeyA(Ë«×Ö,Ë«×Ö)
+¡ßRegDeleteKey  RegDeleteKeyA
+
+¡Ò¸ß¼¶×¢²á±íÉ¾³ý¼ü:RegDeleteKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegDeleteKeyEx  RegDeleteKeyExA
+
+¡ÒRegDeleteKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegDeleteKeyW(Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±íÉ¾³ýÖµ:RegDeleteValueA(Ë«×Ö,Ë«×Ö)
+¡ßRegDeleteValue  RegDeleteValueA
+
+¡ÒRegDeleteValueW(Ë«×Ö,Ë«×Ö)
+¡ÒRegDisablePredefinedCache()
+¡ÒRegDisableReflectionKey(Ë«×Ö)
+¡ÒRegEnableReflectionKey(Ë«×Ö)
+¡Ò×¢²á±íÃ¶¾Ù¼ü:RegEnumKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegEnumKey  RegEnumKeyA
+
+¡Ò¸ß¼¶×¢²á±íÃ¶¾Ù¼ü:RegEnumKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegEnumKeyEx  RegEnumKeyExA
+
+¡ÒRegEnumKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegEnumKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±íÃ¶¾ÙÖµ:RegEnumValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegEnumValue  RegEnumValueA
+
+¡ÒRegEnumValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegFlushKey(Ë«×Ö)
+¡ÒRegGetKeySecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±í»ñÈ¡Öµ:RegGetValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegGetValue  RegGetValueA
+
+¡ÒRegGetValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegLoadKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegLoadKey  RegLoadKeyA
+
+¡ÒRegLoadKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegNotifyChangeKeyValue(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegOpenCurrentUser(Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±í´ò¿ª¼ü:RegOpenKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegOpenKey  RegOpenKeyA
+
+¡Ò¸ß¼¶×¢²á±í´ò¿ª¼ü:RegOpenKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegOpenKeyEx  RegOpenKeyExA
+
+¡ÒRegOpenKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegOpenKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegOpenUserClassesRoot(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegOverridePredefKey(Ë«×Ö,Ë«×Ö)
+¡ÒRegQueryInfoKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegQueryInfoKey  RegQueryInfoKeyA
+
+¡ÒRegQueryInfoKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegQueryMultipleValuesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegQueryMultipleValues  RegQueryMultipleValuesA
+
+¡ÒRegQueryMultipleValuesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegQueryReflectionKey(Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±í²éÑ¯Öµ:RegQueryValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegQueryValue  RegQueryValueA
+
+¡Ò¸ß¼¶×¢²á±í²éÑ¯Öµ:RegQueryValueExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegQueryValueEx  RegQueryValueExA
+
+¡ÒRegQueryValueExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegQueryValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±íÌæ»»¼ü:RegReplaceKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegReplaceKey  RegReplaceKeyA
+
+¡ÒRegReplaceKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegRestoreKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegRestoreKey  RegRestoreKeyA
+
+¡ÒRegRestoreKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegSaveKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegSaveKey  RegSaveKeyA
+
+¡ÒRegSaveKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegSaveKeyEx  RegSaveKeyExA
+
+¡ÒRegSaveKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegSaveKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegSetKeySecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò×¢²á±íÉèÖÃÖµ:RegSetValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegSetValue  RegSetValueA
+
+¡Ò¸ß¼¶×¢²á±íÉèÖÃÖµ:RegSetValueExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegSetValueEx  RegSetValueExA
+
+¡ÒRegSetValueExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegSetValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegUnLoadKeyA(Ë«×Ö,Ë«×Ö)
+¡ßRegUnLoadKey  RegUnLoadKeyA
+
+¡ÒRegUnLoadKeyW(Ë«×Ö,Ë«×Ö)
+¡ÒRegisterEventSourceA(Ë«×Ö,Ë«×Ö)
+¡ßRegisterEventSource  RegisterEventSourceA
+
+¡ÒRegisterEventSourceW(Ë«×Ö,Ë«×Ö)
+¡ÒRegisterServiceCtrlHandlerA(Ë«×Ö,Ë«×Ö)
+¡ßRegisterServiceCtrlHandler  RegisterServiceCtrlHandlerA
+
+¡ÒRegisterServiceCtrlHandlerExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegisterServiceCtrlHandlerEx  RegisterServiceCtrlHandlerExA
+
+¡ÒRegisterServiceCtrlHandlerExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterServiceCtrlHandlerW(Ë«×Ö,Ë«×Ö)
+¡ÒRegisterTraceGuidsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRegisterTraceGuids  RegisterTraceGuidsA
+
+¡ÒRegisterTraceGuidsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRemoveTraceCallback(Ë«×Ö)
+¡ÒRemoveUsersFromEncryptedFile(Ë«×Ö,Ë«×Ö)
+¡ÒReportEventA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßReportEvent  ReportEventA
+
+¡ÒReportEventW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRevertToSelf()
+¡ÒSaferCloseLevel(Ë«×Ö)
+¡ÒSaferComputeTokenFromLevel(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferCreateLevel(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferGetLevelInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferGetPolicyInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferIdentifyLevel(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferRecordEventLogEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferSetLevelInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferSetPolicyInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSaferiIsExecutableFileType(Ë«×Ö,Ë«×Ö)
+¡ÒSetAclInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetEntriesInAccessListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetEntriesInAccessList  SetEntriesInAccessListA
+
+¡ÒSetEntriesInAccessListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetEntriesInAclA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetEntriesInAcl  SetEntriesInAclA
+
+¡ÒSetEntriesInAclW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetEntriesInAuditListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetEntriesInAuditList  SetEntriesInAuditListA
+
+¡ÒSetEntriesInAuditListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetFileSecurityA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetFileSecurity  SetFileSecurityA
+
+¡ÒSetFileSecurityW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetInformationCodeAuthzLevelW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetInformationCodeAuthzPolicyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetKernelObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNamedSecurityInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetNamedSecurityInfo  SetNamedSecurityInfoA
+
+¡ÒSetNamedSecurityInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetNamedSecurityInfoEx  SetNamedSecurityInfoExA
+
+¡ÒSetNamedSecurityInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetNamedSecurityInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPrivateObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetPrivateObjectSecurityEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityDescriptorControl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityDescriptorDacl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityDescriptorGroup(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityDescriptorOwner(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityDescriptorRMControl(Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityDescriptorSacl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetSecurityInfoExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetSecurityInfoEx  SetSecurityInfoExA
+
+¡ÒSetSecurityInfoExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetServiceBits(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetServiceObjectSecurity(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetServiceStatus(Ë«×Ö,Ë«×Ö)
+¡ÒSetThreadToken(Ë«×Ö,Ë«×Ö)
+¡ÒSetTokenInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetTraceCallback(Ë«×Ö,Ë«×Ö)
+¡ÒSetUserFileEncryptionKey(Ë«×Ö)
+¡ÒStartServiceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStartService  StartServiceA
+
+¡ÒStartServiceCtrlDispatcherA(Ë«×Ö)
+¡ßStartServiceCtrlDispatcher  StartServiceCtrlDispatcherA
+
+¡ÒStartServiceCtrlDispatcherW(Ë«×Ö)
+¡ÒStartServiceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStartTraceA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStartTrace  StartTraceA
+
+¡ÒStartTraceW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStopTraceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStopTrace  StopTraceA
+
+¡ÒStopTraceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction001(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction002(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction003(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction004(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction005(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction006(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction007(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction008(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction009(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction010(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction011(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction012(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction013(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction014(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction015(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction016(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction017(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction018(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction019(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction020(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction021(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction022(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction023(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction024(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction025(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction026(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction027(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction028(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction029(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction030(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction031(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction032(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction033(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction034(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction036(Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction040(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSystemFunction041(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTraceEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTraceEventInstance(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C TraceMessage(Ë«×Ö, ..)
+¡ÒTraceMessageVa(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTreeResetNamedSecurityInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTreeResetNamedSecurityInfo  TreeResetNamedSecurityInfoA
+
+¡ÒTreeResetNamedSecurityInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTrusteeAccessToObjectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßTrusteeAccessToObject  TrusteeAccessToObjectA
+
+¡ÒTrusteeAccessToObjectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUninstallApplication(Ë«×Ö,Ë«×Ö)
+¡ÒUnlockServiceDatabase(Ë«×Ö)
+¡ÒUnregisterTraceGuids(Ë«×Ö,Ë«×Ö)
+¡ÒUpdateTraceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUpdateTrace  UpdateTraceA
+
+¡ÒUpdateTraceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWow64Win32ApiEntry(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteEncryptedFileRaw(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

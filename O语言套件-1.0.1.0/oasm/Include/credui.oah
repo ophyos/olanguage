@@ -1,0 +1,24 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCredUICmdLinePromptForCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredUICmdLinePromptForCredentials  CredUICmdLinePromptForCredentialsA
+
+¡ÒCredUICmdLinePromptForCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredUIConfirmCredentialsA(Ë«×Ö,Ë«×Ö)
+¡ßCredUIConfirmCredentials  CredUIConfirmCredentialsA
+
+¡ÒCredUIConfirmCredentialsW(Ë«×Ö,Ë«×Ö)
+¡ÒCredUIParseUserNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredUIParseUserName  CredUIParseUserNameA
+
+¡ÒCredUIParseUserNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredUIPromptForCredentialsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCredUIPromptForCredentials  CredUIPromptForCredentialsA
+
+¡ÒCredUIPromptForCredentialsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCredUIReadSSOCredW(Ë«×Ö,Ë«×Ö)
+¡ÒCredUIStoreSSOCredW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

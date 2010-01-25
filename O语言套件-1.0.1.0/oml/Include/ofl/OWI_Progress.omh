@@ -1,0 +1,32 @@
+
+引用段 
+{ 
+
+函数 进度条_设置开始:Progress_SetStart(地址 pProgress,整数32 start);
+函数 进度条_获取开始:Progress_GetStart(地址 pProgress)=>整数32;
+函数 进度条_设置结束:Progress_SetEnd(地址 pProgress,整数32 end);
+函数 进度条_获取结束:Progress_GetEnd(地址 pProgress)=>整数32;	   
+函数 进度条_设置位置:Progress_SetPosition(地址 pProgress,整数32 pos);
+函数 进度条_获取位置:Progress_GetPosition(地址 pProgress)=>整数32;	 
+函数 Progress_SetStepDelta(地址 pProgress,整数32 step);
+函数 进度条_设置颜色:Progress_SetColor(地址 pProgress,正数32 color);
+函数 进度条_获取颜色:Progress_GetColor(地址 pProgress)=>正数32;
+函数 进度条_设置背景色:Progress_SetBackColor(地址 pProgress,正数32 color);
+函数 进度条_获取背景色:Progress_GetBackColor(地址 pProgress)=>正数32;
+
+//设置进度条范围的起始位置和结束位置
+函数 进度条_设置范围:Progress_SetRange(地址 pProgress,整数32 start,整数32 end);
+//获取进度条范围的起始位置和结束位置
+函数 进度条_获取范围:Progress_GetRange(地址 pProgress,地址 start,地址 end)=>整数32;
+//设置进度条的位置增量并导致位置变化，新的位置等于旧位置加上此增量delta
+函数 进度条_推进位置:Progress_AdvancePosition(地址 pProgress,整数32 delta);
+//当前位置向前发生步进，步进值取决于以前mStepDelta的设定
+函数 进度条_步进位置:Progress_StepPosition(地址 pProgress);	
+
+函数 进度条_销毁控件:Progress_DestroyControl(地址 pProgress);
+函数 进度条_获取类:Progress_GetClass(地址 pProgress)=>地址;
+函数 进度条_置为进度条:Progress_IsProgress(地址 pProgress)=>整数32;
+函数 进度条_设置标题:Progress_SetCaption(地址 pProgress,地址 string);
+函数 进度条_获取标题:Progress_GetCaption(地址 pProgress)=>地址;
+
+}

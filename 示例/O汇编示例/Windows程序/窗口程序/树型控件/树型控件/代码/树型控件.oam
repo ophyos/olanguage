@@ -1,0 +1,720 @@
+
+《*oasm32.oah》
+《*Windows.oah》
+《*user32.oah》
+《*kernel32.oah》
+《*gdi32.oah》
+《*comctl32.oah》
+《*comdlg32.oah》
+《*advapi32.oah》
+
+〈*user32.lib〉
+〈*kernel32.lib〉
+〈*gdi32.lib〉
+〈*comctl32.lib〉
+〈*comdlg32.lib〉
+〈*advapi32.lib〉
+
+∥数据段
+︻
+字节 ClassName‥   = "TreeDemo"
+字节 AppName‥     = "树控件实例"
+字节 RichEdit‥    = "RichEdit20A"
+字节 RichEdDLL‥   = "RICHED20.DLL"
+字节 TreeClass‥   = "SysTreeView32"
+字节 ListClass‥   = "SysListView32"
+字节 StatClass‥   = "msctls_statusbar32"
+字节 StaticClass‥ = "STATIC"
+字节 MenuName‥    = "MainMenu"
+字节 zfc父结点1‥  = "树"
+字节 zfc父结点2‥  = "什么也不做"
+字节 Child1‥      = "列表窗口"
+字节 Child2‥      = "编辑窗口"
+字节 Child3‥      = "状态栏"
+字节 Child4‥      = "状态格2"
+字节 Child5‥      = "状态格3"
+字节 Child6‥      = "清除所有"
+字节 Child7‥      = "无"
+
+字节 szColName‥   = "项目"
+字节 szItem1‥     = "项目 1"
+字节 szItem2‥     = "项目 2"
+字节 szDay‥       = "呵呵，这里是一个高级编辑控件(RichEdit)"
+
+双字 szNull   =  0
+双字 First    =  1
+
+双字 Split1‥ =   0, 159, 130, 161
+双字 Split2‥ =   129, 0, 131, 241
+
+︼
+
+∥只读段
+﹃
+
+﹄
+
+∥预留段
+﹁
+双字 h实例句柄        
+双字 sz命令行
+双字 h高级编辑动态库      
+双字 sz退出代码     
+双字 h窗口句柄         
+双字 MenuCnt      
+
+双字 h状态栏     
+双字 h树窗口     
+双字 h列表窗口     
+双字 h编辑窗口       
+双字 h图像列表   
+双字 h父结点      
+双字 h树子结点1
+双字 h树子结点2      
+双字 h树子结点3      
+双字 h树子结点4      
+双字 h树子结点5      
+双字 h树子结点6      
+双字 h分隔条    
+双字 sz分隔条类型
+双字 sbParts‥4
+
+TV_INSERTSTRUCT  tvis
+﹂
+∥宏定义
+∵
+{
+
+∥TVM_SETBKCOLOR           TV_FIRST + 29
+∥TVM_SETTEXTCOLOR         TV_FIRST + 30
+∥TVM_SETLINECOLOR         TV_FIRST + 40
+∥TVM_SETINSERTMARKCOLOR   TV_FIRST + 37
+}
+.包含文<..\资源\树型控件.oah>
+
+
+
+∥代码段开始
+︷
+
+∥开始函数定义
+∏主函数()
+{
+∥这里添加代码
+
+   GetModuleHandle(NULL)
+   h实例句柄 = 累加32
+   GetCommandLine()
+   sz命令行 = 累加32
+   InitCommonControls()
+
+   ∥加载Riched20.dll动态库
+   LoadLibrary(＆RichEdDLL)
+   h高级编辑动态库 = 累加32
+   ∮(累加32 == 0)
+   {
+      ∥MessageBox(NULL, addr szError1, addr szAppName, MB_OK | MB_ICONERROR)
+     → Exit
+   }
+
+   主窗口(h实例句柄 ,NULL, sz命令行, SW_SHOWDEFAULT)
+   sz退出代码 = 累加32
+   FreeLibrary(h高级编辑动态库)
+
+～Exit:
+   ExitProcess(sz退出代码)
+}
+
+∫主窗口(双字 hinst,双字 hPrevInst,双字 CmdLine,双字 CmdShow)
+{ <基数32>      
+
+      WNDCLASSEX wc
+      MSG  消息
+
+      wc.cbSize = °WNDCLASSEX
+      wc.style = CS_BYTEALIGNCLIENT | CS_BYTEALIGNWINDOW
+      wc.lpfnWndProc = 主窗口过程
+      wc.cbClsExtra = NULL
+      wc.cbWndExtra = NULL
+      ≮ h实例句柄
+      ≯ wc.hInstance
+      wc.hbrBackground = COLOR_BTNFACE+1
+      wc.lpszMenuName = ＆MenuName
+      wc.lpszClassName = ＆ClassName
+      LoadIcon(NULL, IDI_APPLICATION)
+      wc.hIcon = 累加32
+      wc.hIconSm = 累加32
+      LoadCursor(NULL, IDC_ARROW)
+      wc.hCursor = 累加32
+      累加32 @= wc
+      RegisterClassEx(累加32)
+
+      ∥---------- [Center the window] ----------
+      GetSystemMetrics(SM_CXSCREEN)
+      累加32 -= 353
+      累加32 ◎≯  1  ∥逻辑右移指令
+      ≮累加32
+      GetSystemMetrics(SM_CYSCREEN)
+      累加32 -= 300
+      累加32 ◎≯  1  ∥逻辑右移指令
+      ≯基数32
+
+      ∥创建主窗口
+      CreateWindowEx(WS_EX_CLIENTEDGE,＆ClassName,＆AppName,WS_OVERLAPPEDWINDOW,基数32, 累加32, 353, 311, NULL, NULL, h实例句柄, NULL)
+      h窗口句柄 = 累加32
+
+      ShowWindow(h窗口句柄,SW_SHOWNORMAL)
+      UpdateWindow(h窗口句柄)
+
+     ∥消息循环
+     ∽(TRUE)
+     {         
+         累加32 @= 消息
+         GetMessage(累加32 ,0,0,0)
+        ∮(累加32 == 0)
+        {
+          ↙
+        }
+        累加32 @= 消息
+        TranslateMessage(累加32)
+        累加32 @= 消息
+        DispatchMessage(累加32)
+     }     
+     累加32 = 消息.wParam
+}
+
+∥===================================================
+∥ 主窗口过程函数
+∥===================================================
+∫主窗口过程(双字 hwnd,双字 wMsg,双字 wParam,双字 lParam)
+{ <源址32,的址32,基数32>
+   
+    RECT rect
+    LV_COLUMN lvc
+    LV_ITEM lvi
+    TV_ITEM tvi
+    双字 xPos,yPos,hBitmap
+    字节 szWork1‥64
+
+      ∥创建子控件
+      ∮(wMsg == WM_CREATE)
+      {
+
+         ∥创建状态条
+         CreateWindowEx(0, ＆StatClass, 0,…
+                    WS_CHILD | WS_BORDER | WS_VISIBLE | SBS_SIZEGRIP,…
+                    0, 0, 0, 0, hwnd, 0, h实例句柄, 0)
+         h状态栏 = 累加32
+
+        ∥创建树控件
+         CreateWindowEx(WS_EX_CLIENTEDGE, ＆TreeClass, 0,…
+                        WS_CHILD | WS_VISIBLE | TVS_HASLINES | TVS_HASBUTTONS | TVS_LINESATROOT | WS_CLIPSIBLINGS,…
+                        0, 0, 130, 160, hwnd, 44, h实例句柄, NULL)
+         累加32 测试 累加32
+         ◎? →Ret0
+         h树窗口 = 累加32 
+         SendMessage(h树窗口, TVM_SETBKCOLOR, 0, 0x00e1f0ff) ∥设置树控件背景色
+∥         INVOKE     SendMessage, h树窗口, TVM_SETTEXTCOLOR, 0, 00ffffe0h
+∥         INVOKE     SendMessage, h树窗口, TVM_SETLINECOLOR, 0, 00ffffe0h
+∥         INVOKE     SendMessage, h树窗口, TVM_SETINSERTMARKCOLOR, 0, 00ffffe0h
+
+         ∥创建列表控件
+         CreateWindowEx(WS_EX_CLIENTEDGE, ＆ListClass, NULL,…
+                    WS_CHILD | WS_VISIBLE | LVS_REPORT | LVS_SHAREIMAGELISTS | LVS_SORTASCENDING,…
+                    0, 160, 130, 51, hwnd, 45, h实例句柄, NULL)
+         累加32 测试 累加32     
+         ◎? →Ret0
+         h列表窗口 = 累加32
+∥         INVOKE     SendMessage, h列表窗口, LVM_SETTEXTCOLOR, 0, 00000000h
+         SendMessage(h列表窗口, LVM_SETBKCOLOR, 0, 0x00ffffe0) ∥设置列表控件背景色
+         SendMessage(h列表窗口, LVM_SETTEXTBKCOLOR, 0, 0x00ffffe0)
+         
+         ∥创建高级编辑框控件
+         CreateWindowEx(WS_EX_CLIENTEDGE, ＆RichEdit, NULL,…
+                    WS_CHILD | WS_VISIBLE | ES_MULTILINE |…
+                    ES_NOHIDESEL | ES_SAVESEL | ES_SELECTIONBAR |…
+                    WS_HSCROLL | ES_AUTOHSCROLL |…
+                    WS_VSCROLL | ES_AUTOVSCROLL | WS_CLIPSIBLINGS,…
+                    131, 0, 211, 241, hwnd, 46, h实例句柄, NULL)
+         累加32 测试 累加32     
+         ◎? →Ret0
+         h编辑窗口 = 累加32
+         SendMessage(h编辑窗口, EM_SETBKGNDCOLOR, 0, 0x00f0fff0) ∥设置编辑框背景色
+
+         ∥得到图像列表
+         ImageList_Create(16, 16, ILC_COLOR16, 5, 10)
+         h图像列表 = 累加32
+         LoadBitmap(h实例句柄, 900)
+         hBitmap = 累加32
+         ImageList_Add(h图像列表, hBitmap, NULL)
+         DeleteObject(hBitmap)
+
+        ∥如果你不想让树控件项目有图标显示就注释到下一行
+        SendMessage(h树窗口, TVM_SETIMAGELIST, 0, h图像列表)
+
+         ∥添加树的子项
+         SendMessage(h树窗口, TVM_DELETEITEM, 0, TVI_ROOT)
+         tvis.hParent = NULL   
+         tvis.hInsertAfter = TVI_ROOT
+         tvis.itemtype.item.imask = TVIF_TEXT | TVIF_IMAGE | TVIF_SELECTEDIMAGE
+         tvis.itemtype.item.pszText = ＆zfc父结点1
+         tvis.itemtype.item.iImage = 0
+         tvis.itemtype.item.iSelectedImage = 1
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0,累加32)
+         h父结点 = 累加32
+
+         tvis.hParent = 累加32
+         tvis.hInsertAfter = TVI_LAST
+         tvis.itemtype.item.pszText = ＆Child1
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         h树子结点1 = 累加32
+
+         tvis.itemtype.item.pszText = ＆Child2
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         h树子结点2 = 累加32
+
+         tvis.itemtype.item.pszText = ＆Child3
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         h树子结点3 = 累加32
+
+         tvis.hParent = 累加32
+         tvis.itemtype.item.pszText = ＆Child4
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         h树子结点4 = 累加32
+
+          tvis.itemtype.item.pszText = ＆Child5
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         h树子结点5 = 累加32
+
+         累加32 = h父结点 
+         tvis.hParent = 累加32
+         tvis.itemtype.item.pszText = ＆Child6
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         h树子结点6 = 累加32
+
+         tvis.hParent = NULL   
+         tvis.hInsertAfter = TVI_ROOT
+         tvis.itemtype.item.imask = TVIF_TEXT | TVIF_IMAGE | TVIF_SELECTEDIMAGE
+         tvis.itemtype.item.pszText = ＆zfc父结点2
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+         tvis.hParent = 累加32
+         tvis.itemtype.item.pszText = ＆Child7
+         累加32 @= tvis
+         SendMessage(h树窗口, TVM_INSERTITEM, 0, 累加32)
+
+         SendMessage(h树窗口, TVM_EXPAND, TVE_EXPAND, h父结点)
+         SendMessage(h树窗口, TVM_SORTCHILDREN, 0, h父结点)
+         SendMessage(h树窗口, TVM_SELECTITEM, TVGN_CARET, NULL) ∥hParent
+
+        ∥为列表框创建列
+         lvc.imask = LVCF_TEXT | LVCF_WIDTH
+         lvc.pszText = ＆szColName
+         lvc.lx = 125
+         累加32 @= lvc
+         SendMessage(h列表窗口, LVM_INSERTCOLUMN, 0, 累加32)
+      }
+
+     ∥如果窗口大小有变化
+      ∝∮(wMsg == WM_SIZE)
+      {
+         ∥重新定位状态条
+         累加32 = lParam         ∥ 得到宽度
+         累加32 &= 0x0ffff       ∥ 用与操作来得到低16位
+         累加32 ◎≯ 2           ∥ 逻辑右移2位，相当于除以4
+         计数32 = 累加32         ∥ 保存第状态格的宽度
+         sbParts：0 = 累加32     ∥ 保存第0个状态格宽度
+         累加32 += 计数32
+         sbParts：1 = 累加32     ∥ 保存第1个状态格宽度
+         累加32 += 计数32
+         sbParts：2 = 累加32     ∥ 保存第2个状态格宽度
+         sbParts：3 = -1         ∥ 最后一个状态格用-1表示即占满剩下的空间
+         累加32 @= sbParts
+         SendMessage(h状态栏, SB_SETPARTS, 4, 累加32)
+         MoveWindow(h状态栏, 0, 0, 0, 0, TRUE)
+
+         累加32 @= rect
+         GetWindowRect(h状态栏, 累加32)  ∥ 得到状态栏区域
+         累加32 = rect.bottom
+         累加32 -= rect.top               ∥ 得到状态栏高度保存到　累加32 寄存器
+         ≮累加32
+         累加32 @= rect
+         GetClientRect(h窗口句柄, 累加32)
+         ≯累加32
+         累加32--
+         rect.bottom -= 累加32
+
+         计数32 = Split2：0
+         数据32 = Split1：1
+         Split1：2 = 计数32
+         MoveWindow(h树窗口, 1, 1, 计数32, 数据32, TRUE)
+
+         数据32 = rect.bottom
+         计数32 = Split1：3
+         的址32 = 计数32
+         计数32 --
+         数据32 -= 计数32
+         数据32 -= 2
+         计数32 = Split2：0
+         MoveWindow(h列表窗口, 1, 的址32, 计数32, 数据32, TRUE)
+         计数32 = Split2：0
+         计数32 -= 4
+         SendMessage(h列表窗口, LVM_SETCOLUMNWIDTH, 0, 计数32)
+
+         计数32 = rect.right
+         Split1：2++
+         计数32 -= Split1：2
+         数据32 = rect.bottom
+         Split2：3 = 数据32
+         的址32 = Split2：2
+         计数32 --
+         数据32 -= 2
+         MoveWindow(h编辑窗口, 的址32, 1, 计数32, 数据32, TRUE)
+      }
+      ∥通知消息
+      ∝∮(wMsg == WM_NOTIFY)
+      {
+          ∥如果是树控件
+         ∮(wParam == 44)
+         {
+             累加32 = lParam
+             基数32 = [累加32 + ＆NM_TREEVIEW.hdr.code] ∥这里展示了获取复合类型子变量的偏移量的用法
+             计数32 = [累加32 + ＆NM_TREEVIEW.itemNew.hItem]
+
+             ∮(基数32 == TVN_ITEMEXPANDING)
+             {
+                数据32 = [累加32 + ＆NM_TREEVIEW.action]
+                ∮(数据32 == TVE_COLLAPSE)
+                {
+                  ∥DSPValue h窗口句柄, 数据32, 1, 't'
+                  First = 1
+                  SendMessage(h树窗口, TVM_SELECTITEM, TVGN_CARET, NULL)
+                }
+                → Ret0
+             }
+
+            ∮(基数32 == TVN_SELCHANGED)
+            {
+               ∮((计数32 == h父结点) ∪ (First != 0))
+               {
+                    First &= 0
+                    ≮计数32
+                    ≮累加32
+                    SendMessage(h树窗口, TVM_SELECTITEM, TVGN_CARET, NULL)
+                    ≯累加32
+                    ≯计数32
+               }
+               [双字|累加32 + ＆NM_TREEVIEW.action] 测试 TVIS_FOCUSED
+               ◎? →Ret0
+               tvi.hItem = 计数32
+               tvi.imask = TVIF_TEXT
+               累加32 @= szWork1
+               tvi.pszText = 累加32
+               tvi.cchTextMax = 64
+
+               ∮(计数32 == h树子结点6)        ∥ 清除所有
+               {
+                  SendMessage(h列表窗口, LVM_DELETEALLITEMS, 0, 0)
+                  累加32 @= szNull
+                  SendMessage(h编辑窗口, WM_SETTEXT, 0, 累加32)
+                  累加32 @= szNull
+                  SendMessage(h状态栏, SB_SETTEXT, 0, 累加32)
+                  累加32 @= szNull
+                  SendMessage(h状态栏, SB_SETTEXT, 1, 累加32)
+                  累加32 @= szNull
+                  SendMessage(h状态栏, SB_SETTEXT, 2, 累加32)
+                  累加32 @= szNull
+                  SendMessage(h状态栏, SB_SETTEXT, 3, 累加32)
+                  → Ret0
+               }
+               ≮计数32
+               累加32 @= tvi
+               SendMessage(h树窗口, TVM_GETITEM, NULL, 累加32)
+               累加32 @= szWork1
+               SendMessage(h状态栏, SB_SETTEXT, 0, 累加32)
+               ≯计数32
+
+               ∮(计数32 == h树子结点1)        ∥ 列表窗口
+               {
+                  SendMessage(h列表窗口, LVM_DELETEALLITEMS, 0, 0)
+
+                  ∥添加列表窗口项目
+                  lvi.imask = LVIF_TEXT | LVIF_PARAM
+                  lvi.iItem = 0
+                  lvi.lParam = 0
+                  lvi.iSubItem = 0
+                  累加32 @= szItem1
+                  lvi.pszText = 累加32
+                  lvi.iImage = 0
+                  累加32 @= lvi
+                  SendMessage(h列表窗口, LVM_INSERTITEM, 0, 累加32)
+                  lvi.iItem = 1
+                  lvi.lParam = 1
+                  lvi.iSubItem = 0
+                  累加32 @= szItem2
+                  lvi.pszText = 累加32
+                  lvi.iImage = 0
+                  累加32 @= lvi
+                  SendMessage(h列表窗口, LVM_INSERTITEM, 0, 累加32)
+               }
+               ∝∮(计数32 == h树子结点2)    ∥ 编辑窗口
+               {                  
+                  SendMessage(h编辑窗口, WM_SETTEXT, 0, ＆szDay)
+               }
+               ∝∮(计数32 == h树子结点4)    ∥ 状态格 2
+               {
+                  SendMessage(h状态栏, SB_SETTEXT, 2, ＆Child4)
+               }
+               ∝∮(计数32 == h树子结点5)    ∥ 状态格 3
+               {
+                  SendMessage(h状态栏, SB_SETTEXT, 3, ＆Child5)
+               }               
+            }
+         }
+         ∝∮(wParam == 45)            ∥ 列表窗口
+         {
+               基数32 = lParam         ∥ 得到列表窗口的 NMHDR 指针参数
+              ∮([双字|基数32 + ＆NMHDR.code] == NM_CLICK) ∥NM_DBLCLK 这里的＆取地址操作符是取得结构体子成员的偏移量
+              {
+                  SendMessage(h列表窗口, LVM_GETNEXTITEM, -1, LVNI_FOCUSED)
+                  lvi.iItem = 累加32
+                  lvi.iSubItem = 0
+                  lvi.imask = LVIF_TEXT
+                  累加32 @= szWork1
+                  lvi.pszText = 累加32
+                  lvi.cchTextMax = 64
+                  累加32 @= lvi
+                  SendMessage(h列表窗口, LVM_GETITEM, 0, 累加32)
+                  累加32 @= szWork1
+                  SendMessage(h状态栏, SB_SETTEXT, 1, 累加32)
+              }
+         }
+      }
+      ∥系统和用户有命令消息(比如菜单消息)
+      ∝∮(wMsg == WM_COMMAND)
+      {
+           累加32 = wParam           
+           累加32 = 累加16<±    ∥只有低16位保存着命令 使用符号扩展指令扩展到32位
+           ∮(累加32 == IDM_EXIT)
+           {
+              SendMessage(hwnd, WM_CLOSE, 0 ,0)
+           }
+      }
+      ∝∮(wMsg == WM_MOUSEMOVE)
+      {
+
+          ∥在分隔条区域内就捕获鼠标
+          累加32 @= rect
+          GetClientRect(h窗口句柄, 累加32)
+          累加32 = lParam
+          数据32 = 累加32
+          累加32 &= 0x0ffff
+          累加32 ++
+          xPos = 累加32
+          数据32 ◎≯ 16
+          数据32 ++
+          yPos = 数据32
+
+         ∮((累加32 > Split1：0) ∪ (累加32 < Split1：2) ∪ (数据32 ≥ Split1：1) ∪ (数据32 ≤ Split1：3) ∪ (sz分隔条类型 != 2))
+         {
+            LoadCursor(h实例句柄, 899)
+            SetCursor(累加32)
+            SetCapture(hwnd)
+            sz分隔条类型 = 1
+         }
+         ∝∮((累加32 ≥ Split2：0) ∪ (累加32 ≤ Split2：2) ∪ (数据32 > Split2：1) ∪ (数据32 < Split2：3) ∪ (sz分隔条类型 != 1))
+         {
+            LoadCursor(h实例句柄, 898)
+            SetCursor(累加32)
+            SetCapture(hwnd)
+            sz分隔条类型 = 2
+         }
+         ∝
+         {
+
+            ∥出了分隔条区域就释放鼠标
+            ∮(wParam != MK_LBUTTON)
+            {
+               源址32 ^= 源址32
+               ∮(sz分隔条类型 == 1)
+               {
+                   源址32 @= Split1：0
+               }
+               ∝∮(sz分隔条类型 == 2)
+               {
+                    源址32 @= Split2：0
+               }
+
+               ∮(源址32 != 0)
+               {
+                  ∮((累加32 < [源址32]) ‖ (累加32 > [源址32+8]) ‖ (数据32 < [源址32+4]) ‖ (数据32 > [源址32+12]))
+                  {
+                      sz分隔条类型 &= 0
+                      ReleaseCapture()
+                  }
+               }
+            }
+            LoadCursor(0, IDC_ARROW)
+            SetCursor(累加32)
+         }
+
+         ∮(wParam == MK_LBUTTON)
+         {
+            累加32 @= rect
+            GetClientRect(h窗口句柄, 累加32)
+            计数32 = xPos
+            数据32 = yPos
+            rect.bottom -= 28
+            ∮((计数32 > rect.left) ∪ (计数32 < rect.right) ∪ (数据32 > rect.top) ∪ (数据32 < rect.bottom))
+            {
+            }
+            ∝
+            {
+               → Ret0
+            }
+
+            ∥创建拖动的分隔条
+            ∮(sz分隔条类型 == 1)       ∥ 水平分隔条
+            {
+                  计数32 = Split2：0
+                 ∮(xPos < 计数32)
+                 {
+                     LoadCursor(h实例句柄, 899)
+                     SetCursor(累加32)
+                     ∮(h分隔条 == 0)
+                     {
+                        CreateDialogParam(h实例句柄, 4801, h窗口句柄, 分隔条过程, 0)
+                     }
+                     累加32 = yPos
+                     累加32 --
+                     累加32 --
+                     Split1：1 = 累加32
+                     累加32 += 2
+                     Split1：3 = 累加32
+                     累加32 @= rect
+                     GetWindowRect(h窗口句柄, 累加32)
+                     rect.left += 6
+                     累加32 = rect.top
+                     累加32 += 44
+                     累加32 += Split1：1
+                     累加32 ++
+                     rect.top = 累加32
+                     数据32 = Split1：2
+                     MoveWindow(h分隔条, rect.left, rect.top, 数据32, 2, TRUE)
+                }
+            }
+
+            ∮(sz分隔条类型 == 2)    ∥ 垂直分隔条
+            {
+                LoadCursor(h实例句柄, 898)
+                SetCursor(累加32)
+                ∮(h分隔条 == 0)
+                {
+                    CreateDialogParam(h实例句柄, 4801, h窗口句柄, 分隔条过程, 0)
+                }
+                累加32 = xPos
+                累加32 --
+                累加32 --
+                Split2：0 = 累加32
+                累加32 += 2
+                Split2：2 = 累加32
+                累加32 @= rect
+                GetWindowRect(h窗口句柄, 累加32)
+                rect.top += 44
+                累加32 = rect.top
+                累加32 += 28
+                rect.bottom -= 累加32
+                rect.left += 6
+                计数32 = rect.left
+                计数32 += Split2：0
+                计数32 ++
+                MoveWindow(h分隔条, 计数32, rect.top, 2, Split2：3, TRUE)
+            }
+         }
+      }
+
+      ∥如果是鼠标左键松开消息
+      ∝∮(wMsg == WM_LBUTTONUP)
+      {
+            ∥重新加载鼠标并发送WM_SIZE消息
+            LoadCursor(0, IDC_ARROW)
+            SetCursor(累加32)
+            sz分隔条类型 += 0
+           ∮(h分隔条 != 0)
+           {
+              ReleaseCapture()
+              分隔条过程(h分隔条, WM_COMMAND, IDCANCEL, 0)
+              h分隔条 &= 0
+              累加32 @= rect
+              GetClientRect(h窗口句柄, 累加32)
+              数据32 = rect.bottom
+              数据32 ≮◎ 16 
+              计数32 = rect.right
+              数据16 = 计数16
+              SendMessage(h窗口句柄, WM_SIZE, 0, 数据32)
+           }
+      }
+      ∝∮(wMsg == WM_CLOSE)
+      {
+           DestroyWindow(hwnd)
+      }
+      ∝∮(wMsg == WM_DESTROY)
+      {
+          PostQuitMessage(NULL)
+      }
+      ∝
+      {
+
+～DefWin:
+         DefWindowProc(hwnd, wMsg, wParam, lParam)
+         ←  ∥函数退出
+      }
+
+～Ret0:
+      累加32 ^= 累加32         
+}
+
+∥=========================================================================
+∥ 分隔条过程函数
+∥=========================================================================
+
+∫分隔条过程(双字 hdlg,双字 wmsg,双字 wparam,双字 lparam)
+{
+      双字 hBrush
+
+      wmsg ∞ WM_INITDIALOG       ∥ 如果是 WM_INITDIALOG 消息
+      !=? →NotInit               ∥ check wmsg
+      累加32 = hdlg
+      h分隔条 = 累加32
+      → DlgDone 
+
+～NotInit:
+      wmsg ∞ WM_CTLCOLORDLG
+      ==? →ColorDlg
+      wmsg ∞ WM_COMMAND        ∥ 如果是 WM_COMMAND 消息
+      累加32 = wparam           ∥ Otherwise, see if it's OK | CANCEL
+      累加32 ∞ IDCANCEL        ∥ that was pressed
+      ==? →CancleIt            ∥ and if not either of these
+      → DlgDone
+
+～ColorDlg:
+      CreateSolidBrush(0x0000ff00)
+      hBrush = 累加32
+      ←
+
+～CancleIt:
+      DeleteObject(hBrush)
+      EndDialog(hdlg, wparam)
+      ← TRUE                  ∥ 返回真
+～DlgDone:
+      累加32 = FALSE           ∥ 返回假
+} 
+
+︸ ∥代码段结束

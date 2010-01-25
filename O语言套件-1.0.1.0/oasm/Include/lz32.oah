@@ -1,0 +1,24 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCopyLZFile(Ë«×Ö,Ë«×Ö)
+¡ÒGetExpandedNameA(Ë«×Ö,Ë«×Ö)
+¡ßGetExpandedName  GetExpandedNameA
+
+¡ÒGetExpandedNameW(Ë«×Ö,Ë«×Ö)
+¡ÒLZClose(Ë«×Ö)
+¡ÒLZCloseFile(Ë«×Ö)
+¡ÒLZCopy(Ë«×Ö,Ë«×Ö)
+¡ÒLZCreateFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLZDone()
+¡ÒLZInit(Ë«×Ö)
+¡ÒLZOpenFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLZOpenFile  LZOpenFileA
+
+¡ÒLZOpenFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLZRead(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLZSeek(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLZStart()
+
+¦ç

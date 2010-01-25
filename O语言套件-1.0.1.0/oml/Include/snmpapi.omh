@@ -1,0 +1,44 @@
+引用段
+{
+函数 SnmpSvcAddrIsIpx(整数32,整数32,整数32)=>整数32;
+函数 SnmpSvcAddrToSocket(整数32,整数32)=>整数32;
+函数 SnmpSvcGetEnterpriseOID()=>整数32;
+函数 SnmpSvcGetUptime()=>整数32;
+函数 SnmpSvcGetUptimeFromTime(整数32)=>整数32;
+函数 SnmpSvcInitUptime()=>整数32;
+函数 SnmpSvcSetLogLevel(整数32)=>整数32;
+函数 SnmpSvcSetLogType(整数32)=>整数32;
+函数 SnmpTfxClose(整数32)=>整数32;
+函数 SnmpTfxOpen(整数32,整数32)=>整数32;
+函数 SnmpTfxQuery(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilAnsiToUnicode(整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilAsnAnyCpy(整数32,整数32)=>整数32;
+函数 SnmpUtilAsnAnyFree(整数32)=>整数32;
+函数 C调用 SnmpUtilDbgPrint(整数32, ..)=>整数32;
+函数 SnmpUtilIdsToA(整数32,整数32)=>整数32;
+函数 SnmpUtilMemAlloc(整数32)=>整数32;
+函数 SnmpUtilMemFree(整数32)=>整数32;
+函数 SnmpUtilMemReAlloc(整数32,整数32)=>整数32;
+函数 SnmpUtilOctetsCmp(整数32,整数32)=>整数32;
+函数 SnmpUtilOctetsCpy(整数32,整数32)=>整数32;
+函数 SnmpUtilOctetsFree(整数32)=>整数32;
+函数 SnmpUtilOctetsNCmp(整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilOidAppend(整数32,整数32)=>整数32;
+函数 SnmpUtilOidCmp(整数32,整数32)=>整数32;
+函数 SnmpUtilOidCpy(整数32,整数32)=>整数32;
+函数 SnmpUtilOidFree(整数32)=>整数32;
+函数 SnmpUtilOidNCmp(整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilOidToA(整数32)=>整数32;
+函数 SnmpUtilPrintAsnAny(整数32)=>整数32;
+函数 SnmpUtilPrintOid(整数32)=>整数32;
+函数 SnmpUtilUTF8ToUnicode(整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilUnicodeToAnsi(整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilUnicodeToUTF8(整数32,整数32,整数32)=>整数32;
+函数 SnmpUtilVarBindCpy(整数32,整数32)=>整数32;
+函数 SnmpUtilVarBindFree(整数32)=>整数32;
+函数 SnmpUtilVarBindListCpy(整数32,整数32)=>整数32;
+函数 SnmpUtilVarBindListFree(整数32)=>整数32;
+
+宏定义 SnmpUtilIdsTo  SnmpUtilIdsToA
+宏定义 SnmpUtilOidTo  SnmpUtilOidToA
+}

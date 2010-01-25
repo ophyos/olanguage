@@ -1,0 +1,259 @@
+引用段
+{
+函数 C调用 LdapGetLastError(整数32, ..)=>整数32;
+函数 C调用 LdapMapErrorToWin32(整数32, ..)=>整数32;
+函数 C调用 LdapUTF8ToUnicode(整数32, ..)=>整数32;
+函数 C调用 LdapUnicodeToUTF8(整数32, ..)=>整数32;
+函数 C调用 ber_alloc_t(整数32, ..)=>整数32;
+函数 C调用 ber_bvdup(整数32, ..)=>整数32;
+函数 C调用 ber_bvecfree(整数32, ..)=>整数32;
+函数 C调用 ber_bvfree(整数32, ..)=>整数32;
+函数 C调用 ber_first_element(整数32, ..)=>整数32;
+函数 C调用 ber_flatten(整数32, ..)=>整数32;
+函数 C调用 ber_free(整数32, ..)=>整数32;
+函数 C调用 ber_init(整数32, ..)=>整数32;
+函数 C调用 ber_next_element(整数32, ..)=>整数32;
+函数 C调用 ber_peek_tag(整数32, ..)=>整数32;
+函数 C调用 ber_printf(整数32, ..)=>整数32;
+函数 C调用 ber_scanf(整数32, ..)=>整数32;
+函数 C调用 ber_skip_tag(整数32, ..)=>整数32;
+函数 C调用 cldap_openA(整数32, ..)=>整数32;
+函数 C调用 cldap_openW(整数32, ..)=>整数32;
+函数 C调用 ldap_abandon(整数32, ..)=>整数32;
+函数 C调用 ldap_addA(整数32, ..)=>整数32;
+函数 C调用 ldap_addW(整数32, ..)=>整数32;
+函数 C调用 ldap_add_extA(整数32, ..)=>整数32;
+函数 C调用 ldap_add_extW(整数32, ..)=>整数32;
+函数 C调用 ldap_add_ext_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_add_ext_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_add_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_add_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_bindA(整数32, ..)=>整数32;
+函数 C调用 ldap_bindW(整数32, ..)=>整数32;
+函数 C调用 ldap_bind_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_bind_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_check_filterA(整数32, ..)=>整数32;
+函数 C调用 ldap_check_filterW(整数32, ..)=>整数32;
+函数 C调用 ldap_cleanup(整数32, ..)=>整数32;
+函数 C调用 ldap_close_extended_op(整数32, ..)=>整数32;
+函数 C调用 ldap_compareA(整数32, ..)=>整数32;
+函数 C调用 ldap_compareW(整数32, ..)=>整数32;
+函数 C调用 ldap_compare_extA(整数32, ..)=>整数32;
+函数 C调用 ldap_compare_extW(整数32, ..)=>整数32;
+函数 C调用 ldap_compare_ext_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_compare_ext_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_compare_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_compare_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_conn_from_msg(整数32, ..)=>整数32;
+函数 C调用 ldap_connect(整数32, ..)=>整数32;
+函数 C调用 ldap_control_freeA(整数32, ..)=>整数32;
+函数 C调用 ldap_control_freeW(整数32, ..)=>整数32;
+函数 C调用 ldap_controls_freeA(整数32, ..)=>整数32;
+函数 C调用 ldap_controls_freeW(整数32, ..)=>整数32;
+函数 C调用 ldap_count_entries(整数32, ..)=>整数32;
+函数 C调用 ldap_count_references(整数32, ..)=>整数32;
+函数 C调用 ldap_count_valuesA(整数32, ..)=>整数32;
+函数 C调用 ldap_count_valuesW(整数32, ..)=>整数32;
+函数 C调用 ldap_count_values_len(整数32, ..)=>整数32;
+函数 C调用 ldap_create_page_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_create_page_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_create_sort_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_create_sort_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_create_vlv_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_create_vlv_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_deleteA(整数32, ..)=>整数32;
+函数 C调用 ldap_deleteW(整数32, ..)=>整数32;
+函数 C调用 ldap_delete_extA(整数32, ..)=>整数32;
+函数 C调用 ldap_delete_extW(整数32, ..)=>整数32;
+函数 C调用 ldap_delete_ext_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_delete_ext_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_delete_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_delete_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_dn2ufnA(整数32, ..)=>整数32;
+函数 C调用 ldap_dn2ufnW(整数32, ..)=>整数32;
+函数 C调用 ldap_encode_sort_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_encode_sort_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_err2stringA(整数32, ..)=>整数32;
+函数 C调用 ldap_err2stringW(整数32, ..)=>整数32;
+函数 C调用 ldap_escape_filter_elementA(整数32, ..)=>整数32;
+函数 C调用 ldap_escape_filter_elementW(整数32, ..)=>整数32;
+函数 C调用 ldap_explode_dnA(整数32, ..)=>整数32;
+函数 C调用 ldap_explode_dnW(整数32, ..)=>整数32;
+函数 C调用 ldap_extended_operationA(整数32, ..)=>整数32;
+函数 C调用 ldap_extended_operationW(整数32, ..)=>整数32;
+函数 C调用 ldap_extended_operation_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_extended_operation_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_first_attributeA(整数32, ..)=>整数32;
+函数 C调用 ldap_first_attributeW(整数32, ..)=>整数32;
+函数 C调用 ldap_first_entry(整数32, ..)=>整数32;
+函数 C调用 ldap_first_reference(整数32, ..)=>整数32;
+函数 C调用 ldap_free_controlsA(整数32, ..)=>整数32;
+函数 C调用 ldap_free_controlsW(整数32, ..)=>整数32;
+函数 C调用 ldap_get_dnA(整数32, ..)=>整数32;
+函数 C调用 ldap_get_dnW(整数32, ..)=>整数32;
+函数 C调用 ldap_get_next_page(整数32, ..)=>整数32;
+函数 C调用 ldap_get_next_page_s(整数32, ..)=>整数32;
+函数 C调用 ldap_get_optionA(整数32, ..)=>整数32;
+函数 C调用 ldap_get_optionW(整数32, ..)=>整数32;
+函数 C调用 ldap_get_paged_count(整数32, ..)=>整数32;
+函数 C调用 ldap_get_valuesA(整数32, ..)=>整数32;
+函数 C调用 ldap_get_valuesW(整数32, ..)=>整数32;
+函数 C调用 ldap_get_values_lenA(整数32, ..)=>整数32;
+函数 C调用 ldap_get_values_lenW(整数32, ..)=>整数32;
+函数 C调用 ldap_initA(整数32, ..)=>整数32;
+函数 C调用 ldap_initW(整数32, ..)=>整数32;
+函数 C调用 ldap_memfreeA(整数32, ..)=>整数32;
+函数 C调用 ldap_memfreeW(整数32, ..)=>整数32;
+函数 C调用 ldap_modifyA(整数32, ..)=>整数32;
+函数 C调用 ldap_modifyW(整数32, ..)=>整数32;
+函数 C调用 ldap_modify_extA(整数32, ..)=>整数32;
+函数 C调用 ldap_modify_extW(整数32, ..)=>整数32;
+函数 C调用 ldap_modify_ext_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_modify_ext_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_modify_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_modify_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn2A(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn2W(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn2_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn2_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdnA(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdnW(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_modrdn_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_msgfree(整数32, ..)=>整数32;
+函数 C调用 ldap_next_attributeA(整数32, ..)=>整数32;
+函数 C调用 ldap_next_attributeW(整数32, ..)=>整数32;
+函数 C调用 ldap_next_entry(整数32, ..)=>整数32;
+函数 C调用 ldap_next_reference(整数32, ..)=>整数32;
+函数 C调用 ldap_openA(整数32, ..)=>整数32;
+函数 C调用 ldap_openW(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_extended_resultA(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_extended_resultW(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_page_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_page_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_referenceA(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_referenceW(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_resultA(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_resultW(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_sort_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_sort_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_vlv_controlA(整数32, ..)=>整数32;
+函数 C调用 ldap_parse_vlv_controlW(整数32, ..)=>整数32;
+函数 C调用 ldap_perror(整数32, ..)=>整数32;
+函数 C调用 ldap_rename_extA(整数32, ..)=>整数32;
+函数 C调用 ldap_rename_extW(整数32, ..)=>整数32;
+函数 C调用 ldap_rename_ext_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_rename_ext_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_result(整数32, ..)=>整数32;
+函数 C调用 ldap_result2error(整数32, ..)=>整数32;
+函数 C调用 ldap_sasl_bindA(整数32, ..)=>整数32;
+函数 C调用 ldap_sasl_bindW(整数32, ..)=>整数32;
+函数 C调用 ldap_sasl_bind_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_sasl_bind_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_searchA(整数32, ..)=>整数32;
+函数 C调用 ldap_searchW(整数32, ..)=>整数32;
+函数 C调用 ldap_search_abandon_page(整数32, ..)=>整数32;
+函数 C调用 ldap_search_extA(整数32, ..)=>整数32;
+函数 C调用 ldap_search_extW(整数32, ..)=>整数32;
+函数 C调用 ldap_search_ext_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_search_ext_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_search_init_pageA(整数32, ..)=>整数32;
+函数 C调用 ldap_search_init_pageW(整数32, ..)=>整数32;
+函数 C调用 ldap_search_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_search_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_search_stA(整数32, ..)=>整数32;
+函数 C调用 ldap_search_stW(整数32, ..)=>整数32;
+函数 C调用 ldap_set_dbg_flags(整数32, ..)=>整数32;
+函数 C调用 ldap_set_dbg_routine(整数32, ..)=>整数32;
+函数 C调用 ldap_set_optionA(整数32, ..)=>整数32;
+函数 C调用 ldap_set_optionW(整数32, ..)=>整数32;
+函数 C调用 ldap_simple_bindA(整数32, ..)=>整数32;
+函数 C调用 ldap_simple_bindW(整数32, ..)=>整数32;
+函数 C调用 ldap_simple_bind_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_simple_bind_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_sslinitA(整数32, ..)=>整数32;
+函数 C调用 ldap_sslinitW(整数32, ..)=>整数32;
+函数 C调用 ldap_start_tls_sA(整数32, ..)=>整数32;
+函数 C调用 ldap_start_tls_sW(整数32, ..)=>整数32;
+函数 C调用 ldap_startup(整数32, ..)=>整数32;
+函数 C调用 ldap_stop_tls_s(整数32, ..)=>整数32;
+函数 C调用 ldap_ufn2dnA(整数32, ..)=>整数32;
+函数 C调用 ldap_ufn2dnW(整数32, ..)=>整数32;
+函数 C调用 ldap_unbind(整数32, ..)=>整数32;
+函数 C调用 ldap_unbind_s(整数32, ..)=>整数32;
+函数 C调用 ldap_value_freeA(整数32, ..)=>整数32;
+函数 C调用 ldap_value_freeW(整数32, ..)=>整数32;
+函数 C调用 ldap_value_free_len(整数32, ..)=>整数32;
+
+宏定义 cldap_open  cldap_openA
+宏定义 ldap_add  ldap_addA
+宏定义 ldap_add_ext  ldap_add_extA
+宏定义 ldap_add_ext_s  ldap_add_ext_sA
+宏定义 ldap_add_s  ldap_add_sA
+宏定义 ldap_bind  ldap_bindA
+宏定义 ldap_bind_s  ldap_bind_sA
+宏定义 ldap_check_filter  ldap_check_filterA
+宏定义 ldap_compare  ldap_compareA
+宏定义 ldap_compare_ext  ldap_compare_extA
+宏定义 ldap_compare_ext_s  ldap_compare_ext_sA
+宏定义 ldap_compare_s  ldap_compare_sA
+宏定义 ldap_control_free  ldap_control_freeA
+宏定义 ldap_controls_free  ldap_controls_freeA
+宏定义 ldap_count_values  ldap_count_valuesA
+宏定义 ldap_create_page_control  ldap_create_page_controlA
+宏定义 ldap_create_sort_control  ldap_create_sort_controlA
+宏定义 ldap_create_vlv_control  ldap_create_vlv_controlA
+宏定义 ldap_delete  ldap_deleteA
+宏定义 ldap_delete_ext  ldap_delete_extA
+宏定义 ldap_delete_ext_s  ldap_delete_ext_sA
+宏定义 ldap_delete_s  ldap_delete_sA
+宏定义 ldap_dn2ufn  ldap_dn2ufnA
+宏定义 ldap_encode_sort_control  ldap_encode_sort_controlA
+宏定义 ldap_err2string  ldap_err2stringA
+宏定义 ldap_escape_filter_element  ldap_escape_filter_elementA
+宏定义 ldap_explode_dn  ldap_explode_dnA
+宏定义 ldap_extended_operation  ldap_extended_operationA
+宏定义 ldap_extended_operation_s  ldap_extended_operation_sA
+宏定义 ldap_first_attribute  ldap_first_attributeA
+宏定义 ldap_free_controls  ldap_free_controlsA
+宏定义 ldap_get_dn  ldap_get_dnA
+宏定义 ldap_get_option  ldap_get_optionA
+宏定义 ldap_get_values  ldap_get_valuesA
+宏定义 ldap_get_values_len  ldap_get_values_lenA
+宏定义 ldap_init  ldap_initA
+宏定义 ldap_memfree  ldap_memfreeA
+宏定义 ldap_modify  ldap_modifyA
+宏定义 ldap_modify_ext  ldap_modify_extA
+宏定义 ldap_modify_ext_s  ldap_modify_ext_sA
+宏定义 ldap_modify_s  ldap_modify_sA
+宏定义 ldap_modrdn2  ldap_modrdn2A
+宏定义 ldap_modrdn2_s  ldap_modrdn2_sA
+宏定义 ldap_modrdn  ldap_modrdnA
+宏定义 ldap_modrdn_s  ldap_modrdn_sA
+宏定义 ldap_next_attribute  ldap_next_attributeA
+宏定义 ldap_open  ldap_openA
+宏定义 ldap_parse_extended_result  ldap_parse_extended_resultA
+宏定义 ldap_parse_page_control  ldap_parse_page_controlA
+宏定义 ldap_parse_reference  ldap_parse_referenceA
+宏定义 ldap_parse_result  ldap_parse_resultA
+宏定义 ldap_parse_sort_control  ldap_parse_sort_controlA
+宏定义 ldap_parse_vlv_control  ldap_parse_vlv_controlA
+宏定义 ldap_rename_ext  ldap_rename_extA
+宏定义 ldap_rename_ext_s  ldap_rename_ext_sA
+宏定义 ldap_sasl_bind  ldap_sasl_bindA
+宏定义 ldap_sasl_bind_s  ldap_sasl_bind_sA
+宏定义 ldap_search  ldap_searchA
+宏定义 ldap_search_ext  ldap_search_extA
+宏定义 ldap_search_ext_s  ldap_search_ext_sA
+宏定义 ldap_search_init_page  ldap_search_init_pageA
+宏定义 ldap_search_s  ldap_search_sA
+宏定义 ldap_search_st  ldap_search_stA
+宏定义 ldap_set_option  ldap_set_optionA
+宏定义 ldap_simple_bind  ldap_simple_bindA
+宏定义 ldap_simple_bind_s  ldap_simple_bind_sA
+宏定义 ldap_sslinit  ldap_sslinitA
+宏定义 ldap_start_tls_s  ldap_start_tls_sA
+宏定义 ldap_ufn2dn  ldap_ufn2dnA
+宏定义 ldap_value_free  ldap_value_freeA
+}

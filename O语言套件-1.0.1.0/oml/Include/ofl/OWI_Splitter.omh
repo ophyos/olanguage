@@ -1,0 +1,15 @@
+
+引用段
+{
+
+函数 分隔条_设置控件1:Splitter_SetControl1(地址 pSplitter,地址 c);
+函数 分隔条_设置控件2:Splitter_SetControl2(地址 pSplitter,地址 c);
+函数 分隔条_获取控件1:Splitter_GetControl1(地址 pSplitter)=>地址;
+函数 分隔条_获取控件2:Splitter_GetControl2(地址 pSplitter)=>地址;
+
+函数 分隔条_销毁控件:Splitter_DestroyControl(地址 pSplitter);	 
+函数 分隔条_获取类:Splitter_GetClass(地址 pSplitter)=>地址;
+函数 分隔条_获取标题:Splitter_GetCaption(地址 pSplitter)=>地址;
+函数 分隔条_设置标题:Splitter_SetCaption(地址 pSplitter,地址 string);
+
+} 

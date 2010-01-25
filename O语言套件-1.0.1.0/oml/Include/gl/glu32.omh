@@ -1,0 +1,58 @@
+
+
+引用段
+{
+函数 gluBeginCurve(整数32);
+函数 gluBeginPolygon(整数32);
+函数 gluBeginSurface(整数32);
+函数 gluBeginTrim(整数32);
+函数 gluBuild1DMipmaps(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gluBuild2DMipmaps(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gluCylinder(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluDeleteNurbsRenderer(整数32);
+函数 gluDeleteQuadric(整数32);
+函数 gluDeleteTess(整数32);
+函数 gluDisk(整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluEndCurve(整数32);
+函数 gluEndPolygon(整数32);
+函数 gluEndSurface(整数32);
+函数 gluEndTrim(整数32);
+函数 gluErrorString(整数32)=>整数32;
+函数 gluErrorUnicodeStringEXT(整数32)=>整数32;
+函数 gluGetNurbsProperty(整数32,整数32,整数32);
+函数 gluGetString(整数32)=>整数32;
+函数 gluGetTessProperty(整数32,整数32,整数32);
+函数 gluLoadSamplingMatrices(整数32,整数32,整数32,整数32);
+函数 gluLookAt(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluNewNurbsRenderer()=>整数32;
+函数 gluNewQuadric()=>整数32;
+函数 gluNewTess()=>整数32;
+函数 gluNextContour(整数32,整数32);
+函数 gluNurbsCallback(整数32,整数32,整数32);
+函数 gluNurbsCurve(整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluNurbsProperty(整数32,整数32,整数32);
+函数 gluNurbsSurface(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluOrtho2D(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluPartialDisk(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluPerspective(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluPickMatrix(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluProject(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gluPwlCurve(整数32,整数32,整数32,整数32,整数32);
+函数 gluQuadricCallback(整数32,整数32,整数32);
+函数 gluQuadricDrawStyle(整数32,整数32);
+函数 gluQuadricNormals(整数32,整数32);
+函数 gluQuadricOrientation(整数32,整数32);
+函数 gluQuadricTexture(整数32,整数32);
+函数 gluScaleImage(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 gluSphere(整数32,整数32,整数32,整数32,整数32);
+函数 gluTessBeginContour(整数32);
+函数 gluTessBeginPolygon(整数32,整数32);
+函数 gluTessCallback(整数32,整数32,整数32);
+函数 gluTessEndContour(整数32);
+函数 gluTessEndPolygon(整数32);
+函数 gluTessNormal(整数32,整数32,整数32,整数32,整数32,整数32,整数32);
+函数 gluTessProperty(整数32,整数32,整数32,整数32);
+函数 gluTessVertex(整数32,整数32,整数32);
+函数 gluUnProject(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+}

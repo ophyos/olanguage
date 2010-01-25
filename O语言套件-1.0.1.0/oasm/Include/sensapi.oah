@@ -1,0 +1,11 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫IsDestinationReachableA(双字,双字)
+∵IsDestinationReachable  IsDestinationReachableA
+
+∫IsDestinationReachableW(双字,双字)
+∫IsNetworkAlive(双字)
+
+︾

@@ -1,0 +1,28 @@
+引用段
+{
+函数 WpBindToSiteA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WpBindToSiteW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WpCreateSiteA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WpCreateSiteW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WpDeleteSiteA(整数32)=>整数32;
+函数 WpDeleteSiteW(整数32)=>整数32;
+函数 WpDoesSiteExistA(整数32,整数32)=>整数32;
+函数 WpDoesSiteExistW(整数32,整数32)=>整数32;
+函数 WpEnumProvidersA(整数32,整数32,整数32)=>整数32;
+函数 WpEnumProvidersW(整数32,整数32,整数32)=>整数32;
+函数 WpGetErrorStringA(整数32,整数32,整数32)=>整数32;
+函数 WpGetErrorStringW(整数32,整数32,整数32)=>整数32;
+函数 WpListSitesA(整数32,整数32,整数32)=>整数32;
+函数 WpListSitesW(整数32,整数32,整数32)=>整数32;
+函数 WpPostA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WpPostW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 WpBindToSite  WpBindToSiteA
+宏定义 WpCreateSite  WpCreateSiteA
+宏定义 WpDeleteSite  WpDeleteSiteA
+宏定义 WpDoesSiteExist  WpDoesSiteExistA
+宏定义 WpEnumProviders  WpEnumProvidersA
+宏定义 WpGetErrorString  WpGetErrorStringA
+宏定义 WpListSites  WpListSitesA
+宏定义 WpPost  WpPostA
+}

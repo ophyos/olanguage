@@ -1,0 +1,14 @@
+
+引用段
+{
+
+函数 单选_获取已选择:Radio_GetSelected(地址 pRadio)=>整数32;
+函数 单选_置为选择:Radio_SetSelected(地址 pRadio,整数32 select);
+函数 单选_设置组:Radio_SetGroup(地址 pRadio,正数32 group);
+函数 单选_获取组:Radio_GetGroup(地址 pRadio)=>正数32;
+函数 单选_设置文本颜色:Radio_SetTextColor(地址 pRadio,正数32 color);
+函数 单选_获取文本颜色:Radio_GetTextColor(地址 pRadio)=>正数32;
+函数 单选_销毁控件:Radio_DestroyControl(地址 pRadio);	
+函数 单选_获取类:Radio_GetClass(地址 pRadio)=>地址;
+
+}

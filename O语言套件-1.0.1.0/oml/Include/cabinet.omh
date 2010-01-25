@@ -1,0 +1,18 @@
+引用段
+{
+函数 DeleteExtractedFiles(整数32)=>整数32;
+函数 DllGetVersion(整数32)=>整数32;
+函数 Extract(整数32,整数32)=>整数32;
+函数 C调用 FCIAddFile(整数32, ..)=>整数32;
+函数 C调用 FCICreate(整数32, ..)=>整数32;
+函数 C调用 FCIDestroy(整数32, ..)=>整数32;
+函数 C调用 FCIFlushCabinet(整数32, ..)=>整数32;
+函数 C调用 FCIFlushFolder(整数32, ..)=>整数32;
+函数 C调用 FDICopy(整数32, ..)=>整数32;
+函数 C调用 FDICreate(整数32, ..)=>整数32;
+函数 C调用 FDIDestroy(整数32, ..)=>整数32;
+函数 C调用 FDIIsCabinet(整数32, ..)=>整数32;
+函数 C调用 FDITruncateCabinet(整数32, ..)=>整数32;
+函数 GetDllVersion()=>整数32;
+
+}

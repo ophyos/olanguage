@@ -1,0 +1,58 @@
+
+引用段
+{
+
+函数 组合框_获取计数:ComboBox_GetCount(地址 pComboBox)=>整数32;
+函数 组合框_获取项目高:ComboBox_GetItemHeight(地址 pComboBox,整数32 index)=>整数32; 
+函数 组合框_设置项目高:ComboBox_SetItemHeight(地址 pComboBox,整数32 index, 整数32 height);	
+函数 组合框_设置选择状态:ComboBox_SetSelect(地址 pComboBox,整数32 index);
+函数 组合框_获取选择状态:ComboBox_GetSelect(地址 pComboBox)=>整数32;   
+函数 组合框_设置选择开始:ComboBox_SetSelectStart(地址 pComboBox,整数32 start);  
+函数 组合框_获取选择开始:ComboBox_GetSelectStart(地址 pComboBox)=>整数32;   
+函数 组合框_设置选择结束:ComboBox_SetSelectEnd(地址 pComboBox,整数32 end);  
+函数 组合框_获取选择结束:ComboBox_GetSelectEnd(地址 pComboBox)=>整数32;	
+函数 组合框_设置首序列:ComboBox_SetTopIndex(地址 pComboBox,整数32 index);
+函数 组合框_获取首序列:ComboBox_GetTopIndex(地址 pComboBox)=>整数32;
+函数 组合框_设置文本限制:ComboBox_SetTextLimit(地址 pComboBox,整数32 length);
+函数 组合框_获取项目文本长度:ComboBox_GetItemTextLength(地址 pComboBox,整数32 index)=>整数32;
+函数 组合框_显示下拉列表:ComboBox_ShowDropdownList(地址 pComboBox,整数32 show);
+函数 组合框_使下拉列表可视:ComboBox_IsDropdownListVisible(地址 pComboBox)=>整数32;	 
+函数 组合框_获取下拉列表宽:ComboBox_GetDropdownListWidth(地址 pComboBox)=>整数32;
+函数 组合框_设置下拉列表宽:ComboBox_SetDropdownListWidth(地址 pComboBox,整数32 width); 
+函数 组合框_获取下拉列表矩形:ComboBox_GetDropdownListRect(地址 pComboBox,地址 rc);
+函数 组合框_设置滚动条宽:ComboBox_SetScrollWidth(地址 pComboBox,整数32 width);
+函数 组合框_获取滚动条宽:ComboBox_GetScrollWidth(地址 pComboBox)=>整数32;
+函数 组合框_设置拓展UI:ComboBox_SetExtendedUI(地址 pComboBox,整数32 eui);
+函数 组合框_获取拓展UI:ComboBox_GetExtendedUI(地址 pComboBox)=>整数32;
+函数 组合框_设置限制:ComboBox_SetLocale(地址 pComboBox,正数32 locale);
+函数 组合框_设置项目数据:ComboBox_SetItemData(地址 pComboBox,整数32 index,地址 data);
+函数 组合框_获取项目数据:ComboBox_GetItemData(地址 pComboBox,整数32 index)=>地址;  
+函数 组合框_获取限制:ComboBox_GetLocale(地址 pComboBox)=>正数32;
+
+//在ComboBox列表中指定的位置插入一个Item
+函数 组合框_插入项目:ComboBox_InsertItem(地址 pComboBox,地址 string,整数32 index)=>整数32;
+//在ComboBox列表的尾部追加一个Item
+函数 组合框_增加项目:ComboBox_AddItem(地址 pComboBox,地址 string)=>整数32;
+//删除指定的Item
+函数 组合框_删除项目:ComboBox_DeleteItem(地址 pComboBox,整数32 index)=>整数32;
+//删除所有Item
+函数 组合框_删除所有项目:ComboBox_DeleteAllItems(地址 pComboBox);
+//获取指定Item的文本
+函数 组合框_获取项目文本:ComboBox_GetItemText(地址 pComboBox,整数32 index)=>地址;
+//如果某一项从第一个字符开始匹配string(注意：大小写不敏感)，将返回这个项的索引
+函数 组合框_搜索项目:ComboBox_FindItem(地址 pComboBox,地址 string)=>整数32;	   
+//如果某一项完全相同于string(注意：大小写不敏感)，将返回这一项的索引，否则返回-1
+函数 组合框_精确搜索项目:ComboBox_FindItemExact(地址 pComboBox,地址 string)=>整数32;
+//选择起始文本为string的Item，返回被选中Item的索引，若无法完成匹配，则返回-1
+函数 组合框_选择字符串:ComboBox_SelectString(地址 pComboBox,地址 string)=>整数32;
+//对于风格为SimpleStyle和TextStyle的ComboBox，设置其编辑控件中文本的选择范围。
+//若start为-1，会清除被选中文本的高亮选择状态；若end为-1，则编辑控件中所有文本都会被选中。
+函数 组合框_设置编辑选中状态:ComboBox_SetEditSelect(地址 pComboBox,整数32 start, 整数32 end); 
+
+函数 组合框_销毁控件:ComboBox_DestroyControl(地址 pComboBox);
+函数 组合框_获取类:ComboBox_GetClass(地址 pComboBox)=>地址;
+函数 组合框_设置标题:ComboBox_SetCaption(地址 pComboBox,地址 string);
+函数 组合框_获取标题:ComboBox_GetCaption(地址 pComboBox)=>地址; 
+
+
+}

@@ -1,0 +1,26 @@
+
+∫Í∂®“Â
+{
+IDR_MENU_MAIN                           109
+IDD_OPTION                              118
+IDB_TOOLBAR                             120
+IDI_MAIN                                122
+IDB_TREE                                124
+IDD_ABOUT                               126
+IDC_CHECKBOX3                           1000
+IDM_NEW                                 40000
+IDM_OPEN                                40001
+IDM_QUIT                                40002
+IDM_UNDO                                40003
+IDM_REDO                                40004
+IDM_OPTION                              40005
+IDM_ABOUT                               40006
+IDC_TREE1                               40008
+IDC_COMBO1                              40009
+IDC_CHECKBOX1                           40011
+IDC_CHECKBOX2                           40012
+IDC_LIST1                               40013
+IDC_PROGRESS1                           40014
+IDC_EDIT1                               40015
+
+}

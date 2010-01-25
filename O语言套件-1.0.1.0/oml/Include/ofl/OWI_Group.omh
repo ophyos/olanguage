@@ -1,0 +1,12 @@
+
+引用段
+{
+
+函数 组框_设置文本颜色:Group_SetTextColor(地址 pGroup,正数32 color);
+函数 组框_获取文本颜色:Group_GetTextColor(地址 pGroup)=>正数32;
+函数 组框_销毁控件:Group_DestroyControl(地址 pGroup);	
+函数 组框_获取类:Group_GetClass(地址 pGroup)=>地址;
+函数 组框_设置可用:Group_Enable(地址 pGroup,整数32 bEnable);
+函数 组框_为可用:Group_IsEnabled(地址 pGroup)=>整数32;
+
+} 

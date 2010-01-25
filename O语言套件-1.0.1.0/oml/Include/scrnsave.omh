@@ -1,0 +1,21 @@
+引用段
+{
+函数 DefScreenSaverProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 DummyEntry()=>整数32;
+函数 C调用 MyHelpMessage(整数32, ..)=>整数32;
+函数 RealScreenSaverProc(整数32,整数32,整数32,整数32)=>整数32;
+函数 ScreenSaverChangePassword(整数32)=>整数32;
+函数 WinMain(整数32,整数32,整数32,整数32)=>整数32;
+函数 WinMainN(整数32,整数32,整数32,整数32)=>整数32;
+函数 C调用 fChildPreview(整数32, ..)=>整数32;
+函数 C调用 hMainInstance(整数32, ..)=>整数32;
+函数 C调用 hMainWindow(整数32, ..)=>整数32;
+函数 C调用 main(整数32, ..)=>整数32;
+函数 C调用 szAppName(整数32, ..)=>整数32;
+函数 C调用 szHelpFile(整数32, ..)=>整数32;
+函数 C调用 szIniFile(整数32, ..)=>整数32;
+函数 C调用 szName(整数32, ..)=>整数32;
+函数 C调用 szNoHelpMemory(整数32, ..)=>整数32;
+函数 C调用 szScreenSaver(整数32, ..)=>整数32;
+
+}

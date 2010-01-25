@@ -1,0 +1,7 @@
+引用段
+{
+函数 CreateSecurityPage(整数32)=>整数32;
+函数 EditSecurity(整数32,整数32)=>整数32;
+函数 C调用 IID_ISecurityInformation(整数32, ..)=>整数32;
+
+}

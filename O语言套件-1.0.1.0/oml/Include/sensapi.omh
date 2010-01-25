@@ -1,0 +1,8 @@
+引用段
+{
+函数 IsDestinationReachableA(整数32,整数32)=>整数32;
+函数 IsDestinationReachableW(整数32,整数32)=>整数32;
+函数 IsNetworkAlive(整数32)=>整数32;
+
+宏定义 IsDestinationReachable  IsDestinationReachableA
+}

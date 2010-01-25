@@ -1,0 +1,27 @@
+
+6F6663001   ∥ofc文件标识
+
+∥系统标识符        系统内码              注释
+
+define             0x000010001         ∥宏定义
+undef              0x000010002         ∥取消宏定义
+include            0x000010003         ∥包含文
+wnd                0x000010004         ∥窗口
+layer              0x000010005         ∥层
+control            0x000010006         ∥控件
+border             0x000010007         ∥边框
+bgcolor            0x000010008         ∥背景色
+rbbgcolor          0x000010009         ∥右下背景色
+coordinateX        0x00001000A         ∥坐标X
+coordinateY        0x00001000B         ∥坐标Y
+width              0x00001000C         ∥宽度
+height             0x00001000D         ∥高度
+visible            0x00001000E         ∥可视
+type               0x00001000F         ∥类型
+caption            0x000010010         ∥标题
+event_map          0x000010011         ∥事件映射
+modal              0x000010012         ∥模态 模式状态(即是否为模式对话框标识)
+bgpicture          0x000010013         ∥背景图片
+enable             0x000010014         ∥可用
+
+∥其它属性名称还没有翻译呵

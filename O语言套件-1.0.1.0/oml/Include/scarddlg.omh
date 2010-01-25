@@ -1,0 +1,11 @@
+引用段
+{
+函数 GetOpenCardNameA(整数32)=>整数32;
+函数 GetOpenCardNameW(整数32)=>整数32;
+函数 SCardDlgExtendedError()=>整数32;
+函数 SCardUIDlgSelectCardA(整数32)=>整数32;
+函数 SCardUIDlgSelectCardW(整数32)=>整数32;
+
+宏定义 GetOpenCardName  GetOpenCardNameA
+宏定义 SCardUIDlgSelectCard  SCardUIDlgSelectCardA
+}

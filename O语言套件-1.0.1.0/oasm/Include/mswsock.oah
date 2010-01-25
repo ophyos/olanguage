@@ -1,0 +1,44 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAcceptEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumProtocolsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEnumProtocols  EnumProtocolsA
+
+¡ÒEnumProtocolsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAcceptExSockaddrs(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAddressByNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetAddressByName  GetAddressByNameA
+
+¡ÒGetAddressByNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetNameByTypeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetNameByType  GetNameByTypeA
+
+¡ÒGetNameByTypeW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetServiceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetService  GetServiceA
+
+¡ÒGetServiceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetTypeByNameA(Ë«×Ö,Ë«×Ö)
+¡ßGetTypeByName  GetTypeByNameA
+
+¡ÒGetTypeByNameW(Ë«×Ö,Ë«×Ö)
+¡ÒMigrateWinsockConfiguration(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒNPLoadNameSpaces(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSetServiceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSetService  SetServiceA
+
+¡ÒSetServiceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒTransmitFile(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWSARecvEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òdn_expand(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ògetnetbyname(Ë«×Ö)
+¡Òinet_network(Ë«×Ö)
+¡Òrcmd(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òrexec(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Òrresvport(Ë«×Ö)
+¡Òs_perror(Ë«×Ö,Ë«×Ö)
+¡Òsethostname(Ë«×Ö,Ë«×Ö)
+
+¦ç

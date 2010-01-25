@@ -1,0 +1,20 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫DeleteExtractedFiles(双字)
+∫DllGetVersion(双字)
+∫Extract(双字,双字)
+∫:C FCIAddFile(双字, ..)
+∫:C FCICreate(双字, ..)
+∫:C FCIDestroy(双字, ..)
+∫:C FCIFlushCabinet(双字, ..)
+∫:C FCIFlushFolder(双字, ..)
+∫:C FDICopy(双字, ..)
+∫:C FDICreate(双字, ..)
+∫:C FDIDestroy(双字, ..)
+∫:C FDIIsCabinet(双字, ..)
+∫:C FDITruncateCabinet(双字, ..)
+∫GetDllVersion()
+
+︾

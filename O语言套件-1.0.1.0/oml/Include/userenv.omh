@@ -1,0 +1,149 @@
+引用段
+{
+函数 AddDesktopItemA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddDesktopItemW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddGPO(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddItemA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AddItemW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AllocGpContainer(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplyGroupPolicy(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplySystemPolicyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ApplySystemPolicyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckAccessForPolicyGeneration(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CheckForSkippedExtensions(整数32,整数32)=>整数32;
+函数 CheckXForestLogon(整数32)=>整数32;
+函数 CopyProfileDirectoryA(整数32,整数32,整数32)=>整数32;
+函数 CopyProfileDirectoryExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CopyProfileDirectoryExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CopyProfileDirectoryW(整数32,整数32,整数32)=>整数32;
+函数 CopySystemProfile(整数32)=>整数32;
+函数 CreateEnvironmentBlock(整数32,整数32,整数32)=>整数32;
+函数 CreateGroupA(整数32,整数32)=>整数32;
+函数 CreateGroupExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateGroupExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateGroupW(整数32,整数32)=>整数32;
+函数 CreateLinkFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateLinkFileExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateLinkFileExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateLinkFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateURLFile(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUserProfileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUserProfileExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUserProfileExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUserProfileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteDesktopItemA(整数32,整数32)=>整数32;
+函数 DeleteDesktopItemW(整数32,整数32)=>整数32;
+函数 DeleteGroupA(整数32,整数32)=>整数32;
+函数 DeleteGroupW(整数32,整数32)=>整数32;
+函数 DeleteItemA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteItemW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteLinkFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteLinkFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteProfileA(整数32,整数32,整数32)=>整数32;
+函数 DeleteProfileW(整数32,整数32,整数32)=>整数32;
+函数 DeleteURLFile(整数32,整数32,整数32,整数32)=>整数32;
+函数 DestroyEnvironmentBlock(整数32)=>整数32;
+函数 DetermineProfilesLocation(整数32)=>整数32;
+函数 EnterCriticalPolicySection(整数32)=>整数32;
+函数 EnterUserProfileLock(整数32)=>整数32;
+函数 ExpandEnvironmentStringsForUserA(整数32,整数32,整数32,整数32)=>整数32;
+函数 ExpandEnvironmentStringsForUserW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FilterGPOs(整数32,整数32)=>整数32;
+函数 ForceSyncFgPolicy(整数32)=>整数32;
+函数 FreeGPOListA(整数32)=>整数32;
+函数 FreeGPOListW(整数32)=>整数32;
+函数 FreeGpoInfo(整数32)=>整数32;
+函数 GPOExceptionFilter(整数32)=>整数32;
+函数 GenerateRsopPolicy(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAllUsersProfileDirectoryA(整数32,整数32)=>整数32;
+函数 GetAllUsersProfileDirectoryW(整数32,整数32)=>整数32;
+函数 GetAppliedGPOListA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAppliedGPOListW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetDefaultUserProfileDirectoryA(整数32,整数32)=>整数32;
+函数 GetDefaultUserProfileDirectoryW(整数32,整数32)=>整数32;
+函数 GetGPOListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGPOListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetGroupPolicyNetworkName(整数32,整数32)=>整数32;
+函数 GetNextFgPolicyRefreshInfo(整数32,整数32)=>整数32;
+函数 GetPreviousFgPolicyRefreshInfo(整数32,整数32)=>整数32;
+函数 GetProfileType(整数32)=>整数32;
+函数 GetProfilesDirectoryA(整数32,整数32)=>整数32;
+函数 GetProfilesDirectoryW(整数32,整数32)=>整数32;
+函数 GetSystemTempDirectoryA(整数32,整数32)=>整数32;
+函数 GetSystemTempDirectoryW(整数32,整数32)=>整数32;
+函数 GetUserAppDataPathA(整数32,整数32,整数32)=>整数32;
+函数 GetUserAppDataPathW(整数32,整数32,整数32)=>整数32;
+函数 GetUserProfileDirFromSidA(整数32,整数32,整数32)=>整数32;
+函数 GetUserProfileDirFromSidW(整数32,整数32,整数32)=>整数32;
+函数 GetUserProfileDirectoryA(整数32,整数32,整数32)=>整数32;
+函数 GetUserProfileDirectoryW(整数32,整数32,整数32)=>整数32;
+函数 GetUserSid(整数32)=>整数32;
+函数 GetWbemServices(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InitializeProfiles(整数32)=>整数32;
+函数 InitializeUserProfile()=>整数32;
+函数 IsSyncForegroundPolicyRefresh(整数32,整数32)=>整数32;
+函数 LeaveCriticalPolicySection(整数32)=>整数32;
+函数 LeaveUserProfileLock(整数32)=>整数32;
+函数 LoadUserProfileA(整数32,整数32)=>整数32;
+函数 LoadUserProfileW(整数32,整数32)=>整数32;
+函数 LogExtSessionStatus(整数32,整数32,整数32,整数32)=>整数32;
+函数 LogGpoData(整数32)=>整数32;
+函数 LogSessionData(整数32,整数32)=>整数32;
+函数 MigrateNT4ToNT5()=>整数32;
+函数 PingComputer(整数32,整数32)=>整数32;
+函数 ProcessGroupPolicyCompleted(整数32,整数32,整数32)=>整数32;
+函数 ProcessGroupPolicyCompletedEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 ProcessMachAndUserGpoList(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadGPExtensions(整数32)=>整数32;
+函数 RefreshPolicy(整数32)=>整数32;
+函数 RefreshPolicyEx(整数32,整数32)=>整数32;
+函数 RegisterGPNotification(整数32,整数32)=>整数32;
+函数 ResetUserSpecialFolderPaths()=>整数32;
+函数 RsopAccessCheckByType(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RsopFileAccessCheck(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RsopLoggingEnabled()=>整数32;
+函数 RsopResetPolicySettingStatus(整数32,整数32,整数32)=>整数32;
+函数 RsopSetPolicySettingStatus(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SecureUserProfiles()=>整数32;
+函数 SetNextFgPolicyRefreshInfo(整数32,整数32,整数32)=>整数32;
+函数 SetupGPOFilter(整数32)=>整数32;
+函数 ShutdownGPOProcessing(整数32)=>整数32;
+函数 SignalMachinePolicyForegroundProcessingDone()=>整数32;
+函数 SignalUserPolicyForegroundProcessingDone()=>整数32;
+函数 TranslateNameXForest(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 UnloadGPExtensions(整数32)=>整数32;
+函数 UnloadUserProfile(整数32,整数32)=>整数32;
+函数 UnregisterGPNotification(整数32)=>整数32;
+函数 UpdateExtSessionStatus(整数32,整数32,整数32,整数32)=>整数32;
+函数 WaitForMachinePolicyForegroundProcessing()=>整数32;
+函数 WaitForUserPolicyForegroundProcessing()=>整数32;
+
+宏定义 AddDesktopItem  AddDesktopItemA
+宏定义 AddItem  AddItemA
+宏定义 ApplySystemPolicy  ApplySystemPolicyA
+宏定义 CopyProfileDirectory  CopyProfileDirectoryA
+宏定义 CopyProfileDirectoryEx  CopyProfileDirectoryExA
+宏定义 CreateGroup  CreateGroupA
+宏定义 CreateGroupEx  CreateGroupExA
+宏定义 CreateLinkFile  CreateLinkFileA
+宏定义 CreateLinkFileEx  CreateLinkFileExA
+宏定义 CreateUserProfile  CreateUserProfileA
+宏定义 CreateUserProfileEx  CreateUserProfileExA
+宏定义 DeleteDesktopItem  DeleteDesktopItemA
+宏定义 DeleteGroup  DeleteGroupA
+宏定义 DeleteItem  DeleteItemA
+宏定义 DeleteLinkFile  DeleteLinkFileA
+宏定义 DeleteProfile  DeleteProfileA
+宏定义 ExpandEnvironmentStringsForUser  ExpandEnvironmentStringsForUserA
+宏定义 FreeGPOList  FreeGPOListA
+宏定义 GetAllUsersProfileDirectory  GetAllUsersProfileDirectoryA
+宏定义 GetAppliedGPOList  GetAppliedGPOListA
+宏定义 GetDefaultUserProfileDirectory  GetDefaultUserProfileDirectoryA
+宏定义 GetGPOList  GetGPOListA
+宏定义 GetProfilesDirectory  GetProfilesDirectoryA
+宏定义 GetSystemTempDirectory  GetSystemTempDirectoryA
+宏定义 GetUserAppDataPath  GetUserAppDataPathA
+宏定义 GetUserProfileDirFromSid  GetUserProfileDirFromSidA
+宏定义 GetUserProfileDirectory  GetUserProfileDirectoryA
+宏定义 LoadUserProfile  LoadUserProfileA
+}

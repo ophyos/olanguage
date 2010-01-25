@@ -1,0 +1,31 @@
+引用段
+{
+函数 ADsBuildEnumerator(整数32,整数32)=>整数32;
+函数 ADsBuildVarArrayInt(整数32,整数32,整数32)=>整数32;
+函数 ADsBuildVarArrayStr(整数32,整数32,整数32)=>整数32;
+函数 ADsDecodeBinaryData(整数32,整数32,整数32)=>整数32;
+函数 ADsEncodeBinaryData(整数32,整数32,整数32)=>整数32;
+函数 ADsEnumerateNext(整数32,整数32,整数32,整数32)=>整数32;
+函数 ADsFreeEnumerator(整数32)=>整数32;
+函数 ADsGetLastError(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ADsGetObject(整数32,整数32,整数32)=>整数32;
+函数 ADsOpenObject(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ADsSetLastError(整数32,整数32,整数32)=>整数32;
+函数 AdsFreeAdsValues(整数32,整数32)=>整数32;
+函数 AdsTypeToPropVariant2(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AdsTypeToPropVariant(整数32,整数32,整数32)=>整数32;
+函数 AllocADsMem(整数32)=>整数32;
+函数 AllocADsStr(整数32)=>整数32;
+函数 BinarySDToSecurityDescriptor(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecDescriptorToVariant(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertSecurityDescriptorToSecDes(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ConvertTrusteeToSid(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FreeADsMem(整数32)=>整数32;
+函数 FreeADsStr(整数32)=>整数32;
+函数 PropVariantToAdsType2(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PropVariantToAdsType(整数32,整数32,整数32,整数32)=>整数32;
+函数 ReallocADsMem(整数32,整数32,整数32)=>整数32;
+函数 ReallocADsStr(整数32,整数32)=>整数32;
+函数 SecurityDescriptorToBinarySD(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+
+}

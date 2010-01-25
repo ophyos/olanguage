@@ -1,0 +1,225 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCloseODBCPerfData()
+¡ÒCollectODBCPerfData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCursorLibLockDbc(Ë«×Ö,Ë«×Ö)
+¡ÒCursorLibLockDesc(Ë«×Ö,Ë«×Ö)
+¡ÒCursorLibLockStmt(Ë«×Ö,Ë«×Ö)
+¡ÒCursorLibTransact(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDllBidEntryPoint(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetODBCSharedData()
+¡ÒLockHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C MpHeapAlloc(Ë«×Ö, ..)
+¡Ò:C MpHeapCompact(Ë«×Ö, ..)
+¡Ò:C MpHeapCreate(Ë«×Ö, ..)
+¡Ò:C MpHeapDestroy(Ë«×Ö, ..)
+¡Ò:C MpHeapFree(Ë«×Ö, ..)
+¡Ò:C MpHeapReAlloc(Ë«×Ö, ..)
+¡Ò:C MpHeapSize(Ë«×Ö, ..)
+¡Ò:C MpHeapValidate(Ë«×Ö, ..)
+¡ÒODBCGetTryWaitValue()
+¡ÒODBCInternalConnectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒODBCQualifyFileDSNW(Ë«×Ö)
+¡ÒODBCSetTryWaitValue(Ë«×Ö)
+¡ÒOpenODBCPerfData(Ë«×Ö)
+¡ÒPostComponentError(Ë«×Ö)
+¡ÒPostODBCComponentError(Ë«×Ö)
+¡ÒPostODBCError(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL·ÖÅäÁ¬½Ó:SQLAllocConnect(Ë«×Ö,Ë«×Ö)
+¡ÒSQL·ÖÅä»·¾³:SQLAllocEnv(Ë«×Ö)
+¡ÒSQL·ÖÅä¾ä±ú:SQLAllocHandle(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLAllocHandleStd(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLAllocStmt(Ë«×Ö,Ë«×Ö)
+¡ÒSQL°ó¶¨ÁÐ:SQLBindCol(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLBindParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL°ó¶¨²ÎÊý:SQLBindParameter(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLä¯ÀÀÁ¬½Ó:SQLBrowseConnectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLBrowseConnect  SQLBrowseConnectA
+
+¡ÒSQLBrowseConnectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLBulkOperations(Ë«×Ö,Ë«×Ö)
+¡ÒSQLÈ¡Ïû:SQLCancel(Ë«×Ö)
+¡ÒSQL¹Ø±ÕÖ¸Õë:SQLCloseCursor(Ë«×Ö)
+¡ÒSQLColAttributeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLColAttribute  SQLColAttributeA
+
+¡ÒSQLColAttributeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLColAttributesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLColAttributes  SQLColAttributesA
+
+¡ÒSQLColAttributesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLColumnPrivilegesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLColumnPrivileges  SQLColumnPrivilegesA
+
+¡ÒSQLColumnPrivilegesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLColumnsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLColumns  SQLColumnsA
+
+¡ÒSQLColumnsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÁ¬½Ó:SQLConnectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLConnect  SQLConnectA
+
+¡ÒSQLConnectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLCopyDesc(Ë«×Ö,Ë«×Ö)
+¡ÒSQLÊý¾ÝÔ´:SQLDataSourcesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLDataSources  SQLDataSourcesA
+
+¡ÒSQLDataSourcesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLDescribeColA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLDescribeCol  SQLDescribeColA
+
+¡ÒSQLDescribeColW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLDescribeParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL¶Ï¿ªÁ¬½Ó:SQLDisconnect(Ë«×Ö)
+¡ÒSQLÇý¶¯Æ÷Á¬½Ó:SQLDriverConnectA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLDriverConnect  SQLDriverConnectA
+
+¡ÒSQLDriverConnectW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÇý¶¯Æ÷:SQLDriversA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLDrivers  SQLDriversA
+
+¡ÒSQLDriversW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLEndTran(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL´íÎó:SQLErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLError  SQLErrorA
+
+¡ÒSQLErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÖ±½ÓÖ´ÐÐ:SQLExecDirectA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLExecDirect  SQLExecDirectA
+
+¡ÒSQLExecDirectW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÖ´ÐÐ:SQLExecute(Ë«×Ö)
+¡ÒSQLExtendedFetch(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÈ¡µÃ:SQLFetch(Ë«×Ö)
+¡ÒSQLÈ¡µÃ¾í:SQLFetchScroll(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLForeignKeysA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLForeignKeys  SQLForeignKeysA
+
+¡ÒSQLForeignKeysW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÊÍ·ÅÁ¬½Ó:SQLFreeConnect(Ë«×Ö)
+¡ÒSQLÊÍ·Å»·¾³:SQLFreeEnv(Ë«×Ö)
+¡ÒSQLÊÍ·Å¾ä±ú:SQLFreeHandle(Ë«×Ö,Ë«×Ö)
+¡ÒSQLÊÍ·ÅÓï¾ä:SQLFreeStmt(Ë«×Ö,Ë«×Ö)
+¡ÒSQL»ñÈ¡Á¬½ÓÊôÐÔ:SQLGetConnectAttrA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetConnectAttr  SQLGetConnectAttrA
+
+¡ÒSQLGetConnectAttrW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL»ñÈ¡Á¬½ÓÑ¡Ïî:SQLGetConnectOptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetConnectOption  SQLGetConnectOptionA
+
+¡ÒSQLGetConnectOptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL»ñÈ¡Ö¸ÕëÃû:SQLGetCursorNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetCursorName  SQLGetCursorNameA
+
+¡ÒSQLGetCursorNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL»ñÈ¡Êý¾Ý:SQLGetData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetDescFieldA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetDescField  SQLGetDescFieldA
+
+¡ÒSQLGetDescFieldW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetDescRecA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetDescRec  SQLGetDescRecA
+
+¡ÒSQLGetDescRecW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetDiagFieldA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetDiagField  SQLGetDiagFieldA
+
+¡ÒSQLGetDiagFieldW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetDiagRecA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetDiagRec  SQLGetDiagRecA
+
+¡ÒSQLGetDiagRecW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetEnvAttr(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetFunctions(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetInfo  SQLGetInfoA
+
+¡ÒSQLGetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetStmtAttrA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLGetStmtAttr  SQLGetStmtAttrA
+
+¡ÒSQLGetStmtAttrW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetStmtOption(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLGetTypeInfoA(Ë«×Ö,Ë«×Ö)
+¡ßSQLGetTypeInfo  SQLGetTypeInfoA
+
+¡ÒSQLGetTypeInfoW(Ë«×Ö,Ë«×Ö)
+¡ÒSQLMoreResults(Ë«×Ö)
+¡ÒSQLNativeSqlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLNativeSql  SQLNativeSqlA
+
+¡ÒSQLNativeSqlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLNumParams(Ë«×Ö,Ë«×Ö)
+¡ÒSQL½á¹ûÁÐÊý:SQLNumResultCols(Ë«×Ö,Ë«×Ö)
+¡ÒSQLParamData(Ë«×Ö,Ë«×Ö)
+¡ÒSQLParamOptions(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQL×¼±¸:SQLPrepareA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLPrepare  SQLPrepareA
+
+¡ÒSQLPrepareW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLPrimaryKeysA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLPrimaryKeys  SQLPrimaryKeysA
+
+¡ÒSQLPrimaryKeysW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLProcedureColumnsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLProcedureColumns  SQLProcedureColumnsA
+
+¡ÒSQLProcedureColumnsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLProceduresA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLProcedures  SQLProceduresA
+
+¡ÒSQLProceduresW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLPutData(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLRowCount(Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃÁ¬½ÓÊôÐÔ:SQLSetConnectAttrA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLSetConnectAttr  SQLSetConnectAttrA
+
+¡ÒSQLSetConnectAttrW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃÁ¬½ÓÑ¡Ïî:SQLSetConnectOptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLSetConnectOption  SQLSetConnectOptionA
+
+¡ÒSQLSetConnectOptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃÖ¸ÕëÃû:SQLSetCursorNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLSetCursorName  SQLSetCursorNameA
+
+¡ÒSQLSetCursorNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLSetDescFieldA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLSetDescField  SQLSetDescFieldA
+
+¡ÒSQLSetDescFieldW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLSetDescRec(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃ»·¾³ÊôÐÔ:SQLSetEnvAttr(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃ²ÎÊý:SQLSetParam(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃÎ»ÖÃ:SQLSetPos(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLSetScrollOptions(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLÉèÖÃÓï¾äÊôÐÔ:SQLSetStmtAttrA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLSetStmtAttr  SQLSetStmtAttrA
+
+¡ÒSQLSetStmtAttrW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLSetStmtOption(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLSpecialColumnsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLSpecialColumns  SQLSpecialColumnsA
+
+¡ÒSQLSpecialColumnsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLStatisticsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLStatistics  SQLStatisticsA
+
+¡ÒSQLStatisticsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLTablePrivilegesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLTablePrivileges  SQLTablePrivilegesA
+
+¡ÒSQLTablePrivilegesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLTablesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSQLTables  SQLTablesA
+
+¡ÒSQLTablesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSQLTransact(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSearchStatusCode(Ë«×Ö,Ë«×Ö)
+¡ÒVFreeErrors(Ë«×Ö)
+¡ÒVRetrieveDriverErrorsRowCol(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒValidateErrorQueue(Ë«×Ö,Ë«×Ö)
+¡Ò:C g_hHeapMalloc(Ë«×Ö, ..)
+
+¦ç

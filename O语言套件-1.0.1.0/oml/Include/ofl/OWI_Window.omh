@@ -1,0 +1,27 @@
+
+引用段
+{
+
+函数 窗口_设置最大化:Wnd_SetMaximized(地址 pWnd,整数32 max);
+函数 窗口_置为最大化:Wnd_IsMaximized(地址 pWnd)=>整数32;
+函数 窗口_设置最小化:Wnd_SetMinimized(地址 pWnd,整数32 min);
+函数 窗口_置为最小化:Wnd_IsMinimized(地址 pWnd)=>整数32;	 
+函数 窗口_设置最顶端状态:Wnd_SetTopmost(地址 pWnd,整数32 topmost);
+函数 窗口_获取最顶端状态:Wnd_GetTopmost(地址 pWnd)=>整数32;
+函数 窗口_设置小图标:Wnd_SetSmallIcon(地址 pWnd,HICON icon);
+函数 窗口_设置大图标:Wnd_SetBigIcon(地址 pWnd,HICON icon);  
+函数 窗口_获取小图标:Wnd_GetSmallIcon(地址 pWnd)=>HICON;
+函数 窗口_获取大图标:Wnd_GetBigIcon(地址 pWnd)=>HICON;
+
+//关闭并销毁这个窗口和其所有子窗口
+函数 窗口_关闭:Wnd_Close(地址 pWnd); 
+//设置窗口的位置与大小
+函数 窗口_移动:Wnd_MoveWindow(地址 pWnd,整数32 x,整数32 y,整数32 width,整数32 height);
+//最大化窗口
+函数 窗口_最大化:Wnd_Maximize(地址 pWnd);
+//最小化窗口
+函数 窗口_最小化:Wnd_Minimize(地址 pWnd);
+//还原已经最大化或最小化的窗口
+函数 窗口_还原:Wnd_Restore(地址 pWnd);
+
+}

@@ -1,0 +1,27 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAccessibleChildren(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessibleObjectFromEvent(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessibleObjectFromPoint(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAccessibleObjectFromWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateStdAccessibleObject(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateStdAccessibleProxyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCreateStdAccessibleProxy  CreateStdAccessibleProxyA
+
+¡ÒCreateStdAccessibleProxyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetOleaccVersionInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetRoleTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetRoleText  GetRoleTextA
+
+¡ÒGetRoleTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetStateTextA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetStateText  GetStateTextA
+
+¡ÒGetStateTextW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLresultFromObject(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒObjectFromLresult(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWindowFromAccessibleObject(Ë«×Ö,Ë«×Ö)
+
+¦ç

@@ -1,0 +1,90 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒBindAsyncMoniker(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoGetClassObjectFromURL(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetCombineUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetCompareUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetCreateSecurityManager(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetCreateZoneManager(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetGetProtocolFlags(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetGetSecurityUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetGetSession(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetIsFeatureEnabled(Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetIsFeatureEnabledForUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetIsFeatureZoneElevationEnabled(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetParseUrl(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetQueryInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCoInternetSetFeatureEnabled(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCompareSecurityIds(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCompatFlagsFromClsid(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCopyBindInfo(Ë«×Ö,Ë«×Ö)
+¡ÒCopyStgMedium(Ë«×Ö,Ë«×Ö)
+¡ÒCreateAsyncBindCtx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateAsyncBindCtxEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateFormatEnumerator(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateURLMoniker(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateURLMonikerEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒExtract(Ë«×Ö,Ë«×Ö)
+¡ÒFaultInIEFeature(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindMediaType(Ë«×Ö,Ë«×Ö)
+¡ÒFindMediaTypeClass(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFindMimeFromData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClassFileOrMime(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetClassURL(Ë«×Ö,Ë«×Ö)
+¡ÒGetComponentIDFromCLSSPEC(Ë«×Ö,Ë«×Ö)
+¡ÒGetSoftwareUpdateInfo(Ë«×Ö,Ë«×Ö)
+¡ÒHlinkGoBack(Ë«×Ö)
+¡ÒHlinkGoForward(Ë«×Ö)
+¡ÒHlinkNavigateMoniker(Ë«×Ö,Ë«×Ö)
+¡ÒHlinkNavigateString(Ë«×Ö,Ë«×Ö)
+¡ÒHlinkSimpleNavigateToMoniker(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒHlinkSimpleNavigateToString(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsAsyncMoniker(Ë«×Ö)
+¡ÒIsJITInProgress()
+¡ÒIsLoggingEnabledA(Ë«×Ö)
+¡ßIsLoggingEnabled  IsLoggingEnabledA
+
+¡ÒIsLoggingEnabledW(Ë«×Ö)
+¡ÒIsValidURL(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒMkParseDisplayNameEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒObtainUserAgentString(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterBindStatusCallback(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterFormatEnumerator(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterMediaTypeClass(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRegisterMediaTypes(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒReleaseBindInfo(Ë«×Ö)
+¡ÒRevokeBindStatusCallback(Ë«×Ö,Ë«×Ö)
+¡ÒRevokeFormatEnumerator(Ë«×Ö,Ë«×Ö)
+¡ÒSetSoftwareUpdateAdvertisementState(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLDownloadA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLDownload  URLDownloadA
+
+¡ÒURLDownloadToCacheFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLDownloadToCacheFile  URLDownloadToCacheFileA
+
+¡ÒURLDownloadToCacheFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLDownloadToFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLDownloadToFile  URLDownloadToFileA
+
+¡ÒURLDownloadToFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLDownloadW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLOpenBlockingStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLOpenBlockingStream  URLOpenBlockingStreamA
+
+¡ÒURLOpenBlockingStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLOpenPullStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLOpenPullStream  URLOpenPullStreamA
+
+¡ÒURLOpenPullStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒURLOpenStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßURLOpenStream  URLOpenStreamA
+
+¡ÒURLOpenStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlMkBuildVersion()
+¡ÒUrlMkGetSessionOption(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlMkSetSessionOption(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWriteHitLogging(Ë«×Ö)
+
+¦ç

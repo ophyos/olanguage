@@ -1,0 +1,78 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒACUIProviderInvokeUI(Ë«×Ö)
+¡ÒCryptUIDlgCertMgr(Ë«×Ö)
+¡ÒCryptUIDlgFreeCAContext(Ë«×Ö)
+¡ÒCryptUIDlgSelectCA(Ë«×Ö)
+¡ßCryptUIDlgSelectC  CryptUIDlgSelectCA
+
+¡ÒCryptUIDlgSelectCertificateA(Ë«×Ö)
+¡ßCryptUIDlgSelectCertificate  CryptUIDlgSelectCertificateA
+
+¡ÒCryptUIDlgSelectCertificateFromStore(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIDlgSelectCertificateW(Ë«×Ö)
+¡ÒCryptUIDlgSelectStoreA(Ë«×Ö)
+¡ßCryptUIDlgSelectStore  CryptUIDlgSelectStoreA
+
+¡ÒCryptUIDlgSelectStoreW(Ë«×Ö)
+¡ÒCryptUIDlgViewCRLA(Ë«×Ö)
+¡ßCryptUIDlgViewCRL  CryptUIDlgViewCRLA
+
+¡ÒCryptUIDlgViewCRLW(Ë«×Ö)
+¡ÒCryptUIDlgViewCTLA(Ë«×Ö)
+¡ßCryptUIDlgViewCTL  CryptUIDlgViewCTLA
+
+¡ÒCryptUIDlgViewCTLW(Ë«×Ö)
+¡ÒCryptUIDlgViewCertificateA(Ë«×Ö,Ë«×Ö)
+¡ßCryptUIDlgViewCertificate  CryptUIDlgViewCertificateA
+
+¡ÒCryptUIDlgViewCertificatePropertiesA(Ë«×Ö,Ë«×Ö)
+¡ßCryptUIDlgViewCertificateProperties  CryptUIDlgViewCertificatePropertiesA
+
+¡ÒCryptUIDlgViewCertificatePropertiesW(Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIDlgViewCertificateW(Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIDlgViewContext(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIDlgViewSignerInfoA(Ë«×Ö)
+¡ßCryptUIDlgViewSignerInfo  CryptUIDlgViewSignerInfoA
+
+¡ÒCryptUIDlgViewSignerInfoW(Ë«×Ö)
+¡ÒCryptUIFreeCertificatePropertiesPagesA(Ë«×Ö,Ë«×Ö)
+¡ßCryptUIFreeCertificatePropertiesPages  CryptUIFreeCertificatePropertiesPagesA
+
+¡ÒCryptUIFreeCertificatePropertiesPagesW(Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIFreeViewSignaturesPagesA(Ë«×Ö,Ë«×Ö)
+¡ßCryptUIFreeViewSignaturesPages  CryptUIFreeViewSignaturesPagesA
+
+¡ÒCryptUIFreeViewSignaturesPagesW(Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIGetCertificatePropertiesPagesA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptUIGetCertificatePropertiesPages  CryptUIGetCertificatePropertiesPagesA
+
+¡ÒCryptUIGetCertificatePropertiesPagesW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIGetViewSignaturesPagesA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßCryptUIGetViewSignaturesPages  CryptUIGetViewSignaturesPagesA
+
+¡ÒCryptUIGetViewSignaturesPagesW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIStartCertMgr(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizBuildCTL(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizCertRequest(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizCreateCertRequestNoDS(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizDigitalSign(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizExport(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizFreeCertRequestNoDS(Ë«×Ö)
+¡ÒCryptUIWizFreeDigitalSignContext(Ë«×Ö)
+¡ÒCryptUIWizImport(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizQueryCertRequestNoDS(Ë«×Ö,Ë«×Ö)
+¡ÒCryptUIWizSubmitCertRequestNoDS(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnrollmentCOMObjectFactory_getInstance(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒI_CryptUIProtect(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒI_CryptUIProtectFailure(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLocalEnroll(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLocalEnrollNoDS(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒRetrievePKCS7FromCA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßRetrievePKCS7FromC  RetrievePKCS7FromCA
+
+¡ÒWizardFree(Ë«×Ö)
+
+¦ç

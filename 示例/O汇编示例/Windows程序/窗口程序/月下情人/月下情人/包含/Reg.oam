@@ -1,0 +1,208 @@
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//
+//	公用子程序部分：注册表操作部分
+//
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 设置二进制型键值
+// 参数：键名指针，键值名指针，键值
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _SetRegKeyBin(双字 lpszKeyName,双字 lpszValueName,双字 lpdbValue,双字 dwSize)
+{
+	双字 hKey
+
+     累加32  @= hKey
+	RegCreateKey(HKEY_LOCAL_MACHINE,lpszKeyName,累加32)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+	     RegSetValueEx(hKey,lpszValueName,NULL,REG_BINARY,lpdbValue,dwSize)
+		RegCloseKey(hKey)
+	}
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 读取字符型键值
+// 参数：键名指针，键值名指针，接收键值字符串指针
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _GetRegKeyBin(双字 lpszKeyName,双字 lpszValueName,双字 lpdbBuffer,双字 dwSize)
+{
+	双字 hKey,dwType
+	双字 dwReturn
+
+	全部压栈
+	dwReturn = -1
+     累加32 @= hKey
+	RegOpenKeyEx(HKEY_LOCAL_MACHINE,lpszKeyName,NULL,KEY_QUERY_VALUE,累加32)
+
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		dwType = REG_BINARY
+           累加32 @= dwType
+           数据32 @= dwSize
+		RegQueryValueEx(hKey,lpszValueName,NULL,累加32,  ...
+			lpdbBuffer,数据32)
+
+		如果(累加32 == ERROR_SUCCESS)
+          {
+			dwReturn = 累加32
+		}
+		RegCloseKey(hKey)
+	}
+	全部出栈
+
+	返回 dwReturn
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 设置数字型键值
+// 参数：键名指针，键值名指针，键值
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _SetRegKeyDw(双字 lpszKeyName,双字 lpszValueName,双字 dwValue)
+{
+	双字 hKey
+
+     累加32 @= hKey
+	RegCreateKey(HKEY_LOCAL_MACHINE,lpszKeyName,累加32)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+           累加32 @= dwValue
+		RegSetValueEx(hKey,lpszValueName,NULL, ...
+			REG_DWORD_LITTLE_ENDIAN,累加32,4)
+		RegCloseKey(hKey)
+	}	
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 读取数字型键值
+// 参数：键名指针，键值名指针
+// 返回：键值，失败返回 -1
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _GetRegKeyDw(双字 lpszKeyName,双字 lpszValueName)
+{
+	双字 dwTemp,hKey,dwSize,dwValue,dwReturn
+
+	全部压栈
+	dwReturn = -1
+	dwSize = 4
+     累加32 @= hKey
+	RegOpenKeyEx(HKEY_LOCAL_MACHINE,lpszKeyName,NULL,...
+			KEY_QUERY_VALUE,累加32)
+
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		累加32 = REG_DWORD
+		dwTemp = 累加32
+           累加32 @= dwTemp
+           计数32 @= dwSize
+           数据32 @= dwValue
+		RegQueryValueEx(hKey,lpszValueName,NULL,...
+				累加32,数据32,计数32)
+		如果(累加32 == ERROR_SUCCESS)
+          {
+			压栈 dwValue
+			出栈 dwReturn
+		}
+		RegCloseKey(hKey)
+	}
+	全部出栈
+
+	返回 dwReturn
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 设置字符型键值
+// 参数：键名指针，键值名指针，键值字符串指针
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _SetRegKeySz(双字 lpszKeyName,双字 lpszValueName,双字 lpszString)
+{
+	双字 hKey,dwSize
+
+	字符串长度(lpszString)
+	累加32 ++
+	dwSize = 累加32
+     累加32 @= hKey
+	RegCreateKey(HKEY_LOCAL_MACHINE,lpszKeyName,累加32)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		RegSetValueEx(hKey,lpszValueName,NULL,...
+				REG_SZ,lpszString,dwSize)
+		RegCloseKey(hKey)
+	}
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 读取字符型键值
+// 参数：键名指针，键值名指针，接收键值字符串指针
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _GetRegKeySz(双字 lpszKeyName,双字 lpszValueName,双字 lpszBuffer,双字 dwSize)
+{
+	双字 hKey
+	双字 dwReturn
+
+	全部压栈
+	dwReturn = -1
+
+	累加32 = lpszBuffer
+	[字节|累加32] = 0
+     累加32 @= hKey
+	RegOpenKeyEx(HKEY_LOCAL_MACHINE,lpszKeyName,NULL, ...
+		KEY_QUERY_VALUE,累加32)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+           累加32 @= dwSize
+		RegQueryValueEx(hKey,lpszValueName,NULL,NULL,...
+			lpszBuffer,累加32)
+		如果(累加32 ==	ERROR_SUCCESS)
+           {
+			dwReturn = 累加32
+		}
+		RegCloseKey(hKey)
+	}
+	全部出栈
+
+	返回 dwReturn
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 删除键值
+// 参数：键名指针，键值名指针
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _DelRegKey(双字 lpszKeyName,双字 lpszValueName)
+{
+	双字 hKey
+
+     累加32 @= hKey
+	RegOpenKeyEx(HKEY_LOCAL_MACHINE,lpszKeyName,NULL,...
+		KEY_WRITE,累加32)
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		RegDeleteValue(hKey,lpszValueName)
+		RegCloseKey(hKey)
+	}
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 删除键名
+// 参数：键名指针，子键名指针
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 _DelRegSubKey(双字 lpszKeyName,双字 lpszSubKeyName)
+{
+	双字 hKey
+
+     累加32 @= hKey
+	RegOpenKeyEx(HKEY_LOCAL_MACHINE,lpszKeyName,NULL,...
+		KEY_WRITE,累加32)
+
+	如果(累加32 == ERROR_SUCCESS)
+     {
+		RegDeleteKey(hKey,lpszSubKeyName)
+		RegCloseKey(hKey)
+	}
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

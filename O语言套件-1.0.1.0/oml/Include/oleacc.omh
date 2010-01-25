@@ -1,0 +1,22 @@
+引用段
+{
+函数 AccessibleChildren(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessibleObjectFromEvent(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessibleObjectFromPoint(整数32,整数32,整数32,整数32)=>整数32;
+函数 AccessibleObjectFromWindow(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateStdAccessibleObject(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateStdAccessibleProxyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateStdAccessibleProxyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetOleaccVersionInfo(整数32,整数32)=>整数32;
+函数 GetRoleTextA(整数32,整数32,整数32)=>整数32;
+函数 GetRoleTextW(整数32,整数32,整数32)=>整数32;
+函数 GetStateTextA(整数32,整数32,整数32)=>整数32;
+函数 GetStateTextW(整数32,整数32,整数32)=>整数32;
+函数 LresultFromObject(整数32,整数32,整数32)=>整数32;
+函数 ObjectFromLresult(整数32,整数32,整数32,整数32)=>整数32;
+函数 WindowFromAccessibleObject(整数32,整数32)=>整数32;
+
+宏定义 CreateStdAccessibleProxy  CreateStdAccessibleProxyA
+宏定义 GetRoleText  GetRoleTextA
+宏定义 GetStateText  GetStateTextA
+}

@@ -1,0 +1,59 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒCheckDsPolicy(Ë«×Ö,Ë«×Ö)
+¡ÒDsBrowseForContainerA(Ë«×Ö)
+¡ßDsBrowseForContainer  DsBrowseForContainerA
+
+¡ÒDsBrowseForContainerW(Ë«×Ö)
+¡ÒDsGetFriendlyClassName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒDsGetIcon(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒFormatDirectoryName(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C FormatMsgBox(Ë«×Ö, ..)
+¡Ò:C FormatMsgResource(Ë«×Ö, ..)
+¡ÒGetArrayContents(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDisplayNameFromADsPath(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetStringElementA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetStringElement  GetStringElementA
+
+¡ÒGetStringElementW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒLocalAllocStringA2W(Ë«×Ö,Ë«×Ö)
+¡ÒLocalAllocStringA(Ë«×Ö,Ë«×Ö)
+¡ßLocalAllocString  LocalAllocStringA
+
+¡ÒLocalAllocStringLenA(Ë«×Ö,Ë«×Ö)
+¡ßLocalAllocStringLen  LocalAllocStringLenA
+
+¡ÒLocalAllocStringLenW(Ë«×Ö,Ë«×Ö)
+¡ÒLocalAllocStringW2A(Ë«×Ö,Ë«×Ö)
+¡ßLocalAllocStringW2  LocalAllocStringW2A
+
+¡ÒLocalAllocStringW(Ë«×Ö,Ë«×Ö)
+¡ÒLocalFreeStringA(Ë«×Ö)
+¡ßLocalFreeString  LocalFreeStringA
+
+¡ÒLocalFreeStringW(Ë«×Ö)
+¡ÒLocalQueryStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßLocalQueryString  LocalQueryStringA
+
+¡ÒLocalQueryStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒObjectClassFromSearchColumn(Ë«×Ö,Ë«×Ö)
+¡ÒPutStringElementA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPutStringElement  PutStringElementA
+
+¡ÒPutStringElementW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒShowDirectoryUI()
+¡ÒStringDPA_AppendStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringDPA_AppendString  StringDPA_AppendStringA
+
+¡ÒStringDPA_AppendStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringDPA_DeleteString(Ë«×Ö,Ë«×Ö)
+¡ÒStringDPA_Destroy(Ë«×Ö)
+¡ÒStringDPA_InsertStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStringDPA_InsertString  StringDPA_InsertStringA
+
+¡ÒStringDPA_InsertStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStringFromSearchColumn(Ë«×Ö,Ë«×Ö)
+
+¦ç

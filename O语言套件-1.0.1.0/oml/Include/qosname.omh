@@ -1,0 +1,7 @@
+引用段
+{
+函数 WPUGetQOSTemplate(整数32,整数32,整数32)=>整数32;
+函数 WSCInstallQOSTemplate(整数32,整数32,整数32)=>整数32;
+函数 WSCRemoveQOSTemplate(整数32,整数32)=>整数32;
+
+}

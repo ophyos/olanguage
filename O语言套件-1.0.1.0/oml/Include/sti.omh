@@ -1,0 +1,9 @@
+引用段
+{
+函数 MigrateRegisteredSTIAppsForWIAEvents(整数32,整数32,整数32,整数32)=>整数32;
+函数 RegSTIforWia(整数32,整数32,整数32,整数32)=>整数32;
+函数 StiCreateInstanceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 StiCreateInstanceW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 StiCreateInstance  StiCreateInstanceA
+}

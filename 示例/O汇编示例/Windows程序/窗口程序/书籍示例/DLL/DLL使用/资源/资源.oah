@@ -1,0 +1,40 @@
+
+∫Í∂®“Â
+{
+IDR_MENU_MAIN                           109
+IDD_OPTION                              118
+IDB_TOOLBAR                             120
+IDI_MAIN                                122
+IDB_TREE                                124
+IDD_ABOUT                               126
+IDC_CHECKBOX3                           1000
+IDC_EDIT_AGE                            1009
+IDM_NEW                                 40000
+IDM_OPEN                                40001
+IDM_QUIT                                40002
+IDM_UNDO                                40003
+IDM_REDO                                40004
+IDM_OPTION                              40005
+IDM_ABOUT                               40006
+IDM_SAVE                                40007
+IDC_TREE1                               40008
+IDM_SAVEAS                              40008
+IDC_COMBO1                              40009
+IDM_ASSOCIATE_WWD                       40009
+IDM_UNASSOCIATE_WWD                     40010
+IDC_CHECKBOX1                           40011
+IDM_STATIC_CALL_DLLFUN                  40011
+IDC_CHECKBOX2                           40012
+IDM_DYNAMIC_CALL_DLLFUN                 40012
+IDC_LIST1                               40013
+IDC_PROGRESS1                           40014
+IDC_EDIT1                               40015
+IDC_BUTTON_ADD                          40016
+IDC_BUTTON_MODIFY                       40017
+IDC_BUTTON_DELETE                       40018
+IDC_BUTTON_FIRST                        40019
+IDC_BUTTON_NEXT                         40020
+IDC_BUTTON_LAST                         40021
+IDC_BUTTON_PREVIOUS                     40022
+
+}

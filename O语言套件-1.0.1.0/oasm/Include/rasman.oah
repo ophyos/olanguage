@@ -1,0 +1,9 @@
+∥O语言包含文件 由def2oah V1.0 自动生成
+
+∥引用外部函数
+︽
+∫RasSecurityDialogGetInfo(双字,双字)
+∫RasSecurityDialogReceive(双字,双字,双字,双字,双字)
+∫RasSecurityDialogSend(双字,双字,双字)
+
+︾

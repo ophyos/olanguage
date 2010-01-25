@@ -1,0 +1,48 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒSnmpSvcAddrIsIpx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpSvcAddrToSocket(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpSvcGetEnterpriseOID()
+¡ÒSnmpSvcGetUptime()
+¡ÒSnmpSvcGetUptimeFromTime(Ë«×Ö)
+¡ÒSnmpSvcInitUptime()
+¡ÒSnmpSvcSetLogLevel(Ë«×Ö)
+¡ÒSnmpSvcSetLogType(Ë«×Ö)
+¡ÒSnmpTfxClose(Ë«×Ö)
+¡ÒSnmpTfxOpen(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpTfxQuery(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilAnsiToUnicode(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilAsnAnyCpy(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilAsnAnyFree(Ë«×Ö)
+¡Ò:C SnmpUtilDbgPrint(Ë«×Ö, ..)
+¡ÒSnmpUtilIdsToA(Ë«×Ö,Ë«×Ö)
+¡ßSnmpUtilIdsTo  SnmpUtilIdsToA
+
+¡ÒSnmpUtilMemAlloc(Ë«×Ö)
+¡ÒSnmpUtilMemFree(Ë«×Ö)
+¡ÒSnmpUtilMemReAlloc(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOctetsCmp(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOctetsCpy(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOctetsFree(Ë«×Ö)
+¡ÒSnmpUtilOctetsNCmp(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOidAppend(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOidCmp(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOidCpy(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOidFree(Ë«×Ö)
+¡ÒSnmpUtilOidNCmp(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilOidToA(Ë«×Ö)
+¡ßSnmpUtilOidTo  SnmpUtilOidToA
+
+¡ÒSnmpUtilPrintAsnAny(Ë«×Ö)
+¡ÒSnmpUtilPrintOid(Ë«×Ö)
+¡ÒSnmpUtilUTF8ToUnicode(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilUnicodeToAnsi(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilUnicodeToUTF8(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilVarBindCpy(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilVarBindFree(Ë«×Ö)
+¡ÒSnmpUtilVarBindListCpy(Ë«×Ö,Ë«×Ö)
+¡ÒSnmpUtilVarBindListFree(Ë«×Ö)
+
+¦ç

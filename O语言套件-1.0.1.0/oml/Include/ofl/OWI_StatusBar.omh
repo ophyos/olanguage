@@ -1,0 +1,35 @@
+
+引用段
+{
+
+//////////////////////////////////////////////////////////////////////////
+//StatusBarPart
+函数 状态条分块_获取索引:StatusBarPart_GetIndex(地址 pStatusBarPart)=>整数32;
+函数 状态条分块_设置宽:StatusBarPart_SetWidth(地址 pStatusBarPart,整数32 width);
+函数 状态条分块_获取宽:StatusBarPart_GetWidth(地址 pStatusBarPart)=>整数32;
+函数 状态条分块_设置文本:StatusBarPart_SetText(地址 pStatusBarPart,地址 string);
+函数 状态条分块_获取文本:StatusBarPart_GetText(地址 pStatusBarPart)=>地址;
+函数 状态条分块_设置文本颜色:StatusBarPart_SetTextColor(地址 pStatusBarPart,正数32 color);
+函数 状态条分块_获取文本颜色:StatusBarPart_GetTextColor(地址 pStatusBarPart)=>正数32;
+函数 状态条分块_设置风格:StatusBarPart_SetStyle(地址 pStatusBarPart,正数32 style);
+函数 状态条分块_获取风格:StatusBarPart_GetStyle(地址 pStatusBarPart)=>正数32;
+函数 状态条分块_设置提示文本:StatusBarPart_SetTipText(地址 pStatusBarPart,地址 string);
+函数 状态条分块_获取提示文本:StatusBarPart_GetTipText(地址 pStatusBarPart)=>地址;
+函数 状态条分块_设置图标:StatusBarPart_SetIcon(地址 pStatusBarPart,HICON icon);
+函数 状态条分块_获取矩形:StatusBarPart_GetRect(地址 pStatusBarPart,地址 rc);
+函数 状态条分块_获取图标:StatusBarPart_GetIcon(地址 pStatusBarPart)=>HICON;
+函数 状态条分块_获取拥有者:StatusBarPart_GetOwner(地址 pStatusBarPart)=>地址;
+
+//////////////////////////////////////////////////////////////////////////
+//StatusBar
+
+函数 状态条_设置分块计数:StatusBar_SetPartCount(地址 pStatusBar,整数32 count);
+函数 状态条_获取分块计数:StatusBar_GetPartCount(地址 pStatusBar)=>整数32;
+函数 状态条_获取分块:StatusBar_GetPart(地址 pStatusBar,整数32 index)=>地址;
+
+函数 状态条_销毁控件:StatusBar_DestroyControl(地址 pStatusBar);
+函数 状态条_获取类:StatusBar_GetClass(地址 pStatusBar)=>地址;
+函数 状态条_获取标题:StatusBar_GetCaption(地址 pStatusBar)=>地址;
+函数 状态条_设置标题:StatusBar_SetCaption(地址 pStatusBar,地址 string);
+
+}

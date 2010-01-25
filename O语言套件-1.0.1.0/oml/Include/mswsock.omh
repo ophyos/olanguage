@@ -1,0 +1,36 @@
+引用段
+{
+函数 AcceptEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumProtocolsA(整数32,整数32,整数32)=>整数32;
+函数 EnumProtocolsW(整数32,整数32,整数32)=>整数32;
+函数 GetAcceptExSockaddrs(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAddressByNameA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetAddressByNameW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNameByTypeA(整数32,整数32,整数32)=>整数32;
+函数 GetNameByTypeW(整数32,整数32,整数32)=>整数32;
+函数 GetServiceA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetServiceW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetTypeByNameA(整数32,整数32)=>整数32;
+函数 GetTypeByNameW(整数32,整数32)=>整数32;
+函数 MigrateWinsockConfiguration(整数32,整数32,整数32)=>整数32;
+函数 NPLoadNameSpaces(整数32,整数32,整数32)=>整数32;
+函数 SetServiceA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetServiceW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 TransmitFile(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WSARecvEx(整数32,整数32,整数32,整数32)=>整数32;
+函数 dn_expand(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 getnetbyname(整数32)=>整数32;
+函数 inet_network(整数32)=>整数32;
+函数 rcmd(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 rexec(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 rresvport(整数32)=>整数32;
+函数 s_perror(整数32,整数32)=>整数32;
+函数 sethostname(整数32,整数32)=>整数32;
+
+宏定义 EnumProtocols  EnumProtocolsA
+宏定义 GetAddressByName  GetAddressByNameA
+宏定义 GetNameByType  GetNameByTypeA
+宏定义 GetService  GetServiceA
+宏定义 GetTypeByName  GetTypeByNameA
+宏定义 SetService  SetServiceA
+}

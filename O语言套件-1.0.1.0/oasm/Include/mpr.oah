@@ -1,0 +1,89 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒMultinetGetConnectionPerformanceA(Ë«×Ö,Ë«×Ö)
+¡ßMultinetGetConnectionPerformance  MultinetGetConnectionPerformanceA
+
+¡ÒMultinetGetConnectionPerformanceW(Ë«×Ö,Ë«×Ö)
+¡ÒWNetAddConnection2A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetAddConnection2  WNetAddConnection2A
+
+¡ÒWNetAddConnection2W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetAddConnection3A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetAddConnection3  WNetAddConnection3A
+
+¡ÒWNetAddConnection3W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetAddConnectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetAddConnection  WNetAddConnectionA
+
+¡ÒWNetAddConnectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetCancelConnection2A(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetCancelConnection2  WNetCancelConnection2A
+
+¡ÒWNetCancelConnection2W(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetCancelConnectionA(Ë«×Ö,Ë«×Ö)
+¡ßWNetCancelConnection  WNetCancelConnectionA
+
+¡ÒWNetCancelConnectionW(Ë«×Ö,Ë«×Ö)
+¡ÒWNetCloseEnum(Ë«×Ö)
+¡ÒWNetConnectionDialog1A(Ë«×Ö)
+¡ßWNetConnectionDialog1  WNetConnectionDialog1A
+
+¡ÒWNetConnectionDialog1W(Ë«×Ö)
+¡ÒWNetConnectionDialog(Ë«×Ö,Ë«×Ö)
+¡ÒWNetDisconnectDialog1A(Ë«×Ö)
+¡ßWNetDisconnectDialog1  WNetDisconnectDialog1A
+
+¡ÒWNetDisconnectDialog1W(Ë«×Ö)
+¡ÒWNetDisconnectDialog(Ë«×Ö,Ë«×Ö)
+¡ÒWNetEnumResourceA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetEnumResource  WNetEnumResourceA
+
+¡ÒWNetEnumResourceW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetConnectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetConnection  WNetGetConnectionA
+
+¡ÒWNetGetConnectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetLastErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetLastError  WNetGetLastErrorA
+
+¡ÒWNetGetLastErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetNetworkInformationA(Ë«×Ö,Ë«×Ö)
+¡ßWNetGetNetworkInformation  WNetGetNetworkInformationA
+
+¡ÒWNetGetNetworkInformationW(Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetProviderNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetProviderName  WNetGetProviderNameA
+
+¡ÒWNetGetProviderNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetResourceInformationA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetResourceInformation  WNetGetResourceInformationA
+
+¡ÒWNetGetResourceInformationW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetResourceParentA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetResourceParent  WNetGetResourceParentA
+
+¡ÒWNetGetResourceParentW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetUniversalNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetUniversalName  WNetGetUniversalNameA
+
+¡ÒWNetGetUniversalNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetGetUserA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetGetUser  WNetGetUserA
+
+¡ÒWNetGetUserW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetOpenEnumA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetOpenEnum  WNetOpenEnumA
+
+¡ÒWNetOpenEnumW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetSetLastErrorA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetSetLastError  WNetSetLastErrorA
+
+¡ÒWNetSetLastErrorW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒWNetUseConnectionA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßWNetUseConnection  WNetUseConnectionA
+
+¡ÒWNetUseConnectionW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

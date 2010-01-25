@@ -1,0 +1,92 @@
+引用段
+{
+函数 AccessNtmsLibraryDoor(整数32,整数32,整数32)=>整数32;
+函数 AddNtmsMediaType(整数32,整数32,整数32)=>整数32;
+函数 AllocateNtmsMedia(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 BeginNtmsDeviceChangeDetection(整数32,整数32)=>整数32;
+函数 CancelNtmsLibraryRequest(整数32,整数32)=>整数32;
+函数 CancelNtmsOperatorRequest(整数32,整数32)=>整数32;
+函数 ChangeNtmsMediaType(整数32,整数32,整数32)=>整数32;
+函数 CleanNtmsDrive(整数32,整数32)=>整数32;
+函数 CloseNtmsNotification(整数32)=>整数32;
+函数 CloseNtmsSession(整数32)=>整数32;
+函数 CreateNtmsMediaA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateNtmsMediaPoolA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateNtmsMediaPoolW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateNtmsMediaW(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeallocateNtmsMedia(整数32,整数32,整数32)=>整数32;
+函数 DecommissionNtmsMedia(整数32,整数32)=>整数32;
+函数 DeleteNtmsDrive(整数32,整数32)=>整数32;
+函数 DeleteNtmsLibrary(整数32,整数32)=>整数32;
+函数 DeleteNtmsMedia(整数32,整数32)=>整数32;
+函数 DeleteNtmsMediaPool(整数32,整数32)=>整数32;
+函数 DeleteNtmsMediaType(整数32,整数32,整数32)=>整数32;
+函数 DeleteNtmsRequests(整数32,整数32,整数32,整数32)=>整数32;
+函数 DisableNtmsObject(整数32,整数32,整数32)=>整数32;
+函数 DismountNtmsDrive(整数32,整数32)=>整数32;
+函数 DismountNtmsMedia(整数32,整数32,整数32,整数32)=>整数32;
+函数 DoEjectFromSADriveW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EjectDiskFromSADriveA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EjectDiskFromSADriveW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 EjectNtmsCleaner(整数32,整数32,整数32,整数32)=>整数32;
+函数 EjectNtmsMedia(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnableNtmsObject(整数32,整数32,整数32)=>整数32;
+函数 EndNtmsDeviceChangeDetection(整数32,整数32)=>整数32;
+函数 EnumerateNtmsObject(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ExportNtmsDatabase(整数32)=>整数32;
+函数 GetNtmsMediaPoolNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNtmsMediaPoolNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNtmsObjectAttributeA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNtmsObjectAttributeW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNtmsObjectInformationA(整数32,整数32,整数32)=>整数32;
+函数 GetNtmsObjectInformationW(整数32,整数32,整数32)=>整数32;
+函数 GetNtmsObjectSecurity(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNtmsRequestOrder(整数32,整数32,整数32)=>整数32;
+函数 GetNtmsUIOptionsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetNtmsUIOptionsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetVolumesFromDriveA(整数32,整数32,整数32)=>整数32;
+函数 GetVolumesFromDriveW(整数32,整数32,整数32)=>整数32;
+函数 IdentifyNtmsSlot(整数32,整数32,整数32)=>整数32;
+函数 ImportNtmsDatabase(整数32)=>整数32;
+函数 InjectNtmsCleaner(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InjectNtmsMedia(整数32,整数32,整数32,整数32)=>整数32;
+函数 InventoryNtmsLibrary(整数32,整数32,整数32)=>整数32;
+函数 MountNtmsMedia(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 MoveToNtmsMediaPool(整数32,整数32,整数32)=>整数32;
+函数 OpenNtmsNotification(整数32,整数32)=>整数32;
+函数 OpenNtmsSessionA(整数32,整数32,整数32)=>整数32;
+函数 OpenNtmsSessionW(整数32,整数32,整数32)=>整数32;
+函数 ReleaseNtmsCleanerSlot(整数32,整数32)=>整数32;
+函数 ReserveNtmsCleanerSlot(整数32,整数32,整数32)=>整数32;
+函数 SatisfyNtmsOperatorRequest(整数32,整数32)=>整数32;
+函数 SetNtmsDeviceChangeDetection(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNtmsMediaComplete(整数32,整数32)=>整数32;
+函数 SetNtmsObjectAttributeA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNtmsObjectAttributeW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNtmsObjectInformationA(整数32,整数32,整数32)=>整数32;
+函数 SetNtmsObjectInformationW(整数32,整数32,整数32)=>整数32;
+函数 SetNtmsObjectSecurity(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNtmsRequestOrder(整数32,整数32,整数32)=>整数32;
+函数 SetNtmsUIOptionsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetNtmsUIOptionsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SubmitNtmsOperatorRequestA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SubmitNtmsOperatorRequestW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SwapNtmsMedia(整数32,整数32,整数32)=>整数32;
+函数 UpdateNtmsOmidInfo(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 WaitForNtmsNotification(整数32,整数32,整数32)=>整数32;
+函数 WaitForNtmsOperatorRequest(整数32,整数32,整数32)=>整数32;
+
+宏定义 CreateNtmsMedia  CreateNtmsMediaA
+宏定义 CreateNtmsMediaPool  CreateNtmsMediaPoolA
+宏定义 EjectDiskFromSADrive  EjectDiskFromSADriveA
+宏定义 GetNtmsMediaPoolName  GetNtmsMediaPoolNameA
+宏定义 GetNtmsObjectAttribute  GetNtmsObjectAttributeA
+宏定义 GetNtmsObjectInformation  GetNtmsObjectInformationA
+宏定义 GetNtmsUIOptions  GetNtmsUIOptionsA
+宏定义 GetVolumesFromDrive  GetVolumesFromDriveA
+宏定义 OpenNtmsSession  OpenNtmsSessionA
+宏定义 SetNtmsObjectAttribute  SetNtmsObjectAttributeA
+宏定义 SetNtmsObjectInformation  SetNtmsObjectInformationA
+宏定义 SetNtmsUIOptions  SetNtmsUIOptionsA
+宏定义 SubmitNtmsOperatorRequest  SubmitNtmsOperatorRequestA
+}

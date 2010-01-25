@@ -1,0 +1,86 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAVIBuildFilterA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIBuildFilter  AVIBuildFilterA
+
+¡ÒAVIBuildFilterW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIClearClipboard()
+¡ÒAVIFileAddRef(Ë«×Ö)
+¡ÒAVIFileCreateStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIFileCreateStream  AVIFileCreateStreamA
+
+¡ÒAVIFileCreateStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileEndRecord(Ë«×Ö)
+¡ÒAVIFileExit()
+¡ÒAVIFileGetStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIFileInfo  AVIFileInfoA
+
+¡ÒAVIFileInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileInit()
+¡ÒAVIFileOpenA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIFileOpen  AVIFileOpenA
+
+¡ÒAVIFileOpenW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileReadData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIFileRelease(Ë«×Ö)
+¡ÒAVIFileWriteData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIGetFromClipboard(Ë«×Ö)
+¡ÒAVIMakeCompressedStream(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIMakeFileFromStreams(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIMakeStreamFromClipboard(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIPutFileOnClipboard(Ë«×Ö)
+¡ÒAVISaveOptions(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVISaveOptionsFree(Ë«×Ö,Ë«×Ö)
+¡ÒAVISaveVA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVISaveV  AVISaveVA
+
+¡ÒAVISaveVW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamAddRef(Ë«×Ö)
+¡ÒAVIStreamBeginStreaming(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamEndStreaming(Ë«×Ö)
+¡ÒAVIStreamFindSample(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamGetFrame(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamGetFrameClose(Ë«×Ö)
+¡ÒAVIStreamGetFrameOpen(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIStreamInfo  AVIStreamInfoA
+
+¡ÒAVIStreamInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamLength(Ë«×Ö)
+¡ÒAVIStreamOpenFromFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAVIStreamOpenFromFile  AVIStreamOpenFromFileA
+
+¡ÒAVIStreamOpenFromFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamRead(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamReadData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamReadFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamRelease(Ë«×Ö)
+¡ÒAVIStreamSampleToTime(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamSetFormat(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamStart(Ë«×Ö)
+¡ÒAVIStreamTimeToSample(Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamWrite(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAVIStreamWriteData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒCreateEditableStream(Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamClone(Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamCopy(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamCut(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamPaste(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamSetInfoA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßEditStreamSetInfo  EditStreamSetInfoA
+
+¡ÒEditStreamSetInfoW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEditStreamSetNameA(Ë«×Ö,Ë«×Ö)
+¡ßEditStreamSetName  EditStreamSetNameA
+
+¡ÒEditStreamSetNameW(Ë«×Ö,Ë«×Ö)
+¡Ò:C _AVISaveA(Ë«×Ö, ..)
+¡ß_AVISave  _AVISaveA
+
+¡Ò:C _AVISaveW(Ë«×Ö, ..)
+
+¦ç

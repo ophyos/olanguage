@@ -1,0 +1,700 @@
+引用段
+{
+函数 CMP_GetBlockedDriverInfo(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMP_GetServerSideDeviceInstallFlags(整数32,整数32,整数32)=>整数32;
+函数 CMP_Init_Detection(整数32)=>整数32;
+函数 CMP_RegisterNotification(整数32,整数32,整数32,整数32)=>整数32;
+函数 CMP_Report_LogOn(整数32,整数32)=>整数32;
+函数 CMP_UnregisterNotification(整数32)=>整数32;
+函数 CMP_WaitNoPendingInstallEvents(整数32)=>整数32;
+函数 CMP_WaitServicesAvailable(整数32)=>整数32;
+函数 CM_Add_Empty_Log_Conf(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Add_Empty_Log_Conf_Ex(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Add_IDA(整数32,整数32,整数32)=>整数32;
+函数 CM_Add_IDW(整数32,整数32,整数32)=>整数32;
+函数 CM_Add_ID_ExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Add_ID_ExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Add_Range(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Add_Res_Des(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Add_Res_Des_Ex(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Connect_MachineA(整数32,整数32)=>整数32;
+函数 CM_Connect_MachineW(整数32,整数32)=>整数32;
+函数 CM_Create_DevNodeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Create_DevNodeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Create_DevNode_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Create_DevNode_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Create_Range_List(整数32,整数32)=>整数32;
+函数 CM_Delete_Class_Key(整数32,整数32)=>整数32;
+函数 CM_Delete_Class_Key_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Delete_DevNode_Key(整数32,整数32,整数32)=>整数32;
+函数 CM_Delete_DevNode_Key_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Delete_Range(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Detect_Resource_Conflict(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Detect_Resource_Conflict_Ex(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Disable_DevNode(整数32,整数32)=>整数32;
+函数 CM_Disable_DevNode_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Disconnect_Machine(整数32)=>整数32;
+函数 CM_Dup_Range_List(整数32,整数32,整数32)=>整数32;
+函数 CM_Enable_DevNode(整数32,整数32)=>整数32;
+函数 CM_Enable_DevNode_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Enumerate_Classes(整数32,整数32,整数32)=>整数32;
+函数 CM_Enumerate_Classes_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Enumerate_EnumeratorsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Enumerate_EnumeratorsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Enumerate_Enumerators_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Enumerate_Enumerators_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Find_Range(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_First_Range(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Free_Log_Conf(整数32,整数32)=>整数32;
+函数 CM_Free_Log_Conf_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Free_Log_Conf_Handle(整数32)=>整数32;
+函数 CM_Free_Range_List(整数32,整数32)=>整数32;
+函数 CM_Free_Res_Des(整数32,整数32,整数32)=>整数32;
+函数 CM_Free_Res_Des_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Free_Res_Des_Handle(整数32)=>整数32;
+函数 CM_Free_Resource_Conflict_Handle(整数32)=>整数32;
+函数 CM_Get_Child(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Child_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Key_NameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Key_NameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Key_Name_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Key_Name_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_NameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_NameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Name_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Name_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Registry_PropertyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Class_Registry_PropertyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Depth(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Depth_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Custom_PropertyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Custom_PropertyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Custom_Property_ExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Custom_Property_ExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Registry_PropertyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Registry_PropertyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Registry_Property_ExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Registry_Property_ExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Status(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_DevNode_Status_Ex(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_IDA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_IDW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_ListA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_ListW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_List_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_List_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_List_SizeA(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_List_SizeW(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_List_Size_ExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_List_Size_ExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_Size(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_ID_Size_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_AliasA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_AliasW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_Alias_ExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_Alias_ExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_ListA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_ListW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_List_ExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_List_ExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_List_SizeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_List_SizeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_List_Size_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Device_Interface_List_Size_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_First_Log_Conf(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_First_Log_Conf_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Global_State(整数32,整数32)=>整数32;
+函数 CM_Get_Global_State_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_HW_Prof_FlagsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_HW_Prof_FlagsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_HW_Prof_Flags_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_HW_Prof_Flags_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Hardware_Profile_InfoA(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Hardware_Profile_InfoW(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Hardware_Profile_Info_ExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Hardware_Profile_Info_ExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Log_Conf_Priority(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Log_Conf_Priority_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Next_Log_Conf(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Next_Log_Conf_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Next_Res_Des(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Next_Res_Des_Ex(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Parent(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Parent_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Res_Des_Data(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Res_Des_Data_Ex(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Res_Des_Data_Size(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Res_Des_Data_Size_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Resource_Conflict_Count(整数32,整数32)=>整数32;
+函数 CM_Get_Resource_Conflict_DetailsA(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Resource_Conflict_DetailsW(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Sibling(整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Sibling_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Get_Version()=>整数32;
+函数 CM_Get_Version_Ex(整数32)=>整数32;
+函数 CM_Intersect_Range_List(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Invert_Range_List(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Is_Dock_Station_Present(整数32)=>整数32;
+函数 CM_Is_Dock_Station_Present_Ex(整数32,整数32)=>整数32;
+函数 CM_Is_Version_Available(整数32)=>整数32;
+函数 CM_Is_Version_Available_Ex(整数32,整数32)=>整数32;
+函数 CM_Locate_DevNodeA(整数32,整数32,整数32)=>整数32;
+函数 CM_Locate_DevNodeW(整数32,整数32,整数32)=>整数32;
+函数 CM_Locate_DevNode_ExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Locate_DevNode_ExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Merge_Range_List(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Modify_Res_Des(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Modify_Res_Des_Ex(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Move_DevNode(整数32,整数32,整数32)=>整数32;
+函数 CM_Move_DevNode_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Next_Range(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Open_Class_KeyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Open_Class_KeyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Open_Class_Key_ExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Open_Class_Key_ExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Open_DevNode_Key(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Open_DevNode_Key_Ex(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_And_Remove_SubTreeA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_And_Remove_SubTreeW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_And_Remove_SubTree_ExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_And_Remove_SubTree_ExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_Arbitrator_Free_Data(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_Arbitrator_Free_Data_Ex(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_Arbitrator_Free_Size(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_Arbitrator_Free_Size_Ex(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Query_Remove_SubTree(整数32,整数32)=>整数32;
+函数 CM_Query_Remove_SubTree_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Query_Resource_Conflict_List(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Reenumerate_DevNode(整数32,整数32)=>整数32;
+函数 CM_Reenumerate_DevNode_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Register_Device_Driver(整数32,整数32)=>整数32;
+函数 CM_Register_Device_Driver_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Register_Device_InterfaceA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Register_Device_InterfaceW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Register_Device_Interface_ExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Register_Device_Interface_ExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Remove_SubTree(整数32,整数32)=>整数32;
+函数 CM_Remove_SubTree_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Request_Device_EjectA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Request_Device_EjectW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Request_Device_Eject_ExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Request_Device_Eject_ExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Request_Eject_PC()=>整数32;
+函数 CM_Request_Eject_PC_Ex(整数32)=>整数32;
+函数 CM_Run_Detection(整数32)=>整数32;
+函数 CM_Run_Detection_Ex(整数32,整数32)=>整数32;
+函数 CM_Set_Class_Registry_PropertyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_Class_Registry_PropertyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_DevNode_Problem(整数32,整数32,整数32)=>整数32;
+函数 CM_Set_DevNode_Problem_Ex(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_DevNode_Registry_PropertyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_DevNode_Registry_PropertyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_DevNode_Registry_Property_ExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_DevNode_Registry_Property_ExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_HW_Prof(整数32,整数32)=>整数32;
+函数 CM_Set_HW_Prof_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Set_HW_Prof_FlagsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_HW_Prof_FlagsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_HW_Prof_Flags_ExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Set_HW_Prof_Flags_ExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Setup_DevNode(整数32,整数32)=>整数32;
+函数 CM_Setup_DevNode_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Test_Range_Available(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CM_Uninstall_DevNode(整数32,整数32)=>整数32;
+函数 CM_Uninstall_DevNode_Ex(整数32,整数32,整数32)=>整数32;
+函数 CM_Unregister_Device_InterfaceA(整数32,整数32)=>整数32;
+函数 CM_Unregister_Device_InterfaceW(整数32,整数32)=>整数32;
+函数 CM_Unregister_Device_Interface_ExA(整数32,整数32,整数32)=>整数32;
+函数 CM_Unregister_Device_Interface_ExW(整数32,整数32,整数32)=>整数32;
+函数 ExtensionPropSheetPageProc(整数32,整数32,整数32)=>整数32;
+函数 InstallHinfSectionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InstallHinfSectionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddInstallSectionToDiskSpaceListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddInstallSectionToDiskSpaceListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddSectionToDiskSpaceListA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddSectionToDiskSpaceListW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddToDiskSpaceListA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddToDiskSpaceListW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAddToSourceListA(整数32,整数32)=>整数32;
+函数 SetupAddToSourceListW(整数32,整数32)=>整数32;
+函数 SetupAdjustDiskSpaceListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupAdjustDiskSpaceListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupBackupErrorA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupBackupErrorW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupCancelTemporarySourceList()=>整数32;
+函数 SetupCloseFileQueue(整数32)=>整数32;
+函数 SetupCloseInfFile(整数32)=>整数32;
+函数 SetupCloseLog()=>整数32;
+函数 SetupCommitFileQueueA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupCommitFileQueueW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupConfigureWmiFromInfSectionA(整数32,整数32,整数32)=>整数32;
+函数 SetupConfigureWmiFromInfSectionW(整数32,整数32,整数32)=>整数32;
+函数 SetupCopyErrorA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupCopyErrorW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupCopyOEMInfA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupCopyOEMInfW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupCreateDiskSpaceListA(整数32,整数32,整数32)=>整数32;
+函数 SetupCreateDiskSpaceListW(整数32,整数32,整数32)=>整数32;
+函数 SetupDecompressOrCopyFileA(整数32,整数32,整数32)=>整数32;
+函数 SetupDecompressOrCopyFileW(整数32,整数32,整数32)=>整数32;
+函数 SetupDefaultQueueCallbackA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDefaultQueueCallbackW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDeleteErrorA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDeleteErrorW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDestroyDiskSpaceList(整数32)=>整数32;
+函数 SetupDiAskForOEMDisk(整数32,整数32)=>整数32;
+函数 SetupDiBuildClassInfoList(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiBuildClassInfoListExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiBuildClassInfoListExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiBuildDriverInfoList(整数32,整数32,整数32)=>整数32;
+函数 SetupDiCallClassInstaller(整数32,整数32,整数32)=>整数32;
+函数 SetupDiCancelDriverInfoSearch(整数32)=>整数32;
+函数 SetupDiChangeState(整数32,整数32)=>整数32;
+函数 SetupDiClassGuidsFromNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassGuidsFromNameExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassGuidsFromNameExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassGuidsFromNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassNameFromGuidA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassNameFromGuidExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassNameFromGuidExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiClassNameFromGuidW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDevRegKeyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDevRegKeyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInfoA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInfoList(整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInfoListExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInfoListExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInfoW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInterfaceA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInterfaceRegKeyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInterfaceRegKeyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiCreateDeviceInterfaceW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiDeleteDevRegKey(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiDeleteDeviceInfo(整数32,整数32)=>整数32;
+函数 SetupDiDeleteDeviceInterfaceData(整数32,整数32)=>整数32;
+函数 SetupDiDeleteDeviceInterfaceRegKey(整数32,整数32,整数32)=>整数32;
+函数 SetupDiDestroyClassImageList(整数32)=>整数32;
+函数 SetupDiDestroyDeviceInfoList(整数32)=>整数32;
+函数 SetupDiDestroyDriverInfoList(整数32,整数32,整数32)=>整数32;
+函数 SetupDiDrawMiniIcon(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiEnumDeviceInfo(整数32,整数32,整数32)=>整数32;
+函数 SetupDiEnumDeviceInterfaces(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiEnumDriverInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiEnumDriverInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetActualModelsSectionA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetActualModelsSectionW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetActualSectionToInstallA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetActualSectionToInstallExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetActualSectionToInstallExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetActualSectionToInstallW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassBitmapIndex(整数32,整数32)=>整数32;
+函数 SetupDiGetClassDescriptionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDescriptionExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDescriptionExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDescriptionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDevPropertySheetsA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDevPropertySheetsW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDevsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDevsExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDevsExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassDevsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassImageIndex(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassImageList(整数32)=>整数32;
+函数 SetupDiGetClassImageListExA(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassImageListExW(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassInstallParamsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassInstallParamsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassRegistryPropertyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetClassRegistryPropertyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetCustomDevicePropertyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetCustomDevicePropertyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInfoListClass(整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInfoListDetailA(整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInfoListDetailW(整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInstallParamsA(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInstallParamsW(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInstanceIdA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInstanceIdW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInterfaceAlias(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInterfaceDetailA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceInterfaceDetailW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceRegistryPropertyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDeviceRegistryPropertyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDriverInfoDetailA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDriverInfoDetailW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDriverInstallParamsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetDriverInstallParamsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileFriendlyNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileFriendlyNameExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileFriendlyNameExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileFriendlyNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileList(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileListExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetHwProfileListExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetINFClassA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetINFClassW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetSelectedDevice(整数32,整数32)=>整数32;
+函数 SetupDiGetSelectedDriverA(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetSelectedDriverW(整数32,整数32,整数32)=>整数32;
+函数 SetupDiGetWizardPage(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiInstallClassA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiInstallClassExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiInstallClassExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiInstallClassW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiInstallDevice(整数32,整数32)=>整数32;
+函数 SetupDiInstallDeviceInterfaces(整数32,整数32)=>整数32;
+函数 SetupDiInstallDriverFiles(整数32,整数32)=>整数32;
+函数 SetupDiLoadClassIcon(整数32,整数32,整数32)=>整数32;
+函数 SetupDiMoveDuplicateDevice(整数32,整数32)=>整数32;
+函数 SetupDiOpenClassRegKey(整数32,整数32)=>整数32;
+函数 SetupDiOpenClassRegKeyExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenClassRegKeyExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenDevRegKey(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenDeviceInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenDeviceInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenDeviceInterfaceA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenDeviceInterfaceRegKey(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiOpenDeviceInterfaceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiRegisterCoDeviceInstallers(整数32,整数32)=>整数32;
+函数 SetupDiRegisterDeviceInfo(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiRemoveDevice(整数32,整数32)=>整数32;
+函数 SetupDiRemoveDeviceInterface(整数32,整数32)=>整数32;
+函数 SetupDiRestartDevices(整数32,整数32)=>整数32;
+函数 SetupDiSelectBestCompatDrv(整数32,整数32)=>整数32;
+函数 SetupDiSelectDevice(整数32,整数32)=>整数32;
+函数 SetupDiSelectOEMDrv(整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetClassInstallParamsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetClassInstallParamsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetClassRegistryPropertyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetClassRegistryPropertyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDeviceInstallParamsA(整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDeviceInstallParamsW(整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDeviceInterfaceDefault(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDeviceRegistryPropertyA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDeviceRegistryPropertyW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDriverInstallParamsA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetDriverInstallParamsW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetSelectedDevice(整数32,整数32)=>整数32;
+函数 SetupDiSetSelectedDriverA(整数32,整数32,整数32)=>整数32;
+函数 SetupDiSetSelectedDriverW(整数32,整数32,整数32)=>整数32;
+函数 SetupDiUnremoveDevice(整数32,整数32)=>整数32;
+函数 SetupDuplicateDiskSpaceListA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupDuplicateDiskSpaceListW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupEnumInfSectionsA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupEnumInfSectionsW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupFindFirstLineA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupFindFirstLineW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupFindNextLine(整数32,整数32)=>整数32;
+函数 SetupFindNextMatchLineA(整数32,整数32,整数32)=>整数32;
+函数 SetupFindNextMatchLineW(整数32,整数32,整数32)=>整数32;
+函数 SetupFreeSourceListA(整数32,整数32)=>整数32;
+函数 SetupFreeSourceListW(整数32,整数32)=>整数32;
+函数 SetupGetBackupInformationA(整数32,整数32)=>整数32;
+函数 SetupGetBackupInformationW(整数32,整数32)=>整数32;
+函数 SetupGetBinaryField(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetFieldCount(整数32)=>整数32;
+函数 SetupGetFileCompressionInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetFileCompressionInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetFileCompressionInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetFileCompressionInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetFileQueueCount(整数32,整数32,整数32)=>整数32;
+函数 SetupGetFileQueueFlags(整数32,整数32)=>整数32;
+函数 SetupGetInfFileListA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetInfFileListW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetInfInformationA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetInfInformationW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetInfSections(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetIntField(整数32,整数32,整数32)=>整数32;
+函数 SetupGetLineByIndexA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetLineByIndexW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetLineCountA(整数32,整数32)=>整数32;
+函数 SetupGetLineCountW(整数32,整数32)=>整数32;
+函数 SetupGetLineTextA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetLineTextW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetMultiSzFieldA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetMultiSzFieldW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetNonInteractiveMode()=>整数32;
+函数 SetupGetSourceFileLocationA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetSourceFileLocationW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetSourceFileSizeA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetSourceFileSizeW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetSourceInfoA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetSourceInfoW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetStringFieldA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetStringFieldW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetTargetPathA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupGetTargetPathW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInitDefaultQueueCallback(整数32)=>整数32;
+函数 SetupInitDefaultQueueCallbackEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInitializeFileLogA(整数32,整数32)=>整数32;
+函数 SetupInitializeFileLogW(整数32,整数32)=>整数32;
+函数 SetupInstallFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFileExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFileExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFilesFromInfSectionA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFilesFromInfSectionW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFromInfSectionA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallFromInfSectionW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallServicesFromInfSectionA(整数32,整数32,整数32)=>整数32;
+函数 SetupInstallServicesFromInfSectionExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallServicesFromInfSectionExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupInstallServicesFromInfSectionW(整数32,整数32,整数32)=>整数32;
+函数 SetupIterateCabinetA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupIterateCabinetW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupLogErrorA(整数32,整数32)=>整数32;
+函数 SetupLogErrorW(整数32,整数32)=>整数32;
+函数 SetupLogFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupLogFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupOpenAppendInfFileA(整数32,整数32,整数32)=>整数32;
+函数 SetupOpenAppendInfFileW(整数32,整数32,整数32)=>整数32;
+函数 SetupOpenFileQueue()=>整数32;
+函数 SetupOpenInfFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupOpenInfFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupOpenLog(整数32)=>整数32;
+函数 SetupOpenMasterInf()=>整数32;
+函数 SetupPrepareQueueForRestoreA(整数32,整数32,整数32)=>整数32;
+函数 SetupPrepareQueueForRestoreW(整数32,整数32,整数32)=>整数32;
+函数 SetupPromptForDiskA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupPromptForDiskW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupPromptReboot(整数32,整数32,整数32)=>整数32;
+函数 SetupQueryDrivesInDiskSpaceListA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryDrivesInDiskSpaceListW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryFileLogA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryFileLogW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryInfFileInformationA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryInfFileInformationW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryInfOriginalFileInformationA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryInfOriginalFileInformationW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryInfVersionInformationA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueryInfVersionInformationW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQuerySourceListA(整数32,整数32,整数32)=>整数32;
+函数 SetupQuerySourceListW(整数32,整数32,整数32)=>整数32;
+函数 SetupQuerySpaceRequiredOnDriveA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQuerySpaceRequiredOnDriveW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueCopyA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueCopyIndirectA(整数32)=>整数32;
+函数 SetupQueueCopyIndirectW(整数32)=>整数32;
+函数 SetupQueueCopySectionA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueCopySectionW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueCopyW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueDefaultCopyA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueDefaultCopyW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueDeleteA(整数32,整数32,整数32)=>整数32;
+函数 SetupQueueDeleteSectionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueDeleteSectionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueDeleteW(整数32,整数32,整数32)=>整数32;
+函数 SetupQueueRenameA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueRenameSectionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueRenameSectionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupQueueRenameW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveFileLogEntryA(整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveFileLogEntryW(整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveFromDiskSpaceListA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveFromDiskSpaceListW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveFromSourceListA(整数32,整数32)=>整数32;
+函数 SetupRemoveFromSourceListW(整数32,整数32)=>整数32;
+函数 SetupRemoveInstallSectionFromDiskSpaceListA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveInstallSectionFromDiskSpaceListW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveSectionFromDiskSpaceListA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRemoveSectionFromDiskSpaceListW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRenameErrorA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupRenameErrorW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupScanFileQueueA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupScanFileQueueW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupSetDirectoryIdA(整数32,整数32,整数32)=>整数32;
+函数 SetupSetDirectoryIdExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupSetDirectoryIdExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetupSetDirectoryIdW(整数32,整数32,整数32)=>整数32;
+函数 SetupSetFileQueueAlternatePlatformA(整数32,整数32,整数32)=>整数32;
+函数 SetupSetFileQueueAlternatePlatformW(整数32,整数32,整数32)=>整数32;
+函数 SetupSetFileQueueFlags(整数32,整数32,整数32)=>整数32;
+函数 SetupSetNonInteractiveMode(整数32)=>整数32;
+函数 SetupSetPlatformPathOverrideA(整数32)=>整数32;
+函数 SetupSetPlatformPathOverrideW(整数32)=>整数32;
+函数 SetupSetSourceListA(整数32,整数32,整数32)=>整数32;
+函数 SetupSetSourceListW(整数32,整数32,整数32)=>整数32;
+函数 SetupTermDefaultQueueCallback(整数32)=>整数32;
+函数 SetupTerminateFileLog(整数32)=>整数32;
+函数 SetupUninstallNewlyCopiedInfs(整数32,整数32,整数32)=>整数32;
+函数 SetupUninstallOEMInfA(整数32,整数32,整数32)=>整数32;
+函数 SetupUninstallOEMInfW(整数32,整数32,整数32)=>整数32;
+函数 SetupVerifyInfFileA(整数32,整数32,整数32)=>整数32;
+函数 SetupVerifyInfFileW(整数32,整数32,整数32)=>整数32;
+
+宏定义 CM_Add_ID  CM_Add_IDA
+宏定义 CM_Add_ID_Ex  CM_Add_ID_ExA
+宏定义 CM_Connect_Machine  CM_Connect_MachineA
+宏定义 CM_Create_DevNode  CM_Create_DevNodeA
+宏定义 CM_Create_DevNode_Ex  CM_Create_DevNode_ExA
+宏定义 CM_Enumerate_Enumerators  CM_Enumerate_EnumeratorsA
+宏定义 CM_Enumerate_Enumerators_Ex  CM_Enumerate_Enumerators_ExA
+宏定义 CM_Get_Class_Key_Name  CM_Get_Class_Key_NameA
+宏定义 CM_Get_Class_Key_Name_Ex  CM_Get_Class_Key_Name_ExA
+宏定义 CM_Get_Class_Name  CM_Get_Class_NameA
+宏定义 CM_Get_Class_Name_Ex  CM_Get_Class_Name_ExA
+宏定义 CM_Get_Class_Registry_Property  CM_Get_Class_Registry_PropertyA
+宏定义 CM_Get_DevNode_Custom_Property  CM_Get_DevNode_Custom_PropertyA
+宏定义 CM_Get_DevNode_Custom_Property_Ex  CM_Get_DevNode_Custom_Property_ExA
+宏定义 CM_Get_DevNode_Registry_Property  CM_Get_DevNode_Registry_PropertyA
+宏定义 CM_Get_DevNode_Registry_Property_Ex  CM_Get_DevNode_Registry_Property_ExA
+宏定义 CM_Get_Device_ID  CM_Get_Device_IDA
+宏定义 CM_Get_Device_ID_Ex  CM_Get_Device_ID_ExA
+宏定义 CM_Get_Device_ID_List  CM_Get_Device_ID_ListA
+宏定义 CM_Get_Device_ID_List_Ex  CM_Get_Device_ID_List_ExA
+宏定义 CM_Get_Device_ID_List_Size  CM_Get_Device_ID_List_SizeA
+宏定义 CM_Get_Device_ID_List_Size_Ex  CM_Get_Device_ID_List_Size_ExA
+宏定义 CM_Get_Device_Interface_Alias  CM_Get_Device_Interface_AliasA
+宏定义 CM_Get_Device_Interface_Alias_Ex  CM_Get_Device_Interface_Alias_ExA
+宏定义 CM_Get_Device_Interface_List  CM_Get_Device_Interface_ListA
+宏定义 CM_Get_Device_Interface_List_Ex  CM_Get_Device_Interface_List_ExA
+宏定义 CM_Get_Device_Interface_List_Size  CM_Get_Device_Interface_List_SizeA
+宏定义 CM_Get_Device_Interface_List_Size_Ex  CM_Get_Device_Interface_List_Size_ExA
+宏定义 CM_Get_HW_Prof_Flags  CM_Get_HW_Prof_FlagsA
+宏定义 CM_Get_HW_Prof_Flags_Ex  CM_Get_HW_Prof_Flags_ExA
+宏定义 CM_Get_Hardware_Profile_Info  CM_Get_Hardware_Profile_InfoA
+宏定义 CM_Get_Hardware_Profile_Info_Ex  CM_Get_Hardware_Profile_Info_ExA
+宏定义 CM_Get_Resource_Conflict_Details  CM_Get_Resource_Conflict_DetailsA
+宏定义 CM_Locate_DevNode  CM_Locate_DevNodeA
+宏定义 CM_Locate_DevNode_Ex  CM_Locate_DevNode_ExA
+宏定义 CM_Open_Class_Key  CM_Open_Class_KeyA
+宏定义 CM_Open_Class_Key_Ex  CM_Open_Class_Key_ExA
+宏定义 CM_Query_And_Remove_SubTree  CM_Query_And_Remove_SubTreeA
+宏定义 CM_Query_And_Remove_SubTree_Ex  CM_Query_And_Remove_SubTree_ExA
+宏定义 CM_Register_Device_Interface  CM_Register_Device_InterfaceA
+宏定义 CM_Register_Device_Interface_Ex  CM_Register_Device_Interface_ExA
+宏定义 CM_Request_Device_Eject  CM_Request_Device_EjectA
+宏定义 CM_Request_Device_Eject_Ex  CM_Request_Device_Eject_ExA
+宏定义 CM_Set_Class_Registry_Property  CM_Set_Class_Registry_PropertyA
+宏定义 CM_Set_DevNode_Registry_Property  CM_Set_DevNode_Registry_PropertyA
+宏定义 CM_Set_DevNode_Registry_Property_Ex  CM_Set_DevNode_Registry_Property_ExA
+宏定义 CM_Set_HW_Prof_Flags  CM_Set_HW_Prof_FlagsA
+宏定义 CM_Set_HW_Prof_Flags_Ex  CM_Set_HW_Prof_Flags_ExA
+宏定义 CM_Unregister_Device_Interface  CM_Unregister_Device_InterfaceA
+宏定义 CM_Unregister_Device_Interface_Ex  CM_Unregister_Device_Interface_ExA
+宏定义 InstallHinfSection  InstallHinfSectionA
+宏定义 SetupAddInstallSectionToDiskSpaceList  SetupAddInstallSectionToDiskSpaceListA
+宏定义 SetupAddSectionToDiskSpaceList  SetupAddSectionToDiskSpaceListA
+宏定义 SetupAddToDiskSpaceList  SetupAddToDiskSpaceListA
+宏定义 SetupAddToSourceList  SetupAddToSourceListA
+宏定义 SetupAdjustDiskSpaceList  SetupAdjustDiskSpaceListA
+宏定义 SetupBackupError  SetupBackupErrorA
+宏定义 SetupCommitFileQueue  SetupCommitFileQueueA
+宏定义 SetupConfigureWmiFromInfSection  SetupConfigureWmiFromInfSectionA
+宏定义 SetupCopyError  SetupCopyErrorA
+宏定义 SetupCopyOEMInf  SetupCopyOEMInfA
+宏定义 SetupCreateDiskSpaceList  SetupCreateDiskSpaceListA
+宏定义 SetupDecompressOrCopyFile  SetupDecompressOrCopyFileA
+宏定义 SetupDefaultQueueCallback  SetupDefaultQueueCallbackA
+宏定义 SetupDeleteError  SetupDeleteErrorA
+宏定义 SetupDiBuildClassInfoListEx  SetupDiBuildClassInfoListExA
+宏定义 SetupDiClassGuidsFromName  SetupDiClassGuidsFromNameA
+宏定义 SetupDiClassGuidsFromNameEx  SetupDiClassGuidsFromNameExA
+宏定义 SetupDiClassNameFromGuid  SetupDiClassNameFromGuidA
+宏定义 SetupDiClassNameFromGuidEx  SetupDiClassNameFromGuidExA
+宏定义 SetupDiCreateDevRegKey  SetupDiCreateDevRegKeyA
+宏定义 SetupDiCreateDeviceInfo  SetupDiCreateDeviceInfoA
+宏定义 SetupDiCreateDeviceInfoListEx  SetupDiCreateDeviceInfoListExA
+宏定义 SetupDiCreateDeviceInterface  SetupDiCreateDeviceInterfaceA
+宏定义 SetupDiCreateDeviceInterfaceRegKey  SetupDiCreateDeviceInterfaceRegKeyA
+宏定义 SetupDiEnumDriverInfo  SetupDiEnumDriverInfoA
+宏定义 SetupDiGetActualModelsSection  SetupDiGetActualModelsSectionA
+宏定义 SetupDiGetActualSectionToInstall  SetupDiGetActualSectionToInstallA
+宏定义 SetupDiGetActualSectionToInstallEx  SetupDiGetActualSectionToInstallExA
+宏定义 SetupDiGetClassDescription  SetupDiGetClassDescriptionA
+宏定义 SetupDiGetClassDescriptionEx  SetupDiGetClassDescriptionExA
+宏定义 SetupDiGetClassDevPropertySheets  SetupDiGetClassDevPropertySheetsA
+宏定义 SetupDiGetClassDevs  SetupDiGetClassDevsA
+宏定义 SetupDiGetClassDevsEx  SetupDiGetClassDevsExA
+宏定义 SetupDiGetClassImageListEx  SetupDiGetClassImageListExA
+宏定义 SetupDiGetClassInstallParams  SetupDiGetClassInstallParamsA
+宏定义 SetupDiGetClassRegistryProperty  SetupDiGetClassRegistryPropertyA
+宏定义 SetupDiGetCustomDeviceProperty  SetupDiGetCustomDevicePropertyA
+宏定义 SetupDiGetDeviceInfoListDetail  SetupDiGetDeviceInfoListDetailA
+宏定义 SetupDiGetDeviceInstallParams  SetupDiGetDeviceInstallParamsA
+宏定义 SetupDiGetDeviceInstanceId  SetupDiGetDeviceInstanceIdA
+宏定义 SetupDiGetDeviceInterfaceDetail  SetupDiGetDeviceInterfaceDetailA
+宏定义 SetupDiGetDeviceRegistryProperty  SetupDiGetDeviceRegistryPropertyA
+宏定义 SetupDiGetDriverInfoDetail  SetupDiGetDriverInfoDetailA
+宏定义 SetupDiGetDriverInstallParams  SetupDiGetDriverInstallParamsA
+宏定义 SetupDiGetHwProfileFriendlyName  SetupDiGetHwProfileFriendlyNameA
+宏定义 SetupDiGetHwProfileFriendlyNameEx  SetupDiGetHwProfileFriendlyNameExA
+宏定义 SetupDiGetHwProfileListEx  SetupDiGetHwProfileListExA
+宏定义 SetupDiGetINFClass  SetupDiGetINFClassA
+宏定义 SetupDiGetSelectedDriver  SetupDiGetSelectedDriverA
+宏定义 SetupDiInstallClass  SetupDiInstallClassA
+宏定义 SetupDiInstallClassEx  SetupDiInstallClassExA
+宏定义 SetupDiOpenClassRegKeyEx  SetupDiOpenClassRegKeyExA
+宏定义 SetupDiOpenDeviceInfo  SetupDiOpenDeviceInfoA
+宏定义 SetupDiOpenDeviceInterface  SetupDiOpenDeviceInterfaceA
+宏定义 SetupDiSetClassInstallParams  SetupDiSetClassInstallParamsA
+宏定义 SetupDiSetClassRegistryProperty  SetupDiSetClassRegistryPropertyA
+宏定义 SetupDiSetDeviceInstallParams  SetupDiSetDeviceInstallParamsA
+宏定义 SetupDiSetDeviceRegistryProperty  SetupDiSetDeviceRegistryPropertyA
+宏定义 SetupDiSetDriverInstallParams  SetupDiSetDriverInstallParamsA
+宏定义 SetupDiSetSelectedDriver  SetupDiSetSelectedDriverA
+宏定义 SetupDuplicateDiskSpaceList  SetupDuplicateDiskSpaceListA
+宏定义 SetupEnumInfSections  SetupEnumInfSectionsA
+宏定义 SetupFindFirstLine  SetupFindFirstLineA
+宏定义 SetupFindNextMatchLine  SetupFindNextMatchLineA
+宏定义 SetupFreeSourceList  SetupFreeSourceListA
+宏定义 SetupGetBackupInformation  SetupGetBackupInformationA
+宏定义 SetupGetFileCompressionInfo  SetupGetFileCompressionInfoA
+宏定义 SetupGetFileCompressionInfoEx  SetupGetFileCompressionInfoExA
+宏定义 SetupGetInfFileList  SetupGetInfFileListA
+宏定义 SetupGetInfInformation  SetupGetInfInformationA
+宏定义 SetupGetLineByIndex  SetupGetLineByIndexA
+宏定义 SetupGetLineCount  SetupGetLineCountA
+宏定义 SetupGetLineText  SetupGetLineTextA
+宏定义 SetupGetMultiSzField  SetupGetMultiSzFieldA
+宏定义 SetupGetSourceFileLocation  SetupGetSourceFileLocationA
+宏定义 SetupGetSourceFileSize  SetupGetSourceFileSizeA
+宏定义 SetupGetSourceInfo  SetupGetSourceInfoA
+宏定义 SetupGetStringField  SetupGetStringFieldA
+宏定义 SetupGetTargetPath  SetupGetTargetPathA
+宏定义 SetupInitializeFileLog  SetupInitializeFileLogA
+宏定义 SetupInstallFile  SetupInstallFileA
+宏定义 SetupInstallFileEx  SetupInstallFileExA
+宏定义 SetupInstallFilesFromInfSection  SetupInstallFilesFromInfSectionA
+宏定义 SetupInstallFromInfSection  SetupInstallFromInfSectionA
+宏定义 SetupInstallServicesFromInfSection  SetupInstallServicesFromInfSectionA
+宏定义 SetupInstallServicesFromInfSectionEx  SetupInstallServicesFromInfSectionExA
+宏定义 SetupIterateCabinet  SetupIterateCabinetA
+宏定义 SetupLogError  SetupLogErrorA
+宏定义 SetupLogFile  SetupLogFileA
+宏定义 SetupOpenAppendInfFile  SetupOpenAppendInfFileA
+宏定义 SetupOpenInfFile  SetupOpenInfFileA
+宏定义 SetupPrepareQueueForRestore  SetupPrepareQueueForRestoreA
+宏定义 SetupPromptForDisk  SetupPromptForDiskA
+宏定义 SetupQueryDrivesInDiskSpaceList  SetupQueryDrivesInDiskSpaceListA
+宏定义 SetupQueryFileLog  SetupQueryFileLogA
+宏定义 SetupQueryInfFileInformation  SetupQueryInfFileInformationA
+宏定义 SetupQueryInfOriginalFileInformation  SetupQueryInfOriginalFileInformationA
+宏定义 SetupQueryInfVersionInformation  SetupQueryInfVersionInformationA
+宏定义 SetupQuerySourceList  SetupQuerySourceListA
+宏定义 SetupQuerySpaceRequiredOnDrive  SetupQuerySpaceRequiredOnDriveA
+宏定义 SetupQueueCopy  SetupQueueCopyA
+宏定义 SetupQueueCopyIndirect  SetupQueueCopyIndirectA
+宏定义 SetupQueueCopySection  SetupQueueCopySectionA
+宏定义 SetupQueueDefaultCopy  SetupQueueDefaultCopyA
+宏定义 SetupQueueDelete  SetupQueueDeleteA
+宏定义 SetupQueueDeleteSection  SetupQueueDeleteSectionA
+宏定义 SetupQueueRename  SetupQueueRenameA
+宏定义 SetupQueueRenameSection  SetupQueueRenameSectionA
+宏定义 SetupRemoveFileLogEntry  SetupRemoveFileLogEntryA
+宏定义 SetupRemoveFromDiskSpaceList  SetupRemoveFromDiskSpaceListA
+宏定义 SetupRemoveFromSourceList  SetupRemoveFromSourceListA
+宏定义 SetupRemoveInstallSectionFromDiskSpaceList  SetupRemoveInstallSectionFromDiskSpaceListA
+宏定义 SetupRemoveSectionFromDiskSpaceList  SetupRemoveSectionFromDiskSpaceListA
+宏定义 SetupRenameError  SetupRenameErrorA
+宏定义 SetupScanFileQueue  SetupScanFileQueueA
+宏定义 SetupSetDirectoryId  SetupSetDirectoryIdA
+宏定义 SetupSetDirectoryIdEx  SetupSetDirectoryIdExA
+宏定义 SetupSetFileQueueAlternatePlatform  SetupSetFileQueueAlternatePlatformA
+宏定义 SetupSetPlatformPathOverride  SetupSetPlatformPathOverrideA
+宏定义 SetupSetSourceList  SetupSetSourceListA
+宏定义 SetupUninstallOEMInf  SetupUninstallOEMInfA
+宏定义 SetupVerifyInfFile  SetupVerifyInfFileA
+}

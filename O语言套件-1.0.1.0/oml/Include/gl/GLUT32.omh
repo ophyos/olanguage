@@ -1,0 +1,314 @@
+
+
+宏定义
+{
+/* Display mode bit masks. */
+GLUT_RGB			0
+GLUT_RGBA			GLUT_RGB
+GLUT_INDEX			1
+GLUT_SINGLE			0
+GLUT_DOUBLE			2
+GLUT_ACCUM			4
+GLUT_ALPHA			8
+GLUT_DEPTH			16
+GLUT_STENCIL			32
+GLUT_MULTISAMPLE		128
+GLUT_STEREO			256
+GLUT_LUMINANCE			512
+
+/* Mouse buttons. */
+GLUT_LEFT_BUTTON		0
+GLUT_MIDDLE_BUTTON		1
+GLUT_RIGHT_BUTTON		2
+
+/* Mouse button  state. */
+GLUT_DOWN			0
+GLUT_UP				1
+
+/* function keys */
+GLUT_KEY_F1			1
+GLUT_KEY_F2			2
+GLUT_KEY_F3			3
+GLUT_KEY_F4			4
+GLUT_KEY_F5			5
+GLUT_KEY_F6			6
+GLUT_KEY_F7			7
+GLUT_KEY_F8			8
+GLUT_KEY_F9			9
+GLUT_KEY_F10			10
+GLUT_KEY_F11			11
+GLUT_KEY_F12			12
+/* directional keys */
+GLUT_KEY_LEFT			100
+GLUT_KEY_UP			101
+GLUT_KEY_RIGHT			102
+GLUT_KEY_DOWN			103
+GLUT_KEY_PAGE_UP		104
+GLUT_KEY_PAGE_DOWN		105
+GLUT_KEY_HOME			106
+GLUT_KEY_END			107
+GLUT_KEY_INSERT			108
+
+/* Entry/exit  state. */
+GLUT_LEFT			0
+GLUT_ENTERED			1
+
+/* Menu usage  state. */
+GLUT_MENU_NOT_IN_USE		0
+GLUT_MENU_IN_USE		1
+
+/* Visibility  state. */
+GLUT_NOT_VISIBLE		0
+GLUT_VISIBLE			1
+
+/* Window status  state. */
+GLUT_HIDDEN			0
+GLUT_FULLY_RETAINED		1
+GLUT_PARTIALLY_RETAINED		2
+GLUT_FULLY_COVERED		3
+
+/* Color index component selection values. */
+GLUT_RED			0
+GLUT_GREEN			1
+GLUT_BLUE			2
+
+/* Stroke font constants (use these in GLUT program). */
+GLUT_STROKE_ROMAN		(0)
+GLUT_STROKE_MONO_ROMAN		(1)
+
+/* Bitmap font constants (use these in GLUT program). */
+GLUT_BITMAP_9_BY_15		(2)
+GLUT_BITMAP_8_BY_13		(3)
+GLUT_BITMAP_TIMES_ROMAN_10	(4)
+GLUT_BITMAP_TIMES_ROMAN_24	(5)
+GLUT_BITMAP_HELVETICA_10	(6)
+GLUT_BITMAP_HELVETICA_12	(7)
+GLUT_BITMAP_HELVETICA_18	(8)
+
+/* glutGet parameters. */
+GLUT_WINDOW_X			(100)
+GLUT_WINDOW_Y			(101)
+GLUT_WINDOW_WIDTH		(102)
+GLUT_WINDOW_HEIGHT		(103)
+GLUT_WINDOW_BUFFER_SIZE		(104)
+GLUT_WINDOW_STENCIL_SIZE	(105)
+GLUT_WINDOW_DEPTH_SIZE		(106)
+GLUT_WINDOW_RED_SIZE		(107)
+GLUT_WINDOW_GREEN_SIZE		(108)
+GLUT_WINDOW_BLUE_SIZE		(109)
+GLUT_WINDOW_ALPHA_SIZE		(110)
+GLUT_WINDOW_ACCUM_RED_SIZE	(111)
+GLUT_WINDOW_ACCUM_GREEN_SIZE	(112)
+GLUT_WINDOW_ACCUM_BLUE_SIZE	(113)
+GLUT_WINDOW_ACCUM_ALPHA_SIZE	(114)
+GLUT_WINDOW_DOUBLEBUFFER	(115)
+GLUT_WINDOW_RGBA		(116)
+GLUT_WINDOW_PARENT		(117)
+GLUT_WINDOW_NUM_CHILDREN	(118)
+GLUT_WINDOW_COLORMAP_SIZE	(119)
+GLUT_WINDOW_NUM_SAMPLES		(120)
+GLUT_WINDOW_STEREO		(121)
+GLUT_WINDOW_CURSOR		(122)
+GLUT_SCREEN_WIDTH		(200)
+GLUT_SCREEN_HEIGHT		(201)
+GLUT_SCREEN_WIDTH_MM		(202)
+GLUT_SCREEN_HEIGHT_MM		(203)
+GLUT_MENU_NUM_ITEMS		(300)
+GLUT_DISPLAY_MODE_POSSIBLE	(400)
+GLUT_INIT_WINDOW_X		(500)
+GLUT_INIT_WINDOW_Y		(501)
+GLUT_INIT_WINDOW_WIDTH		(502)
+GLUT_INIT_WINDOW_HEIGHT		(503)
+GLUT_INIT_DISPLAY_MODE		(504)
+GLUT_ELAPSED_TIME		(700)
+GLUT_WINDOW_FORMAT_ID		(123)
+
+
+/* glutDeviceGet parameters. */
+GLUT_HAS_KEYBOARD		(600)
+GLUT_HAS_MOUSE			(601)
+GLUT_HAS_SPACEBALL		(602)
+GLUT_HAS_DIAL_AND_BUTTON_BOX	(603)
+GLUT_HAS_TABLET			(604)
+GLUT_NUM_MOUSE_BUTTONS		(605)
+GLUT_NUM_SPACEBALL_BUTTONS	(606)
+GLUT_NUM_BUTTON_BOX_BUTTONS	(607)
+GLUT_NUM_DIALS			(608)
+GLUT_NUM_TABLET_BUTTONS		(609)
+GLUT_DEVICE_IGNORE_KEY_REPEAT   (610)
+GLUT_DEVICE_KEY_REPEAT          (611)
+GLUT_HAS_JOYSTICK		(612)
+GLUT_OWNS_JOYSTICK		(613)
+GLUT_JOYSTICK_BUTTONS		(614)
+GLUT_JOYSTICK_AXES		(615)
+GLUT_JOYSTICK_POLL_RATE		(616)
+
+/* glutLayerGet parameters. */
+GLUT_OVERLAY_POSSIBLE           (800)
+GLUT_LAYER_IN_USE		(801)
+GLUT_HAS_OVERLAY		(802)
+GLUT_TRANSPARENT_INDEX		(803)
+GLUT_NORMAL_DAMAGED		(804)
+GLUT_OVERLAY_DAMAGED		(805)
+
+/* glutVideoResizeGet parameters. */
+GLUT_VIDEO_RESIZE_POSSIBLE	(900)
+GLUT_VIDEO_RESIZE_IN_USE	(901)
+GLUT_VIDEO_RESIZE_X_DELTA	(902)
+GLUT_VIDEO_RESIZE_Y_DELTA	(903)
+GLUT_VIDEO_RESIZE_WIDTH_DELTA	(904)
+GLUT_VIDEO_RESIZE_HEIGHT_DELTA	(905)
+GLUT_VIDEO_RESIZE_X		(906)
+GLUT_VIDEO_RESIZE_Y		(907)
+GLUT_VIDEO_RESIZE_WIDTH		(908)
+GLUT_VIDEO_RESIZE_HEIGHT	(909)
+
+/* glutUseLayer parameters. */
+GLUT_NORMAL			(0)
+GLUT_OVERLAY			(1)
+
+/* glutGetModifiers return mask. */
+GLUT_ACTIVE_SHIFT               1
+GLUT_ACTIVE_CTRL                2
+GLUT_ACTIVE_ALT                 4
+
+/* glutSetCursor parameters. */
+/* Basic arrows. */
+GLUT_CURSOR_RIGHT_ARROW		0
+GLUT_CURSOR_LEFT_ARROW		1
+/* Symbolic cursor shapes. */
+GLUT_CURSOR_INFO		2
+GLUT_CURSOR_DESTROY		3
+GLUT_CURSOR_HELP		4
+GLUT_CURSOR_CYCLE		5
+GLUT_CURSOR_SPRAY		6
+GLUT_CURSOR_WAIT		7
+GLUT_CURSOR_TEXT		8
+GLUT_CURSOR_CROSSHAIR		9
+/* Directional cursors. */
+GLUT_CURSOR_UP_DOWN		10
+GLUT_CURSOR_LEFT_RIGHT		11
+/* Sizing cursors. */
+GLUT_CURSOR_TOP_SIDE		12
+GLUT_CURSOR_BOTTOM_SIDE		13
+GLUT_CURSOR_LEFT_SIDE		14
+GLUT_CURSOR_RIGHT_SIDE		15
+GLUT_CURSOR_TOP_LEFT_CORNER	16
+GLUT_CURSOR_TOP_RIGHT_CORNER	17
+GLUT_CURSOR_BOTTOM_RIGHT_CORNER	18
+GLUT_CURSOR_BOTTOM_LEFT_CORNER	19
+/* Inherit from parent window. */
+GLUT_CURSOR_INHERIT		100
+/* Blank cursor. */
+GLUT_CURSOR_NONE		101
+/* Fullscreen crosshair (if available). */
+GLUT_CURSOR_FULL_CROSSHAIR	102
+}
+
+
+引用段
+{
+函数 glutAddMenuEntry(整数32,整数32);
+函数 glutAddSubMenu(整数32,整数32);
+函数 glutAttachMenu(整数32);
+函数 glutBitmapCharacter(整数32,整数32);
+函数 glutBitmapLength(整数32,整数32)=>整数32;
+函数 glutBitmapWidth(整数32,整数32)=>整数32;
+函数 glutButtonBoxFunc(整数32);
+函数 glutChangeToMenuEntry(整数32,整数32,整数32);
+函数 glutChangeToSubMenu(整数32,整数32,整数32);
+函数 glutCopyColormap(整数32);
+函数 glutCreateMenu(整数32)=>整数32;
+函数 glutCreateSubWindow(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 glutCreateWindow(整数32)=>整数32;
+函数 glutDestroyMenu(整数32);
+函数 glutDestroyWindow(整数32);
+函数 glutDetachMenu(整数32);
+函数 glutDeviceGet(整数32)=>整数32;
+函数 glutDialsFunc(整数32);
+函数 glutDisplayFunc(整数32);
+函数 glutEntryFunc(整数32);
+函数 glutEstablishOverlay();
+函数 glutExtensionSupported(整数32)=>整数32;
+函数 glutFullScreen();
+函数 glutGet(整数32)=>整数32;
+函数 glutGetColor(整数32,整数32)=>整数32;
+函数 glutGetMenu()=>整数32;
+函数 glutGetModifiers()=>整数32;
+函数 glutGetWindow()=>整数32;
+函数 glutHideOverlay();
+函数 glutHideWindow();
+函数 glutIconifyWindow();
+函数 glutIdleFunc(整数32);
+函数 glutInit(整数32,整数32);
+函数 glutInitDisplayMode(整数32);
+函数 glutInitDisplayString(整数32);
+函数 glutInitWindowPosition(整数32,整数32);
+函数 glutInitWindowSize(整数32,整数32);
+函数 glutKeyboardFunc(整数32);
+函数 glutLayerGet(整数32)=>整数32;
+函数 glutMainLoop();
+函数 glutMenuStateFunc(整数32);
+函数 glutMenuStatusFunc(整数32);
+函数 glutMotionFunc(整数32);
+函数 glutMouseFunc(整数32);
+函数 glutOverlayDisplayFunc(整数32);
+函数 glutPassiveMotionFunc(整数32);
+函数 glutPopWindow();
+函数 glutPositionWindow(整数32,整数32);
+函数 glutPostOverlayRedisplay();
+函数 glutPostRedisplay();
+函数 glutPushWindow();
+函数 glutRemoveMenuItem(整数32);
+函数 glutRemoveOverlay();
+函数 glutReportErrors();
+函数 glutReshapeFunc(整数32);
+函数 glutReshapeWindow(整数32,整数32);
+函数 glutSetColor(整数32,整数32,整数32,整数32);
+函数 glutSetCursor(整数32);
+函数 glutSetIconTitle(整数32);
+函数 glutSetMenu(整数32);
+函数 glutSetWindow(整数32);
+函数 glutSetWindowTitle(整数32);
+函数 glutSetupVideoResizing();
+函数 glutShowOverlay();
+函数 glutShowWindow();
+函数 glutSolidCone(整数32,整数32,整数32,整数32,整数32,整数32);
+函数 glutSolidCube(整数32,整数32);
+函数 glutSolidDodecahedron();
+函数 glutSolidIcosahedron();
+函数 glutSolidOctahedron();
+函数 glutSolidSphere(整数32,整数32,整数32,整数32);
+函数 glutSolidTeapot(整数32,整数32);
+函数 glutSolidTetrahedron();
+函数 glutSolidTorus(整数32,整数32,整数32,整数32,整数32,整数32);
+函数 glutSpaceballButtonFunc(整数32);
+函数 glutSpaceballMotionFunc(整数32);
+函数 glutSpaceballRotateFunc(整数32);
+函数 glutSpecialFunc(整数32);
+函数 glutStopVideoResizing();
+函数 glutStrokeCharacter(整数32,整数32);
+函数 glutStrokeLength(整数32,整数32)=>整数32;
+函数 glutStrokeWidth(整数32,整数32)=>整数32;
+函数 glutSwapBuffers();
+函数 glutTabletButtonFunc(整数32);
+函数 glutTabletMotionFunc(整数32);
+函数 glutTimerFunc(整数32,整数32,整数32);
+函数 glutUseLayer(整数32);
+函数 glutVideoPan(整数32,整数32,整数32,整数32);
+函数 glutVideoResize(整数32,整数32,整数32,整数32);
+函数 glutVideoResizeGet(整数32)=>整数32;
+函数 glutVisibilityFunc(整数32);
+函数 glutWarpPointer(整数32,整数32);
+函数 glutWindowStatusFunc(整数32);
+函数 glutWireCone(整数32,整数32,整数32,整数32,整数32,整数32);
+函数 glutWireCube(整数32,整数32);
+函数 glutWireDodecahedron();
+函数 glutWireIcosahedron();
+函数 glutWireOctahedron();
+函数 glutWireSphere(整数32,整数32,整数32,整数32);
+函数 glutWireTeapot(整数32,整数32);
+函数 glutWireTetrahedron();
+函数 glutWireTorus(整数32,整数32,整数32,整数32,整数32,整数32);
+
+}

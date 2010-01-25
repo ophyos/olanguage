@@ -1,0 +1,71 @@
+
+引用段
+{
+
+函数 列表框_设置选择:ListBox_SetSelect(地址 pListBox,整数32 index);
+函数 列表框_获取选择:ListBox_GetSelect(地址 pListBox)=>整数32;
+函数 列表框_置为选择:ListBox_IsSelected(地址 pListBox,整数32 index)=>整数32;
+函数 列表框_获取选择计数:ListBox_GetSelectCount(地址 pListBox)=>整数32;
+函数 列表框_获取项目文本:ListBox_GetItemText(地址 pListBox,整数32 index)=>地址;  
+函数 列表框_获取项目计数:ListBox_GetItemCount(地址 pListBox)=>整数32; 
+函数 列表框_设置文本颜色:ListBox_SetTextColor(地址 pListBox,正数32 color);
+函数 列表框_获取文本颜色:ListBox_GetTextColor(地址 pListBox)=>正数32;
+函数 列表框_设置锚定项目:ListBox_SetAnchorItem(地址 pListBox,整数32 index);
+函数 列表框_获取锚定项目:ListBox_GetAnchorItem(地址 pListBox)=>整数32;
+函数 列表框_设置插入符号项目:ListBox_SetCaretItem(地址 pListBox,整数32 index);
+函数 列表框_获取插入符号项目:ListBox_GetCaretItem(地址 pListBox)=>整数32;
+函数 列表框_设置滚动条高:ListBox_SetScrollWidth(地址 pListBox,整数32 width);
+函数 列表框_获取滚动条宽:ListBox_GetScrollWidth(地址 pListBox)=>整数32;
+函数 列表框_设置首索引:ListBox_SetTopIndex(地址 pListBox,整数32 index);
+函数 列表框_获取首索引:ListBox_GetTopIndex(地址 pListBox)=>整数32;
+函数 列表框_设置列宽:ListBox_SetColumnWidth(地址 pListBox,整数32 width);	 
+函数 列表框_设置项目高:ListBox_SetItemHeight(地址 pListBox,整数32 index, 整数32 height);
+函数 列表框_获取项目高:ListBox_GetItemHeight(地址 pListBox,整数32 index)=>整数32;
+函数 列表框_获取项目矩形:ListBox_GetItemRect(地址 pListBox,整数32 index,地址 rc);
+函数 列表框_设置项目数据:ListBox_SetItemData(地址 pListBox,整数32 index,地址 pData);
+函数 列表框_设置限制:ListBox_SetLocale(地址 pListBox,正数32 locale);  
+函数 列表框_获取项目数据:ListBox_GetItemData(地址 pListBox,整数32 index)=>地址;
+函数 列表框_获取限制:ListBox_GetLocale(地址 pListBox)=>正数32; 
+
+//在指定的Item索引之前插入一个新的Item，如果控件具有排序功能，则新加项不一定在指定位置插入，
+//系统会进行排序
+函数 列表框_插入项目:ListBox_InsertItem(地址 pListBox,地址 string,整数32 index)=>整数32;
+//在尾部追加一个新的Item，函数返回新加项的索引，若发生错误，则返回-1。若控件有排序风格，Item
+//不一定追加到尾部
+函数 列表框_添加项目:ListBox_AddItem(地址 pListBox,地址 string)=>整数32;
+//删除指定的Item
+函数 列表框_删除项目:ListBox_DeleteItem(地址 pListBox,整数32 index);
+//删除所有的Item
+函数 列表框_删除全部项目:ListBox_DeleteAllItems(地址 pListBox);
+//找到文本以string开始的第一个Item，搜索操作从索引为index的item开始测试，直到尾部。若找不到匹配项，
+//则从顶部开始继续搜索，直到索引为index之前Item。默认-1表示从第一个Item开始搜索。搜索失败，返回-1
+函数 列表框_搜索项目:ListBox_FindItem(地址 pListBox,地址 string, 整数32 index)=>整数32;
+//找到文本正好为string的第一个Item，注意搜索操作不是大小写敏感的。index的含义以及返回值的含义可参考
+//FindItem()的注释说明
+函数 列表框_精确搜索项目:ListBox_FindItemExact(地址 pListBox,地址 string, 整数32 index)=>整数32;
+//对于单选风格的ListBox，选择文本以string开始的第一个Item，index的含义请参考FindItem()的注释说明。返
+//回值说明了被选中的Item，若其值为-1，则没有找到匹配项；如果找到了有效匹配，控件还会滚动，使之可见。匹
+//配过程是大小写无关的。
+函数 列表框_选择字符串:ListBox_SelectString(地址 pListBox,地址 string, 整数32 index)=>整数32;
+//对于多选风格的ListBox，若select为true，选择索引为index的Item；若select为false，则此Item被取消选择
+函数 列表框_修改单个:ListBox_SelectSingle(地址 pListBox,整数32 index, 整数32 select);
+//对于多选风格的ListBox，若select为true，选中所有Item；若select为false，所有Item被取消选择
+函数 列表框_选择全部:ListBox_SelectAll(地址 pListBox,整数32 select); 
+//对于多选风格的ListBox，此函数填充所有高亮选择的item的索引到buffer数组中，number指定数组的元素数目
+//函数返回实际填充到数组中的元素数目		 
+函数 列表框_获取选择数组:ListBox_GetSelectArray(地址 pListBox,整数32 number,地址 buffer)=>整数32;	
+//对于多选风格的ListBox，选择一组索引范围从first到last的Item，返回值指明操作是否成功
+函数 列表框_选择一组:ListBox_SelectRange(地址 pListBox,整数32 first,整数32 last)=>整数32;
+//对于多选风格的ListBox，取消被选中的一组范围从first到last的Item，返回值指明操作是否成功
+函数 列表框_取消一组:ListBox_CancelRange(地址 pListBox,整数32 first,整数32 last)=>整数32;		
+//获取离坐标(x,y)最近的Item，坐标相对于ListBox的客户区原点
+函数 列表框_获取最近项目:ListBox_GetNearestItem(地址 pListBox,整数32 x,整数32 y)=>整数32;
+//获取坐标(x,y)之下的Item，坐标相对于ListBox的客户区原点
+函数 列表框_从坐标获取项目:ListBox_GetItemFromPoint(地址 pListBox,整数32 x,整数32 y)=>整数32;  
+
+函数 列表框_销毁控件:ListBox_DestroyControl(地址 pListBox);	 
+函数 列表框_获取类:ListBox_GetClass(地址 pListBox)=>地址;
+函数 列表框_获取标题:ListBox_GetCaption(地址 pListBox)=>地址;
+函数 列表框_设置标题:ListBox_SetCaption(地址 pListBox,地址 string);
+
+}

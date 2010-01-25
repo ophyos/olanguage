@@ -1,0 +1,36 @@
+引用段
+{
+函数 EmptyWorkingSet(整数32)=>整数32;
+函数 EnumDeviceDrivers(整数32,整数32,整数32)=>整数32;
+函数 EnumPageFilesA(整数32,整数32)=>整数32;
+函数 EnumPageFilesW(整数32,整数32)=>整数32;
+函数 EnumProcessModules(整数32,整数32,整数32,整数32)=>整数32;
+函数 EnumProcesses(整数32,整数32,整数32)=>整数32;
+函数 GetDeviceDriverBaseNameA(整数32,整数32,整数32)=>整数32;
+函数 GetDeviceDriverBaseNameW(整数32,整数32,整数32)=>整数32;
+函数 GetDeviceDriverFileNameA(整数32,整数32,整数32)=>整数32;
+函数 GetDeviceDriverFileNameW(整数32,整数32,整数32)=>整数32;
+函数 GetMappedFileNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetMappedFileNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetModuleBaseNameA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetModuleBaseNameW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetModuleFileNameExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetModuleFileNameExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetModuleInformation(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetPerformanceInfo(整数32,整数32)=>整数32;
+函数 GetProcessImageFileNameA(整数32,整数32,整数32)=>整数32;
+函数 GetProcessImageFileNameW(整数32,整数32,整数32)=>整数32;
+函数 GetProcessMemoryInfo(整数32,整数32,整数32)=>整数32;
+函数 GetWsChanges(整数32,整数32,整数32)=>整数32;
+函数 InitializeProcessForWsWatch(整数32)=>整数32;
+函数 QueryWorkingSet(整数32,整数32,整数32)=>整数32;
+函数 QueryWorkingSetEx(整数32,整数32,整数32)=>整数32;
+
+宏定义 EnumPageFiles  EnumPageFilesA
+宏定义 GetDeviceDriverBaseName  GetDeviceDriverBaseNameA
+宏定义 GetDeviceDriverFileName  GetDeviceDriverFileNameA
+宏定义 GetMappedFileName  GetMappedFileNameA
+宏定义 GetModuleBaseName  GetModuleBaseNameA
+宏定义 GetModuleFileNameEx  GetModuleFileNameExA
+宏定义 GetProcessImageFileName  GetProcessImageFileNameA
+}

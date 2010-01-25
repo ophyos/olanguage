@@ -1,0 +1,591 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒAssocCreate(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAssocGetPerceivedType(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAssocIsDangerous(Ë«×Ö)
+¡ÒAssocQueryKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAssocQueryKey  AssocQueryKeyA
+
+¡ÒAssocQueryKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAssocQueryStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAssocQueryString  AssocQueryStringA
+
+¡ÒAssocQueryStringByKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßAssocQueryStringByKey  AssocQueryStringByKeyA
+
+¡ÒAssocQueryStringByKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒAssocQueryStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒChrCmpIA(Ë«×Ö,Ë«×Ö)
+¡ßChrCmpI  ChrCmpIA
+
+¡ÒChrCmpIW(Ë«×Ö,Ë«×Ö)
+¡ÒColorAdjustLuma(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒColorHLSToRGB(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒColorRGBToHLS(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetAcceptLanguagesA(Ë«×Ö,Ë«×Ö)
+¡ßGetAcceptLanguages  GetAcceptLanguagesA
+
+¡ÒGetAcceptLanguagesW(Ë«×Ö,Ë«×Ö)
+¡ÒGetMenuPosFromID(Ë«×Ö,Ë«×Ö)
+¡ÒHashData(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIntlStrEqWorkerA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßIntlStrEqWorker  IntlStrEqWorkerA
+
+¡ÒIntlStrEqWorkerW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒIsCharSpaceA(Ë«×Ö)
+¡ßIsCharSpace  IsCharSpaceA
+
+¡ÒIsCharSpaceW(Ë«×Ö)
+¡ÒIsInternetESCEnabled()
+¡ÒPathAddBackslashA(Ë«×Ö)
+¡ßPathAddBackslash  PathAddBackslashA
+
+¡ÒPathAddBackslashW(Ë«×Ö)
+¡ÒPathAddExtensionA(Ë«×Ö,Ë«×Ö)
+¡ßPathAddExtension  PathAddExtensionA
+
+¡ÒPathAddExtensionW(Ë«×Ö,Ë«×Ö)
+¡ÒPathAppendA(Ë«×Ö,Ë«×Ö)
+¡ßPathAppend  PathAppendA
+
+¡ÒPathAppendW(Ë«×Ö,Ë«×Ö)
+¡ÒPathBuildRootA(Ë«×Ö,Ë«×Ö)
+¡ßPathBuildRoot  PathBuildRootA
+
+¡ÒPathBuildRootW(Ë«×Ö,Ë«×Ö)
+¡ÒPathCanonicalizeA(Ë«×Ö,Ë«×Ö)
+¡ßPathCanonicalize  PathCanonicalizeA
+
+¡ÒPathCanonicalizeW(Ë«×Ö,Ë«×Ö)
+¡ÒPathCombineA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathCombine  PathCombineA
+
+¡ÒPathCombineW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathCommonPrefixA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathCommonPrefix  PathCommonPrefixA
+
+¡ÒPathCommonPrefixW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathCompactPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathCompactPath  PathCompactPathA
+
+¡ÒPathCompactPathExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathCompactPathEx  PathCompactPathExA
+
+¡ÒPathCompactPathExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathCompactPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathCreateFromUrlA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathCreateFromUrl  PathCreateFromUrlA
+
+¡ÒPathCreateFromUrlW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathFileExistsA(Ë«×Ö)
+¡ßPathFileExists  PathFileExistsA
+
+¡ÒPathFileExistsW(Ë«×Ö)
+¡ÒPathFindExtensionA(Ë«×Ö)
+¡ßPathFindExtension  PathFindExtensionA
+
+¡ÒPathFindExtensionW(Ë«×Ö)
+¡ÒPathFindFileNameA(Ë«×Ö)
+¡ßPathFindFileName  PathFindFileNameA
+
+¡ÒPathFindFileNameW(Ë«×Ö)
+¡ÒPathFindNextComponentA(Ë«×Ö)
+¡ßPathFindNextComponent  PathFindNextComponentA
+
+¡ÒPathFindNextComponentW(Ë«×Ö)
+¡ÒPathFindOnPathA(Ë«×Ö,Ë«×Ö)
+¡ßPathFindOnPath  PathFindOnPathA
+
+¡ÒPathFindOnPathW(Ë«×Ö,Ë«×Ö)
+¡ÒPathFindSuffixArrayA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathFindSuffixArray  PathFindSuffixArrayA
+
+¡ÒPathFindSuffixArrayW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathGetArgsA(Ë«×Ö)
+¡ßPathGetArgs  PathGetArgsA
+
+¡ÒPathGetArgsW(Ë«×Ö)
+¡ÒPathGetCharTypeA(Ë«×Ö)
+¡ßPathGetCharType  PathGetCharTypeA
+
+¡ÒPathGetCharTypeW(Ë«×Ö)
+¡ÒPathGetDriveNumberA(Ë«×Ö)
+¡ßPathGetDriveNumber  PathGetDriveNumberA
+
+¡ÒPathGetDriveNumberW(Ë«×Ö)
+¡ÒPathIsContentTypeA(Ë«×Ö,Ë«×Ö)
+¡ßPathIsContentType  PathIsContentTypeA
+
+¡ÒPathIsContentTypeW(Ë«×Ö,Ë«×Ö)
+¡ÒPathIsDirectoryA(Ë«×Ö)
+¡ßPathIsDirectory  PathIsDirectoryA
+
+¡ÒPathIsDirectoryEmptyA(Ë«×Ö)
+¡ßPathIsDirectoryEmpty  PathIsDirectoryEmptyA
+
+¡ÒPathIsDirectoryEmptyW(Ë«×Ö)
+¡ÒPathIsDirectoryW(Ë«×Ö)
+¡ÒPathIsFileSpecA(Ë«×Ö)
+¡ßPathIsFileSpec  PathIsFileSpecA
+
+¡ÒPathIsFileSpecW(Ë«×Ö)
+¡ÒPathIsLFNFileSpecA(Ë«×Ö)
+¡ßPathIsLFNFileSpec  PathIsLFNFileSpecA
+
+¡ÒPathIsLFNFileSpecW(Ë«×Ö)
+¡ÒPathIsNetworkPathA(Ë«×Ö)
+¡ßPathIsNetworkPath  PathIsNetworkPathA
+
+¡ÒPathIsNetworkPathW(Ë«×Ö)
+¡ÒPathIsPrefixA(Ë«×Ö,Ë«×Ö)
+¡ßPathIsPrefix  PathIsPrefixA
+
+¡ÒPathIsPrefixW(Ë«×Ö,Ë«×Ö)
+¡ÒPathIsRelativeA(Ë«×Ö)
+¡ßPathIsRelative  PathIsRelativeA
+
+¡ÒPathIsRelativeW(Ë«×Ö)
+¡ÒPathIsRootA(Ë«×Ö)
+¡ßPathIsRoot  PathIsRootA
+
+¡ÒPathIsRootW(Ë«×Ö)
+¡ÒPathIsSameRootA(Ë«×Ö,Ë«×Ö)
+¡ßPathIsSameRoot  PathIsSameRootA
+
+¡ÒPathIsSameRootW(Ë«×Ö,Ë«×Ö)
+¡ÒPathIsSystemFolderA(Ë«×Ö,Ë«×Ö)
+¡ßPathIsSystemFolder  PathIsSystemFolderA
+
+¡ÒPathIsSystemFolderW(Ë«×Ö,Ë«×Ö)
+¡ÒPathIsUNCA(Ë«×Ö)
+¡ßPathIsUNC  PathIsUNCA
+
+¡ÒPathIsUNCServerA(Ë«×Ö)
+¡ßPathIsUNCServer  PathIsUNCServerA
+
+¡ÒPathIsUNCServerShareA(Ë«×Ö)
+¡ßPathIsUNCServerShare  PathIsUNCServerShareA
+
+¡ÒPathIsUNCServerShareW(Ë«×Ö)
+¡ÒPathIsUNCServerW(Ë«×Ö)
+¡ÒPathIsUNCW(Ë«×Ö)
+¡ÒPathIsURLA(Ë«×Ö)
+¡ßPathIsURL  PathIsURLA
+
+¡ÒPathIsURLW(Ë«×Ö)
+¡ÒPathMakePrettyA(Ë«×Ö)
+¡ßPathMakePretty  PathMakePrettyA
+
+¡ÒPathMakePrettyW(Ë«×Ö)
+¡ÒPathMakeSystemFolderA(Ë«×Ö)
+¡ßPathMakeSystemFolder  PathMakeSystemFolderA
+
+¡ÒPathMakeSystemFolderW(Ë«×Ö)
+¡ÒPathMatchSpecA(Ë«×Ö,Ë«×Ö)
+¡ßPathMatchSpec  PathMatchSpecA
+
+¡ÒPathMatchSpecW(Ë«×Ö,Ë«×Ö)
+¡ÒPathParseIconLocationA(Ë«×Ö)
+¡ßPathParseIconLocation  PathParseIconLocationA
+
+¡ÒPathParseIconLocationW(Ë«×Ö)
+¡ÒPathQuoteSpacesA(Ë«×Ö)
+¡ßPathQuoteSpaces  PathQuoteSpacesA
+
+¡ÒPathQuoteSpacesW(Ë«×Ö)
+¡ÒPathRelativePathToA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathRelativePathTo  PathRelativePathToA
+
+¡ÒPathRelativePathToW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathRemoveArgsA(Ë«×Ö)
+¡ßPathRemoveArgs  PathRemoveArgsA
+
+¡ÒPathRemoveArgsW(Ë«×Ö)
+¡ÒPathRemoveBackslashA(Ë«×Ö)
+¡ßPathRemoveBackslash  PathRemoveBackslashA
+
+¡ÒPathRemoveBackslashW(Ë«×Ö)
+¡ÒPathRemoveBlanksA(Ë«×Ö)
+¡ßPathRemoveBlanks  PathRemoveBlanksA
+
+¡ÒPathRemoveBlanksW(Ë«×Ö)
+¡ÒPathRemoveExtensionA(Ë«×Ö)
+¡ßPathRemoveExtension  PathRemoveExtensionA
+
+¡ÒPathRemoveExtensionW(Ë«×Ö)
+¡ÒPathRemoveFileSpecA(Ë«×Ö)
+¡ßPathRemoveFileSpec  PathRemoveFileSpecA
+
+¡ÒPathRemoveFileSpecW(Ë«×Ö)
+¡ÒPathRenameExtensionA(Ë«×Ö,Ë«×Ö)
+¡ßPathRenameExtension  PathRenameExtensionA
+
+¡ÒPathRenameExtensionW(Ë«×Ö,Ë«×Ö)
+¡ÒPathSearchAndQualifyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathSearchAndQualify  PathSearchAndQualifyA
+
+¡ÒPathSearchAndQualifyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathSetDlgItemPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathSetDlgItemPath  PathSetDlgItemPathA
+
+¡ÒPathSetDlgItemPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathSkipRootA(Ë«×Ö)
+¡ßPathSkipRoot  PathSkipRootA
+
+¡ÒPathSkipRootW(Ë«×Ö)
+¡ÒPathStripPathA(Ë«×Ö)
+¡ßPathStripPath  PathStripPathA
+
+¡ÒPathStripPathW(Ë«×Ö)
+¡ÒPathStripToRootA(Ë«×Ö)
+¡ßPathStripToRoot  PathStripToRootA
+
+¡ÒPathStripToRootW(Ë«×Ö)
+¡ÒPathUnExpandEnvStringsA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßPathUnExpandEnvStrings  PathUnExpandEnvStringsA
+
+¡ÒPathUnExpandEnvStringsW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒPathUndecorateA(Ë«×Ö)
+¡ßPathUndecorate  PathUndecorateA
+
+¡ÒPathUndecorateW(Ë«×Ö)
+¡ÒPathUnmakeSystemFolderA(Ë«×Ö)
+¡ßPathUnmakeSystemFolder  PathUnmakeSystemFolderA
+
+¡ÒPathUnmakeSystemFolderW(Ë«×Ö)
+¡ÒPathUnquoteSpacesA(Ë«×Ö)
+¡ßPathUnquoteSpaces  PathUnquoteSpacesA
+
+¡ÒPathUnquoteSpacesW(Ë«×Ö)
+¡ÒSHAllocShared(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHAutoComplete(Ë«×Ö,Ë«×Ö)
+¡ÒSHCopyKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHCopyKey  SHCopyKeyA
+
+¡ÒSHCopyKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateShellPalette(Ë«×Ö)
+¡ÒSHCreateStreamOnFileA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHCreateStreamOnFile  SHCreateStreamOnFileA
+
+¡ÒSHCreateStreamOnFileEx(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateStreamOnFileW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateStreamWrapper(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateThread(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHCreateThreadRef(Ë«×Ö,Ë«×Ö)
+¡ÒSHDeleteEmptyKeyA(Ë«×Ö,Ë«×Ö)
+¡ßSHDeleteEmptyKey  SHDeleteEmptyKeyA
+
+¡ÒSHDeleteEmptyKeyW(Ë«×Ö,Ë«×Ö)
+¡Ò¿ÇÉ¾³ý¼ü:SHDeleteKeyA(Ë«×Ö,Ë«×Ö)
+¡ßSHDeleteKey  SHDeleteKeyA
+
+¡ÒSHDeleteKeyW(Ë«×Ö,Ë«×Ö)
+¡ÒSHDeleteOrphanKeyA(Ë«×Ö,Ë«×Ö)
+¡ßSHDeleteOrphanKey  SHDeleteOrphanKeyA
+
+¡ÒSHDeleteOrphanKeyW(Ë«×Ö,Ë«×Ö)
+¡ÒSHDeleteValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHDeleteValue  SHDeleteValueA
+
+¡ÒSHDeleteValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHEnumKeyExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHEnumKeyEx  SHEnumKeyExA
+
+¡ÒSHEnumKeyExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHEnumValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHEnumValue  SHEnumValueA
+
+¡ÒSHEnumValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHFreeShared(Ë«×Ö,Ë«×Ö)
+¡ÒSHGetInverseCMAP(Ë«×Ö,Ë«×Ö)
+¡ÒSHGetThreadRef(Ë«×Ö)
+¡ÒSHGetValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHGetValue  SHGetValueA
+
+¡ÒSHGetValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHGetViewStatePropertyBag(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHIsLowMemoryMachine(Ë«×Ö)
+¡ÒSHLoadIndirectString(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHLockShared(Ë«×Ö,Ë«×Ö)
+¡ÒSHOpenRegStream2A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHOpenRegStream2  SHOpenRegStream2A
+
+¡ÒSHOpenRegStream2W(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHOpenRegStreamA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHOpenRegStream  SHOpenRegStreamA
+
+¡ÒSHOpenRegStreamW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHQueryInfoKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHQueryInfoKey  SHQueryInfoKeyA
+
+¡ÒSHQueryInfoKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHQueryValueExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHQueryValueEx  SHQueryValueExA
+
+¡ÒSHQueryValueExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegCloseUSKey(Ë«×Ö)
+¡ÒSHRegCreateUSKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegCreateUSKey  SHRegCreateUSKeyA
+
+¡ÒSHRegCreateUSKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegDeleteEmptyUSKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegDeleteEmptyUSKey  SHRegDeleteEmptyUSKeyA
+
+¡ÒSHRegDeleteEmptyUSKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegDeleteUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegDeleteUSValue  SHRegDeleteUSValueA
+
+¡ÒSHRegDeleteUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegDuplicateHKey(Ë«×Ö)
+¡ÒSHRegEnumUSKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegEnumUSKey  SHRegEnumUSKeyA
+
+¡ÒSHRegEnumUSKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegEnumUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegEnumUSValue  SHRegEnumUSValueA
+
+¡ÒSHRegEnumUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegGetBoolUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegGetBoolUSValue  SHRegGetBoolUSValueA
+
+¡ÒSHRegGetBoolUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegGetPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegGetPath  SHRegGetPathA
+
+¡ÒSHRegGetPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegGetUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegGetUSValue  SHRegGetUSValueA
+
+¡ÒSHRegGetUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegGetValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegGetValue  SHRegGetValueA
+
+¡ÒSHRegGetValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegOpenUSKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegOpenUSKey  SHRegOpenUSKeyA
+
+¡ÒSHRegOpenUSKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegQueryInfoUSKeyA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegQueryInfoUSKey  SHRegQueryInfoUSKeyA
+
+¡ÒSHRegQueryInfoUSKeyW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegQueryUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegQueryUSValue  SHRegQueryUSValueA
+
+¡ÒSHRegQueryUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegSetPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegSetPath  SHRegSetPathA
+
+¡ÒSHRegSetPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegSetUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegSetUSValue  SHRegSetUSValueA
+
+¡ÒSHRegSetUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegWriteUSValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHRegWriteUSValue  SHRegWriteUSValueA
+
+¡ÒSHRegWriteUSValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHRegisterValidateTemplate(Ë«×Ö,Ë«×Ö)
+¡ÒSHReleaseThreadRef()
+¡ÒSHSetThreadRef(Ë«×Ö)
+¡ÒSHSetValueA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßSHSetValue  SHSetValueA
+
+¡ÒSHSetValueW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒSHSkipJunction(Ë«×Ö,Ë«×Ö)
+¡ÒSHStrDupA(Ë«×Ö,Ë«×Ö)
+¡ßSHStrDup  SHStrDupA
+
+¡ÒSHStrDupW(Ë«×Ö,Ë«×Ö)
+¡ÒSHUnlockShared(Ë«×Ö)
+¡ÒStrCSpnA(Ë«×Ö,Ë«×Ö)
+¡ßStrCSpn  StrCSpnA
+
+¡ÒStrCSpnIA(Ë«×Ö,Ë«×Ö)
+¡ßStrCSpnI  StrCSpnIA
+
+¡ÒStrCSpnIW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCSpnW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCatBuffA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrCatBuff  StrCatBuffA
+
+¡ÒStrCatBuffW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrCatChainW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrCatW(Ë«×Ö,Ë«×Ö)
+¡ÒStrChrA(Ë«×Ö,Ë«×Ö)
+¡ßStrChr  StrChrA
+
+¡ÒStrChrIA(Ë«×Ö,Ë«×Ö)
+¡ßStrChrI  StrChrIA
+
+¡ÒStrChrIW(Ë«×Ö,Ë«×Ö)
+¡ÒStrChrNIW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrChrNW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrChrW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpCA(Ë«×Ö,Ë«×Ö)
+¡ßStrCmpC  StrCmpCA
+
+¡ÒStrCmpCW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpICA(Ë«×Ö,Ë«×Ö)
+¡ßStrCmpIC  StrCmpICA
+
+¡ÒStrCmpICW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpIW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpLogicalW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpNA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrCmpN  StrCmpNA
+
+¡ÒStrCmpNIA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrCmpNI  StrCmpNIA
+
+¡ÒStrCmpNIW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpNW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrCmpW(Ë«×Ö,Ë«×Ö)
+¡ÒStrCpyNW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrCpyW(Ë«×Ö,Ë«×Ö)
+¡ÒStrDupA(Ë«×Ö)
+¡ßStrDup  StrDupA
+
+¡ÒStrDupW(Ë«×Ö)
+¡ÒStrFormatByteSize64A(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrFormatByteSize64  StrFormatByteSize64A
+
+¡ÒStrFormatByteSizeA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrFormatByteSize  StrFormatByteSizeA
+
+¡ÒStrFormatByteSizeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrFormatKBSizeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrFormatKBSize  StrFormatKBSizeA
+
+¡ÒStrFormatKBSizeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrFromTimeIntervalA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrFromTimeInterval  StrFromTimeIntervalA
+
+¡ÒStrFromTimeIntervalW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrIsIntlEqualA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrIsIntlEqual  StrIsIntlEqualA
+
+¡ÒStrIsIntlEqualW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrNCatA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrNCat  StrNCatA
+
+¡ÒStrNCatW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrPBrkA(Ë«×Ö,Ë«×Ö)
+¡ßStrPBrk  StrPBrkA
+
+¡ÒStrPBrkW(Ë«×Ö,Ë«×Ö)
+¡ÒStrRChrA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrRChr  StrRChrA
+
+¡ÒStrRChrIA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrRChrI  StrRChrIA
+
+¡ÒStrRChrIW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrRChrW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrRStrIA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrRStrI  StrRStrIA
+
+¡ÒStrRStrIW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrRetToBSTR(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrRetToBufA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrRetToBuf  StrRetToBufA
+
+¡ÒStrRetToBufW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrRetToStrA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrRetToStr  StrRetToStrA
+
+¡ÒStrRetToStrW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrSpnA(Ë«×Ö,Ë«×Ö)
+¡ßStrSpn  StrSpnA
+
+¡ÒStrSpnW(Ë«×Ö,Ë«×Ö)
+¡ÒStrStrA(Ë«×Ö,Ë«×Ö)
+¡ßStrStr  StrStrA
+
+¡ÒStrStrIA(Ë«×Ö,Ë«×Ö)
+¡ßStrStrI  StrStrIA
+
+¡ÒStrStrIW(Ë«×Ö,Ë«×Ö)
+¡ÒStrStrNIW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrStrNW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrStrW(Ë«×Ö,Ë«×Ö)
+¡ÒStrToInt64ExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrToInt64Ex  StrToInt64ExA
+
+¡ÒStrToInt64ExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrToIntA(Ë«×Ö)
+¡ßStrToInt  StrToIntA
+
+¡ÒStrToIntExA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßStrToIntEx  StrToIntExA
+
+¡ÒStrToIntExW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒStrToIntW(Ë«×Ö)
+¡ÒStrTrimA(Ë«×Ö,Ë«×Ö)
+¡ßStrTrim  StrTrimA
+
+¡ÒStrTrimW(Ë«×Ö,Ë«×Ö)
+¡ÒUrlApplySchemeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlApplyScheme  UrlApplySchemeA
+
+¡ÒUrlApplySchemeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlCanonicalizeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlCanonicalize  UrlCanonicalizeA
+
+¡ÒUrlCanonicalizeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlCombineA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlCombine  UrlCombineA
+
+¡ÒUrlCombineW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlCompareA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlCompare  UrlCompareA
+
+¡ÒUrlCompareW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlCreateFromPathA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlCreateFromPath  UrlCreateFromPathA
+
+¡ÒUrlCreateFromPathW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlEscapeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlEscape  UrlEscapeA
+
+¡ÒUrlEscapeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlGetLocationA(Ë«×Ö)
+¡ßUrlGetLocation  UrlGetLocationA
+
+¡ÒUrlGetLocationW(Ë«×Ö)
+¡ÒUrlGetPartA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlGetPart  UrlGetPartA
+
+¡ÒUrlGetPartW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlHashA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlHash  UrlHashA
+
+¡ÒUrlHashW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒUrlIsA(Ë«×Ö,Ë«×Ö)
+¡ßUrlIs  UrlIsA
+
+¡ÒUrlIsNoHistoryA(Ë«×Ö)
+¡ßUrlIsNoHistory  UrlIsNoHistoryA
+
+¡ÒUrlIsNoHistoryW(Ë«×Ö)
+¡ÒUrlIsOpaqueA(Ë«×Ö)
+¡ßUrlIsOpaque  UrlIsOpaqueA
+
+¡ÒUrlIsOpaqueW(Ë«×Ö)
+¡ÒUrlIsW(Ë«×Ö,Ë«×Ö)
+¡ÒUrlUnescapeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßUrlUnescape  UrlUnescapeA
+
+¡ÒUrlUnescapeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡Ò:C wnsprintfA(Ë«×Ö, ..)
+¡ßwnsprintf  wnsprintfA
+
+¡Ò:C wnsprintfW(Ë«×Ö, ..)
+¡ÒwvnsprintfA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßwvnsprintf  wvnsprintfA
+
+¡ÒwvnsprintfW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

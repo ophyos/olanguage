@@ -1,0 +1,316 @@
+引用段
+{
+函数 CommitUrlCacheEntryA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CommitUrlCacheEntryW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateMD5SSOHash(整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUrlCacheContainerA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUrlCacheContainerW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUrlCacheEntryA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUrlCacheEntryW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 CreateUrlCacheGroup(整数32,整数32)=>整数32;
+函数 DeleteIE3Cache(整数32,整数32,整数32,整数32)=>整数32;
+函数 DeleteUrlCacheContainerA(整数32,整数32)=>整数32;
+函数 DeleteUrlCacheContainerW(整数32,整数32)=>整数32;
+函数 DeleteUrlCacheEntryA(整数32)=>整数32;
+函数 DeleteUrlCacheEntryW(整数32)=>整数32;
+函数 DeleteUrlCacheGroup(整数32,整数32,整数32,整数32)=>整数32;
+函数 DetectAutoProxyUrl(整数32,整数32,整数32)=>整数32;
+函数 DoConnectoidsExist()=>整数32;
+函数 ExportCookieFileA(整数32,整数32)=>整数32;
+函数 ExportCookieFileW(整数32,整数32)=>整数32;
+函数 FindCloseUrlCache(整数32)=>整数32;
+函数 FindFirstUrlCacheContainerA(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstUrlCacheContainerW(整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstUrlCacheEntryA(整数32,整数32,整数32)=>整数32;
+函数 FindFirstUrlCacheEntryExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstUrlCacheEntryExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindFirstUrlCacheEntryW(整数32,整数32,整数32)=>整数32;
+函数 FindFirstUrlCacheGroup(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheContainerA(整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheContainerW(整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheEntryA(整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheEntryExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheEntryExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheEntryW(整数32,整数32,整数32)=>整数32;
+函数 FindNextUrlCacheGroup(整数32,整数32,整数32)=>整数32;
+函数 FindP3PPolicySymbol(整数32)=>整数32;
+函数 ForceNexusLookup()=>整数32;
+函数 ForceNexusLookupExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FreeP3PObject(整数32)=>整数32;
+函数 FreeUrlCacheSpaceA(整数32,整数32,整数32)=>整数32;
+函数 FreeUrlCacheSpaceW(整数32,整数32,整数32)=>整数32;
+函数 FtpCommandA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpCommandW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpCreateDirectoryA(整数32,整数32)=>整数32;
+函数 FtpCreateDirectoryW(整数32,整数32)=>整数32;
+函数 FtpDeleteFileA(整数32,整数32)=>整数32;
+函数 FtpDeleteFileW(整数32,整数32)=>整数32;
+函数 FtpFindFirstFileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpFindFirstFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpGetCurrentDirectoryA(整数32,整数32,整数32)=>整数32;
+函数 FtpGetCurrentDirectoryW(整数32,整数32,整数32)=>整数32;
+函数 FtpGetFileA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpGetFileEx(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpGetFileSize(整数32,整数32)=>整数32;
+函数 FtpGetFileW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpOpenFileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpOpenFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpPutFileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpPutFileEx(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpPutFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 FtpRemoveDirectoryA(整数32,整数32)=>整数32;
+函数 FtpRemoveDirectoryW(整数32,整数32)=>整数32;
+函数 FtpRenameFileA(整数32,整数32,整数32)=>整数32;
+函数 FtpRenameFileW(整数32,整数32,整数32)=>整数32;
+函数 FtpSetCurrentDirectoryA(整数32,整数32)=>整数32;
+函数 FtpSetCurrentDirectoryW(整数32,整数32)=>整数32;
+函数 GetDiskInfoA(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetP3PPolicy(整数32,整数32,整数32,整数32)=>整数32;
+函数 GetP3PRequestStatus(整数32)=>整数32;
+函数 GetUrlCacheConfigInfoA(整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheConfigInfoW(整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheEntryInfoA(整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheEntryInfoExA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheEntryInfoExW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheEntryInfoW(整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheGroupAttributeA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheGroupAttributeW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GetUrlCacheHeaderData(整数32,整数32)=>整数32;
+函数 GopherCreateLocatorA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherCreateLocatorW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherFindFirstFileA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherFindFirstFileW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherGetAttributeA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherGetAttributeW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherGetLocatorTypeA(整数32,整数32)=>整数32;
+函数 GopherGetLocatorTypeW(整数32,整数32)=>整数32;
+函数 GopherOpenFileA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 GopherOpenFileW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpAddRequestHeadersA(整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpAddRequestHeadersW(整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpCheckDavComplianceA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpCheckDavComplianceW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpEndRequestA(整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpEndRequestW(整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpOpenRequestA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpOpenRequestW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 Http询问信息:HttpQueryInfoA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpQueryInfoW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpSendRequestA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpSendRequestExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpSendRequestExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 HttpSendRequestW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ImportCookieFileA(整数32)=>整数32;
+函数 ImportCookieFileW(整数32)=>整数32;
+函数 IncrementUrlCacheHeaderData(整数32,整数32)=>整数32;
+函数 InternetAlgIdToStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetAlgIdToStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetAttemptConnect(整数32)=>整数32;
+函数 InternetAutodial(整数32,整数32)=>整数32;
+函数 InternetAutodialCallback(整数32,整数32)=>整数32;
+函数 InternetAutodialHangup(整数32)=>整数32;
+函数 InternetCanonicalizeUrlA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCanonicalizeUrlW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCheckConnectionA(整数32,整数32,整数32)=>整数32;
+函数 InternetCheckConnectionW(整数32,整数32,整数32)=>整数32;
+函数 InternetClearAllPerSiteCookieDecisions()=>整数32;
+函数 互联网关闭句柄:InternetCloseHandle(整数32)=>整数32;
+函数 InternetCombineUrlA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCombineUrlW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetConfirmZoneCrossingA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetConfirmZoneCrossingW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetConnectA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetConnectW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCrackUrlA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCrackUrlW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCreateUrlA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetCreateUrlW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetDialA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetDialW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetEnumPerSiteCookieDecisionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetEnumPerSiteCookieDecisionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetErrorDlg(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetFindNextFileA(整数32,整数32)=>整数32;
+函数 InternetFindNextFileW(整数32,整数32)=>整数32;
+函数 InternetFortezzaCommand(整数32,整数32,整数32)=>整数32;
+函数 InternetGetCertByURLA(整数32,整数32,整数32)=>整数32;
+函数 InternetGetConnectedState(整数32,整数32)=>整数32;
+函数 InternetGetConnectedStateExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetGetConnectedStateExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetGetCookieA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetGetCookieExA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetGetCookieExW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetGetCookieW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetGetLastResponseInfoA(整数32,整数32,整数32)=>整数32;
+函数 InternetGetLastResponseInfoW(整数32,整数32,整数32)=>整数32;
+函数 InternetGetPerSiteCookieDecisionA(整数32,整数32)=>整数32;
+函数 InternetGetPerSiteCookieDecisionW(整数32,整数32)=>整数32;
+函数 InternetGoOnlineA(整数32,整数32,整数32)=>整数32;
+函数 InternetGoOnlineW(整数32,整数32,整数32)=>整数32;
+函数 InternetHangUp(整数32,整数32)=>整数32;
+函数 InternetInitializeAutoProxyDll(整数32)=>整数32;
+函数 InternetLockRequestFile(整数32,整数32)=>整数32;
+函数 互联网打开:InternetOpenA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 互联网打开Url:InternetOpenUrlA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetOpenUrlW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetOpenW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetQueryDataAvailable(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetQueryFortezzaStatus(整数32,整数32)=>整数32;
+函数 InternetQueryOptionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetQueryOptionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 互联网读文件:InternetReadFile(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetReadFileExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetReadFileExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSecurityProtocolToStringA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSecurityProtocolToStringW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetCookieA(整数32,整数32,整数32)=>整数32;
+函数 InternetSetCookieExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetCookieExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetCookieW(整数32,整数32,整数32)=>整数32;
+函数 InternetSetDialStateA(整数32,整数32,整数32)=>整数32;
+函数 InternetSetDialStateW(整数32,整数32,整数32)=>整数32;
+函数 InternetSetFilePointer(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetOptionA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetOptionExA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetOptionExW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetOptionW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetSetPerSiteCookieDecisionA(整数32,整数32)=>整数32;
+函数 InternetSetPerSiteCookieDecisionW(整数32,整数32)=>整数32;
+函数 InternetSetStatusCallbackA(整数32,整数32)=>整数32;
+函数 InternetSetStatusCallbackW(整数32,整数32)=>整数32;
+函数 InternetShowSecurityInfoByURLA(整数32,整数32)=>整数32;
+函数 InternetShowSecurityInfoByURLW(整数32,整数32)=>整数32;
+函数 InternetTimeFromSystemTimeA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetTimeFromSystemTimeW(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetTimeToSystemTimeA(整数32,整数32,整数32)=>整数32;
+函数 InternetTimeToSystemTimeW(整数32,整数32,整数32)=>整数32;
+函数 InternetUnlockRequestFile(整数32)=>整数32;
+函数 InternetWriteFile(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetWriteFileExA(整数32,整数32,整数32,整数32)=>整数32;
+函数 InternetWriteFileExW(整数32,整数32,整数32,整数32)=>整数32;
+函数 IsDomainLegalCookieDomainA(整数32,整数32)=>整数32;
+函数 IsDomainLegalCookieDomainW(整数32,整数32)=>整数32;
+函数 IsHostInProxyBypassList(整数32,整数32,整数32)=>整数32;
+函数 IsProfilesEnabled()=>整数32;
+函数 IsUrlCacheEntryExpiredA(整数32,整数32,整数32)=>整数32;
+函数 IsUrlCacheEntryExpiredW(整数32,整数32,整数32)=>整数32;
+函数 LoadUrlCacheContent()=>整数32;
+函数 MapResourceToPolicy(整数32,整数32,整数32,整数32)=>整数32;
+函数 ParseX509EncodedCertificateForListBoxEntry(整数32,整数32,整数32,整数32)=>整数32;
+函数 PerformOperationOverUrlCacheA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrivacyGetZonePreferenceW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 PrivacySetZonePreferenceW(整数32,整数32,整数32,整数32)=>整数32;
+函数 ReadUrlCacheEntryStream(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RegisterUrlCacheNotification(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 ResumeSuspendedDownload(整数32,整数32)=>整数32;
+函数 RetrieveUrlCacheEntryFileA(整数32,整数32,整数32,整数32)=>整数32;
+函数 RetrieveUrlCacheEntryFileW(整数32,整数32,整数32,整数32)=>整数32;
+函数 RetrieveUrlCacheEntryStreamA(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RetrieveUrlCacheEntryStreamW(整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 RunOnceUrlCache(整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheConfigInfoA(整数32,整数32)=>整数32;
+函数 SetUrlCacheConfigInfoW(整数32,整数32)=>整数32;
+函数 SetUrlCacheEntryGroupA(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheEntryGroupW(整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheEntryInfoA(整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheEntryInfoW(整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheGroupAttributeA(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheGroupAttributeW(整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 SetUrlCacheHeaderData(整数32,整数32)=>整数32;
+函数 ShowCertificate(整数32,整数32)=>整数32;
+函数 ShowClientAuthCerts(整数32)=>整数32;
+函数 ShowSecurityInfo(整数32,整数32)=>整数32;
+函数 ShowX509EncodedCertificate(整数32,整数32,整数32)=>整数32;
+函数 UnlockUrlCacheEntryFileA(整数32,整数32)=>整数32;
+函数 UnlockUrlCacheEntryFileW(整数32,整数32)=>整数32;
+函数 UnlockUrlCacheEntryStream(整数32,整数32)=>整数32;
+函数 UpdateUrlCacheContentPath(整数32)=>整数32;
+函数 UrlZonesDetach()=>整数32;
+
+宏定义 CommitUrlCacheEntry  CommitUrlCacheEntryA
+宏定义 CreateUrlCacheContainer  CreateUrlCacheContainerA
+宏定义 CreateUrlCacheEntry  CreateUrlCacheEntryA
+宏定义 DeleteUrlCacheContainer  DeleteUrlCacheContainerA
+宏定义 DeleteUrlCacheEntry  DeleteUrlCacheEntryA
+宏定义 ExportCookieFile  ExportCookieFileA
+宏定义 FindFirstUrlCacheContainer  FindFirstUrlCacheContainerA
+宏定义 FindFirstUrlCacheEntry  FindFirstUrlCacheEntryA
+宏定义 FindFirstUrlCacheEntryEx  FindFirstUrlCacheEntryExA
+宏定义 FindNextUrlCacheContainer  FindNextUrlCacheContainerA
+宏定义 FindNextUrlCacheEntry  FindNextUrlCacheEntryA
+宏定义 FindNextUrlCacheEntryEx  FindNextUrlCacheEntryExA
+宏定义 FreeUrlCacheSpace  FreeUrlCacheSpaceA
+宏定义 FtpCommand  FtpCommandA
+宏定义 FtpCreateDirectory  FtpCreateDirectoryA
+宏定义 FtpDeleteFile  FtpDeleteFileA
+宏定义 FtpFindFirstFile  FtpFindFirstFileA
+宏定义 FtpGetCurrentDirectory  FtpGetCurrentDirectoryA
+宏定义 FtpGetFile  FtpGetFileA
+宏定义 FtpOpenFile  FtpOpenFileA
+宏定义 FtpPutFile  FtpPutFileA
+宏定义 FtpRemoveDirectory  FtpRemoveDirectoryA
+宏定义 FtpRenameFile  FtpRenameFileA
+宏定义 FtpSetCurrentDirectory  FtpSetCurrentDirectoryA
+宏定义 GetDiskInfo  GetDiskInfoA
+宏定义 GetUrlCacheConfigInfo  GetUrlCacheConfigInfoA
+宏定义 GetUrlCacheEntryInfo  GetUrlCacheEntryInfoA
+宏定义 GetUrlCacheEntryInfoEx  GetUrlCacheEntryInfoExA
+宏定义 GetUrlCacheGroupAttribute  GetUrlCacheGroupAttributeA
+宏定义 GopherCreateLocator  GopherCreateLocatorA
+宏定义 GopherFindFirstFile  GopherFindFirstFileA
+宏定义 GopherGetAttribute  GopherGetAttributeA
+宏定义 GopherGetLocatorType  GopherGetLocatorTypeA
+宏定义 GopherOpenFile  GopherOpenFileA
+宏定义 HttpAddRequestHeaders  HttpAddRequestHeadersA
+宏定义 HttpCheckDavCompliance  HttpCheckDavComplianceA
+宏定义 HttpEndRequest  HttpEndRequestA
+宏定义 HttpOpenRequest  HttpOpenRequestA
+宏定义 HttpQueryInfo  HttpQueryInfoA
+宏定义 HttpSendRequest  HttpSendRequestA
+宏定义 HttpSendRequestEx  HttpSendRequestExA
+宏定义 ImportCookieFile  ImportCookieFileA
+宏定义 InternetAlgIdToString  InternetAlgIdToStringA
+宏定义 InternetCanonicalizeUrl  InternetCanonicalizeUrlA
+宏定义 InternetCheckConnection  InternetCheckConnectionA
+宏定义 InternetCombineUrl  InternetCombineUrlA
+宏定义 InternetConfirmZoneCrossing  InternetConfirmZoneCrossingA
+宏定义 InternetConnect  InternetConnectA
+宏定义 InternetCrackUrl  InternetCrackUrlA
+宏定义 InternetCreateUrl  InternetCreateUrlA
+宏定义 InternetDial  InternetDialA
+宏定义 InternetEnumPerSiteCookieDecision  InternetEnumPerSiteCookieDecisionA
+宏定义 InternetFindNextFile  InternetFindNextFileA
+宏定义 InternetGetCertByURL  InternetGetCertByURLA
+宏定义 InternetGetConnectedStateEx  InternetGetConnectedStateExA
+宏定义 InternetGetCookie  InternetGetCookieA
+宏定义 InternetGetCookieEx  InternetGetCookieExA
+宏定义 InternetGetLastResponseInfo  InternetGetLastResponseInfoA
+宏定义 InternetGetPerSiteCookieDecision  InternetGetPerSiteCookieDecisionA
+宏定义 InternetGoOnline  InternetGoOnlineA
+宏定义 InternetOpen  InternetOpenA
+宏定义 InternetOpenUrl  InternetOpenUrlA
+宏定义 InternetQueryOption  InternetQueryOptionA
+宏定义 InternetReadFileEx  InternetReadFileExA
+宏定义 InternetSecurityProtocolToString  InternetSecurityProtocolToStringA
+宏定义 InternetSetCookie  InternetSetCookieA
+宏定义 InternetSetCookieEx  InternetSetCookieExA
+宏定义 InternetSetDialState  InternetSetDialStateA
+宏定义 InternetSetOption  InternetSetOptionA
+宏定义 InternetSetOptionEx  InternetSetOptionExA
+宏定义 InternetSetPerSiteCookieDecision  InternetSetPerSiteCookieDecisionA
+宏定义 InternetSetStatusCallback  InternetSetStatusCallbackA
+宏定义 InternetShowSecurityInfoByURL  InternetShowSecurityInfoByURLA
+宏定义 InternetTimeFromSystemTime  InternetTimeFromSystemTimeA
+宏定义 InternetTimeToSystemTime  InternetTimeToSystemTimeA
+宏定义 InternetWriteFileEx  InternetWriteFileExA
+宏定义 IsDomainLegalCookieDomain  IsDomainLegalCookieDomainA
+宏定义 IsUrlCacheEntryExpired  IsUrlCacheEntryExpiredA
+宏定义 PerformOperationOverUrlCache  PerformOperationOverUrlCacheA
+宏定义 RetrieveUrlCacheEntryFile  RetrieveUrlCacheEntryFileA
+宏定义 RetrieveUrlCacheEntryStream  RetrieveUrlCacheEntryStreamA
+宏定义 SetUrlCacheConfigInfo  SetUrlCacheConfigInfoA
+宏定义 SetUrlCacheEntryGroup  SetUrlCacheEntryGroupA
+宏定义 SetUrlCacheEntryInfo  SetUrlCacheEntryInfoA
+宏定义 SetUrlCacheGroupAttribute  SetUrlCacheGroupAttributeA
+宏定义 UnlockUrlCacheEntryFile  UnlockUrlCacheEntryFileA
+}

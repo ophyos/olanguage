@@ -1,0 +1,127 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒImmAssociateContext(Ë«×Ö,Ë«×Ö)
+¡ÒImmAssociateContextEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmConfigureIMEA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmConfigureIME  ImmConfigureIMEA
+
+¡ÒImmConfigureIMEW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmCreateContext()
+¡ÒImmCreateIMCC(Ë«×Ö)
+¡ÒImmCreateSoftKeyboard(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmDestroyContext(Ë«×Ö)
+¡ÒImmDestroyIMCC(Ë«×Ö)
+¡ÒImmDestroySoftKeyboard(Ë«×Ö)
+¡ÒImmDisableIME(Ë«×Ö)
+¡ÒImmDisableTextFrameService(Ë«×Ö)
+¡ÒImmEnumInputContext(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmEnumRegisterWordA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmEnumRegisterWord  ImmEnumRegisterWordA
+
+¡ÒImmEnumRegisterWordW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmEscapeA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmEscape  ImmEscapeA
+
+¡ÒImmEscapeW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGenerateMessage(Ë«×Ö)
+¡ÒImmGetCandidateListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetCandidateList  ImmGetCandidateListA
+
+¡ÒImmGetCandidateListCountA(Ë«×Ö,Ë«×Ö)
+¡ßImmGetCandidateListCount  ImmGetCandidateListCountA
+
+¡ÒImmGetCandidateListCountW(Ë«×Ö,Ë«×Ö)
+¡ÒImmGetCandidateListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetCandidateWindow(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetCompositionFontA(Ë«×Ö,Ë«×Ö)
+¡ßImmGetCompositionFont  ImmGetCompositionFontA
+
+¡ÒImmGetCompositionFontW(Ë«×Ö,Ë«×Ö)
+¡ÒImmGetCompositionStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetCompositionString  ImmGetCompositionStringA
+
+¡ÒImmGetCompositionStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetCompositionWindow(Ë«×Ö,Ë«×Ö)
+¡ÒImmGetContext(Ë«×Ö)
+¡ÒImmGetConversionListA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetConversionList  ImmGetConversionListA
+
+¡ÒImmGetConversionListW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetConversionStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetDefaultIMEWnd(Ë«×Ö)
+¡ÒImmGetDescriptionA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetDescription  ImmGetDescriptionA
+
+¡ÒImmGetDescriptionW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetGuideLineA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetGuideLine  ImmGetGuideLineA
+
+¡ÒImmGetGuideLineW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetHotKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetIMCCLockCount(Ë«×Ö)
+¡ÒImmGetIMCCSize(Ë«×Ö)
+¡ÒImmGetIMCLockCount(Ë«×Ö)
+¡ÒImmGetIMEFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetIMEFileName  ImmGetIMEFileNameA
+
+¡ÒImmGetIMEFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetImeMenuItemsA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetImeMenuItems  ImmGetImeMenuItemsA
+
+¡ÒImmGetImeMenuItemsW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetOpenStatus(Ë«×Ö)
+¡ÒImmGetProperty(Ë«×Ö,Ë«×Ö)
+¡ÒImmGetRegisterWordStyleA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmGetRegisterWordStyle  ImmGetRegisterWordStyleA
+
+¡ÒImmGetRegisterWordStyleW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmGetStatusWindowPos(Ë«×Ö,Ë«×Ö)
+¡ÒImmGetVirtualKey(Ë«×Ö)
+¡ÒImmInstallIMEA(Ë«×Ö,Ë«×Ö)
+¡ßImmInstallIME  ImmInstallIMEA
+
+¡ÒImmInstallIMEW(Ë«×Ö,Ë«×Ö)
+¡ÒImmIsIME(Ë«×Ö)
+¡ÒImmIsUIMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmIsUIMessage  ImmIsUIMessageA
+
+¡ÒImmIsUIMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmLockIMC(Ë«×Ö)
+¡ÒImmLockIMCC(Ë«×Ö)
+¡ÒImmNotifyIME(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmReSizeIMCC(Ë«×Ö,Ë«×Ö)
+¡ÒImmRegisterWordA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmRegisterWord  ImmRegisterWordA
+
+¡ÒImmRegisterWordW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmReleaseContext(Ë«×Ö,Ë«×Ö)
+¡ÒImmRequestMessageA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmRequestMessage  ImmRequestMessageA
+
+¡ÒImmRequestMessageW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmSetCandidateWindow(Ë«×Ö,Ë«×Ö)
+¡ÒImmSetCompositionFontA(Ë«×Ö,Ë«×Ö)
+¡ßImmSetCompositionFont  ImmSetCompositionFontA
+
+¡ÒImmSetCompositionFontW(Ë«×Ö,Ë«×Ö)
+¡ÒImmSetCompositionStringA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmSetCompositionString  ImmSetCompositionStringA
+
+¡ÒImmSetCompositionStringW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmSetCompositionWindow(Ë«×Ö,Ë«×Ö)
+¡ÒImmSetConversionStatus(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmSetHotKey(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒImmSetOpenStatus(Ë«×Ö,Ë«×Ö)
+¡ÒImmSetStatusWindowPos(Ë«×Ö,Ë«×Ö)
+¡ÒImmShowSoftKeyboard(Ë«×Ö,Ë«×Ö)
+¡ÒImmSimulateHotKey(Ë«×Ö,Ë«×Ö)
+¡ÒImmUnlockIMC(Ë«×Ö)
+¡ÒImmUnlockIMCC(Ë«×Ö)
+¡ÒImmUnregisterWordA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßImmUnregisterWord  ImmUnregisterWordA
+
+¡ÒImmUnregisterWordW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç

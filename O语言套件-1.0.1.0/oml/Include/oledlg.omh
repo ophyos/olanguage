@@ -1,0 +1,38 @@
+引用段
+{
+函数 OleUIAddVerbMenuA(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OleUIAddVerbMenuW(整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32,整数32)=>整数32;
+函数 OleUIBusyA(整数32)=>整数32;
+函数 OleUIBusyW(整数32)=>整数32;
+函数 OleUICanConvertOrActivateAs(整数32,整数32,整数32)=>整数32;
+函数 OleUIChangeIconA(整数32)=>整数32;
+函数 OleUIChangeIconW(整数32)=>整数32;
+函数 OleUIChangeSourceA(整数32)=>整数32;
+函数 OleUIChangeSourceW(整数32)=>整数32;
+函数 OleUIConvertA(整数32)=>整数32;
+函数 OleUIConvertW(整数32)=>整数32;
+函数 OleUIEditLinksA(整数32)=>整数32;
+函数 OleUIEditLinksW(整数32)=>整数32;
+函数 OleUIInsertObjectA(整数32)=>整数32;
+函数 OleUIInsertObjectW(整数32)=>整数32;
+函数 OleUIObjectPropertiesA(整数32)=>整数32;
+函数 OleUIObjectPropertiesW(整数32)=>整数32;
+函数 OleUIPasteSpecialA(整数32)=>整数32;
+函数 OleUIPasteSpecialW(整数32)=>整数32;
+函数 C调用 OleUIPromptUserA(整数32, ..)=>整数32;
+函数 C调用 OleUIPromptUserW(整数32, ..)=>整数32;
+函数 OleUIUpdateLinksA(整数32,整数32,整数32,整数32)=>整数32;
+函数 OleUIUpdateLinksW(整数32,整数32,整数32,整数32)=>整数32;
+
+宏定义 OleUIAddVerbMenu  OleUIAddVerbMenuA
+宏定义 OleUIBusy  OleUIBusyA
+宏定义 OleUIChangeIcon  OleUIChangeIconA
+宏定义 OleUIChangeSource  OleUIChangeSourceA
+宏定义 OleUIConvert  OleUIConvertA
+宏定义 OleUIEditLinks  OleUIEditLinksA
+宏定义 OleUIInsertObject  OleUIInsertObjectA
+宏定义 OleUIObjectProperties  OleUIObjectPropertiesA
+宏定义 OleUIPasteSpecial  OleUIPasteSpecialA
+宏定义 OleUIPromptUser  OleUIPromptUserA
+宏定义 OleUIUpdateLinks  OleUIUpdateLinksA
+}

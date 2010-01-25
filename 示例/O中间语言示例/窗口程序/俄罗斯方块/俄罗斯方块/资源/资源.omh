@@ -1,0 +1,38 @@
+
+∫Í∂®“Â
+{
+IDR_MENU_MAIN                           101
+IDI_ICON1                               102
+IDB_BITMAP1                             103
+IDB_BITMAP2                             117
+IDB_BITMAP3                             118
+IDB_BITMAP4                             119
+IDB_BITMAP5                             120
+IDB_BITMAP6                             121
+IDB_BITMAP7                             122
+IDB_BITMAP8                             123
+IDB_BITMAP9                             124
+IDD_DIALOG1                             125
+IDD_DIALOG2                             126
+IDD_DIALOG3                             127
+IDI_ICON2                               128
+IDR_TOOLBAR1                            129
+IDS_STATUSBAR                           130
+IDM_UP                                  131
+IDM_DOWN                                132
+IDM_LEFT                                133
+IDM_RIGHT                               134
+IDC_RADIO1                              1002
+IDC_RADIO2                              1003
+IDC_RADIO3                              1004
+IDM_NEW                                 40000
+IDM_PAUSE                               40001
+IDM_STOP                                40002
+IDM_MUSIC1                              40003
+IDM_HELP                                40004
+IDM_ABOUT                               40005
+IDM_EXIT                                40006
+IDM_MUSIC2                              40007
+IDM_MUSICOFF                            40008
+IDM_MUSIC                               40010
+}

@@ -1,0 +1,366 @@
+
+∥包含其它文件
+《*oasm32.oah》
+《*windows.oah》
+《*user32.oah》
+《*kernel32.oah》
+《*Comctl32.oah》
+.包含文<..\资源\资源.oah>
+
+∥引用库文件
+〈*user32.lib〉
+〈*kernel32.lib〉
+〈*Comctl32.lib〉
+
+∥定义了一些资源ID号
+∵
+{
+
+ID_TOOLBAR	    1
+ID_EDIT	    2
+ID_STATUSBAR   3
+
+NUM_BUTTONS    16 ∥工具栏上的按钮个数
+}
+
+∥数据段
+︻
+
+︼
+
+∥只读段
+﹃
+∥定义工具栏TBBUTTON结构数组
+TBBUTTON stToolbar‥ = …
+「按钮1 」STD_FILENEW, IDM_NEW,      TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「按钮2 」STD_FILEOPEN,IDM_OPEN,     TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「按钮4 」STD_FILESAVE,IDM_SAVE,     TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「分隔条」0,           0,            TBSTATE_ENABLED,TBSTYLE_SEP,   0,0,-1, …
+「按钮5 」STD_PRINTPRE,IDM_PAGESETUP,TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「按钮6 」STD_PRINT,   IDM_PRINT,    TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「分隔条」0,           0,            TBSTATE_ENABLED,TBSTYLE_SEP,   0,0,-1, …
+「按钮7 」STD_COPY,    IDM_COPY,     TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「按钮8 」STD_CUT,     IDM_CUT,      TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「按钮9 」STD_PASTE,   IDM_PASTE,    TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「分隔条」0,           0,            TBSTATE_ENABLED,TBSTYLE_SEP,   0,0,-1, …
+「按钮10」STD_FIND,    IDM_FIND,     TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「按钮11」STD_REPLACE, IDM_REPLACE,  TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「分隔条」0,           0,            TBSTATE_ENABLED,TBSTYLE_SEP,   0,0,-1, …
+「按钮12」STD_HELP,    IDM_HELP,     TBSTATE_ENABLED,TBSTYLE_BUTTON,0,0,-1, …
+「分隔条」0,           0,            TBSTATE_ENABLED,TBSTYLE_SEP,   0,0,-1
+
+字节 szClass‥       ="EDIT"
+字节 szClassName‥   ="ToolbarExample"
+字节 szCaptionMain‥ ="工具栏及状态栏示例"
+字节 szCaption‥     ="命令消息"
+字节 szFormat‥      ="收到 WM_COMMAND 消息，命令ID：%d"
+
+∥状态条用到的变量
+字节 szFormat0‥  = "%02d:%02d:%02d"
+字节 szFormat1‥  = "字节数:%d"
+字节 sz1‥        = "插入"
+字节 sz2‥        = "改写"
+双字 dwStatusWidth‥ = 60,140,172,-1
+双字 dwMenuHelp‥    = 0,IDM_HELP,0,0
+﹄
+
+∥预留段
+﹁
+双字 hInstance
+双字 hWinMain
+双字 hMenu
+双字 hWinToolbar
+双字 hWinStatus
+双字 hWinEdit
+
+双字 lpsz1
+双字 lpsz2
+﹂
+
+∥外部引用段
+︽
+
+︾
+
+
+∥代码段开始
+︷
+
+∥开始函数定义
+入口 主函数()
+{
+∥这里添加代码
+
+  主窗口()
+  ExitProcess(NULL)
+}
+
+函数 主窗口()
+{
+	WNDCLASSEX stWndClass
+
+	InitCommonControls()
+	GetModuleHandle(NULL)
+	hInstance = 累加32
+	LoadMenu(hInstance,IDM_MAIN)
+	hMenu = 累加32
+
+     ∥********************************************************************
+     ∥ 注册窗口类
+     ∥********************************************************************
+     累加32 @= stWndClass
+	RtlZeroMemory(累加32,取大小 stWndClass)
+	LoadIcon(hInstance,ICO_MAIN)
+	stWndClass.hIcon = 累加32
+	stWndClass.hIconSm = 累加32
+	LoadCursor(0,IDC_ARROW)
+	stWndClass.hCursor = 累加32
+	压栈 hInstance
+	出栈 stWndClass.hInstance
+	stWndClass.cbSize = 取大小 WNDCLASSEX
+	stWndClass.style = CS_HREDRAW | CS_VREDRAW
+	stWndClass.lpfnWndProc = 主窗口过程
+	stWndClass.hbrBackground = COLOR_BTNFACE+1
+	stWndClass.lpszClassName = 取地址 szClassName
+     累加32 @= stWndClass
+	RegisterClassEx(累加32)
+
+     ∥********************************************************************
+     ∥ 建立并显示窗口
+     ∥********************************************************************
+	CreateWindowEx(NULL,取地址 szClassName,取地址 szCaptionMain,WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,CW_USEDEFAULT,700,500,	NULL,hMenu,hInstance,NULL)
+	hWinMain = 累加32
+	ShowWindow(hWinMain,SW_SHOWNORMAL)
+	UpdateWindow(hWinMain)
+
+     ∥********************************************************************
+     ∥ 消息循环
+     ∥********************************************************************
+     MSG 消息
+	循环(真)
+     {         
+         累加32 @= 消息
+         GetMessage(累加32 ,0,0,0)
+        如果(累加32 == 0)
+        {
+          跳出
+        }
+        累加32 @= 消息
+        TranslateMessage(累加32)
+        累加32 @= 消息
+        DispatchMessage(累加32)
+     }
+}
+
+函数 调整控件位置()
+{
+	RECT stRect,stRectTemp	
+	双字 dwWidth,dwHeight
+
+     累加32 @= stRect
+	GetClientRect(hWinMain,累加32)
+	累加32 = stRect.right
+	累加32 -= stRect.left
+	dwWidth = 累加32
+	累加32 = stRect.bottom
+	累加32 -= stRect.top
+	dwHeight = 累加32
+     ∥********************************************************************
+     ∥ 计算及调整状态栏
+     ∥********************************************************************
+	MoveWindow(hWinStatus,0,0,0,0,TRUE)
+     累加32 @= stRectTemp
+	GetWindowRect(hWinStatus,累加32)
+	累加32 = stRectTemp.bottom
+	累加32 -= stRectTemp.top
+	dwHeight -= 累加32	
+     ∥********************************************************************
+     ∥ 计算及调整工具栏
+     ∥********************************************************************
+     累加32 @= stRectTemp
+	GetWindowRect(hWinToolbar,累加32)
+	累加32 = stRectTemp.bottom
+	累加32 -= stRectTemp.top
+	压栈 累加32
+	MoveWindow(hWinToolbar,0,0,dwWidth,累加32,TRUE)
+	出栈 累加32
+	dwHeight -= 累加32
+	stRect.top = 累加32
+     ∥********************************************************************
+     ∥ 调整编辑框控件位置
+     ∥********************************************************************
+	MoveWindow(hWinEdit,stRect.left,stRect.top,dwWidth,dwHeight,TRUE)
+}
+
+∥>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+函数 主窗口过程(双字 hWnd,双字 uMsg,双字 wParam,双字 lParam)
+{ <基数32, 的址32, 源址32>
+	
+	字节 szBuffer‥128
+     SYSTEMTIME stST
+     POINT stPoint
+     RECT stRect
+
+	累加32 = uMsg
+      ∥********************************************************************
+     如果(累加32 == WM_TIMER)
+     {
+           数据32 @= stST
+		GetLocalTime(数据32)
+		累加32 = stST.wHour 零扩展   ∥将stST.wHour 进行0扩展传送到 累加32
+		基数32 = stST.wMinute 零扩展 ∥将stST.wMinute 进行0扩展传送到 基数32
+		计数32 = stST.wSecond 零扩展 ∥将stST.wSecond 进行0扩展传送到 计数32
+           数据32 @= szBuffer
+		字符串格式化(数据32,取地址 szFormat0,累加32,基数32,计数32)
+           数据32 @= szBuffer
+		SendMessage(hWinStatus,SB_SETTEXT,0,数据32)
+     }
+     ∥********************************************************************
+	否则如果(累加32 == WM_CLOSE)
+      {
+           KillTimer(hWnd,1)
+		DestroyWindow(hWinMain)
+		PostQuitMessage(NULL)
+      }
+     ∥********************************************************************
+	否则如果(累加32 == WM_CREATE)
+     {
+		累加32 = hWnd
+		hWinMain = 累加32
+
+           ∥创建工作区的编辑控件
+		CreateWindowEx(WS_EX_CLIENTEDGE,取地址 szClass,NULL,…
+				WS_CHILD | WS_VISIBLE | ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | ES_AUTOHSCROLL,…
+				0,0,0,0,hWnd,ID_EDIT,hInstance,NULL)
+		hWinEdit = 累加32
+
+           ∥创建工具栏控件
+		CreateToolbarEx(hWinMain,…
+				WS_VISIBLE | WS_CHILD | TBSTYLE_FLAT | TBSTYLE_TOOLTIPS | CCS_ADJUSTABLE,…
+				ID_TOOLBAR,0,HINST_COMMCTRL,IDB_STD_SMALL_COLOR,取地址 stToolbar,…
+				NUM_BUTTONS,0,0,0,0,取大小 TBBUTTON)
+		hWinToolbar = 累加32
+
+          ∥创建状态条控件
+          CreateStatusWindow(WS_CHILD | WS_VISIBLE |SBS_SIZEGRIP ,NULL,hWinMain,ID_STATUSBAR)
+          hWinStatus = 累加32
+          SendMessage(hWinStatus,SB_SETPARTS,4,取地址 dwStatusWidth)
+          lpsz1 = 取地址 sz1
+          lpsz2 = 取地址 sz2
+          SendMessage(hWinStatus,SB_SETTEXT,2,lpsz1)
+
+          调整控件位置()
+
+          SetTimer(hWnd,1,300,NULL)
+     }
+     ∥********************************************************************
+	否则如果(累加32 == WM_COMMAND)
+     { 
+		累加32 = wParam
+		如果(累加16 == IDM_EXIT)
+           {
+			EndDialog(hWnd,NULL)
+           }
+		否则如果(累加16 != ID_EDIT)
+           {
+                数据32 @= szBuffer
+			字符串格式化(数据32,取地址 szFormat,wParam)
+                数据32 @= szBuffer
+			MessageBox(hWnd,数据32,取地址 szCaption,MB_OK | MB_ICONINFORMATION)              
+	      }
+           否则
+           {
+                ∥更新状态条信息
+                GetWindowTextLength(hWinEdit)
+                数据32 @= szBuffer
+			字符串格式化(数据32,取地址 szFormat1,累加32)
+                数据32 @= szBuffer
+			SendMessage(hWinStatus,SB_SETTEXT,1,数据32)
+           }
+	}
+     ∥********************************************************************
+     否则如果(累加32 == WM_MENUSELECT)
+     {
+		MenuHelp(WM_MENUSELECT,wParam,lParam,lParam,hInstance,hWinStatus,取地址 dwMenuHelp)
+     }
+     ∥********************************************************************
+	否则如果(累加32 == WM_SIZE)
+     {
+		调整控件位置()
+     }
+     ∥********************************************************************
+     ∥ 处理用户定制工具栏消息
+     ∥********************************************************************
+	否则如果(累加32 == WM_NOTIFY)
+     {
+          如果(wParam == ID_STATUSBAR)
+          {
+		    累加32 = lParam
+		    累加32 = [累加32 + 取地址 NMHDR.code]
+		    如果(累加32 == NM_CLICK)
+               {
+                      数据32 @= stPoint
+				GetCursorPos(数据32)
+                     数据32 @= stRect
+				GetWindowRect(hWinStatus,数据32)
+				累加32 = stRect.left
+				计数32 = 累加32
+				累加32 += 140
+				计数32 += 172
+				如果((stPoint.x >= 累加32) && (stPoint.x <= 计数32))
+                     {
+					累加32 = lpsz1
+					累加32 ∽ lpsz2
+					lpsz1 = 累加32
+					SendMessage(hWinStatus,SB_SETTEXT,2,lpsz1)
+				}
+			}
+		}
+          否则
+          {
+
+		  基数32 = lParam
+		  如果([双字|基数32 + 取地址 NMHDR.code] == TTN_NEEDTEXT)
+             {
+			累加32 = [基数32 + 取地址 TOOLTIPTEXT.hdr.idFrom]
+			[基数32 + 取地址 TOOLTIPTEXT.lpszText] = 累加32
+			压栈 hInstance
+			出栈 [双字|基数32 + 取地址 TOOLTIPTEXT.hUnionInst.hinst]
+             }
+		  否则如果(([双字|基数32 + 取地址 NMHDR.code] == TBN_QUERYINSERT) || ([双字|基数32 + 取地址 NMHDR.code] == TBN_QUERYDELETE))
+            {
+			返回 TRUE
+            }
+		  否则如果([双字|基数32 + 取地址 NMHDR.code] == TBN_GETBUTTONINFO)
+            {				
+		     累加32 = [基数32 + 取地址 TBNOTIFY.iItem]
+			如果(累加32 < NUM_BUTTONS)
+                {
+				计数32 = 取大小 TBBUTTON
+                     数据32ˇ累加32  = 累加32 × 计数32 ∥乘法运算
+			     累加32 += 取地址 stToolbar
+                     数据32 @= [基数32 + 取地址 TBNOTIFY.tbButton]
+				RtlMoveMemory(数据32,累加32,取大小 TBBUTTON)
+                     累加32 @= szBuffer
+				LoadString(hInstance,[基数32 + 取地址 TBNOTIFY.tbButton.idCommand],累加32,取大小 szBuffer)
+				累加32 @= szBuffer
+				[基数32 + 取地址 TBNOTIFY.pszText] = 累加32                     
+				字符串长度(累加32)
+				[基数32 + 取地址 TBNOTIFY.cchText] = 累加32					
+				返回 真
+			}
+		  }
+         }
+     }
+     ∥********************************************************************
+	否则
+     {
+		DefWindowProc(hWnd,uMsg,wParam,lParam)
+		返回
+	}
+     ∥********************************************************************
+
+	返回 假
+}
+
+︸ ∥代码段结束

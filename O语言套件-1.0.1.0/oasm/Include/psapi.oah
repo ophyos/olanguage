@@ -1,0 +1,45 @@
+¡ÎOÓïÑÔ°üº¬ÎÄ¼þ ÓÉdef2oah V1.0 ×Ô¶¯Éú³É
+
+¡ÎÒýÓÃÍâ²¿º¯Êý
+¦æ
+¡ÒEmptyWorkingSet(Ë«×Ö)
+¡ÒEnumDeviceDrivers(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumPageFilesA(Ë«×Ö,Ë«×Ö)
+¡ßEnumPageFiles  EnumPageFilesA
+
+¡ÒEnumPageFilesW(Ë«×Ö,Ë«×Ö)
+¡ÒEnumProcessModules(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒEnumProcesses(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDeviceDriverBaseNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDeviceDriverBaseName  GetDeviceDriverBaseNameA
+
+¡ÒGetDeviceDriverBaseNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetDeviceDriverFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetDeviceDriverFileName  GetDeviceDriverFileNameA
+
+¡ÒGetDeviceDriverFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetMappedFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetMappedFileName  GetMappedFileNameA
+
+¡ÒGetMappedFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetModuleBaseNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetModuleBaseName  GetModuleBaseNameA
+
+¡ÒGetModuleBaseNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetModuleFileNameExA(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetModuleFileNameEx  GetModuleFileNameExA
+
+¡ÒGetModuleFileNameExW(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetModuleInformation(Ë«×Ö,Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetPerformanceInfo(Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessImageFileNameA(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ßGetProcessImageFileName  GetProcessImageFileNameA
+
+¡ÒGetProcessImageFileNameW(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetProcessMemoryInfo(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒGetWsChanges(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒInitializeProcessForWsWatch(Ë«×Ö)
+¡ÒQueryWorkingSet(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+¡ÒQueryWorkingSetEx(Ë«×Ö,Ë«×Ö,Ë«×Ö)
+
+¦ç
