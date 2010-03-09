@@ -1,0 +1,50 @@
+
+.包含文<stddef.omh>
+
+正数32 typedef time_t;
+正数32 typedef clock_t;
+
+宏定义 CLOCKS_PER_SEC  1000
+
+结构 tm 
+{
+    整数32 tm_sec;     /* seconds after the minute [0,60] */
+    整数32 tm_min;     /* minutes after the hour [0,59] */
+    整数32 tm_hour;    /* hours since midnight [0,23] */
+    整数32 tm_mday;    /* day of the month [1,31] */
+    整数32 tm_mon;     /* month since January [0,11] */
+    整数32 tm_year;    /* years since 1900 */
+    整数32 tm_wday;    /* days since Sunday [0,6] */
+    整数32 tm_yday;    /* days since January 1 [0,365] */
+    整数32 tm_isdst;   /* Daylight Saving Time flag */
+};
+
+引用段
+{
+/* declarations */
+函数 C调用 difftime(time_t, time_t)=>小数64;
+函数 C调用 time(地址<time_t>)=>time_t;
+
+函数 C调用 asctime(地址<tm>)=>地址<整数8>;
+函数 C调用 clock()=>clock_t;
+函数 C调用 ctime(地址<time_t>)=>地址<整数8>;
+函数 C调用 gmtime(地址<time_t>)=>地址<tm>;
+函数 C调用 localtime(地址<time_t>)=>地址<tm>;
+函数 C调用 mktime(地址<tm>)=>time_t;
+函数 C调用 strftime(地址<整数8>, size_t,地址<整数8>,地址<tm>)=>size_t;
+
+/* private extensions to standard C */
+函数 C调用 _sleep(正数32)=>正数32;
+函数 C调用 _strdate(地址<整数8>)=>地址<整数8>;
+函数 C调用 _strtime(地址<整数8>)=>地址<整数8>;
+
+/* more secure C functions (TR24731-1) */
+
+/* functions */
+函数 C调用 asctime_s(地址<整数8>,rsize_t, 地址<tm>)=>errno_t;
+函数 C调用 ctime_s(地址<整数8>,rsize_t, 地址<time_t>)=>errno_t;
+函数 C调用 gmtime_s(地址<time_t>,地址<tm>)=>地址<tm>;
+函数 C调用 localtime_s(地址<time_t>,地址<tm>)=>地址<tm>;
+
+}
+

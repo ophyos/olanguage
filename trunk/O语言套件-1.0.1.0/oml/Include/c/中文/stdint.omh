@@ -1,0 +1,122 @@
+
+/* exact-width integer types */
+整数8   typedef int8_t;
+整数16  typedef int16_t;
+整数32  typedef int32_t;
+正数8  typedef uint8_t;
+正数16 typedef uint16_t;
+正数32 typedef uint32_t;
+
+/* minimum-width integer types */
+整数8    typedef int_least8_t;
+整数16   typedef int_least16_t;
+整数32   typedef int_least32_t;
+正数8   typedef uint_least8_t;
+正数16  typedef uint_least16_t;
+正数32  typedef uint_least32_t;
+
+/* fastest minimum-width integer types */
+整数32  typedef int_fast8_t;
+整数32  typedef int_fast16_t;
+整数32  typedef int_fast32_t;
+正数32 typedef uint_fast8_t;
+正数32 typedef uint_fast16_t;
+正数32 typedef uint_fast32_t;
+
+整数32  typedef intptr_t;
+正数32 typedef uintptr_t;
+
+
+/* limits of exact-width integer types */
+宏定义 INT8_MIN()    (-INT8_MAX - 1)
+宏定义 INT16_MIN()   (-INT16_MAX - 1)
+宏定义 INT32_MIN()   (-INT32_MAX - 1)
+宏定义 INT64_MIN()   (-INT64_MAX - 1)
+
+宏定义 INT8_MAX    0x7f
+宏定义 INT16_MAX   0x7fff
+宏定义 INT32_MAX   0x7fffffff
+宏定义 INT64_MAX   0x7fffffffffffffff
+
+宏定义 UINT8_MAX   0xff
+宏定义 UINT16_MAX  0xffff
+宏定义 UINT32_MAX  0xffffffff
+宏定义 UINT64_MAX  0xffffffffffffffff
+
+/* limits of minimum-width integer types */
+宏定义 INT_LEAST8_MIN()    (-INT_LEAST8_MAX - 1)
+宏定义 INT_LEAST16_MIN()   (-INT_LEAST16_MAX - 1)
+宏定义 INT_LEAST32_MIN()   (-INT_LEAST32_MAX - 1)
+宏定义 INT_LEAST64_MIN()   (-INT_LEAST64_MAX - 1)
+
+宏定义 INT_LEAST8_MAX    0x7f
+宏定义 INT_LEAST16_MAX   0x7fff
+宏定义 INT_LEAST32_MAX   0x7fffffff
+宏定义 INT_LEAST64_MAX   0x7fffffffffffffff
+
+宏定义 UINT_LEAST8_MAX   0xff
+宏定义 UINT_LEAST16_MAX  0xffff
+宏定义 UINT_LEAST32_MAX  0xffffffff
+宏定义 UINT_LEAST64_MAX  0xffffffffffffffff
+
+/* limits of fastest minimum-width integer types */
+宏定义 INT_FAST8_MIN()    (-INT_FAST8_MAX - 1)
+宏定义 INT_FAST16_MIN()   (-INT_FAST16_MAX - 1)
+宏定义 INT_FAST32_MIN()   (-INT_FAST32_MAX - 1)
+宏定义 INT_FAST64_MIN()   (-INT_FAST64_MAX - 1)
+
+宏定义 INT_FAST8_MAX    0x7fffffff
+宏定义 INT_FAST16_MAX   0x7fffffff
+宏定义 INT_FAST32_MAX   0x7fffffff
+宏定义 INT_FAST64_MAX   0x7fffffffffffffff
+
+宏定义 UINT_FAST8_MAX   0xffffffff
+宏定义 UINT_FAST16_MAX  0xffffffff
+宏定义 UINT_FAST32_MAX  0xffffffff
+宏定义 UINT_FAST64_MAX  0xffffffffffffffff
+
+/* limits of integer types capable of holding object pointers */
+宏定义 INTPTR_MIN()   (-INTPTR_MAX - 1)
+宏定义 INTPTR_MAX   0x7fffffff
+宏定义 UINTPTR_MAX  0xffffffff
+
+/* limits of greatest-width integer types */
+宏定义 INTMAX_MIN()   (-INTMAX_MAX - 1)
+宏定义 INTMAX_MAX   0x7fffffffffffffff
+宏定义 UINTMAX_MAX  0xffffffffffffffff
+
+/* limits of ptrdiff_t */
+宏定义 PTRDIFF_MIN  INT32_MIN
+宏定义 PTRDIFF_MAX  INT32_MAX
+
+/* limits of sig_atomic_t */
+宏定义 SIG_ATOMIC_MIN  INT32_MIN
+宏定义 SIG_ATOMIC_MAX  INT32_MAX
+
+/* limit of size_t */
+宏定义 SIZE_MAX  UINT32_MAX
+
+/* limits of wchar_t */
+宏定义 WCHAR_MIN  0
+宏定义 WCHAR_MAX  0xffff
+
+/* limits of wint_t */
+宏定义 WINT_MIN  0
+宏定义 WINT_MAX  0xffff
+
+/* macros for minimum-width integer constants */
+宏定义 INT8_C(x)  (int_least8_t)(x)
+宏定义 INT16_C(x)  (int_least16_t)(x)
+宏定义 INT32_C(x)  (int_least32_t)(x)
+宏定义 INT64_C(x)  (int_least64_t)(x)
+
+宏定义 UINT8_C(x)  (uint_least8_t)(x)
+宏定义 UINT16_C(x)  (uint_least16_t)(x)
+宏定义 UINT32_C(x)  (uint_least32_t)(x)
+宏定义 UINT64_C(x)  (uint_least64_t)(x)
+
+/* macros for greatest-width integer constants */
+宏定义 INTMAX_C(x)  (intmax_t)(x)
+宏定义 UINTMAX_C(x)  (uintmax_t)(x)
+
+宏定义 RSIZE_MAX  INT32_MAX

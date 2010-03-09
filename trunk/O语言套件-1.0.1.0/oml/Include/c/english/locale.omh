@@ -1,0 +1,57 @@
+
+/* locale categories */
+define LC_ALL()     (LC_COLLATE|LC_CTYPE|LC_MONETARY|LC_NUMERIC|LC_TIME)
+define LC_COLLATE   1
+define LC_CTYPE     2
+define LC_MONETARY  4
+define LC_NUMERIC   8
+define LC_TIME      16
+
+/* type definitions */
+struct lconv 
+{
+    /* LC_MONETARY */
+    addr<int8> currency_symbol;
+    addr<int8> int_curr_symbol;
+    addr<int8> mon_decimal_point;
+    addr<int8> mon_grouping;
+    addr<int8> mon_thousands_sep;
+    addr<int8> negative_sign;
+    addr<int8> positive_sign;
+    int8 frac_digits;
+    int8 n_cs_precedes;
+    int8 n_sep_by_space;
+    int8 n_sign_posn;
+    int8 p_cs_precedes;
+    int8 p_sep_by_space;
+    int8 p_sign_posn;
+    int8 int_frac_digits;
+    int8 int_n_cs_precedes;
+    int8 int_n_sep_by_space;
+    int8 int_n_sign_posn;
+    int8 int_p_cs_precedes;
+    int8 int_p_sep_by_space;
+    int8 int_p_sign_posn;
+    /* LC_NUMERIC */
+    addr<int8> decimal_point;
+    addr<int8> grouping;
+    addr<int8> thousands_sep;
+}
+
+externs
+{
+/* declarations */
+function cdecl localeconv()=>addr<lconv>;
+function cdecl setlocale(int32, addr<int8>)=>addr<int8>;
+
+/* data declarations */
+lconv __locale;
+
+}
+//#if defined(_CHAR_UNSIGNED) && !defined(__CRTBUILD__)
+//#pragma comment(linker, "/include:___localeinit")
+//#endif /* _CHAR_UNSIGNED */
+
+/* macro overrides */
+define localeconv()  (&__locale)
+

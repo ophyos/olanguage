@@ -1,0 +1,23 @@
+
+宏定义 CHAR_BIT    8                       /* number of bits in a char */
+宏定义 CHAR_MAX    SCHAR_MAX               /* maximum char value */
+宏定义 CHAR_MIN    SCHAR_MIN               /* minimum char value */
+宏定义 SCHAR_MAX   0x7f                    /* maximum signed char value */
+宏定义 SCHAR_MIN() (-SCHAR_MAX - 1)        /* minimum signed char value */
+宏定义 UCHAR_MAX   0xff                    /* maximum unsigned char value */
+
+宏定义 MB_LEN_MAX  8                       /* maximum number of bytes in multibyte char */
+
+宏定义 INT_MAX     LONG_MAX                /* maximum signed int value */
+宏定义 INT_MIN     LONG_MIN                /* minimum signed int value */
+宏定义 SHRT_MAX    0x7fff                  /* maximum signed short value */
+宏定义 SHRT_MIN()  (-SHRT_MAX - 1)         /* minimum signed short value */
+宏定义 LONG_MAX    0x7fffffff              /* maximum signed long value */
+宏定义 LONG_MIN()  (-LONG_MAX - 1)         /* minimum signed long value */
+
+宏定义 USHRT_MAX   0xffff                  /* maximum unsigned short value */
+宏定义 UINT_MAX    0xffffffff              /* maximum unsigned int value */
+宏定义 ULONG_MAX   0xffffffff              /* maximum unsigned long value */
+
+宏定义 _SSIZE_MAX  LONG_MAX
+宏定义 SSIZE_MAX  LONG_MAX

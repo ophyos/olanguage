@@ -1,0 +1,53 @@
+
+uint32 typedef fexcept_t;
+
+struct fenv_t 
+{
+    fexcept_t control;
+    fexcept_t status;
+    fexcept_t[5] reserved;
+}
+
+/* macros */
+define
+{
+FE_TONEAREST   0x00
+FE_DOWNWARD    0x01
+FE_UPWARD      0x02
+FE_TOWARDZERO  0x03
+
+FE_INVALID     0x01
+FE_DIVBYZERO   0x04
+FE_OVERFLOW    0x08
+FE_UNDERFLOW   0x10
+FE_INEXACT     0x20
+FE_ALL_EXCEPT()  (FE_INVALID|FE_DIVBYZERO|FE_OVERFLOW|FE_UNDERFLOW|FE_INEXACT)
+
+FE_DFL_ENV()  (&__dfl_fenv)
+}
+
+externs
+{
+/* floating-point exception handling */
+function cdecl feclearexcept(int32)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl fegetexceptflag(addr<fexcept_t>, int32)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl feraiseexcept(int32)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl fesetexceptflag(addr<fexcept_t>, int32)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl fetestexcept(int32)=>int32;
+
+/* rounding control */
+function cdecl fegetround()=>int32;
+function cdecl fesetround(int32)=>int32;
+
+/* floating-point environment */
+function cdecl fegetenv(addr<fenv_t>)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl fesetenv(addr<fenv_t>)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl feupdateenv(addr<fenv_t>)=>int32;  /* return type changed to int32 in TC1 */
+function cdecl feholdexcept(addr<fenv_t>)=>int32;
+
+/* data declarations */
+fenv_t __dfl_fenv;
+fenv_t __fenv;
+}
+
+

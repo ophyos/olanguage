@@ -1,0 +1,187 @@
+
+.include<stddef.omh>
+
+define
+{
+EOF() (-1)
+FILENAME_MAX  260
+_IOFBF  0
+_IOLBF  1
+_IONBF  2
+
+BUFSIZ  512
+
+FOPEN_MAX  256
+
+L_tmpnam  16
+TMP_MAX  32
+
+SEEK_SET  0
+SEEK_CUR  1
+SEEK_END  2
+
+stdin   __stdin
+stdout  __stdout
+stderr  __stderr
+
+}//end define
+
+struct mbstate_t
+{
+    uint32 wchar;
+    uint16 rsrv;
+    uint16 state;
+}
+
+struct FILE 
+{
+    uint16 mode;
+    uint16 pad;
+    int32 fh;
+    addr<uint8> buf;
+    addr<uint8> bufend;
+    addr<uint8> ptr;
+    addr<uint8> getend;
+    addr<uint8> putend;
+    addr<uint8> backptr;
+    addr<wchar_t> wbackptr;
+    wchar_t[2] wbackbuf;
+    addr<uint8> getback;
+    addr<uint8> wgetend;
+    addr<uint8> wputend;
+    mbstate_t wstate;
+    addr<int8> tmpnam;
+    uint8[8] backbuf;
+    uint8 cbuf;
+}
+
+struct fpos_t 
+{
+    int32 off;
+    mbstate_t wstate;
+}
+
+externs
+{
+function cdecl remove(addr<int8>)=>int32;
+function cdecl rename(addr<int8>,addr<int8>)=>int32;
+
+function cdecl tmpfile()=>addr<FILE>;
+function cdecl tmpnam(addr<int8>)=>addr<int8>;
+function cdecl _wtmpnam(addr<wchar_t>)=>addr<wchar_t>;
+
+function cdecl fclose(addr<FILE>)=>int32;
+function cdecl fflush(addr<FILE>)=>int32;
+function cdecl fopen(addr<int8>, addr<int8>)=>addr<FILE>;
+function cdecl setvbuf(addr<FILE>, addr<int8>, int32, size_t)=>int32;
+function cdecl freopen(addr<int8>, addr<int8>, addr<FILE>)=>addr<FILE>;
+function cdecl setbuf(addr<FILE>, addr<int8>);
+
+
+/* formatted input/output functions */
+function cdecl fprintf(addr<FILE>, addr<int8>, ..)=>int32;
+function cdecl fscanf(addr<FILE>, addr<int8>, ..)=>int32;
+function cdecl sprintf(addr<int8>, addr<int8>, ..)=>int32;
+function cdecl sscanf(addr<int8>, addr<int8>, ..)=>int32;
+function cdecl vfprintf(addr<FILE>, addr<int8>, va_list)=>int32;
+function cdecl vsprintf(addr<int8>, addr<int8>, va_list)=>int32;
+function cdecl vprintf(addr<int8>, va_list)=>int32;
+function cdecl printf(addr<int8>, ..)=>int32;
+function cdecl scanf(addr<int8>, ..)=>int32;
+function cdecl vfscanf(addr<FILE>, addr<int8>, va_list)=>int32;
+function cdecl vsscanf(addr<int8>, addr<int8>, va_list)=>int32;
+function cdecl vscanf(addr<int8>, va_list)=>int32;
+function cdecl snprintf(addr<int8>, size_t, addr<int8>, ..)=>int32;
+function cdecl vsnprintf(addr<int8>, size_t, addr<int8>, va_list)=>int32;
+define snprintf  _snprintf
+define vsnprintf  _vsnprintf
+
+/* character input/output functions */
+function cdecl fgetc(addr<FILE>)=>int32;
+function cdecl fgets(addr<int8>, int32, addr<FILE>)=>addr<int8>;
+function cdecl fputc(int32, addr<FILE>)=>int32;
+function cdecl fputs(addr<int8>, addr<FILE>)=>int32;
+function cdecl getchar()=>int32;
+function cdecl gets(addr<int8>)=>addr<int8>;
+function cdecl putchar(int32)=>int32;
+function cdecl puts(addr<int8>)=>int32;
+function cdecl ungetc(int32, addr<FILE>)=>int32;
+function cdecl getc(addr<FILE>)=>int32;
+function cdecl putc(int32, addr<FILE>)=>int32;
+
+
+/* direct input/output functions */
+function cdecl fread(addr, size_t, size_t, addr<FILE>)=>size_t;
+function cdecl fwrite(addr, size_t, size_t, addr<FILE>)=>size_t;
+
+/* file positioning functions */
+function cdecl fgetpos(addr<FILE>, addr<fpos_t>)=>int32;
+function cdecl fseek(addr<FILE>, int32, int32)=>int32;
+function cdecl fsetpos(addr<FILE>, addr<fpos_t>)=>int32;
+function cdecl ftell(addr<FILE>)=>int32;
+function cdecl rewind(addr<FILE>);
+
+/* error-handling functions */
+function cdecl clearerr(addr<FILE>);
+function cdecl feof(addr<FILE>)=>int32;
+function cdecl ferror(addr<FILE>)=>int32;
+function cdecl perror(addr<int8>);
+function cdecl _wperror(addr<wchar_t>);
+
+/* private extensions to standard C */
+function cdecl _fileno(addr<FILE>)=>int32;
+function cdecl _fcloseall()=>int32;
+function cdecl _wfopen(addr<wchar_t>, addr<wchar_t>)=>addr<FILE>;
+function cdecl _wfreopen(addr<wchar_t>, addr<wchar_t>, addr<FILE>)=>addr<FILE>;
+function cdecl _fdopen(int32, addr<int8>)=>addr<FILE>;
+function cdecl _wfdopen(int32, addr<wchar_t>)=>addr<FILE>;
+function cdecl _popen(addr<int8>, addr<int8>)=>addr<FILE>;
+function cdecl _pclose(addr<FILE>)=>int32;
+function cdecl _getstdfilex(int32)=>addr<FILE>;
+function cdecl _snprintf(addr<int8>, size_t, addr<int8>, ..)=>int32;
+function cdecl _vsnprintf(addr<int8>, size_t, addr<int8>, va_list)=>int32;
+function cdecl _wremove(addr<wchar_t>)=>int32;
+function cdecl _wrename(addr<wchar_t>, addr<wchar_t>)=>int32;
+function cdecl _fseeko(addr<FILE>, _off_t, int32)=>int32;
+function cdecl _ftello(addr<FILE>)=>_off_t;
+
+/* compatibility names */
+function cdecl fcloseall()=>int32;
+function cdecl fdopen(int32, addr<int8>)=>addr<FILE>;
+function cdecl fileno(addr<FILE>)=>int32;
+function cdecl popen(addr<int8>,addr<int8>)=>addr<FILE>;
+function cdecl pclose(addr<FILE>)=>int32;
+function cdecl fseeko(addr<FILE>, off_t, int32)=>int32;
+function cdecl ftello(addr<FILE>)=>off_t;
+
+define L_tmpnam_s  L_tmpnam
+define TMP_MAX_S  TMP_MAX
+
+/* operations on files */
+function cdecl tmpfile_s(addr<FILE>)=>errno_t;
+function cdecl tmpnam_s(addr<int8>, rsize_t)=>errno_t;
+
+/* file access functions */
+function cdecl fopen_s(addr<FILE>, addr<int8>, addr<int8>)=>errno_t;
+function cdecl freopen_s(addr<FILE>, addr<int8>, addr<int8>, addr<FILE>)=>errno_t;
+
+/* formatted input/output functions */
+function cdecl fprintf_s(addr<FILE>, addr<int8>, ..)=>int32;
+function cdecl fscanf_s(addr<FILE>, addr<int8>, ..)=>int32;
+function cdecl printf_s(addr<int8>, ..)=>int32;
+function cdecl scanf_s(addr<int8>, ..)=>int32;
+function cdecl snprintf_s(addr<int8>, rsize_t, addr<int8>, ..)=>int32;
+function cdecl sprintf_s(addr<int8>, rsize_t, addr<int8>, ..)=>int32;
+function cdecl sscanf_s(addr<int8>, addr<int8>, ..)=>int32;
+function cdecl vfprintf_s(addr<FILE>, addr<int8>, va_list)=>int32;
+function cdecl vfscanf_s(addr<FILE>, addr<int8>, va_list)=>int32;
+function cdecl vprintf_s(addr<int8>, va_list)=>int32;
+function cdecl vscanf_s(addr<int8>, va_list)=>int32;
+function cdecl vsnprintf_s(addr<int8>, rsize_t, addr<int8>, va_list)=>int32;
+function cdecl vsprintf_s(addr<int8>, rsize_t, addr<int8>, va_list)=>int32;
+function cdecl vsscanf_s(addr<int8>, addr<int8>, va_list)=>int32;
+
+/* character input/output functions */
+function cdecl gets_s(addr<int8>, rsize_t)=>addr<int8>;
+
+}

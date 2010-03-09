@@ -1,0 +1,59 @@
+
+.包含文<wchar.omh>
+
+正数32 typedef wctrans_t;
+正数32 typedef wctype_t;
+
+引用段
+{
+/* declarations */
+函数 C调用 iswalnum(wint_t)=>整数32;
+函数 C调用 iswalpha(wint_t)=>整数32;
+函数 C调用 iswcntrl(wint_t)=>整数32;
+函数 C调用 iswdigit(wint_t)=>整数32;
+函数 C调用 iswgraph(wint_t)=>整数32;
+函数 C调用 iswlower(wint_t)=>整数32;
+函数 C调用 iswprint(wint_t)=>整数32;
+函数 C调用 iswpunct(wint_t)=>整数32;
+函数 C调用 iswspace(wint_t)=>整数32;
+函数 C调用 iswblank(wint_t)=>整数32;
+函数 C调用 iswupper(wint_t)=>整数32;
+函数 C调用 iswxdigit(wint_t)=>整数32;
+函数 C调用 _iswascii(wint_t)=>整数32;
+函数 C调用 iswctype(wint_t, wctype_t)=>整数32;
+函数 C调用 towlower(wint_t)=>wint_t;
+函数 C调用 towupper(wint_t)=>wint_t;
+函数 C调用 towctrans(wint_t, wctrans_t)=>wint_t;
+函数 C调用 wctrans(地址<整数8>)=>wctrans_t;
+函数 C调用 wctype(地址<整数8>)=>wctype_t;
+
+/* internal stuff */
+函数 C调用 __iswctype(wint_t, wctype_t)=>整数32;
+函数 C调用 __towctrans(wint_t, wctrans_t)=>wint_t;
+
+/* macro overrides */
+宏定义 iswalnum(wc)  __iswctype(wc,1)
+宏定义 iswalpha(wc)  __iswctype(wc,2)
+宏定义 iswcntrl(wc)  __iswctype(wc,3)
+宏定义 iswdigit(wc)  __iswctype(wc,4)
+宏定义 iswgraph(wc)  __iswctype(wc,5)
+宏定义 iswlower(wc)  __iswctype(wc,6)
+宏定义 iswprint(wc)  __iswctype(wc,7)
+宏定义 iswpunct(wc)  __iswctype(wc,8)
+宏定义 iswspace(wc)  __iswctype(wc,9)
+宏定义 iswblank(wc)  __iswctype(wc,12)
+宏定义 iswupper(wc)  __iswctype(wc,10)
+宏定义 iswxdigit(wc)  __iswctype(wc,11)
+宏定义 _iswascii(wc)  __iswctype(wc,13)
+宏定义 iswctype(wc,desc)  __iswctype(wc,desc)
+宏定义 towlower(wc)  __towctrans(wc,1)
+宏定义 towupper(wc)  __towctrans(wc,2)
+宏定义 towctrans(wc,desc)  __towctrans(wc,desc)
+
+//#ifdef __POCC__OLDNAMES
+函数 C调用 iswascii(wint_t)=>整数32;
+宏定义 iswascii(c)  __iswctype(wc,13)
+//#endif /* __POCC__OLDNAMES */
+
+}
+

@@ -1,0 +1,24 @@
+
+/* type definitions */
+int32 typedef sig_atomic_t;
+//typedef void __cdecl __sigfunc(int);
+
+/* signal codes */
+define SIGINT  2
+define SIGILL  4
+define SIGABRT  6
+define SIGFPE  8
+define SIGSEGV  11
+define SIGTERM  15
+
+/* signal return values */
+define SIG_DFL()  ((__sigfunc *)0)
+define SIG_ERR()  ((__sigfunc *)-1)
+define SIG_IGN()  ((__sigfunc *)1)
+
+externs
+{
+/* declarations */
+function cdecl raise(int32)=>int32;
+function cdecl signal(int32,addr)=>addr;
+}

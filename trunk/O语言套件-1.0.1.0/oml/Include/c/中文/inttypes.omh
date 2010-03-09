@@ -1,0 +1,198 @@
+
+.包含文<stdint.omh>
+
+/* fprintf formats for signed integers */
+宏定义 PRId8        "hhd"
+宏定义 PRId16       "hd"
+宏定义 PRId32       "ld"
+宏定义 PRId64       "lld"
+宏定义 PRIdLEAST8   "hhd"
+宏定义 PRIdLEAST16  "hd"
+宏定义 PRIdLEAST32  "ld"
+宏定义 PRIdLEAST64  "lld"
+宏定义 PRIdFAST8    "ld"
+宏定义 PRIdFAST16   "ld"
+宏定义 PRIdFAST32   "ld"
+宏定义 PRIdFAST64   "lld"
+宏定义 PRIdMAX      "lld"
+宏定义 PRIdPTR      "ld"
+
+宏定义 PRIi8        "hhi"
+宏定义 PRIi16       "hi"
+宏定义 PRIi32       "li"
+宏定义 PRIi64       "lli"
+宏定义 PRIiLEAST8   "hhi"
+宏定义 PRIiLEAST16  "hi"
+宏定义 PRIiLEAST32  "li"
+宏定义 PRIiLEAST64  "lli"
+宏定义 PRIiFAST8    "li"
+宏定义 PRIiFAST16   "li"
+宏定义 PRIiFAST32   "li"
+宏定义 PRIiFAST64   "lli"
+宏定义 PRIiMAX      "lli"
+宏定义 PRIiPTR      "li"
+
+/* fprintf formats for unsigned integers */
+宏定义 PRIo8        "hho"
+宏定义 PRIo16       "ho"
+宏定义 PRIo32       "lo"
+宏定义 PRIo64       "llo"
+宏定义 PRIoLEAST8   "hho"
+宏定义 PRIoLEAST16  "ho"
+宏定义 PRIoLEAST32  "lo"
+宏定义 PRIoLEAST64  "llo"
+宏定义 PRIoFAST8    "lo"
+宏定义 PRIoFAST16   "lo"
+宏定义 PRIoFAST32   "lo"
+宏定义 PRIoFAST64   "llo"
+宏定义 PRIoMAX      "llo"
+宏定义 PRIoPTR      "lo"
+
+宏定义 PRIu8        "hhu"
+宏定义 PRIu16       "hu"
+宏定义 PRIu32       "lu"
+宏定义 PRIu64       "llu"
+宏定义 PRIuLEAST8   "hhu"
+宏定义 PRIuLEAST16  "hu"
+宏定义 PRIuLEAST32  "lu"
+宏定义 PRIuLEAST64  "llu"
+宏定义 PRIuFAST8    "lu"
+宏定义 PRIuFAST16   "lu"
+宏定义 PRIuFAST32   "lu"
+宏定义 PRIuFAST64   "llu"
+宏定义 PRIuMAX      "llu"
+宏定义 PRIuPTR      "lu"
+
+宏定义 PRIx8        "hhx"
+宏定义 PRIx16       "hx"
+宏定义 PRIx32       "lx"
+宏定义 PRIx64       "llx"
+宏定义 PRIxLEAST8   "hhx"
+宏定义 PRIxLEAST16  "hx"
+宏定义 PRIxLEAST32  "lx"
+宏定义 PRIxLEAST64  "llx"
+宏定义 PRIxFAST8    "lx"
+宏定义 PRIxFAST16   "lx"
+宏定义 PRIxFAST32   "lx"
+宏定义 PRIxFAST64   "llx"
+宏定义 PRIxMAX      "llx"
+宏定义 PRIxPTR      "lx"
+
+宏定义 PRIX8        "hhX"
+宏定义 PRIX16       "hX"
+宏定义 PRIX32       "lX"
+宏定义 PRIX64       "llX"
+宏定义 PRIXLEAST8   "hhX"
+宏定义 PRIXLEAST16  "hX"
+宏定义 PRIXLEAST32  "lX"
+宏定义 PRIXLEAST64  "llX"
+宏定义 PRIXFAST8    "lX"
+宏定义 PRIXFAST16   "lX"
+宏定义 PRIXFAST32   "lX"
+宏定义 PRIXFAST64   "llX"
+宏定义 PRIXMAX      "llX"
+宏定义 PRIXPTR      "lX"
+
+/* fscanf formats for signed integers */
+宏定义 SCNd8        "hhd"
+宏定义 SCNd16       "hd"
+宏定义 SCNd32       "ld"
+宏定义 SCNd64       "lld"
+宏定义 SCNdLEAST8   "hhd"
+宏定义 SCNdLEAST16  "hd"
+宏定义 SCNdLEAST32  "ld"
+宏定义 SCNdLEAST64  "lld"
+宏定义 SCNdFAST8    "ld"
+宏定义 SCNdFAST16   "ld"
+宏定义 SCNdFAST32   "ld"
+宏定义 SCNdFAST64   "lld"
+宏定义 SCNdMAX      "lld"
+宏定义 SCNdPTR      "ld"
+
+宏定义 SCNi8        "hhi"
+宏定义 SCNi16       "hi"
+宏定义 SCNi32       "li"
+宏定义 SCNi64       "lli"
+宏定义 SCNiLEAST8   "hhi"
+宏定义 SCNiLEAST16  "hi"
+宏定义 SCNiLEAST32  "li"
+宏定义 SCNiLEAST64  "lli"
+宏定义 SCNiFAST8    "li"
+宏定义 SCNiFAST16   "li"
+宏定义 SCNiFAST32   "li"
+宏定义 SCNiFAST64   "lli"
+宏定义 SCNiMAX      "lli"
+宏定义 SCNiPTR      "li"
+
+/* fscanf formats for unsigned integers */
+宏定义 SCNo8        "hho"
+宏定义 SCNo16       "ho"
+宏定义 SCNo32       "lo"
+宏定义 SCNo64       "llo"
+宏定义 SCNoLEAST8   "hho"
+宏定义 SCNoLEAST16  "ho"
+宏定义 SCNoLEAST32  "lo"
+宏定义 SCNoLEAST64  "llo"
+宏定义 SCNoFAST8    "lo"
+宏定义 SCNoFAST16   "lo"
+宏定义 SCNoFAST32   "lo"
+宏定义 SCNoFAST64   "llo"
+宏定义 SCNoMAX      "llo"
+宏定义 SCNoPTR      "lo"
+
+宏定义 SCNu8        "hhu"
+宏定义 SCNu16       "hu"
+宏定义 SCNu32       "lu"
+宏定义 SCNu64       "llu"
+宏定义 SCNuLEAST8   "hhu"
+宏定义 SCNuLEAST16  "hu"
+宏定义 SCNuLEAST32  "lu"
+宏定义 SCNuLEAST64  "llu"
+宏定义 SCNuFAST8    "lu"
+宏定义 SCNuFAST16   "lu"
+宏定义 SCNuFAST32   "lu"
+宏定义 SCNuFAST64   "llu"
+宏定义 SCNuMAX      "llu"
+宏定义 SCNuPTR      "lu"
+
+宏定义 SCNx8        "hhx"
+宏定义 SCNx16       "hx"
+宏定义 SCNx32       "lx"
+宏定义 SCNx64       "llx"
+宏定义 SCNxLEAST8   "hhx"
+宏定义 SCNxLEAST16  "hx"
+宏定义 SCNxLEAST32  "lx"
+宏定义 SCNxLEAST64  "llx"
+宏定义 SCNxFAST8    "lx"
+宏定义 SCNxFAST16   "lx"
+宏定义 SCNxFAST32   "lx"
+宏定义 SCNxFAST64   "llx"
+宏定义 SCNxMAX      "llx"
+宏定义 SCNxPTR      "lx"
+
+//结构 imaxdiv_t
+//{
+    //intmax_t quot;
+    //intmax_t rem;
+//}
+//
+//引用段
+//{
+///* conversion functions for greatest-width integer types */
+//函数 C调用 imaxabs(intmax_t)=>intmax_t;
+//函数 C调用 imaxdiv(intmax_t, intmax_t)=>imaxdiv_t;
+//函数 C调用 strtoimax(地址<char>, 地址, 整数32)=>intmax_t;
+//函数 C调用 strtoumax(地址<char>, 地址, 整数32)=>uintmax_t;
+//函数 C调用 wcstoimax(地址<wchar_t>, 地址, 整数32)=>intmax_t;
+//函数 C调用 wcstoumax(地址<wchar_t>, 地址, 整数32)=>uintmax_t;
+//}
+
+/* conversion functions for greatest-width integer types */
+/* imaxdiv_t */
+/* imaxabs */
+/* imaxdiv */
+/* strtoimax */
+/* strtoumax */
+/* wcstoimax */
+/* wcstoumax */
+

@@ -1,0 +1,57 @@
+
+/* locale categories */
+宏定义 LC_ALL()     (LC_COLLATE|LC_CTYPE|LC_MONETARY|LC_NUMERIC|LC_TIME)
+宏定义 LC_COLLATE   1
+宏定义 LC_CTYPE     2
+宏定义 LC_MONETARY  4
+宏定义 LC_NUMERIC   8
+宏定义 LC_TIME      16
+
+/* type definitions */
+结构 lconv 
+{
+    /* LC_MONETARY */
+    地址<整数8> currency_symbol;
+    地址<整数8> int_curr_symbol;
+    地址<整数8> mon_decimal_point;
+    地址<整数8> mon_grouping;
+    地址<整数8> mon_thousands_sep;
+    地址<整数8> negative_sign;
+    地址<整数8> positive_sign;
+    整数8 frac_digits;
+    整数8 n_cs_precedes;
+    整数8 n_sep_by_space;
+    整数8 n_sign_posn;
+    整数8 p_cs_precedes;
+    整数8 p_sep_by_space;
+    整数8 p_sign_posn;
+    整数8 int_frac_digits;
+    整数8 int_n_cs_precedes;
+    整数8 int_n_sep_by_space;
+    整数8 int_n_sign_posn;
+    整数8 int_p_cs_precedes;
+    整数8 int_p_sep_by_space;
+    整数8 int_p_sign_posn;
+    /* LC_NUMERIC */
+    地址<整数8> decimal_point;
+    地址<整数8> grouping;
+    地址<整数8> thousands_sep;
+}
+
+引用段
+{
+/* declarations */
+函数 C调用 localeconv()=>地址<lconv>;
+函数 C调用 setlocale(整数32, 地址<整数8>)=>地址<整数8>;
+
+/* data declarations */
+lconv __locale;
+
+}
+//#if defined(_CHAR_UNSIGNED) && !defined(__CRTBUILD__)
+//#pragma comment(linker, "/include:___localeinit")
+//#endif /* _CHAR_UNSIGNED */
+
+/* macro overrides */
+宏定义 localeconv()  (&__locale)
+

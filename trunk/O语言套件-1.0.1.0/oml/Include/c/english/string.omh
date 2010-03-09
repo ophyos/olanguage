@@ -1,0 +1,72 @@
+
+.include<stddef.omh>
+
+externs
+{
+/* declarations */
+function cdecl memchr(addr, int32, size_t)=>addr;
+function cdecl memcmp(addr, addr, size_t)=>int32;
+function cdecl memcpy(addr, addr, size_t)=>addr;
+function cdecl memmove(addr, addr, size_t)=>addr;
+function cdecl memset(addr, int32, size_t)=>addr;
+function cdecl strcat(addr<int8>, addr<int8>)=>addr<int8>;
+function cdecl strchr(addr<int8>, int32)=>addr<int8>;
+function cdecl strcmp(addr<int8>, addr<int8>)=>int32;
+function cdecl strcpy(addr<int8>, addr<int8>)=>addr<int8>;
+function cdecl strcspn(addr<int8>, addr<int8>)=>size_t;
+function cdecl strlen(addr<int8>)=>size_t;
+function cdecl strncat(addr<int8>, addr<int8>, size_t)=>addr<int8>;
+function cdecl strncmp(addr<int8>, addr<int8>, size_t)=>int32;
+function cdecl strncpy(addr<int8>, addr<int8>, size_t)=>addr<int8>;
+function cdecl strpbrk(addr<int8>, addr<int8>)=>addr<int8>;
+function cdecl strrchr(addr<int8>, int32)=>addr<int8>;
+function cdecl strspn(addr<int8>, addr<int8>)=>size_t;
+function cdecl strstr(addr<int8>, addr<int8>)=>addr<int8>;
+function cdecl strtok(addr<int8>, addr<int8>)=>addr<int8>;
+function cdecl strcoll(addr<int8>, addr<int8>)=>int32;
+function cdecl strerror(int32)=>addr<int8>;
+function cdecl strxfrm(addr<int8>, addr<int8>, size_t)=>size_t;
+
+/* private extensions to standard C */
+function cdecl _memicmp(addr, addr, size_t)=>int32;
+function cdecl _strdup(addr<int8>)=>addr<int8>;
+function cdecl _stricmp(addr<int8>, addr<int8>)=>int32;
+function cdecl _strlwr(addr<int8>)=>addr<int8>;
+function cdecl _strnicmp(addr<int8>, addr<int8>, size_t)=>int32;
+function cdecl _strnset(addr<int8>, int32, size_t)=>addr<int8>;
+function cdecl _strrev(addr<int8>)=>addr<int8>;
+function cdecl _strupr(addr<int8>)=>addr<int8>;
+function cdecl _memichr(addr, int32, size_t)=>addr;
+function cdecl _strichr(addr<int8>, int32)=>addr<int8>;
+function cdecl _stristr(addr<int8>, addr<int8>)=>addr<int8>;
+function cdecl _strrichr(addr<int8>, int32)=>addr<int8>;
+
+/* compatibility names */
+//#ifdef __POCC__OLDNAMES
+function cdecl memicmp(addr, addr, size_t)=>int32;
+function cdecl strdup(addr<int8>)=>addr<int8>;
+function cdecl stricmp(addr<int8>, addr<int8>)=>int32;
+function cdecl strlwr(addr<int8>)=>addr<int8>;
+function cdecl strnicmp(addr<int8>, addr<int8>, size_t)=>int32;
+function cdecl strnset(addr<int8>, int32, size_t)=>addr<int8>;
+function cdecl strrev(addr<int8>)=>addr<int8>;
+function cdecl strupr(addr<int8>)=>addr<int8>;
+//#endif /* __POCC__OLDNAMES */
+
+/* more secure C functions (TR24731-1) */
+
+/* declarations */
+function cdecl memcpy_s(addr, rsize_t, addr, rsize_t)=>errno_t;
+function cdecl memmove_s(addr, rsize_t, addr, rsize_t)=>errno_t;
+function cdecl strcpy_s(addr<int8>, rsize_t, addr<int8>)=>errno_t;
+function cdecl strncpy_s(addr<int8>, rsize_t, addr<int8>, rsize_t)=>errno_t;
+function cdecl strcat_s(addr<int8>, rsize_t, addr<int8>)=>errno_t;
+function cdecl strncat_s(addr<int8>, rsize_t, addr<int8>, rsize_t)=>errno_t;
+function cdecl strtok_s(addr<int8>, addr<rsize_t>, addr<int8>, addr)=>addr<int8>;
+function cdecl strerror_s(addr<int8>, rsize_t, errno_t)=>errno_t;
+function cdecl strerrorlen_s(errno_t)=>size_t;
+function cdecl strnlen_s(addr<int8>, size_t)=>size_t;
+
+}
+
+

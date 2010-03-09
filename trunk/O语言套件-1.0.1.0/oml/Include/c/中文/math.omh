@@ -1,0 +1,242 @@
+
+//宏定义 HUGE_VAL()   (1.0 / (1.0, 0.0))
+//宏定义 HUGE_VALF()  (1.0F / (1.0, 0.0F))
+//宏定义 HUGE_VALL()  (1.0L / (1.0, 0.0L))
+//宏定义 INFINITY()   (1.0F / (1.0, 0.0F))
+//宏定义 NAN()        (0.0 / (1.0, 0.0))
+
+宏定义 FP_INFINITE     1
+宏定义 FP_NAN          2
+宏定义 FP_NORMAL()     (-1)
+宏定义 FP_SUBNORMAL()  (-2)
+宏定义 FP_ZERO         0
+
+宏定义 FP_ILOGB0()    (-0x7fffffff - 1)
+宏定义 FP_ILOGBNAN    0x7fffffff
+
+宏定义 MATH_ERRNO          1
+宏定义 MATH_ERREXCEPT      2
+宏定义 math_errhandling()  (MATH_ERRNO|MATH_ERREXCEPT)
+
+宏定义 _FP_LT  1
+宏定义 _FP_EQ  2
+宏定义 _FP_GT  4
+
+引用段
+{
+/* helper functions */
+函数 C调用 __fpclass(小数64)=>整数32;
+函数 C调用 __fpclassf(小数32)=>整数32;
+函数 C调用 __fpcomp(小数64, 小数64)=>整数32;
+函数 C调用 __fpcompf(小数32, 小数32)=>整数32;
+函数 C调用 __fpsign(小数64)=>整数32;
+函数 C调用 __fpsignf(小数32)=>整数32;
+}
+
+宏定义 isfinite(x)  (fpclassify(x) <= 0)
+宏定义 isinf(x)     (fpclassify(x) == FP_INFINITE)
+宏定义 isnan(x)     (fpclassify(x) == FP_NAN)
+宏定义 isnormal(x)  (fpclassify(x) == FP_NORMAL)
+
+宏定义 isgreater(x,y)  (_FPCOMP(x,y) & _FP_GT)
+宏定义 isgreaterequal(x,y)  (_FPCOMP(x,y) & (_FP_EQ|_FP_GT))
+宏定义 isless(x,y)  (_FPCOMP(x,y) & _FP_LT)
+宏定义 islessequal(x,y)  (_FPCOMP(x,y) & (_FP_LT|_FP_EQ))
+宏定义 islessgreater(x,y)  (_FPCOMP(x,y) & (_FP_LT|_FP_GT))
+宏定义 isunordered(x,y)  (_FPCOMP(x,y) == 0)
+
+宏定义 fpclassify(x)  __tgeneric__(x,,,__fpclassf,__fpclass,__fpclassl,,,)(x)
+宏定义 signbit(x)  __tgeneric__(x,,,__fpsignf,__fpsign,__fpsignl,,,)(x)
+宏定义 _FPCOMP(x,y)  __tgeneric__(x,y,,__fpcompf,__fpcomp,__fpcompl,,,)(x,y)
+
+引用段
+{
+/* 小数64 declarations */
+函数 C调用 acos(小数64)=>小数64;
+函数 C调用 acosh(小数64)=>小数64;
+函数 C调用 asin(小数64)=>小数64;
+函数 C调用 asinh(小数64)=>小数64;
+函数 C调用 atan(小数64)=>小数64;
+函数 C调用 atan2(小数64, 小数64)=>小数64;
+函数 C调用 atanh(小数64)=>小数64;
+函数 C调用 cbrt(小数64)=>小数64;
+函数 C调用 ceil(小数64)=>小数64;
+函数 C调用 copysign(小数64, 小数64)=>小数64;
+函数 C调用 erf(小数64)=>小数64;
+函数 C调用 erfc(小数64)=>小数64;
+函数 C调用 exp(小数64)=>小数64;
+函数 C调用 exp2(小数64)=>小数64;
+函数 C调用 expm1(小数64)=>小数64;
+函数 C调用 fabs(小数64)=>小数64;
+函数 C调用 fdim(小数64, 小数64)=>小数64;
+函数 C调用 floor(小数64)=>小数64;
+函数 C调用 fma(小数64, 小数64, 小数64)=>小数64;
+函数 C调用 fmax(小数64, 小数64)=>小数64;
+函数 C调用 fmin(小数64, 小数64)=>小数64;
+函数 C调用 fmod(小数64, 小数64)=>小数64;
+函数 C调用 frexp(小数64, 地址<整数32>)=>小数64;
+函数 C调用 hypot(小数64, 小数64)=>小数64;
+函数 C调用 ilogb(小数64)=>整数32;
+函数 C调用 ldexp(小数64, 整数32)=>小数64;
+函数 C调用 lgamma(小数64)=>小数64;
+函数 C调用 log1p(小数64)=>小数64;
+函数 C调用 logb(小数64)=>小数64;
+函数 C调用 lrint(小数64)=>整数32;
+函数 C调用 lround(小数64)=>整数32;
+函数 C调用 modf(小数64, 地址<小数64>)=>小数64;
+函数 C调用 nan(地址<整数8>)=>小数64;
+函数 C调用 nearbyint(小数64)=>小数64;
+函数 C调用 nextafter(小数64, 小数64)=>小数64;
+函数 C调用 pow(小数64, 小数64)=>小数64;
+函数 C调用 remainder(小数64, 小数64)=>小数64;
+函数 C调用 remquo(小数64, 小数64, 地址<整数32>);
+函数 C调用 rint(小数64)=>小数64;
+函数 C调用 round(小数64)=>小数64;
+函数 C调用 scalbn(小数64, 整数32)=>小数64;
+函数 C调用 scalbln(小数64, 整数32)=>小数64;
+函数 C调用 sqrt(小数64)=>小数64;
+函数 C调用 tan(小数64)=>小数64;
+函数 C调用 tanh(小数64)=>小数64;
+函数 C调用 tgamma(小数64)=>小数64;
+函数 C调用 trunc(小数64)=>小数64;
+
+/* 小数32 declarations */
+函数 C调用 acosf(小数32)=>小数32;
+函数 C调用 acoshf(小数32)=>小数32;
+函数 C调用 asinf(小数32)=>小数32;
+函数 C调用 asinhf(小数32)=>小数32;
+函数 C调用 atanf(小数32)=>小数32;
+函数 C调用 atanhf(小数32)=>小数32;
+函数 C调用 atan2f(小数32, 小数32)=>小数32;
+函数 C调用 cbrtf(小数32)=>小数32;
+函数 C调用 ceilf(小数32)=>小数32;
+函数 C调用 copysignf(小数32, 小数32)=>小数32;
+函数 C调用 erff(小数32)=>小数32;
+函数 C调用 erfcf(小数32)=>小数32;
+函数 C调用 expf(小数32)=>小数32;
+函数 C调用 exp2f(小数32)=>小数32;
+函数 C调用 expm1f(小数32)=>小数32;
+函数 C调用 fabsf(小数32)=>小数32;
+函数 C调用 fdimf(小数32, 小数32)=>小数32;
+函数 C调用 floorf(小数32)=>小数32;
+函数 C调用 fmaf(小数32, 小数32, 小数32)=>小数32;
+函数 C调用 fmaxf(小数32, 小数32)=>小数32;
+函数 C调用 fminf(小数32, 小数32)=>小数32;
+函数 C调用 fmodf(小数32, 小数32)=>小数32;
+函数 C调用 frexpf(小数32, 地址<整数32>)=>小数32;
+函数 C调用 hypotf(小数32, 小数32)=>小数32;
+函数 C调用 ilogbf(小数32)=>整数32;
+函数 C调用 ldexpf(小数32, 整数32)=>小数32;
+函数 C调用 lgammaf(小数32)=>小数32;
+函数 C调用 log1pf(小数32)=>小数32;
+函数 C调用 logbf(小数32)=>小数32;
+函数 C调用 lrintf(小数32)=>整数32;
+函数 C调用 lroundf(小数32)=>整数32;
+函数 C调用 modff(小数32, 地址<小数32>)=>小数32;
+函数 C调用 nanf(地址<整数8>)=>小数32;
+函数 C调用 nearbyintf(小数32)=>小数32;
+函数 C调用 nextafterf(小数32, 小数32)=>小数32;
+函数 C调用 powf(小数32, 小数32)=>小数32;
+函数 C调用 remainderf(小数32, 小数32)=>小数32;
+函数 C调用 remquof(小数32, 小数32, 地址<整数32>)=>小数32;
+函数 C调用 rintf(小数32)=>小数32;
+函数 C调用 roundf(小数32)=>小数32;
+函数 C调用 scalbnf(小数32, 整数32)=>小数32;
+函数 C调用 sqrtf(小数32)=>小数32;
+函数 C调用 tanf(小数32)=>小数32;
+函数 C调用 tanhf(小数32)=>小数32;
+函数 C调用 tgammaf(小数32)=>小数32;
+函数 C调用 truncf(小数32)=>小数32;
+
+函数 C调用 cos(小数64)=>小数64;
+函数 C调用 cosh(小数64)=>小数64;
+函数 C调用 log(小数64)=>小数64;
+函数 C调用 log10(小数64)=>小数64;
+函数 C调用 log2(小数64)=>小数64;
+函数 C调用 sin(小数64)=>小数64;
+函数 C调用 sinh(小数64)=>小数64;
+
+/* 小数64 macro overrides */
+宏定义 cos(x)  __sin(x,1)
+宏定义 cosh(x)  __cosh(x,1)
+宏定义 log(x)  __log(x,0)
+宏定义 log10(x)  __log(x,1)
+宏定义 log2(x)  __log(x,2)
+宏定义 sin(x)  __sin(x,0)
+宏定义 sinh(x)  __sinh(x,1)
+
+函数 C调用 cosf(小数32)=>小数32;
+函数 C调用 coshf(小数32)=>小数32;
+函数 C调用 logf(小数32)=>小数32;
+函数 C调用 log10f(小数32)=>小数32;
+函数 C调用 log2f(小数32)=>小数32;
+函数 C调用 sinf(小数32)=>小数32;
+函数 C调用 sinhf(小数32)=>小数32;
+
+/* 小数32 macro overrides */
+宏定义 cosf(x)  __sinf(x,1)
+宏定义 coshf(x)  __coshf(x,1)
+宏定义 logf(x)  __logf(x,0)
+宏定义 log10f(x)  __logf(x,1)
+宏定义 log2f(x)  __logf(x,2)
+宏定义 sinf(x)  __sinf(x,0)
+宏定义 sinhf(x)  __sinhf(x,1)
+
+/* long 小数64 macro overrides */
+宏定义 cosl(x)  __sinl(x,1)
+宏定义 coshl(x)  __coshl(x,1)
+宏定义 logl(x)  __logl(x,0)
+宏定义 log10l(x)  __logl(x,1)
+宏定义 log2l(x)  __logl(x,2)
+宏定义 sinl(x)  __sinl(x,0)
+宏定义 sinhl(x)  __sinhl(x,1)
+
+/* 小数64 declarations */
+函数 C调用 __cosh(小数64, 小数64)=>小数64;
+函数 C调用 __log(小数64, 整数32)=>小数64;
+函数 C调用 __sin(小数64, 正数32)=>小数64;
+函数 C调用 __sinh(小数64, 小数64)=>小数64;
+函数 C调用 __fptest(地址<小数64>)=>整数16;
+函数 __exp(地址<小数64>, 小数64, 整数16)=>整数16;
+
+/* 小数32 declarations */
+函数 C调用 __coshf(小数32, 小数32)=>小数32;
+函数 C调用 __logf(小数32, 整数32)=>小数32;
+函数 C调用 __sinf(小数32, 正数32)=>小数32;
+函数 C调用 __sinhf(小数32, 小数32)=>小数32;
+函数 C调用 __fptestf(地址<小数32>)=>整数16;
+函数 __expf(地址<小数32>, 小数32, 整数16)=>整数16;
+
+}
+
+/* values for _exception type */
+宏定义 _DOMAIN  1
+宏定义 _SING  2
+宏定义 _OVERFLOW  3
+宏定义 _UNDERFLOW  4
+宏定义 _TLOSS  5
+宏定义 _PLOSS  6
+
+/* compatibility names */
+宏定义 DOMAIN  _DOMAIN
+宏定义 SING  _SING
+宏定义 OVERFLOW  _OVERFLOW
+宏定义 UNDERFLOW  _UNDERFLOW
+宏定义 TLOSS  _TLOSS
+宏定义 PLOSS  _PLOSS
+
+/* passed to _matherr() when a fp exception is detected */
+结构 _exception 
+{
+    整数32 type;
+    地址<整数8>name;
+    小数64 arg1;
+    小数64 arg2;
+    小数64 retval;
+}
+
+引用段
+{
+函数 C调用 _matherr(地址<_exception>)=>整数32;
+}
+

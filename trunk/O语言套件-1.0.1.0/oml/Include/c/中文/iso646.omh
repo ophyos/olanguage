@@ -1,0 +1,14 @@
+
+宏定义 and     &&
+宏定义 and_eq  &=
+宏定义 bitand  &
+宏定义 bitor   |
+宏定义 compl   ~
+宏定义 not     !
+宏定义 not_eq  !=
+宏定义 or      ||
+宏定义 or_eq   |=
+宏定义 xor     ^
+宏定义 xor_eq  ^=
+
+
