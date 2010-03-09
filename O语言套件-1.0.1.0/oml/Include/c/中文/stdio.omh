@@ -1,0 +1,187 @@
+
+.包含文<stddef.omh>
+
+宏定义
+{
+EOF() (-1)
+FILENAME_MAX  260
+_IOFBF  0
+_IOLBF  1
+_IONBF  2
+
+BUFSIZ  512
+
+FOPEN_MAX  256
+
+L_tmpnam  16
+TMP_MAX  32
+
+SEEK_SET  0
+SEEK_CUR  1
+SEEK_END  2
+
+stdin   __stdin
+stdout  __stdout
+stderr  __stderr
+
+}
+
+结构 mbstate_t
+{
+    正数32 wchar;
+    正数16 rsrv;
+    正数16 state;
+}
+
+结构 FILE 
+{
+    正数16 mode;
+    正数16 pad;
+    整数32 fh;
+    地址<正数8> buf;
+    地址<正数8> bufend;
+    地址<正数8> ptr;
+    地址<正数8> getend;
+    地址<正数8> putend;
+    地址<正数8> backptr;
+    地址<wchar_t> wbackptr;
+    wchar_t[2] wbackbuf;
+    地址<正数8> getback;
+    地址<正数8> wgetend;
+    地址<正数8> wputend;
+    mbstate_t wstate;
+    地址<整数8> tmpnam;
+    正数8[8] backbuf;
+    正数8 cbuf;
+}
+
+结构 fpos_t 
+{
+    整数32 off;
+    mbstate_t wstate;
+}
+
+引用段
+{
+函数 C调用 remove(地址<整数8>)=>整数32;
+函数 C调用 rename(地址<整数8>,地址<整数8>)=>整数32;
+
+函数 C调用 tmpfile()=>地址<FILE>;
+函数 C调用 tmpnam(地址<整数8>)=>地址<整数8>;
+函数 C调用 _wtmpnam(地址<wchar_t>)=>地址<wchar_t>;
+
+函数 C调用 fclose(地址<FILE>)=>整数32;
+函数 C调用 fflush(地址<FILE>)=>整数32;
+函数 C调用 fopen(地址<整数8>, 地址<整数8>)=>地址<FILE>;
+函数 C调用 setvbuf(地址<FILE>, 地址<整数8>, 整数32, size_t)=>整数32;
+函数 C调用 freopen(地址<整数8>, 地址<整数8>, 地址<FILE>)=>地址<FILE>;
+函数 C调用 setbuf(地址<FILE>, 地址<整数8>);
+
+
+/* formatted input/output functions */
+函数 C调用 fprintf(地址<FILE>, 地址<整数8>, ..)=>整数32;
+函数 C调用 fscanf(地址<FILE>, 地址<整数8>, ..)=>整数32;
+函数 C调用 sprintf(地址<整数8>, 地址<整数8>, ..)=>整数32;
+函数 C调用 sscanf(地址<整数8>, 地址<整数8>, ..)=>整数32;
+函数 C调用 vfprintf(地址<FILE>, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vsprintf(地址<整数8>, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vprintf(地址<整数8>, va_list)=>整数32;
+函数 C调用 printf(地址<整数8>, ..)=>整数32;
+函数 C调用 scanf(地址<整数8>, ..)=>整数32;
+函数 C调用 vfscanf(地址<FILE>, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vsscanf(地址<整数8>, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vscanf(地址<整数8>, va_list)=>整数32;
+函数 C调用 snprintf(地址<整数8>, size_t, 地址<整数8>, ..)=>整数32;
+函数 C调用 vsnprintf(地址<整数8>, size_t, 地址<整数8>, va_list)=>整数32;
+宏定义 snprintf  _snprintf
+宏定义 vsnprintf  _vsnprintf
+
+/* character input/output functions */
+函数 C调用 fgetc(地址<FILE>)=>整数32;
+函数 C调用 fgets(地址<整数8>, 整数32, 地址<FILE>)=>地址<整数8>;
+函数 C调用 fputc(整数32, 地址<FILE>)=>整数32;
+函数 C调用 fputs(地址<整数8>, 地址<FILE>)=>整数32;
+函数 C调用 getchar()=>整数32;
+函数 C调用 gets(地址<整数8>)=>地址<整数8>;
+函数 C调用 putchar(整数32)=>整数32;
+函数 C调用 puts(地址<整数8>)=>整数32;
+函数 C调用 ungetc(整数32, 地址<FILE>)=>整数32;
+函数 C调用 getc(地址<FILE>)=>整数32;
+函数 C调用 putc(整数32, 地址<FILE>)=>整数32;
+
+
+/* direct input/output functions */
+函数 C调用 fread(地址, size_t, size_t, 地址<FILE>)=>size_t;
+函数 C调用 fwrite(地址, size_t, size_t, 地址<FILE>)=>size_t;
+
+/* file positioning functions */
+函数 C调用 fgetpos(地址<FILE>, 地址<fpos_t>)=>整数32;
+函数 C调用 fseek(地址<FILE>, 整数32, 整数32)=>整数32;
+函数 C调用 fsetpos(地址<FILE>, 地址<fpos_t>)=>整数32;
+函数 C调用 ftell(地址<FILE>)=>整数32;
+函数 C调用 rewind(地址<FILE>);
+
+/* error-handling functions */
+函数 C调用 clearerr(地址<FILE>);
+函数 C调用 feof(地址<FILE>)=>整数32;
+函数 C调用 ferror(地址<FILE>)=>整数32;
+函数 C调用 perror(地址<整数8>);
+函数 C调用 _wperror(地址<wchar_t>);
+
+/* private extensions to standard C */
+函数 C调用 _fileno(地址<FILE>)=>整数32;
+函数 C调用 _fcloseall()=>整数32;
+函数 C调用 _wfopen(地址<wchar_t>, 地址<wchar_t>)=>地址<FILE>;
+函数 C调用 _wfreopen(地址<wchar_t>, 地址<wchar_t>, 地址<FILE>)=>地址<FILE>;
+函数 C调用 _fdopen(整数32, 地址<整数8>)=>地址<FILE>;
+函数 C调用 _wfdopen(整数32, 地址<wchar_t>)=>地址<FILE>;
+函数 C调用 _popen(地址<整数8>, 地址<整数8>)=>地址<FILE>;
+函数 C调用 _pclose(地址<FILE>)=>整数32;
+函数 C调用 _getstdfilex(整数32)=>地址<FILE>;
+函数 C调用 _snprintf(地址<整数8>, size_t, 地址<整数8>, ..)=>整数32;
+函数 C调用 _vsnprintf(地址<整数8>, size_t, 地址<整数8>, va_list)=>整数32;
+函数 C调用 _wremove(地址<wchar_t>)=>整数32;
+函数 C调用 _wrename(地址<wchar_t>, 地址<wchar_t>)=>整数32;
+函数 C调用 _fseeko(地址<FILE>, _off_t, 整数32)=>整数32;
+函数 C调用 _ftello(地址<FILE>)=>_off_t;
+
+/* compatibility names */
+函数 C调用 fcloseall()=>整数32;
+函数 C调用 fdopen(整数32, 地址<整数8>)=>地址<FILE>;
+函数 C调用 fileno(地址<FILE>)=>整数32;
+函数 C调用 popen(地址<整数8>,地址<整数8>)=>地址<FILE>;
+函数 C调用 pclose(地址<FILE>)=>整数32;
+函数 C调用 fseeko(地址<FILE>, off_t, 整数32)=>整数32;
+函数 C调用 ftello(地址<FILE>)=>off_t;
+
+宏定义 L_tmpnam_s  L_tmpnam
+宏定义 TMP_MAX_S  TMP_MAX
+
+/* operations on files */
+函数 C调用 tmpfile_s(地址<FILE>)=>errno_t;
+函数 C调用 tmpnam_s(地址<整数8>, rsize_t)=>errno_t;
+
+/* file access functions */
+函数 C调用 fopen_s(地址<FILE>, 地址<整数8>, 地址<整数8>)=>errno_t;
+函数 C调用 freopen_s(地址<FILE>, 地址<整数8>, 地址<整数8>, 地址<FILE>)=>errno_t;
+
+/* formatted input/output functions */
+函数 C调用 fprintf_s(地址<FILE>, 地址<整数8>, ..)=>整数32;
+函数 C调用 fscanf_s(地址<FILE>, 地址<整数8>, ..)=>整数32;
+函数 C调用 printf_s(地址<整数8>, ..)=>整数32;
+函数 C调用 scanf_s(地址<整数8>, ..)=>整数32;
+函数 C调用 snprintf_s(地址<整数8>, rsize_t, 地址<整数8>, ..)=>整数32;
+函数 C调用 sprintf_s(地址<整数8>, rsize_t, 地址<整数8>, ..)=>整数32;
+函数 C调用 sscanf_s(地址<整数8>, 地址<整数8>, ..)=>整数32;
+函数 C调用 vfprintf_s(地址<FILE>, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vfscanf_s(地址<FILE>, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vprintf_s(地址<整数8>, va_list)=>整数32;
+函数 C调用 vscanf_s(地址<整数8>, va_list)=>整数32;
+函数 C调用 vsnprintf_s(地址<整数8>, rsize_t, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vsprintf_s(地址<整数8>, rsize_t, 地址<整数8>, va_list)=>整数32;
+函数 C调用 vsscanf_s(地址<整数8>, 地址<整数8>, va_list)=>整数32;
+
+/* character input/output functions */
+函数 C调用 gets_s(地址<整数8>, rsize_t)=>地址<整数8>;
+
+}

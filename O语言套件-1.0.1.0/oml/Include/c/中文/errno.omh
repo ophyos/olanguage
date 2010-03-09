@@ -1,0 +1,92 @@
+
+.包含文<stddef.omh>
+
+宏定义
+{
+/* error codes */
+EPERM         1
+ENOENT        2
+ESRCH         3
+EINTR         4
+EIO           5
+ENXIO         6
+E2BIG         7
+ENOEXEC       8
+EBADF         9
+ECHILD        10
+EAGAIN        11
+ENOMEM        12
+EACCES        13
+EFAULT        14
+EBUSY         16
+EEXIST        17
+EXDEV         18
+ENODEV        19
+ENOTDIR       20
+EISDIR        21
+EINVAL        22
+ENFILE        23
+EMFILE        24
+ENOTTY        25
+EFBIG         27
+ENOSPC        28
+ESPIPE        29
+EROFS         30
+EMLINK        31
+EPIPE         32
+EDOM          33
+ERANGE        34
+EFPOS         35
+EDEADLK       36
+ENAMETOOLONG  38
+ENOLCK        39
+ENOSYS        40
+ENOTEMPTY     41
+EILSEQ        42
+}
+
+/*
+ Unsupported "POSIX" error codes.
+#宏定义 EADDRINUSE    0
+#宏定义 EADDRNOTAVAIL 0
+#宏定义 EAFNOSUPPORT  0
+#宏定义 EALREADY      0
+#宏定义 EBADMSG       0
+#宏定义 ECANCELED     0
+#宏定义 ECONNABORTED  0
+#宏定义 ECONNREFUSED  0
+#宏定义 ECONNRESET    0
+#宏定义 EDESTADDRREQ  0
+#宏定义 EHOSTUNREACH  0
+#宏定义 EIDRM         0
+#宏定义 EINPROGRESS   0
+#宏定义 EISCONN       0
+#宏定义 ELOOP         0
+#宏定义 EMSGSIZE      0
+#宏定义 ENETDOWN      0
+#宏定义 ENETRESET     0
+#宏定义 ENETUNREACH   0
+#宏定义 ENOBUFS       0
+#宏定义 ENOMSG        0
+#宏定义 ENOPROTOOPT   0
+#宏定义 ENOTCONN      0
+#宏定义 ENOTSOCK      0
+#宏定义 ENOTSUP       0
+#宏定义 EOPNOTSUPP    0
+#宏定义 EOVERFLOW     0
+#宏定义 EPROTO        0
+#宏定义 EPROTONOSUPPORT  0
+#宏定义 EPROTOTYPE    0
+#宏定义 ETIMEDOUT     0
+#宏定义 ETXTBSY       0
+#宏定义 EWOULDBLOCK   EAGAIN
+*/
+
+引用段
+{
+函数 C调用 __errno()=>地址<整数32>;  //多线程使用
+整数32 errno;  //单线程使用
+} 
+
+
+

@@ -1,0 +1,170 @@
+
+.包含文<stddef.omh>
+.包含文<stdio.omh>
+.包含文<time.omh>
+
+//宏定义 WCHAR_MIN()  0
+//宏定义 WCHAR_MAX()  0xffff
+//宏定义 WEOF()  (-1)
+
+正数16 typedef wint_t;
+
+
+引用段
+{
+/* formatted wide-character input/output functions */
+函数 C调用 fwprintf(地址<FILE>, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 fwscanf(地址<FILE>, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 swscanf(地址<wchar_t>, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 vfwprintf(地址<FILE>, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vwprintf(地址<wchar_t>, va_list)=>整数32;
+函数 C调用 wprintf(地址<wchar_t>, ..)=>整数32;
+函数 C调用 wscanf(地址<wchar_t>, ..)=>整数32;
+函数 C调用 swprintf(地址<wchar_t>, size_t, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 vfwscanf(地址<FILE>, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vswprintf(地址<wchar_t>, size_t, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vswscanf(地址<wchar_t>, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vwscanf(地址<wchar_t>, va_list)=>整数32;
+
+/* wide character input/output functions */
+函数 C调用 fgetwc(地址<FILE>)=>wint_t;
+函数 C调用 fgetws(地址<wchar_t>, 整数32, 地址<FILE>)=>地址<wchar_t>;
+函数 C调用 fputwc(wchar_t, 地址<FILE>)=>wint_t;
+函数 C调用 fputws(地址<wchar_t>, 地址<FILE>)=>整数32;
+函数 C调用 getwchar()=>wint_t;
+函数 C调用 putwchar(wchar_t)=>wint_t;
+函数 C调用 ungetwc(wint_t, 地址<FILE>)=>wint_t;
+
+函数 C调用 fwide(地址<FILE>, 整数32)=>整数32;
+函数 C调用 getwc(地址<FILE>)=>wint_t;
+函数 C调用 putwc(wchar_t, 地址<FILE>)=>wint_t;
+
+/* general wide-string utilities */
+函数 C调用 wcstod(地址<wchar_t>, 地址)=>小数64;
+函数 C调用 wcstol(地址<wchar_t>, 地址, 整数32)=>整数32;
+函数 C调用 wcstoul(地址<wchar_t>, 地址, 整数32)=>正数32;
+函数 C调用 wcscpy(地址<wchar_t>, 地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcsncpy(地址<wchar_t>, 地址<wchar_t>, size_t)=>地址<wchar_t>;
+函数 C调用 wcscat(地址<wchar_t>, 地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcsncat(地址<wchar_t>, 地址<wchar_t>, size_t)=>地址<wchar_t>;
+函数 C调用 wcscmp(地址<wchar_t>, 地址<wchar_t>)=>整数32;
+函数 C调用 wcsncmp(地址<wchar_t>, 地址<wchar_t>, size_t)=>整数32;
+函数 C调用 wcschr(地址<wchar_t>, wchar_t)=>地址<wchar_t>;
+函数 C调用 wcscspn(地址<wchar_t>, 地址<wchar_t>)=>size_t;
+函数 C调用 wcslen(地址<wchar_t>)=>size_t;
+函数 C调用 wcspbrk(地址<wchar_t>, 地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcsrchr(地址<wchar_t>, wchar_t)=>地址<wchar_t>;
+函数 C调用 wcsspn(地址<wchar_t>, 地址<wchar_t>)=>size_t;
+函数 C调用 wcsstr(地址<wchar_t>, 地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcstok(地址<wchar_t>, 地址<wchar_t>, 地址)=>地址<wchar_t>;
+
+函数 C调用 wcstof(地址<wchar_t>, 地址)=>小数32;
+函数 C调用 wcscoll(地址<wchar_t>, 地址<wchar_t>)=>整数32;
+函数 C调用 wcsxfrm(地址<wchar_t>, 地址<wchar_t>, size_t)=>size_t;
+函数 C调用 wmemchr(地址<wchar_t>, wchar_t, size_t)=>地址<wchar_t>;
+函数 C调用 wmemcmp(地址<wchar_t>, 地址<wchar_t>, size_t)=>整数32;
+函数 C调用 wmemcpy(地址<wchar_t>, 地址<wchar_t>, size_t)=>地址<wchar_t>;
+函数 C调用 wmemmove(地址<wchar_t>, 地址<wchar_t>, size_t)=>地址<wchar_t>;
+函数 C调用 wmemset(地址<wchar_t>, wchar_t, size_t)=>地址<wchar_t>;
+
+/* wide-character time conversion functions */
+函数 C调用 wcsftime(地址<wchar_t>, size_t, 地址<wchar_t>, 地址<tm>)=>size_t;
+
+/* extended multibyte and wide-character conversion utilities */
+函数 C调用 btowc(整数32)=>wint_t;
+函数 C调用 wctob(wint_t)=>整数32;
+函数 C调用 mbsinit(地址<mbstate_t>)=>整数32;
+函数 C调用 mbrlen(地址<整数8>, size_t, 地址<mbstate_t>)=>size_t;
+函数 C调用 mbrtowc(地址<wchar_t>, 地址<整数8>, size_t, 地址<mbstate_t>)=>size_t;
+函数 C调用 wcrtomb(地址<整数8>, wchar_t, 地址<mbstate_t>)=>size_t;
+函数 C调用 mbsrtowcs(地址<wchar_t>, 地址, size_t, 地址<mbstate_t>)=>size_t;
+函数 C调用 wcsrtombs(地址<整数8>, 地址, size_t, 地址<mbstate_t>)=>size_t;
+
+/* private extensions to standard C */
+函数 C调用 _itow(整数32, 地址<wchar_t>, 整数32)=>地址<wchar_t>;
+函数 C调用 _ltow(整数32, 地址<wchar_t>, 整数32)=>地址<wchar_t>;
+函数 C调用 _ultow(正数32, 地址<wchar_t>, 整数32)=>地址<wchar_t>;
+函数 C调用 _snwprintf(地址<wchar_t>, size_t, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 _vsnwprintf(地址<wchar_t>, size_t, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 _wcsicmp(地址<wchar_t>, 地址<wchar_t>)=>整数32;
+函数 C调用 _wcsnicmp(地址<wchar_t>, 地址<wchar_t>, size_t)=>整数32;
+函数 C调用 _wcsdup(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wcsupr(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wcslwr(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wcsnset(地址<wchar_t>, wchar_t, size_t)=>地址<wchar_t>;
+函数 C调用 _wcsrev(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wtol(地址<wchar_t>)=>整数32;
+函数 C调用 _wcsdate(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wcserror(整数32)=>地址<wchar_t>;
+函数 C调用 _wcsichr(地址<wchar_t>, wchar_t)=>地址<wchar_t>;
+函数 C调用 _wcsistr(地址<wchar_t>, 地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wcsrichr(地址<wchar_t>, wchar_t)=>地址<wchar_t>;
+函数 C调用 _wcstime(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wcstok_ms(地址<wchar_t>, 地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wmemichr(地址<wchar_t>, wchar_t, size_t)=>地址<wchar_t>;
+函数 C调用 _wmemicmp(地址<wchar_t>, 地址<wchar_t>, size_t)=>整数32;
+函数 C调用 _wtoi(地址<wchar_t>)=>整数32;
+
+/* internal stuff */
+函数 C调用 __btowc(整数32)=>wint_t;
+函数 C调用 __wctob(wint_t)=>整数32;
+函数 C调用 __wcstod(地址<wchar_t>, 地址, 整数32)=>小数64;
+函数 C调用 __wcstof(地址<wchar_t>, 地址, 整数32)=>小数32;
+函数 C调用 __wcstoul(地址<wchar_t>, 地址, 整数32)=>正数32;
+
+/* macro overrides */
+宏定义 btowc(c)  __btowc(c)
+宏定义 wcstod(nptr,endptr)  __wcstod(nptr,endptr,0)
+宏定义 wcstoul(nptr,endptr,base)  __wcstoul(nptr,endptr,base)
+宏定义 wcstof(nptr,endptr)  __wcstof(nptr,endptr,0)
+宏定义 wcstold(nptr,endptr)  __wcstold(nptr,endptr,0)
+宏定义 wctob(wc)  __wctob(wc)
+宏定义 _wtoi(s)  __wcstoul(s,0,10)
+宏定义 _wtol(s)  __wcstoul(s,0,10)
+
+/* compatibility names */
+//#ifdef __POCC__OLDNAMES
+函数 C调用 wcsicmp(地址<wchar_t>, 地址<wchar_t>)=>整数32;
+函数 C调用 wcsnicmp(地址<wchar_t>, 地址<wchar_t>, size_t)=>整数32;
+函数 C调用 wcsdup(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcsupr(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcslwr(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 wcsnset(地址<wchar_t>, wchar_t, size_t)=>地址<wchar_t>;
+函数 C调用 wcsrev(地址<wchar_t>)=>地址<wchar_t>;
+//#endif /* __POCC__OLDNAMES */
+
+/* more secure C functions (TR24731-1) */
+
+/* formatted wide-character input/output functions */
+函数 C调用 fwprintf_s(地址<FILE>, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 fwscanf_s(地址<FILE>, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 snwprintf_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 swprintf_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 swscanf_s(地址<wchar_t>, 地址<wchar_t>, ..)=>整数32;
+函数 C调用 vfwprintf_s(地址<FILE>, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vfwscanf_s(地址<FILE>, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vsnwprintf_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vswprintf_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vswscanf_s(地址<wchar_t>, 地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vwprintf_s(地址<wchar_t>, va_list)=>整数32;
+函数 C调用 vwscanf_s(地址<wchar_t>, va_list)=>整数32;
+函数 C调用 wprintf_s(地址<wchar_t>, ..)=>整数32;
+函数 C调用 wscanf_s(地址<wchar_t>, ..)=>整数32;
+
+/* general wide-string utilities */
+函数 C调用 wcscpy_s(地址<wchar_t>, rsize_t, 地址<wchar_t>)=>errno_t;
+函数 C调用 wcsncpy_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, rsize_t)=>errno_t;
+函数 C调用 wmemcpy_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, rsize_t)=>errno_t;
+函数 C调用 wmemmove_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, rsize_t)=>errno_t;
+函数 C调用 wcscat_s(地址<wchar_t>, rsize_t, 地址<wchar_t>)=>errno_t;
+函数 C调用 wcsncat_s(地址<wchar_t>, rsize_t, 地址<wchar_t>, rsize_t)=>errno_t;
+函数 C调用 wcstok_s(地址<wchar_t>, 地址<rsize_t>, 地址<wchar_t>, 地址)=>地址<wchar_t>;
+函数 C调用 wcsnlen_s(地址<wchar_t>, size_t)=>size_t;
+
+/* extended multibyte and wide-character conversion utilities */
+函数 C调用 wcrtomb_s(地址<size_t>, 地址<整数8>, rsize_t, wchar_t, 地址<mbstate_t>)=>errno_t;
+函数 C调用 mbsrtowcs_s(地址<size_t>, 地址<wchar_t>, rsize_t, 地址, rsize_t, 地址<mbstate_t>)=>errno_t;
+函数 C调用 wcsrtombs_s(地址<size_t>, 地址<整数8>, rsize_t, 地址, rsize_t, 地址<mbstate_t>)=>errno_t;
+
+}
+

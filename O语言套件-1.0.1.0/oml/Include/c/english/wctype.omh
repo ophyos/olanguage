@@ -1,0 +1,59 @@
+
+.include<wchar.omh>
+
+uint32 typedef wctrans_t;
+uint32 typedef wctype_t;
+
+externs
+{
+/* declarations */
+function cdecl iswalnum(wint_t)=>int32;
+function cdecl iswalpha(wint_t)=>int32;
+function cdecl iswcntrl(wint_t)=>int32;
+function cdecl iswdigit(wint_t)=>int32;
+function cdecl iswgraph(wint_t)=>int32;
+function cdecl iswlower(wint_t)=>int32;
+function cdecl iswprint(wint_t)=>int32;
+function cdecl iswpunct(wint_t)=>int32;
+function cdecl iswspace(wint_t)=>int32;
+function cdecl iswblank(wint_t)=>int32;
+function cdecl iswupper(wint_t)=>int32;
+function cdecl iswxdigit(wint_t)=>int32;
+function cdecl _iswascii(wint_t)=>int32;
+function cdecl iswctype(wint_t, wctype_t)=>int32;
+function cdecl towlower(wint_t)=>wint_t;
+function cdecl towupper(wint_t)=>wint_t;
+function cdecl towctrans(wint_t, wctrans_t)=>wint_t;
+function cdecl wctrans(addr<int8>)=>wctrans_t;
+function cdecl wctype(addr<int8>)=>wctype_t;
+
+/* internal stuff */
+function cdecl __iswctype(wint_t, wctype_t)=>int32;
+function cdecl __towctrans(wint_t, wctrans_t)=>wint_t;
+
+/* macro overrides */
+define iswalnum(wc)  __iswctype(wc,1)
+define iswalpha(wc)  __iswctype(wc,2)
+define iswcntrl(wc)  __iswctype(wc,3)
+define iswdigit(wc)  __iswctype(wc,4)
+define iswgraph(wc)  __iswctype(wc,5)
+define iswlower(wc)  __iswctype(wc,6)
+define iswprint(wc)  __iswctype(wc,7)
+define iswpunct(wc)  __iswctype(wc,8)
+define iswspace(wc)  __iswctype(wc,9)
+define iswblank(wc)  __iswctype(wc,12)
+define iswupper(wc)  __iswctype(wc,10)
+define iswxdigit(wc)  __iswctype(wc,11)
+define _iswascii(wc)  __iswctype(wc,13)
+define iswctype(wc,desc)  __iswctype(wc,desc)
+define towlower(wc)  __towctrans(wc,1)
+define towupper(wc)  __towctrans(wc,2)
+define towctrans(wc,desc)  __towctrans(wc,desc)
+
+//#ifdef __POCC__OLDNAMES
+function cdecl iswascii(wint_t)=>int32;
+define iswascii(c)  __iswctype(wc,13)
+//#endif /* __POCC__OLDNAMES */
+
+}
+

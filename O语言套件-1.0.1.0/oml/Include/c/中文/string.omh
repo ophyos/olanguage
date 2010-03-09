@@ -1,0 +1,72 @@
+
+.包含文<stddef.omh>
+
+引用段
+{
+/* declarations */
+函数 C调用 memchr(地址, 整数32, size_t)=>地址;
+函数 C调用 memcmp(地址, 地址, size_t)=>整数32;
+函数 C调用 memcpy(地址, 地址, size_t)=>地址;
+函数 C调用 memmove(地址, 地址, size_t)=>地址;
+函数 C调用 memset(地址, 整数32, size_t)=>地址;
+函数 C调用 strcat(地址<整数8>, 地址<整数8>)=>地址<整数8>;
+函数 C调用 strchr(地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 strcmp(地址<整数8>, 地址<整数8>)=>整数32;
+函数 C调用 strcpy(地址<整数8>, 地址<整数8>)=>地址<整数8>;
+函数 C调用 strcspn(地址<整数8>, 地址<整数8>)=>size_t;
+函数 C调用 strlen(地址<整数8>)=>size_t;
+函数 C调用 strncat(地址<整数8>, 地址<整数8>, size_t)=>地址<整数8>;
+函数 C调用 strncmp(地址<整数8>, 地址<整数8>, size_t)=>整数32;
+函数 C调用 strncpy(地址<整数8>, 地址<整数8>, size_t)=>地址<整数8>;
+函数 C调用 strpbrk(地址<整数8>, 地址<整数8>)=>地址<整数8>;
+函数 C调用 strrchr(地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 strspn(地址<整数8>, 地址<整数8>)=>size_t;
+函数 C调用 strstr(地址<整数8>, 地址<整数8>)=>地址<整数8>;
+函数 C调用 strtok(地址<整数8>, 地址<整数8>)=>地址<整数8>;
+函数 C调用 strcoll(地址<整数8>, 地址<整数8>)=>整数32;
+函数 C调用 strerror(整数32)=>地址<整数8>;
+函数 C调用 strxfrm(地址<整数8>, 地址<整数8>, size_t)=>size_t;
+
+/* private extensions to standard C */
+函数 C调用 _memicmp(地址, 地址, size_t)=>整数32;
+函数 C调用 _strdup(地址<整数8>)=>地址<整数8>;
+函数 C调用 _stricmp(地址<整数8>, 地址<整数8>)=>整数32;
+函数 C调用 _strlwr(地址<整数8>)=>地址<整数8>;
+函数 C调用 _strnicmp(地址<整数8>, 地址<整数8>, size_t)=>整数32;
+函数 C调用 _strnset(地址<整数8>, 整数32, size_t)=>地址<整数8>;
+函数 C调用 _strrev(地址<整数8>)=>地址<整数8>;
+函数 C调用 _strupr(地址<整数8>)=>地址<整数8>;
+函数 C调用 _memichr(地址, 整数32, size_t)=>地址;
+函数 C调用 _strichr(地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 _stristr(地址<整数8>, 地址<整数8>)=>地址<整数8>;
+函数 C调用 _strrichr(地址<整数8>, 整数32)=>地址<整数8>;
+
+/* compatibility names */
+//#ifdef __POCC__OLDNAMES
+函数 C调用 memicmp(地址, 地址, size_t)=>整数32;
+函数 C调用 strdup(地址<整数8>)=>地址<整数8>;
+函数 C调用 stricmp(地址<整数8>, 地址<整数8>)=>整数32;
+函数 C调用 strlwr(地址<整数8>)=>地址<整数8>;
+函数 C调用 strnicmp(地址<整数8>, 地址<整数8>, size_t)=>整数32;
+函数 C调用 strnset(地址<整数8>, 整数32, size_t)=>地址<整数8>;
+函数 C调用 strrev(地址<整数8>)=>地址<整数8>;
+函数 C调用 strupr(地址<整数8>)=>地址<整数8>;
+//#endif /* __POCC__OLDNAMES */
+
+/* more secure C functions (TR24731-1) */
+
+/* declarations */
+函数 C调用 memcpy_s(地址, rsize_t, 地址, rsize_t)=>errno_t;
+函数 C调用 memmove_s(地址, rsize_t, 地址, rsize_t)=>errno_t;
+函数 C调用 strcpy_s(地址<整数8>, rsize_t, 地址<整数8>)=>errno_t;
+函数 C调用 strncpy_s(地址<整数8>, rsize_t, 地址<整数8>, rsize_t)=>errno_t;
+函数 C调用 strcat_s(地址<整数8>, rsize_t, 地址<整数8>)=>errno_t;
+函数 C调用 strncat_s(地址<整数8>, rsize_t, 地址<整数8>, rsize_t)=>errno_t;
+函数 C调用 strtok_s(地址<整数8>, 地址<rsize_t>, 地址<整数8>, 地址)=>地址<整数8>;
+函数 C调用 strerror_s(地址<整数8>, rsize_t, errno_t)=>errno_t;
+函数 C调用 strerrorlen_s(errno_t)=>size_t;
+函数 C调用 strnlen_s(地址<整数8>, size_t)=>size_t;
+
+}
+
+

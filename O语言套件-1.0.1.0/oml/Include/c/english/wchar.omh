@@ -1,0 +1,170 @@
+
+.include<stddef.omh>
+.include<stdio.omh>
+.include<time.omh>
+
+//define WCHAR_MIN()  0
+//define WCHAR_MAX()  0xffff
+//define WEOF()  (-1)
+
+uint16 typedef wint_t;
+
+
+externs
+{
+/* formatted wide-character input/output functions */
+function cdecl fwprintf(addr<FILE>, addr<wchar_t>, ..)=>int32;
+function cdecl fwscanf(addr<FILE>, addr<wchar_t>, ..)=>int32;
+function cdecl swscanf(addr<wchar_t>, addr<wchar_t>, ..)=>int32;
+function cdecl vfwprintf(addr<FILE>, addr<wchar_t>, va_list)=>int32;
+function cdecl vwprintf(addr<wchar_t>, va_list)=>int32;
+function cdecl wprintf(addr<wchar_t>, ..)=>int32;
+function cdecl wscanf(addr<wchar_t>, ..)=>int32;
+function cdecl swprintf(addr<wchar_t>, size_t, addr<wchar_t>, ..)=>int32;
+function cdecl vfwscanf(addr<FILE>, addr<wchar_t>, va_list)=>int32;
+function cdecl vswprintf(addr<wchar_t>, size_t, addr<wchar_t>, va_list)=>int32;
+function cdecl vswscanf(addr<wchar_t>, addr<wchar_t>, va_list)=>int32;
+function cdecl vwscanf(addr<wchar_t>, va_list)=>int32;
+
+/* wide character input/output functions */
+function cdecl fgetwc(addr<FILE>)=>wint_t;
+function cdecl fgetws(addr<wchar_t>, int32, addr<FILE>)=>addr<wchar_t>;
+function cdecl fputwc(wchar_t, addr<FILE>)=>wint_t;
+function cdecl fputws(addr<wchar_t>, addr<FILE>)=>int32;
+function cdecl getwchar()=>wint_t;
+function cdecl putwchar(wchar_t)=>wint_t;
+function cdecl ungetwc(wint_t, addr<FILE>)=>wint_t;
+
+function cdecl fwide(addr<FILE>, int32)=>int32;
+function cdecl getwc(addr<FILE>)=>wint_t;
+function cdecl putwc(wchar_t, addr<FILE>)=>wint_t;
+
+/* general wide-string utilities */
+function cdecl wcstod(addr<wchar_t>, addr)=>float64;
+function cdecl wcstol(addr<wchar_t>, addr, int32)=>int32;
+function cdecl wcstoul(addr<wchar_t>, addr, int32)=>uint32;
+function cdecl wcscpy(addr<wchar_t>, addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcsncpy(addr<wchar_t>, addr<wchar_t>, size_t)=>addr<wchar_t>;
+function cdecl wcscat(addr<wchar_t>, addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcsncat(addr<wchar_t>, addr<wchar_t>, size_t)=>addr<wchar_t>;
+function cdecl wcscmp(addr<wchar_t>, addr<wchar_t>)=>int32;
+function cdecl wcsncmp(addr<wchar_t>, addr<wchar_t>, size_t)=>int32;
+function cdecl wcschr(addr<wchar_t>, wchar_t)=>addr<wchar_t>;
+function cdecl wcscspn(addr<wchar_t>, addr<wchar_t>)=>size_t;
+function cdecl wcslen(addr<wchar_t>)=>size_t;
+function cdecl wcspbrk(addr<wchar_t>, addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcsrchr(addr<wchar_t>, wchar_t)=>addr<wchar_t>;
+function cdecl wcsspn(addr<wchar_t>, addr<wchar_t>)=>size_t;
+function cdecl wcsstr(addr<wchar_t>, addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcstok(addr<wchar_t>, addr<wchar_t>, addr)=>addr<wchar_t>;
+
+function cdecl wcstof(addr<wchar_t>, addr)=>float32;
+function cdecl wcscoll(addr<wchar_t>, addr<wchar_t>)=>int32;
+function cdecl wcsxfrm(addr<wchar_t>, addr<wchar_t>, size_t)=>size_t;
+function cdecl wmemchr(addr<wchar_t>, wchar_t, size_t)=>addr<wchar_t>;
+function cdecl wmemcmp(addr<wchar_t>, addr<wchar_t>, size_t)=>int32;
+function cdecl wmemcpy(addr<wchar_t>, addr<wchar_t>, size_t)=>addr<wchar_t>;
+function cdecl wmemmove(addr<wchar_t>, addr<wchar_t>, size_t)=>addr<wchar_t>;
+function cdecl wmemset(addr<wchar_t>, wchar_t, size_t)=>addr<wchar_t>;
+
+/* wide-character time conversion functions */
+function cdecl wcsftime(addr<wchar_t>, size_t, addr<wchar_t>, addr<tm>)=>size_t;
+
+/* extended multibyte and wide-character conversion utilities */
+function cdecl btowc(int32)=>wint_t;
+function cdecl wctob(wint_t)=>int32;
+function cdecl mbsinit(addr<mbstate_t>)=>int32;
+function cdecl mbrlen(addr<int8>, size_t, addr<mbstate_t>)=>size_t;
+function cdecl mbrtowc(addr<wchar_t>, addr<int8>, size_t, addr<mbstate_t>)=>size_t;
+function cdecl wcrtomb(addr<int8>, wchar_t, addr<mbstate_t>)=>size_t;
+function cdecl mbsrtowcs(addr<wchar_t>, addr, size_t, addr<mbstate_t>)=>size_t;
+function cdecl wcsrtombs(addr<int8>, addr, size_t, addr<mbstate_t>)=>size_t;
+
+/* private extensions to standard C */
+function cdecl _itow(int32, addr<wchar_t>, int32)=>addr<wchar_t>;
+function cdecl _ltow(int32, addr<wchar_t>, int32)=>addr<wchar_t>;
+function cdecl _ultow(uint32, addr<wchar_t>, int32)=>addr<wchar_t>;
+function cdecl _snwprintf(addr<wchar_t>, size_t, addr<wchar_t>, ..)=>int32;
+function cdecl _vsnwprintf(addr<wchar_t>, size_t, addr<wchar_t>, va_list)=>int32;
+function cdecl _wcsicmp(addr<wchar_t>, addr<wchar_t>)=>int32;
+function cdecl _wcsnicmp(addr<wchar_t>, addr<wchar_t>, size_t)=>int32;
+function cdecl _wcsdup(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wcsupr(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wcslwr(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wcsnset(addr<wchar_t>, wchar_t, size_t)=>addr<wchar_t>;
+function cdecl _wcsrev(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wtol(addr<wchar_t>)=>int32;
+function cdecl _wcsdate(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wcserror(int32)=>addr<wchar_t>;
+function cdecl _wcsichr(addr<wchar_t>, wchar_t)=>addr<wchar_t>;
+function cdecl _wcsistr(addr<wchar_t>, addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wcsrichr(addr<wchar_t>, wchar_t)=>addr<wchar_t>;
+function cdecl _wcstime(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wcstok_ms(addr<wchar_t>, addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wmemichr(addr<wchar_t>, wchar_t, size_t)=>addr<wchar_t>;
+function cdecl _wmemicmp(addr<wchar_t>, addr<wchar_t>, size_t)=>int32;
+function cdecl _wtoi(addr<wchar_t>)=>int32;
+
+/* internal stuff */
+function cdecl __btowc(int32)=>wint_t;
+function cdecl __wctob(wint_t)=>int32;
+function cdecl __wcstod(addr<wchar_t>, addr, int32)=>float64;
+function cdecl __wcstof(addr<wchar_t>, addr, int32)=>float32;
+function cdecl __wcstoul(addr<wchar_t>, addr, int32)=>uint32;
+
+/* macro overrides */
+define btowc(c)  __btowc(c)
+define wcstod(nptr,endptr)  __wcstod(nptr,endptr,0)
+define wcstoul(nptr,endptr,base)  __wcstoul(nptr,endptr,base)
+define wcstof(nptr,endptr)  __wcstof(nptr,endptr,0)
+define wcstold(nptr,endptr)  __wcstold(nptr,endptr,0)
+define wctob(wc)  __wctob(wc)
+define _wtoi(s)  __wcstoul(s,0,10)
+define _wtol(s)  __wcstoul(s,0,10)
+
+/* compatibility names */
+//#ifdef __POCC__OLDNAMES
+function cdecl wcsicmp(addr<wchar_t>, addr<wchar_t>)=>int32;
+function cdecl wcsnicmp(addr<wchar_t>, addr<wchar_t>, size_t)=>int32;
+function cdecl wcsdup(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcsupr(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcslwr(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl wcsnset(addr<wchar_t>, wchar_t, size_t)=>addr<wchar_t>;
+function cdecl wcsrev(addr<wchar_t>)=>addr<wchar_t>;
+//#endif /* __POCC__OLDNAMES */
+
+/* more secure C functions (TR24731-1) */
+
+/* formatted wide-character input/output functions */
+function cdecl fwprintf_s(addr<FILE>, addr<wchar_t>, ..)=>int32;
+function cdecl fwscanf_s(addr<FILE>, addr<wchar_t>, ..)=>int32;
+function cdecl snwprintf_s(addr<wchar_t>, rsize_t, addr<wchar_t>, ..)=>int32;
+function cdecl swprintf_s(addr<wchar_t>, rsize_t, addr<wchar_t>, ..)=>int32;
+function cdecl swscanf_s(addr<wchar_t>, addr<wchar_t>, ..)=>int32;
+function cdecl vfwprintf_s(addr<FILE>, addr<wchar_t>, va_list)=>int32;
+function cdecl vfwscanf_s(addr<FILE>, addr<wchar_t>, va_list)=>int32;
+function cdecl vsnwprintf_s(addr<wchar_t>, rsize_t, addr<wchar_t>, va_list)=>int32;
+function cdecl vswprintf_s(addr<wchar_t>, rsize_t, addr<wchar_t>, va_list)=>int32;
+function cdecl vswscanf_s(addr<wchar_t>, addr<wchar_t>, va_list)=>int32;
+function cdecl vwprintf_s(addr<wchar_t>, va_list)=>int32;
+function cdecl vwscanf_s(addr<wchar_t>, va_list)=>int32;
+function cdecl wprintf_s(addr<wchar_t>, ..)=>int32;
+function cdecl wscanf_s(addr<wchar_t>, ..)=>int32;
+
+/* general wide-string utilities */
+function cdecl wcscpy_s(addr<wchar_t>, rsize_t, addr<wchar_t>)=>errno_t;
+function cdecl wcsncpy_s(addr<wchar_t>, rsize_t, addr<wchar_t>, rsize_t)=>errno_t;
+function cdecl wmemcpy_s(addr<wchar_t>, rsize_t, addr<wchar_t>, rsize_t)=>errno_t;
+function cdecl wmemmove_s(addr<wchar_t>, rsize_t, addr<wchar_t>, rsize_t)=>errno_t;
+function cdecl wcscat_s(addr<wchar_t>, rsize_t, addr<wchar_t>)=>errno_t;
+function cdecl wcsncat_s(addr<wchar_t>, rsize_t, addr<wchar_t>, rsize_t)=>errno_t;
+function cdecl wcstok_s(addr<wchar_t>, addr<rsize_t>, addr<wchar_t>, addr)=>addr<wchar_t>;
+function cdecl wcsnlen_s(addr<wchar_t>, size_t)=>size_t;
+
+/* extended multibyte and wide-character conversion utilities */
+function cdecl wcrtomb_s(addr<size_t>, addr<int8>, rsize_t, wchar_t, addr<mbstate_t>)=>errno_t;
+function cdecl mbsrtowcs_s(addr<size_t>, addr<wchar_t>, rsize_t, addr, rsize_t, addr<mbstate_t>)=>errno_t;
+function cdecl wcsrtombs_s(addr<size_t>, addr<int8>, rsize_t, addr, rsize_t, addr<mbstate_t>)=>errno_t;
+
+}
+

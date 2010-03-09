@@ -1,0 +1,24 @@
+
+/* type definitions */
+整数32 typedef sig_atomic_t;
+//typedef void __cdecl __sigfunc(int);
+
+/* signal codes */
+宏定义 SIGINT  2
+宏定义 SIGILL  4
+宏定义 SIGABRT  6
+宏定义 SIGFPE  8
+宏定义 SIGSEGV  11
+宏定义 SIGTERM  15
+
+/* signal return values */
+宏定义 SIG_DFL()  ((__sigfunc *)0)
+宏定义 SIG_ERR()  ((__sigfunc *)-1)
+宏定义 SIG_IGN()  ((__sigfunc *)1)
+
+引用段
+{
+/* declarations */
+函数 C调用 raise(整数32)=>整数32;
+函数 C调用 signal(整数32,地址)=>地址;
+}

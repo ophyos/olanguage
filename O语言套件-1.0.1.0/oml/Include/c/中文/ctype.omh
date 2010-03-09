@@ -1,0 +1,66 @@
+
+.包含文<stddef.omh>
+
+宏定义
+{
+/* classification bit masks */
+_DIGIT  0x01    /* decimal digit */
+_HEX    0x02    /* hexadecimal digit */
+_LOWER  0x04    /* lower case letter */
+_UPPER  0x08    /* upper case letter */
+_CNTRL  0x10    /* control character */
+_WHITE  0x20    /* white space character */
+_SPACE  0x40    /* space */
+_PUNCT  0x80    /* punctuation character */
+_BLANK  0x100   /* blank (tab) */
+
+/* data declarations */
+__ctypetab  __get_ctypetab()
+__tolowertab  __get_tolowertab()
+__touppertab  __get_touppertab()
+}
+
+引用段
+{
+函数 C调用 __get_ctypetab()=>地址<正数16>;
+函数 C调用 __get_tolowertab()=>地址<整数16>;
+函数 C调用 __get_touppertab()=>地址<整数16>;
+
+函数 C调用 isalnum(整数32)=>整数32;
+函数 C调用 isalpha(整数32)=>整数32;
+函数 C调用 iscntrl(整数32)=>整数32;
+函数 C调用 isdigit(整数32)=>整数32;
+函数 C调用 isgraph(整数32)=>整数32;
+函数 C调用 islower(整数32)=>整数32;
+函数 C调用 isprint(整数32)=>整数32;
+函数 C调用 ispunct(整数32)=>整数32;
+函数 C调用 isspace(整数32)=>整数32;
+函数 C调用 isblank(整数32)=>整数32;
+函数 C调用 isupper(整数32)=>整数32;
+函数 C调用 isxdigit(整数32)=>整数32;
+函数 C调用 _isascii(整数32)=>整数32;
+函数 C调用 tolower(整数32)=>整数32;
+函数 C调用 toupper(整数32)=>整数32;
+函数 C调用 _toascii(整数32)=>整数32;
+
+函数 C调用 isascii(整数32)=>整数32 ;
+函数 C调用 toascii(整数32)=>整数32 ;
+
+//__POCC__OLDNAMES
+/* classification bit masks */
+//_UPPER  0x01    /* upper case letter */
+//_LOWER  0x02    /* lower case letter */
+//_DIGIT  0x04    /* decimal digit */
+//_SPACE  0x08    /* tab, carriage return, newline */
+//_PUNCT  0x10    /* punctuation character */
+//_CNTRL  0x20    /* control character */
+//_BLANK  0x40    /* space */
+//_HEX    0x80    /* hexadecimal digit */
+//_ALPHA()  (0x0100|_UPPER|_LOWER)
+//函数 C调用 _isctype(整数32, 整数32)=>整数32;
+//函数 C调用 tolower(整数32)=>整数32;
+//函数 C调用 toupper(整数32)=>整数32;
+
+}
+
+

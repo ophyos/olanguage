@@ -1,0 +1,11 @@
+
+正数32  typedef size_t;
+正数16  typedef wchar_t;
+整数32   typedef off_t;
+整数32   typedef _off_t;
+地址    typedef va_list;
+
+整数32  typedef errno_t;
+正数32 typedef rsize_t;
+
+整数32 typedef ptrdiff_t;

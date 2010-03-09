@@ -1,0 +1,11 @@
+
+.包含文<*.\标准C.omh>
+
+//下面是主函数定义
+函数 C调用 主函数:main(整数32 argc,地址 argv)=>整数32
+{
+    printf(&"Hello World!");
+    getchar();
+    
+    返回 0;
+}

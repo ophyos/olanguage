@@ -1,0 +1,242 @@
+
+//define HUGE_VAL()   (1.0 / (1.0, 0.0))
+//define HUGE_VALF()  (1.0F / (1.0, 0.0F))
+//define HUGE_VALL()  (1.0L / (1.0, 0.0L))
+//define INFINITY()   (1.0F / (1.0, 0.0F))
+//define NAN()        (0.0 / (1.0, 0.0))
+
+define FP_INFINITE     1
+define FP_NAN          2
+define FP_NORMAL()     (-1)
+define FP_SUBNORMAL()  (-2)
+define FP_ZERO         0
+
+define FP_ILOGB0()    (-0x7fffffff - 1)
+define FP_ILOGBNAN    0x7fffffff
+
+define MATH_ERRNO          1
+define MATH_ERREXCEPT      2
+define math_errhandling()  (MATH_ERRNO|MATH_ERREXCEPT)
+
+define _FP_LT  1
+define _FP_EQ  2
+define _FP_GT  4
+
+externs
+{
+/* helper functions */
+function cdecl __fpclass(float64)=>int32;
+function cdecl __fpclassf(float32)=>int32;
+function cdecl __fpcomp(float64, float64)=>int32;
+function cdecl __fpcompf(float32, float32)=>int32;
+function cdecl __fpsign(float64)=>int32;
+function cdecl __fpsignf(float32)=>int32;
+}
+
+define isfinite(x)  (fpclassify(x) <= 0)
+define isinf(x)     (fpclassify(x) == FP_INFINITE)
+define isnan(x)     (fpclassify(x) == FP_NAN)
+define isnormal(x)  (fpclassify(x) == FP_NORMAL)
+
+define isgreater(x,y)  (_FPCOMP(x,y) & _FP_GT)
+define isgreaterequal(x,y)  (_FPCOMP(x,y) & (_FP_EQ|_FP_GT))
+define isless(x,y)  (_FPCOMP(x,y) & _FP_LT)
+define islessequal(x,y)  (_FPCOMP(x,y) & (_FP_LT|_FP_EQ))
+define islessgreater(x,y)  (_FPCOMP(x,y) & (_FP_LT|_FP_GT))
+define isunordered(x,y)  (_FPCOMP(x,y) == 0)
+
+define fpclassify(x)  __tgeneric__(x,,,__fpclassf,__fpclass,__fpclassl,,,)(x)
+define signbit(x)  __tgeneric__(x,,,__fpsignf,__fpsign,__fpsignl,,,)(x)
+define _FPCOMP(x,y)  __tgeneric__(x,y,,__fpcompf,__fpcomp,__fpcompl,,,)(x,y)
+
+externs
+{
+/* float64 declarations */
+function cdecl acos(float64)=>float64;
+function cdecl acosh(float64)=>float64;
+function cdecl asin(float64)=>float64;
+function cdecl asinh(float64)=>float64;
+function cdecl atan(float64)=>float64;
+function cdecl atan2(float64, float64)=>float64;
+function cdecl atanh(float64)=>float64;
+function cdecl cbrt(float64)=>float64;
+function cdecl ceil(float64)=>float64;
+function cdecl copysign(float64, float64)=>float64;
+function cdecl erf(float64)=>float64;
+function cdecl erfc(float64)=>float64;
+function cdecl exp(float64)=>float64;
+function cdecl exp2(float64)=>float64;
+function cdecl expm1(float64)=>float64;
+function cdecl fabs(float64)=>float64;
+function cdecl fdim(float64, float64)=>float64;
+function cdecl floor(float64)=>float64;
+function cdecl fma(float64, float64, float64)=>float64;
+function cdecl fmax(float64, float64)=>float64;
+function cdecl fmin(float64, float64)=>float64;
+function cdecl fmod(float64, float64)=>float64;
+function cdecl frexp(float64, addr<int32>)=>float64;
+function cdecl hypot(float64, float64)=>float64;
+function cdecl ilogb(float64)=>int32;
+function cdecl ldexp(float64, int32)=>float64;
+function cdecl lgamma(float64)=>float64;
+function cdecl log1p(float64)=>float64;
+function cdecl logb(float64)=>float64;
+function cdecl lrint(float64)=>int32;
+function cdecl lround(float64)=>int32;
+function cdecl modf(float64, addr<float64>)=>float64;
+function cdecl nan(addr<int8>)=>float64;
+function cdecl nearbyint(float64)=>float64;
+function cdecl nextafter(float64, float64)=>float64;
+function cdecl pow(float64, float64)=>float64;
+function cdecl remainder(float64, float64)=>float64;
+function cdecl remquo(float64, float64, addr<int32>);
+function cdecl rint(float64)=>float64;
+function cdecl round(float64)=>float64;
+function cdecl scalbn(float64, int32)=>float64;
+function cdecl scalbln(float64, int32)=>float64;
+function cdecl sqrt(float64)=>float64;
+function cdecl tan(float64)=>float64;
+function cdecl tanh(float64)=>float64;
+function cdecl tgamma(float64)=>float64;
+function cdecl trunc(float64)=>float64;
+
+/* float32 declarations */
+function cdecl acosf(float32)=>float32;
+function cdecl acoshf(float32)=>float32;
+function cdecl asinf(float32)=>float32;
+function cdecl asinhf(float32)=>float32;
+function cdecl atanf(float32)=>float32;
+function cdecl atanhf(float32)=>float32;
+function cdecl atan2f(float32, float32)=>float32;
+function cdecl cbrtf(float32)=>float32;
+function cdecl ceilf(float32)=>float32;
+function cdecl copysignf(float32, float32)=>float32;
+function cdecl erff(float32)=>float32;
+function cdecl erfcf(float32)=>float32;
+function cdecl expf(float32)=>float32;
+function cdecl exp2f(float32)=>float32;
+function cdecl expm1f(float32)=>float32;
+function cdecl fabsf(float32)=>float32;
+function cdecl fdimf(float32, float32)=>float32;
+function cdecl floorf(float32)=>float32;
+function cdecl fmaf(float32, float32, float32)=>float32;
+function cdecl fmaxf(float32, float32)=>float32;
+function cdecl fminf(float32, float32)=>float32;
+function cdecl fmodf(float32, float32)=>float32;
+function cdecl frexpf(float32, addr<int32>)=>float32;
+function cdecl hypotf(float32, float32)=>float32;
+function cdecl ilogbf(float32)=>int32;
+function cdecl ldexpf(float32, int32)=>float32;
+function cdecl lgammaf(float32)=>float32;
+function cdecl log1pf(float32)=>float32;
+function cdecl logbf(float32)=>float32;
+function cdecl lrintf(float32)=>int32;
+function cdecl lroundf(float32)=>int32;
+function cdecl modff(float32, addr<float32>)=>float32;
+function cdecl nanf(addr<int8>)=>float32;
+function cdecl nearbyintf(float32)=>float32;
+function cdecl nextafterf(float32, float32)=>float32;
+function cdecl powf(float32, float32)=>float32;
+function cdecl remainderf(float32, float32)=>float32;
+function cdecl remquof(float32, float32, addr<int32>)=>float32;
+function cdecl rintf(float32)=>float32;
+function cdecl roundf(float32)=>float32;
+function cdecl scalbnf(float32, int32)=>float32;
+function cdecl sqrtf(float32)=>float32;
+function cdecl tanf(float32)=>float32;
+function cdecl tanhf(float32)=>float32;
+function cdecl tgammaf(float32)=>float32;
+function cdecl truncf(float32)=>float32;
+
+function cdecl cos(float64)=>float64;
+function cdecl cosh(float64)=>float64;
+function cdecl log(float64)=>float64;
+function cdecl log10(float64)=>float64;
+function cdecl log2(float64)=>float64;
+function cdecl sin(float64)=>float64;
+function cdecl sinh(float64)=>float64;
+
+/* float64 macro overrides */
+define cos(x)  __sin(x,1)
+define cosh(x)  __cosh(x,1)
+define log(x)  __log(x,0)
+define log10(x)  __log(x,1)
+define log2(x)  __log(x,2)
+define sin(x)  __sin(x,0)
+define sinh(x)  __sinh(x,1)
+
+function cdecl cosf(float32)=>float32;
+function cdecl coshf(float32)=>float32;
+function cdecl logf(float32)=>float32;
+function cdecl log10f(float32)=>float32;
+function cdecl log2f(float32)=>float32;
+function cdecl sinf(float32)=>float32;
+function cdecl sinhf(float32)=>float32;
+
+/* float32 macro overrides */
+define cosf(x)  __sinf(x,1)
+define coshf(x)  __coshf(x,1)
+define logf(x)  __logf(x,0)
+define log10f(x)  __logf(x,1)
+define log2f(x)  __logf(x,2)
+define sinf(x)  __sinf(x,0)
+define sinhf(x)  __sinhf(x,1)
+
+/* long float64 macro overrides */
+define cosl(x)  __sinl(x,1)
+define coshl(x)  __coshl(x,1)
+define logl(x)  __logl(x,0)
+define log10l(x)  __logl(x,1)
+define log2l(x)  __logl(x,2)
+define sinl(x)  __sinl(x,0)
+define sinhl(x)  __sinhl(x,1)
+
+/* float64 declarations */
+function cdecl __cosh(float64, float64)=>float64;
+function cdecl __log(float64, int32)=>float64;
+function cdecl __sin(float64, uint32)=>float64;
+function cdecl __sinh(float64, float64)=>float64;
+function cdecl __fptest(addr<float64>)=>int16;
+function __exp(addr<float64>, float64, int16)=>int16;
+
+/* float32 declarations */
+function cdecl __coshf(float32, float32)=>float32;
+function cdecl __logf(float32, int32)=>float32;
+function cdecl __sinf(float32, uint32)=>float32;
+function cdecl __sinhf(float32, float32)=>float32;
+function cdecl __fptestf(addr<float32>)=>int16;
+function __expf(addr<float32>, float32, int16)=>int16;
+
+}
+
+/* values for _exception type */
+define _DOMAIN  1
+define _SING  2
+define _OVERFLOW  3
+define _UNDERFLOW  4
+define _TLOSS  5
+define _PLOSS  6
+
+/* compatibility names */
+define DOMAIN  _DOMAIN
+define SING  _SING
+define OVERFLOW  _OVERFLOW
+define UNDERFLOW  _UNDERFLOW
+define TLOSS  _TLOSS
+define PLOSS  _PLOSS
+
+/* passed to _matherr() when a fp exception is detected */
+struct _exception 
+{
+    int32 type;
+    addr<int8>name;
+    float64 arg1;
+    float64 arg2;
+    float64 retval;
+}
+
+externs
+{
+function cdecl _matherr(addr<_exception>)=>int32;
+}
+

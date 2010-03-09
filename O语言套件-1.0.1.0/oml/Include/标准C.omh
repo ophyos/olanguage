@@ -1,0 +1,5 @@
+
+.包含文<*.\oml32.omh>
+.包含文<*.\crt.omh>
+.引用库<*.\crt.lib>
+.引用库<*.\kernel32.lib>

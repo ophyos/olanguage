@@ -1,0 +1,50 @@
+
+.include<stddef.omh>
+
+uint32 typedef time_t;
+uint32 typedef clock_t;
+
+define CLOCKS_PER_SEC  1000
+
+struct tm 
+{
+    int32 tm_sec;     /* seconds after the minute [0,60] */
+    int32 tm_min;     /* minutes after the hour [0,59] */
+    int32 tm_hour;    /* hours since midnight [0,23] */
+    int32 tm_mday;    /* day of the month [1,31] */
+    int32 tm_mon;     /* month since January [0,11] */
+    int32 tm_year;    /* years since 1900 */
+    int32 tm_wday;    /* days since Sunday [0,6] */
+    int32 tm_yday;    /* days since January 1 [0,365] */
+    int32 tm_isdst;   /* Daylight Saving Time flag */
+};
+
+externs
+{
+/* declarations */
+function cdecl difftime(time_t, time_t)=>float64;
+function cdecl time(addr<time_t>)=>time_t;
+
+function cdecl asctime(addr<tm>)=>addr<int8>;
+function cdecl clock()=>clock_t;
+function cdecl ctime(addr<time_t>)=>addr<int8>;
+function cdecl gmtime(addr<time_t>)=>addr<tm>;
+function cdecl localtime(addr<time_t>)=>addr<tm>;
+function cdecl mktime(addr<tm>)=>time_t;
+function cdecl strftime(addr<int8>, size_t,addr<int8>,addr<tm>)=>size_t;
+
+/* private extensions to standard C */
+function cdecl _sleep(uint32)=>uint32;
+function cdecl _strdate(addr<int8>)=>addr<int8>;
+function cdecl _strtime(addr<int8>)=>addr<int8>;
+
+/* more secure C functions (TR24731-1) */
+
+/* functions */
+function cdecl asctime_s(addr<int8>,rsize_t, addr<tm>)=>errno_t;
+function cdecl ctime_s(addr<int8>,rsize_t, addr<time_t>)=>errno_t;
+function cdecl gmtime_s(addr<time_t>,addr<tm>)=>addr<tm>;
+function cdecl localtime_s(addr<time_t>,addr<tm>)=>addr<tm>;
+
+}
+

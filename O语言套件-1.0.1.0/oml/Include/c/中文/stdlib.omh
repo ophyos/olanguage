@@ -1,0 +1,127 @@
+
+.包含文<stddef.omh>
+
+宏定义 EXIT_FAILURE  1
+宏定义 EXIT_SUCCESS  0
+
+宏定义 MB_CUR_MAX  __mbcurmax
+宏定义 RAND_MAX  0x3fffffff
+
+结构 div_t
+{
+    整数32 quot;
+    整数32 rem;
+}
+
+结构 ldiv_t
+{
+    整数32 quot;
+    整数32 rem;
+}
+
+引用段
+{
+    
+/* declarations */
+函数 C调用 abs(整数32)=>整数32;
+函数 C调用 atexit(地址)=>整数32;
+函数 C调用 atof(地址<整数8>)=>小数64;
+函数 C调用 atoi(地址<整数8>)=>整数32;
+函数 C调用 atol(地址<整数8>)=>整数32;
+函数 C调用 calloc(size_t, size_t)=>地址;
+函数 C调用 div(整数32, 整数32)=>div_t;
+函数 C调用 free(地址);
+函数 C调用 labs(整数32)=>整数32;
+函数 C调用 ldiv(整数32, 整数32)=>ldiv_t;
+函数 C调用 malloc(size_t)=>地址;
+函数 C调用 mbstowcs(地址<wchar_t>, 地址<整数8>, size_t)=>size_t;
+函数 C调用 rand()=>整数32;
+函数 C调用 srand(正数32);
+函数 C调用 realloc(地址, size_t)=>地址;
+函数 C调用 strtod(地址<整数8>, 地址)=>小数64;
+函数 C调用 strtol(地址<整数8>, 地址, 整数32)=>整数32;
+函数 C调用 strtoul(地址<整数8>, 地址, 整数32)=>正数32;
+函数 C调用 wcstombs(地址<整数8>, 地址<wchar_t>, size_t)=>size_t;
+
+函数 C调用 abort();
+//函数 long long C调用 atoll(地址<整数8>);
+函数 C调用 bsearch(地址, 地址, size_t, size_t, 地址)=>地址;
+函数 C调用 _Exit(整数32);
+函数 C调用 exit(整数32);
+函数 C调用 getenv(地址<整数8>)=>地址<整数8>;
+//函数 long long C调用 llabs(long long);
+//函数 lldiv_t C调用 lldiv(long long, long long);
+函数 C调用 mblen(地址<整数8>, size_t)=>整数32;
+函数 C调用 mbtowc(地址<wchar_t>, 地址<整数8>, size_t)=>整数32;
+函数 C调用 qsort(地址, size_t, size_t, 地址);
+函数 C调用 strtof(地址<整数8>, 地址)=>小数32;
+//函数 long 小数64 C调用 strtold(地址<整数8>, 地址<整数8>*);
+//函数 long long C调用 strtoll(地址<整数8>, 地址<整数8>*, 整数32);
+//函数 unsigned long long C调用 strtoull(地址<整数8>, 地址<整数8>*, 整数32);
+函数 C调用 system(地址<整数8>)=>整数32;
+函数 C调用 wctomb(地址<整数8>, wchar_t)=>整数32;
+
+/* private extensions to standard C */
+函数 C调用 _alloca(size_t)=>地址;
+函数 C调用 _heap_validate(地址)=>整数32;
+函数 C调用 _msize(地址)=>size_t;
+函数 C调用 _itoa(整数32, 地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 _ltoa(整数32, 地址<整数8>, 整数32)=>地址<整数8>;
+//函数 unsigned long long C调用 _llrotl(unsigned long long, 整数32);
+//函数 unsigned long long C调用 _llrotr(unsigned long long, 整数32);
+函数 C调用 _lrotl(正数32, 整数32)=>正数32;
+函数 C调用 _lrotr(正数32, 整数32)=>正数32;
+函数 C调用 _rotl(正数32, 整数32)=>正数32;
+函数 C调用 _rotr(正数32, 整数32)=>正数32;
+函数 C调用 _ultoa(正数32, 地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 _bswap(正数32)=>正数32;
+
+//函数 unsigned long long C调用 _bswap64(unsigned long long);
+函数 C调用 _fullpath(地址<整数8>, 地址<整数8>, size_t)=>地址<整数8>;
+函数 C调用 _makepath(地址<整数8>, 地址<整数8>, 地址<整数8>, 地址<整数8>, 地址<整数8>);
+函数 C调用 _putenv(地址<整数8>)=>整数32;
+函数 C调用 _searchenv(地址<整数8>, 地址<整数8>, 地址<整数8>);
+函数 C调用 _splitpath(地址<整数8>, 地址<整数8>, 地址<整数8>, 地址<整数8>, 地址<整数8>);
+函数 C调用 _set_crt_heap_size(size_t)=>size_t;
+函数 C调用 _wfullpath(地址<wchar_t>, 地址<wchar_t>, size_t)=>地址<wchar_t>;
+函数 C调用 _wgetenv(地址<wchar_t>)=>地址<wchar_t>;
+函数 C调用 _wmakepath(地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>);
+函数 C调用 _wputenv(地址<wchar_t>)=>整数32;
+函数 C调用 _wsearchenv(地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>);
+函数 C调用 _wsplitpath(地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>, 地址<wchar_t>);
+函数 C调用 _wsystem(地址<wchar_t>)=>整数32;
+
+函数 C调用 _cpuid(地址<整数32>, 整数32);
+
+函数 C调用 __debugbreak();
+
+/* compatibility names */
+函数 C调用 itoa(整数32, 地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 ltoa(整数32, 地址<整数8>, 整数32)=>地址<整数8>;
+函数 C调用 putenv(地址<整数8>)=>整数32;
+函数 C调用 ultoa(正数32, 地址<整数8>, 整数32)=>地址<整数8>;
+
+/* internal stuff */
+函数 C调用 __stod(地址<整数8>, 地址, 整数32)=>小数64;
+函数 C调用 __stof(地址<整数8>, 地址, 整数32)=>小数32;
+//函数 long 小数64 C调用 __stold(地址<整数8>, 地址<整数8>*, long);
+//函数 long long C调用 __stoll(地址<整数8>, 地址<整数8>*, 整数32);
+函数 C调用 __stoul(地址<整数8>, 地址, 整数32)=>正数32;
+//函数 unsigned long long C调用 __stoull(地址<整数8>, 地址<整数8>*, 整数32);
+
+
+//typedef void (C调用 *constraint_handler_t)(地址<整数8>, 地址, errno_t);
+//typedef 整数32 C调用 __cmpfunc_s(const 地址, const 地址, 地址);
+
+/* declarations */
+函数 C调用 set_constraint_handler_s(地址)=>地址;
+函数 C调用 abort_handler_s(地址<整数8>, 地址, errno_t);
+函数 C调用 ignore_handler_s(地址<整数8>, 地址, errno_t);
+函数 C调用 getenv_s(地址<size_t>, 地址<整数8>, rsize_t, 地址<整数8>)=>errno_t;
+函数 C调用 bsearch_s(地址, 地址, rsize_t, rsize_t, 地址, 地址)=>地址;
+函数 C调用 qsort_s(地址, rsize_t, rsize_t, 地址, 地址)=>errno_t;
+函数 C调用 wctomb_s(地址<整数32>, 地址<整数8>, rsize_t, wchar_t)=>errno_t;
+函数 C调用 mbstowcs_s(地址<size_t>, 地址<wchar_t>, rsize_t, 地址<整数8>, rsize_t)=>errno_t;
+函数 C调用 wcstombs_s(地址<size_t>, 地址<整数8>, rsize_t, 地址<wchar_t>, rsize_t)=>errno_t;
+
+}

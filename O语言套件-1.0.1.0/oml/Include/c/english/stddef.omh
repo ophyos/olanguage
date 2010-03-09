@@ -1,0 +1,11 @@
+
+uint32  typedef size_t;
+uint16  typedef wchar_t;
+int32   typedef off_t;
+int32   typedef _off_t;
+addr    typedef va_list;
+
+int32  typedef errno_t;
+uint32 typedef rsize_t;
+
+int32 typedef ptrdiff_t;

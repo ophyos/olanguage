@@ -1,0 +1,127 @@
+
+.include<stddef.omh>
+
+define EXIT_FAILURE  1
+define EXIT_SUCCESS  0
+
+define MB_CUR_MAX  __mbcurmax
+define RAND_MAX  0x3fffffff
+
+struct div_t
+{
+    int32 quot;
+    int32 rem;
+}
+
+struct ldiv_t
+{
+    int32 quot;
+    int32 rem;
+}
+
+externs
+{
+    
+/* declarations */
+function cdecl abs(int32)=>int32;
+function cdecl atexit(addr)=>int32;
+function cdecl atof(addr<int8>)=>float64;
+function cdecl atoi(addr<int8>)=>int32;
+function cdecl atol(addr<int8>)=>int32;
+function cdecl calloc(size_t, size_t)=>addr;
+function cdecl div(int32, int32)=>div_t;
+function cdecl free(addr);
+function cdecl labs(int32)=>int32;
+function cdecl ldiv(int32, int32)=>ldiv_t;
+function cdecl malloc(size_t)=>addr;
+function cdecl mbstowcs(addr<wchar_t>, addr<int8>, size_t)=>size_t;
+function cdecl rand()=>int32;
+function cdecl srand(uint32);
+function cdecl realloc(addr, size_t)=>addr;
+function cdecl strtod(addr<int8>, addr)=>float64;
+function cdecl strtol(addr<int8>, addr, int32)=>int32;
+function cdecl strtoul(addr<int8>, addr, int32)=>uint32;
+function cdecl wcstombs(addr<int8>, addr<wchar_t>, size_t)=>size_t;
+
+function cdecl abort();
+//function long long cdecl atoll(addr<int8>);
+function cdecl bsearch(addr, addr, size_t, size_t, addr)=>addr;
+function cdecl _Exit(int32);
+function cdecl exit(int32);
+function cdecl getenv(addr<int8>)=>addr<int8>;
+//function long long cdecl llabs(long long);
+//function lldiv_t cdecl lldiv(long long, long long);
+function cdecl mblen(addr<int8>, size_t)=>int32;
+function cdecl mbtowc(addr<wchar_t>, addr<int8>, size_t)=>int32;
+function cdecl qsort(addr, size_t, size_t, addr);
+function cdecl strtof(addr<int8>, addr)=>float32;
+//function long float64 cdecl strtold(addr<int8>, addr<int8>*);
+//function long long cdecl strtoll(addr<int8>, addr<int8>*, int32);
+//function unsigned long long cdecl strtoull(addr<int8>, addr<int8>*, int32);
+function cdecl system(addr<int8>)=>int32;
+function cdecl wctomb(addr<int8>, wchar_t)=>int32;
+
+/* private extensions to standard C */
+function cdecl _alloca(size_t)=>addr;
+function cdecl _heap_validate(addr)=>int32;
+function cdecl _msize(addr)=>size_t;
+function cdecl _itoa(int32, addr<int8>, int32)=>addr<int8>;
+function cdecl _ltoa(int32, addr<int8>, int32)=>addr<int8>;
+//function unsigned long long cdecl _llrotl(unsigned long long, int32);
+//function unsigned long long cdecl _llrotr(unsigned long long, int32);
+function cdecl _lrotl(uint32, int32)=>uint32;
+function cdecl _lrotr(uint32, int32)=>uint32;
+function cdecl _rotl(uint32, int32)=>uint32;
+function cdecl _rotr(uint32, int32)=>uint32;
+function cdecl _ultoa(uint32, addr<int8>, int32)=>addr<int8>;
+function cdecl _bswap(uint32)=>uint32;
+
+//function unsigned long long cdecl _bswap64(unsigned long long);
+function cdecl _fullpath(addr<int8>, addr<int8>, size_t)=>addr<int8>;
+function cdecl _makepath(addr<int8>, addr<int8>, addr<int8>, addr<int8>, addr<int8>);
+function cdecl _putenv(addr<int8>)=>int32;
+function cdecl _searchenv(addr<int8>, addr<int8>, addr<int8>);
+function cdecl _splitpath(addr<int8>, addr<int8>, addr<int8>, addr<int8>, addr<int8>);
+function cdecl _set_crt_heap_size(size_t)=>size_t;
+function cdecl _wfullpath(addr<wchar_t>, addr<wchar_t>, size_t)=>addr<wchar_t>;
+function cdecl _wgetenv(addr<wchar_t>)=>addr<wchar_t>;
+function cdecl _wmakepath(addr<wchar_t>, addr<wchar_t>, addr<wchar_t>, addr<wchar_t>, addr<wchar_t>);
+function cdecl _wputenv(addr<wchar_t>)=>int32;
+function cdecl _wsearchenv(addr<wchar_t>, addr<wchar_t>, addr<wchar_t>);
+function cdecl _wsplitpath(addr<wchar_t>, addr<wchar_t>, addr<wchar_t>, addr<wchar_t>, addr<wchar_t>);
+function cdecl _wsystem(addr<wchar_t>)=>int32;
+
+function cdecl _cpuid(addr<int32>, int32);
+
+function cdecl __debugbreak();
+
+/* compatibility names */
+function cdecl itoa(int32, addr<int8>, int32)=>addr<int8>;
+function cdecl ltoa(int32, addr<int8>, int32)=>addr<int8>;
+function cdecl putenv(addr<int8>)=>int32;
+function cdecl ultoa(uint32, addr<int8>, int32)=>addr<int8>;
+
+/* internal stuff */
+function cdecl __stod(addr<int8>, addr, int32)=>float64;
+function cdecl __stof(addr<int8>, addr, int32)=>float32;
+//function long float64 cdecl __stold(addr<int8>, addr<int8>*, long);
+//function long long cdecl __stoll(addr<int8>, addr<int8>*, int32);
+function cdecl __stoul(addr<int8>, addr, int32)=>uint32;
+//function unsigned long long cdecl __stoull(addr<int8>, addr<int8>*, int32);
+
+
+//typedef void (cdecl *constraint_handler_t)(addr<int8>, addr, errno_t);
+//typedef int32 cdecl __cmpfunc_s(const addr, const addr, addr);
+
+/* declarations */
+function cdecl set_constraint_handler_s(addr)=>addr;
+function cdecl abort_handler_s(addr<int8>, addr, errno_t);
+function cdecl ignore_handler_s(addr<int8>, addr, errno_t);
+function cdecl getenv_s(addr<size_t>, addr<int8>, rsize_t, addr<int8>)=>errno_t;
+function cdecl bsearch_s(addr, addr, rsize_t, rsize_t, addr, addr)=>addr;
+function cdecl qsort_s(addr, rsize_t, rsize_t, addr, addr)=>errno_t;
+function cdecl wctomb_s(addr<int32>, addr<int8>, rsize_t, wchar_t)=>errno_t;
+function cdecl mbstowcs_s(addr<size_t>, addr<wchar_t>, rsize_t, addr<int8>, rsize_t)=>errno_t;
+function cdecl wcstombs_s(addr<size_t>, addr<int8>, rsize_t, addr<wchar_t>, rsize_t)=>errno_t;
+
+}
