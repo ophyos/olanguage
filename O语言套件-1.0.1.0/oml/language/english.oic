@@ -88,12 +88,17 @@ cdecl              0x00100005     ∥    C调用
 stdcall            0x00100006     ∥    标准调用
 ocall              0x00100007     ∥    O调用
 goto               0x00100008     ∥    跳到 goto
-funtype            0x00100009     ∥    函数类型
-interface_describe 0x0010000A     ∥    界面描述
+for                0x00100009     ∥    for循环
+do                 0x0010000A     ∥    do..while循环
+switch             0x0010000B     ∥    分支
+case               0x0010000C     ∥    
+default            0x0010000D     ∥    默认
+funtype            0x0010000E     ∥    函数类型
+interface_describe 0x0010000F     ∥    界面描述
+
 
 ∥用户自定义关键字
-for                0x00102001     ∥    for循环
-do                 0x00102002     ∥    do..while循环
+
 
 ∥寄存器定义
 
